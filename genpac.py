@@ -144,23 +144,34 @@ def generateProxyVar():
     else:
         return 'SOCKS5 %s; SOCKS %s' % (host, host)
 
+def convertListToJSArray(list):
+    array = ''
+    indent = '    '
+    for list_item in list:
+        if len(array) != 0:
+            array +=",\n"
+        array += "%s'%s'" % (indent, list_item)
+    if len(array) != 0:
+        array = "\n" + array + "\n" + indent;
+    return "[" + array + "]"
+
 def generatePacRules(gfwlist):
     gfwlist = base64.decodestring(gfwlist)
     if DEBUGMODE:
         with open('tmp/gfwlist.txt', 'w') as f:
             f.write(gfwlist)
 
-    proxyVar = generateProxyVar()
     directRegexpList, directWildcardList, proxyRegexpList, proxyWildcardList = parseRuleList(gfwlist)
-    rules = ""
-    for ruleItem in directRegexpList:
-        rules += "    if( regExpMatch(url, '%s') ) return 'DIRECT';\n" % ruleItem
-    for ruleItem in directWildcardList:
-        rules += "    if( shExpMatch(url, '%s') ) return 'DIRECT';\n" % ruleItem
-    for ruleItem in proxyRegexpList:
-        rules += "    if( regExpMatch(url, '%s') ) return '%s';\n" % (ruleItem, proxyVar)
-    for ruleItem in proxyWildcardList:
-        rules += "    if( shExpMatch(url, '%s') ) return '%s';\n" % (ruleItem, proxyVar)
+
+    rules = '''    var directRegexpList   = %s;
+    var directWildcardList = %s;
+    var proxyRegexpList    = %s;
+    var proxyWildcardList  = %s;
+    ''' % ( convertListToJSArray(directRegexpList), 
+            convertListToJSArray(directWildcardList), 
+            convertListToJSArray(proxyRegexpList), 
+            convertListToJSArray(proxyWildcardList)
+          )
     return rules
 
 def CreatePacFile(gfwlist):
@@ -175,11 +186,41 @@ function regExpMatch(url, pattern) {
 }
 
 function FindProxyForURL(url, host) {
+    var P = "%(proxy)s";
+    var D = "DIRECT";
+    var i = 0;
+    var length = 0;
 %(rules)s
-    return 'DIRECT';
+    // gfwlist Rules
+    length = directRegexpList.length;
+    for (i = 0; i < length; i++)
+    {
+        if(regExpMatch(url, directRegexpList[i])) return D;
+    }
+
+    length = directWildcardList.length;
+    for (i = 0; i < length; i++)
+    {
+        if (shExpMatch(url, directWildcardList[i])) return D;
+    }
+
+    length = proxyRegexpList.length;
+    for (i = 0; i < length; i++)
+    {
+        if(regExpMatch(url, proxyRegexpList[i])) return P;
+    }
+
+    length = proxyWildcardList.length;
+    for (i = 0; i < length; i++)
+    {
+        if(shExpMatch(url, proxyWildcardList[i])) return P;
+    }
+
+    return D;
 }
 '''
     result = { 'ver': VERSION,
+               'proxy': generateProxyVar(),
                'rules': generatePacRules(gfwlist),
               }
 
