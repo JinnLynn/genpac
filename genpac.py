@@ -57,6 +57,13 @@ def parseConfig():
     except Exception, e:
         print e
 
+def printConfigInfo():
+    print "配置信息: "
+    print 'GFWList Proxy: Type: %s, Host: %s, Port: %s , Usr: %s, Pwd: %s' % (config['gfwProxyType'], 
+                                                                              config['gfwProxyHost'], config['gfwProxyPort'], 
+                                                                              config['gfwProxyUsr'], config['gfwProxyPwd'])
+    print "PAC Proxy String: %s" % generateProxyVar()
+
 def fetchGFWList():
     global gfwlistContent
     import socks, socket, urllib2
@@ -293,7 +300,6 @@ function FindProxyForURL(url, host) {
         with open('test/genpac.js', 'w') as js:
             js.write(pacContent)
 
-
 if __name__ == "__main__":
     print '''/** 
  * PAC Generator %s by JinnLynn http://jeeker.net
@@ -305,6 +311,8 @@ if __name__ == "__main__":
     os.system("rm -rf tmp/*")
 
     parseConfig()
+
+    printConfigInfo()
 
     print "正在获取GFWList %s ..." % config['gfwUrl']
     res, errorInfo = fetchGFWList()
