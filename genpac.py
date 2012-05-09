@@ -19,7 +19,7 @@ gfwlistUrl="http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt"
 # 如果你可以正常访问gfwlistUrl，可以设置为不使用代理
 # gfwProxyType 0 不使用代理; 1 SOCKS4; 2 SOCKS5; 3 HTTP
 gfwProxyType = 2
-gfwProxyHost = '127.0.0.2'
+gfwProxyHost = '127.0.0.1'
 gfwProxyPort = 9527
 gfwProxyUsr  = None
 gfwProxyPwd  = None
@@ -40,8 +40,8 @@ pacFile = "AutoProxy.pac"
 # ********************************************************************** #
 
 VERSION = '0.1a'
+# 调试模式
 DEBUGMODE = True
-
 
 gfwlistContent = ''
 
@@ -281,8 +281,13 @@ function FindProxyForURL(url, host) {
                'proxy':     generateProxyVar(),
                'rules':     generatePACRuls(userRules, gfwlistRules)
               }
+    pacContent = pacContent % result
     with open(pacFile, 'w') as handle:
-        handle.write(pacContent % result)
+        handle.write(pacContent)
+
+    if DEBUGMODE:
+        with open('test/genpac.js', 'w') as js:
+            js.write(pacContent)
 
 
 if __name__ == "__main__":

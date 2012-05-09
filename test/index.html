@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+    <title>Gen Pac Test</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+            font-size: 16px;
+            margin:0 auto;
+        }
+        #wrapper {
+            padding:20px 0 0 0;
+        }
+        #head {
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #head h1 { font-size: 40px;}
+        #content {
+            margin: 0 auto;
+            padding: 30px;
+            width: 600px;
+            border:1px solid #ccc;
+            border-radius: 5px;
+            -webkit-box-shadow: 0px 0px 10px #aaa;
+            -moz-box-shadow: 0px 0px 10px #aaa;
+            box-shadow: 0px 0px 10px #aaa;
+        }
+        #content #input {
+            margin: 0 30px 10px;
+        }
+        #content #input div {
+            text-align: center;
+            margin: 10px 0;
+        }
+        #content #input input#test-content {
+            width: 100%;
+            padding:4px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+        #content #input #input-btn input {
+            font-size: 16px;
+            font-weight: bold;
+            display: inline;
+            font-weight:normal;
+            padding: 8px 14px;
+            margin: 15px 10px 0;
+            line-height: 18px;
+            color: #333333;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+        #content #input #input-btn input:hover {
+            color: #333333;
+            text-decoration: none;
+            background-color: #e6e6e6;
+
+            background-position: 0 -15px;
+            -webkit-transition: background-position 0.1s linear;
+            -moz-transition: background-position 0.1s linear;
+            -ms-transition: background-position 0.1s linear;
+            -o-transition: background-position 0.1s linear;
+            transition: background-position 0.1s linear;
+        }
+        #content #result {
+            margin: 30px 10px 0;
+            padding: 10px 5px;
+            border-top: 1px solid #ccc;
+            font-size: 12px;
+            line-height: 120%;
+            color: #666;
+        }
+        #content #result span {
+            display: block;
+            margin: 0 0 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="head"><h1>GenPac Test</h1></div>
+        <div id="content">
+            <div id="input">
+                <div id="input-content">
+                    <input type="text" id="test-content" value="http://sina.com" />
+                </div>
+                <div id="input-btn">
+                    <input type="submit" id="test-submit" name="test-submit" value="TEST" />
+                    <input type="submit" id="batch-test-submit" name="batch-test-submit" value="Batch Test" />
+                    <input type="submit" id="clear-submit" name="clear-submit" value="clear" />
+                </div>
+            </div>  
+            <div id="result">
+                <span>URL: http://jeeker.net<br />RES: DIRECT</span>
+                <span>URL: http://jeeker.net<br />RES: DIRECT</span>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='genpac.js'></script>
+    <script type="text/javascript">
+        var testUrls = [
+            'http://www.sina.com',
+            'http://www.163.com',
+            'http://www.google.com',
+            'http://www.google.com.hk',
+            'https://docs.google.com',
+            'https://twitter.com',
+            'http://facebook.com',
+            'http://youtube.com'
+        ];
+
+        function get(id) {
+            return document.getElementById(id);
+        }
+
+        function append(id, c) {
+            org = get(id).innerHTML;
+            get(id).innerHTML = '<span>' + c + '</span>' + org;
+        }
+
+        function shExpMatch(text, exp){
+            exp = exp.replace(/\.|\*|\?/g, function (m){
+                if (m === '.') {
+                    return '\\.';
+                } else if (m === '*') {
+                    return '.*?'
+                } else if (m === '?') {
+                    return '.';
+                }
+            });
+            //append('result', exp);
+            return new RegExp(exp).test(text);
+        }
+
+        function testBtnClick() {
+            var url = get("test-content").value;
+            if (url == '') {
+                alert('url is empty.');
+                return;
+            }
+            test(url);
+        }
+
+        function batchTestBtnClick() {
+            var l = testUrls.length;
+            for (var i = 0; i < l; i++) {
+                test(testUrls[i]);
+            };
+        }
+
+        var clearBtnClick = function() {
+            get('result').innerHTML = '';
+        };
+
+        function test(url) {
+            res = FindProxyForURL(url, '');
+            append('result', url + '<br />' + res);
+
+        }
+        get("test-submit").onclick = testBtnClick;
+        get("batch-test-submit").onclick = batchTestBtnClick;
+        get("clear-submit").onclick = clearBtnClick;
+    </script>
+</body>
+</html>
