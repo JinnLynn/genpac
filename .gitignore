@@ -1,5 +1,6 @@
 *.pac
 *.pyc
+*.js
 tmp/
 
 # Windows
