@@ -10,58 +10,69 @@
 # Source: https://github.com/JinnLynn/GenPAC
 # License: CC BY 3.0 
 #          http://creativecommons.org/licenses/by/3.0/
-## 
-
-# gfwlist地址
-gfwlistUrl="http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt"
-
-# 获取GFWList的代理设置，与PAC内的配置可能不同
-# 如果你可以正常访问gfwlistUrl，可以设置为不使用代理
-# gfwProxyType 0 不使用代理; 1 SOCKS4; 2 SOCKS5; 3 HTTP
-gfwProxyType = 2
-gfwProxyHost = '127.0.0.1'
-gfwProxyPort = 9527
-gfwProxyUsr  = None
-gfwProxyPwd  = None
-
-# PAC的代理配置
-# 注意：如果是在MAC下的SOCKS代理，必须设置成SOCKS5
-# proxyType 1 SOCKS e.g. SOCKS 127.0.0.1:9527
-#           2 SOCKS5 e.g. SOCKS5 127.0.0.1:9527; SOCKS 127.0.0.1:9527
-#           3 HTTP e.g. PROXY 127.0.0.1:9527
-# 默认 SOCKS5
-proxyType = 2
-proxyHost = '127.0.0.1'
-proxyPort = 9527
-
-# 生成的PAC文件名
-pacFile = "AutoProxy.pac"
+##
 
 # ********************************************************************** #
 
 VERSION = '0.2'
-# 调试模式
-DEBUGMODE = True
+
+defaultConfig = {
+               'gfwUrl'       : 'http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt',
+               'gfwProxyType' : 2,
+               'gfwProxyHost' : '127.0.0.1',
+               'gfwProxyPort' : 9527,
+               'gfwProxyUsr'  : None,
+               'gfwProxyPwd'  : None,
+               'pacProxyType' : 2,
+               'pacProxyHost' : '127.0.0.1',
+               'pacProxyPort' : 9527,
+               'pacFilename'  : 'AutoProxy.pac',
+               'DebugMode'    : False
+                }
 
 gfwlistContent = ''
+config = {}
 
-import sys, os, base64, re
+import sys, os, base64, re, ConfigParser
+
+def parseConfig():
+    global defaultConfig, config
+    cf = ConfigParser.ConfigParser(defaultConfig);
+    cf.read('config.txt')
+
+    try:
+        config = {
+                   'gfwUrl'       : cf.get('config', 'gfwUrl'),
+                   'gfwProxyType' : cf.getint('config', 'gfwProxyType'),
+                   'gfwProxyHost' : cf.get('config', 'gfwProxyHost'),
+                   'gfwProxyPort' : cf.getint('config', 'gfwProxyPort'),
+                   'gfwProxyUsr'  : cf.get('config', 'gfwProxyUsr'),
+                   'gfwProxyPwd'  : cf.get('config', 'gfwProxyPwd'),
+                   'pacProxyType' : cf.getint('config', 'pacProxyType'),
+                   'pacProxyHost' : cf.get('config', 'pacProxyHost'),
+                   'pacProxyPort' : cf.getint('config', 'pacProxyPort'),
+                   'pacFilename'  : cf.get('config', 'pacFilename'),
+                   'DebugMode'    : cf.getboolean('config', 'DebugMode')
+                    }
+    except Exception, e:
+        print e
 
 def fetchGFWList():
     global gfwlistContent
     import socks, socket, urllib2
+    gfwProxyType = config['gfwProxyType']
     if (gfwProxyType == socks.PROXY_TYPE_SOCKS4) or (gfwProxyType == socks.PROXY_TYPE_SOCKS5) or (gfwProxyType == socks.PROXY_TYPE_HTTP):
-        socks.setdefaultproxy(gfwProxyType, gfwProxyHost, gfwProxyPort, True, gfwProxyUsr, gfwProxyPwd)
+        socks.setdefaultproxy(gfwProxyType, config['gfwProxyHost'], config['gfwProxyPort'], True, config['gfwProxyUsr'], config['gfwProxyPwd'])
         socket.socket = socks.socksocket
 
-    if DEBUGMODE:
+    if config['DebugMode']:
         httpHandler = urllib2.HTTPHandler(debuglevel=1)
         httpsHandler = urllib2.HTTPSHandler(debuglevel=1)
         opener = urllib2.build_opener(httpHandler, httpsHandler)
         urllib2.install_opener(opener)
 
     try:
-        response = urllib2.urlopen(gfwlistUrl)
+        response = urllib2.urlopen(config['gfwUrl'])
         gfwlistContent = response.read()
     except Exception, e:
         return False, e
@@ -133,17 +144,17 @@ def parseRuleList(ruleList):
             else: 
                 proxyWildcardList.append(line)
 
-        if DEBUGMODE:
+        if config['DebugMode']:
             with open('tmp/rule.txt', 'a') as f:
                 f.write("%s\n\t%s\n\n" % (origin_line, line) )
 
     return directRegexpList, directWildcardList, proxyRegexpList, proxyWildcardList
 
 def generateProxyVar():
-    host = '%s:%d' % (proxyHost, proxyPort) 
-    if proxyType == 1:
+    host = '%s:%d' % (config['pacProxyHost'], config['pacProxyPort']) 
+    if config['pacProxyType'] == 1:
         return 'SOCKS %s' % host
-    elif proxyType == 3:
+    elif config['pacProxyType'] == 3:
         return 'PROXY %s' % host
     else:
         return 'SOCKS5 %s; SOCKS %s' % (host, host)
@@ -162,7 +173,7 @@ def convertListToJSArray(list):
 def parseGFWListRules():
     global gfwlistContent
     gfwlist = base64.decodestring(gfwlistContent)
-    if DEBUGMODE:
+    if config['DebugMode']:
         with open('tmp/gfwlist.txt', 'w') as f:
             f.write(gfwlist)
 
@@ -275,10 +286,10 @@ function FindProxyForURL(url, host) {
                'rules':     generatePACRuls(userRules, gfwlistRules)
               }
     pacContent = pacContent % result
-    with open(pacFile, 'w') as handle:
+    with open(config['pacFilename'], 'w') as handle:
         handle.write(pacContent)
 
-    if DEBUGMODE:
+    if config['DebugMode']:
         with open('test/genpac.js', 'w') as js:
             js.write(pacContent)
 
@@ -293,7 +304,9 @@ if __name__ == "__main__":
     #os.remove('tmp/*')
     os.system("rm -rf tmp/*")
 
-    print "正在获取GFWList %s ..." % gfwlistUrl
+    parseConfig()
+
+    print "正在获取GFWList %s ..." % config['gfwUrl']
     res, errorInfo = fetchGFWList()
     if res == False:
         print "GFWList获取失败，请检查相关内容是否配置正确。"
@@ -307,7 +320,7 @@ if __name__ == "__main__":
     print '正在解析 User Rules ...'
     userRules = parseUserRules()
 
-    print "正在生成 %s ..." % pacFile
+    print "正在生成 %s ..." % config['pacFilename']
     CreatePacFile(userRules, gfwlistRules)
     
     print "一切就绪。"
