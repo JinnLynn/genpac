@@ -1,15 +1,20 @@
-# PAC Generator
+# GenPAC
 
 代理自动配置(Proxy Auto-config)文件生成工具。
 
-* 判断条件基于gfwlist
+* 代理规则基于gfwlist
+* 支持用户自定义规则
 * 获取gfwlist时允许独立设置代理
 
 ## USAGE
 
 ### 配置
 
-用任意文本编辑工具打开genpac.py文件，根据文件内的注释配置相应的变量。
+用任意文本编辑工具打开`config.txt`文件，根据文件内的注释配置相应的变量。
+
+### 自定义规则
+
+`user-rules.txt`是用户自定义规则，语法与gfwlist相同，即AdBlock Plus过滤规则，详见文件内说明，或访问[这里][4]。
 
 ### 生成
 
@@ -32,3 +37,4 @@ Copyright 2012 [Jeeker.net][1], Licensed under [CC BY 3.0][2].
 [1]:http://jeeker.net
 [2]:http://creativecommons.org/licenses/by/3.0/
 [3]:http://www.python.org/
+[4]:http://adblockplus.org/en/filters
