@@ -39,7 +39,7 @@ pacFile = "AutoProxy.pac"
 
 # ********************************************************************** #
 
-VERSION = '0.1a'
+VERSION = '0.2'
 # 调试模式
 DEBUGMODE = True
 
@@ -228,49 +228,42 @@ function FindProxyForURL(url, host) {
     var length = 0;
 
     length = directUserRegexpList.length;
-    for (i = 0; i < length; i++)
-    {
+    for (i = 0; i < length; i++) {
         if(regExpMatch(url, directUserRegexpList[i])) return D;
     }
 
     length = directUserWildcardList.length;
-    for (i = 0; i < length; i++)
-    {
+    for (i = 0; i < length; i++) {
         if (shExpMatch(url, directUserWildcardList[i])) return D;
     }
 
     length = proxyUserRegexpList.length;
-    for (i = 0; i < length; i++)
-    {
+    for (i = 0; i < length; i++) {
         if(regExpMatch(url, proxyUserRegexpList[i])) return P;
     }
 
     length = proxyUserWildcardList.length;
-    for (i = 0; i < length; i++)
-    {
+    for (i = 0; i < length; i++) {
         if(shExpMatch(url, proxyUserWildcardList[i])) return P;
     }
+
     length = directRegexpList.length;
-    for (i = 0; i < length; i++)
-    {
+    for (i = 0; i < length; i++) {
         if(regExpMatch(url, directRegexpList[i])) return D;
     }
 
     length = directWildcardList.length;
-    for (i = 0; i < length; i++)
-    {
+    for (i = 0; i < length; i++) {
         if (shExpMatch(url, directWildcardList[i])) return D;
     }
 
     length = proxyRegexpList.length;
-    for (i = 0; i < length; i++)
-    {
+    for (i = 0; i < length; i++) {
         if(regExpMatch(url, proxyRegexpList[i])) return P;
     }
 
     length = proxyWildcardList.length;
-    for (i = 0; i < length; i++)
-    {
+    for (i = 0; i < length; i++) {
         if(shExpMatch(url, proxyWildcardList[i])) return P;
     }
 
