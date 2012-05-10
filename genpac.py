@@ -27,7 +27,8 @@ defaultConfig = {
                'pacProxyHost' : '127.0.0.1',
                'pacProxyPort' : 9527,
                'pacFilename'  : 'AutoProxy.pac',
-               'DebugMode'    : False
+               'DebugMode'    : False,
+               'JSVersion'    : True
                 }
 
 gfwlistContent = ''
@@ -53,7 +54,8 @@ def parseConfig():
                    'pacProxyHost' : cf.get('config', 'pacProxyHost'),
                    'pacProxyPort' : cf.getint('config', 'pacProxyPort'),
                    'pacFilename'  : cf.get('config', 'pacFilename'),
-                   'DebugMode'    : cf.getboolean('config', 'DebugMode')
+                   'DebugMode'    : cf.getboolean('config', 'DebugMode'),
+                   'JSVersion'    : cf.getboolean('config', 'JSVersion')
                     }
     except Exception, e:
         print e
@@ -306,7 +308,7 @@ function FindProxyForURL(url, host) {
     with open(config['pacFilename'], 'w') as handle:
         handle.write(pacContent)
 
-    if config['DebugMode']:
+    if config['JSVersion']:
         with open('test/genpac.js', 'w') as js:
             js.write(pacContent)
 

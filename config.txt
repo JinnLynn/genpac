@@ -30,6 +30,8 @@ pacFilename = AutoProxy.pac
 ; 调试模式会输出更多的信息，且会额外产生如下文件
 ;   tmp/gfwlist.txt 经过base64解码后的gfwlist
 ;   tmp/rules.txt gfwlist、user-rules解析前后各条规则的对比
-;   test/genpac.js PAC文件的JS版本，用于网址测试
-; 
 DebugMode = false
+
+; JS版本
+; 生成test/genpac.js 内容与PAC完全一样，只是改了文件名用于网址测试
+JSVersion = true
