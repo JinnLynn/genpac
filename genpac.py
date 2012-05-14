@@ -313,6 +313,10 @@ function FindProxyForURL(url, host) {
             js.write(pacContent)
 
 if __name__ == "__main__":
+
+    #更改工作目录为脚本所在目录
+    os.chdir(sys.path[0])
+
     print '''/** 
  * PAC Generator %s by JinnLynn http://jeeker.net
  */''' % VERSION
