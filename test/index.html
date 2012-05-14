@@ -29,7 +29,7 @@
             box-shadow: 0px 0px 10px #aaa;
         }
         #content #input {
-            margin: 0 30px 10px;
+            margin: 0 30px 30px;
         }
         #content #input div {
             text-align: center;
@@ -50,7 +50,7 @@
             padding: 8px 14px;
             margin: 15px 10px 0;
             line-height: 18px;
-            color: #333333;
+            color: #333;
             text-align: center;
             vertical-align: middle;
             cursor: pointer;
@@ -62,7 +62,7 @@
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
         }
         #content #input #input-btn input:hover {
-            color: #333333;
+            color: #333;
             text-decoration: none;
             background-color: #e6e6e6;
 
@@ -74,16 +74,28 @@
             transition: background-position 0.1s linear;
         }
         #content #result {
-            margin: 30px 10px 0;
+            margin: 0 10px;
             padding: 10px 5px;
             border-top: 1px solid #ccc;
             font-size: 12px;
             line-height: 120%;
             color: #666;
+            display:none;
         }
-        #content #result span {
+        #content #result span,
+        #content #intro span {
             display: block;
             margin: 0 0 5px 0;
+        }
+        #content #intro {
+            margin: 0 10px;
+            padding:10px 5px;
+            border-top:1px solid #ccc;
+            font-size:12px;
+        }
+        span.warning {
+            color: red;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -93,7 +105,7 @@
         <div id="content">
             <div id="input">
                 <div id="input-content">
-                    <input type="text" id="test-content" value="http://sina.com" />
+                    <input type="text" id="test-content" value="https://twitter.com" />
                 </div>
                 <div id="input-btn">
                     <input type="submit" id="test-submit" name="test-submit" value="TEST" />
@@ -102,13 +114,15 @@
                 </div>
             </div>  
             <div id="result">
-                <span>URL: http://jeeker.net<br />RES: DIRECT</span>
-                <span>URL: http://jeeker.net<br />RES: DIRECT</span>
+            </div>
+            <div id="intro">
+                <span>说明: 测试任意网址使用自动代理配置后的情况。</span>
             </div>
         </div>
     </div>
     <script type='text/javascript' src='genpac.js'></script>
     <script type="text/javascript">
+        var isGenPACExist = false;
         var testUrls = [
             'http://www.sina.com',
             'http://www.163.com',
@@ -120,16 +134,16 @@
             'http://youtube.com'
         ];
 
-        function get(id) {
+        var get = function(id) {
             return document.getElementById(id);
         }
 
-        function append(id, c) {
+        var append = function(id, c) {
             org = get(id).innerHTML;
-            get(id).innerHTML = '<span>' + c + '</span>' + org;
+            get(id).innerHTML = c + org;
         }
 
-        function shExpMatch(text, exp){
+        var shExpMatch = function(text, exp){
             exp = exp.replace(/\.|\*|\?/g, function (m){
                 if (m === '.') {
                     return '\\.';
@@ -143,7 +157,7 @@
             return new RegExp(exp).test(text);
         }
 
-        function testBtnClick() {
+        var testBtnClick = function() {
             var url = get("test-content").value;
             if (url == '') {
                 alert('url is empty.');
@@ -152,7 +166,7 @@
             test(url);
         }
 
-        function batchTestBtnClick() {
+        var batchTestBtnClick = function() {
             var l = testUrls.length;
             for (var i = 0; i < l; i++) {
                 test(testUrls[i]);
@@ -161,16 +175,35 @@
 
         var clearBtnClick = function() {
             get('result').innerHTML = '';
+            get('result').style.display = 'none';
         };
 
-        function test(url) {
-            res = FindProxyForURL(url, '');
-            append('result', url + '<br />' + res);
-
+        var test = function(url) {
+            if (!isGenPACExist) {
+                append('result', '<span class="warning">error: genpac.js is not existed.</span>');
+            }
+            else
+            {
+                res = FindProxyForURL(url, '');
+                append('result', '<span>' + url + '<br />' + res + '</span>');
+            }
+            get('result').style.display = 'block';
         }
+
+        try {
+            if(typeof(eval(FindProxyForURL))=="function")
+                isGenPACExist = true;
+        } catch(e) {
+            isGenPACExist = false;
+        }  
+
         get("test-submit").onclick = testBtnClick;
         get("batch-test-submit").onclick = batchTestBtnClick;
         get("clear-submit").onclick = clearBtnClick;
+
+        if (!isGenPACExist) {
+            append('intro', '<span class="warning">未找到genpac.js，请在生成PAC前将JSVersion设置为true。</span>');
+        }
     </script>
 </body>
 </html>
