@@ -22,8 +22,5 @@
 !      如:
 @@sina.com
 @@163.com
-@@github.com
-.twitter.com
-||twitter.com
-.youtube.com
-||youtube.com
+twitter.com
+youtube.com
