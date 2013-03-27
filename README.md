@@ -30,9 +30,9 @@ Windows需要安装Python，在其[官网][3]可以找到安装包（**版本务
 
 如何使用自动代理请自行Google，需要说明的是Mac OSX Lion下的Safari由于其沙盒机制的原因无法使用本地PAC文件，需要使用Web Sharing或将PAC文件放在服务器，然后通过http访问。
 
-## Copyright and license
+## LICENSE
 
-Copyright 2012 [Jeeker.net][1], Licensed under [CC BY 3.0][2].
+The MIT License.
 
 [1]:http://jeeker.net
 [2]:http://creativecommons.org/licenses/by/3.0/
