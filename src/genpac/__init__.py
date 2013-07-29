@@ -19,50 +19,51 @@ __author__ = 'JinnLynn'
 __author_email__ = 'eatfishlin@gmail.com'
 __project_page__ = 'http://jeeker.net/projects/genpac/'
 
-_usage = '''
-usage: genpac [-h|--help] [-v|version] [--verbose]
-              [-p PROXY|--proxy=PROXY]
-              [--gfwlist-url=URL] [--gfwlist-proxy=PROXY]
-              [--user-rule=RULE] [--user-rule-from=FILE]
-              [--config-from=FILE] [--output=FILE]
-'''
 _help = '''
+基于gfwlist的代理自动配置(Proxy Auto-config)文件生成工具
+
+genpac [-h|--help] [-v|version] [--verbose]
+       [-p PROXY|--proxy=PROXY]
+       [--gfwlist-url=URL] [--gfwlist-proxy=PROXY]
+       [--user-rule=RULE] [--user-rule-from=FILE]
+       [--config-from=FILE] [--output=FILE]
+
 可选参数:
   -h, --help                显示帮助内容
-  -v, --version             显示程序版本号
+  -v, --version             显示版本信息
   --verbose                 输出详细处理过程
   -p PROXY, --proxy=PROXY   PAC文件中使用的代理信息，如:
                               SOCKS 127.0.0.1:9527
                               SOCKS5 127.0.0.1:9527; SOCKS 127.0.0.1:9527
                               PROXY 127.0.0.1:9527
-  --gfwlist-url=URL         gfwlist地址，默认: http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
+  --gfwlist-url=URL         gfwlist地址，一般不需要更改，默认: 
+                              http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
   --gfwlist-proxy=PROXY     获取gfwlist时的代理设置，如果你可以正常访问gfwlist，则无必要使用该选项
                             格式为 "代理类型 [用户名:密码]@地址:端口" 其中用户名和密码可选，如: 
                               SOCKS5 127.0.0.1:9527
                               SOCKS5 username:password@127.0.0.1:9527
-  --user-rule=RULE          自定义规则，该选项允许添加多次，如:
+  --user-rule=RULE          自定义规则，该选项允许重复使用，如:
                               --user-rule="@@sina.com"
                               --user-rule="||youtube.com"
-  --user-rule-from=FILE     从文件中读取自定义规则
+  --user-rule-from=FILE     从文件中读取自定义规则，该选项允许重复使用
   --config-from=FILE        从文件中读取配置信息
   --output=FILE             输出生成的文件，如果没有此选项，将直接打印结果
 
 
-用户自定义的代理规则语法:
+用户自定义规则语法:
  
   与gfwlist相同，使用AdBlock Plus过滤规则( http://adblockplus.org/en/filters )
   
-    1. 通配符支持，如 *.example.com/* 实际书写时可省略* 如.example.com/ 意即*.example.com/* 
+    1. 通配符支持，如 *.example.com/* 实际书写时可省略*为 .example.com/
     2. 正则表达式支持，以\开始和结束， 如 \[\w]+:\/\/example.com\\
     3. 例外规则 @@，如 @@*.example.com/* 满足@@后规则的地址不使用代理
     4. 匹配地址开始和结尾 |，如 |http://example.com、example.com|分别表示以http://example.com开始和以example.com结束的地址
     5. || 标记，如 ||example.com 则http://example.com、https://example.com、ftp://example.com等地址均满足条件
     6. 注释 ! 如 ! Comment
 
-  配置该文件时需谨慎，尽量避免与gfwlist产生冲突，或将一些本不需要代理的网址添加到代理列表
+  配置自定义规则时需谨慎，尽量避免与gfwlist产生冲突，或将一些本不需要代理的网址添加到代理列表
 
-  代理规则优先级从高到底为:
-    user-rule > user-rule-from > gfwlist
+  规则优先级从高到底为: user-rule > user-rule-from > gfwlist
 '''
 
 _default_gfwlist_url = 'http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt'
@@ -399,13 +400,12 @@ class HelpAction(argparse.Action):
         super(HelpAction, self).__init__(option_strings=option_strings, dest=dest, default=default, nargs=0, help=help)
 
     def __call__(self, parser, namespace, values, option_string=None):
-        print('{}{}'.format(_usage, _help))
+        print(_help)
         parser.exit()
 
 def main():
     parser = argparse.ArgumentParser(
         prog='genpac',
-        description='Change the option prefix charaters',
         add_help=False      # 默认的帮助输出对中文似乎有问题，不使用
     )
     parser.add_argument('-p', '--proxy')
