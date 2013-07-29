@@ -3,6 +3,10 @@
 *.js
 tmp/
 
+*.egg-info
+build/
+dist/
+
 # Windows
 [Dd]esktop.ini
 [Tt]humbs.db
