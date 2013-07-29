@@ -14,7 +14,7 @@ import time
 from ConfigParser import ConfigParser
 import logging
 
-__version__ = '0.2.1'
+__version__ = '1.0.0'
 __author__ = 'JinnLynn'
 __author_email__ = 'eatfishlin@gmail.com'
 __project_page__ = 'http://jeeker.net/projects/genpac/'

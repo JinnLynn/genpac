@@ -13,13 +13,13 @@
 
 ### 下载
 
-* git clone https://github.com/JinnLynn/GenPAC.git
-* 直接下载 https://github.com/JinnLynn/GenPAC/archive/master.zip
+* git clone https://github.com/JinnLynn/genpac.git
+* 直接下载 https://github.com/JinnLynn/genpac/archive/master.zip
 
 ### 安装
 
 ```shell
-    $ cd GenPAC
+    $ cd genpac
     $ ./setup.py install #可能需要root权限
     $ genpac -v
 ```
@@ -27,7 +27,7 @@
   或者也可以直接使用命令
   
 ```shell
-  $ cd GenPAC
+  $ cd genpac
   $ ./genpac -v
 ```
 
@@ -93,6 +93,6 @@ genpac [-h|--help] [-v|version] [--verbose]
 The MIT License.
 
 [gfwlist]: http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
-[sample/config.ini]: https://github.com/JinnLynn/GenPAC/raw/master/sample/config.ini
-[sample/user-rules.txt]: https://github.com/JinnLynn/GenPAC/raw/master/sample/user-rule.txt
+[sample/config.ini]: https://github.com/JinnLynn/genpac/raw/master/sample/config.ini
+[sample/user-rules.txt]: https://github.com/JinnLynn/genpac/raw/master/sample/user-rule.txt
 [1]:http://jeeker.net
