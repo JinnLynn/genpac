@@ -1,4 +1,4 @@
-! 用户自定义的代理规则
+! 用户自定义规则语法
 ! 
 ! 语法与gfwlist相同，即AdBlock Plus过滤规则
 !
@@ -23,15 +23,6 @@
 @@163.com
 twitter.com
 youtube.com
-
-||mail.google.com
-||maps.google.com
-cocosbuilder.com
-wikipedia.org
-www.google.com
 code.google.com
+googlecode.com
 sourceforge.net
-
-! 不是必须的
-uploaded.net
-feedly.net
