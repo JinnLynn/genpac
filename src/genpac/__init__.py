@@ -14,7 +14,7 @@ import time
 from ConfigParser import ConfigParser
 import logging
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 __author__ = 'JinnLynn'
 __author_email__ = 'eatfishlin@gmail.com'
 __project_page__ = 'http://jeeker.net/projects/genpac/'
@@ -139,6 +139,15 @@ function FindProxyForURL(url, host) {
     return D;
 }
 '''
+_option_value_template ='''选项信息:
+    proxy           : {}
+    gfwlist url     : {}
+    gfwlist proxy   : {}
+    user rule       : {}
+    user rule file  : {}
+    config file     : {}
+    output file     : {}
+'''
 _proxy_type_map = {
     'SOCKS'     : socks.PROXY_TYPE_SOCKS4,
     'SOCKS5'    : socks.PROXY_TYPE_SOCKS5,
@@ -150,7 +159,7 @@ class GenPAC(object):
         self, 
         pac_proxy=None,
         gfwlist_url=_default_gfwlist_url, gfwlist_proxy=None,
-        user_rules=None, user_rule_files=None,
+        user_rules=[], user_rule_files=[],
         config_file=None,
         output_file=None,
         verbose=False
@@ -172,8 +181,8 @@ class GenPAC(object):
         self.pacProxy = pac_proxy if pac_proxy else cfg.get('pac_proxy', None)
         self.gfwlistURL = gfwlist_url if gfwlist_url else cfg.get('gfwlist_url', _default_gfwlist_url)
         self.gfwlistProxy = gfwlist_proxy if gfwlist_proxy else cfg.get('gfwlist_proxy', None)
-        self.userRules = user_rules
-        self.userRuleFiles = user_rule_files if user_rule_files else cfg.get('user_rule_files', None)
+        self.userRules = user_rules if user_rules else []
+        self.userRuleFiles = user_rule_files if user_rule_files else cfg.get('user_rule_files', [])
         self.outputFile = output_file if output_file else cfg.get('output_file', None)
 
         self.gfwlistModified = ''
@@ -181,26 +190,16 @@ class GenPAC(object):
         self.userRulesContent = ''
 
     def generate(self):
-        self.logger.info(
-            '''选项信息:
-    proxy           : {}
-    gfwlist url     : {}
-    gfwlist proxy   : {}
-    user rule       : {}
-    user rule file  : {}
-    config file     : {}
-    output file     : {}
-            '''.format(
-                self.pacProxy, self.gfwlistURL, self.gfwlistProxy,
-                ' '.join(self.userRules) if self.userRules else 'None', 
-                ' '.join(self.userRuleFiles) if self.userRuleFiles else 'None',
-                self.configFile, self.outputFile
-            )
+        options = _option_value_template.format(
+            self.pacProxy, self.gfwlistURL, self.gfwlistProxy,
+            ' '.join(self.userRules) if self.userRules else 'None', 
+            ' '.join(self.userRuleFiles) if self.userRuleFiles else 'None',
+            self.configFile, self.outputFile
         )
+        self.logger.info(options)
         #! pac的代理配置不检查准确性
         if not self.pacProxy:
             self.die('没有配置proxy')
-
         self.fetchGFWList()
         self.getUserRules()
         self.generatePACContent()
@@ -230,14 +229,14 @@ class GenPAC(object):
 
     def die(self, msg):
         self.logger.error(msg)
-        sys.exit(255)
+        sys.exit(1)
 
     # 下载gfwlist
     def fetchGFWList(self):
         self.logger.info('gfwlist获取中...')
         if self.gfwlistProxy:
             try:
-                # 格式为 "代理类型 [用户名:密码]@地址:端口" 其中用户名和密码可选
+                # 格式为 代理类型 [用户名:密码]@地址:端口 其中用户名和密码可选
                 expr = re.compile('(PROXY|SOCKS|SOCKS5) (?:(.+):(.+)@)?(.+):(\d+)', re.IGNORECASE)
                 ret = expr.match(self.gfwlistProxy)
                 proxy_type = _proxy_type_map[ret.group(1).upper()]
@@ -267,19 +266,16 @@ class GenPAC(object):
         self.logger.info('获取用户自定义规则...')
         # userRules 优先级高于 userRuleFiles
         rules = ''
-        if self.userRules:
-            rules = '\n'.join(self.userRules)
-
-        if self.userRuleFiles:
-            for f in self.userRuleFiles:
-                if not f:
-                    continue
-                f = self.abspath(f)
-                try:
-                    with open(f) as fp:
-                        rules = '{}\n{}'.format(rules, fp.read())
-                except Exception, e:
-                    self.die('读取用户自定义规则文件{}错误: {}'.format(f, e))
+        rules = '\n'.join(self.userRules)
+        for f in self.userRuleFiles:
+            if not f:
+                continue
+            f = self.abspath(f)
+            try:
+                with open(f) as fp:
+                    rules = '{}\n{}'.format(rules, fp.read())
+            except Exception, e:
+                self.die('读取用户自定义规则文件{}错误: {}'.format(f, e))
         self.userRulesContent = rules
 
     # 解析条件
@@ -288,58 +284,45 @@ class GenPAC(object):
         direct_regexp = []
         proxy_wildcard = []
         proxy_regexp = []
-        for line in rules.splitlines()[1:]:
+        for line in rules.splitlines():
+            line = line.strip()
             # 忽略注释
-            if (len(line) == 0) or (line.startswith("!")) or (line.startswith("[")):
+            if not line or line.startswith('!'):
                 continue
-
-            isDirect = False
-            isRegexp = True
-
-            origin_line = line
-
+            is_direct = False
+            is_regexp = True
+            original_line = line
             # 例外
-            if line.startswith("@@"):
+            if line.startswith('@@'):
                 line = line[2:]
-                isDirect = True
-
+                is_direct = True
             # 正则表达式语法
-            if line.startswith("/") and line.endswith("/"):
+            if line.startswith('/') and line.endswith('/'):
                 line = line[1:-1]
-            elif line.find("^") != -1:
+            elif line.find('^') != -1:
                 line = self.wildcardToRegexp(line)
-                line = re.sub(r"\\\^", r"(?:[^\w\-.%\u0080-\uFFFF]|$)", line)
-            elif line.startswith("||"):
+                line = re.sub(r'\\\^', r'(?:[^\w\-.%\u0080-\uFFFF]|$)', line)
+            elif line.startswith('||'):
                 line = self.wildcardToRegexp(line[2:])
                 # When using the constructor function, the normal string escape rules (preceding 
                 # special characters with \ when included in a string) are necessary. 
                 # For example, the following are equivalent:
-                # re = new RegExp("\\w+")
+                # re = new RegExp('\\w+')
                 # re = /\w+/
                 # via: http://aptana.com/reference/api/RegExp.html
-                line = r"^[\\w\\-]+:\\/+(?!\\/)(?:[^\\/]+\\.)?" + line
-            elif line.startswith("|") or line.endswith("|"):
+                line = r'^[\\w\\-]+:\\/+(?!\\/)(?:[^\\/]+\\.)?' + line
+            elif line.startswith('|') or line.endswith('|'):
                 line = self.wildcardToRegexp(line)
-                line = re.sub(r"^\\\|", "^", line, 1)
-                line = re.sub(r"\\\|$", "$", line)
+                line = re.sub(r'^\\\|', '^', line, 1)
+                line = re.sub(r'\\\|$', '$', line)
             else:
-                isRegexp = False
-
-            if not isRegexp:
-                if not line.startswith("*"):
-                    line = "*" + line
-                if not line.endswith("*"):
-                    line += "*"
-
-            if isDirect:
-                direct_regexp.append(line)  if isRegexp else direct_wildcard.append(line)
+                is_regexp = False
+            if not is_regexp:
+                line = '*{}*'.format(line.strip('*'))
+            if is_direct:
+                direct_regexp.append(line)  if is_regexp else direct_wildcard.append(line)
             else:
-                proxy_regexp.append(line) if isRegexp else proxy_wildcard.append(line)
-
-            # if config['DebugMode']:
-            #     with open('tmp/rule.txt', 'a') as f:
-            #         f.write("%s\n\t%s\n\n" % (origin_line, line) )
-
+                proxy_regexp.append(line) if is_regexp else proxy_wildcard.append(line)
         return [direct_regexp, direct_wildcard, proxy_regexp, proxy_wildcard]
 
     def generatePACContent(self):
@@ -364,6 +347,8 @@ class GenPAC(object):
             'proxy_wildcard_list'       : gfwlist[3]
         }
         pac = _pac_template.format(**data)
+        with open('/Users/JinnLynn/Desktop/b64.txt', 'w') as fp:
+            fp.write(base64.b64encode(pac))
         if not self.outputFile:
             print(pac)
             return
@@ -376,18 +361,18 @@ class GenPAC(object):
             self.die('写入文件{}失败: {}'.format(output, e))
 
     def wildcardToRegexp(self, pattern):
-        pattern = re.sub(r"([\\\+\|\{\}\[\]\(\)\^\$\.\#])", r"\\\1", pattern);
-        #pattern = re.sub(r"\*+", r"*", pattern)
-        pattern = re.sub(r"\*", r".*", pattern)
-        pattern = re.sub(r"\？", r".", pattern)
+        pattern = re.sub(r'([\\\+\|\{\}\[\]\(\)\^\$\.\#])', r'\\\1', pattern);
+        #pattern = re.sub(r'\*+', r'*', pattern)
+        pattern = re.sub(r'\*', r'.*', pattern)
+        pattern = re.sub(r'\？', r'.', pattern)
         return pattern;
 
     def convertListToJSArray(self, lst):
         lst = filter(lambda s: isinstance(s, basestring) and s, lst)
         array = "',\n    '".join(lst)
-        if len(array) > 0:
-            array = "\n    '" + array + "'\n    "
-        return '[' + array + ']'
+        if array:
+            array = "\n    '{}'\n    ".format(array)
+        return '[{}]'.format(array)
 
     def abspath(self, path):
         if path.startswith('~'):
