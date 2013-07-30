@@ -94,6 +94,6 @@ genpac [-h|--help] [-v|version] [--verbose]
 The MIT License.
 
 [gfwlist]: http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
-[sample/config.ini]: https://github.com/JinnLynn/genpac/raw/master/sample/config.ini
-[sample/user-rules.txt]: https://github.com/JinnLynn/genpac/raw/master/sample/user-rule.txt
+[sample/config.ini]: https://github.com/JinnLynn/genpac/blob/master/sample/config.ini
+[sample/user-rules.txt]: https://github.com/JinnLynn/genpac/blob/master/sample/user-rules.txt
 [1]:http://jeeker.net
