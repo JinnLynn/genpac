@@ -347,8 +347,6 @@ class GenPAC(object):
             'proxy_wildcard_list'       : gfwlist[3]
         }
         pac = _pac_template.format(**data)
-        with open('/Users/JinnLynn/Desktop/b64.txt', 'w') as fp:
-            fp.write(base64.b64encode(pac))
         if not self.outputFile:
             print(pac)
             return
