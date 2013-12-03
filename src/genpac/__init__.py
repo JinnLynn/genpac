@@ -8,9 +8,7 @@ del sys.setdefaultencoding
 import socks, socket, urllib2
 import argparse
 from pprint import pprint
-import re
-import base64
-import time
+import re, base64, time, json
 from ConfigParser import ConfigParser
 import logging
 
@@ -68,77 +66,47 @@ genpac [-h|--help] [-v|version] [--verbose]
 
 _default_gfwlist_url = 'http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt'
 
-_pac_template = '''/**
- * genpac {version} http://jeeker.net/projects/genpac/
- * Generated: {generated}
- * GFWList Last-Modified: {gfwmodified}
+_pac_comment = '''/**
+ * genpac {} http://jeeker.net/projects/genpac/
+ * Generated: {}
+ * GFWList Last-Modified: {}
  */
-
-// proxy
-var P = "{proxy}";
-
-// user rules
-var directUserRegexpList   = {direct_user_regexp_list};
-var directUserWildcardList = {direct_User_Wildcard_List};
-var proxyUserRegexpList    = {proxy_user_regexp_list};
-var proxyUserWildcardList  = {proxy_user_wildcard_list};
-
-// gfwlist rules
-var directRegexpList   = {direct_regexp_list};
-var directWildcardList = {direct_wildcard_list};
-var proxyRegexpList    = {proxy_regexp_list};
-var proxyWildcardList  = {proxy_wildcard_list};
-{pac_funcs}
 '''
+
 _pac_funcs = '''
+var D = "DIRECT";
+var P = config[0];
+
+var regExpMatch = function(url, pattern) {
+    try {
+        return new RegExp(pattern).test(url); 
+    } catch(ex) {
+        return false; 
+    }
+};
+
+var testURL = function(url, pack) {
+    var j = 0;
+    for (j in pack[0])
+        if(regExpMatch(url, pack[0][j])) return D;
+    for (j in pack[1])
+        if (shExpMatch(url, pack[1][j])) return D;
+    for (j in pack[2])
+        if(regExpMatch(url, pack[2][j])) return P;
+    for (j in pack[3])
+        if(shExpMatch(url, pack[3][j])) return P;
+};
+
 function FindProxyForURL(url, host) {
-    var D = "DIRECT";
-
-    var regExpMatch = function(url, pattern) {
-        try { 
-            return new RegExp(pattern).test(url); 
-        } catch(ex) { 
-            return false; 
-        }
-    };
-    
-    var i = 0;
-
-    for (i in directUserRegexpList) {
-        if(regExpMatch(url, directUserRegexpList[i])) return D;
-    }
-
-    for (i in directUserWildcardList) {
-        if (shExpMatch(url, directUserWildcardList[i])) return D;
-    }
-
-    for (i in proxyUserRegexpList) {
-        if(regExpMatch(url, proxyUserRegexpList[i])) return P;
-    }
-
-    for (i in proxyUserWildcardList) {
-        if(shExpMatch(url, proxyUserWildcardList[i])) return P;
-    }
-
-    for (i in directRegexpList) {
-        if(regExpMatch(url, directRegexpList[i])) return D;
-    }
-
-    for (i in directWildcardList) {
-        if (shExpMatch(url, directWildcardList[i])) return D;
-    }
-
-    for (i in proxyRegexpList) {
-        if(regExpMatch(url, proxyRegexpList[i])) return P;
-    }
-
-    for (i in proxyWildcardList) {
-        if(shExpMatch(url, proxyWildcardList[i])) return P;
-    }
-
+    for (var i = 1; i < config.length; i++) {
+        var ret = testURL(url, config[i]);
+        if (ret !== undefined)
+            return ret;
+    }   
     return D;
 }
 '''
+
 _option_value_template ='''选项信息:
     proxy           : {}
     gfwlist url     : {}
@@ -310,7 +278,9 @@ class GenPAC(object):
                 # re = new RegExp('\\w+')
                 # re = /\w+/
                 # via: http://aptana.com/reference/api/RegExp.html
-                line = r'^[\\w\\-]+:\\/+(?!\\/)(?:[^\\/]+\\.)?' + line
+                # line = r'^[\\w\\-]+:\\/+(?!\\/)(?:[^\\/]+\\.)?' + line
+                # 由于后面输出时使用json.dumps会自动对其转义，因此这里可不使用对\转义
+                line = r'^[\w\-]+:\/+(?!\/)(?:[^\/]+\.)?' + line
             elif line.startswith('|') or line.endswith('|'):
                 line = self.wildcardToRegexp(line)
                 line = re.sub(r'^\\\|', '^', line, 1)
@@ -327,26 +297,14 @@ class GenPAC(object):
 
     def generatePACContent(self):
         self.logger.info('解析规则并生成PAC内容...')
-        gfwlist = self.parseRules(self.gfwlistContent)
-        user = self.parseRules(self.userRulesContent)
-        gfwlist = map(lambda d: self.convertListToJSArray(d), gfwlist)
-        user = map(lambda d: self.convertListToJSArray(d), user)
-        data = {
-            'version'       : __version__,
-            'generated'     : time.strftime('%a, %d %b %Y %H:%M:%S GMT', time.gmtime()),
-            'gfwmodified'   : self.gfwlistModified,
-            'proxy'         : self.pacProxy,
-            'pac_funcs'     : _pac_funcs,
-            'direct_user_regexp_list'   : user[0],
-            'direct_User_Wildcard_List' : user[1],
-            'proxy_user_regexp_list'    : user[2],
-            'proxy_user_wildcard_list'  : user[3],
-            'direct_regexp_list'        : gfwlist[0],
-            'direct_wildcard_list'      : gfwlist[1],
-            'proxy_regexp_list'         : gfwlist[2],
-            'proxy_wildcard_list'       : gfwlist[3]
-        }
-        pac = _pac_template.format(**data)
+        config = [self.pacProxy, self.parseRules(self.userRulesContent), self.parseRules(self.gfwlistContent)]
+        config = 'var config = {};'.format(json.dumps(config, indent=4))
+        comment = _pac_comment.format(
+            __version__, 
+            time.strftime('%a, %d %b %Y %H:%M:%S GMT', time.gmtime()), 
+            self.gfwlistModified
+        )
+        pac = '{}\n{}\n{}'.format(comment, config, _pac_funcs)
         if not self.outputFile:
             print(pac)
             return
@@ -364,13 +322,6 @@ class GenPAC(object):
         pattern = re.sub(r'\*', r'.*', pattern)
         pattern = re.sub(r'\？', r'.', pattern)
         return pattern;
-
-    def convertListToJSArray(self, lst):
-        lst = filter(lambda s: isinstance(s, basestring) and s, lst)
-        array = "',\n    '".join(lst)
-        if array:
-            array = "\n    '{}'\n    ".format(array)
-        return '[{}]'.format(array)
 
     def abspath(self, path):
         if path.startswith('~'):
