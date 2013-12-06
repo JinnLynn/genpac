@@ -12,7 +12,7 @@ import re, base64, time, json
 from ConfigParser import ConfigParser
 import logging
 
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 __author__ = 'JinnLynn'
 __author_email__ = 'eatfishlin@gmail.com'
 __project_page__ = 'http://jeeker.net/projects/genpac/'
@@ -74,9 +74,6 @@ _pac_comment = '''/**
 '''
 
 _pac_funcs = '''
-var D = "DIRECT";
-var P = config[0];
-
 var regExpMatch = function(url, pattern) {
     try {
         return new RegExp(pattern).test(url); 
@@ -86,7 +83,9 @@ var regExpMatch = function(url, pattern) {
 };
 
 var testURL = function(url, pack) {
-    var j = 0;
+    var D = "DIRECT",
+        P = config[0],
+        j = 0;
     for (j in pack[0])
         if(regExpMatch(url, pack[0][j])) return D;
     for (j in pack[1])
@@ -107,15 +106,6 @@ function FindProxyForURL(url, host) {
 }
 '''
 
-_option_value_template ='''选项信息:
-    proxy           : {}
-    gfwlist url     : {}
-    gfwlist proxy   : {}
-    user rule       : {}
-    user rule file  : {}
-    config file     : {}
-    output file     : {}
-'''
 _proxy_type_map = {
     'SOCKS'     : socks.PROXY_TYPE_SOCKS4,
     'SOCKS5'    : socks.PROXY_TYPE_SOCKS5,
@@ -158,7 +148,15 @@ class GenPAC(object):
         self.userRulesContent = ''
 
     def generate(self):
-        options = _option_value_template.format(
+        options = '''Configuration:
+    proxy           : {}
+    gfwlist url     : {}
+    gfwlist proxy   : {}
+    user rule       : {}
+    user rule file  : {}
+    config file     : {}
+    output file     : {}
+        '''.format(
             self.pacProxy, self.gfwlistURL, self.gfwlistProxy,
             ' '.join(self.userRules) if self.userRules else 'None', 
             ' '.join(self.userRuleFiles) if self.userRuleFiles else 'None',
