@@ -102,7 +102,7 @@ function FindProxyForURL(url, host) {
         if (ret !== undefined)
             return ret;
     }   
-    return D;
+    return "DIRECT";
 }
 '''
 
