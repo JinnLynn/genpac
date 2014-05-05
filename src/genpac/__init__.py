@@ -1,16 +1,18 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-import sys, os
-reload(sys)
-sys.setdefaultencoding('utf-8')
-del sys.setdefaultencoding
-
-import socks, socket, urllib2
-import argparse
-from pprint import pprint
-import re, base64, time, json
-from ConfigParser import ConfigParser
+import sys
+import os
+import socket
+import urllib2
+import re
+import base64
+import time
+import json
 import logging
+import argparse
+from ConfigParser import ConfigParser
+from pprint import pprint
+
+import socks
 
 __version__ = '1.0.2'
 __author__ = 'JinnLynn'
@@ -200,29 +202,37 @@ class GenPAC(object):
     # 下载gfwlist
     def fetchGFWList(self):
         self.logger.info('gfwlist获取中...')
+        opener = urllib2.build_opener()
         if self.gfwlistProxy:
             try:
                 # 格式为 代理类型 [用户名:密码]@地址:端口 其中用户名和密码可选
                 expr = re.compile('(PROXY|SOCKS|SOCKS5) (?:(.+):(.+)@)?(.+):(\d+)', re.IGNORECASE)
-                ret = expr.match(self.gfwlistProxy)
-                proxy_type = _proxy_type_map[ret.group(1).upper()]
-                socks.setdefaultproxy(proxy_type, ret.group(4), int(ret.group(5)), True, ret.group(2), ret.group(3))
-                socket.socket = socks.socksocket
+                proxy_type, proxy_usr, proxy_pwd, proxy_host, proxy_port = expr.match(self.gfwlistProxy).groups()
+                proxy_type = _proxy_type_map[proxy_type.upper()]
+                proxy_port = int(proxy_port)
+                # socks使用HTTP代理似乎不太稳定
+                if proxy_type == socks.PROXY_TYPE_HTTP:
+                    proxy_handler = urllib2.ProxyHandler({'http': '{}:{}'.format(proxy_host, proxy_port)})
+                    opener.add_handler(proxy_handler)
+                else:
+                    socks.setdefaultproxy(proxy_type, proxy_host, proxy_port, True, proxy_usr, proxy_pwd)
+                    socket.socket = socks.socksocket
             except Exception, e:
                 self.die('gfwlist代理设置错误: {}'.format(e))
-
+        
         if self.verbose:
-            httpHandler = urllib2.HTTPHandler(debuglevel=1)
-            httpsHandler = urllib2.HTTPSHandler(debuglevel=1)
-            opener = urllib2.build_opener(httpHandler, httpsHandler)
-            urllib2.install_opener(opener)
+            opener.add_handler(urllib2.HTTPHandler(debuglevel=1))
+            opener.add_handler(urllib2.HTTPSHandler(debuglevel=1))
 
         try:
-            res = urllib2.urlopen(self.gfwlistURL)
+            res = opener.open(self.gfwlistURL)
             self.gfwlistModified = res.info().getheader('last-modified')
+            if not self.gfwlistModified:
+                raise Exception('unknow error.')
+            content = res.read()
             #! gfwlist文件内容的第一行内容是不符合语法规则的
             #! 手动将其注释掉
-            self.gfwlistContent = '! {}'.format(base64.decodestring(res.read()))
+            self.gfwlistContent = '! {}'.format(base64.decodestring(content))
         except Exception, e:
             self.die('gfwlist获取失败: {}'.format(e))
         self.logger.info('gfwlist已成功获取，更新时间: {}'.format(self.gfwlistModified))
