@@ -14,7 +14,7 @@ from pprint import pprint
 
 import socks
 
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 __author__ = 'JinnLynn'
 __author_email__ = 'eatfishlin@gmail.com'
 __project_page__ = 'http://jeeker.net/projects/genpac/'
