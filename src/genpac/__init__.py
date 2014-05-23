@@ -212,7 +212,10 @@ class GenPAC(object):
                 proxy_port = int(proxy_port)
                 # socks使用HTTP代理似乎不太稳定
                 if proxy_type == socks.PROXY_TYPE_HTTP:
-                    proxy_handler = urllib2.ProxyHandler({'http': '{}:{}'.format(proxy_host, proxy_port)})
+                    http_proxy = '{}:{}'.format(proxy_host, proxy_port)
+                    if proxy_usr or proxy_pwd:
+                        http_proxy = '{}:{}@{}'.format(proxy_usr, proxy_pwd, http_proxy)
+                    proxy_handler = urllib2.ProxyHandler({'http': http_proxy})
                     opener.add_handler(proxy_handler)
                 else:
                     socks.setdefaultproxy(proxy_type, proxy_host, proxy_port, True, proxy_usr, proxy_pwd)
