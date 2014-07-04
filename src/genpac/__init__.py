@@ -75,7 +75,14 @@ _pac_comment = '''/**
  */
 '''
 
+_pac_config = '''
+var proxy = '{}';
+var rules = {};
+'''
+
 _pac_funcs = '''
+var lastRule = '';
+
 var regExpMatch = function(url, pattern) {
     try {
         return new RegExp(pattern).test(url); 
@@ -84,27 +91,29 @@ var regExpMatch = function(url, pattern) {
     }
 };
 
-var testURL = function(url, pack) {
-    var D = "DIRECT",
-        P = config[0],
-        j = 0;
-    for (j in pack[0])
-        if(regExpMatch(url, pack[0][j])) return D;
-    for (j in pack[1])
-        if (shExpMatch(url, pack[1][j])) return D;
-    for (j in pack[2])
-        if(regExpMatch(url, pack[2][j])) return P;
-    for (j in pack[3])
-        if(shExpMatch(url, pack[3][j])) return P;
+var testURL = function(url, packs) {
+    var last_pack_index = -1;
+    var ret = packs.some(function(pack, pack_index){
+        last_pack_index = pack_index;
+        var match_func = (pack_index % 2 == 0) ? regExpMatch : shExpMatch;
+        return pack.some(function(rule, index){
+            lastRule = rule;
+            if (match_func(url, rule))
+                return true;
+        });
+    });
+    if (ret)
+        return (last_pack_index <= 1) ? 'DIRECT' : proxy;
+    lastRule = '';
 };
 
 function FindProxyForURL(url, host) {
-    for (var i = 1; i < config.length; i++) {
-        var ret = testURL(url, config[i]);
+    for (var i = 0; i < rules.length; i++) {
+        var ret = testURL(url, rules[i]);
         if (ret !== undefined)
             return ret;
-    }   
-    return "DIRECT";
+    }
+    return 'DIRECT';
 }
 '''
 
@@ -308,14 +317,14 @@ class GenPAC(object):
 
     def generatePACContent(self):
         self.logger.info('解析规则并生成PAC内容...')
-        config = [self.pacProxy, self.parseRules(self.userRulesContent), self.parseRules(self.gfwlistContent)]
-        config = 'var config = {};'.format(json.dumps(config, indent=4))
+        rules = [self.parseRules(self.userRulesContent), self.parseRules(self.gfwlistContent)]
+        config = _pac_config.format(self.pacProxy, json.dumps(rules, indent=4))
         comment = _pac_comment.format(
             __version__, 
             time.strftime('%a, %d %b %Y %H:%M:%S GMT', time.gmtime()), 
             self.gfwlistModified
         )
-        pac = '{}\n{}\n{}'.format(comment, config, _pac_funcs)
+        pac = '{}{}{}'.format(comment, config, _pac_funcs)
         if not self.outputFile:
             print(pac)
             return
