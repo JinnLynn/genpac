@@ -92,18 +92,14 @@ var regExpMatch = function(url, pattern) {
 };
 
 var testURL = function(url, packs) {
-    var last_pack_index = -1;
-    var ret = packs.some(function(pack, pack_index){
-        last_pack_index = pack_index;
-        var match_func = (pack_index % 2 == 0) ? regExpMatch : shExpMatch;
-        return pack.some(function(rule, index){
-            lastRule = rule;
-            if (match_func(url, rule))
-                return true;
-        });
-    });
-    if (ret)
-        return (last_pack_index <= 1) ? 'DIRECT' : proxy;
+    for (var i = 0; i < packs.length; i++) {
+        for (var j = 0; j < packs[i].length; j++) {
+            lastRule = packs[i][j];
+            if ( (i % 2 == 0 && regExpMatch(url, lastRule)) 
+                || (i % 2 != 0 && shExpMatch(url, lastRule)))
+                return (i <= 1) ? 'DIRECT' : proxy;
+        }
+    }
     lastRule = '';
 };
 
