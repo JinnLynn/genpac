@@ -25,6 +25,7 @@ _help = '''
 genpac [-h|--help] [-v|version] [--verbose]
        [-p PROXY|--proxy=PROXY]
        [--gfwlist-url=URL] [--gfwlist-proxy=PROXY]
+       [--gfwlist-local=FILE] [--gfwlist-local-ignore-overwrite]
        [--user-rule=RULE] [--user-rule-from=FILE]
        [--config-from=FILE] [--output=FILE]
 
@@ -42,6 +43,10 @@ genpac [-h|--help] [-v|version] [--verbose]
                             格式为 "代理类型 [用户名:密码]@地址:端口" 其中用户名和密码可选，如: 
                               SOCKS5 127.0.0.1:9527
                               SOCKS5 username:password@127.0.0.1:9527
+  --gfwlist-local=FILE      本地gfwlist文件地址，当在线地址获取失败时使用
+  --gfwlist-local-ignore-overwrite
+                            当在线gfwlist成功获取且--gfwlist-local存在时，默认会将在线内容覆盖到本地
+                            此项设置后则不覆盖
   --user-rule=RULE          自定义规则，该选项允许重复使用，如:
                               --user-rule="@@sina.com"
                               --user-rule="||youtube.com"
@@ -72,6 +77,7 @@ _pac_comment = '''/**
  * genpac {} http://jeeker.net/projects/genpac/
  * Generated: {}
  * GFWList Last-Modified: {}
+ * GFWList From: {}
  */
 '''
 
@@ -124,6 +130,7 @@ class GenPAC(object):
         self, 
         pac_proxy=None,
         gfwlist_url=_default_gfwlist_url, gfwlist_proxy=None,
+        gfwlist_local=None, gfwlist_local_ignore_overwrite=False,
         user_rules=[], user_rule_files=[],
         config_file=None,
         output_file=None,
@@ -146,6 +153,8 @@ class GenPAC(object):
         self.pacProxy = pac_proxy if pac_proxy else cfg.get('pac_proxy', None)
         self.gfwlistURL = gfwlist_url if gfwlist_url else cfg.get('gfwlist_url', _default_gfwlist_url)
         self.gfwlistProxy = gfwlist_proxy if gfwlist_proxy else cfg.get('gfwlist_proxy', None)
+        self.gfwlistLocal = gfwlist_local if gfwlist_local else cfg.get('gfwlist_local', None)
+        self.gfwlistLocalIgnoreOverwrite = gfwlist_local_ignore_overwrite
         self.userRules = user_rules if user_rules else []
         self.userRuleFiles = user_rule_files if user_rule_files else cfg.get('user_rule_files', [])
         self.outputFile = output_file if output_file else cfg.get('output_file', None)
@@ -153,26 +162,28 @@ class GenPAC(object):
         self.gfwlistModified = ''
         self.gfwlistContent = ''
         self.userRulesContent = ''
+        self.gfwlistFrom=''
 
     def generate(self):
         options = '''Configuration:
     proxy           : {}
     gfwlist url     : {}
     gfwlist proxy   : {}
+    gfwlist local   : {}
+    ignore overwrite: {}
     user rule       : {}
     user rule file  : {}
     config file     : {}
     output file     : {}
         '''.format(
             self.pacProxy, self.gfwlistURL, self.gfwlistProxy,
+            self.gfwlistLocal,
+            self.gfwlistLocalIgnoreOverwrite,
             ' '.join(self.userRules) if self.userRules else 'None', 
             ' '.join(self.userRuleFiles) if self.userRuleFiles else 'None',
             self.configFile, self.outputFile
         )
         self.logger.info(options)
-        #! pac的代理配置不检查准确性
-        if not self.pacProxy:
-            self.die('没有配置proxy')
         self.fetchGFWList()
         self.getUserRules()
         self.generatePACContent()
@@ -194,6 +205,7 @@ class GenPAC(object):
                 'pac_proxy'         : getv(cfg, 'proxy', None),
                 'gfwlist_url'       : getv(cfg, 'gfwlist-url', _default_gfwlist_url),
                 'gfwlist_proxy'     : getv(cfg, 'gfwlist-proxy', None),
+                'gfwlist_local'     : getv(cfg, 'gfwlist-local', None),
                 'user_rule_files'   : [user_rule_files] if user_rule_files else [], #user_rule_files 应该是个列表
                 'output_file'       : getv(cfg, 'output', None)
             }
@@ -234,16 +246,48 @@ class GenPAC(object):
 
         try:
             res = opener.open(self.gfwlistURL)
-            self.gfwlistModified = res.info().getheader('last-modified')
-            if not self.gfwlistModified:
-                raise Exception('unknow error.')
-            content = res.read()
+            data = res.read()
+            self.parseGFWList(data)
+            self.gfwlistFrom = 'online'
+        except Exception, e:
+            self.logger.info('gfwlist在线获取失败: {}'.format(e))
+            self.readGFWListLocal()
+        else:
+            self.logger.info('gfwlist已成功在线获取，更新时间: {}'.format(self.gfwlistModified))
+            try:
+                if not self.gfwlistLocalIgnoreOverwrite and self.gfwlistLocal:
+                    local_path = self.abspath(self.gfwlistLocal)
+                    with open(local_path, 'w') as fp:
+                        fp.write(data)
+                        self.logger.info('gfwlist已写入本地文件: {}'.format(local_path))
+            except Exception, e:
+                self.logger.info('gfwlist写入本地文件失败: {}'.format(e))
+
+    def readGFWListLocal(self):
+        try:
+            local_path = self.abspath(self.gfwlistLocal)
+            if not os.path.exists(local_path):
+                raise Exception('不存在')
+            with open(local_path, 'r') as fp:
+                self.parseGFWList(fp.read())
+                self.gfwlistFrom = 'local'
+                self.logger.info('gfwlist已成功读取本地文件，更新时间: {}'.format(self.gfwlistModified))
+        except Exception, e:
+            self.die('读取本地gfwlist文件失败: {}'.format(e))
+
+    def parseGFWList(self, data):
+        try:
             #! gfwlist文件内容的第一行内容是不符合语法规则的
             #! 手动将其注释掉
-            self.gfwlistContent = '! {}'.format(base64.decodestring(content))
+            self.gfwlistContent = '! {}'.format(base64.decodestring(data))
+            if 'AutoProxy' not in self.gfwlistContent.splitlines()[0]:
+                raise Exception('文件不是有效的')
+            for line in self.gfwlistContent.splitlines():
+                if line.startswith('!') and 'Last Modified' in line:
+                    self.gfwlistModified = line.replace('!', '').replace('Last Modified', '').replace(':', '', 1).strip()
+                    break
         except Exception, e:
-            self.die('gfwlist获取失败: {}'.format(e))
-        self.logger.info('gfwlist已成功获取，更新时间: {}'.format(self.gfwlistModified))
+            self.die('gfwlist解析失败: {}'.format(e))
 
     # 获取用户定义的规则
     def getUserRules(self):
@@ -318,7 +362,8 @@ class GenPAC(object):
         comment = _pac_comment.format(
             __version__, 
             time.strftime('%a, %d %b %Y %H:%M:%S GMT', time.gmtime()), 
-            self.gfwlistModified
+            self.gfwlistModified,
+            self.gfwlistFrom if self.gfwlistFrom else '-'
         )
         pac = '{}{}{}'.format(comment, config, _pac_funcs)
         if not self.outputFile:
@@ -359,8 +404,10 @@ def main():
         add_help=False      # 默认的帮助输出对中文似乎有问题，不使用
     )
     parser.add_argument('-p', '--proxy')
-    parser.add_argument('--gfwlist-url', default=_default_gfwlist_url)
+    parser.add_argument('--gfwlist-url')
     parser.add_argument('--gfwlist-proxy')
+    parser.add_argument('--gfwlist-local')
+    parser.add_argument('--gfwlist-local-ignore-overwrite', action='store_true', default=False)
     parser.add_argument('--user-rule', action='append')
     parser.add_argument('--user-rule-from', action='append')
     parser.add_argument('--output')
@@ -371,8 +418,12 @@ def main():
     args = parser.parse_args()
     GenPAC(
         args.proxy,
-        gfwlist_url=args.gfwlist_url, gfwlist_proxy=args.gfwlist_proxy,
-        user_rules=args.user_rule, user_rule_files=args.user_rule_from,
+        gfwlist_url=args.gfwlist_url, 
+        gfwlist_proxy=args.gfwlist_proxy,
+        gfwlist_local=args.gfwlist_local, 
+        gfwlist_local_ignore_overwrite=args.gfwlist_local_ignore_overwrite,
+        user_rules=args.user_rule, 
+        user_rule_files=args.user_rule_from,
         config_file=args.config_from,
         output_file=args.output,
         verbose=args.verbose
