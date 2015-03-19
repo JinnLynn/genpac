@@ -1,23 +1,26 @@
-#! /usr/bin/env python
-import os, sys
-sys.path.insert(0, os.path.join((os.path.dirname(os.path.realpath(__file__))), "src"))
-
-from setuptools import setup, find_packages
-
-from genpac import __version__, __author__, __author_email__, __project_page__
+from setuptools import setup
 
 setup(
-    name            = 'genpac',
-    version         = __version__,
-    author          = __author__,
-    author_email    = __author__,
-    url             = __project_page__,
-    license         = open('LICENSE', 'r').read(),
-    description     = open('README.md', 'r').read(),
-    keywords        = 'proxy pac gfwlist gfw',
-    packages        = find_packages('src'),
-    package_dir     = {'' : 'src'},
-    zip_safe        = False,   
-    entry_points    = {
-        'console_scripts': 'genpac=genpac:main'}
+    name='genpac',
+    version='1.0.4',
+    description='convert gfwlist to pac, custom rules supported.',
+    long_description=open('README.md', 'r').read(),
+    author='JinnLynn',
+    author_email='eatfishlin@gmail.com',
+    url='https://github.com/JinnLynn/genpac',
+    packages=['genpac', 'genpac.pysocks'],
+    package_data={
+        'genpac': ['res/*']
+    },
+    entry_points={
+        'console_scripts': 'genpac=genpac:main'
+    },
+    license='MIT',
+    keywords='proxy pac gfwlist gfw',
+    classifiers=[
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
+    ],
 )

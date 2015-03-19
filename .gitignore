@@ -1,6 +1,5 @@
 *.pac
 *.pyc
-*.js
 tmp/
 
 *.egg-info
