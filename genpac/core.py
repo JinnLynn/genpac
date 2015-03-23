@@ -14,8 +14,6 @@ import time
 from .pysocks.socks import PROXY_TYPES as _proxy_types
 from .pysocks.sockshandler import SocksiPyHandler
 
-# from pprint import pprint
-
 __version__ = '1.1.0'
 __author__ = 'JinnLynn <eatfishlin@gmail.com>'
 __license__ = 'The MIT License'
@@ -69,12 +67,12 @@ def parse_args():
     parser.add_argument('--gfwlist-url', default=_default_gfwlist_url)
     parser.add_argument('--gfwlist-proxy')
     parser.add_argument('--gfwlist-local')
-    parser.add_argument('--disable-overwrite', action='store_true', default=False)
+    parser.add_argument('--update-gfwlist-local', action='store_true', default=None)
     parser.add_argument('--user-rule', action='append')
     parser.add_argument('--user-rule-from', action='append')
-    parser.add_argument('--output')
-    parser.add_argument('--config-from')
-    parser.add_argument('-c', '--compress', action='store_true', default=None)
+    parser.add_argument('-o', '--output')
+    parser.add_argument('-c', '--config-from')
+    parser.add_argument('-z', '--compress', action='store_true', default=None)
     parser.add_argument('-v', '--version',
                         action='version', version='%(prog)s {}'.format(__version__))
     parser.add_argument('-h', '--help', action=HelpAction)
@@ -108,6 +106,8 @@ def parse_config():
             args.gfwlist_url = update('gfwlist_url', 'gfwlist-url', _default_gfwlist_url)
             args.gfwlist_proxy = update('gfwlist_proxy', 'gfwlist-proxy')
             args.gfwlist_local = update('gfwlist_local', 'gfwlist-local')
+            args.update_gfwlist_local = conv_bool(
+                update('update_gfwlist_local', 'update-gfwlist-local', False))
             args.proxy = update('proxy', 'proxy')
             args.user_rule_from = update('user_rule_from', 'user-rule-from')
             args.output = update('output', 'output')
@@ -167,7 +167,7 @@ def fetch_gfwlist():
             pass
     else:
         _ret.gfwlist_from = 'online[{}]'.format(_cfg.gfwlist_url)
-        if _cfg.gfwlist_local and not _cfg.disable_overwrite:
+        if _cfg.gfwlist_local and _cfg.update_gfwlist_local:
             with codecs.open(_cfg.gfwlist_local, 'w', 'utf-8') as fp:
                 fp.write(content)
     if not content:
