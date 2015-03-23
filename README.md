@@ -1,40 +1,21 @@
 # GenPAC
 
-代理自动配置(Proxy Auto-config)文件生成工具。
+[![PyPI version]][PyPI]
 
-* 代理规则基于[gfwlist][]
-* 支持用户自定义规则
-* 获取gfwlist时允许独立设置代理
+基于gfwlist的代理自动配置(Proxy Auto-config)文件生成工具，支持自定义规则。
 
-### 要求
-
-* Python 2.7
-* 可用的代理服务器
-
-### 下载
-
-* git clone https://github.com/JinnLynn/genpac.git
-* 直接下载 https://github.com/JinnLynn/genpac/archive/master.zip
+Generate PAC file from gfwlist, custom rules supported. 
 
 ### 安装
 
 ```shell
-$ cd genpac
-$ ./setup.py install #可能需要root权限
-$ genpac -v
-```
-
-  或者也可以直接使用命令
-  
-```shell
-$ cd genpac
-$ ./genpac -v
+$ pip install genpac
 ```
 
 ### 命令帮助
 
 ```
-genpac [-h|--help] [-v|version] [--verbose]
+genpac [-h|--help] [-v|version]
        [-p PROXY|--proxy=PROXY]
        [--gfwlist-url=URL] [--gfwlist-proxy=PROXY]
        [--user-rule=RULE] [--user-rule-from=FILE]
@@ -43,17 +24,16 @@ genpac [-h|--help] [-v|version] [--verbose]
 可选参数:
   -h, --help                显示帮助内容
   -v, --version             显示版本信息
-  --verbose                 输出详细处理过程
   -p PROXY, --proxy=PROXY   PAC文件中使用的代理信息，如:
-                              SOCKS 127.0.0.1:9527
-                              SOCKS5 127.0.0.1:9527; SOCKS 127.0.0.1:9527
-                              PROXY 127.0.0.1:9527
+                              SOCKS 127.0.0.1:8080
+                              SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080
+                              PROXY 127.0.0.1:8080
   --gfwlist-url=URL         gfwlist地址，一般不需要更改，默认: 
                               http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
   --gfwlist-proxy=PROXY     获取gfwlist时的代理设置，如果你可以正常访问gfwlist，则无必要使用该选项
                             格式为 "代理类型 [用户名:密码]@地址:端口" 其中用户名和密码可选，如: 
-                              SOCKS5 127.0.0.1:9527
-                              SOCKS5 username:password@127.0.0.1:9527
+                              SOCKS5 127.0.0.1:8080
+                              SOCKS5 username:password@127.0.0.1:8080
   --user-rule=RULE          自定义规则，该选项允许重复使用，如:
                               --user-rule="@@sina.com"
                               --user-rule="||youtube.com"
@@ -85,10 +65,6 @@ genpac [-h|--help] [-v|version] [--verbose]
 
 规则优先级从高到底为: user-rule > user-rule-from > gfwlist
 
-### PAC文件的使用
-
-如何使用自动代理请自行Google，需要说明的是Mac OSX Lion下的Safari由于其沙盒机制的原因无法使用本地PAC文件，可通过Web Sharing或将PAC文件放在服务器，然后通过http访问。
-
 ## LICENSE
 
 The MIT License.
@@ -97,3 +73,5 @@ The MIT License.
 [sample/config.ini]: https://github.com/JinnLynn/genpac/blob/master/sample/config.ini
 [sample/user-rules.txt]: https://github.com/JinnLynn/genpac/blob/master/sample/user-rules.txt
 [1]:http://jeeker.net
+[PyPI]:            https://pypi.python.org/pypi/genpac
+[PyPI version]:    https://img.shields.io/pypi/v/genpac.svg?style=flat
