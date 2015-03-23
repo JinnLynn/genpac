@@ -27,18 +27,21 @@ _default_gfwlist_url = 'https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwli
 _proxy_types['SOCKS'] = _proxy_types['SOCKS4']
 _proxy_types['PROXY'] = _proxy_types['HTTP']
 
+_help_tpl = 'res/help.txt'
+_pac_tpl = 'res/pac-tpl.js'
+_pac_tpl_min = 'res/pac-tpl.min.js'
+
+_ret = argparse.Namespace()
+_cfg = None
+
 class HelpAction(argparse.Action):
     def __init__(self, option_strings, dest, **kwargs):
         super(HelpAction, self).__init__(option_strings, dest, nargs=0, **kwargs)
 
     def __call__(self, parser, namespace, values, option_string=None):
-        with codecs.open(pkgdata('res/help.txt'), 'r', 'utf-8') as fp:
+        with codecs.open(pkgdata(_help_tpl), 'r', 'utf-8') as fp:
             print(fp.read())
         parser.exit()
-
-
-_ret = argparse.Namespace()
-_cfg = None
 
 def abspath(path):
     if not path:
@@ -71,6 +74,7 @@ def parse_args():
     parser.add_argument('--user-rule-from', action='append')
     parser.add_argument('--output')
     parser.add_argument('--config-from')
+    parser.add_argument('-c', '--compress', action='store_true', default=None)
     parser.add_argument('-v', '--version',
                         action='version', version='%(prog)s {}'.format(__version__))
     parser.add_argument('-h', '--help', action=HelpAction)
@@ -79,14 +83,20 @@ def parse_args():
 def parse_config():
     cfg = {}
     args = parse_args()
+
     def update(name, key, default=None):
         v = getattr(args, name, None)
-        if v:
+        if v is not None:
             return v
         try:
             return cfg.get(key, default).strip(' \'\t"')
         except:
             return default
+
+    def conv_bool(obj):
+        if isinstance(obj, basestring):
+            return True if obj.lower() == 'true' else False
+        return bool(obj)
 
     if args.config_from:
         args.config_from = abspath(args.config_from)
@@ -101,6 +111,7 @@ def parse_config():
             args.proxy = update('proxy', 'proxy')
             args.user_rule_from = update('user_rule_from', 'user-rule-from')
             args.output = update('output', 'output')
+            args.compress = conv_bool(update('compress', 'compress', False))
         except:
             error('read config file fail.')
     if args.user_rule is None:
@@ -188,12 +199,12 @@ def fetch_user_rules():
 def parse_rules(rules):
     def wildcard_to_regexp(pattern):
         pattern = re.sub(r'([\\\+\|\{\}\[\]\(\)\^\$\.\#])', r'\\\1', pattern)
-        #pattern = re.sub(r'\*+', r'*', pattern)
+        # pattern = re.sub(r'\*+', r'*', pattern)
         pattern = re.sub(r'\*', r'.*', pattern)
         pattern = re.sub(r'\？', r'.', pattern)
         return pattern
     # d=direct p=proxy w=wildchar r=regexp
-    result = {'d' : {'w' : [], 'r' : []}, 'p' :{'w' : [], 'r' : []}}
+    result = {'d': {'w': [], 'r': []}, 'p': {'w': [], 'r': []}}
     for line in rules:
         line = line.strip()
         # comment
@@ -232,16 +243,19 @@ def parse_rules(rules):
         if w_or_r == 'w':
             line = '*{}*'.format(line.strip('*'))
         result[d_or_p][w_or_r].append(line)
-    return [result['d']['r'], result['d']['w'], result['p']['r'], result['p']['w'],]
+    return [result['d']['r'], result['d']['w'], result['p']['r'], result['p']['w']]
 
 def generate(gfwlist_rules, user_rules):
     global _ret
     rules = [parse_rules(user_rules), parse_rules(gfwlist_rules)]
-    _ret.rules = json.dumps(rules, indent=4)
+    _ret.rules = json.dumps(rules,
+                            indent=None if _cfg.compress else 4,
+                            separators=(',', ':') if _cfg.compress else None)
     _ret.generated = time.strftime('%a, %d %b %Y %H:%M:%S GMT', time.gmtime())
 
 def output():
-    with codecs.open(pkgdata('res/pac-tpl.js'), 'r', 'utf-8') as fp:
+    pac_tpl = pkgdata(_pac_tpl_min if _cfg.compress else _pac_tpl)
+    with codecs.open(pac_tpl, 'r', 'utf-8') as fp:
         content = fp.read()
 
     content = content.replace('__VERSION__', _ret.version)

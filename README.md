@@ -1,26 +1,28 @@
 # GenPAC
 
-[![PyPI version]][PyPI]
+[![pypi-version]][pypi] [![pypi-license]][pypi]
 
 基于gfwlist的代理自动配置(Proxy Auto-config)文件生成工具，支持自定义规则。
 
 Generate PAC file from gfwlist, custom rules supported. 
 
-### 安装
+### INSTALL
 
 ```shell
 $ pip install genpac
 ```
 
-### 命令帮助
+### COMMAND
 
 ```
 genpac [-h|--help] [-v|version]
        [-p PROXY|--proxy=PROXY]
        [--gfwlist-url=URL] [--gfwlist-proxy=PROXY]
+       [--gfwlist-local=FILE] [--disable-overwrite]
        [--user-rule=RULE] [--user-rule-from=FILE]
        [--config-from=FILE] [--output=FILE]
-              
+       [-c|--compress]
+
 可选参数:
   -h, --help                显示帮助内容
   -v, --version             显示版本信息
@@ -29,24 +31,29 @@ genpac [-h|--help] [-v|version]
                               SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080
                               PROXY 127.0.0.1:8080
   --gfwlist-url=URL         gfwlist地址，一般不需要更改，默认: 
-                              http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
+                              https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
   --gfwlist-proxy=PROXY     获取gfwlist时的代理设置，如果你可以正常访问gfwlist，则无必要使用该选项
                             格式为 "代理类型 [用户名:密码]@地址:端口" 其中用户名和密码可选，如: 
                               SOCKS5 127.0.0.1:8080
                               SOCKS5 username:password@127.0.0.1:8080
+  --gfwlist-local=FILE      本地gfwlist文件地址，当在线地址获取失败时使用
+  --disable-overwrite
+                            当在线gfwlist成功获取且--gfwlist-local存在时，默认会将在线内容覆盖到本地
+                            此项设置后则不覆盖
   --user-rule=RULE          自定义规则，该选项允许重复使用，如:
                               --user-rule="@@sina.com"
                               --user-rule="||youtube.com"
   --user-rule-from=FILE     从文件中读取自定义规则，该选项允许重复使用
   --config-from=FILE        从文件中读取配置信息
   --output=FILE             输出生成的文件，如果没有此选项，将直接打印结果
+  -c, --compress            压缩输出
 ```
 
-### 配置
+### CONFIG
 
 支持通过`--config-from`参数读入配置信息，配置文件书写方法可参考[sample/config.ini][]
 
-### 自定义的代理规则
+### CUSTOM RULES
 
 支持通过`--user-rule`自定义单个规则或`--user-rule-from`读入自定义规则文件，这两个参数均可重复使用。
 
@@ -65,13 +72,10 @@ genpac [-h|--help] [-v|version]
 
 规则优先级从高到底为: user-rule > user-rule-from > gfwlist
 
-## LICENSE
-
-The MIT License.
 
 [gfwlist]: http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
 [sample/config.ini]: https://github.com/JinnLynn/genpac/blob/master/sample/config.ini
 [sample/user-rules.txt]: https://github.com/JinnLynn/genpac/blob/master/sample/user-rules.txt
-[1]:http://jeeker.net
-[PyPI]:            https://pypi.python.org/pypi/genpac
-[PyPI version]:    https://img.shields.io/pypi/v/genpac.svg?style=flat
+[pypi]:             https://pypi.python.org/pypi/genpac
+[pypi-version]:     https://img.shields.io/pypi/v/genpac.svg?style=flat
+[pypi-license]:     https://img.shields.io/pypi/l/genpac.svg?style=flat
