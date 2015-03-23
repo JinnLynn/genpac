@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='genpac',
-    version='1.0.4',
+    version='1.1.0',
     description='convert gfwlist to pac, custom rules supported.',
     long_description=open('README.md', 'r').read(),
     author='JinnLynn',

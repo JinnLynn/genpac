@@ -16,7 +16,7 @@ from .pysocks.sockshandler import SocksiPyHandler
 
 # from pprint import pprint
 
-__version__ = '1.0.4'
+__version__ = '1.1.0'
 __author__ = 'JinnLynn <eatfishlin@gmail.com>'
 __license__ = 'The MIT License'
 __copyright__ = 'Copyright 2013-2015 JinnLynn'
