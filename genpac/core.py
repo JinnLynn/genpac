@@ -59,6 +59,11 @@ def error(*args, **kwargs):
     if kwargs.get('exit', False):
         sys.exit(1)
 
+def replace(content, replaces):
+    for k, v in replaces.items():
+        content = content.replace(k, v)
+    return content
+
 def parse_args():
     parser = argparse.ArgumentParser(
         prog='genpac',
@@ -267,18 +272,18 @@ def output():
     with codecs.open(pac_tpl, 'r', 'utf-8') as fp:
         content = fp.read()
 
-    content = content.replace('__VERSION__', _ret.version)
-    content = content.replace('__GENERATED__', _ret.generated)
-    content = content.replace('__MODIFIED__', _ret.modified)
-    content = content.replace('__GFWLIST_FROM__', _ret.gfwlist_from)
-    content = content.replace('__PROXY__', _ret.proxy)
-    content = content.replace('__RULES__', _ret.rules)
+    content = replace(content, {'__VERSION__' : _ret.version,
+                                '__GENERATED__' : _ret.generated,
+                                '__MODIFIED__' : _ret.modified,
+                                '__GFWLIST_FROM__' : _ret.gfwlist_from,
+                                '__PROXY__' : _ret.proxy,
+                                '__RULES__' : _ret.rules})
 
     if _cfg.base64:
         with codecs.open(pkgdata(_pac_tpl_base64), 'r', 'utf-8') as fp:
-            base64_content = fp.read()
-            content = base64_content.replace('__BASE64__', base64.b64encode(content))
-            content = content.replace('__VERSION__', _ret.version)
+            b64_content = fp.read()
+            content = replace(b64_content, {'__BASE64__' : base64.b64encode(content),
+                                            '__VERSION__' : _ret.version})
 
     file_ = codecs.open(_cfg.output, 'w', 'utf-8') if _cfg.output else sys.stdout
     file_.write(content)
