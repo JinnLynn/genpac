@@ -28,6 +28,7 @@ _proxy_types['PROXY'] = _proxy_types['HTTP']
 _help_tpl = 'res/help.txt'
 _pac_tpl = 'res/pac-tpl.js'
 _pac_tpl_min = 'res/pac-tpl.min.js'
+_pac_tpl_base64 = 'res/pac-tpl.base64.js'
 
 _ret = argparse.Namespace()
 _cfg = None
@@ -73,6 +74,7 @@ def parse_args():
     parser.add_argument('-o', '--output')
     parser.add_argument('-c', '--config-from')
     parser.add_argument('-z', '--compress', action='store_true', default=None)
+    parser.add_argument('--base64', action='store_true', default=None)
     parser.add_argument('-v', '--version',
                         action='version', version='%(prog)s {}'.format(__version__))
     parser.add_argument('-h', '--help', action=HelpAction)
@@ -112,6 +114,9 @@ def parse_config():
             args.user_rule_from = update('user_rule_from', 'user-rule-from')
             args.output = update('output', 'output')
             args.compress = conv_bool(update('compress', 'compress', False))
+            args.base64 = conv_bool(update('base64', 'base64', False))
+            if args.base64:
+                args.compress = True
         except:
             error('read config file fail.')
     if args.user_rule is None:
@@ -129,6 +134,10 @@ def prepare():
     _cfg = parse_config()
     _cfg.output = abspath(_cfg.output)
     _cfg.gfwlist_local = abspath(_cfg.gfwlist_local)
+
+    if _cfg.base64:
+        error('WARNING: some brower DO NOT support pac file which was encoded by base64.')
+
     _ret.version = __version__
     _ret.generated = ''
     _ret.modified = ''
@@ -264,6 +273,12 @@ def output():
     content = content.replace('__GFWLIST_FROM__', _ret.gfwlist_from)
     content = content.replace('__PROXY__', _ret.proxy)
     content = content.replace('__RULES__', _ret.rules)
+
+    if _cfg.base64:
+        with codecs.open(pkgdata(_pac_tpl_base64), 'r', 'utf-8') as fp:
+            base64_content = fp.read()
+            content = base64_content.replace('__BASE64__', base64.b64encode(content))
+            content = content.replace('__VERSION__', _ret.version)
 
     file_ = codecs.open(_cfg.output, 'w', 'utf-8') if _cfg.output else sys.stdout
     file_.write(content)
