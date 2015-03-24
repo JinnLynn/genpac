@@ -104,9 +104,8 @@ def parse_config():
         return bool(obj)
 
     if args.config_from:
-        args.config_from = abspath(args.config_from)
         try:
-            with codecs.open(args.config_from, 'r', 'utf-8') as fp:
+            with codecs.open(abspath(args.config_from), 'r', 'utf-8') as fp:
                 cfg_parser = ConfigParser()
                 cfg_parser.readfp(fp)
                 cfg = dict(cfg_parser.items('config'))
@@ -123,7 +122,7 @@ def parse_config():
             if args.base64:
                 args.compress = True
         except:
-            error('read config file fail.')
+            error('read config file fail.', exit=True)
     if args.user_rule is None:
         args.user_rule = []
     if not isinstance(args.user_rule, list):
@@ -137,8 +136,8 @@ def parse_config():
 def prepare():
     global _cfg, _ret
     _cfg = parse_config()
-    _cfg.output = abspath(_cfg.output)
-    _cfg.gfwlist_local = abspath(_cfg.gfwlist_local)
+    _cfg.output = _cfg.output
+    _cfg.gfwlist_local = _cfg.gfwlist_local
 
     if _cfg.base64:
         error('WARNING: some brower DO NOT support pac file which was encoded by base64.')
@@ -174,7 +173,7 @@ def fetch_gfwlist():
         content = res.read()
     except:
         try:
-            with codecs.open(_cfg.gfwlist_local, 'r', 'utf-8') as fp:
+            with codecs.open(abspath(_cfg.gfwlist_local), 'r', 'utf-8') as fp:
                 content = fp.read()
             _ret.gfwlist_from = 'local[{}]'.format(_cfg.gfwlist_local)
         except:
@@ -182,7 +181,7 @@ def fetch_gfwlist():
     else:
         _ret.gfwlist_from = 'online[{}]'.format(_cfg.gfwlist_url)
         if _cfg.gfwlist_local and _cfg.update_gfwlist_local:
-            with codecs.open(_cfg.gfwlist_local, 'w', 'utf-8') as fp:
+            with codecs.open(abspath(_cfg.gfwlist_local), 'w', 'utf-8') as fp:
                 fp.write(content)
     if not content:
         error('fetch gfwlist fail.', exit=True)
@@ -285,7 +284,9 @@ def output():
             content = replace(b64_content, {'__BASE64__' : base64.b64encode(content),
                                             '__VERSION__' : _ret.version})
 
-    file_ = codecs.open(_cfg.output, 'w', 'utf-8') if _cfg.output else sys.stdout
+    file_ = sys.stdout
+    if _cfg.output and _cfg.output != '-':
+        file_ = codecs.open(abspath(_cfg.output), 'w', 'utf-8')
     file_.write(content)
 
 def main():

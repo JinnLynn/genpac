@@ -30,7 +30,7 @@ genpac [-h|--help] [-v|version]
   --user-rule-from=FILE     从文件中读取自定义规则，该选项允许重复使用
   -c FILE, --config-from=FILE
                             从文件中读取配置信息
-  -o FILE, --output=FILE    输出生成的文件，如果没有此选项，将直接打印结果
+  -o FILE, --output=FILE    输出到文件，无此参数或FILE为-，意味着输出到stdout
   -z, --compress            压缩输出
   --base64                  base64加密输出，注意：部分浏览器并不支持经过base64加密的pac文件
 
