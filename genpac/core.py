@@ -70,7 +70,7 @@ def parse_args():
         add_help=False      # 默认的帮助输出对中文似乎有问题，不使用
     )
     parser.add_argument('-p', '--proxy')
-    parser.add_argument('--gfwlist-url', default=_default_gfwlist_url)
+    parser.add_argument('--gfwlist-url', default=None)
     parser.add_argument('--gfwlist-proxy')
     parser.add_argument('--gfwlist-local')
     parser.add_argument('--update-gfwlist-local', action='store_true', default=None)
@@ -119,6 +119,8 @@ def parse_config():
             args.output = update('output', 'output')
             args.compress = conv_bool(update('compress', 'compress', False))
             args.base64 = conv_bool(update('base64', 'base64', False))
+            if not args.gfwlist_url:
+                args.gfwlist_url = _default_gfwlist_url
             if args.base64:
                 args.compress = True
         except:
@@ -167,8 +169,8 @@ def build_opener():
 def fetch_gfwlist():
     global _ret
     content = ''
-    opener = build_opener()
     try:
+        opener = build_opener()
         res = opener.open(_cfg.gfwlist_url)
         content = res.read()
     except:
@@ -183,8 +185,13 @@ def fetch_gfwlist():
         if _cfg.gfwlist_local and _cfg.update_gfwlist_local:
             with codecs.open(abspath(_cfg.gfwlist_local), 'w', 'utf-8') as fp:
                 fp.write(content)
+    
     if not content:
-        error('fetch gfwlist fail.', exit=True)
+        if _cfg.gfwlist_url != '-' or _cfg.gfwlist_local:
+            error('fetch gfwlist fail.', exit=True)
+        else:
+            _ret.gfwlist_from = 'unused'
+
     try:
         content = '! {}'.format(base64.decodestring(content))
         content = content.splitlines()
@@ -194,6 +201,9 @@ def fetch_gfwlist():
                 break
     except:
         pass
+    if not _ret.modified:
+        _ret.modified = '-'
+
     return content
 
 def fetch_user_rules():

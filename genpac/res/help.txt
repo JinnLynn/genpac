@@ -12,27 +12,27 @@ genpac [-h|--help] [-v|version]
 可选参数:
   -h, --help                帮助
   -v, --version             版本信息
-  -p PROXY, --proxy=PROXY   PAC文件中使用的代理信息，如:
+  -p PROXY, --proxy=PROXY   PAC文件中使用的代理信息, 如:
                               SOCKS 127.0.0.1:8080
                               SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080
                               PROXY 127.0.0.1:8080
-  --gfwlist-proxy=PROXY     获取gfwlist时的代理设置，如果你可以正常访问gfwlist，则无必要使用该选项
-                            格式为 "代理类型 [用户名:密码]@地址:端口" 其中用户名和密码可选，如: 
+  --gfwlist-proxy=PROXY     获取gfwlist时的代理设置, 如果你可以正常访问gfwlist, 则无必要使用该选项
+                            格式为 "代理类型 [用户名:密码]@地址:端口" 其中用户名和密码可选, 如:
                               SOCKS5 127.0.0.1:8080
                               SOCKS5 username:password@127.0.0.1:8080
-  --gfwlist-url=URL         gfwlist地址，一般不需要更改，默认: 
+  --gfwlist-url=URL         gfwlist网址，无此参数或URL为空则使用默认地址, URL为-则不在线获取
                               https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
-  --gfwlist-local=FILE      本地gfwlist文件地址，当在线地址获取失败时使用
-  --update-gfwlist-local    当在线gfwlist成功获取且gfwlist-local存在时，更新gfwlist-local内容
-  --user-rule=RULE          自定义规则，该选项允许重复使用，如:
+  --gfwlist-local=FILE      本地gfwlist文件地址, 当在线地址获取失败时使用
+  --update-gfwlist-local    当在线gfwlist成功获取且gfwlist-local存在时, 更新gfwlist-local内容
+  --user-rule=RULE          自定义规则, 该参数允许重复使用，如:
                               --user-rule="@@sina.com"
                               --user-rule="||youtube.com"
-  --user-rule-from=FILE     从文件中读取自定义规则，该选项允许重复使用
+  --user-rule-from=FILE     从文件中读取自定义规则, 该参数允许重复使用
   -c FILE, --config-from=FILE
                             从文件中读取配置信息
-  -o FILE, --output=FILE    输出到文件，无此参数或FILE为-，意味着输出到stdout
+  -o FILE, --output=FILE    输出到文件, 无此参数或FILE为-, 意味着输出到stdout
   -z, --compress            压缩输出
-  --base64                  base64加密输出，注意：部分浏览器并不支持经过base64加密的pac文件
+  --base64                  base64加密输出, 注意: 部分浏览器并不支持经过base64加密的pac文件
 
 
 用户自定义规则语法:
