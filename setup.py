@@ -2,9 +2,9 @@ from setuptools import setup
 
 setup(
     name='genpac',
-    version='1.1.0',
+    version='1.2.0',
     description='convert gfwlist to pac, custom rules supported.',
-    long_description=open('README.md', 'r').read(),
+    long_description=open('README.rst', 'r').read(),
     author='JinnLynn',
     author_email='eatfishlin@gmail.com',
     url='https://github.com/JinnLynn/genpac',
