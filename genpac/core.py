@@ -103,6 +103,11 @@ def parse_config():
             return True if obj.lower() == 'true' else False
         return bool(obj)
 
+    def list_v(obj, sep=','):
+        obj = obj if obj else []
+        obj = obj if isinstance(obj, list) else [obj]
+        return obj if not sep else [s.strip() for s in sep.join(obj).split(sep) if s.strip()]
+
     if args.config_from:
         try:
             with codecs.open(abspath(args.config_from), 'r', 'utf-8') as fp:
@@ -125,14 +130,8 @@ def parse_config():
                 args.compress = True
         except:
             error('read config file fail.', exit=True)
-    if args.user_rule is None:
-        args.user_rule = []
-    if not isinstance(args.user_rule, list):
-        args.user_rule = [args.user_rule]
-    if args.user_rule_from is None:
-        args.user_rule_from = []
-    if not isinstance(args.user_rule_from, list):
-        args.user_rule_from = [args.user_rule_from]
+    args.user_rule = list_v(args.user_rule)
+    args.user_rule_from = list_v(args.user_rule_from)
     return args
 
 def prepare():
@@ -185,7 +184,7 @@ def fetch_gfwlist():
         if _cfg.gfwlist_local and _cfg.update_gfwlist_local:
             with codecs.open(abspath(_cfg.gfwlist_local), 'w', 'utf-8') as fp:
                 fp.write(content)
-    
+
     if not content:
         if _cfg.gfwlist_url != '-' or _cfg.gfwlist_local:
             error('fetch gfwlist fail.', exit=True)
