@@ -10,6 +10,7 @@ import re
 import base64
 import json
 import time
+import shutil
 
 from .pysocks.socks import PROXY_TYPES as _proxy_types
 from .pysocks.sockshandler import SocksiPyHandler
@@ -29,6 +30,8 @@ _help_tpl = 'res/help.txt'
 _pac_tpl = 'res/pac-tpl.js'
 _pac_tpl_min = 'res/pac-tpl.min.js'
 _pac_tpl_base64 = 'res/pac-tpl.base64.js'
+_config_sample = 'res/config-sample.ini'
+_user_rule_sample = 'res/user-rules-sample.txt'
 
 _ret = argparse.Namespace()
 _cfg = None
@@ -80,6 +83,7 @@ def parse_args():
     parser.add_argument('-c', '--config-from')
     parser.add_argument('-z', '--compress', action='store_true', default=None)
     parser.add_argument('--base64', action='store_true', default=None)
+    parser.add_argument('--init', nargs='?', const=True, default=False)
     parser.add_argument('-v', '--version',
                         action='version', version='%(prog)s {}'.format(__version__))
     parser.add_argument('-h', '--help', action=HelpAction)
@@ -140,6 +144,8 @@ def prepare():
     _cfg.output = _cfg.output
     _cfg.gfwlist_local = _cfg.gfwlist_local
 
+    init_sample()
+
     if _cfg.base64:
         error('WARNING: some brower DO NOT support pac file which was encoded by base64.')
 
@@ -149,6 +155,25 @@ def prepare():
     _ret.gfwlist_from = ''
     _ret.proxy = _cfg.proxy if _cfg.proxy else 'DIRECT'
     _ret.rules = ''
+
+def init_sample():
+    if not _cfg.init:
+        return
+    try:
+        path = abspath(_cfg.init if isinstance(_cfg.init, basestring) else '.')
+        if not os.path.isdir(path):
+            os.makedirs(path)
+        config_dst = os.path.join(path, 'config.ini')
+        user_rule_dst = os.path.join(path, 'user-rules.txt')
+        if os.path.exists(config_dst) or os.path.exists(user_rule_dst):
+            if raw_input('file already exists, overwrite?[y|n]: ').lower() != 'y':
+                raise Exception('file already exists.')
+        shutil.copyfile(pkgdata(_config_sample), config_dst)
+        shutil.copyfile(pkgdata(_user_rule_sample), user_rule_dst)
+    except Exception as e:
+        error('init fail: {}'.format(e), exit=True)
+    print('init success.')
+    sys.exit()
 
 def build_opener():
     if not _cfg.gfwlist_proxy:

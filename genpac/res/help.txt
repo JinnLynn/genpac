@@ -8,6 +8,7 @@ genpac [-h|--help] [-v|version]
        [-c FILE|--config-from=FILE] [-o FILE|--output=FILE]
        [-z|--compress]
        [--base64]
+       [--init[=PATH]]
 
 可选参数:
   -h, --help                帮助
@@ -33,6 +34,7 @@ genpac [-h|--help] [-v|version]
   -o FILE, --output=FILE    输出到文件, 无此参数或FILE为-, 意味着输出到stdout
   -z, --compress            压缩输出
   --base64                  base64加密输出, 注意: 部分浏览器并不支持经过base64加密的pac文件
+  --init[=PATH]             初始化配置和用户规则文件
 
 
 用户自定义规则语法:
