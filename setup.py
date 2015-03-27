@@ -1,8 +1,14 @@
 from setuptools import setup
 
+def get_version():
+    with open('genpac/core.py') as f:
+        for line in f:
+            if line.startswith('__version__'):
+                return eval(line.split('=')[-1])
+
 setup(
     name='genpac',
-    version='1.2.0',
+    version=get_version(),
     description='convert gfwlist to pac, custom rules supported.',
     long_description=open('README.rst', 'r').read(),
     author='JinnLynn',
