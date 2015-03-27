@@ -15,7 +15,7 @@ import shutil
 from .pysocks.socks import PROXY_TYPES as _proxy_types
 from .pysocks.sockshandler import SocksiPyHandler
 
-__version__ = '1.2.0'
+__version__ = '1.3.0a1'
 __author__ = 'JinnLynn <eatfishlin@gmail.com>'
 __license__ = 'The MIT License'
 __copyright__ = 'Copyright 2013-2015 JinnLynn'
