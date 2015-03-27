@@ -22,7 +22,7 @@ __copyright__ = 'Copyright 2013-2015 JinnLynn'
 
 __all__ = ['main']
 
-_default_gfwlist_url = 'https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt'
+_default_url = 'https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt'
 _proxy_types['SOCKS'] = _proxy_types['SOCKS4']
 _proxy_types['PROXY'] = _proxy_types['HTTP']
 
@@ -36,14 +36,17 @@ _user_rule_sample = 'res/user-rules-sample.txt'
 _ret = argparse.Namespace()
 _cfg = None
 
+
 class HelpAction(argparse.Action):
     def __init__(self, option_strings, dest, **kwargs):
-        super(HelpAction, self).__init__(option_strings, dest, nargs=0, **kwargs)
+        super(HelpAction, self).__init__(option_strings, dest, nargs=0,
+                                         **kwargs)
 
     def __call__(self, parser, namespace, values, option_string=None):
         with codecs.open(pkgdata(_help_tpl), 'r', 'utf-8') as fp:
             print(fp.read())
         parser.exit()
+
 
 def abspath(path):
     if not path:
@@ -52,20 +55,24 @@ def abspath(path):
         path = os.path.expanduser(path)
     return os.path.abspath(path)
 
+
 def pkgdata(path):
     dir_path = os.path.dirname(__file__)
     dir_path = dir_path if dir_path else os.getcwd()
     return os.path.join(dir_path, path)
+
 
 def error(*args, **kwargs):
     print(*args, file=sys.stderr)
     if kwargs.get('exit', False):
         sys.exit(1)
 
+
 def replace(content, replaces):
     for k, v in replaces.items():
         content = content.replace(k, v)
     return content
+
 
 def parse_args():
     parser = argparse.ArgumentParser(
@@ -76,7 +83,8 @@ def parse_args():
     parser.add_argument('--gfwlist-url', default=None)
     parser.add_argument('--gfwlist-proxy')
     parser.add_argument('--gfwlist-local')
-    parser.add_argument('--update-gfwlist-local', action='store_true', default=None)
+    parser.add_argument('--update-gfwlist-local', action='store_true',
+                        default=None)
     parser.add_argument('--user-rule', action='append')
     parser.add_argument('--user-rule-from', action='append')
     parser.add_argument('-o', '--output')
@@ -84,10 +92,11 @@ def parse_args():
     parser.add_argument('-z', '--compress', action='store_true', default=None)
     parser.add_argument('--base64', action='store_true', default=None)
     parser.add_argument('--init', nargs='?', const=True, default=False)
-    parser.add_argument('-v', '--version',
-                        action='version', version='%(prog)s {}'.format(__version__))
+    parser.add_argument('-v', '--version', action='version',
+                        version='%(prog)s {}'.format(__version__))
     parser.add_argument('-h', '--help', action=HelpAction)
     return parser.parse_args()
+
 
 def parse_config():
     cfg = {}
@@ -110,7 +119,9 @@ def parse_config():
     def list_v(obj, sep=','):
         obj = obj if obj else []
         obj = obj if isinstance(obj, list) else [obj]
-        return obj if not sep else [s.strip() for s in sep.join(obj).split(sep) if s.strip()]
+        if not sep:
+            return obj
+        return [s.strip() for s in sep.join(obj).split(sep) if s.strip()]
 
     if args.config_from:
         try:
@@ -118,7 +129,8 @@ def parse_config():
                 cfg_parser = ConfigParser()
                 cfg_parser.readfp(fp)
                 cfg = dict(cfg_parser.items('config'))
-            args.gfwlist_url = update('gfwlist_url', 'gfwlist-url', _default_gfwlist_url)
+            args.gfwlist_url = update('gfwlist_url', 'gfwlist-url',
+                                      _default_url)
             args.gfwlist_proxy = update('gfwlist_proxy', 'gfwlist-proxy')
             args.gfwlist_local = update('gfwlist_local', 'gfwlist-local')
             args.update_gfwlist_local = conv_bool(
@@ -129,7 +141,7 @@ def parse_config():
             args.compress = conv_bool(update('compress', 'compress', False))
             args.base64 = conv_bool(update('base64', 'base64', False))
             if not args.gfwlist_url:
-                args.gfwlist_url = _default_gfwlist_url
+                args.gfwlist_url = _default_url
             if args.base64:
                 args.compress = True
         except:
@@ -137,6 +149,7 @@ def parse_config():
     args.user_rule = list_v(args.user_rule)
     args.user_rule_from = list_v(args.user_rule_from)
     return args
+
 
 def prepare():
     global _cfg, _ret
@@ -147,7 +160,8 @@ def prepare():
     init_sample()
 
     if _cfg.base64:
-        error('WARNING: some brower DO NOT support pac file which was encoded by base64.')
+        error('WARNING: some brower DO NOT support pac file '
+              'which was encoded by base64.')
 
     _ret.version = __version__
     _ret.generated = ''
@@ -155,6 +169,7 @@ def prepare():
     _ret.gfwlist_from = ''
     _ret.proxy = _cfg.proxy if _cfg.proxy else 'DIRECT'
     _ret.rules = ''
+
 
 def init_sample():
     if not _cfg.init:
@@ -166,7 +181,8 @@ def init_sample():
         config_dst = os.path.join(path, 'config.ini')
         user_rule_dst = os.path.join(path, 'user-rules.txt')
         if os.path.exists(config_dst) or os.path.exists(user_rule_dst):
-            if raw_input('file already exists, overwrite?[y|n]: ').lower() != 'y':
+            ans = raw_input('file already exists, overwrite?[y|n]: ')
+            if ans.lower() != 'y':
                 raise Exception('file already exists.')
         shutil.copyfile(pkgdata(_config_sample), config_dst)
         shutil.copyfile(pkgdata(_user_rule_sample), user_rule_dst)
@@ -175,20 +191,24 @@ def init_sample():
     print('init success.')
     sys.exit()
 
+
 def build_opener():
     if not _cfg.gfwlist_proxy:
         return urllib2.build_opener()
     try:
         # 格式为 代理类型 [用户名:密码]@地址:端口 其中用户名和密码可选
-        matches = re.match(r'(PROXY|SOCKS|SOCKS4|SOCKS5) (?:(.+):(.+)@)?(.+):(\d+)',
-                           _cfg.gfwlist_proxy,
-                           re.IGNORECASE)
+        matches = re.match(
+            r'(PROXY|SOCKS|SOCKS4|SOCKS5) (?:(.+):(.+)@)?(.+):(\d+)',
+            _cfg.gfwlist_proxy,
+            re.IGNORECASE)
         type_, usr, pwd, host, port = matches.groups()
         type_ = _proxy_types[type_.upper()]
         return urllib2.build_opener(
-            SocksiPyHandler(type_, host, int(port), username=usr, password=pwd))
+            SocksiPyHandler(type_, host, int(port),
+                            username=usr, password=pwd))
     except:
         error('gfwlist proxy error.', exit=True)
+
 
 def fetch_gfwlist():
     global _ret
@@ -230,6 +250,7 @@ def fetch_gfwlist():
 
     return content
 
+
 def fetch_user_rules():
     rules = _cfg.user_rule
     for f in _cfg.user_rule_from:
@@ -242,6 +263,7 @@ def fetch_user_rules():
         except:
             error('read user rule file fail. ', f)
     return rules
+
 
 def parse_rules(rules):
     def wildcard_to_regexp(pattern):
@@ -272,8 +294,9 @@ def parse_rules(rules):
             line = re.sub(r'\\\^', r'(?:[^\w\-.%\u0080-\uFFFF]|$)', line)
         elif line.startswith('||'):
             line = wildcard_to_regexp(line[2:])
-            # When using the constructor function, the normal string escape rules (preceding
-            # special characters with \ when included in a string) are necessary.
+            # When using the constructor function, the normal string
+            # escape rules (preceding special characters with \ when included
+            # in a string) are necessary.
             # For example, the following are equivalent:
             # re = new RegExp('\\w+')
             # re = /\w+/
@@ -290,7 +313,9 @@ def parse_rules(rules):
         if w_or_r == 'w':
             line = '*{}*'.format(line.strip('*'))
         result[d_or_p][w_or_r].append(line)
-    return [result['d']['r'], result['d']['w'], result['p']['r'], result['p']['w']]
+    return [result['d']['r'], result['d']['w'],
+            result['p']['r'], result['p']['w']]
+
 
 def generate(gfwlist_rules, user_rules):
     global _ret
@@ -300,28 +325,31 @@ def generate(gfwlist_rules, user_rules):
                             separators=(',', ':') if _cfg.compress else None)
     _ret.generated = time.strftime('%a, %d %b %Y %H:%M:%S GMT', time.gmtime())
 
+
 def output():
     pac_tpl = pkgdata(_pac_tpl_min if _cfg.compress else _pac_tpl)
     with codecs.open(pac_tpl, 'r', 'utf-8') as fp:
         content = fp.read()
 
-    content = replace(content, {'__VERSION__' : _ret.version,
-                                '__GENERATED__' : _ret.generated,
-                                '__MODIFIED__' : _ret.modified,
-                                '__GFWLIST_FROM__' : _ret.gfwlist_from,
-                                '__PROXY__' : _ret.proxy,
-                                '__RULES__' : _ret.rules})
+    content = replace(content, {'__VERSION__': _ret.version,
+                                '__GENERATED__': _ret.generated,
+                                '__MODIFIED__': _ret.modified,
+                                '__GFWLIST_FROM__': _ret.gfwlist_from,
+                                '__PROXY__': _ret.proxy,
+                                '__RULES__': _ret.rules})
 
     if _cfg.base64:
         with codecs.open(pkgdata(_pac_tpl_base64), 'r', 'utf-8') as fp:
             b64_content = fp.read()
-            content = replace(b64_content, {'__BASE64__' : base64.b64encode(content),
-                                            '__VERSION__' : _ret.version})
+            content = replace(b64_content,
+                              {'__BASE64__': base64.b64encode(content),
+                               '__VERSION__': _ret.version})
 
     file_ = sys.stdout
     if _cfg.output and _cfg.output != '-':
         file_ = codecs.open(abspath(_cfg.output), 'w', 'utf-8')
     file_.write(content)
+
 
 def main():
     prepare()
