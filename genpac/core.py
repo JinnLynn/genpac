@@ -77,7 +77,7 @@ def replace(content, replaces):
 def parse_args():
     parser = argparse.ArgumentParser(
         prog='genpac',
-        add_help=False      # 默认的帮助输出对中文似乎有问题，不使用
+        add_help=False
     )
     parser.add_argument('-p', '--proxy')
     parser.add_argument('--gfwlist-url', default=None)
@@ -196,7 +196,7 @@ def build_opener():
     if not _cfg.gfwlist_proxy:
         return urllib2.build_opener()
     try:
-        # 格式为 代理类型 [用户名:密码]@地址:端口 其中用户名和密码可选
+        # format: PROXY|SOCKS|SOCKS4|SOCKS5 [USR:PWD]@HOST:PORT
         matches = re.match(
             r'(PROXY|SOCKS|SOCKS4|SOCKS5) (?:(.+):(.+)@)?(.+):(\d+)',
             _cfg.gfwlist_proxy,
@@ -281,12 +281,11 @@ def parse_rules(rules):
             continue
         d_or_p = 'p'
         w_or_r = 'r'
-        # original_line = line
-        # 例外
+        # exception rules
         if line.startswith('@@'):
             line = line[2:]
             d_or_p = 'd'
-        # 正则表达式语法
+        # regular expressions
         if line.startswith('/') and line.endswith('/'):
             line = line[1:-1]
         elif line.find('^') != -1:
@@ -302,7 +301,7 @@ def parse_rules(rules):
             # re = /\w+/
             # via: http://aptana.com/reference/api/RegExp.html
             # line = r'^[\\w\\-]+:\\/+(?!\\/)(?:[^\\/]+\\.)?' + line
-            # 由于后面输出时使用json.dumps会自动对其转义，因此这里可不使用对\转义
+            # json.dumps will escape `\`
             line = r'^[\w\-]+:\/+(?!\/)(?:[^\/]+\.)?' + line
         elif line.startswith('|') or line.endswith('|'):
             line = wildcard_to_regexp(line)
