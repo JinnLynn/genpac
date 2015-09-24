@@ -22,7 +22,7 @@ __copyright__ = 'Copyright 2013-2015 JinnLynn'
 
 __all__ = ['main']
 
-_default_url = 'https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt'
+_default_url = 'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
 _proxy_types['SOCKS'] = _proxy_types['SOCKS4']
 _proxy_types['PROXY'] = _proxy_types['HTTP']
 

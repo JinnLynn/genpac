@@ -50,7 +50,7 @@ Usage
                                   SOCKS5 127.0.0.1:8080
                                   SOCKS5 username:password@127.0.0.1:8080
       --gfwlist-url=URL         gfwlist网址，无此参数或URL为空则使用默认地址, URL为-则不在线获取
-                                  https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt
+                                  https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
       --gfwlist-local=FILE      本地gfwlist文件地址, 当在线地址获取失败时使用
       --update-gfwlist-local    当在线gfwlist成功获取且gfwlist-local存在时, 更新gfwlist-local内容
       --user-rule=RULE          自定义规则, 该参数允许重复使用或在单个参数中使用`,`分割多个规则，如:
