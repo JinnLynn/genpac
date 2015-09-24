@@ -342,7 +342,10 @@ def output():
             b64_content = fp.read()
             content = replace(b64_content,
                               {'__BASE64__': base64.b64encode(content),
-                               '__VERSION__': _ret.version})
+                               '__VERSION__': _ret.version,
+                               '__GENERATED__': _ret.generated,
+                               '__MODIFIED__': _ret.modified,
+                               '__GFWLIST_FROM__': _ret.gfwlist_from})
 
     file_ = sys.stdout
     if _cfg.output and _cfg.output != '-':
