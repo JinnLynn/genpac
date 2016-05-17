@@ -10,31 +10,35 @@ var rules = __RULES__;
 
 var lastRule = '';
 
-var regExpMatch = function(url, pattern) {
-    try {
-        return new RegExp(pattern).test(url); 
-    } catch(ex) {
-        return false; 
-    }
-};
-
-var testURL = function(url, packs) {
-    for (var i = 0; i < packs.length; i++) {
-        for (var j = 0; j < packs[i].length; j++) {
-            lastRule = packs[i][j];
-            if ( (i % 2 == 0 && regExpMatch(url, lastRule)) 
-                || (i % 2 != 0 && shExpMatch(url, lastRule)))
-                return (i <= 1) ? 'DIRECT' : proxy;
-        }
-    }
-    lastRule = '';
-};
-
 function FindProxyForURL(url, host) {
     for (var i = 0; i < rules.length; i++) {
-        var ret = testURL(url, rules[i]);
-        if (ret !== undefined)
+        ret = testHost(host, i);
+        if (ret != undefined)
             return ret;
     }
     return 'DIRECT';
+}
+
+function testHost(host, index) {
+    for (var i = 0; i < rules[index].length; i++) {
+        for (var j = 0; j < rules[index][i].length; j++) {
+            lastRule = rules[index][i][j]
+            if (host == lastRule || host.endsWith('.' + lastRule))
+                return i % 2 == 0 ? 'DIRECT' : proxy;
+        }
+    }
+    lastRule = '';
+}
+
+// REF: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
+if (!String.prototype.endsWith) {
+    String.prototype.endsWith = function(searchString, position) {
+        var subjectString = this.toString();
+        if (typeof position !== 'number' || !isFinite(position) || Math.floor(position) !== position || position > subjectString.length) {
+            position = subjectString.length;
+        }
+        position -= searchString.length;
+        var lastIndex = subjectString.indexOf(searchString, position);
+        return lastIndex !== -1 && lastIndex === position;
+  };
 }

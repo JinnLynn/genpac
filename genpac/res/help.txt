@@ -33,7 +33,7 @@ genpac [-h|--help] [-v|version]
                             从文件中读取配置信息
   -o FILE, --output=FILE    输出到文件, 无此参数或FILE为-, 意味着输出到stdout
   -z, --compress            压缩输出
-  --base64                  base64加密输出, 注意: 部分浏览器并不支持经过base64加密的pac文件
+  --precise                 精确匹配模式
   --init[=PATH]             初始化配置和用户规则文件
 
 

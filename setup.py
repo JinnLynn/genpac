@@ -14,7 +14,7 @@ setup(
     author='JinnLynn',
     author_email='eatfishlin@gmail.com',
     url='https://github.com/JinnLynn/genpac',
-    packages=['genpac', 'genpac.pysocks'],
+    packages=['genpac', 'genpac.pysocks', 'genpac.publicsuffix'],
     package_data={
         'genpac': ['res/*']
     },
