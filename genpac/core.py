@@ -26,7 +26,8 @@ __copyright__ = 'Copyright 2013-2015 JinnLynn'
 
 __all__ = ['main']
 
-_default_url = 'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
+_default_url = \
+    'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
 _proxy_types['SOCKS'] = _proxy_types['SOCKS4']
 _proxy_types['PROXY'] = _proxy_types['HTTP']
 
@@ -39,8 +40,8 @@ _public_suffix_list = 'res/public_suffix_list.dat'
 
 _cfg = None
 _psl = None
-_gfwlist_from = ''
-_gfwlist_modified = ''
+_gfwlist_from = '-'
+_gfwlist_modified = '-'
 _org_rule = ''
 
 
@@ -93,19 +94,17 @@ def replace(content, replaces):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(
-        prog='genpac',
-        add_help=False
-    )
+    parser = argparse.ArgumentParser(prog='genpac', add_help=False)
     parser.add_argument('-p', '--proxy')
     parser.add_argument('--gfwlist-url', default=None)
     parser.add_argument('--gfwlist-proxy')
     parser.add_argument('--gfwlist-local')
-    parser.add_argument('--update-gfwlist-local', action='store_true',
+    parser.add_argument('--update-gfwlist-local', action='store_true')
+    parser.add_argument('--gfwlist-disabled', action='store_true',
                         default=None)
     parser.add_argument('--user-rule', action='append')
     parser.add_argument('--user-rule-from', action='append')
-    parser.add_argument('--precise', action='store_true', default=False)
+    parser.add_argument('--precise', action='store_true', default=None)
     parser.add_argument('-o', '--output')
     parser.add_argument('-c', '--config-from')
     parser.add_argument('-z', '--compress', action='store_true', default=None)
@@ -147,10 +146,13 @@ def parse_config():
                 cfg_parser = ConfigParser()
                 cfg_parser.readfp(fp)
                 cfg = dict(cfg_parser.items('config'))
+
             args.gfwlist_url = update('gfwlist_url', 'gfwlist-url',
                                       _default_url)
             args.gfwlist_proxy = update('gfwlist_proxy', 'gfwlist-proxy')
             args.gfwlist_local = update('gfwlist_local', 'gfwlist-local')
+            args.gfwlist_disabled = conv_bool(
+                update('gfwlist_disabled', 'gfwlist-disabled', False))
             args.update_gfwlist_local = conv_bool(
                 update('update_gfwlist_local', 'update-gfwlist-local', False))
             args.proxy = update('proxy', 'proxy')
@@ -220,6 +222,9 @@ def build_opener():
 
 def fetch_gfwlist():
     global _gfwlist_from, _gfwlist_modified
+    if _cfg.gfwlist_disabled:
+        return ''
+
     content = ''
     try:
         opener = build_opener()
@@ -242,7 +247,7 @@ def fetch_gfwlist():
         if _cfg.gfwlist_url != '-' or _cfg.gfwlist_local:
             error('fetch gfwlist fail.', exit=True)
         else:
-            _gfwlist_from = 'unused'
+            _gfwlist_from = '-'
 
     try:
         content = '! {}'.format(base64.decodestring(content))
@@ -251,11 +256,10 @@ def fetch_gfwlist():
             if line.startswith('!') and 'Last Modified' in line:
                 _gfwlist_modified = line.split(':', 1)[1].strip()
                 break
+        else:
+            _gfwlist_modified = '-'
     except:
         pass
-
-    if not _gfwlist_modified:
-        _gfwlist_modified = ''
 
     return content
 
@@ -388,7 +392,8 @@ def parse_rules(rules):
         if line.startswith('@@'):
             line = line.lstrip('@|.')
             domain = surmise_domain(line)
-            direct_lst.append(domain) if domain else ignore_lst.append(_org_rule)
+            direct_lst.append(domain) if domain else \
+                ignore_lst.append(_org_rule)
             continue
         elif line.startswith('|'):
             line = line.lstrip('|')
@@ -420,6 +425,7 @@ def get_pac_tpl():
 
 def generate():
     prepare()
+
     gfwlist_rules = fetch_gfwlist()
     user_rules = fetch_user_rules()
 

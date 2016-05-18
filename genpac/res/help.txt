@@ -7,7 +7,6 @@ genpac [-h|--help] [-v|version]
        [--user-rule=RULE] [--user-rule-from=FILE]
        [-c FILE|--config-from=FILE] [-o FILE|--output=FILE]
        [-z|--compress]
-       [--base64]
        [--init[=PATH]]
 
 可选参数:
@@ -25,6 +24,7 @@ genpac [-h|--help] [-v|version]
                               https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
   --gfwlist-local=FILE      本地gfwlist文件地址, 当在线地址获取失败时使用
   --update-gfwlist-local    当在线gfwlist成功获取且gfwlist-local存在时, 更新gfwlist-local内容
+  --gfwlist-disabled        禁止使用gfwlist
   --user-rule=RULE          自定义规则, 该参数允许重复使用或在单个参数中使用`,`分割多个规则，如:
                               --user-rule="@@sina.com" --user-rule="||youtube.com"
                               --user-rule="@@sina.com,||youtube.com"
