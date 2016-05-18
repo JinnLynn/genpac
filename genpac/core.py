@@ -13,6 +13,7 @@ import time
 import shutil
 import urlparse
 import urllib
+import pkgutil
 
 from .pysocks.socks import PROXY_TYPES as _proxy_types
 from .pysocks.sockshandler import SocksiPyHandler
@@ -56,8 +57,7 @@ class HelpAction(argparse.Action):
                                          **kwargs)
 
     def __call__(self, parser, namespace, values, option_string=None):
-        with codecs.open(pkgdata(_help_tpl), 'r', 'utf-8') as fp:
-            print(fp.read())
+        print(resource_data(_help_tpl))
         parser.exit()
 
 
@@ -69,10 +69,15 @@ def abspath(path):
     return os.path.abspath(path)
 
 
-def pkgdata(path):
+def resource_data(path):
+    return pkgutil.get_data('genpac', path)
+
+
+def resource_stream(path, mode='r'):
     dir_path = os.path.dirname(__file__)
     dir_path = dir_path if dir_path else os.getcwd()
-    return os.path.join(dir_path, path)
+    path = os.path.join(dir_path, path)
+    return codecs.open(path, mode, 'utf-8')
 
 
 def error(*args, **kwargs):
@@ -184,8 +189,10 @@ def init_sample():
             ans = raw_input('file already exists, overwrite?[y|n]: ')
             if ans.lower() != 'y':
                 raise Exception('file already exists.')
-        shutil.copyfile(pkgdata(_config_sample), config_dst)
-        shutil.copyfile(pkgdata(_user_rule_sample), user_rule_dst)
+        with open(config_dst, 'w') as fp:
+            fp.write(resource_data(_config_sample))
+        with open(user_rule_dst, 'w') as fp:
+            fp.write(resource_data(_user_rule_sample))
     except Exception as e:
         error('init fail: {}'.format(e), exit=True)
     print('init success.')
@@ -322,8 +329,8 @@ def parse_rules_precise(rules):
 def surmise_domain(rule):
     global _psl
     if not _psl:
-        with codecs.open(pkgdata(_public_suffix_list), 'r', 'utf-8') as fp:
-            _psl = PublicSuffixList(fp)
+        _psl = PublicSuffixList(resource_stream(_public_suffix_list))
+
     domain = ''
 
     rule = clear_asterisk(rule)
@@ -408,7 +415,7 @@ def get_pac_tpl():
         pac_tpl = pac_tpl.split('.')
         pac_tpl.insert(-1, 'min')
         pac_tpl = '.'.join(pac_tpl)
-    return pkgdata(pac_tpl)
+    return resource_data(pac_tpl)
 
 
 def generate():
@@ -423,10 +430,7 @@ def generate():
                        indent=None if _cfg.compress else 4,
                        separators=(',', ':') if _cfg.compress else None)
     generated = time.strftime('%a, %d %b %Y %H:%M:%S GMT', time.gmtime())
-    content = ''
-    pac_tpl = get_pac_tpl()
-    with codecs.open(pac_tpl, 'r', 'utf-8') as fp:
-        content = fp.read()
+    content = get_pac_tpl()
     content = replace(content, {'__VERSION__': __version__,
                                 '__GENERATED__': generated,
                                 '__MODIFIED__': _gfwlist_modified,
