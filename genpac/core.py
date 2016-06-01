@@ -71,14 +71,13 @@ def parse_args():
     parser.add_argument('--gfwlist-proxy')
     parser.add_argument('--gfwlist-local')
     parser.add_argument('--update-gfwlist-local', action='store_true')
-    parser.add_argument('--gfwlist-disabled', action='store_true',
-                        default=None)
+    parser.add_argument('--gfwlist-disabled', action='store_true')
     parser.add_argument('--user-rule', action='append')
     parser.add_argument('--user-rule-from', action='append')
-    parser.add_argument('--precise', action='store_true', default=None)
+    parser.add_argument('--precise', action='store_true')
     parser.add_argument('-o', '--output')
     parser.add_argument('-c', '--config-from')
-    parser.add_argument('-z', '--compress', action='store_true', default=None)
+    parser.add_argument('-z', '--compress', action='store_true')
     parser.add_argument('--init', nargs='?', const=True, default=False)
     parser.add_argument('-v', '--version', action='version',
                         version='%(prog)s {}'.format(__version__))
@@ -384,6 +383,9 @@ def get_pac_tpl():
 
 
 def generate():
+    if not _cfg.proxy:
+        error('PAC requires a proxy value, SEE option --proxy.', exit=True)
+
     gfwlist_rules, gfwlist_from, gfwlist_modified = fetch_gfwlist()
     user_rules = fetch_user_rules()
 
