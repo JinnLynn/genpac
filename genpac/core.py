@@ -65,19 +65,24 @@ def replace(content, replaces):
 
 
 def parse_args():
+    # 如果某选项同时可以在配置文件和命令行中设定，则必须使default=None
+    # 以避免命令行中即使没指定该参数，也会覆盖配置文件中的值
+    # 原因见parse_config() -> update(name, key, default=None)
     parser = argparse.ArgumentParser(prog='genpac', add_help=False)
     parser.add_argument('-p', '--proxy')
     parser.add_argument('--gfwlist-url', default=None)
     parser.add_argument('--gfwlist-proxy')
     parser.add_argument('--gfwlist-local')
-    parser.add_argument('--update-gfwlist-local', action='store_true')
-    parser.add_argument('--gfwlist-disabled', action='store_true')
+    parser.add_argument('--update-gfwlist-local', action='store_true',
+                        default=None)
+    parser.add_argument('--gfwlist-disabled', action='store_true',
+                        default=None)
     parser.add_argument('--user-rule', action='append')
     parser.add_argument('--user-rule-from', action='append')
-    parser.add_argument('--precise', action='store_true')
+    parser.add_argument('--precise', action='store_true', default=None)
     parser.add_argument('-o', '--output')
     parser.add_argument('-c', '--config-from')
-    parser.add_argument('-z', '--compress', action='store_true')
+    parser.add_argument('-z', '--compress', action='store_true', default=None)
     parser.add_argument('--init', nargs='?', const=True, default=False)
     parser.add_argument('-v', '--version', action='version',
                         version='%(prog)s {}'.format(__version__))
@@ -130,12 +135,12 @@ def parse_config():
             args.output = update('output', 'output')
             args.compress = conv_bool(update('compress', 'compress', False))
             args.precise = conv_bool(update('precise', 'precise', False))
-            if not args.gfwlist_url:
-                args.gfwlist_url = GFWLIST_URL
         except:
             error('read config file fail.', exit=True)
     args.user_rule = list_v(args.user_rule)
     args.user_rule_from = list_v(args.user_rule_from)
+    if not args.gfwlist_url:
+        args.gfwlist_url = GFWLIST_URL
     return args
 
 
@@ -214,7 +219,8 @@ def fetch_gfwlist():
 
     if not content:
         if _cfg.gfwlist_url != '-' or _cfg.gfwlist_local:
-            error('fetch gfwlist fail.', exit=True)
+            error('fetch gfwlist fail. online: {} local: {}'.format(
+                    _cfg.gfwlist_url, _cfg.gfwlist_local), exit=True)
         else:
             gfwlist_from = '-'
 
@@ -406,8 +412,11 @@ def generate():
 
     if not _cfg.output or _cfg.output == '-':
         return sys.stdout.write(content)
-    with codecs.open(abspath(_cfg.output), 'w', 'utf-8') as fp:
-        fp.write(content)
+    try:
+        with codecs.open(abspath(_cfg.output), 'w', 'utf-8') as fp:
+            fp.write(content)
+    except Exception as e:
+        error('write output file fail. {}'.format(_cfg.output), exit=True)
 
 
 def main():
