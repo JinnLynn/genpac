@@ -4,9 +4,11 @@ genpac [-h|--help] [-v|version]
        [-p PROXY|--proxy=PROXY]
        [--gfwlist-url=URL] [--gfwlist-proxy=PROXY]
        [--gfwlist-local=FILE] [--update-gfwlist-local]
+       [--gfwlist-disabled]
        [--user-rule=RULE] [--user-rule-from=FILE]
        [-c FILE|--config-from=FILE] [-o FILE|--output=FILE]
        [-z|--compress]
+       [-P|--precise]
        [--init[=PATH]]
 
 可选参数:
@@ -24,7 +26,7 @@ genpac [-h|--help] [-v|version]
                               https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
   --gfwlist-local=FILE      本地gfwlist文件地址, 当在线地址获取失败时使用
   --update-gfwlist-local    当在线gfwlist成功获取且gfwlist-local存在时, 更新gfwlist-local内容
-  --gfwlist-disabled        禁止使用gfwlist
+  --gfwlist-disabled        禁用gfwlist
   --user-rule=RULE          自定义规则, 该参数允许重复使用或在单个参数中使用`,`分割多个规则，如:
                               --user-rule="@@sina.com" --user-rule="||youtube.com"
                               --user-rule="@@sina.com,||youtube.com"
@@ -33,7 +35,7 @@ genpac [-h|--help] [-v|version]
                             从文件中读取配置信息
   -o FILE, --output=FILE    输出到文件, 无此参数或FILE为-, 意味着输出到stdout
   -z, --compress            压缩输出
-  --precise                 精确匹配模式
+  -P, --precise             精确匹配模式
   --init[=PATH]             初始化配置和用户规则文件
 
 

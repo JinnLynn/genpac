@@ -19,10 +19,10 @@ from .pysocks.socks import PROXY_TYPES as _proxy_types
 from .pysocks.sockshandler import SocksiPyHandler
 from .publicsuffix import PublicSuffixList
 
-__version__ = '1.3.1'
+__version__ = '1.4.0b1'
 __author__ = 'JinnLynn <eatfishlin@gmail.com>'
 __license__ = 'The MIT License'
-__copyright__ = 'Copyright 2013-2015 JinnLynn'
+__copyright__ = 'Copyright 2013-2016 JinnLynn'
 
 __all__ = ['main']
 
@@ -79,7 +79,7 @@ def parse_args():
                         default=None)
     parser.add_argument('--user-rule', action='append')
     parser.add_argument('--user-rule-from', action='append')
-    parser.add_argument('--precise', action='store_true', default=None)
+    parser.add_argument('-P', '--precise', action='store_true', default=None)
     parser.add_argument('-o', '--output')
     parser.add_argument('-c', '--config-from')
     parser.add_argument('-z', '--compress', action='store_true', default=None)
