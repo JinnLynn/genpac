@@ -10,7 +10,6 @@ import re
 import base64
 import json
 import time
-import shutil
 import urlparse
 import urllib
 import pkgutil
@@ -19,7 +18,7 @@ from .pysocks.socks import PROXY_TYPES as _proxy_types
 from .pysocks.sockshandler import SocksiPyHandler
 from .publicsuffix import PublicSuffixList
 
-__version__ = '1.4.0b1'
+__version__ = '1.4.0b2'
 __author__ = 'JinnLynn <eatfishlin@gmail.com>'
 __license__ = 'The MIT License'
 __copyright__ = 'Copyright 2013-2016 JinnLynn'
@@ -248,7 +247,7 @@ def fetch_user_rules():
                 file_rules = fp.read().splitlines()
                 rules.extend(file_rules)
         except:
-            error('read user rule file fail. ', f)
+            error('read user rule file fail. ', f, exit=True)
     return rules
 
 
@@ -336,7 +335,6 @@ def surmise_domain(rule):
 def clear_asterisk(rule):
     if rule.find('*') < 0:
         return rule
-    org_rule = rule
     rule = rule.strip('*')
     rule = rule.replace('/*.', '/')
     rule = re.sub(r'/([a-zA-Z0-9]+)\*\.', '/', rule)
@@ -415,7 +413,7 @@ def generate():
     try:
         with codecs.open(abspath(_cfg.output), 'w', 'utf-8') as fp:
             fp.write(content)
-    except Exception as e:
+    except Exception:
         error('write output file fail. {}'.format(_cfg.output), exit=True)
 
 

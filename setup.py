@@ -1,5 +1,6 @@
 from setuptools import setup
 
+
 def get_version():
     with open('genpac/core.py') as f:
         for line in f:

@@ -1,0 +1,4 @@
+! test user rules
+@@||userdefined-direct.com
+@@sina.com
+@@163.com

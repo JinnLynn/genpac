@@ -1,0 +1,6 @@
+! test user rules
+||userdefined-proxy.com
+twitter.com
+youtube.com
+||google.com
+||wikipedia.org
