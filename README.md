@@ -1,6 +1,6 @@
 # GenPAC
 
-[![pypi-version]][pypi] [![pypi-license]][pypi] [![travis-ci-status]][travis-ci] [![dev-badge]]()
+[![pypi-version]][pypi] [![pypi-license]][pypi] [![travis-ci-status]][travis-ci]
 
 基于gfwlist的代理自动配置(Proxy Auto-config)文件生成工具，支持自定义规则。
 
@@ -22,6 +22,8 @@ $ pip install --upgrade https://github.com/JinnLynn/genpac/archive/master.zip
 # 卸载
 $ pip uninstall genpac
 ```
+
+**注意：** 如果安装后，执行时出现无法找到命令的错误，可能是因为`genpac`命令没有被安装到系统路径，如Ububtu 16.04且通过apt-get安装的pip的环境下，`genpac`执行入口文件被安装到了`~/.local/bin`，遇到这种情况，将`~/.local/bin`添加到系统路径，或卸载重新使用sudo安装，都可以解决问题。
 
 ### Usage
 
@@ -105,6 +107,10 @@ genpac [-h|--help] [-v|version]
 
    * 检查--gfwlist-proxy参数或配置gfwlist-proxy值是格式否符合`TYPE HOST:POST`，如`SOCKS5 127.0.0.1:1080、PROXY 127.0.0.1:8080`
    * OSX Linux如果存在http_proxy、https_proxy环境变量，代理可能无法正常使用
+
+1. genpan命令未找到
+   
+   见前文安装章节的注意事项。
 
 ### Examples
 
