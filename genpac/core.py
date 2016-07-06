@@ -18,7 +18,7 @@ from .pysocks.socks import PROXY_TYPES as _proxy_types
 from .pysocks.sockshandler import SocksiPyHandler
 from .publicsuffix import PublicSuffixList
 
-__version__ = '1.4.0'
+__version__ = '1.4.1b1'
 __author__ = 'JinnLynn <eatfishlin@gmail.com>'
 __license__ = 'The MIT License'
 __copyright__ = 'Copyright 2013-2016 JinnLynn'
@@ -63,7 +63,7 @@ def replace(content, replaces):
     return content
 
 
-def parse_args():
+def build_args_parser():
     # 如果某选项同时可以在配置文件和命令行中设定，则必须使default=None
     # 以避免命令行中即使没指定该参数，也会覆盖配置文件中的值
     # 原因见parse_config() -> update(name, key, default=None)
@@ -86,12 +86,14 @@ def parse_args():
     parser.add_argument('-v', '--version', action='version',
                         version='%(prog)s {}'.format(__version__))
     parser.add_argument('-h', '--help', action='store_true')
-    return parser.parse_args()
+    return parser
 
 
-def parse_config():
+def parse_config(parser=None):
     cfg = {}
-    args = parse_args()
+    if not parser:
+        parser = build_args_parser()
+    args = parser.parse_args()
 
     def update(name, key, default=None):
         v = getattr(args, name, None)
@@ -347,18 +349,33 @@ def parse_rules(rules):
     direct_lst = []
     proxy_lst = []
     for line in rules:
+        domain = ''
+
         if not line or line.startswith('!'):
             continue
 
-        if line.find('.*') >= 0 or line.startswith('/'):
-            continue
-
-        domain = ''
         if line.startswith('@@'):
             line = line.lstrip('@|.')
             domain = surmise_domain(line)
             if domain:
                 direct_lst.append(domain)
+            continue
+        elif line.find('.*') >= 0 or line.startswith('/'):
+            line = line.replace('\/', '/').replace('\.', '.')
+            try:
+                m = re.search(r'[a-z0-9]+\..*', line)
+                domain = surmise_domain(m.group(0))
+                if domain:
+                    proxy_lst.append(domain)
+                    continue
+                m = re.search(r'[a-z]+\.\(.*\)', line)
+                m2 = re.split(r'[\(\)]', m.group(0))
+                for tld in re.split(r'\|', m2[1]):
+                    domain = surmise_domain('{}{}'.format(m2[0], tld))
+                    if domain:
+                        proxy_lst.append(domain)
+            except:
+                pass
             continue
         elif line.startswith('|'):
             line = line.lstrip('|')

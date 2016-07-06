@@ -1,6 +1,6 @@
 # GenPAC
 
-[![pypi-version]][pypi] [![pypi-license]][pypi] [![travis-ci-status]][travis-ci]
+[![pypi-version]][pypi] [![pypi-license]][pypi] [![travis-ci-status]][travis-ci] ![dev-badge]
 
 基于gfwlist的代理自动配置(Proxy Auto-config)文件生成工具，支持自定义规则。
 
@@ -153,4 +153,4 @@ genpac -p "SOCKS5 127.0.0.1:1080" --gfwlist-url=- --user-rule-from=~/user-rule.t
 [pypi-version]:     https://img.shields.io/pypi/v/genpac.svg?style=flat&maxAge=86400
 [pypi-license]:     https://img.shields.io/pypi/l/genpac.svg?style=flat&maxAge=86400
 [travis-ci-status]: https://img.shields.io/travis/JinnLynn/genpac.svg?style=flat&maxAge=86400
-[dev-badge]:        https://img.shields.io/badge/dev-1.4.0b2-orange.svg?style=flat&maxAge=86400
+[dev-badge]:        https://img.shields.io/badge/dev-1.4.1b1-orange.svg?style=flat&maxAge=86400

@@ -17,11 +17,6 @@ console.assert('PROXY' == FindProxyForURL('https://r1---sn-a5m7zu7l.googlevideo.
 console.assert('PROXY' == FindProxyForURL('http://appspot.com/', 'appspot.com'));
 console.assert('PROXY' == FindProxyForURL('http://my.appspot.com/', 'my.appspot.com'));
 
-// 在非精确模式下google的国别域名被忽略
-var special_ret = (precise == true) ? 'PROXY' : 'DIRECT'
-console.assert(special_ret == FindProxyForURL('http://www.google.com.af/', 'www.google.com.af'));
-console.assert(special_ret == FindProxyForURL('https://www.google.co.uk/', 'www.google.co.uk'));
-
 // 用户定义规则
 console.assert('PROXY' == FindProxyForURL('http://www.userdefined-proxy.com/', 'www.userdefined-proxy.com'));
 console.assert('DIRECT' == FindProxyForURL('http://www.userdefined-direct.com', 'www.userdefined-direct.com'));
