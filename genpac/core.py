@@ -18,7 +18,7 @@ from .pysocks.socks import PROXY_TYPES as _proxy_types
 from .pysocks.sockshandler import SocksiPyHandler
 from .publicsuffix import PublicSuffixList
 
-__version__ = '1.4.1b1'
+__version__ = '1.4.1'
 __author__ = 'JinnLynn <eatfishlin@gmail.com>'
 __license__ = 'The MIT License'
 __copyright__ = 'Copyright 2013-2016 JinnLynn'

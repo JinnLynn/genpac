@@ -1,6 +1,6 @@
 # GenPAC
 
-[![pypi-version]][pypi] [![pypi-license]][pypi] [![travis-ci-status]][travis-ci] ![dev-badge]
+[![pypi-version]][pypi] [![pypi-license]][pypi] [![travis-ci-status]][travis-ci]
 
 基于gfwlist的代理自动配置(Proxy Auto-config)文件生成工具，支持自定义规则。
 
