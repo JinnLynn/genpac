@@ -23,7 +23,7 @@ function testURL(url, index) {
     for (var i = 0; i < rules[index].length; i++) {
         for (var j = 0; j < rules[index][i].length; j++) {
             lastRule = rules[index][i][j];
-            if ( (i % 2 == 0 && regExpMatch(url, lastRule)) 
+            if ( (i % 2 == 0 && regExpMatch(url, lastRule))
                 || (i % 2 != 0 && shExpMatch(url, lastRule)))
                 return (i <= 1) ? 'DIRECT' : proxy;
         }
@@ -33,8 +33,8 @@ function testURL(url, index) {
 
 function regExpMatch(url, pattern) {
     try {
-        return new RegExp(pattern).test(url); 
+        return new RegExp(pattern).test(url);
     } catch(ex) {
-        return false; 
+        return false;
     }
 };

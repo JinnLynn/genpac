@@ -1,0 +1,21 @@
+#! genpac __VERSION__ https://github.com/JinnLynn/genpac
+version: 2
+adapter:
+__ADAPTER__
+rule:
+    - type: iplist
+      adapter: direct
+      criteria:
+        - 127.0.0.0/8
+        - 192.168.0.0/16
+        - 10.0.0.0/8
+        - 224.0.0.0/8
+        - 169.254.0.0/16
+    - type: dnsfail
+      adapter: __RULE_ADAPTER_ID__
+    - type: domainlist
+      adapter: __RULE_ADAPTER_ID__
+      criteria:
+__CRITERIA__
+#! Generated: __GENERATED__
+#! GFWList: __MODIFIED__ From __GFWLIST_FROM__

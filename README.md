@@ -108,7 +108,7 @@ genpac [-h|--help] [-v|version]
    * 检查--gfwlist-proxy参数或配置gfwlist-proxy值是格式否符合`TYPE HOST:POST`，如`SOCKS5 127.0.0.1:1080、PROXY 127.0.0.1:8080`
    * OSX Linux如果存在http_proxy、https_proxy环境变量，代理可能无法正常使用
 
-1. genpan命令未找到
+1. genpac命令未找到
    
    见前文安装章节的注意事项。
 
