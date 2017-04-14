@@ -13,7 +13,6 @@ from datetime import datetime, timedelta
 from urllib import unquote
 from urllib2 import build_opener
 from urlparse import urlparse
-import pkgutil
 import itertools
 import copy
 from collections import OrderedDict
@@ -26,10 +25,7 @@ from .config import Config
 
 from pprint import pprint
 
-__version__ = '2.0.0a1'
-__author__ = 'JinnLynn <eatfishlin@gmail.com>'
-__license__ = 'The MIT License'
-__copyright__ = 'Copyright 2013-2017 JinnLynn'
+from . import __version__
 
 __all__ = ['gp']
 
@@ -66,20 +62,24 @@ def abspath(path):
     return os.path.abspath(path)
 
 
-def resource_data(path):
-    return pkgutil.get_data('genpac', path).decode('utf-8')
+def open_file(path, mode='r'):
+    path = abspath(path)
+    return codecs.open(path, mode, 'utf-8')
 
 
-def resource_stream(path, mode='r'):
+def get_file_data(path):
+    return open_file(path).read()
+
+
+def open_resource(path, mode='r'):
     dir_path = os.path.dirname(__file__)
     dir_path = dir_path if dir_path else os.getcwd()
     path = os.path.join(dir_path, path)
     return open_file(path, mode)
 
 
-def open_file(path, mode='r'):
-    path = abspath(path)
-    return codecs.open(path, mode, 'utf-8')
+def get_resource_data(path):
+    return open_resource(path).read()
 
 
 def error(*args, **kwargs):
@@ -168,7 +168,7 @@ class GenPAC(object):
             formatter_class=argparse.RawTextHelpFormatter,
             description='获取gfwlist生成多种格式的翻墙工具配置文件, '
                         '支持自定义规则',
-            epilog=resource_data('res/rule-syntax.txt'),
+            epilog=get_resource_data('res/rule-syntax.txt'),
             add_help=False)
         parser.add_argument(
             '-v', '--version', action='version',
@@ -309,9 +309,9 @@ class GenPAC(object):
                 if ans.lower() != 'y':
                     raise Exception('文件已存在')
             with open_file(config_dst, 'w') as fp:
-                fp.write(resource_data('res/config-sample.ini'))
+                fp.write(get_resource_data('res/config-sample.ini'))
             with open_file(user_rule_dst, 'w') as fp:
-                fp.write(resource_data('res/user-rules-sample.txt'))
+                fp.write(get_resource_data('res/user-rules-sample.txt'))
         except Exception as e:
             error('初始化失败: {}'.format(e), exit=True)
         print('已成功初始化')
@@ -564,7 +564,7 @@ class Generator(object):
     def get_public_suffix(self, host):
         if not self._psl:
             self._psl = PublicSuffixList(
-                resource_stream('res/public_suffix_list.dat'))
+                open_resource('res/public_suffix_list.dat'))
         domain = self._psl.get_public_suffix(host)
         return None if domain.find('.') < 0 else domain
 
@@ -638,8 +638,8 @@ class FmtPAC(FmtBase):
     def arguments(cls, parser):
         group = parser.add_argument_group(
             title='PAC',
-            description=
-                '通过代理自动配置文件（PAC）系统或浏览器可自动选择合适的代理服务器')
+            description='通过代理自动配置文件（PAC）系统或浏览器可自动选择合适的'
+                        '代理服务器')
         group.add_argument(
             '--pac-proxy', metavar='PROXY',
             help='代理地址, 如 SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080')
@@ -664,7 +664,7 @@ class FmtPAC(FmtBase):
             pac_tpl = pac_tpl.split('.')
             pac_tpl.insert(-1, 'min')
             pac_tpl = '.'.join(pac_tpl)
-        return resource_data(pac_tpl)
+        return get_resource_data(pac_tpl)
 
     def pre_generate(self):
         if not self.options.pac_proxy:
@@ -710,7 +710,7 @@ class FmtDnsmasq(FmtBase):
 
     @property
     def tpl(self):
-        return resource_data('res/tpl-dnsmasq.ini')
+        return get_resource_data('res/tpl-dnsmasq.ini')
 
     def pre_generate(self):
         self.options.precise = False
@@ -748,15 +748,21 @@ class FmtWingy(FmtBase):
         group.add_argument(
             '--wingy-rule-adapter-id', metavar='ID',
             help='生成规则使用的adapter ID')
+        group.add_argument(
+            '--wingy-template', metavar='FILE',
+            help='自定义模板文件')
 
     @classmethod
     def config(cls, options):
         options['wingy-adapter-opts'] = {}
         options['wingy-rule-adapter-id'] = {}
+        options['wingy-template'] = {}
 
     @property
     def tpl(self):
-        return resource_data('res/tpl-wingy.yaml')
+        if not self.options.wingy_template:
+            return get_resource_data('res/tpl-wingy.yaml')
+        return get_file_data(self.options.wingy_template)
 
     def pre_generate(self):
         self.options.precise = False
@@ -778,9 +784,6 @@ class FmtWingy(FmtBase):
             '__CRITERIA__': '\n'.join(domains),
             })
         return replace(self.tpl, replacements)
-
-    def _parse_ss_URI(uri):
-        pass
 
     def _parse_adapter(self):
         def split(txt, sep):
