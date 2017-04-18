@@ -17,15 +17,14 @@ import itertools
 import copy
 from collections import OrderedDict
 from base64 import b64decode
+from pprint import pprint
 
+from . import __version__
 from .pysocks.socks import PROXY_TYPES as _proxy_types
 from .pysocks.sockshandler import SocksiPyHandler
 from .publicsuffix import PublicSuffixList
 from .config import Config
-
-from pprint import pprint
-
-from . import __version__
+from .deprecated import check_deprecated_args, check_deprecated_config
 
 __all__ = ['gp']
 
@@ -185,7 +184,8 @@ class GenPAC(object):
             title='通用参数')
         group.add_argument(
             '--format', default=None, choices=self._formaters.keys(),
-            help='生成格式, 默认: {}'.format(self._default_format))
+            help='生成格式, 只有指定了格式, 相应格式的参数才作用, '
+                  '默认: {}'.format(self._default_format))
         group.add_argument(
             '--gfwlist-url', default=None, metavar='URL',
             help='gfwlist网址，无此参数或URL为空则使用默认地址, URL为-则不在线获取')
@@ -213,12 +213,6 @@ class GenPAC(object):
         group.add_argument(
             '--user-rule-from', action='append', metavar='FILE',
             help='从文件中读取自定义规则, 使用方法如--user-rule')
-        group.add_argument(
-            '-P', '--precise', action='store_true', default=None,
-            help='精确匹配模式')
-        group.add_argument(
-            '-z', '--compress', action='store_true', default=None,
-            help='压缩输出')
         group.add_argument(
             '-o', '--output', metavar='FILE',
             help='输出到文件, 无此参数或FILE为-, 则输出到stdout')
@@ -257,6 +251,9 @@ class GenPAC(object):
         return dest, v
 
     def parse_options(self):
+        # 检查弃用参数 警告
+        check_deprecated_args()
+
         parser = self.build_args_parser()
         self.walk_formaters('arguments', parser)
         args = parser.parse_args()
@@ -277,8 +274,6 @@ class GenPAC(object):
         opts['gfwlist_update_local'] = {'conv': conv_bool}
         opts['user-rule-from'] = {}
         opts['output'] = {}
-        opts['compress'] = {'conv': conv_bool}
-        opts['precise'] = {'conv': conv_bool}
 
         opts['user-rule'] = {'conv': conv_list}
         opts['user-rule-from'] = {'conv': conv_list}
@@ -291,6 +286,7 @@ class GenPAC(object):
         for c in cfgs:
             cfg = self._default_opts.copy()
             cfg.update(c)
+            check_deprecated_config(cfg.keys())
             job = Namespace.from_dict(cfg)
             for k, v in opts.iteritems():
                 dest, value = self.update_opt(args, cfg, k, **v)
@@ -337,8 +333,6 @@ class GenPAC(object):
 
 
 class Generator(object):
-    _psl = None
-
     def __init__(self, options, formater_cls):
         super(Generator, self).__init__()
         self.options = copy.copy(options)
@@ -350,10 +344,6 @@ class Generator(object):
 
         gfwlist_rules, gfwlist_from, gfwlist_modified = self.fetch_gfwlist()
         user_rules = self.fetch_user_rules()
-
-        func_parse = self.parse_rules_precise if self.options.precise else \
-            self.parse_rules
-        rules = [func_parse(user_rules), func_parse(gfwlist_rules)]
 
         try:
             new_date = local_datetime(gfwlist_modified)
@@ -368,7 +358,8 @@ class Generator(object):
                         '__MODIFIED__': gfwlist_modified,
                         '__GFWLIST_FROM__': gfwlist_from}
 
-        content = self.formater.generate(rules, replacements)
+        content = self.formater.generate(
+            gfwlist_rules, user_rules, replacements)
 
         output = self.options.output
         if not output or output == '-':
@@ -459,6 +450,38 @@ class Generator(object):
             except:
                 error('read user rule file fail. ', f, exit=True)
         return rules
+
+
+gp = GenPAC()
+
+
+class FmtBase(object):
+    _psl = None
+
+    def __init__(self, options=Namespace()):
+        super(FmtBase, self).__init__()
+        self.options = options
+
+    @classmethod
+    def arguments(cls, parser):
+        pass
+
+    @classmethod
+    def config(cls, options):
+        pass
+
+    @property
+    def tpl(self):
+        return ''
+
+    def pre_generate(self):
+        return True
+
+    def generate(self, gfwlist_rules, user_rules, replacements):
+        pass
+
+    def post_generate(self):
+        pass
 
     def parse_rules_precise(self, rules):
         def wildcard_to_regexp(pattern):
@@ -599,36 +622,6 @@ class Generator(object):
         return rule
 
 
-gp = GenPAC()
-
-
-class FmtBase(object):
-    def __init__(self, options=Namespace()):
-        super(FmtBase, self).__init__()
-        self.options = options
-
-    @classmethod
-    def arguments(cls, parser):
-        pass
-
-    @classmethod
-    def config(cls, options):
-        pass
-
-    @property
-    def tpl(self):
-        return ''
-
-    def pre_generate(self):
-        return True
-
-    def generate(self, rules, replacements):
-        pass
-
-    def post_generate(self):
-        pass
-
-
 @gp.formater('pac', default=True)
 class FmtPAC(FmtBase):
     def __init__(self, options=Namespace()):
@@ -643,18 +636,37 @@ class FmtPAC(FmtBase):
         group.add_argument(
             '--pac-proxy', metavar='PROXY',
             help='代理地址, 如 SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080')
+        group.add_argument(
+            '--pac-precise', action='store_true', default=None,
+            help='精确匹配模式')
+        group.add_argument(
+            '--pac-compress', action='store_true', default=None,
+            help='压缩输出')
 
         # 弃用的参数
         group.add_argument(
             '-p', '--proxy', dest='pac_proxy',  metavar='PROXY',
-            help='已弃用参数，等同于--pac-proxy, 后续版本可能删除, 避免使用')
+            help='已弃用参数, 等同于--pac-proxy, 后续版本可能删除, 避免使用')
+        group.add_argument(
+            '-P', '--precise', action='store_true', default=None,
+            dest='pac_precise',
+            help='已弃用参数, 等同于--pac-precise, 后续版本可能删除, 避免使用')
+        group.add_argument(
+            '-z', '--compress', action='store_true', default=None,
+            dest='pac_compress',
+            help='已弃用参数, 等同于--pac-compress, 后续版本可能删除, 避免使用')
+
 
     @classmethod
     def config(cls, options):
         options['pac-proxy'] = {}
+        options['pac-compress'] = {'conv': conv_bool}
+        options['pac-precise'] = {'conv': conv_bool}
 
         # 弃用的选项
         options['proxy'] = {'dest': 'pac_proxy'}
+        options['compress'] = {'conv': conv_bool, 'dest': 'pac_compress'}
+        options['precise'] = {'conv': conv_bool, 'dest': 'pac_precise'}
 
     @property
     def tpl(self):
@@ -672,7 +684,11 @@ class FmtPAC(FmtBase):
             return False
         return True
 
-    def generate(self, rules, replacements):
+    def generate(self, gfwlist_rules, user_rules, replacements):
+        func_parse = self.parse_rules_precise if self.options.pac_precise \
+            else self.parse_rules
+        rules = [func_parse(user_rules), func_parse(gfwlist_rules)]
+
         rules = json.dumps(
             rules,
             indent=None if self.options.compress else 4,
@@ -713,10 +729,11 @@ class FmtDnsmasq(FmtBase):
         return get_resource_data('res/tpl-dnsmasq.ini')
 
     def pre_generate(self):
-        self.options.precise = False
         return True
 
-    def generate(self, rules, replacements):
+    def generate(self, gfwlist_rules, user_rules, replacements):
+        rules = [self.parse_rules(user_rules),
+                 self.parse_rules(gfwlist_rules)]
         dns = self.options.dnsmasq_dns
         ipset = self.options.dnsmasq_ipset
         # 不需要忽略的domain
@@ -765,10 +782,11 @@ class FmtWingy(FmtBase):
         return get_file_data(self.options.wingy_template)
 
     def pre_generate(self):
-        self.options.precise = False
         return True
 
-    def generate(self, rules, replacements):
+    def generate(self, gfwlist_rules, user_rules, replacements):
+        rules = [self.parse_rules(user_rules),
+                 self.parse_rules(gfwlist_rules)]
         # 不需要忽略的domain
         rules = list(set(rules[0][1] + rules[1][1]))
         rules.sort()
