@@ -349,13 +349,16 @@ class GenPAC(object):
         if job.format not in self._formaters:
             exit_error('发现不支持的生成格式: {}, 可选格式为: {}'.format(
                 job.format, ', '.join(self._formaters.keys())))
-        print('-')
-        pprint(job)
+        # print('-')
+        # pprint(job)
         generator = Generator(job, self._formaters[job.format]['cls'])
         generator.generate()
 
 
 class Generator(object):
+    # 在线获取gfwlist的结果
+    _gfwlists = {}
+
     def __init__(self, options, formater_cls):
         super(Generator, self).__init__()
         self.options = copy.copy(options)
@@ -415,6 +418,18 @@ class Generator(object):
             exit_error('解析获取gfwlist的代理`{}`失败'.format(
                 self.options.gfwlist_proxy))
 
+    def fetch_gfwlist_online(self):
+        # 使用类变量缓存gfwlist在线获取的内容
+        url = self.options.gfwlist_url
+        if url in self.__class__._gfwlists:
+            return self.__class__._gfwlists[url]
+        opener = self.init_opener()
+        res = opener.open(url)
+        content = res.read()
+        if content:
+            self.__class__._gfwlists[url] = content
+        return content
+
     def fetch_gfwlist(self):
         if self.options.gfwlist_disabled:
             return [], '-', '-'
@@ -423,9 +438,7 @@ class Generator(object):
         gfwlist_from = '-'
         gfwlist_modified = '-'
         try:
-            opener = self.init_opener()
-            res = opener.open(self.options.gfwlist_url)
-            content = res.read()
+            content = self.fetch_gfwlist_online()
         except:
             try:
                 with open_file(self.options.gfwlist_local) as fp:
