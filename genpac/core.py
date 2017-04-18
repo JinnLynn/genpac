@@ -48,9 +48,19 @@ class Namespace(argparse.Namespace):
         return cls(**d)
 
 
-def err_exit(*args):
+def error(*args, **kwargs):
     print(*args, file=sys.stderr)
-    sys.exit(1)
+    if kwargs.get('exit', False):
+        sys.exit(kwargs.get('exit_code', None) or 1)
+
+
+def exit_error(*args, **kwargs):
+    error(*args, exit=True, exit_code=kwargs.get('code') or 1)
+
+
+def exit_success(*args):
+    print(*args)
+    sys.exit()
 
 
 def abspath(path):
@@ -81,12 +91,6 @@ def get_resource_data(path):
     return open_resource(path).read()
 
 
-def error(*args, **kwargs):
-    print(*args, file=sys.stderr)
-    if kwargs.get('exit', False):
-        sys.exit(1)
-
-
 def replace(text, adict):
     def one_xlat(match):
         return adict[match.group(0)]
@@ -114,6 +118,8 @@ def conv_bool(obj):
 
 
 def conv_list(obj, sep=','):
+    if obj is None:
+        return []
     obj = obj if obj else []
     obj = obj if isinstance(obj, list) else [obj]
     if not sep:
@@ -121,9 +127,16 @@ def conv_list(obj, sep=','):
     return [s.strip() for s in sep.join(obj).split(sep) if s.strip()]
 
 
+def conv_lower(obj):
+    if obj is None:
+        return ''
+    if isinstance(obj, basestring):
+        return obj.lower()
+    return obj
+
+
 class GenPAC(object):
     _formaters = {}
-    _default_format = ''
 
     _jobs = []
     _default_opts = {}
@@ -149,10 +162,9 @@ class GenPAC(object):
 
     def add_formater(self, fmt, cls, **options):
         # TODO: 检查cls是否合法
+        cls._name = fmt
         self._formaters[fmt] = {'cls': cls,
                                 'options': options}
-        if options.get('default', False):
-            self._default_format = fmt
 
     def walk_formaters(self, attr, *args, **kargs):
         for fmter in self._formaters.itervalues():
@@ -168,6 +180,7 @@ class GenPAC(object):
             description='获取gfwlist生成多种格式的翻墙工具配置文件, '
                         '支持自定义规则',
             epilog=get_resource_data('res/rule-syntax.txt'),
+            argument_default=argparse.SUPPRESS,
             add_help=False)
         parser.add_argument(
             '-v', '--version', action='version',
@@ -183,11 +196,10 @@ class GenPAC(object):
         group = parser.add_argument_group(
             title='通用参数')
         group.add_argument(
-            '--format', default=None, choices=self._formaters.keys(),
-            help='生成格式, 只有指定了格式, 相应格式的参数才作用, '
-                  '默认: {}'.format(self._default_format))
+            '--format', choices=self._formaters.keys(),
+            help='生成格式, 只有指定了格式, 相应格式的参数才作用')
         group.add_argument(
-            '--gfwlist-url', default=None, metavar='URL',
+            '--gfwlist-url', metavar='URL',
             help='gfwlist网址，无此参数或URL为空则使用默认地址, URL为-则不在线获取')
         group.add_argument(
             '--gfwlist-proxy', metavar='PROXY',
@@ -199,11 +211,11 @@ class GenPAC(object):
             '--gfwlist-local', metavar='FILE',
             help='本地gfwlist文件地址, 当在线地址获取失败时使用')
         group.add_argument(
-            '--gfwlist-update-local', action='store_true', default=None,
+            '--gfwlist-update-local', action='store_true',
             help='当在线gfwlist成功获取且--gfwlist-local参数存在时, '
                  '更新gfwlist-local内容')
         group.add_argument(
-            '--gfwlist-disabled', action='store_true', default=None,
+            '--gfwlist-disabled', action='store_true',
             help='禁用在线获取gfwlist')
         group.add_argument(
             '--user-rule', action='append', metavar='RULE',
@@ -217,7 +229,7 @@ class GenPAC(object):
             '-o', '--output', metavar='FILE',
             help='输出到文件, 无此参数或FILE为-, 则输出到stdout')
         group.add_argument(
-            '-c', '--config-from',
+            '-c', '--config-from', default=None, metavar='FILE',
             help='从文件中读取配置信息')
 
         return parser
@@ -232,22 +244,30 @@ class GenPAC(object):
                 return (cfg_parser.options('config', True),
                         cfg_parser.options('default'))
         except:
-            err_exit('read config file fail.')
+            exit_error('配置文件读取失败')
 
     def update_opt(self, args, cfgs, key,
                    default=None, conv=None, dest=None, **kwargs):
         if dest is None:
             dest = key.replace('-', '_').lower()
-        v = getattr(args, dest, None)
-        # 只有命令行参数为空时才使用配置文件
-        if v is None:
-            try:
-                v = cfgs.get(key, default).strip(' \'\t"')
-            except:
+
+        if hasattr(args, dest):
+            v = getattr(args, dest)
+        else:
+            replaced = kwargs.get('replaced')
+            if key in cfgs:
+                v = cfgs[key]
+            elif replaced and replaced in cfgs:
+                v = cfgs[replaced]
+            else:
                 v = default
+
+        if isinstance(v, basestring):
+            v = v.strip(' \'\t"')
+
         if conv:
             v = conv(v)
-        # setattr(self.options, name, v)
+
         return dest, v
 
     def parse_options(self):
@@ -265,13 +285,13 @@ class GenPAC(object):
         self._jobs = []
 
         opts = {}
-        opts['format'] = {'default': self._default_format or'pac'}
+        opts['format'] = {'conv': conv_lower}
 
         opts['gfwlist-url'] = {'default': GFWLIST_URL}
         opts['gfwlist-proxy'] = {}
         opts['gfwlist-local'] = {}
         opts['gfwlist-disabled'] = {'conv': conv_bool}
-        opts['gfwlist_update_local'] = {'conv': conv_bool}
+        opts['gfwlist-update-local'] = {'conv': conv_bool}
         opts['user-rule-from'] = {}
         opts['output'] = {}
 
@@ -287,7 +307,8 @@ class GenPAC(object):
             cfg = self._default_opts.copy()
             cfg.update(c)
             check_deprecated_config(cfg.keys())
-            job = Namespace.from_dict(cfg)
+            job = Namespace.from_dict(
+                dict([(k, v) for k, v in cfg.iteritems() if k in opts]))
             for k, v in opts.iteritems():
                 dest, value = self.update_opt(args, cfg, k, **v)
                 job.update(**{dest: value})
@@ -309,9 +330,8 @@ class GenPAC(object):
             with open_file(user_rule_dst, 'w') as fp:
                 fp.write(get_resource_data('res/user-rules-sample.txt'))
         except Exception as e:
-            error('初始化失败: {}'.format(e), exit=True)
-        print('已成功初始化')
-        sys.exit()
+            exit_error('初始化失败: {}'.format(e))
+        exit_success('已成功初始化')
 
     def walk_jobs(self):
         for job in self._jobs:
@@ -324,10 +344,13 @@ class GenPAC(object):
             self.generate(job)
 
     def generate(self, job):
+        if not job.format:
+            exit_error('生成的格式不能为空, 请检查参数--format或配置format.')
         if job.format not in self._formaters:
-            print('formater missing')
-            return
-        # pprint(job)
+            exit_error('发现不支持的生成格式: {}, 可选格式为: {}'.format(
+                job.format, ', '.join(self._formaters.keys())))
+        print('-')
+        pprint(job)
         generator = Generator(job, self._formaters[job.format]['cls'])
         generator.generate()
 
@@ -336,7 +359,7 @@ class Generator(object):
     def __init__(self, options, formater_cls):
         super(Generator, self).__init__()
         self.options = copy.copy(options)
-        self.formater = formater_cls(self.options)
+        self.formater = formater_cls(options=self.options)
 
     def generate(self):
         if not self.formater.pre_generate():
@@ -368,7 +391,7 @@ class Generator(object):
             with open_file(output, 'w') as fp:
                 fp.write(content)
         except Exception:
-            error('write output file fail. {}'.format(output), exit=True)
+            exit_error('写入输出文件`{}`失败'.format(output))
 
         self.formater.post_generate()
 
@@ -389,8 +412,8 @@ class Generator(object):
                 SocksiPyHandler(type_, host, int(port),
                                 username=usr, password=pwd))
         except:
-            error('gfwlist proxy \'{}\' error. '.format(
-                self.options.gfwlist_proxy), exit=True)
+            exit_error('解析获取gfwlist的代理`{}`失败'.format(
+                self.options.gfwlist_proxy))
 
     def fetch_gfwlist(self):
         if self.options.gfwlist_disabled:
@@ -419,16 +442,15 @@ class Generator(object):
 
         if not content:
             if self.options.gfwlist_url != '-' or self.options.gfwlist_local:
-                error('fetch gfwlist fail. online: {} local: {}'.format(
-                    self.options.gfwlist_url, self.options.gfwlist_local),
-                    exit=True)
+                exit_error('获取gfwlist失败. online: {} local: {}'.format(
+                    self.options.gfwlist_url, self.options.gfwlist_local))
             else:
                 gfwlist_from = '-'
 
         try:
             content = '! {}'.format(base64.decodestring(content))
         except:
-            error('base64 decode fail.', exit=True)
+            exit_error('解码gfwlist失败.')
 
         content = content.splitlines()
         for line in content:
@@ -448,7 +470,7 @@ class Generator(object):
                     file_rules = fp.read().splitlines()
                     rules.extend(file_rules)
             except:
-                error('read user rule file fail. ', f, exit=True)
+                exit_error('读取自定义规则文件`{}`失败'.format(f))
         return rules
 
 
@@ -457,10 +479,11 @@ gp = GenPAC()
 
 class FmtBase(object):
     _psl = None
+    _name = ''
 
-    def __init__(self, options=Namespace()):
+    def __init__(self, *args, **kwargs):
         super(FmtBase, self).__init__()
-        self.options = options
+        self.options = kwargs.get('options') or Namespace()
 
     @classmethod
     def arguments(cls, parser):
@@ -483,6 +506,63 @@ class FmtBase(object):
     def post_generate(self):
         pass
 
+    def error(self, msg):
+        error('{}格式生成错误: {}'.format(self._name.upper(), msg))
+
+    # 普通解析，仅匹配域名
+    # 返回格式：[直接访问, 代理访问]
+    def parse_rules(self, rules):
+        direct_lst = []
+        proxy_lst = []
+        for line in rules:
+            domain = ''
+
+            if not line or line.startswith('!'):
+                continue
+
+            if line.startswith('@@'):
+                line = line.lstrip('@|.')
+                domain = self._surmise_domain(line)
+                if domain:
+                    direct_lst.append(domain)
+                continue
+            elif line.find('.*') >= 0 or line.startswith('/'):
+                line = line.replace('\/', '/').replace('\.', '.')
+                try:
+                    m = re.search(r'[a-z0-9]+\..*', line)
+                    domain = self._surmise_domain(m.group(0))
+                    if domain:
+                        proxy_lst.append(domain)
+                        continue
+                    m = re.search(r'[a-z]+\.\(.*\)', line)
+                    m2 = re.split(r'[\(\)]', m.group(0))
+                    for tld in re.split(r'\|', m2[1]):
+                        domain = self._surmise_domain(
+                            '{}{}'.format(m2[0], tld))
+                        if domain:
+                            proxy_lst.append(domain)
+                except:
+                    pass
+                continue
+            elif line.startswith('|'):
+                line = line.lstrip('|')
+            domain = self._surmise_domain(line)
+            if domain:
+                proxy_lst.append(domain)
+
+        proxy_lst = list(set(proxy_lst))
+        direct_lst = list(set(direct_lst))
+
+        direct_lst = [d for d in direct_lst if d not in proxy_lst]
+
+        proxy_lst.sort()
+        direct_lst.sort()
+
+        return [direct_lst, proxy_lst]
+
+    # 精确解析, 匹配具体网址
+    # 返回格式为:
+    #  [直接访问_正则表达式, 直接访问_通配符, 代理访问_正则表达式, 代理访问_通配符]
     def parse_rules_precise(self, rules):
         def wildcard_to_regexp(pattern):
             pattern = re.sub(r'([\\\+\|\{\}\[\]\(\)\^\$\.\#])', r'\\\1',
@@ -535,66 +615,10 @@ class FmtBase(object):
         return [result['d']['r'], result['d']['w'],
                 result['p']['r'], result['p']['w']]
 
-    def parse_rules(self, rules):
-        direct_lst = []
-        proxy_lst = []
-        for line in rules:
-            domain = ''
-
-            if not line or line.startswith('!'):
-                continue
-
-            if line.startswith('@@'):
-                line = line.lstrip('@|.')
-                domain = self.surmise_domain(line)
-                if domain:
-                    direct_lst.append(domain)
-                continue
-            elif line.find('.*') >= 0 or line.startswith('/'):
-                line = line.replace('\/', '/').replace('\.', '.')
-                try:
-                    m = re.search(r'[a-z0-9]+\..*', line)
-                    domain = self.surmise_domain(m.group(0))
-                    if domain:
-                        proxy_lst.append(domain)
-                        continue
-                    m = re.search(r'[a-z]+\.\(.*\)', line)
-                    m2 = re.split(r'[\(\)]', m.group(0))
-                    for tld in re.split(r'\|', m2[1]):
-                        domain = self.surmise_domain(
-                            '{}{}'.format(m2[0], tld))
-                        if domain:
-                            proxy_lst.append(domain)
-                except:
-                    pass
-                continue
-            elif line.startswith('|'):
-                line = line.lstrip('|')
-            domain = self.surmise_domain(line)
-            if domain:
-                proxy_lst.append(domain)
-
-        proxy_lst = list(set(proxy_lst))
-        direct_lst = list(set(direct_lst))
-
-        direct_lst = [d for d in direct_lst if d not in proxy_lst]
-
-        proxy_lst.sort()
-        direct_lst.sort()
-
-        return [direct_lst, proxy_lst]
-
-    def get_public_suffix(self, host):
-        if not self._psl:
-            self._psl = PublicSuffixList(
-                open_resource('res/public_suffix_list.dat'))
-        domain = self._psl.get_public_suffix(host)
-        return None if domain.find('.') < 0 else domain
-
-    def surmise_domain(self, rule):
+    def _surmise_domain(self, rule):
         domain = ''
 
-        rule = self.clear_asterisk(rule)
+        rule = self._clear_asterisk(rule)
         rule = rule.lstrip('.')
 
         if rule.find('%2F') >= 0:
@@ -609,9 +633,16 @@ class FmtBase(object):
         elif rule.find('.') > 0:
             domain = rule
 
-        return self.get_public_suffix(domain)
+        return self._get_public_suffix(domain)
 
-    def clear_asterisk(self, rule):
+    def _get_public_suffix(self, host):
+        if not self._psl:
+            self._psl = PublicSuffixList(
+                open_resource('res/public_suffix_list.dat'))
+        domain = self._psl.get_public_suffix(host)
+        return None if domain.find('.') < 0 else domain
+
+    def _clear_asterisk(self, rule):
         if rule.find('*') < 0:
             return rule
         rule = rule.strip('*')
@@ -622,57 +653,52 @@ class FmtBase(object):
         return rule
 
 
-@gp.formater('pac', default=True)
+@gp.formater('pac')
 class FmtPAC(FmtBase):
-    def __init__(self, options=Namespace()):
-        super(FmtPAC, self).__init__(options)
+    def __init__(self, *args, **kwargs):
+        super(FmtPAC, self).__init__(*args, **kwargs)
 
     @classmethod
     def arguments(cls, parser):
         group = parser.add_argument_group(
-            title='PAC',
+            title=cls._name.upper(),
             description='通过代理自动配置文件（PAC）系统或浏览器可自动选择合适的'
                         '代理服务器')
         group.add_argument(
             '--pac-proxy', metavar='PROXY',
             help='代理地址, 如 SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080')
         group.add_argument(
-            '--pac-precise', action='store_true', default=None,
+            '--pac-precise', action='store_true',
             help='精确匹配模式')
         group.add_argument(
-            '--pac-compress', action='store_true', default=None,
+            '--pac-compress', action='store_true',
             help='压缩输出')
 
         # 弃用的参数
         group.add_argument(
             '-p', '--proxy', dest='pac_proxy',  metavar='PROXY',
-            help='已弃用参数, 等同于--pac-proxy, 后续版本可能删除, 避免使用')
+            help='已弃用参数, 等同于--pac-proxy, 后续版本将删除, 避免使用')
         group.add_argument(
-            '-P', '--precise', action='store_true', default=None,
+            '-P', '--precise', action='store_true',
             dest='pac_precise',
-            help='已弃用参数, 等同于--pac-precise, 后续版本可能删除, 避免使用')
+            help='已弃用参数, 等同于--pac-precise, 后续版本将删除, 避免使用')
         group.add_argument(
-            '-z', '--compress', action='store_true', default=None,
+            '-z', '--compress', action='store_true',
             dest='pac_compress',
-            help='已弃用参数, 等同于--pac-compress, 后续版本可能删除, 避免使用')
+            help='已弃用参数, 等同于--pac-compress, 后续版本将删除, 避免使用')
 
 
     @classmethod
     def config(cls, options):
-        options['pac-proxy'] = {}
-        options['pac-compress'] = {'conv': conv_bool}
-        options['pac-precise'] = {'conv': conv_bool}
-
-        # 弃用的选项
-        options['proxy'] = {'dest': 'pac_proxy'}
-        options['compress'] = {'conv': conv_bool, 'dest': 'pac_compress'}
-        options['precise'] = {'conv': conv_bool, 'dest': 'pac_precise'}
+        options['pac-proxy'] = {'replaced': 'proxy'}
+        options['pac-compress'] = {'conv': conv_bool, 'replaced': 'compress'}
+        options['pac-precise'] = {'conv': conv_bool, 'replaced': 'precise'}
 
     @property
     def tpl(self):
-        pac_tpl = 'res/tpl-pac-precise.js' if self.options.precise else \
+        pac_tpl = 'res/tpl-pac-precise.js' if self.options.pac_precise else \
             'res/tpl-pac.js'
-        if self.options.compress:
+        if self.options.pac_compress:
             pac_tpl = pac_tpl.split('.')
             pac_tpl.insert(-1, 'min')
             pac_tpl = '.'.join(pac_tpl)
@@ -680,9 +706,9 @@ class FmtPAC(FmtBase):
 
     def pre_generate(self):
         if not self.options.pac_proxy:
-            error('代理信息不存在，检查参数--pac-proxy或配置pac-proxy')
+            self.error('代理信息不存在，检查参数--pac-proxy或配置pac-proxy')
             return False
-        return True
+        return super(FmtPAC, self).pre_generate()
 
     def generate(self, gfwlist_rules, user_rules, replacements):
         func_parse = self.parse_rules_precise if self.options.pac_precise \
@@ -691,8 +717,8 @@ class FmtPAC(FmtBase):
 
         rules = json.dumps(
             rules,
-            indent=None if self.options.compress else 4,
-            separators=(',', ':') if self.options.compress else None)
+            indent=None if self.options.pac_compress else 4,
+            separators=(',', ':') if self.options.pac_compress else None)
         replacements.update({'__PROXY__': self.options.pac_proxy,
                              '__RULES__': rules})
         return replace(self.tpl, replacements)
@@ -703,13 +729,13 @@ class FmtDnsmasq(FmtBase):
     _default_dns = '127.0.0.1#53'
     _default_ipset = 'GFWLIST'
 
-    def __init__(self, options=Namespace()):
-        super(FmtDnsmasq, self).__init__(options)
+    def __init__(self, *args, **kwargs):
+        super(FmtDnsmasq, self).__init__(*args, **kwargs)
 
     @classmethod
     def arguments(cls, parser):
         group = parser.add_argument_group(
-            title='DNSMASQ',
+            title=cls._name.upper(),
             description='Dnsmasq配合iptables ipset可实现基于域名的自动直连或代理')
         group.add_argument(
             '--dnsmasq-dns', metavar='DNS',
@@ -727,9 +753,6 @@ class FmtDnsmasq(FmtBase):
     @property
     def tpl(self):
         return get_resource_data('res/tpl-dnsmasq.ini')
-
-    def pre_generate(self):
-        return True
 
     def generate(self, gfwlist_rules, user_rules, replacements):
         rules = [self.parse_rules(user_rules),
@@ -749,13 +772,13 @@ class FmtDnsmasq(FmtBase):
 
 @gp.formater('wingy')
 class FmtWingy(FmtBase):
-    def __init__(self, options=Namespace()):
-        super(FmtWingy, self).__init__(options)
+    def __init__(self, *args, **kwargs):
+        super(FmtWingy, self).__init__(*args, **kwargs)
 
     @classmethod
     def arguments(cls, parser):
         group = parser.add_argument_group(
-            title='WINGY',
+            title=cls._name.upper(),
             description='Wingy是iOS下基于NEKit的代理App')
         group.add_argument(
             '--wingy-adapter-opts', metavar='OPTS',
@@ -780,9 +803,6 @@ class FmtWingy(FmtBase):
         if not self.options.wingy_template:
             return get_resource_data('res/tpl-wingy.yaml')
         return get_file_data(self.options.wingy_template)
-
-    def pre_generate(self):
-        return True
 
     def generate(self, gfwlist_rules, user_rules, replacements):
         rules = [self.parse_rules(user_rules),

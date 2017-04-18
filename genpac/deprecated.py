@@ -38,7 +38,7 @@ def check_deprecated_args():
             continue
         new, ver = v
         deprecation(
-            '在{}中参数{}已被弃用, 即将移除, 可使用: {}'.format(ver, k, new))
+            '在{}中参数{}已被{}取代, 后续版本将删除, 避免使用.'.format(ver, k, new))
 
 
 def check_deprecated_config(keys):
@@ -47,4 +47,4 @@ def check_deprecated_config(keys):
             continue
         new, ver = _deprecated_config[k]
         deprecation(
-            '在{}中配置选项{}已被弃用, 即将移除, 可使用: {}'.format(ver, k, new))
+            '在{}中配置选项{}已被{}取代, 后续版本将删除, 避免使用.'.format(ver, k, new))
