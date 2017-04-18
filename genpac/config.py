@@ -6,8 +6,6 @@ import os
 from ConfigParser import MissingSectionHeaderError, ParsingError
 import StringIO
 
-__all__ = ['Config', 'MissingSectionHeaderError', 'ParsingError']
-
 
 class Config(object):
     _SECTCRE = re.compile(
