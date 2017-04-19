@@ -11,9 +11,9 @@ from base64 import b64decode
 
 
 from . import formater, Namespace
-from .publicsuffix import PublicSuffixList
+from .publicsuffix import get_public_suffix
 from .util import error, conv_bool
-from .util import get_file_data, open_resource, get_resource_data
+from .util import get_file_data, get_resource_path, get_resource_data
 
 
 class FmtBase(object):
@@ -181,10 +181,8 @@ class FmtBase(object):
         return self._get_public_suffix(domain)
 
     def _get_public_suffix(self, host):
-        if not self._psl:
-            self._psl = PublicSuffixList(
-                open_resource('res/public_suffix_list.dat'))
-        domain = self._psl.get_public_suffix(host)
+        dat_path = get_resource_path('res/public_suffix_list.dat')
+        domain = get_public_suffix(host, dat_path)
         return None if domain.find('.') < 0 else domain
 
     def _clear_asterisk(self, rule):
@@ -221,7 +219,7 @@ class FmtPAC(FmtBase):
 
         # 弃用的参数
         group.add_argument(
-            '-p', '--proxy', dest='pac_proxy',  metavar='PROXY',
+            '-p', '--proxy', dest='pac_proxy', metavar='PROXY',
             help='已弃用参数, 等同于--pac-proxy, 后续版本将删除, 避免使用')
         group.add_argument(
             '-P', '--precise', action='store_true',
@@ -363,8 +361,7 @@ class FmtWingy(FmtBase):
         replacements.update({
             '__ADAPTER__': adapter,
             '__RULE_ADAPTER_ID__': self.options.wingy_rule_adapter_id,
-            '__CRITERIA__': '\n'.join(domains),
-            })
+            '__CRITERIA__': '\n'.join(domains)})
         return self.replace(self.tpl, replacements)
 
     def _parse_adapter(self):

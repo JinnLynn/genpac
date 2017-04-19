@@ -377,7 +377,7 @@ class Generator(object):
             naive_date_str, _, offset_str = date_str.rpartition(' ')
             naive_dt = datetime.strptime(
                 naive_date_str, '%a, %d %b %Y %H:%M:%S')
-            offset = int(offset_str[-4:-2])*60 + int(offset_str[-2:])
+            offset = int(offset_str[-4:-2]) * 60 + int(offset_str[-2:])
             if offset_str[0] == "-":
                 offset = -offset
             utc_date = naive_dt - timedelta(minutes=offset)

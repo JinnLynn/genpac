@@ -95,7 +95,7 @@ class Config(object):
                 break
             lineno = lineno + 1
             # comment or blank line?
-            if line.strip() == '' or line[0] in '#;':
+            if not line.strip() or line[0] in '#;':
                 continue
             if line.split(None, 1)[0].lower() == 'rem' and line[0] in "rR":
                 # no leading whitespace
@@ -142,7 +142,7 @@ class Config(object):
                                 # ';' is a comment delimiter only if it follows
                                 # a spacing character
                                 pos = optval.find(';')
-                                if pos != -1 and optval[pos-1].isspace():
+                                if pos != -1 and optval[pos - 1].isspace():
                                     optval = optval[:pos]
                             optval = optval.strip()
                             # allow empty values

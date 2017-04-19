@@ -1,64 +1,99 @@
-"""Public Suffix List module for Python.
+# -*- coding: utf-8 -*-
+# Copyright (c) 2015 nexB Inc.
+# This code is based on Tomaž Šolc's fork of David Wilson's code originally at
+# https://www.tablix.org/~avian/git/publicsuffix.git
+#
+# Copyright (c) 2014 Tomaž Šolc <tomaz.solc@tablix.org>
+#
+# David Wilson's code was originally at:
+# from http://code.google.com/p/python-public-suffix-list/
+#
+# Copyright (c) 2009 David Wilson
+#
+# Permission is hereby granted, free of charge, to any person obtaining a
+# copy of this software and associated documentation files (the "Software"),
+# to deal in the Software without restriction, including without limitation
+# the rights to use, copy, modify, merge, publish, distribute, sublicense,
+# and/or sell copies of the Software, and to permit persons to whom the
+# Software is furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+# DEALINGS IN THE SOFTWARE.
+#
+# The Public Suffix List vendored in this distribution has been downloaded
+# from http://publicsuffix.org/public_suffix_list.dat
+# This data file is licensed under the MPL-2.0 license.
+# http://mozilla.org/MPL/2.0/
+
+"""
+Public Suffix List module for Python.
 """
 
+from __future__ import absolute_import
+from __future__ import unicode_literals
+
 import codecs
-from pkg_resources import resource_stream, get_distribution
-import warnings
+from contextlib import closing
+from datetime import datetime
+import os.path
 
 try:
     from urllib.request import urlopen, Request
 except ImportError:
     from urllib2 import urlopen, Request
 
-PUBLIC_SUFFIX_LIST_URL = 'http://publicsuffix.org/list/public_suffix_list.dat'
+
+BASE_DIR = os.path.dirname(__file__)
+PSL_URL = 'https://publicsuffix.org/list/public_suffix_list.dat'
+PSL_FILE = os.path.join(BASE_DIR, 'public_suffix_list.dat')
+ABOUT_PSL_FILE = os.path.join(BASE_DIR, 'public_suffix_list.ABOUT')
 
 
 def fetch():
-    """Downloads the latest public suffix list from publicsuffix.org.
-
-    Returns a file object containing the public suffix list.
     """
-
-    ua = 'Python-publicsuffix/%s' % (get_distribution(__name__).version)
-    req = Request(PUBLIC_SUFFIX_LIST_URL, headers={'User-Agent': ua})
+    Return a file-like object for the latest public suffix list downloaded from
+    publicsuffix.org
+    """
+    req = Request(PSL_URL, headers={'User-Agent': 'python-publicsuffix2'})
     res = urlopen(req)
-
     try:
         encoding = res.headers.get_content_charset()
     except AttributeError:
         encoding = res.headers.getparam('charset')
-
     f = codecs.getreader(encoding)(res)
-
     return f
 
 
 class PublicSuffixList(object):
-    def __init__(self, input_file=None):
-        """Reads and parses public suffix list.
 
-        input_file is a file object or another iterable that returns
-        lines of a public suffix list file.
-
-        The file format is described at http://publicsuffix.org/list/
+    def __init__(self, psl_file=None):
         """
+        Read and parse a public suffix list. `psl_file` is either a file
+        location string, or a file-like object, or an iterable of lines from a
+        public suffix data file.
 
-        if input_file is None:
-            warnings.warn(
-                ("Using the built-in public suffix ",
-                    "list is deprecated. Please use input_file."),
-                DeprecationWarning, 2)
-            input_stream = resource_stream(__name__, 'public_suffix_list.dat')
-            input_file = codecs.getreader('utf8')(input_stream)
-            do_close = True
+        If psl_file is None, the vendored file named "public_suffix_list.dat" is
+        loaded. It is stored side by side with this Python package.
+
+        The file format is described at http://publicsuffix.org/
+        """
+        # Note: we test for None as we accept empty lists as inputs
+        if psl_file is None or isinstance(psl_file, basestring):
+            with codecs.open(psl_file or PSL_FILE, 'r', 'utf8') as psl:
+                psl = psl.readlines()
         else:
-            do_close = False
-
-        root = self._build_structure(input_file)
+            # assume file-like
+            psl = psl_file
+        root = self._build_structure(psl)
         self.root = self._simplify(root)
-
-        if do_close:
-            input_file.close()
 
     def _find_node(self, parent, parts):
         if not parts:
@@ -68,7 +103,7 @@ class PublicSuffixList(object):
             parent.append({})
 
         assert len(parent) == 2
-        negate, children = parent
+        _negate, children = parent
 
         child = parts.pop()
 
@@ -93,16 +128,14 @@ class PublicSuffixList(object):
         if len(node) == 1:
             return node[0]
 
-        return (
-            node[0], dict((k, self._simplify(v)) for (k, v) in node[1].items())
-            )
+        return (node[0], dict((k, self._simplify(v)) for (k, v) in node[1].items()))
 
     def _build_structure(self, fp):
         root = [0]
 
         for line in fp:
             line = line.strip()
-            if line.startswith('//') or not line:
+            if not line or line.startswith('//'):
                 continue
 
             self._add_rule(root, line.split()[0].lstrip('.'))
@@ -122,13 +155,15 @@ class PublicSuffixList(object):
             for name in ('*', parts[-depth]):
                 child = children.get(name, None)
                 if child is not None:
-                    self._lookup_node(matches, depth+1, child, parts)
+                    self._lookup_node(matches, depth + 1, child, parts)
 
     def get_public_suffix(self, domain):
-        """get_public_suffix("www.example.com") -> "example.com"
+        """
+        Return the public suffix for a `domain` DNS name.
 
-        Calling this function with a DNS name will return the
-        public suffix for that name.
+        For example::
+        >>> get_public_suffix("www.example.com")
+            "example.com"
 
         Note that for internationalized domains the list at
         http://publicsuffix.org uses decoded names, so it is
@@ -143,3 +178,25 @@ class PublicSuffixList(object):
         for i, what in enumerate(hits):
             if what is not None and what == 0:
                 return '.'.join(parts[i:])
+
+
+_PSL = None
+
+
+def get_public_suffix(domain, psl_file=None):
+    """
+    Return the public suffix for a `domain` DNS name.
+    Convenience function that builds and caches a PublicSuffixList object.
+
+    Optionally read, and parse a public suffix list. `psl_file` is either a file
+    location string, or a file-like object, or an iterable of lines from a
+    public suffix data file.
+
+    If psl_file is None, the vendored file named "public_suffix_list.dat" is
+    loaded. It is stored side by side with this Python package.
+
+    The file format is described at http://publicsuffix.org/
+    """
+    global _PSL
+    _PSL = _PSL or PublicSuffixList(psl_file)
+    return _PSL.get_public_suffix(domain)

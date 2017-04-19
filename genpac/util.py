@@ -38,10 +38,14 @@ def get_file_data(path):
     return open_file(path).read()
 
 
-def open_resource(path, mode='r'):
+def get_resource_path(path):
     dir_path = os.path.dirname(__file__)
     dir_path = dir_path if dir_path else os.getcwd()
-    path = os.path.join(dir_path, path)
+    return os.path.join(dir_path, path)
+
+
+def open_resource(path, mode='r'):
+    path = get_resource_path(path)
     return open_file(path, mode)
 
 
