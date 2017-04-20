@@ -4,7 +4,7 @@
 
 基于gfwlist的代理自动配置(Proxy Auto-config)文件生成工具，支持自定义规则。
 
-Generate PAC file from gfwlist, custom rules supported. 
+Generate PAC file from gfwlist, custom rules supported.
 
 ### Installation
 
@@ -78,7 +78,7 @@ genpac [-h|--help] [-v|version]
 自定义规则文件可参考[user-rules-sample.txt][]
 
 自定义规则的语法与gfwlist相同，使用AdBlock Plus过滤规则( http://adblockplus.org/en/filters )，简述如下:
-  
+
 1. 通配符支持，如 `*.example.com/*` 实际书写时可省略 `*` 为 `.example.com/`
 2. 正则表达式支持，以 `\` 开始和结束，如 `\[\w]+:\/\/example.com\\`
 3. 例外规则 `@@` ，如 `@@*.example.com/*` 满足 `@@` 后规则的地址不使用代理
@@ -97,7 +97,7 @@ genpac [-h|--help] [-v|version]
    1.4.0之后生成的PAC文件默认只对域名进行匹配，如规则`.ftchinese.com/channel/video`处理后为`ftchinese.com`，所有在`ftchinese.com`下的网址都将通过匹配，在这种模式下可以减少PAC文件尺寸，并在一定程度上提高效率，推荐使用，但如果你依然想用原有的规则进行精确的网址匹配判断，则使用参数`--precise`或在配置文件中设置`precise=true`即可。
 
 1. 出现`fetch gfwlist fail. `错误
-  
+
    gfwlist是在线获取，某些情况下可能被和谐或其它原因导致获取失败，可以通过以下几种方法解决该问题：
    * 使用`--gfwlist-proxy`参数，通过代理获取gfwlist
    * 通过其它方式下载到本地，再通过`--gfwlist-local`加载
@@ -109,7 +109,7 @@ genpac [-h|--help] [-v|version]
    * OSX Linux如果存在http_proxy、https_proxy环境变量，代理可能无法正常使用
 
 1. genpac命令未找到
-   
+
    见前文安装章节的注意事项。
 
 ### Examples
@@ -153,4 +153,4 @@ genpac -p "SOCKS5 127.0.0.1:1080" --gfwlist-url=- --user-rule-from=~/user-rule.t
 [pypi-version]:     https://img.shields.io/pypi/v/genpac.svg?style=flat&maxAge=86400
 [pypi-license]:     https://img.shields.io/pypi/l/genpac.svg?style=flat&maxAge=86400
 [travis-ci-status]: https://img.shields.io/travis/JinnLynn/genpac.svg?style=flat&maxAge=86400
-[dev-badge]:        https://img.shields.io/badge/dev-1.4.1b1-orange.svg?style=flat&maxAge=86400
+[dev-badge]:        https://img.shields.io/badge/dev-2.0b1-orange.svg?style=flat&maxAge=86400

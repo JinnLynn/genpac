@@ -14,3 +14,4 @@
   配置自定义规则时需谨慎，尽量避免与gfwlist产生冲突，或将一些本不需要代理的网址添加到代理列表
 
   规则优先级从高到底为: user-rule > user-rule-from > gfwlist
+  

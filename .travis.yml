@@ -2,10 +2,10 @@ language: python
 python:
     - 2.7
 before_install:
-    - sudo apt-get update -qq
-    - sudo apt-get install -qq nodejs
-    - pip install pep8 pyflakes coverage
+    - sudo apt update -qq
+    - sudo apt install -qq nodejs
+install:
+    - pip install tox
 script:
-    - pep8 .
-    - pyflakes .
-    - cd test && ./test.sh
+    - tox -e pep8
+    - tox

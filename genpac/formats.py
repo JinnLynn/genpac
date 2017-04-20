@@ -89,8 +89,8 @@ class FmtBase(object):
                 except:
                     pass
                 continue
-            elif line.startswith('|'):
-                line = line.lstrip('|')
+            elif line.startswith('|') or line.endswith('|'):
+                line = line.strip('|')
             domain = self._surmise_domain(line)
             if domain:
                 proxy_lst.append(domain)
@@ -400,7 +400,8 @@ class FmtWingy(FmtBase):
         for opt in split(adapter_opts, ';'):
             k_v = split(opt, ',')
             od = OrderedDict()
-            map(lambda x: od.setdefault(x.split(':')[0], x.split(':')[1]),
+            map(lambda x: od.setdefault(x.split(':')[0].strip(),
+                                        x.split(':')[1].strip()),
                 k_v)
             if 'ss' in od:
                 od = ss_uri(od['id'], od['ss'])

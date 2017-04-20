@@ -19,7 +19,7 @@ from .config import Config
 from .deprecated import check_deprecated_args, check_deprecated_config
 from .util import exit_error, exit_success
 from .util import abspath, open_file, get_resource_data
-from .util import conv_bool, conv_list, conv_lower
+from .util import conv_bool, conv_list, conv_lower, conv_path
 
 
 _GFWLIST_URL = \
@@ -158,7 +158,10 @@ class GenPAC(object):
             v = v.strip(' \'\t"')
 
         if conv:
-            v = conv(v)
+            if not isinstance(conv, list):
+                conv = [conv]
+            for c in conv:
+                v = c(v)
 
         return dest, v
 
@@ -181,14 +184,13 @@ class GenPAC(object):
 
         opts['gfwlist-url'] = {'default': _GFWLIST_URL}
         opts['gfwlist-proxy'] = {}
-        opts['gfwlist-local'] = {}
+        opts['gfwlist-local'] = {'conv': conv_path}
         opts['gfwlist-disabled'] = {'conv': conv_bool}
         opts['gfwlist-update-local'] = {'conv': conv_bool}
-        opts['user-rule-from'] = {}
         opts['output'] = {}
 
         opts['user-rule'] = {'conv': conv_list}
-        opts['user-rule-from'] = {'conv': conv_list}
+        opts['user-rule-from'] = {'conv': [conv_list, conv_path]}
 
         self.walk_formaters('config', opts)
 
@@ -208,7 +210,7 @@ class GenPAC(object):
 
     def init(self, dest):
         try:
-            path = abspath(dest if isinstance(dest, basestring) else '.')
+            path = abspath(dest)
             if not os.path.isdir(path):
                 os.makedirs(path)
             config_dst = os.path.join(path, 'config.ini')
@@ -274,11 +276,12 @@ class Generator(object):
             gfwlist_rules, user_rules, replacements)
 
         output = self.options.output
-        if not output or output == '-':
-            return sys.stdout.write(content)
         try:
-            with open_file(output, 'w') as fp:
-                fp.write(content)
+            if not output or output == '-':
+                sys.stdout.write(content)
+            else:
+                with open_file(output, 'w') as fp:
+                    fp.write(content)
         except Exception:
             exit_error('写入输出文件`{}`失败'.format(output))
 
@@ -360,10 +363,9 @@ class Generator(object):
         return content, gfwlist_from, gfwlist_modified
 
     def fetch_user_rules(self):
-        rules = self.options.user_rule
+        rules = []
+        rules.extend(self.options.user_rule)
         for f in self.options.user_rule_from:
-            if not f:
-                continue
             try:
                 with open_file(f) as fp:
                     file_rules = fp.read().splitlines()

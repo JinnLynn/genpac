@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+from __future__ import (unicode_literals, absolute_import,
+                        division, print_function)
+import pytest
+from genpac import run, GenPACDeprecationWarning
+from test.util import buildenv, join_etc, join_tmp, is_not_own
+from test.util import parametrize, skipif, xfail
+
+
+@parametrize('argv', [
+    ['-c', join_etc('config-deprecated.ini')],
+    '--format pac --proxy deprecated_proxy --compress --precise -o/dev/null',
+    '--format pac -p deprecated_proxy -z -P -o/dev/null'
+    ])
+def test_deprecated(argv):
+    with buildenv(argv=argv):
+        with pytest.warns(GenPACDeprecationWarning):
+            run()

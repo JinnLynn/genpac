@@ -1,7 +1,11 @@
 *.pac
 *.pyc
+__pycache__/
 tmp/
 
+# 测试相关
+/.tox
+/.cache
 /.coverage
 /htmlcov/
 

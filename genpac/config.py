@@ -6,6 +6,8 @@ import os
 from ConfigParser import MissingSectionHeaderError, ParsingError
 import StringIO
 
+from .util import open_file
+
 
 class Config(object):
     _SECTCRE = re.compile(
@@ -38,7 +40,7 @@ class Config(object):
         self._optcre = self._OPTCRE
 
     def parse(self, filename):
-        with open(filename) as fp:
+        with open_file(filename) as fp:
             self.parsefp(fp)
 
     def parsefp(self, fp):

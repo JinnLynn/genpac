@@ -1,0 +1,39 @@
+# 自定义wingy格式模板
+# 注意：YAML文件对格式要求非常高，TAB必须是4个SPACE
+# 参考: https://github.com/hellowingy/wingy-announcement/blob/master/CONFIG.md
+#! genpac __VERSION__ https://github.com/JinnLynn/genpac
+version: 2
+adapter:
+    - id: http-adapter
+      type: http
+      host: http.example.com
+      port: 8080
+    - id: socks5-adapter
+      type: socks5
+      host: socks5.example.com
+      port: 3128
+    - id: ss-adapter
+      type: ss
+      host: ss.example.com
+      port: 8800
+      method: aes-256-cfb
+      password: PASSWORD
+      protocol: verify_sha1
+rule:
+    - type: iplist
+      adapter: direct
+      criteria:
+        - 127.0.0.0/8
+        - 192.168.0.0/16
+        - 10.0.0.0/8
+        - 224.0.0.0/8
+        - 169.254.0.0/16
+    - type: dnsfail
+      adapter: ss-adapter
+    - type: domainlist
+      adapter: ss-adapter
+      criteria:
+#! 前面不能有空格
+__CRITERIA__
+#! Generated: __GENERATED__
+#! GFWList: __MODIFIED__ From __GFWLIST_FROM__

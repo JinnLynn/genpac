@@ -22,11 +22,7 @@ def exit_success(*args):
 
 
 def abspath(path):
-    if not path:
-        return path
-    if path.startswith('~'):
-        path = os.path.expanduser(path)
-    return os.path.abspath(path)
+    return os.path.abspath(os.path.expanduser(path)) if path else os.getcwd()
 
 
 def open_file(path, mode='r'):
@@ -60,9 +56,7 @@ def conv_bool(obj):
 
 
 def conv_list(obj, sep=','):
-    if obj is None:
-        return []
-    obj = obj if obj else []
+    obj = obj or []
     obj = obj if isinstance(obj, list) else [obj]
     if not sep:
         return obj
@@ -74,4 +68,12 @@ def conv_lower(obj):
         return ''
     if isinstance(obj, basestring):
         return obj.lower()
+    return obj
+
+
+def conv_path(obj):
+    if isinstance(obj, basestring):
+        return abspath(obj)
+    if isinstance(obj, list):
+        return [abspath(p) for p in obj]
     return obj
