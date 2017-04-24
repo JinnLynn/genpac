@@ -1,0 +1,10 @@
+! 用户规则自定义文件
+! 参考: https://github.com/JinnLynn/genpac/blob/master/sample/user-rules.txt     
+
+@@sina.com
+@@163.com
+
+twitter.com
+youtube.com
+||google.com
+||wikipedia.org

@@ -5,6 +5,7 @@ import re
 import os
 from ConfigParser import MissingSectionHeaderError, ParsingError
 import StringIO
+from collections import OrderedDict
 
 from .util import open_file
 
@@ -13,16 +14,14 @@ class Config(object):
     _SECTCRE = re.compile(
         r'\['                                 # [
         r'(?P<header>[^]]+)'                  # very permissive!
-        r'\]'                                 # ]
-        )
+        r'\]')                                # ]
     _OPTCRE = re.compile(
         r'(?P<option>[^:=\s][^:=]*)'          # very permissive!
         r'\s*(?P<vi>[:=])\s*'                 # any number of space/tab,
                                               # followed by separator
                                               # (either : or =), followed
                                               # by any # space/tab
-        r'(?P<value>.*)$'                     # everything up to eol
-        )
+        r'(?P<value>.*)$')                    # everything up to eol
     _OPTCRE_NV = re.compile(
         r'(?P<option>[^:=\s][^:=]*)'          # very permissive!
         r'\s*(?:'                             # any number of space/tab,
@@ -30,20 +29,19 @@ class Config(object):
                                               # separator (either : or
                                               # =), followed by any #
                                               # space/tab
-        r'(?P<value>.*))?$'                   # everything up to eol
-        )
+        r'(?P<value>.*))?$')                  # everything up to eol
 
     def __init__(self):
         super(Config, self).__init__()
-        self._sections = {}
+        self._sections = OrderedDict()
         self._section_uniques = {}
         self._optcre = self._OPTCRE
 
-    def parse(self, filename):
+    def read(self, filename):
         with open_file(filename) as fp:
-            self.parsefp(fp)
+            self.readfp(fp)
 
-    def parsefp(self, fp):
+    def readfp(self, fp):
         try:
             filename = fp.name
         except AttributeError:
@@ -51,6 +49,32 @@ class Config(object):
         # 展开形如${ENV}的变量
         content = os.path.expandvars(fp.read())
         self._parse(StringIO.StringIO(content), filename)
+
+    def iteroptions(self, section, sub_section_key=None):
+        for opt in self.sections(section, sub_section_key=sub_section_key):
+            yield opt
+
+    def section(self, name):
+        return self._options(name)
+
+    def sections(self, name, sub_section_key=None):
+        sub_section_key = sub_section_key or '__SUB_SECTION__'
+        opts = []
+        for sec in self._sections:
+            opt = self._options(sec)
+            if sec.startswith(name + ':'):
+                secs = sec.split(':', 1)
+                try:
+                    _, ss = secs
+                    ss = ss.split('#')[0]
+                except:
+                    _, ss = secs[0], None
+                if sub_section_key not in opt:
+                    opt[sub_section_key] = ss
+            elif sec != name and not sec.startswith(name + '#'):
+                continue
+            opts.append(opt)
+        return opts or []
 
     def _options(self, section):
         if section not in self._sections:
@@ -60,25 +84,10 @@ class Config(object):
             del opts['__name__']
         return opts
 
-    def options(self, section, enable_repeat=False):
-        if not enable_repeat:
-            return self._options(section)
-
-        if section not in self._sections:
-            return []
-        opts = [self._options(section)]
-        for i in range(1, len(self._sections) + 1):
-            sectname = section + '#' + str(i)
-            opt = self._options(sectname)
-            if not opt:
-                break
-            opts.append(opt)
-        return opts
-
-    def optionxform(self, optionstr):
+    def _optionxform(self, optionstr):
         return optionstr.lower()
 
-    def section_unique(self, sectname):
+    def _section_unique(self, sectname):
         if sectname in self._section_uniques:
             self._section_uniques[sectname] += 1
             return sectname + '#' + str(self._section_uniques[sectname])
@@ -113,17 +122,8 @@ class Config(object):
                 # is it a section header?
                 mo = self._SECTCRE.match(line)
                 if mo:
-                    # sectname = mo.group('header')
-                    # if sectname in sections:
-                    #     cursect = sections[sectname]
-                    # else:
-                    #     cursect = {}
-                    #     cursect['__name__'] = sectname
-                    #     sections[sectname] = cursect
-                    # # So sections can't start with a continuation line
-                    # optname = None
                     sectname = mo.group('header')
-                    sectname = self.section_unique(sectname)
+                    sectname = self._section_unique(sectname)
                     cursect = {}
                     cursect['__name__'] = sectname
                     self._sections[sectname] = cursect
@@ -136,7 +136,7 @@ class Config(object):
                     mo = self._optcre.match(line)
                     if mo:
                         optname, vi, optval = mo.group('option', 'vi', 'value')
-                        optname = self.optionxform(optname.rstrip())
+                        optname = self._optionxform(optname.rstrip())
                         # This check is fine because the OPTCRE cannot
                         # match if it would set optval to None
                         if optval is not None:

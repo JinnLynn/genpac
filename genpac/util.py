@@ -9,7 +9,7 @@ import codecs
 def error(*args, **kwargs):
     print(*args, file=sys.stderr)
     if kwargs.get('exit', False):
-        sys.exit(kwargs.get('exit_code', None) or 1)
+        sys.exit(kwargs.get('exit_code') or 1)
 
 
 def exit_error(*args, **kwargs):
@@ -56,16 +56,15 @@ def conv_bool(obj):
 
 
 def conv_list(obj, sep=','):
-    obj = obj or []
-    obj = obj if isinstance(obj, list) else [obj]
-    if not sep:
-        return obj
-    return [s.strip() for s in sep.join(obj).split(sep) if s.strip()]
+    obj = obj or ''
+    if isinstance(obj, list):
+        obj = '\n'.join(obj)
+    obj = obj.replace(sep, '\n')
+    return [s.strip() for s in obj.splitlines() if s.strip()]
 
 
 def conv_lower(obj):
-    if obj is None:
-        return ''
+    obj = obj or ''
     if isinstance(obj, basestring):
         return obj.lower()
     return obj

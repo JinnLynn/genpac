@@ -52,11 +52,11 @@ class GenPAC(object):
         self.jobs = []
 
     @classmethod
-    def add_formater(cls, fmt, fmt_cls, **options):
+    def add_formater(cls, name, fmt_cls, **options):
         # TODO: 检查cls是否合法
-        fmt_cls._name = fmt
-        cls._formaters[fmt] = {'cls': fmt_cls,
-                               'options': options}
+        fmt_cls._name = name
+        cls._formaters[name] = {'cls': fmt_cls,
+                                'options': options}
 
     def walk_formaters(self, attr, *args, **kargs):
         for fmter in self._formaters.itervalues():
@@ -128,18 +128,22 @@ class GenPAC(object):
 
     def read_config(self, config_file):
         if not config_file:
-            return [], {}
+            return [{}], {}
         try:
-            with open_file(config_file) as fp:
-                cfg_parser = Config()
-                cfg_parser.parsefp(fp)
-                return (cfg_parser.options('config', True),
-                        cfg_parser.options('default'))
+            cfg = Config()
+            cfg.read(config_file)
+            return (
+                cfg.sections('job', sub_section_key='format') or [{}],
+                cfg.section('config') or {})
         except:
             exit_error('配置文件读取失败')
 
     def update_opt(self, args, cfgs, key,
                    default=None, conv=None, dest=None, **kwargs):
+        conv = conv or []
+        if not isinstance(conv, list):
+            conv = [conv]
+
         if dest is None:
             dest = key.replace('-', '_').lower()
 
@@ -157,11 +161,8 @@ class GenPAC(object):
         if isinstance(v, basestring):
             v = v.strip(' \'\t"')
 
-        if conv:
-            if not isinstance(conv, list):
-                conv = [conv]
-            for c in conv:
-                v = c(v)
+        for c in conv:
+            v = c(v)
 
         return dest, v
 
@@ -173,11 +174,12 @@ class GenPAC(object):
         self.walk_formaters('arguments', parser)
         args = parser.parse_args()
 
+        pprint(args)
+
         if args.init:
             self.init(args.init)
 
         cfgs, self.default_opts = self.read_config(args.config_from)
-        self.jobs = []
 
         opts = {}
         opts['format'] = {'conv': conv_lower}
@@ -194,8 +196,7 @@ class GenPAC(object):
 
         self.walk_formaters('config', opts)
 
-        if not cfgs:
-            cfgs = [{}]
+        self.jobs = []
 
         for c in cfgs:
             cfg = self.default_opts.copy()
@@ -220,9 +221,9 @@ class GenPAC(object):
                 if ans.lower() != 'y':
                     raise Exception('文件已存在')
             with open_file(config_dst, 'w') as fp:
-                fp.write(get_resource_data('res/config-sample.ini'))
+                fp.write(get_resource_data('res/tpl-config.ini'))
             with open_file(user_rule_dst, 'w') as fp:
-                fp.write(get_resource_data('res/user-rules-sample.txt'))
+                fp.write(get_resource_data('res/tpl-user-rules.txt'))
         except Exception as e:
             exit_error('初始化失败: {}'.format(e))
         exit_success('已成功初始化')
@@ -400,8 +401,8 @@ class Generator(object):
 
 
 # decorator: 添加格式化器
-def formater(fmt, **options):
-    def decorator(cls):
-        GenPAC.add_formater(fmt, cls, **options)
-        return cls
+def formater(name, **options):
+    def decorator(fmt_cls):
+        GenPAC.add_formater(name, fmt_cls, **options)
+        return fmt_cls
     return decorator
