@@ -30,8 +30,33 @@ def open_file(path, mode='r'):
     return codecs.open(path, mode, 'utf-8')
 
 
-def get_file_data(path):
-    return open_file(path).read()
+def read_file(path, fail_exit=True,
+              fail_msg='读取文件{path}失败: {error}'):
+    error = None
+    try:
+        with open_file(path) as fp:
+            return fp.read(), None
+    except Exception as e:
+        error = e
+
+    if fail_exit:
+        exit_error(fail_msg.format(**{'path': path, 'error': error or '未知'}))
+    return None, error
+
+
+def write_file(path, content,
+               fail_exit=True, fail_msg='写入文件{path}失败: {error}'):
+    error = None
+    try:
+        with open_file(path, 'w') as fp:
+            fp.write(content)
+        return True, None
+    except Exception as e:
+        error = e
+
+    if fail_exit:
+        exit_error(fail_msg.format(**{'path': path, 'error': error or '未知'}))
+    return False, error
 
 
 def get_resource_path(path):

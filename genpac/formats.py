@@ -13,7 +13,7 @@ from base64 import b64decode
 from . import formater, Namespace
 from .publicsuffix import get_public_suffix
 from .util import error, conv_bool
-from .util import get_file_data, get_resource_path, get_resource_data
+from .util import read_file, get_resource_path, get_resource_data
 
 
 class FmtBase(object):
@@ -344,7 +344,9 @@ class FmtWingy(FmtBase):
     def tpl(self):
         if not self.options.wingy_template:
             return get_resource_data('res/tpl-wingy.yaml')
-        return get_file_data(self.options.wingy_template)
+        content, _ = read_file(self.options.wingy_template,
+                               fail_msg='读取wingy模板文件{path}失败')
+        return content
 
     def generate(self, gfwlist_rules, user_rules, replacements):
         rules = [self.parse_rules(user_rules),

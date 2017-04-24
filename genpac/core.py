@@ -18,7 +18,7 @@ from .pysocks.sockshandler import SocksiPyHandler
 from .config import Config
 from .deprecated import check_deprecated_args, check_deprecated_config
 from .util import exit_error, exit_success
-from .util import abspath, open_file, get_resource_data
+from .util import abspath, open_file, read_file, write_file, get_resource_data
 from .util import conv_bool, conv_list, conv_lower, conv_path
 
 
@@ -108,7 +108,10 @@ class GenPAC(object):
                  '更新gfwlist-local内容')
         group.add_argument(
             '--gfwlist-disabled', action='store_true',
-            help='禁用在线获取gfwlist')
+            help='禁用gfwlist')
+        group.add_argument(
+            '--gfwlist-decoded-save', metavar='FILE',
+            help='保存解码后的gfwlist, 仅用于测试')
         group.add_argument(
             '--user-rule', action='append', metavar='RULE',
             help='自定义规则, 允许重复使用或在单个参数中使用`,`分割多个规则，如:\n'
@@ -174,8 +177,6 @@ class GenPAC(object):
         self.walk_formaters('arguments', parser)
         args = parser.parse_args()
 
-        pprint(args)
-
         if args.init:
             self.init(args.init)
 
@@ -189,6 +190,7 @@ class GenPAC(object):
         opts['gfwlist-local'] = {'conv': conv_path}
         opts['gfwlist-disabled'] = {'conv': conv_bool}
         opts['gfwlist-update-local'] = {'conv': conv_bool}
+        opts['gfwlist-decoded-save'] = {'conv': conv_path}
         opts['output'] = {}
 
         opts['user-rule'] = {'conv': conv_list}
@@ -277,14 +279,10 @@ class Generator(object):
             gfwlist_rules, user_rules, replacements)
 
         output = self.options.output
-        try:
-            if not output or output == '-':
-                sys.stdout.write(content)
-            else:
-                with open_file(output, 'w') as fp:
-                    fp.write(content)
-        except Exception:
-            exit_error('写入输出文件`{}`失败'.format(output))
+        if not output or output == '-':
+            sys.stdout.write(content)
+        else:
+            write_file(output, content, fail_msg='写入输出文件`{path}`失败')
 
         self.formater.post_generate()
 
@@ -329,19 +327,16 @@ class Generator(object):
         gfwlist_modified = '-'
         try:
             content = self.fetch_gfwlist_online()
-        except:
-            try:
-                with open_file(self.options.gfwlist_local) as fp:
-                    content = fp.read()
-                gfwlist_from = 'local[{}]'.format(self.options.gfwlist_local)
-            except:
-                pass
-        else:
             gfwlist_from = 'online[{}]'.format(self.options.gfwlist_url)
             if self.options.gfwlist_local \
                     and self.options.gfwlist_update_local:
-                with open_file(self.options.gfwlist_local, 'w') as fp:
-                    fp.write(content)
+                write_file(self.options.gfwlist_local,
+                           fail_msg='更新本地gfwlist文件{path}失败')
+        except:
+            if self.options.gfwlist_local:
+                content, _ = read_file(self.options.gfwlist_local,
+                                       fail_msg='读取本地gfwlist文件{path}失败')
+                gfwlist_from = 'local[{}]'.format(self.options.gfwlist_local)
 
         if not content:
             if self.options.gfwlist_url != '-' or self.options.gfwlist_local:
@@ -355,6 +350,10 @@ class Generator(object):
         except:
             exit_error('解码gfwlist失败.')
 
+        if self.options.gfwlist_decoded_save:
+            write_file(self.options.gfwlist_decoded_save, content,
+                       fail_msg='保存解码后的gfwlist到{path}失败: {error}')
+
         content = content.splitlines()
         for line in content:
             if line.startswith('! Last Modified:'):
@@ -367,12 +366,8 @@ class Generator(object):
         rules = []
         rules.extend(self.options.user_rule)
         for f in self.options.user_rule_from:
-            try:
-                with open_file(f) as fp:
-                    file_rules = fp.read().splitlines()
-                    rules.extend(file_rules)
-            except:
-                exit_error('读取自定义规则文件`{}`失败'.format(f))
+            content, _ = read_file(f, fail_msg='读取自定义规则文件`{path}`失败')
+            rules.extend(content.splitlines())
         return rules
 
     def std_datetime(self, modified_datestr):

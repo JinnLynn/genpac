@@ -37,6 +37,7 @@ def _opt_gl(**kwargs):
     kwargs.setdefault('gfwlist_disabled', False)
     kwargs.setdefault('gfwlist_local', None)
     kwargs.setdefault('gfwlist_update_local', False)
+    kwargs.setdefault('gfwlist_decoded_save', None)
     return Namespace(**kwargs)
 
 def _fetch_gfwlist_online(opt):
