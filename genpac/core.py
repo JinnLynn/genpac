@@ -200,6 +200,10 @@ class GenPAC(object):
 
         self.jobs = []
 
+        # 当配置没有[job]节点且参数没有--format 指定默认pac 可向前兼容
+        if not hasattr(args, 'format') and len(cfgs) == 1 and cfgs[0] == {}:
+            cfgs[0]['format'] = 'pac'
+
         for c in cfgs:
             cfg = self.default_opts.copy()
             cfg.update(c)
@@ -327,10 +331,12 @@ class Generator(object):
         gfwlist_modified = '-'
         try:
             content = self.fetch_gfwlist_online()
+            if not content:
+                raise ValueError()
             gfwlist_from = 'online[{}]'.format(self.options.gfwlist_url)
             if self.options.gfwlist_local \
                     and self.options.gfwlist_update_local:
-                write_file(self.options.gfwlist_local,
+                write_file(self.options.gfwlist_local, content,
                            fail_msg='更新本地gfwlist文件{path}失败')
         except:
             if self.options.gfwlist_local:
