@@ -40,6 +40,7 @@ Public Suffix List module for Python.
 from __future__ import absolute_import
 from __future__ import unicode_literals
 
+import sys
 import codecs
 from contextlib import closing
 from datetime import datetime
@@ -49,6 +50,12 @@ try:
     from urllib.request import urlopen, Request
 except ImportError:
     from urllib2 import urlopen, Request
+
+PY2 = sys.version_info[0] == 2
+if PY2:
+    string_types = basestring
+else:
+    string_types = str
 
 
 BASE_DIR = os.path.dirname(__file__)
@@ -86,7 +93,7 @@ class PublicSuffixList(object):
         The file format is described at http://publicsuffix.org/
         """
         # Note: we test for None as we accept empty lists as inputs
-        if psl_file is None or isinstance(psl_file, basestring):
+        if psl_file is None or isinstance(psl_file, string_types):
             with codecs.open(psl_file or PSL_FILE, 'r', 'utf8') as psl:
                 psl = psl.readlines()
         else:

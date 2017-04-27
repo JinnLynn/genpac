@@ -3,7 +3,7 @@ from __future__ import (unicode_literals, absolute_import,
                         division, print_function)
 import sys
 import pytest
-from contextlib import contextmanager, nested
+from contextlib import contextmanager
 from genpac import GenPAC, formater, FmtBase
 
 from test.util import buildenv, join_etc
@@ -49,7 +49,7 @@ def test_add_formater():
     (['-c', join_etc('config-fmt-test.ini'), '--test-a=va2', '--test-b=vb2'], ('va2', 'vb2')),
     ])
 def test_formater_option(argv, expected_ret):
-    with nested(add_formater(), buildenv(argv=argv)):
+    with add_formater(), buildenv(argv=argv):
         gp = GenPAC()
         gp.parse_options()
         assert len(gp.jobs) == 1

@@ -2,14 +2,13 @@
 from __future__ import (unicode_literals, absolute_import,
                         division, print_function)
 import re
-from urllib import unquote
-from urlparse import urlparse
 import json
 import itertools
 from collections import OrderedDict
 from base64 import b64decode
 
-
+from ._compat import unquote, urlparse
+from ._compat import iteritems
 from . import formater, Namespace
 from .publicsuffix import get_public_suffix
 from .util import error, conv_bool
@@ -372,14 +371,14 @@ class FmtWingy(FmtBase):
 
         def to_yaml(opts):
             tmp = []
-            for k, v in opts.iteritems():
+            for k, v in iteritems(opts):
                 tmp.append('{:>6}{}: {}'.format('', k, v))
             tmp[0] = '{:>4}- {}'.format('', tmp[0].strip())
             return '\n'.join(tmp)
 
         def ss_uri(aid, uri):
             encoded = uri.lstrip('ss://').lstrip('//').rstrip('=') + '=='
-            decoded = b64decode(encoded)
+            decoded = b64decode(encoded).decode('utf-8')
             auth = False
             method, pwd_host, port = decoded.split(':')
             pwd, host = pwd_host.split('@')
@@ -402,9 +401,9 @@ class FmtWingy(FmtBase):
         for opt in split(adapter_opts, ';'):
             k_v = split(opt, ',')
             od = OrderedDict()
-            map(lambda x: od.setdefault(x.split(':')[0].strip(),
-                                        x.split(':')[1].strip()),
-                k_v)
+            for v in k_v:
+                od.setdefault(v.split(':')[0].strip(),
+                              v.split(':')[1].strip())
             if 'ss' in od:
                 od = ss_uri(od['id'], od['ss'])
             opts.append(to_yaml(od))

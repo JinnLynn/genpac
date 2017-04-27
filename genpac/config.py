@@ -3,10 +3,9 @@ from __future__ import (unicode_literals, absolute_import,
                         division, print_function)
 import re
 import os
-from ConfigParser import MissingSectionHeaderError, ParsingError
-import StringIO
 from collections import OrderedDict
 
+from ._compat import configparser, StringIO
 from .util import open_file
 
 
@@ -48,7 +47,7 @@ class Config(object):
             filename = '<???>'
         # 展开形如${ENV}的变量
         content = os.path.expandvars(fp.read())
-        self._parse(StringIO.StringIO(content), filename)
+        self._parse(StringIO(content), filename)
 
     def iteroptions(self, section, sub_section_key=None):
         for opt in self.sections(section, sub_section_key=sub_section_key):
@@ -130,7 +129,8 @@ class Config(object):
                     optname = None
                 # no section header in the file?
                 elif cursect is None:
-                    raise MissingSectionHeaderError(fpname, lineno, line)
+                    raise configparser.MissingSectionHeaderError(
+                        fpname, lineno, line)
                 # an option line?
                 else:
                     mo = self._optcre.match(line)
@@ -160,7 +160,7 @@ class Config(object):
                         # raised at the end of the file and will contain a
                         # list of all bogus lines
                         if not e:
-                            e = ParsingError(fpname)
+                            e = configparser.ParsingError(fpname)
                         e.append(lineno, repr(line))
         # if any parsing errors occurred, raise an exception
         if e:

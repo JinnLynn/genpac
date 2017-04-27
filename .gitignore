@@ -4,6 +4,7 @@ __pycache__/
 tmp/
 
 # 测试相关
+/.python-version
 /.tox
 /.cache
 /.coverage

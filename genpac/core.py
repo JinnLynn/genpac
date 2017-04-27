@@ -8,11 +8,12 @@ import re
 import base64
 import time
 from datetime import datetime, timedelta
-from urllib2 import build_opener
 import copy
 from pprint import pprint  # noqa: F401
 
 from . import __version__
+from ._compat import string_types
+from ._compat import comfirm, build_opener, iteritems, itervalues
 from .pysocks.socks import PROXY_TYPES as _proxy_types
 from .pysocks.sockshandler import SocksiPyHandler
 from .config import Config
@@ -59,7 +60,7 @@ class GenPAC(object):
                                 'options': options}
 
     def walk_formaters(self, attr, *args, **kargs):
-        for fmter in self._formaters.itervalues():
+        for fmter in itervalues(self._formaters):
             getattr(fmter['cls'], attr)(*args, **kargs)
 
     def build_args_parser(self):
@@ -161,7 +162,7 @@ class GenPAC(object):
             else:
                 v = default
 
-        if isinstance(v, basestring):
+        if isinstance(v, string_types):
             v = v.strip(' \'\t"')
 
         for c in conv:
@@ -209,8 +210,8 @@ class GenPAC(object):
             cfg.update(c)
             check_deprecated_config(cfg.keys())
             job = Namespace.from_dict(
-                dict([(k, v) for k, v in cfg.iteritems() if k in opts]))
-            for k, v in opts.iteritems():
+                dict([(k, v) for k, v in iteritems(cfg) if k in opts]))
+            for k, v in iteritems(opts):
                 dest, value = self.update_opt(args, cfg, k, **v)
                 job.update(**{dest: value})
             self.jobs.append(job)
@@ -223,7 +224,7 @@ class GenPAC(object):
             config_dst = os.path.join(path, 'config.ini')
             user_rule_dst = os.path.join(path, 'user-rules.txt')
             if os.path.exists(config_dst) or os.path.exists(user_rule_dst):
-                ans = raw_input('文件已存在, 是否覆盖?[y|n]: '.encode('utf-8'))
+                ans = comfirm('文件已存在, 是否覆盖?[y|n]: ')
                 if ans.lower() != 'y':
                     raise Exception('文件已存在')
             with open_file(config_dst, 'w') as fp:
@@ -352,7 +353,7 @@ class Generator(object):
                 gfwlist_from = '-'
 
         try:
-            content = '! {}'.format(base64.decodestring(content))
+            content = base64.b64decode(content).decode('utf-8')
         except:
             exit_error('解码gfwlist失败.')
 
@@ -360,13 +361,15 @@ class Generator(object):
             write_file(self.options.gfwlist_decoded_save, content,
                        fail_msg='保存解码后的gfwlist到{path}失败: {error}')
 
-        content = content.splitlines()
-        for line in content:
+        # 分行并去除第一行
+        rules = content.splitlines()[1:]
+
+        for line in rules:
             if line.startswith('! Last Modified:'):
                 gfwlist_modified = line.split(':', 1)[1].strip()
                 break
 
-        return content, gfwlist_from, gfwlist_modified
+        return rules, gfwlist_from, gfwlist_modified
 
     def fetch_user_rules(self):
         rules = []

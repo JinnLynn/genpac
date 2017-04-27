@@ -4,6 +4,7 @@ from __future__ import (unicode_literals, absolute_import,
 import sys
 import warnings
 
+from ._compat import iteritems
 from .util import error
 
 _warnings_showwarning = None
@@ -37,7 +38,7 @@ def deprecation(message):
 
 
 def check_deprecated_args():
-    for k, v in _deprecated_args.iteritems():
+    for k, v in iteritems(_deprecated_args):
         if k not in sys.argv:
             continue
         new, ver = v

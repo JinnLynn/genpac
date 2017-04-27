@@ -5,6 +5,8 @@ import os
 import sys
 import codecs
 
+from ._compat import string_types, binary_type, getcwd
+
 
 def error(*args, **kwargs):
     print(*args, file=sys.stderr)
@@ -22,7 +24,7 @@ def exit_success(*args):
 
 
 def abspath(path):
-    return os.path.abspath(os.path.expanduser(path)) if path else os.getcwd()
+    return os.path.abspath(os.path.expanduser(path)) if path else getcwd()
 
 
 def open_file(path, mode='r'):
@@ -47,6 +49,8 @@ def read_file(path, fail_exit=True,
 def write_file(path, content,
                fail_exit=True, fail_msg='写入文件{path}失败: {error}'):
     error = None
+    if isinstance(content, binary_type):
+        content = content.decode('utf-8')
     try:
         with open_file(path, 'w') as fp:
             fp.write(content)
@@ -75,7 +79,7 @@ def get_resource_data(path):
 
 
 def conv_bool(obj):
-    if isinstance(obj, basestring):
+    if isinstance(obj, string_types):
         return True if obj.lower() == 'true' else False
     return bool(obj)
 
@@ -90,13 +94,13 @@ def conv_list(obj, sep=','):
 
 def conv_lower(obj):
     obj = obj or ''
-    if isinstance(obj, basestring):
+    if isinstance(obj, string_types):
         return obj.lower()
     return obj
 
 
 def conv_path(obj):
-    if isinstance(obj, basestring):
+    if isinstance(obj, string_types):
         return abspath(obj)
     if isinstance(obj, list):
         return [abspath(p) for p in obj]

@@ -6,6 +6,7 @@ import os
 import pytest
 from contextlib import contextmanager
 import genpac
+from genpac._compat import string_types, iterkeys, iteritems
 
 parametrize = pytest.mark.parametrize
 skipif = pytest.mark.skipif
@@ -29,14 +30,14 @@ def join_tmp(*args):
 def buildenv(envs=None, argv=None, **kwargs):
     envs = envs or {}
     argv = argv or []
-    if isinstance(argv, basestring):
+    if isinstance(argv, string_types):
         argv = argv.split(' ')
     if not argv or argv[0] != 'genpac':
         argv.insert(0, 'genpac')
 
     envs.setdefault('GENPAC_TEST_TMP', _TMP_DIR)
     envs.setdefault('GENPAC_TEST_ETC', _ETC_DIR)
-    for k, v in envs.iteritems():
+    for k, v in iteritems(envs):
         os.environ[k] = v
     old_argv = sys.argv
     sys.argv = argv
@@ -45,7 +46,7 @@ def buildenv(envs=None, argv=None, **kwargs):
 
     genpac.Generator._gfwlists.clear()
 
-    for k in envs.iterkeys():
+    for k in iterkeys(envs):
         if k in os.environ:
             del os.environ[k]
     sys.argv = old_argv
