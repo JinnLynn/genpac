@@ -7,21 +7,22 @@ import itertools
 from collections import OrderedDict
 from base64 import b64decode
 
-from ._compat import unquote, urlparse
 from ._compat import iteritems
-from . import formater, Namespace
-from .publicsuffix import get_public_suffix
+from . import Namespace, formater, parse_rules
 from .util import error, conv_bool
-from .util import read_file, get_resource_path, get_resource_data
+from .util import read_file, get_resource_data
 
 
 class FmtBase(object):
-    _psl = None
     _name = ''
 
     def __init__(self, *args, **kwargs):
         super(FmtBase, self).__init__()
         self.options = kwargs.get('options') or Namespace()
+
+        self._update_orginal_rules(
+            kwargs.get('user_rules') or [],
+            kwargs.get('gfwlist_rules') or [])
 
     @classmethod
     def arguments(cls, parser):
@@ -38,8 +39,8 @@ class FmtBase(object):
     def pre_generate(self):
         return True
 
-    def generate(self, gfwlist_rules, user_rules, replacements):
-        pass
+    def generate(self, replacements):
+        return self.replace(self.tpl, replacements)
 
     def post_generate(self):
         pass
@@ -53,146 +54,44 @@ class FmtBase(object):
         rx = re.compile('|'.join(map(re.escape, adict)))
         return rx.sub(one_xlat, text)
 
-    # 普通解析，仅匹配域名
-    # 返回格式：[直接访问, 代理访问]
-    def parse_rules(self, rules):
-        direct_lst = []
-        proxy_lst = []
-        for line in rules:
-            domain = ''
+    @property
+    def rules(self):
+        if self._rules is None:
+            self._rules = [parse_rules(self._orginal_user_rules),
+                           parse_rules(self._orginal_gfwlist_rules)]
+        return self._rules
 
-            if not line or line.startswith('!'):
-                continue
+    @property
+    def precise_rules(self):
+        if self._precise_rules is None:
+            self._precise_rules = [
+                parse_rules(self._orginal_user_rules, True),
+                parse_rules(self._orginal_gfwlist_rules, True)]
+        return self._precise_rules
 
-            if line.startswith('@@'):
-                line = line.lstrip('@|.')
-                domain = self._surmise_domain(line)
-                if domain:
-                    direct_lst.append(domain)
-                continue
-            elif line.find('.*') >= 0 or line.startswith('/'):
-                line = line.replace('\/', '/').replace('\.', '.')
-                try:
-                    m = re.search(r'[a-z0-9]+\..*', line)
-                    domain = self._surmise_domain(m.group(0))
-                    if domain:
-                        proxy_lst.append(domain)
-                        continue
-                    m = re.search(r'[a-z]+\.\(.*\)', line)
-                    m2 = re.split(r'[\(\)]', m.group(0))
-                    for tld in re.split(r'\|', m2[1]):
-                        domain = self._surmise_domain(
-                            '{}{}'.format(m2[0], tld))
-                        if domain:
-                            proxy_lst.append(domain)
-                except:
-                    pass
-                continue
-            elif line.startswith('|') or line.endswith('|'):
-                line = line.strip('|')
-            domain = self._surmise_domain(line)
-            if domain:
-                proxy_lst.append(domain)
+    @property
+    def gfwed_domains(self):
+        if self._gfwed_domains is None:
+            self._gfwed_domains = list(
+                set(self.rules[0][1] + self.rules[1][1]))
+            self._gfwed_domains.sort()
+        return self._gfwed_domains
 
-        proxy_lst = list(set(proxy_lst))
-        direct_lst = list(set(direct_lst))
+    @property
+    def ignored_dimains(self):
+        if self._ignored_domains is None:
+            self._ignored_domains = list(
+                set(self.rules[0][0] + self.rules[1][0]))
+            self._ignored_domains.sort()
+        return self._ignored_domains
 
-        direct_lst = [d for d in direct_lst if d not in proxy_lst]
-
-        proxy_lst.sort()
-        direct_lst.sort()
-
-        return [direct_lst, proxy_lst]
-
-    # 精确解析, 匹配具体网址
-    # 返回格式为:
-    #  [直接访问_正则表达式, 直接访问_通配符, 代理访问_正则表达式, 代理访问_通配符]
-    def parse_rules_precise(self, rules):
-        def wildcard_to_regexp(pattern):
-            pattern = re.sub(r'([\\\+\|\{\}\[\]\(\)\^\$\.\#])', r'\\\1',
-                             pattern)
-            # pattern = re.sub(r'\*+', r'*', pattern)
-            pattern = re.sub(r'\*', r'.*', pattern)
-            pattern = re.sub(r'\？', r'.', pattern)
-            return pattern
-        # d=direct p=proxy w=wildchar r=regexp
-        result = {'d': {'w': [], 'r': []}, 'p': {'w': [], 'r': []}}
-        for line in rules:
-            line = line.strip()
-            # comment
-            if not line or line.startswith('!'):
-                continue
-            d_or_p = 'p'
-            w_or_r = 'r'
-            # exception rules
-            if line.startswith('@@'):
-                line = line[2:]
-                d_or_p = 'd'
-            # regular expressions
-            if line.startswith('/') and line.endswith('/'):
-                line = line[1:-1]
-            elif line.find('^') != -1:
-                line = wildcard_to_regexp(line)
-                line = re.sub(r'\\\^', r'(?:[^\w\-.%\u0080-\uFFFF]|$)', line)
-            elif line.startswith('||'):
-                line = wildcard_to_regexp(line[2:])
-                # When using the constructor function, the normal string
-                # escape rules (preceding special characters with \
-                # in a string) are necessary.
-                # when included For example, the following are equivalent:
-                # re = new RegExp('\\w+')
-                # re = /\w+/
-                # via: http://aptana.com/reference/api/RegExp.html
-                # line = r'^[\\w\\-]+:\\/+(?!\\/)(?:[^\\/]+\\.)?' + line
-                # json.dumps will escape `\`
-                line = r'^[\w\-]+:\/+(?!\/)(?:[^\/]+\.)?' + line
-            elif line.startswith('|') or line.endswith('|'):
-                line = wildcard_to_regexp(line)
-                line = re.sub(r'^\\\|', '^', line, 1)
-                line = re.sub(r'\\\|$', '$', line)
-            else:
-                w_or_r = 'w'
-            if w_or_r == 'w':
-                line = '*{}*'.format(line.strip('*'))
-            result[d_or_p][w_or_r].append(line)
-
-        return [result['d']['r'], result['d']['w'],
-                result['p']['r'], result['p']['w']]
-
-    def _surmise_domain(self, rule):
-        domain = ''
-
-        rule = self._clear_asterisk(rule)
-        rule = rule.lstrip('.')
-
-        if rule.find('%2F') >= 0:
-            rule = unquote(rule)
-
-        if rule.startswith('http:') or rule.startswith('https:'):
-            r = urlparse(rule)
-            domain = r.hostname
-        elif rule.find('/') > 0:
-            r = urlparse('http://' + rule)
-            domain = r.hostname
-        elif rule.find('.') > 0:
-            domain = rule
-
-        return self._get_public_suffix(domain)
-
-    def _get_public_suffix(self, host):
-        dat_path = get_resource_path('res/public_suffix_list.dat')
-        domain = get_public_suffix(host, dat_path)
-        return None if domain.find('.') < 0 else domain
-
-    def _clear_asterisk(self, rule):
-        if rule.find('*') < 0:
-            return rule
-        rule = rule.strip('*')
-        rule = rule.replace('/*.', '/')
-        rule = re.sub(r'/([a-zA-Z0-9]+)\*\.', '/', rule)
-        rule = re.sub(r'\*([a-zA-Z0-9_%]+)', '', rule)
-        rule = re.sub(r'^([a-zA-Z0-9_%]+)\*', '', rule)
-        return rule
+    def _update_orginal_rules(self, user_rules, gfwlist_rules):
+        self._orginal_user_rules = user_rules
+        self._orginal_gfwlist_rules = gfwlist_rules
+        self._rules = None
+        self._precise_rules = None
+        self._gfwed_domains = None
+        self._ignored_domains = None
 
 
 @formater('pac')
@@ -251,13 +150,9 @@ class FmtPAC(FmtBase):
             return False
         return super(FmtPAC, self).pre_generate()
 
-    def generate(self, gfwlist_rules, user_rules, replacements):
-        func_parse = self.parse_rules_precise if self.options.pac_precise \
-            else self.parse_rules
-        rules = [func_parse(user_rules), func_parse(gfwlist_rules)]
-
+    def generate(self, replacements):
         rules = json.dumps(
-            rules,
+            self.precise_rules if self.options.pac_precise else self.rules,
             indent=None if self.options.pac_compress else 4,
             separators=(',', ':') if self.options.pac_compress else None)
         replacements.update({'__PROXY__': self.options.pac_proxy,
@@ -295,16 +190,12 @@ class FmtDnsmasq(FmtBase):
     def tpl(self):
         return get_resource_data('res/tpl-dnsmasq.ini')
 
-    def generate(self, gfwlist_rules, user_rules, replacements):
-        rules = [self.parse_rules(user_rules),
-                 self.parse_rules(gfwlist_rules)]
+    def generate(self, replacements):
         dns = self.options.dnsmasq_dns
         ipset = self.options.dnsmasq_ipset
-        # 不需要忽略的domain
-        rules = list(set(rules[0][1] + rules[1][1]))
-        rules.sort()
-        servers = ['server=/{}/{}'.format(s, dns) for s in rules]
-        ipsets = ['ipset=/{}/{}'.format(s, ipset) for s in rules]
+
+        servers = ['server=/{}/{}'.format(s, dns) for s in self.gfwed_domains]
+        ipsets = ['ipset=/{}/{}'.format(s, ipset) for s in self.gfwed_domains]
         merged_lst = list(itertools.chain.from_iterable(zip(servers, ipsets)))
 
         replacements.update({'__DNSMASQ__': '\n'.join(merged_lst).strip()})
@@ -347,14 +238,9 @@ class FmtWingy(FmtBase):
                                fail_msg='读取wingy模板文件{path}失败')
         return content
 
-    def generate(self, gfwlist_rules, user_rules, replacements):
-        rules = [self.parse_rules(user_rules),
-                 self.parse_rules(gfwlist_rules)]
-        # 不需要忽略的domain
-        rules = list(set(rules[0][1] + rules[1][1]))
-        rules.sort()
+    def generate(self, replacements):
         fmt = '{:>8}'.format(' ')
-        domains = ['{}- s,{}'.format(fmt, s) for s in rules]
+        domains = ['{}- s,{}'.format(fmt, s) for s in self.gfwed_domains]
 
         # adapter
         adapter = self._parse_adapter()

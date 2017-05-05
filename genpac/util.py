@@ -75,7 +75,8 @@ def open_resource(path, mode='r'):
 
 
 def get_resource_data(path):
-    return open_resource(path).read()
+    with open_resource(path) as fp:
+        return fp.read()
 
 
 def conv_bool(obj):

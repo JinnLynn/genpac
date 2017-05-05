@@ -3,7 +3,6 @@ from __future__ import (unicode_literals, absolute_import,
                         division, print_function)
 
 import sys
-# from base64
 
 PY2 = sys.version_info[0] == 2
 

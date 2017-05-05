@@ -2,7 +2,7 @@
 from __future__ import (unicode_literals, absolute_import,
                         division, print_function)
 import pytest
-from genpac import GenPAC, FmtBase
+from genpac import parse_rules
 
 from test.util import parametrize, skipif, xfail
 
@@ -78,9 +78,8 @@ _pars.append(merge())
 
 @parametrize('rule, expected_ret, expected_precise_ret', _pars)
 def test_rule_parse(rule, expected_ret, expected_precise_ret):
-    formater = FmtBase()
     rules = rule if isinstance(rule, list) else [rule]
-    ret = formater.parse_rules(rules)
+    ret = parse_rules(rules)
     assert ret == expected_ret
-    ret = formater.parse_rules_precise(rules)
+    ret = parse_rules(rules, True)
     assert ret == expected_precise_ret

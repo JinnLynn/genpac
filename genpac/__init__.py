@@ -7,11 +7,11 @@ __author__ = 'JinnLynn <eatfishlin@gmail.com>'
 __license__ = 'The MIT License'
 __copyright__ = 'Copyright 2013-2017 JinnLynn'
 
-__all__ = ['GenPAC', 'Namespace', 'Generator', 'formater', 'Config',
+__all__ = ['GenPAC', 'Namespace', 'Generator', 'Config',
            'FmtBase', 'FmtPAC', 'FmtDnsmasq', 'FmtWingy',
-           'GenPACDeprecationWarning', 'run']
+           'GenPACDeprecationWarning', 'run', 'formater', 'parse_rules']
 
-from .core import GenPAC, Generator, Namespace, formater
+from .core import GenPAC, Generator, Namespace, formater, parse_rules
 from .config import Config
 from .formats import FmtBase, FmtPAC, FmtDnsmasq, FmtWingy
 from .deprecated import GenPACDeprecationWarning, install_showwarning
