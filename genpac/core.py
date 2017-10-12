@@ -130,6 +130,8 @@ class GenPAC(object):
         group.add_argument(
             '-c', '--config-from', default=None, metavar='FILE',
             help='从文件中读取配置信息')
+        group.add_argument(
+            '--template', metavar='FILE', help='自定义模板文件')
 
         return parser
 
@@ -195,10 +197,12 @@ class GenPAC(object):
         opts['gfwlist-disabled'] = {'conv': conv_bool}
         opts['gfwlist-update-local'] = {'conv': conv_bool}
         opts['gfwlist-decoded-save'] = {'conv': conv_path}
-        opts['output'] = {}
 
         opts['user-rule'] = {'conv': conv_list}
         opts['user-rule-from'] = {'conv': [conv_list, conv_path]}
+
+        opts['output'] = {}
+        opts['template'] = {'conv': conv_path}
 
         self.walk_formaters('config', opts)
 

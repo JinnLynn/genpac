@@ -31,7 +31,7 @@ genpac [-v] [-h] [--init [PATH]] [--format {pac,dnsmasq,wingy}]
        [--gfwlist-local FILE] [--gfwlist-update-local]
        [--gfwlist-disabled] [--gfwlist-decoded-save FILE]
        [--user-rule RULE] [--user-rule-from FILE]
-       [-o FILE] [-c FILE]
+       [--template FILE] [-o FILE] [-c FILE]
        [--pac-proxy PROXY] [--pac-precise] [--pac-compress]
        [--dnsmasq-dns DNS] [--dnsmasq-ipset IPSET]
        [--wingy-adapter-opts OPTS] [--wingy-rule-adapter-id ID]
@@ -68,6 +68,7 @@ optional arguments:
                         输出到文件, 无此参数或FILE为-, 则输出到stdout
   -c FILE, --config-from FILE
                         从文件中读取配置信息
+  --template FILE       自定义模板文件
 
 PAC:
   通过代理自动配置文件（PAC）系统或浏览器可自动选择合适的代理服务器
@@ -96,19 +97,17 @@ WINGY:
                           id:ap1,type:http,host:127.0.0.1,port:8080;id:ap2,type:socks5,host:127.0.0.1,port:3128
   --wingy-rule-adapter-id ID
                         生成规则使用的adapter ID
-  --wingy-template FILE
-                        自定义模板文件
 ```
 
 ### 配置文件
 
-支持通过 `--config-from` 参数读入配置信息，配置文件书写方法可参考[config.ini][]
+支持通过 `--config-from` 参数读入配置信息，配置文件书写方法可参考[sample/config.ini][]
 
 ### 自定义规则
 
 支持通过 `--user-rule` 自定义单个规则或 `--user-rule-from` 读入自定义规则文件，这两个参数均可重复使用。
 
-自定义规则文件可参考[user-rules.txt][]
+自定义规则文件可参考[sample/user-rules.txt][]
 
 自定义规则的语法与gfwlist相同，使用AdBlock Plus过滤规则( http://adblockplus.org/en/filters )，简述如下:
 
@@ -185,16 +184,16 @@ genpac --format=dnsmasq --dnsmasq-dns="127.0.0.1#53" --dnsmasq-ipset="ipset-name
 # WINGY格式 使用默认模板生成
 genpac --format=wingy --wingy-opts="id:do-ss,type:ss,host:192.168.100.1,port:8888,method:bf-cfb,password:test" --wingy-rule-adapter-id=do-ss
 
-#WINGY格式 使用自定义模板
-genpac --format=wingy --wingy-template=/sample/wingy-tpl.yaml
+# WINGY格式 使用自定义模板
+genpac --format=wingy --template=/sample/wingy-tpl.yaml
 ```
 
 [gfwlist]: https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
-[config.ini]: https://github.com/JinnLynn/genpac/blob/master/sample/config.ini
-[user-rules.txt]: https://github.com/JinnLynn/genpac/blob/master/sample/user-rules.txt
+[sample/config.ini]: https://github.com/JinnLynn/genpac/blob/master/sample/config.ini
+[sample/user-rules.txt]: https://github.com/JinnLynn/genpac/blob/master/sample/user-rules.txt
 [pypi]:             https://pypi.python.org/pypi/genpac
 [travis-ci]:        https://travis-ci.org/JinnLynn/genpac
 [pypi-version]:     https://img.shields.io/pypi/v/genpac.svg?style=flat&maxAge=86400
 [pypi-license]:     https://img.shields.io/pypi/l/genpac.svg?style=flat&maxAge=86400
 [travis-ci-status]: https://img.shields.io/travis/JinnLynn/genpac.svg?style=flat&maxAge=86400
-[dev-badge]:        https://img.shields.io/badge/dev-2.0b1-orange.svg?style=flat&maxAge=86400
+[dev-badge]:        https://img.shields.io/badge/dev-2.0b2-orange.svg?style=flat&maxAge=86400
