@@ -35,7 +35,6 @@ genpac [-v] [-h] [--init [PATH]] [--format {pac,dnsmasq,wingy}]
        [--pac-proxy PROXY] [--pac-precise] [--pac-compress]
        [--dnsmasq-dns DNS] [--dnsmasq-ipset IPSET]
        [--wingy-adapter-opts OPTS] [--wingy-rule-adapter-id ID]
-       [--wingy-template FILE]
 
 获取gfwlist生成多种格式的翻墙工具配置文件, 支持自定义规则
 
