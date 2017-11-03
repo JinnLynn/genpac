@@ -1,6 +1,6 @@
 # GenPAC
 
-[![pypi-version]][pypi] [![pypi-license]][pypi] [![travis-ci-status]][travis-ci] ![dev-badge]
+[![pypi-version]][pypi] [![pypi-license]][pypi] [![travis-ci-status]][travis-ci]
 
 基于gfwlist的多种代理软件配置文件生成工具，支持自定义规则，目前可生成的格式有pac, dnsmasq, wingy。
 
