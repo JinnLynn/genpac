@@ -144,7 +144,7 @@ class GenPAC(object):
             return (
                 cfg.sections('job', sub_section_key='format') or [{}],
                 cfg.section('config') or {})
-        except:
+        except Exception:
             exit_error('配置文件读取失败')
 
     def update_opt(self, args, cfgs, key,
@@ -314,7 +314,7 @@ class Generator(object):
             return build_opener(
                 SocksiPyHandler(type_, host, int(port),
                                 username=usr, password=pwd))
-        except:
+        except Exception:
             exit_error('解析获取gfwlist的代理`{}`失败'.format(
                 self.options.gfwlist_proxy))
 
@@ -346,7 +346,7 @@ class Generator(object):
                     and self.options.gfwlist_update_local:
                 write_file(self.options.gfwlist_local, content,
                            fail_msg='更新本地gfwlist文件{path}失败')
-        except:
+        except Exception:
             if self.options.gfwlist_local:
                 content, _ = read_file(self.options.gfwlist_local,
                                        fail_msg='读取本地gfwlist文件{path}失败')
@@ -361,7 +361,7 @@ class Generator(object):
 
         try:
             content = base64.b64decode(content).decode('utf-8')
-        except:
+        except Exception:
             exit_error('解码gfwlist失败.')
 
         if self.options.gfwlist_decoded_save:
@@ -405,7 +405,7 @@ class Generator(object):
             modified = to_local(modified_datestr)
             return (modified.strftime('%Y-%m-%d %H:%M:%S'),
                     datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-        except:
+        except Exception:
             return (modified_datestr,
                     time.strftime('%a, %d %b %Y %H:%M:%S %z',
                                   time.localtime()))
@@ -461,7 +461,7 @@ def _parse(rules):
                         '{}{}'.format(m2[0], tld))
                     if domain:
                         proxy_lst.append(domain)
-            except:
+            except Exception:
                 pass
             continue
         elif line.startswith('|') or line.endswith('|'):
