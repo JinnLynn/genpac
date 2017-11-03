@@ -6,11 +6,12 @@ import json
 import itertools
 from collections import OrderedDict
 from base64 import b64decode
+from pprint import pprint  # noqa: F401
 
 from ._compat import iteritems
 from . import Namespace, formater, parse_rules
 from .util import error, conv_bool
-from .util import read_file, get_resource_path
+from .util import read_file, get_resource_path, replace_all
 
 
 class FmtBase(object):
@@ -48,18 +49,14 @@ class FmtBase(object):
             self._default_tpl_file
         if not tpl_file:
             return ''
-        content, _ = read_file(tpl_file,
-                               fail_msg='读取自定义模板文件{path}失败')
+        content = read_file(tpl_file, fail_msg='读取自定义模板文件{path}失败')
         return content
 
     def error(self, msg):
         error('{}格式生成错误: {}'.format(self._name.upper(), msg))
 
-    def replace(self, text, adict):
-        def one_xlat(match):
-            return adict[match.group(0)]
-        rx = re.compile('|'.join(map(re.escape, adict)))
-        return rx.sub(one_xlat, text)
+    def replace(self, text, replacements):
+        return replace_all(text, replacements)
 
     @property
     def rules(self):

@@ -20,6 +20,7 @@ from .pysocks.sockshandler import SocksiPyHandler
 from .publicsuffix import get_public_suffix
 from .config import Config
 from .deprecated import check_deprecated_args, check_deprecated_config
+from .util import Error, FatalError
 from .util import exit_error, exit_success
 from .util import abspath, open_file, read_file, write_file
 from .util import get_resource_path, get_resource_data
@@ -50,10 +51,13 @@ class GenPAC(object):
     # 格式化器列表
     _formaters = {}
 
-    def __init__(self):
+    def __init__(self, config_from=None, args=Namespace()):
         super(GenPAC, self).__init__()
+        self.config_from = config_from
         self.default_opts = {}
         self.jobs = []
+
+        self.parse_options(args)
 
     @classmethod
     def add_formater(cls, name, fmt_cls, **options):
@@ -62,78 +66,10 @@ class GenPAC(object):
         cls._formaters[name] = {'cls': fmt_cls,
                                 'options': options}
 
-    def walk_formaters(self, attr, *args, **kargs):
-        for fmter in itervalues(self._formaters):
+    @classmethod
+    def walk_formaters(cls, attr, *args, **kargs):
+        for fmter in itervalues(cls._formaters):
             getattr(fmter['cls'], attr)(*args, **kargs)
-
-    def build_args_parser(self):
-        # 如果某选项同时可以在配置文件和命令行中设定，则必须使default=None
-        # 以避免命令行中即使没指定该参数，也会覆盖配置文件中的值
-        # 原因见parse_config() -> update(name, key, default=None)
-        parser = argparse.ArgumentParser(
-            prog='genpac',
-            formatter_class=argparse.RawTextHelpFormatter,
-            description='获取gfwlist生成多种格式的翻墙工具配置文件, '
-                        '支持自定义规则',
-            epilog=get_resource_data('res/rule-syntax.txt'),
-            argument_default=argparse.SUPPRESS,
-            add_help=False)
-        parser.add_argument(
-            '-v', '--version', action='version',
-            version='%(prog)s {}'.format(__version__),
-            help='版本信息')
-        parser.add_argument(
-            '-h', '--help', action='help',
-            help='帮助信息')
-        parser.add_argument(
-            '--init', nargs='?', const=True, default=False, metavar='PATH',
-            help='初始化配置和用户规则文件')
-
-        group = parser.add_argument_group(
-            title='通用参数')
-        group.add_argument(
-            '--format', choices=self._formaters.keys(),
-            help='生成格式, 只有指定了格式, 相应格式的参数才作用')
-        group.add_argument(
-            '--gfwlist-url', metavar='URL',
-            help='gfwlist网址，无此参数或URL为空则使用默认地址, URL为-则不在线获取')
-        group.add_argument(
-            '--gfwlist-proxy', metavar='PROXY',
-            help='获取gfwlist时的代理, 如果可正常访问gfwlist地址, 则无必要使用该选项\n'
-                 '格式为 "代理类型 [用户名:密码]@地址:端口" 其中用户名和密码可选, 如:\n'
-                 '  SOCKS5 127.0.0.1:8080\n'
-                 '  SOCKS5 username:password@127.0.0.1:8080\n')
-        group.add_argument(
-            '--gfwlist-local', metavar='FILE',
-            help='本地gfwlist文件地址, 当在线地址获取失败时使用')
-        group.add_argument(
-            '--gfwlist-update-local', action='store_true',
-            help='当在线gfwlist成功获取且--gfwlist-local参数存在时, '
-                 '更新gfwlist-local内容')
-        group.add_argument(
-            '--gfwlist-disabled', action='store_true',
-            help='禁用gfwlist')
-        group.add_argument(
-            '--gfwlist-decoded-save', metavar='FILE',
-            help='保存解码后的gfwlist, 仅用于测试')
-        group.add_argument(
-            '--user-rule', action='append', metavar='RULE',
-            help='自定义规则, 允许重复使用或在单个参数中使用`,`分割多个规则，如:\n'
-                 '  --user-rule="@@sina.com" --user-rule="||youtube.com"\n'
-                 '  --user-rule="@@sina.com,||youtube.com"')
-        group.add_argument(
-            '--user-rule-from', action='append', metavar='FILE',
-            help='从文件中读取自定义规则, 使用方法如--user-rule')
-        group.add_argument(
-            '-o', '--output', metavar='FILE',
-            help='输出到文件, 无此参数或FILE为-, 则输出到stdout')
-        group.add_argument(
-            '-c', '--config-from', default=None, metavar='FILE',
-            help='从文件中读取配置信息')
-        group.add_argument(
-            '--template', metavar='FILE', help='自定义模板文件')
-
-        return parser
 
     def read_config(self, config_file):
         if not config_file:
@@ -144,8 +80,8 @@ class GenPAC(object):
             return (
                 cfg.sections('job', sub_section_key='format') or [{}],
                 cfg.section('config') or {})
-        except:
-            exit_error('配置文件读取失败')
+        except Exception:
+            raise FatalError('配置文件{}读取失败'.format(config_file))
 
     def update_opt(self, args, cfgs, key,
                    default=None, conv=None, dest=None, **kwargs):
@@ -175,18 +111,11 @@ class GenPAC(object):
 
         return dest, v
 
-    def parse_options(self):
-        # 检查弃用参数 警告
-        check_deprecated_args()
+    def parse_options(self, args=Namespace()):
+        config_from = args.config_from if hasattr(args, 'config_from') else \
+            self.config_from
 
-        parser = self.build_args_parser()
-        self.walk_formaters('arguments', parser)
-        args = parser.parse_args()
-
-        if args.init:
-            self.init(args.init)
-
-        cfgs, self.default_opts = self.read_config(args.config_from)
+        cfgs, self.default_opts = self.read_config(config_from)
 
         opts = {}
         opts['format'] = {'conv': conv_lower}
@@ -223,43 +152,20 @@ class GenPAC(object):
                 job.update(**{dest: value})
             self.jobs.append(job)
 
-    def init(self, dest):
-        try:
-            path = abspath(dest)
-            if not os.path.isdir(path):
-                os.makedirs(path)
-            config_dst = os.path.join(path, 'config.ini')
-            user_rule_dst = os.path.join(path, 'user-rules.txt')
-            if os.path.exists(config_dst) or os.path.exists(user_rule_dst):
-                ans = comfirm('文件已存在, 是否覆盖?[y|n]: ')
-                if ans.lower() != 'y':
-                    raise Exception('文件已存在')
-            with open_file(config_dst, 'w') as fp:
-                fp.write(get_resource_data('res/tpl-config.ini'))
-            with open_file(user_rule_dst, 'w') as fp:
-                fp.write(get_resource_data('res/tpl-user-rules.txt'))
-        except Exception as e:
-            exit_error('初始化失败: {}'.format(e))
-        exit_success('已成功初始化')
-
     def walk_jobs(self):
         for job in self.jobs:
             yield job
 
-    def run(self):
-        self.parse_options()
-
+    def generate_all(self):
         for job in self.walk_jobs():
             self.generate(job)
 
     def generate(self, job):
         if not job.format:
-            exit_error('生成的格式不能为空, 请检查参数--format或配置format.')
+            raise FatalError('生成的格式不能为空, 请检查参数--format或配置format.')
         if job.format not in self._formaters:
-            exit_error('发现不支持的生成格式: {}, 可选格式为: {}'.format(
+            raise FatalError('发现不支持的生成格式: {}, 可选格式为: {}'.format(
                 job.format, ', '.join(self._formaters.keys())))
-        # print('-')
-        # pprint(job)
         generator = Generator(job, self._formaters[job.format]['cls'])
         generator.generate()
 
@@ -315,8 +221,8 @@ class Generator(object):
                 SocksiPyHandler(type_, host, int(port),
                                 username=usr, password=pwd))
         except:
-            exit_error('解析获取gfwlist的代理`{}`失败'.format(
-                self.options.gfwlist_proxy))
+            raise FatalError('解析获取gfwlist的代理`{}`失败'.format(
+                             self.options.gfwlist_proxy))
 
     def fetch_gfwlist_online(self):
         # 使用类变量缓存gfwlist在线获取的内容
@@ -348,21 +254,22 @@ class Generator(object):
                            fail_msg='更新本地gfwlist文件{path}失败')
         except:
             if self.options.gfwlist_local:
-                content, _ = read_file(self.options.gfwlist_local,
-                                       fail_msg='读取本地gfwlist文件{path}失败')
+                content = read_file(self.options.gfwlist_local,
+                                    fail_msg='读取本地gfwlist文件{path}失败')
                 gfwlist_from = 'local[{}]'.format(self.options.gfwlist_local)
 
         if not content:
             if self.options.gfwlist_url != '-' or self.options.gfwlist_local:
-                exit_error('获取gfwlist失败. online: {} local: {}'.format(
-                    self.options.gfwlist_url, self.options.gfwlist_local))
+                raise FatalError(
+                    '获取gfwlist失败. online: {} local: {}'.format(
+                        self.options.gfwlist_url, self.options.gfwlist_local))
             else:
                 gfwlist_from = '-'
 
         try:
             content = base64.b64decode(content).decode('utf-8')
         except:
-            exit_error('解码gfwlist失败.')
+            raise FatalError('解码gfwlist失败.')
 
         if self.options.gfwlist_decoded_save:
             write_file(self.options.gfwlist_decoded_save, content,
@@ -382,7 +289,7 @@ class Generator(object):
         rules = []
         rules.extend(self.options.user_rule)
         for f in self.options.user_rule_from:
-            content, _ = read_file(f, fail_msg='读取自定义规则文件`{path}`失败')
+            content = read_file(f, fail_msg='读取自定义规则文件`{path}`失败')
             rules.extend(content.splitlines())
         return rules
 
@@ -409,25 +316,6 @@ class Generator(object):
             return (modified_datestr,
                     time.strftime('%a, %d %b %Y %H:%M:%S %z',
                                   time.localtime()))
-
-
-# decorator: 添加格式化器
-def formater(name, **options):
-    def decorator(fmt_cls):
-        GenPAC.add_formater(name, fmt_cls, **options)
-        return fmt_cls
-    return decorator
-
-
-# 解析规则
-# 参数 precise 影响返回格式
-# precise = False 时 返回域名
-# return: [忽略的域名, 被墙的域名]
-#
-# precise = True 时 返回 具体网址信息
-# return: [忽略规则_正则表达式, 忽略规则_通配符, 被墙规则_正则表达式, 被墙规则_通配符]
-def parse_rules(rules, precise=False):
-    return _parse_precise(rules) if precise else _parse(rules)
 
 
 # 普通解析
@@ -569,3 +457,127 @@ def _surmise_domain(rule):
         domain = rule
 
     return _get_public_suffix(domain)
+
+
+def _parse_args():
+    # 如果某选项同时可以在配置文件和命令行中设定，则必须使default=None
+    # 以避免命令行中即使没指定该参数，也会覆盖配置文件中的值
+    # 原因见parse_config() -> update(name, key, default=None)
+    parser = argparse.ArgumentParser(
+        prog='genpac',
+        formatter_class=argparse.RawTextHelpFormatter,
+        description='获取gfwlist生成多种格式的翻墙工具配置文件, '
+                    '支持自定义规则',
+        epilog=get_resource_data('res/rule-syntax.txt'),
+        argument_default=argparse.SUPPRESS,
+        add_help=False)
+    parser.add_argument(
+        '-v', '--version', action='version',
+        version='%(prog)s {}'.format(__version__),
+        help='版本信息')
+    parser.add_argument(
+        '-h', '--help', action='help',
+        help='帮助信息')
+    parser.add_argument(
+        '--init', nargs='?', const=True, default=False, metavar='PATH',
+        help='初始化配置和用户规则文件')
+
+    group = parser.add_argument_group(
+        title='通用参数')
+    group.add_argument(
+        '--format', choices=GenPAC._formaters.keys(),
+        help='生成格式, 只有指定了格式, 相应格式的参数才作用')
+    group.add_argument(
+        '--gfwlist-url', metavar='URL',
+        help='gfwlist网址，无此参数或URL为空则使用默认地址, URL为-则不在线获取')
+    group.add_argument(
+        '--gfwlist-proxy', metavar='PROXY',
+        help='获取gfwlist时的代理, 如果可正常访问gfwlist地址, 则无必要使用该选项\n'
+             '格式为 "代理类型 [用户名:密码]@地址:端口" 其中用户名和密码可选, 如:\n'
+             '  SOCKS5 127.0.0.1:8080\n'
+             '  SOCKS5 username:password@127.0.0.1:8080\n')
+    group.add_argument(
+        '--gfwlist-local', metavar='FILE',
+        help='本地gfwlist文件地址, 当在线地址获取失败时使用')
+    group.add_argument(
+        '--gfwlist-update-local', action='store_true',
+        help='当在线gfwlist成功获取且--gfwlist-local参数存在时, '
+             '更新gfwlist-local内容')
+    group.add_argument(
+        '--gfwlist-disabled', action='store_true',
+        help='禁用gfwlist')
+    group.add_argument(
+        '--gfwlist-decoded-save', metavar='FILE',
+        help='保存解码后的gfwlist, 仅用于测试')
+    group.add_argument(
+        '--user-rule', action='append', metavar='RULE',
+        help='自定义规则, 允许重复使用或在单个参数中使用`,`分割多个规则，如:\n'
+             '  --user-rule="@@sina.com" --user-rule="||youtube.com"\n'
+             '  --user-rule="@@sina.com,||youtube.com"')
+    group.add_argument(
+        '--user-rule-from', action='append', metavar='FILE',
+        help='从文件中读取自定义规则, 使用方法如--user-rule')
+    group.add_argument(
+        '-o', '--output', metavar='FILE',
+        help='输出到文件, 无此参数或FILE为-, 则输出到stdout')
+    group.add_argument(
+        '-c', '--config-from', default=None, metavar='FILE',
+        help='从文件中读取配置信息')
+    group.add_argument(
+        '--template', metavar='FILE', help='自定义模板文件')
+
+    # 检查弃用参数 警告
+    check_deprecated_args()
+
+    GenPAC.walk_formaters('arguments', parser)
+    return parser.parse_args()
+
+
+def _init(dest):
+    try:
+        path = abspath(dest)
+        if not os.path.isdir(path):
+            os.makedirs(path)
+        config_dst = os.path.join(path, 'config.ini')
+        user_rule_dst = os.path.join(path, 'user-rules.txt')
+        if os.path.exists(config_dst) or os.path.exists(user_rule_dst):
+            ans = comfirm('文件已存在, 是否覆盖?[y|n]: ')
+            if ans.lower() != 'y':
+                raise Exception('文件已存在')
+        with open_file(config_dst, 'w') as fp:
+            fp.write(get_resource_data('res/tpl-config.ini'))
+        with open_file(user_rule_dst, 'w') as fp:
+            fp.write(get_resource_data('res/tpl-user-rules.txt'))
+    except Exception as e:
+        exit_error('初始化失败: {}'.format(e))
+    exit_success('已成功初始化')
+
+
+# 解析规则
+# 参数 precise 影响返回格式
+# precise = False 时 返回域名
+# return: [忽略的域名, 被墙的域名]
+#
+# precise = True 时 返回 具体网址信息
+# return: [忽略规则_正则表达式, 忽略规则_通配符, 被墙规则_正则表达式, 被墙规则_通配符]
+def parse_rules(rules, precise=False):
+    return _parse_precise(rules) if precise else _parse(rules)
+
+
+# decorator: 添加格式化器
+def formater(name, **options):
+    def decorator(fmt_cls):
+        GenPAC.add_formater(name, fmt_cls, **options)
+        return fmt_cls
+    return decorator
+
+
+def run():
+    try:
+        args = _parse_args()
+        if args.init:
+            return _init(args.init)
+        gp = GenPAC(args=args)
+        gp.generate_all()
+    except Exception as e:
+        exit_error(e)

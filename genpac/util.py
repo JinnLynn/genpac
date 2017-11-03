@@ -4,8 +4,25 @@ from __future__ import (unicode_literals, absolute_import,
 import os
 import sys
 import codecs
+import re
 
-from ._compat import string_types, binary_type, getcwd
+from ._compat import PY2, string_types, binary_type, getcwd
+
+
+class Error(Exception):
+    def __init__(self, msg):
+        self.msg = msg
+
+    def __str__(self):
+        return self.msg.encode('utf-8') if PY2 else self.msg
+
+
+class FatalError(Error):
+    pass
+
+
+class FatalIOError(FatalError):
+    pass
 
 
 def error(*args, **kwargs):
@@ -32,35 +49,22 @@ def open_file(path, mode='r'):
     return codecs.open(path, mode, 'utf-8')
 
 
-def read_file(path, fail_exit=True,
-              fail_msg='读取文件{path}失败: {error}'):
-    error = None
+def read_file(path, fail_msg='读取文件{path}失败: {error}'):
     try:
         with open_file(path) as fp:
-            return fp.read(), None
+            return fp.read()
     except Exception as e:
-        error = e
-
-    if fail_exit:
-        exit_error(fail_msg.format(**{'path': path, 'error': error or '未知'}))
-    return None, error
+        raise FatalIOError(fail_msg.format(**{'path': path, 'error': e}))
 
 
-def write_file(path, content,
-               fail_exit=True, fail_msg='写入文件{path}失败: {error}'):
-    error = None
+def write_file(path, content, fail_msg='写入文件{path}失败: {error}'):
     if isinstance(content, binary_type):
         content = content.decode('utf-8')
     try:
         with open_file(path, 'w') as fp:
             fp.write(content)
-        return True, None
     except Exception as e:
-        error = e
-
-    if fail_exit:
-        exit_error(fail_msg.format(**{'path': path, 'error': error or '未知'}))
-    return False, error
+        raise FatalError(fail_msg.format(**{'path': path, 'error': e}))
 
 
 def get_resource_path(path):
@@ -77,6 +81,16 @@ def open_resource(path, mode='r'):
 def get_resource_data(path):
     with open_resource(path) as fp:
         return fp.read()
+
+
+def replace_all(text, replacements):
+    def one_xlat(match):
+        return replacements[match.group(0)]
+
+    if not replacements:
+        return text
+    rx = re.compile('|'.join(map(re.escape, replacements)))
+    return rx.sub(one_xlat, text)
 
 
 def conv_bool(obj):

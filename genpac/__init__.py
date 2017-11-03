@@ -11,14 +11,9 @@ __all__ = ['GenPAC', 'Namespace', 'Generator', 'Config',
            'FmtBase', 'FmtPAC', 'FmtDnsmasq', 'FmtWingy',
            'GenPACDeprecationWarning', 'run', 'formater', 'parse_rules']
 
-from .core import GenPAC, Generator, Namespace, formater, parse_rules
+from .core import GenPAC, Generator, Namespace, run, formater, parse_rules
 from .config import Config
 from .formats import FmtBase, FmtPAC, FmtDnsmasq, FmtWingy
 from .deprecated import GenPACDeprecationWarning, install_showwarning
 
 install_showwarning()
-
-
-def run():
-    gp = GenPAC()
-    gp.run()
