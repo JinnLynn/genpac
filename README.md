@@ -192,7 +192,7 @@ genpac --format=wingy --template=/sample/wingy-tpl.yaml
 [sample/user-rules.txt]: https://github.com/JinnLynn/genpac/blob/master/sample/user-rules.txt
 [pypi]:             https://pypi.python.org/pypi/genpac
 [travis-ci]:        https://travis-ci.org/JinnLynn/genpac
-[pypi-version]:     https://img.shields.io/pypi/v/genpac.svg?style=flat&maxAge=86400
-[pypi-license]:     https://img.shields.io/pypi/l/genpac.svg?style=flat&maxAge=86400
-[travis-ci-status]: https://img.shields.io/travis/JinnLynn/genpac.svg?style=flat&maxAge=86400
-[dev-badge]:        https://img.shields.io/badge/dev-2.0b2-orange.svg?style=flat&maxAge=86400
+[pypi-version]:     https://img.shields.io/pypi/v/genpac.svg?style=flat
+[pypi-license]:     https://img.shields.io/pypi/l/genpac.svg?style=flat
+[travis-ci-status]: https://img.shields.io/travis/JinnLynn/genpac.svg?style=flat
+[dev-badge]:        https://img.shields.io/badge/dev-2.0b2-orange.svg?style=flat
