@@ -5,6 +5,7 @@ import sys
 import os
 import pytest
 from contextlib import contextmanager
+
 import genpac
 from genpac._compat import string_types, iterkeys, iteritems
 

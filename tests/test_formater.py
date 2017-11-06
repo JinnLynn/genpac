@@ -4,10 +4,10 @@ from __future__ import (unicode_literals, absolute_import,
 import sys
 import pytest
 from contextlib import contextmanager
-from genpac import GenPAC, formater, FmtBase
 
-from test.util import buildenv, join_etc
-from test.util import parametrize, skipif, xfail
+from genpac import GenPAC, formater, FmtBase
+from tests.util import buildenv, join_etc
+from tests.util import parametrize, skipif, xfail
 
 @contextmanager
 def add_formater():

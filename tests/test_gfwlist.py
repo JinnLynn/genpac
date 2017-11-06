@@ -4,11 +4,11 @@ from __future__ import (unicode_literals, absolute_import,
 import os
 import pytest
 from contextlib import contextmanager
+
 from genpac import GenPAC, Generator, Namespace, FmtBase
 from genpac.core import _GFWLIST_URL
-
-from test.util import is_not_own
-from test.util import parametrize, skipif, xfail
+from tests.util import is_not_own
+from tests.util import parametrize, skipif, xfail
 
 _LOCAL_PROXY = ['SOCKS5 127.0.0.1:9527', 'PROXY 127.0.0.1:9580']
 

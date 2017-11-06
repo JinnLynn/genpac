@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-test_dir="test"
+test_dir="tests"
 tmp=$test_dir/tmp
 test_case=$test_dir/etc/test-case.js
 tmp_test=$tmp/test.js

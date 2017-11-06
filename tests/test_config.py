@@ -2,10 +2,10 @@
 from __future__ import (unicode_literals, absolute_import,
                         division, print_function)
 import os
-from genpac import Config, GenPAC
 
-from test.util import buildenv, _TMP_DIR, join_tmp
-from test.util import parametrize, skipif, xfail
+from genpac import Config, GenPAC
+from tests.util import buildenv, _TMP_DIR, join_tmp
+from tests.util import parametrize, skipif, xfail
 
 # 测试配置文件
 # =====
