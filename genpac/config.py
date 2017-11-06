@@ -66,7 +66,7 @@ class Config(object):
                 try:
                     _, ss = secs
                     ss = ss.split('#')[0]
-                except:
+                except Exception:
                     _, ss = secs[0], None
                 if sub_section_key not in opt:
                     opt[sub_section_key] = ss

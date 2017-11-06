@@ -220,7 +220,7 @@ class Generator(object):
             return build_opener(
                 SocksiPyHandler(type_, host, int(port),
                                 username=usr, password=pwd))
-        except:
+        except Exception:
             raise FatalError('解析获取gfwlist的代理`{}`失败'.format(
                              self.options.gfwlist_proxy))
 
@@ -252,7 +252,7 @@ class Generator(object):
                     and self.options.gfwlist_update_local:
                 write_file(self.options.gfwlist_local, content,
                            fail_msg='更新本地gfwlist文件{path}失败')
-        except:
+        except Exception:
             if self.options.gfwlist_local:
                 content = read_file(self.options.gfwlist_local,
                                     fail_msg='读取本地gfwlist文件{path}失败')
@@ -268,7 +268,7 @@ class Generator(object):
 
         try:
             content = base64.b64decode(content).decode('utf-8')
-        except:
+        except Exception:
             raise FatalError('解码gfwlist失败.')
 
         if self.options.gfwlist_decoded_save:
@@ -349,7 +349,7 @@ def _parse(rules):
                         '{}{}'.format(m2[0], tld))
                     if domain:
                         proxy_lst.append(domain)
-            except:
+            except Exception:
                 pass
             continue
         elif line.startswith('|') or line.endswith('|'):

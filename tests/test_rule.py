@@ -2,9 +2,9 @@
 from __future__ import (unicode_literals, absolute_import,
                         division, print_function)
 import pytest
-from genpac import parse_rules
 
-from test.util import parametrize, skipif, xfail
+from genpac import parse_rules
+from tests.util import parametrize, skipif, xfail
 
 # 规则解析测试
 # =====

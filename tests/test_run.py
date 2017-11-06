@@ -2,10 +2,10 @@
 from __future__ import (unicode_literals, absolute_import,
                         division, print_function)
 import pytest
-from genpac import run
 
-from test.util import buildenv, join_etc, join_tmp, is_not_own
-from test.util import parametrize, skipif, xfail
+from genpac import run
+from tests.util import buildenv, join_etc, join_tmp, is_not_own
+from tests.util import parametrize, skipif, xfail
 
 @parametrize('cfg', [
     join_etc('config.ini')])

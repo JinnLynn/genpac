@@ -5,7 +5,7 @@ import os
 import shutil
 from pytest import fixture
 
-from test.util import join_etc, _TMP_DIR
+from tests.util import join_etc, _TMP_DIR
 
 @fixture(scope='session')
 def config_file():
