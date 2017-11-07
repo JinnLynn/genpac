@@ -7,15 +7,10 @@
 ### 安装
 
 ```shell
-# 安装
-$ pip install genpac
-# 或从github安装开发版本
-$ pip install https://github.com/JinnLynn/genpac/archive/master.zip
-
-# 更新
-$ pip install --upgrade genpac
-# 或从github更新开发版本
-$ pip install --upgrade https://github.com/JinnLynn/genpac/archive/master.zip
+# 安装或更新
+$ pip install -U genpac
+# 或从github安装更新开发版本
+$ pip install -U https://github.com/JinnLynn/genpac/archive/master.zip
 
 # 卸载
 $ pip uninstall genpac
