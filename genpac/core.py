@@ -59,6 +59,8 @@ class GenPAC(object):
         self.default_opts = {}
         self.init_dest = None
         self.jobs = []
+        self.extra_rules = []
+        self.extra_jobs = []
 
     @classmethod
     def add_formater(cls, name, fmt_cls, **options):
@@ -211,12 +213,13 @@ class GenPAC(object):
 
         self.walk_formaters('config', opts)
 
-        self.jobs = []
+        self.clear_jobs()
 
         # 当配置没有[job]节点且参数没有--format 指定默认pac 可向前兼容
         if not hasattr(args, 'format') and len(cfgs) == 1 and cfgs[0] == {}:
             cfgs[0]['format'] = 'pac'
 
+        cfgs.extend(self.extra_jobs)
         for c in cfgs:
             cfg = self.default_opts.copy()
             cfg.update(c)
@@ -226,7 +229,19 @@ class GenPAC(object):
             for k, v in iteritems(opts):
                 dest, value = self.update_opt(args, cfg, k, **v)
                 job.update(**{dest: value})
+            job.user_rule.extend(self.extra_rules)
             self.jobs.append(job)
+
+    def add_rule(self, rule):
+        rule = rule.strip()
+        if rule:
+            self.extra_rules.append(rule)
+
+    def add_job(self, job_cfgs):
+        self.extra_jobs.append(job_cfgs)
+
+    def clear_jobs(self):
+        self.jobs = []
 
     def walk_jobs(self):
         for job in self.jobs:
