@@ -82,7 +82,7 @@ class FmtBase(object):
         return self._gfwed_domains
 
     @property
-    def ignored_dimains(self):
+    def ignored_domains(self):
         if self._ignored_domains is None:
             self._ignored_domains = list(
                 set(self.rules[0][0] + self.rules[1][0]))
