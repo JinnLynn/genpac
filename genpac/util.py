@@ -7,6 +7,8 @@ import codecs
 import re
 
 from ._compat import PY2, string_types, binary_type, getcwd
+from ._compat import unquote, urlparse
+from .publicsuffix import get_public_suffix
 
 
 class Error(Exception):
@@ -23,6 +25,42 @@ class FatalError(Error):
 
 class FatalIOError(FatalError):
     pass
+
+
+def surmise_domain(rule):
+    def _get_public_suffix(host):
+        dat_path = get_resource_path('res/public_suffix_list.dat')
+        domain = get_public_suffix(host, dat_path)
+        return None if domain.find('.') < 0 else domain
+
+    def _clear_asterisk(rule):
+        if rule.find('*') < 0:
+            return rule
+        rule = rule.strip('*')
+        rule = rule.replace('/*.', '/')
+        rule = re.sub(r'/([a-zA-Z0-9]+)\*\.', '/', rule)
+        rule = re.sub(r'\*([a-zA-Z0-9_%]+)', '', rule)
+        rule = re.sub(r'^([a-zA-Z0-9_%]+)\*', '', rule)
+        return rule
+
+    domain = ''
+
+    rule = _clear_asterisk(rule)
+    rule = rule.lstrip('.')
+
+    if rule.find('%2F') >= 0:
+        rule = unquote(rule)
+
+    if rule.startswith('http:') or rule.startswith('https:'):
+        r = urlparse(rule)
+        domain = r.hostname
+    elif rule.find('/') > 0:
+        r = urlparse('http://' + rule)
+        domain = r.hostname
+    elif rule.find('.') > 0:
+        domain = rule
+
+    return _get_public_suffix(domain)
 
 
 def error(*args, **kwargs):

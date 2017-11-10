@@ -14,12 +14,11 @@ from pprint import pprint  # noqa: F401
 from . import __version__
 from ._compat import string_types
 from ._compat import comfirm, build_opener, iteritems, itervalues
-from ._compat import unquote, urlparse
 from .pysocks.socks import PROXY_TYPES as _proxy_types
 from .pysocks.sockshandler import SocksiPyHandler
-from .publicsuffix import get_public_suffix
 from .config import Config
 from .deprecated import check_deprecated_args, check_deprecated_config
+from .util import surmise_domain
 from .util import Error, FatalError, FatalIOError
 from .util import exit_error, exit_success
 from .util import abspath, open_file, read_file, write_file
@@ -435,8 +434,35 @@ class Generator(object):
                                   time.localtime()))
 
 
+# 解析规则
+# 参数 precise 影响返回格式
+# precise = False 时 返回域名
+# return: [忽略的域名, 被墙的域名]
+#
+# precise = True 时 返回 具体网址信息
+# return: [忽略规则_正则表达式, 忽略规则_通配符, 被墙规则_正则表达式, 被墙规则_通配符]
+def parse_rules(rules, precise=False):
+    return _parse_rule_precise(rules) if precise else _parse_rule(rules)
+
+
+# decorator: 添加格式化器
+def formater(name, **options):
+    def decorator(fmt_cls):
+        GenPAC.add_formater(name, fmt_cls, **options)
+        return fmt_cls
+    return decorator
+
+
+def run():
+    try:
+        gp = GenPAC()
+        gp.run()
+    except Exception as e:
+        exit_error(e)
+
+
 # 普通解析
-def _parse(rules):
+def _parse_rule(rules):
     direct_lst = []
     proxy_lst = []
     for line in rules:
@@ -447,7 +473,7 @@ def _parse(rules):
 
         if line.startswith('@@'):
             line = line.lstrip('@|.')
-            domain = _surmise_domain(line)
+            domain = surmise_domain(line)
             if domain:
                 direct_lst.append(domain)
             continue
@@ -455,14 +481,14 @@ def _parse(rules):
             line = line.replace('\/', '/').replace('\.', '.')
             try:
                 m = re.search(r'[a-z0-9]+\..*', line)
-                domain = _surmise_domain(m.group(0))
+                domain = surmise_domain(m.group(0))
                 if domain:
                     proxy_lst.append(domain)
                     continue
                 m = re.search(r'[a-z]+\.\(.*\)', line)
                 m2 = re.split(r'[\(\)]', m.group(0))
                 for tld in re.split(r'\|', m2[1]):
-                    domain = _surmise_domain(
+                    domain = surmise_domain(
                         '{}{}'.format(m2[0], tld))
                     if domain:
                         proxy_lst.append(domain)
@@ -471,7 +497,7 @@ def _parse(rules):
             continue
         elif line.startswith('|') or line.endswith('|'):
             line = line.strip('|')
-        domain = _surmise_domain(line)
+        domain = surmise_domain(line)
         if domain:
             proxy_lst.append(domain)
 
@@ -487,7 +513,7 @@ def _parse(rules):
 
 
 # 精确解析
-def _parse_precise(rules):
+def _parse_rule_precise(rules):
     def wildcard_to_regexp(pattern):
         pattern = re.sub(r'([\\\+\|\{\}\[\]\(\)\^\$\.\#])', r'\\\1',
                          pattern)
@@ -538,66 +564,3 @@ def _parse_precise(rules):
 
     return [result['d']['r'], result['d']['w'],
             result['p']['r'], result['p']['w']]
-
-
-def _surmise_domain(rule):
-    def _get_public_suffix(host):
-        dat_path = get_resource_path('res/public_suffix_list.dat')
-        domain = get_public_suffix(host, dat_path)
-        return None if domain.find('.') < 0 else domain
-
-    def _clear_asterisk(rule):
-        if rule.find('*') < 0:
-            return rule
-        rule = rule.strip('*')
-        rule = rule.replace('/*.', '/')
-        rule = re.sub(r'/([a-zA-Z0-9]+)\*\.', '/', rule)
-        rule = re.sub(r'\*([a-zA-Z0-9_%]+)', '', rule)
-        rule = re.sub(r'^([a-zA-Z0-9_%]+)\*', '', rule)
-        return rule
-
-    domain = ''
-
-    rule = _clear_asterisk(rule)
-    rule = rule.lstrip('.')
-
-    if rule.find('%2F') >= 0:
-        rule = unquote(rule)
-
-    if rule.startswith('http:') or rule.startswith('https:'):
-        r = urlparse(rule)
-        domain = r.hostname
-    elif rule.find('/') > 0:
-        r = urlparse('http://' + rule)
-        domain = r.hostname
-    elif rule.find('.') > 0:
-        domain = rule
-
-    return _get_public_suffix(domain)
-
-
-# 解析规则
-# 参数 precise 影响返回格式
-# precise = False 时 返回域名
-# return: [忽略的域名, 被墙的域名]
-#
-# precise = True 时 返回 具体网址信息
-# return: [忽略规则_正则表达式, 忽略规则_通配符, 被墙规则_正则表达式, 被墙规则_通配符]
-def parse_rules(rules, precise=False):
-    return _parse_precise(rules) if precise else _parse(rules)
-
-
-# decorator: 添加格式化器
-def formater(name, **options):
-    def decorator(fmt_cls):
-        GenPAC.add_formater(name, fmt_cls, **options)
-        return fmt_cls
-    return decorator
-
-
-def run():
-    try:
-        gp = GenPAC()
-        gp.run()
-    except Exception as e:
-        exit_error(e)

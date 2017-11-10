@@ -14,6 +14,8 @@ __all__ = ['GenPAC', 'Namespace', 'Generator', 'Config',
 from .core import GenPAC, Generator, Namespace, run, formater, parse_rules
 from .config import Config
 from .formats import FmtBase, FmtPAC, FmtDnsmasq, FmtWingy
+from .util import surmise_domain
+from .util import Error, FatalError, FatalIOError
 from .deprecated import GenPACDeprecationWarning, install_showwarning
 
 install_showwarning()
