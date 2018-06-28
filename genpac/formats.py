@@ -283,3 +283,28 @@ class FmtWingy(FmtBase):
                 od = ss_uri(od['id'], od['ss'])
             opts.append(to_yaml(od))
         return '\n'.join(opts)
+
+
+@formater('potatso')
+class FmtPotatso(FmtBase):
+    _default_tpl_file = get_resource_path('res/tpl-potatso.toml')
+
+    def __init__(self, *args, **kwargs):
+        super(FmtPotatso, self).__init__(*args, **kwargs)
+
+    @classmethod
+    def arguments(cls, parser):
+        group = parser.add_argument_group(
+            title=cls._name.upper(),
+            description='Potatso2是iOS下基于NEKit的代理App, 本格式没有可选参数')
+
+    def generate(self, replacements):
+        fmt = '{:>4}'.format(' ')
+        direct_rules = ['{}"DOMAIN-SUFFIX, {}, DIRECT"'.format(fmt, r) for r \
+            in self.ignored_domains]
+        gfwed_rules = ['{}"DOMAIN-SUFFIX, {}, PROXY"'.format(fmt, r) for r \
+            in self.gfwed_domains]
+        replacements.update({
+            '__DIRECT_RULES__': ',\n'.join(direct_rules),
+            '__GFWED_RULES__': ',\n'.join(gfwed_rules)})
+        return self.replace(self.tpl, replacements)
