@@ -308,3 +308,44 @@ class FmtPotatso(FmtBase):
             '__DIRECT_RULES__': ',\n'.join(direct_rules),
             '__GFWED_RULES__': ',\n'.join(gfwed_rules)})
         return self.replace(self.tpl, replacements)
+
+@formater('ss-acl')
+class FmtSSACL(FmtBase):
+    def __init__(self, *args, **kwargs):
+        super(FmtSSACL, self).__init__(*args, **kwargs)
+
+    @classmethod
+    def arguments(cls, parser):
+        group = parser.add_argument_group(
+            title=cls._name.upper(),
+            description='Shadowsocks访问控制列表, 本格式没有可选参数')
+
+    @property
+    def tpl(self):
+        content = super(FmtSSACL, self).tpl
+        if content:
+            return content
+        content = '''
+        # Shadowsocks Access Control List
+        # genpac __VERSION__ https://github.com/JinnLynn/genpac
+        [bypass_all]
+
+        [proxy_list]
+        __GFWED_RULES__
+        # Generated: __GENERATED__
+        # GFWList: __MODIFIED__ From __GFWLIST_FROM__
+        '''
+        content = '\n'.join([l.strip() for l in content.splitlines()])
+        return content.lstrip()
+
+    def generate(self, replacements):
+        def parse_rules(rules):
+            rules = [l.replace('.', '\\.') for l in rules]
+            rules = ['(^|\\.){}$'.format(l) for l in rules]
+            return rules
+
+        gfwed_rules = parse_rules(self.gfwed_domains)
+
+        replacements.update({
+            '__GFWED_RULES__': '\n'.join(gfwed_rules)})
+        return self.replace(self.tpl, replacements)
