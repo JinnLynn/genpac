@@ -6,14 +6,15 @@ __version__ = '2.1b1'
 __author__ = 'JinnLynn <eatfishlin@gmail.com>'
 __license__ = 'The MIT License'
 __copyright__ = 'Copyright 2013-2017 JinnLynn'
+__project_url__ = 'https://github.com/JinnLynn/genpac'
 
-__all__ = ['GenPAC', 'Namespace', 'Generator', 'Config',
-           'FmtBase', 'FmtPAC', 'FmtDnsmasq', 'FmtWingy',
-           'GenPACDeprecationWarning', 'run', 'formater', 'parse_rules']
+__all__ = ['GenPAC', 'TemplateFile', 'FmtBase',
+           'formater', 'run', 'parse_rules']
 
 from .core import GenPAC, Generator, Namespace, run, formater, parse_rules
 from .config import Config
-from .formats import FmtBase, FmtPAC, FmtDnsmasq, FmtWingy
+from .template import TemplateFile
+from .formats import FmtBase
 from .util import surmise_domain
 from .util import Error, FatalError, FatalIOError
 from .deprecated import GenPACDeprecationWarning, install_showwarning

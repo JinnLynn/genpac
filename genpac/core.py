@@ -11,10 +11,10 @@ from datetime import datetime, timedelta
 import copy
 from pprint import pprint  # noqa: F401
 
-from . import __version__
+from . import __version__, __project_url__
 from ._compat import string_types
 from ._compat import comfirm, build_opener, iteritems, itervalues
-from .pysocks.socks import PROXY_TYPES as _proxy_types
+from .pysocks.socks import PROXY_TYPES as _PROXY_TYPES
 from .pysocks.sockshandler import SocksiPyHandler
 from .config import Config
 from .deprecated import check_deprecated_args, check_deprecated_config
@@ -308,7 +308,11 @@ class Generator(object):
         replacements = {'__VERSION__': __version__,
                         '__GENERATED__': generated,
                         '__MODIFIED__': modified,
-                        '__GFWLIST_FROM__': gfwlist_from}
+                        '__GFWLIST_FROM__': gfwlist_from,
+                        '__GENPAC__': 'genpac {} {}'.format(__version__,
+                                                            __project_url__),
+                        '__GFWLIST_DETAIL__': '{} From {}'.format(
+                            modified, gfwlist_from)}
 
         content = self.formater.generate(replacements)
 
@@ -323,8 +327,8 @@ class Generator(object):
     def init_opener(self):
         if not self.options.gfwlist_proxy:
             return build_opener()
-        _proxy_types['SOCKS'] = _proxy_types['SOCKS4']
-        _proxy_types['PROXY'] = _proxy_types['HTTP']
+        _PROXY_TYPES['SOCKS'] = _PROXY_TYPES['SOCKS4']
+        _PROXY_TYPES['PROXY'] = _PROXY_TYPES['HTTP']
         try:
             # format: PROXY|SOCKS|SOCKS4|SOCKS5 [USR:PWD]@HOST:PORT
             matches = re.match(
@@ -332,7 +336,7 @@ class Generator(object):
                 self.options.gfwlist_proxy,
                 re.IGNORECASE)
             type_, usr, pwd, host, port = matches.groups()
-            type_ = _proxy_types[type_.upper()]
+            type_ = _PROXY_TYPES[type_.upper()]
             return build_opener(
                 SocksiPyHandler(type_, host, int(port),
                                 username=usr, password=pwd))

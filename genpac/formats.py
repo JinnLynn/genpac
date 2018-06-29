@@ -9,11 +9,10 @@ from base64 import b64decode
 from pprint import pprint  # noqa: F401
 
 from ._compat import iteritems, text_type
-from . import Namespace, formater, parse_rules
+from . import Namespace, TemplateFile, formater, parse_rules
 from .util import error, conv_bool
 from .util import read_file, get_resource_path, replace_all
 from . import template as tpl
-from .template import TemplateFile
 
 
 class FmtBase(object):

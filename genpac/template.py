@@ -6,7 +6,9 @@ from ._compat import string_types
 from .util import get_resource_path, read_file
 
 
-class TemplateFile:
+# 模板文件
+# is_buildin == True时为内建模板文件，在脚本源码目录下寻找
+class TemplateFile(object):
     def __init__(self, path, is_buildin=False):
         self.tpl_file = get_resource_path(path) if is_buildin else path
 
@@ -20,23 +22,22 @@ PAC_PRECISE = TemplateFile('res/tpl-pac-precise.js', True)
 PAC_PRECISE_MIN = TemplateFile('res/tpl-pac-precise.min.js', True)
 WINGY = TemplateFile('res/tpl-wingy.yaml', True)
 DNSMASQ = '''
-#! genpac __VERSION__ https://github.com/JinnLynn/genpac
+#! __GENPAC__
 __DNSMASQ__
 #! Generated: __GENERATED__
-#! GFWList: __MODIFIED__ From __GFWLIST_FROM__
+#! GFWList: __GFWLIST_DETAIL__
 '''
 SS_ACL = '''
-# Shadowsocks Access Control List
-# genpac __VERSION__ https://github.com/JinnLynn/genpac
+#! __GENPAC__
 [bypass_all]
 
 [proxy_list]
 __GFWED_RULES__
-# Generated: __GENERATED__
-# GFWList: __MODIFIED__ From __GFWLIST_FROM__
+#! Generated: __GENERATED__
+#! GFWList: __GFWLIST_DETAIL__
 '''
 POTATSO = '''
-#! genpac __VERSION__ https://github.com/JinnLynn/genpac
+#! __GENPAC__
 [RULESET.gfwed]
 name = "GFWed rules"
 rules = [
@@ -49,10 +50,10 @@ rules = [
 __DIRECT_RULES__
 ]
 #! Generated: __GENERATED__
-#! GFWList: __MODIFIED__ From __GFWLIST_FROM__
+#! GFWList: __GFWLIST_DETAIL__
 '''
 
-# 去除模板的前后换行符
+# 去除文本模板的前后换行符
 for name in dir():
     if name.isupper() and isinstance(vars()[name], string_types):
         vars()[name] = vars()[name].strip('\n')

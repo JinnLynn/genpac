@@ -1,5 +1,5 @@
 /**
- * genpac __VERSION__ https://github.com/JinnLynn/genpac
+ * __GENPAC__
  * Generated: __GENERATED__
  * GFWList Last-Modified: __MODIFIED__
  * GFWList From: __GFWLIST_FROM__
