@@ -8,15 +8,17 @@ from collections import OrderedDict
 from base64 import b64decode
 from pprint import pprint  # noqa: F401
 
-from ._compat import iteritems
+from ._compat import iteritems, text_type
 from . import Namespace, formater, parse_rules
 from .util import error, conv_bool
 from .util import read_file, get_resource_path, replace_all
+from . import template as tpl
+from .template import TemplateFile
 
 
 class FmtBase(object):
     _name = ''
-    _default_tpl_file = None
+    _default_tpl = None
 
     def __init__(self, *args, **kwargs):
         super(FmtBase, self).__init__()
@@ -45,12 +47,9 @@ class FmtBase(object):
 
     @property
     def tpl(self):
-        tpl_file = self.options.template if self.options.template else \
-            self._default_tpl_file
-        if not tpl_file:
-            return ''
-        content = read_file(tpl_file, fail_msg='读取自定义模板文件{path}失败')
-        return content
+        if self.options.template:
+            return text_type(TemplateFile(self.options.template))
+        return text_type(self._default_tpl)
 
     def error(self, msg):
         error('{}格式生成错误: {}'.format(self._name.upper(), msg))
@@ -100,16 +99,17 @@ class FmtBase(object):
 
 @formater('pac')
 class FmtPAC(FmtBase):
+    _default_tpl = tpl.PAC
+
     def __init__(self, *args, **kwargs):
         super(FmtPAC, self).__init__(*args, **kwargs)
 
-        pac_tpl = 'res/tpl-pac-precise.js' if self.options.pac_precise else \
-            'res/tpl-pac.js'
+        if self.options.pac_precise:
+            self._default_tpl = tpl.PAC_PRECISE
         if self.options.pac_compress:
-            pac_tpl = pac_tpl.split('.')
-            pac_tpl.insert(-1, 'min')
-            pac_tpl = '.'.join(pac_tpl)
-        self._default_tpl_file = get_resource_path(pac_tpl)
+            self._default_tpl = tpl.PAC_MIN
+            if self.options.pac_precise:
+                self._default_tpl = tpl.PAC_PRECISE_MIN
 
     @classmethod
     def arguments(cls, parser):
@@ -164,9 +164,9 @@ class FmtPAC(FmtBase):
 
 @formater('dnsmasq')
 class FmtDnsmasq(FmtBase):
+    _default_tpl = tpl.DNSMASQ
     _default_dns = '127.0.0.1#53'
     _default_ipset = 'GFWLIST'
-    _default_tpl_file = get_resource_path('res/tpl-dnsmasq.ini')
 
     def __init__(self, *args, **kwargs):
         super(FmtDnsmasq, self).__init__(*args, **kwargs)
@@ -201,9 +201,36 @@ class FmtDnsmasq(FmtBase):
         return self.replace(self.tpl, replacements)
 
 
+@formater('ss-acl')
+class FmtSSACL(FmtBase):
+    _default_tpl = tpl.SS_ACL
+
+    def __init__(self, *args, **kwargs):
+        super(FmtSSACL, self).__init__(*args, **kwargs)
+
+    @classmethod
+    def arguments(cls, parser):
+        parser.add_argument_group(
+            title=cls._name.upper(),
+            description='Shadowsocks访问控制列表, 本格式没有可选参数')
+
+    def generate(self, replacements):
+        def parse_rules(rules):
+            rules = [l.replace('.', '\\.') for l in rules]
+            rules = ['(^|\\.){}$'.format(l) for l in rules]
+            return rules
+
+        gfwed_rules = parse_rules(self.gfwed_domains)
+
+        replacements.update({
+            '__GFWED_RULES__': '\n'.join(gfwed_rules)})
+
+        return self.replace(self.tpl, replacements)
+
+
 @formater('wingy')
 class FmtWingy(FmtBase):
-    _default_tpl_file = get_resource_path('res/tpl-wingy.yaml')
+    _default_tpl = tpl.WINGY
 
     def __init__(self, *args, **kwargs):
         super(FmtWingy, self).__init__(*args, **kwargs)
@@ -287,65 +314,24 @@ class FmtWingy(FmtBase):
 
 @formater('potatso')
 class FmtPotatso(FmtBase):
-    _default_tpl_file = get_resource_path('res/tpl-potatso.toml')
+    _default_tpl = tpl.POTATSO
 
     def __init__(self, *args, **kwargs):
         super(FmtPotatso, self).__init__(*args, **kwargs)
 
     @classmethod
     def arguments(cls, parser):
-        group = parser.add_argument_group(
+        parser.add_argument_group(
             title=cls._name.upper(),
             description='Potatso2是iOS下基于NEKit的代理App, 本格式没有可选参数')
 
     def generate(self, replacements):
-        fmt = '{:>4}'.format(' ')
-        direct_rules = ['{}"DOMAIN-SUFFIX, {}, DIRECT"'.format(fmt, r) for r \
-            in self.ignored_domains]
-        gfwed_rules = ['{}"DOMAIN-SUFFIX, {}, PROXY"'.format(fmt, r) for r \
-            in self.gfwed_domains]
+        def to_rule(r, a):
+            return '{:>4}"DOMAIN-SUFFIX, {}, {}"'.format('', r, a)
+
+        direct_rules = [to_rule(r, 'DIRECT') for r in self.ignored_domains]
+        gfwed_rules = [to_rule(r, 'PROXY') for r in self.gfwed_domains]
         replacements.update({
             '__DIRECT_RULES__': ',\n'.join(direct_rules),
             '__GFWED_RULES__': ',\n'.join(gfwed_rules)})
-        return self.replace(self.tpl, replacements)
-
-@formater('ss-acl')
-class FmtSSACL(FmtBase):
-    def __init__(self, *args, **kwargs):
-        super(FmtSSACL, self).__init__(*args, **kwargs)
-
-    @classmethod
-    def arguments(cls, parser):
-        group = parser.add_argument_group(
-            title=cls._name.upper(),
-            description='Shadowsocks访问控制列表, 本格式没有可选参数')
-
-    @property
-    def tpl(self):
-        content = super(FmtSSACL, self).tpl
-        if content:
-            return content
-        content = '''
-        # Shadowsocks Access Control List
-        # genpac __VERSION__ https://github.com/JinnLynn/genpac
-        [bypass_all]
-
-        [proxy_list]
-        __GFWED_RULES__
-        # Generated: __GENERATED__
-        # GFWList: __MODIFIED__ From __GFWLIST_FROM__
-        '''
-        content = '\n'.join([l.strip() for l in content.splitlines()])
-        return content.lstrip()
-
-    def generate(self, replacements):
-        def parse_rules(rules):
-            rules = [l.replace('.', '\\.') for l in rules]
-            rules = ['(^|\\.){}$'.format(l) for l in rules]
-            return rules
-
-        gfwed_rules = parse_rules(self.gfwed_domains)
-
-        replacements.update({
-            '__GFWED_RULES__': '\n'.join(gfwed_rules)})
         return self.replace(self.tpl, replacements)

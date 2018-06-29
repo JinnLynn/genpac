@@ -9,6 +9,7 @@ PY2 = sys.version_info[0] == 2
 if PY2:
     string_types = basestring
     binary_type = str
+    text_type = unicode
 
     def comfirm(prompt):
         return raw_input(prompt.encode('utf-8'))
@@ -32,6 +33,7 @@ if PY2:
 else:
     string_types = str
     binary_type = bytes
+    text_type = str
 
     def comfirm(prompt):
         return input(prompt)
