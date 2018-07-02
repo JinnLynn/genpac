@@ -22,7 +22,7 @@ function FindProxyForURL(url, host) {
 function testHost(host, index) {
     for (var i = 0; i < rules[index].length; i++) {
         for (var j = 0; j < rules[index][i].length; j++) {
-            lastRule = rules[index][i][j]
+            lastRule = rules[index][i][j];
             if (host == lastRule || host.endsWith('.' + lastRule))
                 return i % 2 == 0 ? 'DIRECT' : proxy;
         }
