@@ -5,7 +5,7 @@ from __future__ import (unicode_literals, absolute_import,
 __version__ = '2.1b1'
 __author__ = 'JinnLynn <eatfishlin@gmail.com>'
 __license__ = 'The MIT License'
-__copyright__ = 'Copyright 2013-2017 JinnLynn'
+__copyright__ = 'Copyright 2013-2018 JinnLynn'
 __project_url__ = 'https://github.com/JinnLynn/genpac'
 
 __all__ = ['GenPAC', 'TemplateFile', 'FmtBase',
