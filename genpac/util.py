@@ -8,7 +8,10 @@ import re
 
 from ._compat import PY2, string_types, binary_type, getcwd
 from ._compat import unquote, urlparse
-from .publicsuffix import get_public_suffix
+from .publicsuffixlist import PublicSuffixList
+
+
+_PSL = None
 
 
 class Error(Exception):
@@ -28,10 +31,7 @@ class FatalIOError(FatalError):
 
 
 def surmise_domain(rule):
-    def _get_public_suffix(host):
-        dat_path = get_resource_path('res/public_suffix_list.dat')
-        domain = get_public_suffix(host, dat_path)
-        return None if domain.find('.') < 0 else domain
+    global _PSL
 
     def _clear_asterisk(rule):
         if rule.find('*') < 0:
@@ -60,7 +60,8 @@ def surmise_domain(rule):
     elif rule.find('.') > 0:
         domain = rule
 
-    return _get_public_suffix(domain)
+    _PSL = _PSL or PublicSuffixList(accept_unknown=False, only_icann=True)
+    return _PSL.suffix(domain)
 
 
 def error(*args, **kwargs):

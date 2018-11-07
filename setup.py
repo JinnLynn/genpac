@@ -35,9 +35,9 @@ setup(
     url='https://github.com/JinnLynn/genpac',
     description='convert gfwlist to pac, custom rules supported.',
     long_description=__doc__,
-    packages=['genpac', 'genpac.pysocks', 'genpac.publicsuffix'],
+    packages=['genpac', 'genpac.pysocks', 'genpac.publicsuffixlist'],
     package_data={
-        'genpac': ['res/*']
+        'genpac': ['res/*', 'publicsuffixlist/*.dat'],
     },
     entry_points={
         'console_scripts': [
