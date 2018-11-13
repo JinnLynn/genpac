@@ -274,9 +274,8 @@ class GenPAC(object):
                 os.makedirs(path)
             config_dst = os.path.join(path, 'config.ini')
             user_rule_dst = os.path.join(path, 'user-rules.txt')
-            if not force and \
-                    (os.path.exists(config_dst) or
-                        os.path.exists(user_rule_dst)):
+            exist = os.path.exists(config_dst) or os.path.exists(user_rule_dst)
+            if not force and exist:
                 raise FatalIOError('config file already exists.')
             with open_file(config_dst, 'w') as fp:
                 fp.write(get_resource_data('res/tpl-config.ini'))
@@ -482,7 +481,7 @@ def _parse_rule(rules):
                 direct_lst.append(domain)
             continue
         elif line.find('.*') >= 0 or line.startswith('/'):
-            line = line.replace('\/', '/').replace('\.', '.')
+            line = line.replace('\/', '/').replace('\.', '.')  # noqa: W605
             try:
                 m = re.search(r'[a-z0-9]+\..*', line)
                 domain = surmise_domain(m.group(0))
