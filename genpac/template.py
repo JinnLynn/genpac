@@ -52,9 +52,9 @@ __DIRECT_RULES__
 #! Generated: __GENERATED__
 #! GFWList: __GFWLIST_DETAIL__
 '''
-QUANTUMULT = '''
+SURGE = '''
 #! __GENPAC__
-[TCP]
+[Rule]
 __RULES__
 
 # Local Area Network

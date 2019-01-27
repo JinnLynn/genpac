@@ -17,6 +17,7 @@ from . import template as tpl
 
 class FmtBase(object):
     _name = ''
+    _desc = None
     _default_tpl = None
 
     def __init__(self, *args, **kwargs):
@@ -29,7 +30,8 @@ class FmtBase(object):
 
     @classmethod
     def arguments(cls, parser):
-        pass
+        return parser.add_argument_group(title=cls._name.upper(),
+                                         description=cls._desc or '')
 
     @classmethod
     def config(cls, options):
@@ -96,7 +98,7 @@ class FmtBase(object):
         self._ignored_domains = None
 
 
-@formater('pac')
+@formater('pac', desc='通过代理自动配置文件(PAC)系统或浏览器可自动选择合适的代理服务器.')
 class FmtPAC(FmtBase):
     _default_tpl = tpl.PAC
 
@@ -112,10 +114,7 @@ class FmtPAC(FmtBase):
 
     @classmethod
     def arguments(cls, parser):
-        group = parser.add_argument_group(
-            title=cls._name.upper(),
-            description='通过代理自动配置文件（PAC）系统或浏览器可自动选择合适的'
-                        '代理服务器')
+        group = super(FmtPAC, cls).arguments(parser)
         group.add_argument(
             '--pac-proxy', metavar='PROXY',
             help='代理地址, 如 SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080')
@@ -138,6 +137,7 @@ class FmtPAC(FmtBase):
             '-z', '--compress', action='store_true',
             dest='pac_compress',
             help='已弃用参数, 等同于--pac-compress, 后续版本将删除, 避免使用')
+        return group
 
     @classmethod
     def config(cls, options):
@@ -161,7 +161,7 @@ class FmtPAC(FmtBase):
         return self.replace(self.tpl, replacements)
 
 
-@formater('dnsmasq')
+@formater('dnsmasq', desc='Dnsmasq配合iptables ipset可实现基于域名的自动直连或代理.')
 class FmtDnsmasq(FmtBase):
     _default_tpl = tpl.DNSMASQ
     _default_dns = '127.0.0.1#53'
@@ -172,9 +172,7 @@ class FmtDnsmasq(FmtBase):
 
     @classmethod
     def arguments(cls, parser):
-        group = parser.add_argument_group(
-            title=cls._name.upper(),
-            description='Dnsmasq配合iptables ipset可实现基于域名的自动直连或代理')
+        group = super(FmtDnsmasq, cls).arguments(parser)
         group.add_argument(
             '--dnsmasq-dns', metavar='DNS',
             help='生成规则域名查询使用的DNS服务器，格式: HOST#PORT\n'
@@ -182,6 +180,7 @@ class FmtDnsmasq(FmtBase):
         group.add_argument(
             '--dnsmasq-ipset', metavar='IPSET',
             help='转发使用的ipset名称, 默认: {}'.format(cls._default_ipset))
+        return group
 
     @classmethod
     def config(cls, options):
@@ -200,18 +199,12 @@ class FmtDnsmasq(FmtBase):
         return self.replace(self.tpl, replacements)
 
 
-@formater('ss-acl')
+@formater('ss-acl', desc='Shadowsocks访问控制列表, 本格式没有可选参数.')
 class FmtSSACL(FmtBase):
     _default_tpl = tpl.SS_ACL
 
     def __init__(self, *args, **kwargs):
         super(FmtSSACL, self).__init__(*args, **kwargs)
-
-    @classmethod
-    def arguments(cls, parser):
-        parser.add_argument_group(
-            title=cls._name.upper(),
-            description='Shadowsocks访问控制列表, 本格式没有可选参数')
 
     def generate(self, replacements):
         def parse_rules(rules):
@@ -227,7 +220,7 @@ class FmtSSACL(FmtBase):
         return self.replace(self.tpl, replacements)
 
 
-@formater('wingy')
+@formater('wingy', desc='Wingy是iOS下基于NEKit的代理App.')
 class FmtWingy(FmtBase):
     _default_tpl = tpl.WINGY
 
@@ -236,9 +229,7 @@ class FmtWingy(FmtBase):
 
     @classmethod
     def arguments(cls, parser):
-        group = parser.add_argument_group(
-            title=cls._name.upper(),
-            description='Wingy是iOS下基于NEKit的代理App')
+        group = super(FmtWingy, cls).arguments(parser)
         group.add_argument(
             '--wingy-adapter-opts', metavar='OPTS',
             help='adapter选项, 选项间使用`,`分割, 多个adapter使用`;`分割, 如:\n'
@@ -247,6 +238,7 @@ class FmtWingy(FmtBase):
         group.add_argument(
             '--wingy-rule-adapter-id', metavar='ID',
             help='生成规则使用的adapter ID')
+        return group
 
     @classmethod
     def config(cls, options):
@@ -311,18 +303,12 @@ class FmtWingy(FmtBase):
         return '\n'.join(opts)
 
 
-@formater('potatso')
+@formater('potatso', desc='Potatso2是iOS下基于NEKit的代理App, 本格式没有可选参数.')
 class FmtPotatso(FmtBase):
     _default_tpl = tpl.POTATSO
 
     def __init__(self, *args, **kwargs):
         super(FmtPotatso, self).__init__(*args, **kwargs)
-
-    @classmethod
-    def arguments(cls, parser):
-        parser.add_argument_group(
-            title=cls._name.upper(),
-            description='Potatso2是iOS下基于NEKit的代理App, 本格式没有可选参数')
 
     def generate(self, replacements):
         def to_rule(r, a):
@@ -336,18 +322,13 @@ class FmtPotatso(FmtBase):
         return self.replace(self.tpl, replacements)
 
 
-@formater('quantumult')
-class FmtQuantumult(FmtBase):
-    _default_tpl = tpl.QUANTUMULT
+@formater('surge', desc='Surge是基于(Network Extension)API开发的一款网络调试工具, '
+                        '亦可用于翻墙, 本格式没有可选参数.')
+class FmtSurge(FmtBase):
+    _default_tpl = tpl.SURGE
 
     def __init__(self, *args, **kwargs):
-        super(FmtQuantumult, self).__init__(*args, **kwargs)
-
-    @classmethod
-    def arguments(cls, parser):
-        parser.add_argument_group(
-            title=cls._name.upper(),
-            description='Quantumult是iOS下支持多种协议的的代理App, 本格式没有可选参数')
+        super(FmtSurge, self).__init__(*args, **kwargs)
 
     def generate(self, replacements):
         def to_rule(r, a):
@@ -359,3 +340,17 @@ class FmtQuantumult(FmtBase):
         replacements.update({
             '__RULES__': '\n'.join(rules)})
         return self.replace(self.tpl, replacements)
+
+
+@formater('quantumult', desc='Quantumult是iOS下支持多种协议的的代理App, '
+                             '兼容Surge规则, '
+                             '本格式没有可选参数.')
+class FmtQuantumult(FmtSurge):
+    pass
+
+
+@formater('shadowrocket', desc='Shadowrocket是iOS下支持多种协议的的代理App, '
+                               '兼容Surge规则, '
+                               '本格式没有可选参数.')
+class FmtShadowrocket(FmtSurge):
+    pass
