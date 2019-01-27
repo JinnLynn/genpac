@@ -334,3 +334,28 @@ class FmtPotatso(FmtBase):
             '__DIRECT_RULES__': ',\n'.join(direct_rules),
             '__GFWED_RULES__': ',\n'.join(gfwed_rules)})
         return self.replace(self.tpl, replacements)
+
+
+@formater('quantumult')
+class FmtQuantumult(FmtBase):
+    _default_tpl = tpl.QUANTUMULT
+
+    def __init__(self, *args, **kwargs):
+        super(FmtQuantumult, self).__init__(*args, **kwargs)
+
+    @classmethod
+    def arguments(cls, parser):
+        parser.add_argument_group(
+            title=cls._name.upper(),
+            description='Quantumult是iOS下支持多种协议的的代理App, 本格式没有可选参数')
+
+    def generate(self, replacements):
+        def to_rule(r, a):
+            return 'DOMAIN-SUFFIX,{},{}'.format(r, a)
+
+        direct_rules = [to_rule(r, 'DIRECT') for r in self.ignored_domains]
+        gfwed_rules = [to_rule(r, 'PROXY') for r in self.gfwed_domains]
+        rules = gfwed_rules + direct_rules
+        replacements.update({
+            '__RULES__': '\n'.join(rules)})
+        return self.replace(self.tpl, replacements)

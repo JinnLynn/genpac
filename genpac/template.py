@@ -52,6 +52,24 @@ __DIRECT_RULES__
 #! Generated: __GENERATED__
 #! GFWList: __GFWLIST_DETAIL__
 '''
+QUANTUMULT = '''
+#! __GENPAC__
+[TCP]
+__RULES__
+
+# Local Area Network
+DOMAIN-SUFFIX,local,DIRECT
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
+IP-CIDR,100.64.0.0/10,DIRECT
+
+FINAL,DIRECT
+
+#! Generated: __GENERATED__
+#! GFWList: __GFWLIST_DETAIL__
+'''
 
 # 去除文本模板的前后换行符
 for name in dir():
