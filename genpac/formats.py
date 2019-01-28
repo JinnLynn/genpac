@@ -343,14 +343,12 @@ class FmtSurge(FmtBase):
 
 
 @formater('quantumult', desc='Quantumult是iOS下支持多种协议的的代理App, '
-                             '兼容Surge规则, '
-                             '本格式没有可选参数.')
+                             '兼容Surge规则, 本格式没有可选参数.')
 class FmtQuantumult(FmtSurge):
     pass
 
 
 @formater('shadowrocket', desc='Shadowrocket是iOS下支持多种协议的的代理App, '
-                               '兼容Surge规则, '
-                               '本格式没有可选参数.')
+                               '兼容Surge规则, 本格式没有可选参数.')
 class FmtShadowrocket(FmtSurge):
     pass

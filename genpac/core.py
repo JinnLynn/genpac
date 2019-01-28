@@ -102,7 +102,8 @@ class GenPAC(object):
         group = parser.add_argument_group(
             title='通用参数')
         group.add_argument(
-            '--format', choices=GenPAC._formaters.keys(),
+            '--format', type=lambda s: s.lower(),
+            choices=GenPAC._formaters.keys(),
             help='生成格式, 只有指定了格式, 相应格式的参数才作用')
         group.add_argument(
             '--gfwlist-url', metavar='URL',
