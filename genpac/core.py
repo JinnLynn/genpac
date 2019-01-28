@@ -10,6 +10,7 @@ import time
 from datetime import datetime, timedelta
 import copy
 from pprint import pprint  # noqa: F401
+from collections import OrderedDict
 
 from . import __version__, __project_url__
 from ._compat import string_types
@@ -48,7 +49,7 @@ class Namespace(argparse.Namespace):
 
 class GenPAC(object):
     # 格式化器列表
-    _formaters = {}
+    _formaters = OrderedDict()
 
     def __init__(self, config_file=None, argv_enabled=True):
         super(GenPAC, self).__init__()
