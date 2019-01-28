@@ -35,9 +35,9 @@ setup(
     url='https://github.com/JinnLynn/genpac',
     description='convert gfwlist to pac, custom rules supported.',
     long_description=__doc__,
-    packages=['genpac', 'genpac.pysocks', 'genpac.publicsuffixlist'],
+    packages=['genpac'],
     package_data={
-        'genpac': ['res/*', 'publicsuffixlist/*.dat'],
+        'genpac': ['res/*'],
     },
     entry_points={
         'console_scripts': [
@@ -45,6 +45,10 @@ setup(
         ]
     },
     platforms='any',
+    install_requires=[
+        'PySocks',
+        'publicsuffixlist'
+    ],
     keywords='proxy pac gfwlist gfw',
     classifiers=[
         'License :: OSI Approved :: MIT License',

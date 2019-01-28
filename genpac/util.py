@@ -8,7 +8,7 @@ import re
 
 from ._compat import PY2, string_types, binary_type, getcwd
 from ._compat import unquote, urlparse
-from .publicsuffixlist import PublicSuffixList
+from publicsuffixlist import PublicSuffixList
 
 
 _PSL = None

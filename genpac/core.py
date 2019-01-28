@@ -12,11 +12,12 @@ import copy
 from pprint import pprint  # noqa: F401
 from collections import OrderedDict
 
+from socks import PROXY_TYPES as _PROXY_TYPES
+from sockshandler import SocksiPyHandler
+
 from . import __version__, __project_url__
 from ._compat import string_types
 from ._compat import comfirm, build_opener, iteritems, itervalues
-from .pysocks.socks import PROXY_TYPES as _PROXY_TYPES
-from .pysocks.sockshandler import SocksiPyHandler
 from .config import Config
 from .deprecated import check_deprecated_args, check_deprecated_config
 from .util import surmise_domain
