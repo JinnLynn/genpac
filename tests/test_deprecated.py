@@ -9,9 +9,9 @@ from tests.util import parametrize, skipif, xfail
 
 
 @parametrize('argv', [
-    ['-c', join_etc('config-deprecated.ini')],
-    '--format pac --proxy deprecated_proxy --compress --precise -o/dev/null',
-    '--format pac -p deprecated_proxy -z -P -o/dev/null'
+    ['--gfwlist-disabled', '-c', join_etc('config-deprecated.ini')],
+    '--gfwlist-disabled --format pac --proxy deprecated_proxy --compress --precise -o/dev/null',
+    '--gfwlist-disabled --format pac -p deprecated_proxy -z -P -o/dev/null'
     ])
 def test_deprecated(argv):
     with buildenv(argv=argv):

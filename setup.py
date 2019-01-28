@@ -33,6 +33,7 @@ setup(
     author='JinnLynn',
     author_email='eatfishlin@gmail.com',
     url='https://github.com/JinnLynn/genpac',
+    keywords='proxy pac gfwlist gfw',
     description='convert gfwlist to pac, custom rules supported.',
     long_description=__doc__,
     packages=['genpac'],
@@ -49,7 +50,9 @@ setup(
         'PySocks',
         'publicsuffixlist'
     ],
-    keywords='proxy pac gfwlist gfw',
+    extras_require={
+        'testing': ['flake8', 'pytest', 'pytest-cov']
+    },
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 2',

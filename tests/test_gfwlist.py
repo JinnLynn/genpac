@@ -12,6 +12,7 @@ from tests.util import parametrize, skipif, xfail
 
 _LOCAL_PROXY = ['SOCKS5 127.0.0.1:9527', 'PROXY 127.0.0.1:9580']
 
+
 # Generator使用类变量_gfwlists缓存gfwlist内容
 # 每次测试需手动清除
 @contextmanager
@@ -22,7 +23,7 @@ def generator(option):
     Generator._gfwlists.clear()
 
 
-@skipif(is_not_own, reason='proxy missing')
+@skipif(is_not_own, reason='proxy')
 @parametrize('proxy', _LOCAL_PROXY)
 def test_proxy(proxy):
     opt = Namespace(gfwlist_proxy=proxy)
@@ -30,6 +31,7 @@ def test_proxy(proxy):
     opener = gen.init_opener()
     res = opener.open('http://www.baidu.com')
     assert res.getcode() == 200
+
 
 def _opt_gl(**kwargs):
     kwargs.setdefault('gfwlist_url', _GFWLIST_URL)
@@ -40,6 +42,7 @@ def _opt_gl(**kwargs):
     kwargs.setdefault('gfwlist_decoded_save', None)
     return Namespace(**kwargs)
 
+
 def _fetch_gfwlist_online(opt):
     with generator(opt) as gen:
         assert Generator._gfwlists == {}
@@ -49,18 +52,21 @@ def _fetch_gfwlist_online(opt):
 
 
 # 在线获取gfwlist
-@parametrize('opt', [
-    _opt_gl(),
-    skipif(is_not_own)(
-        _opt_gl(gfwlist_proxy=_LOCAL_PROXY[0]), reason='proxy missing'),
-    skipif(is_not_own)(
-        _opt_gl(gfwlist_proxy=_LOCAL_PROXY[1]), reason='proxy missing')])
+@parametrize('opt', [_opt_gl()])
 def test_gfwlist_online(opt):
     with generator(opt) as gen:
         assert Generator._gfwlists == {}
         content, _, modified = gen.fetch_gfwlist()
         assert len(content) > 3000
         assert opt.gfwlist_url in Generator._gfwlists
+
+
+@skipif(is_not_own, reason='proxy')
+@parametrize('opt', [
+    _opt_gl(gfwlist_proxy=_LOCAL_PROXY[0]),
+    _opt_gl(gfwlist_proxy=_LOCAL_PROXY[1])])
+def test_gfwlist_online_with_proxy(opt):
+    test_gfwlist_online(opt)
 
 
 def test_gfwlist_online_cache():
