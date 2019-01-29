@@ -13,7 +13,8 @@ class TemplateFile(object):
         self.tpl_file = get_resource_path(path) if is_buildin else path
 
     def __str__(self):
-        return read_file(self.tpl_file, fail_msg='读取自定义模板文件{path}失败')
+        content = read_file(self.tpl_file, fail_msg='读取自定义模板文件{path}失败')
+        return content.strip('\n')
 
 
 PAC = TemplateFile('res/tpl-pac.js', True)
