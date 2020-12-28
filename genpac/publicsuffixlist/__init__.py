@@ -60,7 +60,7 @@ class PublicSuffixList(object):
         source: file (line iterable) object, or flat str to parse. (Default: built-in PSL file)
         accept_unknown: bool, assume unknown TLDs to be public suffix. (Default: True)
         accept_encoded_idn: bool, if False, do not generate punycoded version of PSL.
-            Without punycoded PSL object, parseing punycoded IDN cause incorrect results. (Default: True)
+            Without punycoded PSL object, parsing punycoded IDN cause incorrect results. (Default: True)
         only_icann: bool, if True, only ICANN suffixes are honored, not private ones.
             The markers '// ===BEGIN ICANN DOMAINS===' and '// ===END ICANN DOMAINS==='
             are needed for ICANN section detection. (Default: False)
