@@ -5,7 +5,7 @@
  * GFWList From: __GFWLIST_FROM__
  */
 
-var proxy = '__PROXY__';
+var proxy = "__PROXY__";
 var rules = __RULES__;
 
 var lastRule = '';
