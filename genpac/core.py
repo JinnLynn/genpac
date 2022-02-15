@@ -26,10 +26,12 @@ from .util import exit_error, exit_success
 from .util import abspath, open_file, read_file, write_file
 from .util import get_resource_path, get_resource_data
 from .util import conv_bool, conv_list, conv_lower, conv_path
+from .util import logger
 
 
 _GFWLIST_URL = \
     'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
+_IPDATA_URL = 'https://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest'
 
 
 class Namespace(argparse.Namespace):
@@ -127,6 +129,21 @@ class GenPAC(object):
         group.add_argument(
             '--gfwlist-decoded-save', metavar='FILE',
             help='保存解码后的gfwlist, 仅用于测试')
+
+        group.add_argument(
+            '--ipdata-enabled', action='store_true',
+            help='启用CNIP'
+        )
+        group.add_argument(
+            '--ipdata-online', nargs='?',
+            const=True, default=False, metavar='URL',
+            help='在线获取'
+        )
+        group.add_argument(
+            '--ipdata-include-private', action='store_true',
+            help='包含私有地址'
+        )
+
         group.add_argument(
             '--user-rule', action='append', metavar='RULE',
             help='自定义规则, 允许重复使用或在单个参数中使用`,`分割多个规则，如:\n'
@@ -208,6 +225,8 @@ class GenPAC(object):
         opts['gfwlist-update-local'] = {'conv': conv_bool}
         opts['gfwlist-decoded-save'] = {'conv': conv_path}
 
+        opts['ipdata-url'] = {'default': _IPDATA_URL}
+
         opts['user-rule'] = {'conv': conv_list}
         opts['user-rule-from'] = {'conv': [conv_list, conv_path]}
 
@@ -253,6 +272,7 @@ class GenPAC(object):
     def generate_all(self):
         for job in self.walk_jobs():
             self.generate(job)
+            logger.debug('Job done: {0.format} => {0.output}'.format(job))
 
     def generate(self, job):
         if not job.format:
@@ -292,6 +312,8 @@ class GenPAC(object):
 class Generator(object):
     # 在线获取gfwlist的结果
     _gfwlists = {}
+    # 在线获取的ip数据
+    _ipdata = {}
 
     def __init__(self, options, formater_cls):
         super(Generator, self).__init__()
@@ -347,17 +369,33 @@ class Generator(object):
             raise FatalError('解析获取gfwlist的代理`{}`失败'.format(
                              self.options.gfwlist_proxy))
 
-    def fetch_gfwlist_online(self):
-        # 使用类变量缓存gfwlist在线获取的内容
-        url = self.options.gfwlist_url
-        if url in self.__class__._gfwlists:
-            return self.__class__._gfwlists[url]
+    def fetch(self, url):
+        start = time.time()
         opener = self.init_opener()
         res = opener.open(url)
         content = res.read()
+        td = int((time.time() - start) * 1000)
+        logger.debug('Fetch online done: {}ms {}'.format(td, url))
+        return content
+
+    # 使用类变量缓存在线获取的内容
+    def fetch_ipdata_online(self):
+        url = self.options.ipdata_url
+        content = self.__class__._ipdata.get(url) or self.fetch(url)
+        if content:
+            self.__class__._ipdata[url] = content
+        return content
+
+    # 使用类变量缓存在线获取的内容
+    def fetch_gfwlist_online(self):
+        url = self.options.gfwlist_url
+        content = self.__class__._gfwlists.get(url) or self.fetch(url)
         if content:
             self.__class__._gfwlists[url] = content
         return content
+
+    def fetch_ipdata(self):
+        content = read_file(get_resource_path('ipdata.txt'))
 
     def fetch_gfwlist(self):
         if self.options.gfwlist_disabled:
@@ -411,9 +449,23 @@ class Generator(object):
     def fetch_user_rules(self):
         rules = []
         rules.extend(self.options.user_rule)
+        # for f in self.options.user_rule_from:
+        #     content = read_file(f, fail_msg='读取自定义规则文件`{path}`失败')
+        #     rules.extend(content.splitlines())
+        # 支持目录
+        rule_froms = []
         for f in self.options.user_rule_from:
+            files = []
+            if os.path.isdir(f):
+                for sub_f in os.listdir(f):
+                    if os.path.isfile(os.path.join(f, sub_f)):
+                        rule_froms.append(os.path.join(f, sub_f))
+            else:
+                rule_froms.append(f)
+        for f in rule_froms:
             content = read_file(f, fail_msg='读取自定义规则文件`{path}`失败')
             rules.extend(content.splitlines())
+        print(rule_froms)
         return rules
 
     def std_datetime(self, modified_datestr):
@@ -439,6 +491,11 @@ class Generator(object):
             return (modified_datestr,
                     time.strftime('%a, %d %b %Y %H:%M:%S %z',
                                   time.localtime()))
+    @classmethod
+    def clear_cache(cls):
+        logger.debug('Clear online data cache.')
+        cls._gfwlists.clear()
+        cls._ipdata.clear()
 
 
 # 解析规则

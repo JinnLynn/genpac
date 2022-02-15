@@ -23,6 +23,10 @@ if PY2:
     def iteritems(d):
         return d.iteritems()
 
+    def base64encode(s):
+        import base64
+        return base64.encodestring(s)
+
     from os import getcwdu as getcwd
     import ConfigParser as configparser
     from StringIO import StringIO
@@ -46,6 +50,10 @@ else:
 
     def iteritems(d):
         return iter(d.items())
+
+    def base64encode(s):
+        import base64
+        return base64.encodebytes(bytes(s, 'utf-8')).decode()
 
     from os import getcwd
     import configparser

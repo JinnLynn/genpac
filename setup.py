@@ -48,10 +48,17 @@ setup(
     platforms='any',
     install_requires=[
         'PySocks',
-        'publicsuffixlist'
+        'publicsuffixlist',
+        'IPy'
     ],
     extras_require={
-        'testing': ['flake8', 'pytest', 'pytest-cov']
+        'testing': [
+            'flake8',
+            'pytest',
+            'pytest-cov',
+            'pytest-randomly',
+            'pacparser'
+        ]
     },
     classifiers=[
         'License :: OSI Approved :: MIT License',

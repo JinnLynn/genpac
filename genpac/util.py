@@ -5,10 +5,18 @@ import os
 import sys
 import codecs
 import re
+import logging
 
-from ._compat import PY2, string_types, binary_type, getcwd
-from ._compat import unquote, urlparse
+from ._compat import PY2, string_types, text_type, binary_type, getcwd
+from ._compat import iteritems, unquote, urlparse
 from publicsuffixlist import PublicSuffixList
+
+logger = logging.getLogger(__name__.split('.')[0])
+logger.setLevel(logging.DEBUG)
+sh = logging.StreamHandler(stream=sys.stdout)
+sh.setFormatter(logging.Formatter(
+                    fmt='%(asctime)s[%(levelname)s]: %(message)s'))
+logger.addHandler(sh)
 
 
 _PSL = None
@@ -128,6 +136,9 @@ def replace_all(text, replacements):
 
     if not replacements:
         return text
+
+    replacements = {k: text_type(v) for k, v in iteritems(replacements)}
+
     rx = re.compile('|'.join(map(re.escape, replacements)))
     return rx.sub(one_xlat, text)
 

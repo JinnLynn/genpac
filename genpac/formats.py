@@ -7,8 +7,12 @@ import itertools
 from collections import OrderedDict
 from base64 import b64decode
 from pprint import pprint  # noqa: F401
+import math
+import socket
+import struct
+from IPy import IP, IPSet
 
-from ._compat import iteritems, text_type
+from ._compat import iteritems, text_type, base64encode
 from . import Namespace, TemplateFile, formater, parse_rules
 from .util import error, conv_bool
 from .util import read_file, get_resource_path, replace_all
@@ -161,6 +165,41 @@ class FmtPAC(FmtBase):
         return self.replace(self.tpl, replacements)
 
 
+@formater('list', desc="与GFWList相同格式的列表")
+class FmtList(FmtBase):
+    def __init__(self, *args, **kwargs):
+        super(FmtList, self).__init__(*args, **kwargs)
+
+    @classmethod
+    def arguments(cls, parser):
+        group = super(FmtList, cls).arguments(parser)
+        group.add_argument(
+            '--list-no-encode', action='store_false',
+            dest='list_encode',
+            help='禁止base64编码')
+        return group
+
+    @classmethod
+    def config(cls, options):
+        options['list-encode'] = {'conv': conv_bool, 'default': True}
+
+    @property
+    def tpl(self):
+        return ('[AutoProxy 0.2.9]\n'
+                '! __GENPAC__\n'
+                '! Generated: __GENERATED__\n'
+                '! GFWList Last-Modified: __MODIFIED__\n'
+                '! GFWList From: __GFWLIST_FROM__\n'
+                '__GFWED_DOMAINS__')
+
+    def generate(self, replacements):
+        gfwed = ['||{}'.format(s) for s in self.gfwed_domains]
+
+        replacements.update({'__GFWED_DOMAINS__': '\n'.join(gfwed).strip()})
+        content = self.replace(self.tpl, replacements)
+        return base64encode(content) if self.options.list_encode else content
+
+
 @formater('dnsmasq', desc='Dnsmasq配合iptables ipset可实现基于域名的自动直连或代理.')
 class FmtDnsmasq(FmtBase):
     _default_tpl = tpl.DNSMASQ
@@ -199,14 +238,49 @@ class FmtDnsmasq(FmtBase):
         return self.replace(self.tpl, replacements)
 
 
-@formater('ss-acl', desc='Shadowsocks访问控制列表, 本格式没有可选参数.')
+@formater('ssacl', desc='Shadowsocks访问控制列表.')
 class FmtSSACL(FmtBase):
     _default_tpl = tpl.SS_ACL
 
     def __init__(self, *args, **kwargs):
         super(FmtSSACL, self).__init__(*args, **kwargs)
 
+        if self.options.ssacl_geocn:
+            self.options.gfwlist_disabled = True
+
+    @classmethod
+    def arguments(cls, parser):
+        group = super(FmtSSACL, cls).arguments(parser)
+        group.add_argument(
+            '--ssacl-geocn', action='store_true',
+            help='国内IP不走代理，所有国外IP走代理')
+        return group
+
+    @classmethod
+    def config(cls, options):
+        options['ssacl-geocn'] = {'default': False}
+
+    @property
+    def tpl(self):
+        if self.options.ssacl_geocn:
+            return ('#! __GENPAC__\n'
+                    '#! Generated: __GENERATED__\n'
+                    '[proxy_all]\n\n'
+                    '[bypass_list]\n'
+                    '__CNIPS__\n')
+        else:
+            return ('#! __GENPAC__\n'
+                    '#! Generated: __GENERATED__\n'
+                    '#! GFWList: __GFWLIST_DETAIL__\n'
+                    '[bypass_all]\n\n'
+                    '[proxy_list]\n'
+                    '__GFWED_RULES__\n')
+
     def generate(self, replacements):
+        return self.gen_by_geoip(replacements) if self.options.ssacl_geocn else \
+            self.gen_by_gfwlist(replacements)
+
+    def gen_by_gfwlist(self, replacements):
         def parse_rules(rules):
             rules = [l.replace('.', '\\.') for l in rules]
             rules = ['(^|\\.){}$'.format(l) for l in rules]
@@ -218,6 +292,44 @@ class FmtSSACL(FmtBase):
             '__GFWED_RULES__': '\n'.join(gfwed_rules)})
 
         return self.replace(self.tpl, replacements)
+
+    def gen_by_geoip(self, replacements):
+        ips = self.fetch_cnips()
+        ip_data = []
+        for ip in ips:
+            ip_data.append({
+                'ip': ip.strNormal(wantprefixlen=0),
+                'prefixlen': ip.prefixlen(),
+                'netmask': ip.netmask(),
+                'broadcast': ip.broadcast(),
+                'net': ip.net(),
+                'int': ip.int(),
+                'hex': ip.strHex(wantprefixlen=0),
+                'bin': ip.strBin(wantprefixlen=0)
+            })
+        # fmt = '{ip} {prefixlen} {netmask} {broadcast} {net} {int} {hex} {bin}'
+        fmt = '{ip}/{prefixlen}'
+        ip_data = [fmt.format(**d) for d in ip_data]
+        print(len(ip_data))
+        replacements.update({
+            '__CNIPS__': '\n'.join(ip_data)})
+        return self.replace(self.tpl, replacements)
+
+    def fetch_cnips(self):
+        data = read_file(get_resource_path('res/ipdata.txt'))
+
+        cnregex = re.compile(r'apnic\|cn\|ipv4\|[0-9\.]+\|[0-9]+\|[0-9]+\|a.*',
+                             re.IGNORECASE)
+
+        results = []
+        for item in cnregex.findall(data):
+            units = item.split('|')
+            start_ip = units[3]
+            ip_count = int(units[4])
+            prefixlen = 32 - int(math.log(ip_count, 2))
+            results.append(IP('{}/{}'.format(start_ip, prefixlen)))
+
+        return IPSet(results)
 
 
 @formater('wingy', desc='Wingy是iOS下基于NEKit的代理App.')
@@ -352,3 +464,225 @@ class FmtQuantumult(FmtSurge):
                                '兼容Surge规则, 本格式没有可选参数.')
 class FmtShadowrocket(FmtSurge):
     pass
+
+
+@formater('quantumult-x', desc='Quantumult X是iOS下一款功能强大的网络分析及代理工具.')
+class FmtQuantumultX(FmtBase):
+    _default_tpl = ('#! __GENPAC__\n'
+                    '#! Generated: __GENERATED__\n'
+                    '#! GFWList Last-Modified: __MODIFIED__\n'
+                    '__GFWED_RULES__\n')
+
+    def __init__(self, *args, **kwargs):
+        super(FmtQuantumultX, self).__init__(*args, **kwargs)
+
+    def generate(self, replacements):
+        def to_rule(r, a):
+            return 'HOST-SUFFIX,{},{}'.format(r, a)
+
+        direct_rules = [to_rule(r, 'DIRECT') for r in self.ignored_domains]
+        gfwed_rules = [to_rule(r, 'PROXY') for r in self.gfwed_domains]
+        # rules = gfwed_rules + direct_rules
+        replacements.update({
+            '__GFWED_RULES__': '\n'.join(gfwed_rules)})
+        return self.replace(self.tpl, replacements)
+
+
+# ===============
+@formater('cnip2')
+class FmtCNIP2(FmtBase):
+    _default_tpl = '''
+const cnips = __CNIPS__;
+
+function isCNIP(ip) {
+    ip2num = function(ip) {
+        var bytes = ip.split('.');
+        return (((bytes[0] & 0xFF) << 24) |
+                ((bytes[1] & 0xFF) << 16) |
+                ((bytes[2] & 0xFF) <<  8) |
+                (bytes[3] & 0xFF)
+               ) >>> 0;
+    }
+
+    num2ip = function(num) {
+        return [num >>> 24, num >>> 16 & 0xFF, num >>> 8 & 0xFF, num & 0xFF].join(".");
+    };
+
+    prefixlen2mask = function(prefixlen) {
+        var imask = 0xFFFFFFFF << (32 - prefixlen);
+        return (imask >> 24 & 0xFF) + '.' + (imask >> 16 & 0xFF) + '.' + (imask >> 8 & 0xFF) + '.' + (imask & 0xFF);
+    };
+
+    if (!ip)
+        return true;
+
+    var ip_num = ip2num(ip);
+    for (var len in cnips) {
+        // REF: https://www.jianshu.com/p/2cb75bfa34b0
+        var num = ip_num >>> (32 - len);
+        if (num in cnips[len] == false)
+            continue;
+        var start_ip = num2ip(num << (32 - len) >>> 0);
+        var net_mask = prefixlen2mask(len);
+        return isInNet(ip, start_ip, net_mask);
+    }
+    return false;
+}
+
+function FindProxyForURL(url, host) {
+    if (isCNIP(dnsResolve(host))) {
+        return 'DIRECT';
+    }
+
+    return 'SOCKS5 127.0.0.1:9527' ;
+}
+'''
+
+    def generate(self, replacements):
+        ips, ps = self.parse_ips()
+        from pprint import pprint
+        pprint(ips)
+        replacements.update({
+            '__PREFIXLENS__': min_p,
+            '__CNIPS__': json.dumps(ips, default=lambda o: int(o) if isinstance(0, int) else o)})
+        return self.replace(self.tpl, replacements)
+
+    def parse_ips(self):
+        ips = self.fetch_ip_data()
+
+        min_prefixlen = 32
+        max_prefixlen = 0
+        results = {}
+        for s, m, p, n, c in ips:
+
+            if p < min_prefixlen:
+                min_prefixlen = p
+            if p > max_prefixlen:
+                max_prefixlen = p
+
+            if p not in results:
+                results[p] = {}
+
+            m_n = n >> (32 - p)
+            results[p][m_n] = 0
+
+        return results, min_prefixlen, max_prefixlen
+
+    def fetch_ip_data(self):
+        def ip2long(ip):
+            packedIP = socket.inet_aton(ip)
+            return struct.unpack("!L", packedIP)[0]
+
+        with open('/Users/JinnLynn/Downloads/gfw-pac-master/delegated-apnic-latest.txt', 'rb') as f:
+            data = f.read()
+
+        cnregex = re.compile(r'apnic\|cn\|ipv4\|[0-9\.]+\|[0-9]+\|[0-9]+\|a.*', re.IGNORECASE)
+        cndata = cnregex.findall(data)
+
+        results = []
+        for item in cndata:
+            units = item.split('|')
+            start_ip = units[3]
+            ip_count = int(units[4])
+
+            imask = 0xFFFFFFFF ^ (ip_count - 1)
+
+            imask = hex(imask)[2:]
+            mask = [imask[0:2], imask[2:4], imask[4:6], imask[6:8]]
+            mask = [int(i, 16) for i in mask]
+            mask = '%d.%d.%d.%d' % tuple(mask)
+            prefixlen = 32 - int(math.log(ip_count, 2))
+            results.append(
+                (start_ip, mask, prefixlen, ip2long(start_ip), ip_count))
+
+            # if prefixlen < min_prefixlen:
+            #     min_prefixlen = prefixlen
+            # if prefixlen > max_prefixlen:
+            #     max_prefixlen = prefixlen
+
+            # start_ip_num = ip2long(start_ip)
+
+            # m = start_ip_num >> (32 - prefixlen)
+
+            # if prefixlen not in results:
+            #     results[prefixlen] = {}
+
+            # if m not in results[prefixlen]:
+            #     results[prefixlen][m] = []
+
+            # data = (start_ip, mask)
+            # results[prefixlen][m].append(data)
+
+        return results
+
+
+@formater('cnip')
+class FmtCNIP(FmtCNIP2):
+    def generate(self, replacements):
+        ips = self.parse_ips()
+        from pprint import pprint
+        pprint(ips)
+        replacements.update({
+            '__CNIPS__': json.dumps(ips)})
+        return self.replace(self.tpl, replacements)
+
+    def parse_ips(self):
+        cnips = self.fetch_cnips()
+        results = {}
+        for ip in cnips:
+            p = ip.prefixlen()
+
+            if p not in results:
+                results[p] = {}
+
+            m_n = ip.int() >> (32 - p)
+            results[p][m_n] = 0
+
+        return results
+
+    def fetch_cnips(self):
+        data = read_file(get_resource_path('res/ipdata.txt'))
+
+        cnregex = re.compile(r'apnic\|cn\|ipv4\|[0-9\.]+\|[0-9]+\|[0-9]+\|a.*',
+                             re.IGNORECASE)
+
+        results = []
+        for item in cnregex.findall(data):
+            units = item.split('|')
+            start_ip = units[3]
+            ip_count = int(units[4])
+            prefixlen = 32 - int(math.log(ip_count, 2))
+            results.append(IP('{}/{}'.format(start_ip, prefixlen)))
+
+        return IPSet(results)
+
+
+@formater('cnip-list')
+class FmtCNIPList(FmtCNIP):
+    _default_tpl = '''
+#! __GENPAC__
+__CNIPS__
+#! Generated: __GENERATED__
+'''
+
+    def generate(self, replacements):
+        ips = self.fetch_cnips()
+        ip_data = []
+        for ip in ips:
+            ip_data.append({
+                'ip': ip.strNormal(wantprefixlen=0),
+                'prefixlen': ip.prefixlen(),
+                'netmask': ip.netmask(),
+                'broadcast': ip.broadcast(),
+                'net': ip.net(),
+                'int': ip.int(),
+                'hex': ip.strHex(wantprefixlen=0),
+                'bin': ip.strBin(wantprefixlen=0)
+            })
+        # fmt = '{ip} {prefixlen} {netmask} {broadcast} {net} {int} {hex} {bin}'
+        fmt = '{ip}/{prefixlen}'
+        ip_data = [fmt.format(**d) for d in ip_data]
+        print(len(ip_data))
+        replacements.update({
+            '__CNIPS__': '\n'.join(ip_data)})
+        return self.replace(self.tpl, replacements)
