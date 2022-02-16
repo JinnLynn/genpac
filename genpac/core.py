@@ -462,10 +462,10 @@ class Generator(object):
                         rule_froms.append(os.path.join(f, sub_f))
             else:
                 rule_froms.append(f)
+        rule_froms.sort()
         for f in rule_froms:
             content = read_file(f, fail_msg='读取自定义规则文件`{path}`失败')
             rules.extend(content.splitlines())
-        print(rule_froms)
         return rules
 
     def std_datetime(self, modified_datestr):
@@ -590,7 +590,7 @@ def _parse_rule_precise(rules):
     for line in rules:
         line = line.strip()
         # comment
-        if not line or line.startswith('!'):
+        if not line or line.startswith('!') or line.startswith('#'):
             continue
         d_or_p = 'p'
         w_or_r = 'r'
