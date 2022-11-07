@@ -1,11 +1,9 @@
-# -*- coding: utf-8 -*-
-from __future__ import (unicode_literals, absolute_import,
-                        division, print_function)
 import re
 import os
 from collections import OrderedDict
+import configparser
+from io import StringIO
 
-from ._compat import configparser, StringIO
 from .util import open_file
 
 

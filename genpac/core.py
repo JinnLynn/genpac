@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-from __future__ import (unicode_literals, absolute_import,
-                        division, print_function)
 import os
 import sys
 import argparse
@@ -11,16 +8,15 @@ from datetime import datetime, timedelta
 import copy
 from pprint import pprint  # noqa: F401
 from collections import OrderedDict
+from urllib.request import build_opener
 
 from socks import PROXY_TYPES as _PROXY_TYPES
 from sockshandler import SocksiPyHandler
 
 from . import __version__, __project_url__
-from ._compat import string_types
-from ._compat import comfirm, build_opener, iteritems, itervalues
 from .config import Config
 from .deprecated import check_deprecated_args, check_deprecated_config
-from .util import surmise_domain
+from .util import surmise_domain, b64decode
 from .util import Error, FatalError, FatalIOError
 from .util import exit_error, exit_success
 from .util import abspath, open_file, read_file, write_file
@@ -75,7 +71,7 @@ class GenPAC(object):
 
     @classmethod
     def walk_formaters(cls, attr, *args, **kargs):
-        for fmter in itervalues(cls._formaters):
+        for fmter in cls._formaters.values():
             getattr(fmter['cls'], attr)(*args, **kargs)
 
     def parse_args(self):
@@ -199,7 +195,7 @@ class GenPAC(object):
             else:
                 v = default
 
-        if isinstance(v, string_types):
+        if isinstance(v, str):
             v = v.strip(' \'\t"')
 
         for c in conv:
@@ -247,8 +243,8 @@ class GenPAC(object):
             cfg.update(c)
             check_deprecated_config(cfg.keys())
             job = Namespace.from_dict(
-                dict([(k, v) for k, v in iteritems(cfg) if k in opts]))
-            for k, v in iteritems(opts):
+                dict([(k, v) for k, v in cfg.items() if k in opts]))
+            for k, v in opts.items():
                 dest, value = self.update_opt(args, cfg, k, **v)
                 job.update(**{dest: value})
             job.user_rule.extend(self.extra_rules)
@@ -429,7 +425,7 @@ class Generator(object):
                 gfwlist_from = '-'
 
         try:
-            content = base64.b64decode(content).decode('utf-8')
+            content = b64decode(content)
         except Exception:
             raise FatalError('解码gfwlist失败.')
 

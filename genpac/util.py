@@ -1,14 +1,12 @@
-# -*- coding: utf-8 -*-
-from __future__ import (unicode_literals, absolute_import,
-                        division, print_function)
 import os
+from os import getcwd
 import sys
 import codecs
 import re
 import logging
+import base64
+from urllib.parse import unquote, urlparse
 
-from ._compat import PY2, string_types, text_type, binary_type, getcwd
-from ._compat import iteritems, unquote, urlparse
 from publicsuffixlist import PublicSuffixList
 
 logger = logging.getLogger(__name__.split('.')[0])
@@ -27,7 +25,7 @@ class Error(Exception):
         self.msg = msg
 
     def __str__(self):
-        return self.msg.encode('utf-8') if PY2 else self.msg
+        return self.msg
 
 
 class FatalError(Error):
@@ -87,6 +85,13 @@ def exit_success(*args):
     sys.exit()
 
 
+def b64encode(s):
+    return base64.encodebytes(bytes(s, 'utf-8')).decode()
+
+def b64decode(s):
+    return base64.b64decode(s).decode('utf-8')
+
+
 def abspath(path):
     return os.path.abspath(os.path.expanduser(path)) if path else getcwd()
 
@@ -105,7 +110,7 @@ def read_file(path, fail_msg='读取文件{path}失败: {error}'):
 
 
 def write_file(path, content, fail_msg='写入文件{path}失败: {error}'):
-    if isinstance(content, binary_type):
+    if isinstance(content, bytes):
         content = content.decode('utf-8')
     try:
         with open_file(path, 'w') as fp:
@@ -137,14 +142,14 @@ def replace_all(text, replacements):
     if not replacements:
         return text
 
-    replacements = {k: text_type(v) for k, v in iteritems(replacements)}
+    replacements = {k: str(v) for k, v in replacements.items()}
 
     rx = re.compile('|'.join(map(re.escape, replacements)))
     return rx.sub(one_xlat, text)
 
 
 def conv_bool(obj):
-    if isinstance(obj, string_types):
+    if isinstance(obj, str):
         return True if obj.lower() == 'true' else False
     return bool(obj)
 
@@ -159,13 +164,13 @@ def conv_list(obj, sep=','):
 
 def conv_lower(obj):
     obj = obj or ''
-    if isinstance(obj, string_types):
+    if isinstance(obj, str):
         return obj.lower()
     return obj
 
 
 def conv_path(obj):
-    if isinstance(obj, string_types):
+    if isinstance(obj, str):
         return abspath(obj)
     if isinstance(obj, list):
         return [abspath(p) for p in obj]

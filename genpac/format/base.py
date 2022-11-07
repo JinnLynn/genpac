@@ -1,5 +1,4 @@
 from ..core import GenPAC
-from .._compat import text_type
 from .. import Namespace, TemplateFile, parse_rules
 from ..util import error, replace_all
 
@@ -47,7 +46,7 @@ class FmtBase(object):
     def tpl(self):
         tpl = TemplateFile(self.options.template) if self.options.template else \
             self._default_tpl
-        return text_type(tpl).strip('\n') + '\n'
+        return str(tpl).strip('\n') + '\n'
 
     def error(self, msg):
         error('{}格式生成错误: {}'.format(self._name.upper(), msg))

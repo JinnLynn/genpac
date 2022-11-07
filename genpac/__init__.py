@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-from __future__ import (unicode_literals, absolute_import,
-                        division, print_function)
-
 __version__ = '3.0.dev2'
 __author__ = 'JinnLynn <eatfishlin@gmail.com>'
 __license__ = 'The MIT License'

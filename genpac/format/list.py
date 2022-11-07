@@ -1,5 +1,4 @@
-from .._compat import base64encode
-from ..util import conv_bool
+from ..util import conv_bool, b64encode
 
 from .base import formater, FmtBase
 
@@ -35,4 +34,4 @@ class FmtList(FmtBase):
         gfwed = ['||{}'.format(s) for s in self.gfwed_domains]
         replacements.update({'__GFWED_DOMAINS__': '\n'.join(gfwed).strip()})
         content = self.replace(self.tpl, replacements)
-        return base64encode(content) if not self.options.list_raw else content
+        return b64encode(content) if not self.options.list_raw else content
