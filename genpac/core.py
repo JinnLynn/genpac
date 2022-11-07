@@ -336,6 +336,7 @@ class Generator(object):
                         '__GFWLIST_FROM__': gfwlist_from,
                         '__GENPAC__': 'genpac {} {}'.format(__version__,
                                                             __project_url__),
+                        '__PROJECT_URL__': __project_url__,
                         '__GFWLIST_DETAIL__': '{} From {}'.format(
                             modified, gfwlist_from)}
 
@@ -507,14 +508,6 @@ class Generator(object):
 # return: [忽略规则_正则表达式, 忽略规则_通配符, 被墙规则_正则表达式, 被墙规则_通配符]
 def parse_rules(rules, precise=False):
     return _parse_rule_precise(rules) if precise else _parse_rule(rules)
-
-
-# decorator: 添加格式化器
-def formater(name, **options):
-    def decorator(fmt_cls):
-        GenPAC.add_formater(name, fmt_cls, **options)
-        return fmt_cls
-    return decorator
 
 
 def run():
