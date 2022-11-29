@@ -54,6 +54,9 @@ class FmtBase(object):
     def replace(self, text, replacements):
         return replace_all(text, replacements)
 
+    # RETURN:
+    # [0][0]: user.direct    [0][1]: user.proxy
+    # [1][0]: gfwlist.direct [1][1]: gfwlist.proxy
     @property
     def rules(self):
         if self._rules is None:
@@ -69,20 +72,37 @@ class FmtBase(object):
                 parse_rules(self._orginal_gfwlist_rules, True)]
         return self._precise_rules
 
+    # 优先级: user.proxy > user.direct > gfwlist.proxy > gfwlist.direct
     @property
     def gfwed_domains(self):
-        if self._gfwed_domains is None:
-            self._gfwed_domains = list(
-                set(self.rules[0][1] + self.rules[1][1]))
-            self._gfwed_domains.sort()
+        if isinstance(self._gfwed_domains, list):
+            return self._gfwed_domains
+        print(self.rules[0][0])
+        # 1. gfwlist.proxy
+        # 2. 过滤掉user.direct中包含的
+        self._gfwed_domains = [d for d in self.rules[1][1] if d not in self.rules[0][0]]
+        print('google.com' in self._gfwed_domains)
+        # 3. 合并上 user.proxy
+        # 4. 去重
+        self._gfwed_domains = list(set(self._gfwed_domains + self.rules[0][1]))
+        self._gfwed_domains.sort()
         return self._gfwed_domains
 
+    # 优先级: user.proxy > user.direct > gfwlist.proxy > gfwlist.direct
     @property
     def ignored_domains(self):
-        if self._ignored_domains is None:
-            self._ignored_domains = list(
-                set(self.rules[0][0] + self.rules[1][0]))
-            self._ignored_domains.sort()
+        if isinstance(self._ignored_domains, list):
+            return self._ignored_domains
+        # 1. gfwlist.direct
+        # 2. 过滤掉gfwlist.proxy包含的
+        self._ignored_domains = [d for d in self.rules[1][0] if d not in self.rules[1][1]]
+        # 3. 合并上 user.direct
+        self._ignored_domains += self.rules[0][0]
+        # 4. 过滤到 user.proxy 包含的
+        self._ignored_domains = [d for d in self._ignored_domains if d not in self.rules[0][1]]
+        # 5. 去重
+        self._ignored_domains = list(set(self._ignored_domains))
+        self._ignored_domains.sort()
         return self._ignored_domains
 
     def _update_orginal_rules(self, user_rules, gfwlist_rules):

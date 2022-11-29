@@ -521,6 +521,8 @@ def _parse_rule(rules):
     for line in rules:
         domain = ''
 
+        # org_line = line
+
         if not line or line.startswith('!'):
             continue
 
@@ -533,23 +535,28 @@ def _parse_rule(rules):
         elif line.find('.*') >= 0 or line.startswith('/'):
             line = line.replace('\/', '/').replace('\.', '.')  # noqa: W605
             try:
-                m = re.search(r'[a-z0-9]+\..*', line)
-                domain = surmise_domain(m.group(0))
+                m = re.search(r'([a-z0-9\.]+)\/.*', line)
+                domain = surmise_domain(m.group(1))
                 if domain:
                     proxy_lst.append(domain)
-                    continue
-                m = re.search(r'[a-z]+\.\(.*\)', line)
-                m2 = re.split(r'[\(\)]', m.group(0))
-                for tld in re.split(r'\|', m2[1]):
-                    domain = surmise_domain(
-                        '{}{}'.format(m2[0], tld))
+                continue
+            except:
+                pass
+            try:
+                m = re.search(r'([a-z0-9]+)\.\((.*)\)', line)
+                print(m.group(1), m.group(2))
+                m2 = re.split(r'[\(\)]', m.group(2))
+                for tld in re.split(r'\|', m2[0]):
+                    domain = surmise_domain('{}.{}'.format(m[1], tld))
                     if domain:
                         proxy_lst.append(domain)
-            except Exception:
+                continue
+            except:
                 pass
-            continue
+            # logger.info('Parse rule fail: %s', org_line)
         elif line.startswith('|') or line.endswith('|'):
             line = line.strip('|')
+
         domain = surmise_domain(line)
         if domain:
             proxy_lst.append(domain)

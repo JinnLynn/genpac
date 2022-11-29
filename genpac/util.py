@@ -36,8 +36,9 @@ class FatalIOError(FatalError):
     pass
 
 
-def surmise_domain(rule):
+def surmise_domain(rule, subdomain=True):
     global _PSL
+    _PSL = _PSL or PublicSuffixList(accept_unknown=False, only_icann=True)
 
     def _clear_asterisk(rule):
         if rule.find('*') < 0:
@@ -66,8 +67,11 @@ def surmise_domain(rule):
     elif rule.find('.') > 0:
         domain = rule
 
-    _PSL = _PSL or PublicSuffixList(accept_unknown=False, only_icann=True)
-    return _PSL.suffix(domain)
+    if not subdomain:
+        return _PSL.privatesuffix(domain)
+
+    parts = _PSL.privateparts(domain)
+    return '.'.join(parts) if parts else None
 
 
 def error(*args, **kwargs):
