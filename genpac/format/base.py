@@ -19,6 +19,7 @@ class FmtBase(object):
     def __init__(self, *args, **kwargs):
         super(FmtBase, self).__init__()
         self.options = kwargs.get('options') or Namespace()
+        self.generator = kwargs.get('generator')
 
         self._update_orginal_rules(
             kwargs.get('user_rules') or [],
@@ -77,11 +78,9 @@ class FmtBase(object):
     def gfwed_domains(self):
         if isinstance(self._gfwed_domains, list):
             return self._gfwed_domains
-        print(self.rules[0][0])
         # 1. gfwlist.proxy
         # 2. 过滤掉user.direct中包含的
         self._gfwed_domains = [d for d in self.rules[1][1] if d not in self.rules[0][0]]
-        print('google.com' in self._gfwed_domains)
         # 3. 合并上 user.proxy
         # 4. 去重
         self._gfwed_domains = list(set(self._gfwed_domains + self.rules[0][1]))

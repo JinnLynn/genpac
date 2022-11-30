@@ -27,7 +27,6 @@ from .util import logger
 
 _GFWLIST_URL = \
     'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
-_IPDATA_URL = 'https://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest'
 
 
 class Namespace(argparse.Namespace):
@@ -127,20 +126,6 @@ class GenPAC(object):
             help='保存解码后的gfwlist, 仅用于测试')
 
         group.add_argument(
-            '--ipdata-enabled', action='store_true',
-            help='启用CNIP'
-        )
-        group.add_argument(
-            '--ipdata-online', nargs='?',
-            const=True, default=False, metavar='URL',
-            help='在线获取'
-        )
-        group.add_argument(
-            '--ipdata-include-private', action='store_true',
-            help='包含私有地址'
-        )
-
-        group.add_argument(
             '--user-rule', action='append', metavar='RULE',
             help='自定义规则, 允许重复使用或在单个参数中使用`,`分割多个规则，如:\n'
                  '  --user-rule="@@sina.com" --user-rule="||youtube.com"\n'
@@ -220,8 +205,6 @@ class GenPAC(object):
         opts['gfwlist-disabled'] = {'conv': conv_bool}
         opts['gfwlist-update-local'] = {'conv': conv_bool}
         opts['gfwlist-decoded-save'] = {'conv': conv_path}
-
-        opts['ipdata-url'] = {'default': _IPDATA_URL}
 
         opts['user-rule'] = {'conv': conv_list}
         opts['user-rule-from'] = {'conv': [conv_list, conv_path]}
@@ -306,15 +289,13 @@ class GenPAC(object):
 
 
 class Generator(object):
-    # 在线获取gfwlist的结果
-    _gfwlists = {}
-    # 在线获取的ip数据
-    _ipdata = {}
+    # 在线获取的数据
+    _cache = {}
 
     def __init__(self, options, formater_cls):
         super(Generator, self).__init__()
         self.options = copy.copy(options)
-        self.formater = formater_cls(options=self.options)
+        self.formater = formater_cls(options=self.options, generator=self)
 
     def generate(self):
         if not self.formater.pre_generate():
@@ -366,33 +347,21 @@ class Generator(object):
             raise FatalError('解析获取gfwlist的代理`{}`失败'.format(
                              self.options.gfwlist_proxy))
 
-    def fetch(self, url):
+    def fetch_online(self, url):
         start = time.time()
         opener = self.init_opener()
         res = opener.open(url)
         content = res.read()
         td = int((time.time() - start) * 1000)
         logger.debug('Fetch online done: {}ms {}'.format(td, url))
-        return content
+        return content.decode('utf-8')
 
     # 使用类变量缓存在线获取的内容
-    def fetch_ipdata_online(self):
-        url = self.options.ipdata_url
-        content = self.__class__._ipdata.get(url) or self.fetch(url)
+    def fetch(self, url):
+        content = self.__class__._cache.get(url) or self.fetch_online(url)
         if content:
-            self.__class__._ipdata[url] = content
+            self.__class__._cache[url] = content
         return content
-
-    # 使用类变量缓存在线获取的内容
-    def fetch_gfwlist_online(self):
-        url = self.options.gfwlist_url
-        content = self.__class__._gfwlists.get(url) or self.fetch(url)
-        if content:
-            self.__class__._gfwlists[url] = content
-        return content
-
-    def fetch_ipdata(self):
-        content = read_file(get_resource_path('ipdata.txt'))
 
     def fetch_gfwlist(self):
         if self.options.gfwlist_disabled:
@@ -402,7 +371,7 @@ class Generator(object):
         gfwlist_from = '-'
         gfwlist_modified = '-'
         try:
-            content = self.fetch_gfwlist_online()
+            content = self.fetch(self.options.gfwlist_url)
             if not content:
                 raise ValueError()
             gfwlist_from = 'online[{}]'.format(self.options.gfwlist_url)
@@ -491,8 +460,7 @@ class Generator(object):
     @classmethod
     def clear_cache(cls):
         logger.debug('Clear online data cache.')
-        cls._gfwlists.clear()
-        cls._ipdata.clear()
+        cls._cache.clear()
 
 
 # 解析规则
@@ -544,7 +512,6 @@ def _parse_rule(rules):
                 pass
             try:
                 m = re.search(r'([a-z0-9]+)\.\((.*)\)', line)
-                print(m.group(1), m.group(2))
                 m2 = re.split(r'[\(\)]', m.group(2))
                 for tld in re.split(r'\|', m2[0]):
                     domain = surmise_domain('{}.{}'.format(m[1], tld))

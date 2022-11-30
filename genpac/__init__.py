@@ -1,4 +1,4 @@
-__version__ = '3.0.dev2'
+__version__ = '3.0.dev3'
 __author__ = 'JinnLynn <eatfishlin@gmail.com>'
 __license__ = 'The MIT License'
 __copyright__ = 'Copyright 2013-2022 JinnLynn'

@@ -2,6 +2,7 @@
 from .base import FmtBase, formater
 
 from .dnsmasq import FmtDnsmasq
+from .ip import FmtIP
 from .list import FmtList
 from .pac import FmtPAC
 from .quantumultx import FmtQuantumultX

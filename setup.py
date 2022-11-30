@@ -49,7 +49,7 @@ setup(
     install_requires=[
         'PySocks==1.7.1',
         'publicsuffixlist',
-        'IPy==1.1'
+        'IPy==1.01'
     ],
     extras_require={
         'testing': [
