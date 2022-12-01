@@ -7,6 +7,7 @@ from flask import Flask, Blueprint
 from flask_apscheduler import APScheduler
 
 from .. import Namespace, Config, GenPAC, FatalError, formater, FmtBase
+from ..util import exit_error
 from ..util import logger, conv_bool, conv_list, conv_path
 from .build import start_watch, build, autobuild_task
 
@@ -33,8 +34,11 @@ def create_app(config_file=None):
     from . import view  # noqa: F401
     app = Flask(__name__)
 
-    config_file = config_file or os.environ.get('GENPAC_CONFIG')
-    read_config(app, config_file)
+    try:
+        config_file = config_file or os.environ.get('GENPAC_CONFIG')
+        read_config(app, config_file)
+    except FatalError as e:
+        exit_error(e)
 
     app.register_blueprint(main)
 
@@ -66,8 +70,10 @@ def create_app(config_file=None):
 
 
 def read_config(app, config_file):
-    if not config_file or not os.path.exists(conv_path(config_file)):
-        raise FatalError('config file {} missing.'.format(config_file or ''))
+    if not config_file:
+        raise FatalError('未设置配置文件，可通过环境变量`GENPAC_CONFIG`指定.')
+    if not os.path.exists(conv_path(config_file)):
+        raise FatalError('配置文件不存在: {}'.format(config_file or ''))
 
     options = copy.deepcopy(_DEFAULT_OPTIONS)
     cfg = {}

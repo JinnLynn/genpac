@@ -42,7 +42,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'genpac=genpac:run'
+            'genpac=genpac:run',
+            'genpac.server=genpac.server:run'
         ]
     },
     platforms='any',
