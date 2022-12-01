@@ -2,10 +2,12 @@ import imp
 import os
 import copy
 import tempfile
+import argparse
 
 from flask import Flask, Blueprint
 from flask_apscheduler import APScheduler
 
+from .. import __version__
 from .. import Namespace, Config, GenPAC, FatalError, formater, FmtBase
 from ..util import exit_error
 from ..util import logger, conv_bool, conv_list, conv_path
@@ -161,3 +163,28 @@ class FmtDomains(FmtBase):
         gfwed = ['p,{}'.format(s) for s in self.gfwed_domains]
         ignored = ['d,{}'.format(s) for s in self.ignored_domains]
         return '\n'.join(gfwed + ignored).strip()
+
+
+def run():
+    parser = argparse.ArgumentParser(
+                prog='genpac.server',
+                formatter_class=argparse.RawTextHelpFormatter,
+                description='genpac的服务端模式',
+                argument_default=argparse.SUPPRESS,
+                add_help=False)
+    parser.add_argument(
+            '--version', action='version',
+            version='%(prog)s {}'.format(__version__),
+            help='版本信息')
+    parser.add_argument(
+            '--help', action='help',
+            help='帮助信息')
+    parser.add_argument('-h', '--host', metavar="HOST", default='0.0.0.0',
+                        help='绑定IP, 默认: 0.0.0.0')
+    parser.add_argument('-p', '--port', metavar="PORT", default=7000,
+                        help='绑定端口，默认: 7000')
+    parser.add_argument('-c', '--config', metavar='FILE', default=None)
+    args = parser.parse_args()
+
+    app = create_app(args.config)
+    app.run(host=args.host, port=args.port)
