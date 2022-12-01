@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="head"><h1>GenPAC 测试</h1></div>
+<div id="content">
+    <div id="input">
+        <div id="input-content">
+            <input type="text" id="test-content" value="https://twitter.com" />
+        </div>
+        <div id="input-btn">
+            <input type="submit" id="test-submit" name="test-submit" value="Test" class="btn"/>
+            <input type="submit" id="batch-test-submit" name="batch-test-submit" value="Batch Test" class="btn" />
+            <input type="submit" id="clear-submit" name="clear-submit" value="Clear" class="btn" />
+        </div>
+    </div>
+    <div id="result"></div>
+    <div id="intro">
+        <p>
+            <span class="ip" title="不同方式测试获得的IP地址">IP:</span>
+            <span class="ip" data-ipsrv="{{ ip_srvs['inland'] }}" title="国内">{{ ip }}</span>
+            <span class="ip" data-ipsrv="{{ ip_srvs['abroad'] }}" title="国外"></span>
+            <span class="ip" data-gfwed=1 data-ipsrv="{{ ip_srvs['gfwed'] }}" title="GFWed"></span>
+        </p>
+        <p>说明: 测试任意网址是否在规则列表中(仅对域名匹配)。</p>
+        <p>灰色: 表示不存在任何列表中</p>
+        <p><span class="result-gfwed">红色</span>: 表示在过滤列表中</p>
+        <p><span class="result-ignored">绿色</span>: 表示在忽略列表中</p>
+        <p><span class="result-both">黄色</span>: 表示同时存在过滤及忽略列表中，这种情况具体在不同的生成格式中或有不同</p>
+    </div>
+</div>
+<script type="text/javascript">
+    function logResults(json){
+            console.log(json);
+        }
+    var testUrls = [
+        'http://www.voatibetan.com/',
+        'http://www.cctv.com',
+        'http://www.sina.com',
+        'http://www.163.com',
+        'http://www.google.com',
+        'http://www.google.com.hk',
+        'https://docs.google.com',
+        'https://twitter.com',
+        'http://facebook.com',
+        'https://www.youtube.com/watch?v=NhIuSNvfjHA&list=RDNhIuSNvfjHA',
+        'http://s.ytimg.com/yts/jsbin/html5player-vflCXG8Sm.js',
+        'https://zh.wikipedia.org/wiki/%E5%8A%A0%E5%8B%92%E6%AF%94%E6%B5%B7',
+        'http://www.dropbox.com',
+        'https://www.dropbox.com',
+        'http://ifconfig.me/',
+        'http://www.ip138.com/',
+        'http://ip.cn/',
+        'https://pypi.python.org/pypi/genpac/',
+        'https://github.com/JinnLynn/genpac'
+    ];
+
+    $(function(){
+        var siteurl = (function() {
+            var links = document.getElementsByTagName('link');
+            for (var i = 0; i < links.length; i++) {
+                if (links[i].getAttribute('rel') == 'siteurl')
+                    return links[i].getAttribute('href');
+            }
+            return window.location.origin; //! 不一定正确, 如果网址工作在一个子目录下就是错的
+        })();
+
+        var fetchResult = function(url) {
+            $.post('{{ url_for(".view_api_test", _external=True) }}', {url: url, output: 'html'}, function(data){
+                console.log(data);
+
+                if (data.code != 0) 
+                    return alert('测试失败:' + data.msg);
+
+                var ret = $('<div />').addClass('result-single');
+                
+                if (data.data.d && data.data.p)
+                    ret.addClass('result-both');
+                else if (data.data.p)
+                    ret.addClass('result-gfwed');
+                else if (data.data.d)
+                    ret.addClass('result-ignored');
+                ret.append(data.data.url + '<br /> => ' + data.data.domain)
+                $('#result').css({display : 'block'}).prepend(ret);
+            });
+        };
+
+        
+
+        var fetchIP = function() {
+            // 设置超时
+            $.ajaxSetup({timeout: 8000});
+            var _fetch = function(srv, sel) {
+                if (!srv)
+                    return;
+                var ip_test = /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/;
+                $.get(srv).always(function(r) {
+                    var ret;
+                    if (typeof r === 'string')
+                        ret = r;
+                    else if (typeof r === 'object')
+                        ret = r.responseText;
+                    ret = ip_test.exec(ret);
+                    $(sel).text(ret ? ret[0] : '-');
+                    console.log(srv, r);
+                });
+            };
+            var _fetch_gfwed_ip = function(sel) {
+                // return;
+                $.ajax({
+                    url: 'https://toolbox.googleapps.com/apps/browserinfo/info/?callback=?',
+                    dataType: "jsonp",
+                    crossDomain: true,
+                    async: true,
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    complete: function(r, s) {
+                        console.log('g', r, s)
+                    },
+                    success: function(d) {
+                        console.log(d)
+                    },
+                    error: function(r) {
+                        console.log('e', r)
+                    }
+                });
+            }
+            $('#intro .ip').each(function() {
+                var ipsrv = $(this).data('ipsrv');
+                $(this).data('gfwed') ? _fetch_gfwed_ip(this) : _fetch(ipsrv, this);
+            });
+            // _fetch("{{ ip_srvs['inland'] }}", '#inland');
+            // _fetch("{{ ip_srvs['abroad'] }}", '#abroad');
+            // _fetch("{{ ip_srvs['gfwed'] }}", '#gfwed');
+        };
+
+        $('#test-submit').click(function(){
+            var url = $("#test-content").val();
+            if (!url) {
+                alert('url is missing.');
+                return;
+            }
+            fetchResult(url);
+        });
+
+        $('#batch-test-submit').click(function(){
+            for (var i = 0; i < testUrls.length; i++) {
+                fetchResult(testUrls[i]);
+            };
+        });
+
+        $('#clear-submit').click(function(){
+            $('#result').css({display : 'none'}).empty();
+        });
+
+        // console.log(Array.prototype.some);
+
+        fetchIP();
+
+        var hash = decodeURIComponent(window.location.hash);
+        if (hash.substring(0, 2) == '#!') {
+            url = hash.substring(2)
+            console.log(url);
+            $("#test-content").val(url);
+            $('#test-submit').click();
+        }
+    });
+
+</script>
+{% endblock %}

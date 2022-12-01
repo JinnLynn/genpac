@@ -52,7 +52,12 @@ setup(
         'IPy==1.01'
     ],
     extras_require={
-        'testing': [
+        'server': [
+            'Flask==2.2.2',
+            'Flask-APScheduler==1.12.4',
+            'watchdog==2.1.9'
+        ],
+        'dev': [
             'flake8',
             'pytest',
             'pytest-cov',

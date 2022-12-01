@@ -14,5 +14,6 @@ from .format import formater, FmtBase
 from .util import surmise_domain
 from .util import Error, FatalError, FatalIOError
 from .deprecated import GenPACDeprecationWarning, install_showwarning
+from .server import create_app
 
 install_showwarning()

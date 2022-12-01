@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="head"><h1>GenPAC 自定义规则</h1></div>
+<div id="content" class="rules">
+    <form action="" method="post">
+        <textarea name="rules" rows="15">{{ content }}</textarea>
+        <input type="password" name="token" id="token" value="{{ token }}" placeholder="TOKEN" />
+        <input type="submit" value="提交更新" class="btn" />
+    </form>
+    <div id="intro">
+        <p>提交更新将触发GenPAC重建规则</p>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('input.btn').click(function(){
+            var rules = $("textarea").val();
+            var token = $("input#token").val();
+            console.log(rules, token);
+            $.post('{{ url_for(".view_api_rule_update", _external=True) }}', {rules: rules, token: token, action: 'update'}, function(data){
+                console.log(data);
+                if (data.code != 0 ) {
+                    alert(data.msg);
+                    return false;
+                }
+                alert('服务端规则已成功更新');
+            });
+            return false;
+        });
+    });
+</script>
+{% endblock %}

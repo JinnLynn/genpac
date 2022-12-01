@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        {#- 让 IE 浏览器运行最新的渲染模式下 #}
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=700, maximum-scale=1">
+        {#- 360极速模式 REF: http://se.360.cn/v6/help/meta.html #}
+        <meta name="renderer" content="webkit">
+        <title>GenPAC Server</title>
+        <link rel="siteurl" href="{{ url_for('.index') }}" />
+        <link href="{{ url_for('.static', filename='style.css')|safe }}" rel="stylesheet">
+        <script src="{{ url_for('.static', filename='jquery-3.6.1.min.js')|safe }}"></script>
+        {%- block head %}{% endblock %}
+    </head>
+    <body>
+        <div id="wrapper">
+        {% block content %}{% endblock %}
+            <div id="footer">
+                {{ powered_by()|safe }}
+            </div>
+        </div>
+    </body>
+</html>
