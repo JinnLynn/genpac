@@ -36,9 +36,10 @@ setup(
     keywords='proxy pac gfwlist gfw',
     description='convert gfwlist to pac, custom rules supported.',
     long_description=__doc__,
-    packages=['genpac'],
+    packages=['genpac', 'genpac.server'],
     package_data={
         'genpac': ['res/*'],
+        'genpac.server': ['templates/*', 'static/*']
     },
     entry_points={
         'console_scripts': [
