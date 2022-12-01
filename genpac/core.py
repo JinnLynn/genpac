@@ -2,16 +2,16 @@ import os
 import sys
 import argparse
 import re
-import base64
 import time
 from datetime import datetime, timedelta
 import copy
 from pprint import pprint  # noqa: F401
 from collections import OrderedDict
-from urllib.request import build_opener
+from urllib.request import Request, urlopen
+import socket
 
+import socks
 from socks import PROXY_TYPES as _PROXY_TYPES
-from sockshandler import SocksiPyHandler
 
 from . import __version__, __project_url__
 from .config import Config
@@ -106,12 +106,6 @@ class GenPAC(object):
             '--gfwlist-url', metavar='URL',
             help='gfwlist网址，无此参数或URL为空则使用默认地址, URL为-则不在线获取')
         group.add_argument(
-            '--gfwlist-proxy', metavar='PROXY',
-            help='获取gfwlist时的代理, 如果可正常访问gfwlist地址, 则无必要使用该选项\n'
-                 '格式为 "代理类型 [用户名:密码]@地址:端口" 其中用户名和密码可选, 如:\n'
-                 '  SOCKS5 127.0.0.1:8080\n'
-                 '  SOCKS5 username:password@127.0.0.1:8080\n')
-        group.add_argument(
             '--gfwlist-local', metavar='FILE',
             help='本地gfwlist文件地址, 当在线地址获取失败时使用')
         group.add_argument(
@@ -141,6 +135,15 @@ class GenPAC(object):
             help='从文件中读取配置信息')
         group.add_argument(
             '--template', metavar='FILE', help='自定义模板文件')
+
+        group.add_argument(
+            '--proxy', metavar='PROXY',
+            help='在线获取外部数据时的代理, 如果可正常访问外部地址, 则无必要使用该选项\n'
+                 '格式: [PROTOCOL://][USERNAME:PASSWORD@]HOST:PORT \n'
+                 '其中协议、用户名、密码可选, 默认协议 http, 支持协议: http socks5 socks4 socks 如:\n'
+                 '  127.0.0.1:8080\n'
+                 '  SOCKS5://127.0.0.1:1080\n'
+                 '  SOCKS5://username:password@127.0.0.1:1080\n')
 
         # 检查弃用参数 警告
         check_deprecated_args()
@@ -200,7 +203,6 @@ class GenPAC(object):
         opts['format'] = {'conv': conv_lower}
 
         opts['gfwlist-url'] = {'default': _GFWLIST_URL}
-        opts['gfwlist-proxy'] = {}
         opts['gfwlist-local'] = {'conv': conv_path}
         opts['gfwlist-disabled'] = {'conv': conv_bool}
         opts['gfwlist-update-local'] = {'conv': conv_bool}
@@ -211,6 +213,7 @@ class GenPAC(object):
 
         opts['output'] = {}
         opts['template'] = {'conv': conv_path}
+        opts['proxy'] = {}
 
         self.walk_formaters('config', opts)
 
@@ -327,31 +330,39 @@ class Generator(object):
 
         self.formater.post_generate()
 
-    def init_opener(self):
-        if not self.options.gfwlist_proxy:
-            return build_opener()
+    def get_proxy(self):
+        if not self.options.proxy:
+            return
+
         _PROXY_TYPES['SOCKS'] = _PROXY_TYPES['SOCKS4']
         _PROXY_TYPES['PROXY'] = _PROXY_TYPES['HTTP']
         try:
-            # format: PROXY|SOCKS|SOCKS4|SOCKS5 [USR:PWD]@HOST:PORT
+            # format: [PROTOCOL://][USR:PWD]@HOST:PORT
+            # protocol: http,socks4,socks5,socks
             matches = re.match(
-                r'(PROXY|SOCKS|SOCKS4|SOCKS5) (?:(.+):(.+)@)?(.+):(\d+)',
-                self.options.gfwlist_proxy,
+                r'(?:(HTTP|SOCKS4|SOCKS5|SOCKS):\/\/)?(?:(.+):(.+)@)?(.+):(\d+)',
+                self.options.proxy,
                 re.IGNORECASE)
             type_, usr, pwd, host, port = matches.groups()
-            type_ = _PROXY_TYPES[type_.upper()]
-            return build_opener(
-                SocksiPyHandler(type_, host, int(port),
-                                username=usr, password=pwd))
-        except Exception:
-            raise FatalError('解析获取gfwlist的代理`{}`失败'.format(
-                             self.options.gfwlist_proxy))
+            type_ = (type_ or 'http').upper()
+            logger.debug('PROXY TYPE: %s HOST: %s PORT: %d USR: %s PWD: %s', type_, host, int(port), usr, pwd)
+            type_ = _PROXY_TYPES[type_] if type_ else _PROXY_TYPES['HTTP']
+            return (type_, host, int(port), usr, pwd)
+        except Exception as e:
+            logger.error(e)
+            raise FatalError('解析在线获取代理`{}`失败'.format(
+                             self.options.proxy))
 
     def fetch_online(self, url):
         start = time.time()
-        opener = self.init_opener()
-        res = opener.open(url)
-        content = res.read()
+        request = Request(url)
+        proxy = self.get_proxy()
+        if proxy:
+            type_, host, port, usr, pwd = proxy
+            socks.set_default_proxy(type_, host, int(port), username=usr, password=pwd)
+            socket.socket = socks.socksocket
+        response = urlopen(request)
+        content = response.read()
         td = int((time.time() - start) * 1000)
         logger.debug('Fetch online done: {}ms {}'.format(td, url))
         return content.decode('utf-8')
@@ -379,7 +390,8 @@ class Generator(object):
                     and self.options.gfwlist_update_local:
                 write_file(self.options.gfwlist_local, content,
                            fail_msg='更新本地gfwlist文件{path}失败')
-        except Exception:
+        except Exception as e:
+            logger.error(e)
             if self.options.gfwlist_local:
                 content = read_file(self.options.gfwlist_local,
                                     fail_msg='读取本地gfwlist文件{path}失败')
