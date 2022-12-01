@@ -71,9 +71,9 @@ def create_app(config_file=None):
 
 def read_config(app, config_file):
     if not config_file:
-        raise FatalError('未设置配置文件，可通过环境变量`GENPAC_CONFIG`指定.')
+        raise FatalError('服务模式: 未设置配置文件，可通过环境变量`GENPAC_CONFIG`指定.')
     if not os.path.exists(conv_path(config_file)):
-        raise FatalError('配置文件不存在: {}'.format(config_file or ''))
+        raise FatalError('服务模式: 配置文件不存在: {}'.format(config_file or ''))
 
     options = copy.deepcopy(_DEFAULT_OPTIONS)
     cfg = {}

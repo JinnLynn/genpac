@@ -11,7 +11,7 @@ from publicsuffixlist import PublicSuffixList
 
 logger = logging.getLogger(__name__.split('.')[0])
 logger.setLevel(logging.DEBUG)
-sh = logging.StreamHandler(stream=sys.stdout)
+sh = logging.StreamHandler(stream=sys.stderr)
 sh.setFormatter(logging.Formatter(
                     fmt='%(asctime)s[%(levelname)s]: %(message)s'))
 logger.addHandler(sh)
@@ -75,7 +75,7 @@ def surmise_domain(rule, subdomain=True):
 
 
 def error(*args, **kwargs):
-    print(*args, file=sys.stderr)
+    logger.error(*args)
     if kwargs.get('exit', False):
         sys.exit(kwargs.get('exit_code') or 1)
 
@@ -85,7 +85,7 @@ def exit_error(*args, **kwargs):
 
 
 def exit_success(*args):
-    print(*args)
+    logger.info(*args)
     sys.exit()
 
 
