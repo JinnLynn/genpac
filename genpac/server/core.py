@@ -172,18 +172,17 @@ def run():
                 description='genpac的服务端模式',
                 argument_default=argparse.SUPPRESS,
                 add_help=False)
-    parser.add_argument(
-            '--version', action='version',
-            version='%(prog)s {}'.format(__version__),
-            help='版本信息')
-    parser.add_argument(
-            '--help', action='help',
-            help='帮助信息')
+    parser.add_argument('--version', action='version',
+                        version='%(prog)s {}'.format(__version__),
+                        help='版本信息')
+    parser.add_argument('--help', action='help',
+                        help='帮助信息')
     parser.add_argument('-h', '--host', metavar="HOST", default='0.0.0.0',
                         help='绑定IP, 默认: 0.0.0.0')
     parser.add_argument('-p', '--port', metavar="PORT", default=7000,
                         help='绑定端口，默认: 7000')
-    parser.add_argument('-c', '--config', metavar='FILE', default=None)
+    parser.add_argument('-c', '--config', metavar='FILE', default=None,
+                        help='配置文件，也可通过环境变量`GENPAC_CONFIG`设置')
     args = parser.parse_args()
 
     app = create_app(args.config)
