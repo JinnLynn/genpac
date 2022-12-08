@@ -187,17 +187,23 @@ def show_ip():
 
 @main.route('/api/test/', methods=['GET', 'POST'])
 def view_api_test():
+    def gen_data(url, domain):
+        return make_res_data(data={'d': domain in data.domains_direct,
+                                   'p': domain in data.domains_proxy,
+                                   'domain': domain,
+                                   'url': url})
+
     url = request.values.get('url', None)
     if not url:
         return make_res_data(code=1, msg='地址不能为空')
 
     data = current_app.extensions['genpac']
-    domain = surmise_domain(url)
-    return make_res_data(data={
-        'd': domain in data.domains_direct,
-        'p': domain in data.domains_proxy,
-        'domain': domain,
-        'url': url})
+    # 先带子域名 再顶级域名
+    domain = surmise_domain(url, True)
+    if domain in data.domains_direct or domain in data.domains_proxy:
+        return gen_data(url, domain)
+    domain = surmise_domain(url, False)
+    return gen_data(url, domain)
 
 
 @main.route('/api/rule-update/', methods=['POST'])
