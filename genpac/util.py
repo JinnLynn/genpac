@@ -96,8 +96,12 @@ def b64decode(s):
     return base64.b64decode(s).decode('utf-8')
 
 
-def abspath(path):
-    return os.path.abspath(os.path.expanduser(path)) if path else getcwd()
+def abspath(path, base=None):
+    base = base or getcwd()
+    if not path:
+        return base
+    path = os.path.expandvars(os.path.expanduser(path))
+    return os.path.normpath(os.path.join(base, path))
 
 
 def open_file(path, mode='r'):
