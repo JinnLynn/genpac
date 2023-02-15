@@ -22,9 +22,11 @@ def build(app):
             gp = GenPAC(config_file=options.config_file,
                         argv_enabled=False)
             gp.add_job({'format': 'genpac-server-domains',
-                        'output': options._private.domain_file})
+                        'output': options._private.domain_file,
+                        '_order': -100})
             gp.add_job({'format': 'list',
-                        'output': options._private.list_file})
+                        'output': options._private.list_file,
+                        '_order': -100})
             if options.server_rule_enabled:
                 with open(options.server_rule_file, 'r') as fp:
                     for line in fp.readlines():

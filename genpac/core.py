@@ -215,6 +215,8 @@ class GenPAC(object):
         opts['template'] = {'conv': conv_path}
         opts['proxy'] = {}
 
+        opts['_order'] = {'conv': int, 'default': 0}
+
         self.walk_formaters('config', opts)
 
         self.clear_jobs()
@@ -235,6 +237,8 @@ class GenPAC(object):
                 job.update(**{dest: value})
             job.user_rule.extend(self.extra_rules)
             self.jobs.append(job)
+
+        self.jobs.sort(key=lambda j: j._order)
 
     def add_rule(self, rule):
         rule = rule.strip()
