@@ -62,7 +62,7 @@ import os
 import sys
 import functools
 import logging
-from collections import Callable
+from collections.abc import Callable
 from base64 import b64encode
 
 
