@@ -2,6 +2,7 @@ import itertools
 
 from .. import template as tpl
 from .base import FmtBase, formater
+from ..util import conv_list
 
 _TPL = '''
 #! __GENPAC__
@@ -27,18 +28,22 @@ class FmtDnsmasq(FmtBase):
             help='生成规则域名查询使用的DNS服务器，格式: HOST#PORT\n'
                  '默认: {}'.format(cls._default_dns))
         group.add_argument(
-            '--dnsmasq-ipset', metavar='IPSET',
-            help='转发使用的ipset名称, 默认: {}'.format(cls._default_ipset))
+            '--dnsmasq-ipset', action='append', metavar='IPSET',
+            help='转发使用的ipset名称, 允许重复使用或中使用`,`分割多个,\n'
+                 '默认: {}'.format(cls._default_ipset))
         return group
 
     @classmethod
     def config(cls, options):
         options['dnsmasq-dns'] = {'default': cls._default_dns}
-        options['dnsmasq-ipset'] = {'default': cls._default_ipset}
+        options['dnsmasq-ipset'] = {
+            'default': cls._default_ipset,
+            'conv': conv_list
+        }
 
     def generate(self, replacements):
         dns = self.options.dnsmasq_dns
-        ipset = self.options.dnsmasq_ipset
+        ipset = ','.join(self.options.dnsmasq_ipset)
 
         servers = ['server=/{}/{}'.format(s, dns) for s in self.gfwed_domains]
         ipsets = ['ipset=/{}/{}'.format(s, ipset) for s in self.gfwed_domains]
