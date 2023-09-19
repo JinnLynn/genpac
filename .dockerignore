@@ -1,6 +1,4 @@
-/.*
-/test
-/tmp
-/htmlcov
-/dist
-/genpac.egg-info
+*
+!/genpac/
+!/setup.py
+!/example/

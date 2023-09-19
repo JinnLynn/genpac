@@ -11,7 +11,7 @@ COPY example/server/config.ini /app/etc/
 COPY example/server/docker-entrypoint.sh /app/bin/entrypoint
 
 RUN set -ex && \
-    pip install /tmp[server] && \
+    pip install --no-cache-dir /tmp[server] && \
     rm -rf /tmp/*
 
 ENV GENPAC_CONFIG=/app/etc/config.ini
