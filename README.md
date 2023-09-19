@@ -8,45 +8,42 @@
 
 ```shell
 # 安装或更新
-$ pip install -U genpac
+pip install -U genpac
 # 或从github安装更新开发版本
-$ pip install -U https://github.com/JinnLynn/genpac/archive/dev.zip
+pip install -U https://github.com/JinnLynn/genpac/archive/dev.zip
+
+# 安装服务器组件
+curl -O https://github.com/JinnLynn/genpac/archive/dev.zip
+pip instll -U dev.zip[server]
 
 # 卸载
-$ pip uninstall genpac
+pip uninstall genpac
 ```
 
 **注意：** 如果安装后，执行时出现无法找到命令的错误，可能是因为`genpac`命令没有被安装到系统路径，如Ububtu 16.04且通过apt-get安装的pip的环境下，`genpac`执行入口文件被安装到了`~/.local/bin`，遇到这种情况，将`~/.local/bin`添加到系统路径，或卸载重新使用sudo安装，都可以解决问题。
 
 ### 使用方法
 
-```
-genpac [-v] [-h] [--init [PATH]] [--format {pac,dnsmasq,wingy}]
-       [--gfwlist-url URL] [--gfwlist-proxy PROXY]
-       [--gfwlist-local FILE] [--gfwlist-update-local]
-       [--gfwlist-disabled] [--gfwlist-decoded-save FILE]
-       [--user-rule RULE] [--user-rule-from FILE]
-       [--template FILE] [-o FILE] [-c FILE]
-       [--pac-proxy PROXY] [--pac-precise] [--pac-compress]
-       [--dnsmasq-dns DNS] [--dnsmasq-ipset IPSET]
-       [--wingy-adapter-opts OPTS] [--wingy-rule-adapter-id ID]
+#### 命令行形式
+
+```shell
+genpac [-v] [-h] [--init [PATH]] [--format {dnsmasq,ip,list,pac,quantumultx,ssacl,surge,v2ray,wingy,potatso}] [--gfwlist-url URL] [--gfwlist-local FILE] [--gfwlist-update-local]
+              [--gfwlist-disabled] [--gfwlist-decoded-save FILE] [--user-rule RULE] [--user-rule-from FILE] [-o FILE] [-c FILE] [--template FILE] [--proxy PROXY] [--dnsmasq-dns DNS]
+              [--dnsmasq-ipset IPSET] [--ip-cc CC] [--ip-family FAMILY] [--ip-data-url URL] [--ip-data-local FILE] [--ip-data-update-local] [--list-raw] [--pac-proxy PROXY] [--pac-precise]
+              [--pac-compress] [--ssacl-geocn] [--v2ray-proxy-tag TAG] [--v2ray-direct-tag TAG] [--v2ray-protocol PROTOCOL[,PROTOCOL]] [--v2ray-pretty V2RAY_PRETTY] [--wingy-adapter-opts OPTS]
+              [--wingy-rule-adapter-id ID]
 
 获取gfwlist生成多种格式的翻墙工具配置文件, 支持自定义规则
 
-optional arguments:
+options:
   -v, --version         版本信息
   -h, --help            帮助信息
   --init [PATH]         初始化配置和用户规则文件
 
 通用参数:
-  --format {pac,dnsmasq,wingy}
+  --format {dnsmasq,ip,list,pac,quantumultx,ssacl,surge,v2ray,wingy,potatso}
                         生成格式, 只有指定了格式, 相应格式的参数才作用
   --gfwlist-url URL     gfwlist网址，无此参数或URL为空则使用默认地址, URL为-则不在线获取
-  --gfwlist-proxy PROXY
-                        获取gfwlist时的代理, 如果可正常访问gfwlist地址, 则无必要使用该选项
-                        格式为 "代理类型 [用户名:密码]@地址:端口" 其中用户名和密码可选, 如:
-                          SOCKS5 127.0.0.1:8080
-                          SOCKS5 username:password@127.0.0.1:8080
   --gfwlist-local FILE  本地gfwlist文件地址, 当在线地址获取失败时使用
   --gfwlist-update-local
                         当在线gfwlist成功获取且--gfwlist-local参数存在时, 更新gfwlist-local内容
@@ -63,35 +60,110 @@ optional arguments:
   -c FILE, --config-from FILE
                         从文件中读取配置信息
   --template FILE       自定义模板文件
-
-PAC:
-  通过代理自动配置文件（PAC）系统或浏览器可自动选择合适的代理服务器
-
-  --pac-proxy PROXY     代理地址, 如 SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080
-  --pac-precise         精确匹配模式
-  --pac-compress        压缩输出
-  -p PROXY, --proxy PROXY
-                        已弃用参数, 等同于--pac-proxy, 后续版本将删除, 避免使用
-  -P, --precise         已弃用参数, 等同于--pac-precise, 后续版本将删除, 避免使用
-  -z, --compress        已弃用参数, 等同于--pac-compress, 后续版本将删除, 避免使用
+  --proxy PROXY         在线获取外部数据时的代理, 如果可正常访问外部地址, 则无必要使用该选项
+                        格式: [PROTOCOL://][USERNAME:PASSWORD@]HOST:PORT
+                        其中协议、用户名、密码可选, 默认协议 http, 支持协议: http socks5 socks4 socks 如:
+                          127.0.0.1:8080
+                          SOCKS5://127.0.0.1:1080
+                          SOCKS5://username:password@127.0.0.1:1080
 
 DNSMASQ:
-  Dnsmasq配合iptables ipset可实现基于域名的自动直连或代理
+  Dnsmasq配合iptables ipset可实现基于域名的自动直连或代理.
 
   --dnsmasq-dns DNS     生成规则域名查询使用的DNS服务器，格式: HOST#PORT
                         默认: 127.0.0.1#53
   --dnsmasq-ipset IPSET
-                        转发使用的ipset名称, 默认: GFWLIST
+                        转发使用的ipset名称, 允许重复使用或中使用`,`分割多个,
+                        默认: GFWLIST
+
+IP:
+  IP地址列表
+
+  --ip-cc CC            国家代码(ISO 3166-2) 默认: CN
+  --ip-family FAMILY    IP类型 可选: 4, 6, all 默认: 4
+  --ip-data-url URL     IP数据地址
+                        默认: https://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest
+  --ip-data-local FILE  IP数据本地, 当在线地址获取失败时使用
+  --ip-data-update-local
+                        当在线IP数据成功获取且--ip-data-local参数存在时, 更新IP数据本地文件内容
+
+LIST:
+  与GFWList格式相同的地址列表
+
+  --list-raw            明文，不进行base64编码
+
+PAC:
+  通过代理自动配置文件(PAC)系统或浏览器可自动选择合适的代理服务器.
+
+  --pac-proxy PROXY     代理地址, 如 SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080
+  --pac-precise         精确匹配模式
+  --pac-compress        压缩输出
+
+QUANTUMULTX:
+  Quantumult X是iOS下一款功能强大的网络分析及代理工具.
+
+SSACL:
+  Shadowsocks访问控制列表.
+
+  --ssacl-geocn         国内IP不走代理，所有国外IP走代理
+
+SURGE:
+  Surge是基于(Network Extension)API开发的一款网络调试工具, 亦可做为代理使用。
+  以下APP也可使用该格式规则:
+      * QuantumultX
+      * Shadowrocket
+  本格式没有可选参数
+
+V2RAY:
+  V2Ray
+
+  --v2ray-proxy-tag TAG
+                        走代理流量标签，默认: proxy
+  --v2ray-direct-tag TAG
+                        直连流量标签，默认: direct
+  --v2ray-protocol PROTOCOL[,PROTOCOL]
+                        protocol
+  --v2ray-pretty V2RAY_PRETTY
 
 WINGY:
-  Wingy是iOS下基于NEKit的代理App
+  Wingy是iOS下基于NEKit的代理App.
+  * 注意: 即将废弃 *
 
   --wingy-adapter-opts OPTS
                         adapter选项, 选项间使用`,`分割, 多个adapter使用`;`分割, 如:
                           id:ap1,type:http,host:127.0.0.1,port:8080;id:ap2,type:socks5,host:127.0.0.1,port:3128
   --wingy-rule-adapter-id ID
                         生成规则使用的adapter ID
+
+POTATSO:
+  Potatso2是iOS下基于NEKit的代理App, 无可选参数.
+  * 注意: 即将废弃 *
+
+=====
+
+用户自定义规则语法:
+
+  与gfwlist相同，使用AdBlock Plus过滤规则( http://adblockplus.org/en/filters )
+
+    1. 通配符支持，如 *.example.com/* 实际书写时可省略*为 .example.com/
+    2. 正则表达式支持，以\开始和结束， 如 \[\w]+:\/\/example.com\\
+    3. 例外规则 @@，如 @@*.example.com/* 满足@@后规则的地址不使用代理
+    4. 匹配地址开始和结尾 |，如 |http://example.com、example.com|分别表示以http://example.com开始和以example.com结束的地址
+    5. || 标记，如 ||example.com 则http://example.com、https://example.com、ftp://example.com等地址均满足条件
+    6. 注释 ! 如 ! Comment
+
+  配置自定义规则时需谨慎，尽量避免与gfwlist产生冲突，或将一些本不需要代理的网址添加到代理列表
+
+  规则优先级从高到底为: user-rule > user-rule-from > gfwlist
 ```
+
+#### web服务形式
+
+支持以web形式自动生成及输出
+
+建议通过Docker部署: `docker pull jinnlynn/genpac:dev`
+
+配置参考见[sample/server/config.ini][]
 
 ### 配置文件
 
