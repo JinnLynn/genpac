@@ -14,7 +14,7 @@ pip install -U https://github.com/JinnLynn/genpac/archive/dev.zip
 
 # 安装服务器组件
 curl -O https://github.com/JinnLynn/genpac/archive/dev.zip
-pip instll -U dev.zip[server]
+pip install -U dev.zip[server]
 
 # 卸载
 pip uninstall genpac
