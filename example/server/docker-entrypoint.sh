@@ -15,7 +15,8 @@ if [ -z "$@" ] || [ "${1:0:1}" = "-" ]; then
                 --plugin="python" \
                 --mount="${UWSGI_MOUNT_POINT}=genpac.server:create_app()" \
                 --manage-script-name \
-                --enable-threads $@
+                --enable-threads \
+                "$@"
 fi
 
 exec "$@"
