@@ -14,6 +14,7 @@ from ..util import logger
 
 # ====
 def build(app):
+    start_ts = time.time()
     with app.app_context():
         logger.info('GenPAC rebuild...')
         options = app.config.options
@@ -39,7 +40,7 @@ def build(app):
             for hashfile in glob(os.path.join(options.target_path,
                                               '*.hash')):
                 os.remove(hashfile)
-            logger.info('GenPAC build success.')
+            logger.info('GenPAC build success. [%.3fs]', time.time() - start_ts)
             app.extensions['genpac'].domains_outdate = True
             app.extensions['genpac'].last_builded = time.time()
 
