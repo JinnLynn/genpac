@@ -5,6 +5,7 @@ import codecs
 import re
 import logging
 import base64
+import tempfile
 from urllib.parse import unquote, urlparse
 
 from publicsuffixlist import PublicSuffixList
@@ -183,3 +184,8 @@ def conv_path(obj):
     if isinstance(obj, list):
         return [abspath(p) for p in obj]
     return obj
+
+
+def mktemp():
+    tmp = tempfile.NamedTemporaryFile(delete=False)
+    return tmp.name

@@ -1,7 +1,6 @@
 import imp
 import os
 import copy
-import tempfile
 import argparse
 
 from flask import Flask, Blueprint
@@ -9,7 +8,7 @@ from flask_apscheduler import APScheduler
 
 from .. import __version__
 from .. import Namespace, Config, GenPAC, FatalError, formater, FmtBase
-from ..util import exit_error
+from ..util import exit_error, mktemp
 from ..util import logger, conv_bool, conv_list, conv_path
 from .build import start_watch, build, autobuild_task
 
@@ -24,8 +23,8 @@ _DEFAULT_OPTIONS = Namespace(
              'gfwed': '//jeekerip.appspot.com'},
     # 私有 不会被更改
     _private=Namespace(
-        domain_file=tempfile.mktemp(),
-        list_file=tempfile.mktemp()
+        domain_file=mktemp(),
+        list_file=mktemp()
     ))
 
 main = Blueprint('main', __name__, static_folder='static')
