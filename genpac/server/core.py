@@ -3,7 +3,7 @@ import os
 import copy
 import argparse
 
-from flask import Flask, Blueprint
+from flask import Flask, Blueprint, current_app
 from flask_apscheduler import APScheduler
 
 from .. import __version__
@@ -162,6 +162,12 @@ class FmtDomains(FmtBase):
         gfwed = ['p,{}'.format(s) for s in self.gfwed_domains]
         ignored = ['d,{}'.format(s) for s in self.ignored_domains]
         return '\n'.join(gfwed + ignored).strip()
+
+    def post_generate(self):
+        try:
+            current_app.extensions['genpac'].domains_outdate = True
+        except:
+            pass
 
 
 def run():
