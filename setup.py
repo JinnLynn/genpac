@@ -51,10 +51,11 @@ setup(
     install_requires=[
         'PySocks==1.7.1',
         'publicsuffixlist',
-        'IPy==1.01'
+        'IPy==1.1'
     ],
     extras_require={
         'server': [
+            'Werkzeug==2.2.2',
             'Flask==2.2.2',
             'Flask-APScheduler==1.12.4',
             'watchdog==2.1.9'
