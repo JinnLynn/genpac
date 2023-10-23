@@ -45,9 +45,10 @@ class FmtDnsmasq(FmtBase):
         dns = self.options.dnsmasq_dns
         ipset = ','.join(self.options.dnsmasq_ipset)
 
-        servers = ['server=/{}/{}'.format(s, dns) for s in self.gfwed_domains]
-        ipsets = ['ipset=/{}/{}'.format(s, ipset) for s in self.gfwed_domains]
-        merged_lst = list(itertools.chain.from_iterable(zip(servers, ipsets)))
+        result = ['server=/{}/{}'.format(s, dns) for s in self.gfwed_domains]
+        if ipset:
+            ipsets = ['ipset=/{}/{}'.format(s, ipset) for s in self.gfwed_domains]
+            result = list(itertools.chain.from_iterable(zip(result, ipsets)))
 
-        replacements.update({'__DNSMASQ__': '\n'.join(merged_lst).strip()})
+        replacements.update({'__DNSMASQ__': '\n'.join(result).strip()})
         return self.replace(self.tpl, replacements)
