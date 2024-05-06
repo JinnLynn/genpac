@@ -11,7 +11,7 @@ __DNSMASQ__
 '''
 
 
-@formater('dnsmasq', desc='Dnsmasq配合iptables ipset可实现基于域名的自动直连或代理.')
+@formater('dnsmasq', desc='Dnsmasq配合iptables/ipset、nftables/nftset可实现基于域名的透明代理.')
 class FmtDnsmasq(FmtBase):
     _default_tpl = _TPL
     _default_dns = '127.0.0.1#53'
@@ -28,11 +28,11 @@ class FmtDnsmasq(FmtBase):
                  f'默认: {cls._default_dns}')
         group.add_argument(
             '--dnsmasq-ipset', action='append', metavar='IPSET',
-            help='使用ipset, 允许重复使用或中使用`,`分割多个, \n'
+            help='使用ipset, 允许重复或使用`,`分割多个, \n'
                  '如: GFWLIST,GFWLIST6')
         group.add_argument(
             '--dnsmasq-nftset', action="append", metavar='NFTSET',
-            help='使用ntfset, 允许重复使用或中使用`,`分割多个, \n'
+            help='使用ntfset, 允许重复或使用`,`分割多个, \n'
                  '如: 4#GFWLIST,6#GFWLIST6')
         return group
 
