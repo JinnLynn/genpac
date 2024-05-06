@@ -1,6 +1,5 @@
 import itertools
 
-from .. import template as tpl
 from .base import FmtBase, formater
 from ..util import conv_list
 
@@ -10,6 +9,7 @@ __DNSMASQ__
 #! Generated: __GENERATED__
 #! GFWList: __GFWLIST_DETAIL__
 '''
+
 
 @formater('dnsmasq', desc='Dnsmasq配合iptables ipset可实现基于域名的自动直连或代理.')
 class FmtDnsmasq(FmtBase):
@@ -29,11 +29,11 @@ class FmtDnsmasq(FmtBase):
         group.add_argument(
             '--dnsmasq-ipset', action='append', metavar='IPSET',
             help='使用ipset, 允许重复使用或中使用`,`分割多个, \n'
-                '如: GFWLIST,GFWLIST6')
+                 '如: GFWLIST,GFWLIST6')
         group.add_argument(
             '--dnsmasq-nftset', action="append", metavar='NFTSET',
             help='使用ntfset, 允许重复使用或中使用`,`分割多个, \n'
-                '如: 4#GFWLIST,6#GFWLIST6')
+                 '如: 4#GFWLIST,6#GFWLIST6')
         return group
 
     @classmethod

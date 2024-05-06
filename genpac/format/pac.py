@@ -10,6 +10,7 @@ _TPL_PAC_MIN = TemplateFile('res/tpl-pac.min.js', True)
 _TPL_PAC_PRECISE = TemplateFile('res/tpl-pac-precise.js', True)
 _TPL_PAC_PRECISE_MIN = TemplateFile('res/tpl-pac-precise.min.js', True)
 
+
 @formater('pac', desc='通过代理自动配置文件(PAC)系统或浏览器可自动选择合适的代理服务器.')
 class FmtPAC(FmtBase):
     _default_tpl = _TPL_PAC

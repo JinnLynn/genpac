@@ -9,7 +9,7 @@ from .. import __version__
 from .. import Namespace, Config, GenPAC, FatalError, formater, FmtBase
 from ..util import exit_error, mktemp
 from ..util import logger, conv_bool, conv_list, conv_path
-from .build import start_watch, build, autobuild_task
+from .build import start_watch, autobuild_task
 
 _DEFAULT_OPTIONS = Namespace(
     config_file=None, auth_token=None,
@@ -165,17 +165,17 @@ class FmtDomains(FmtBase):
     def post_generate(self):
         try:
             current_app.extensions['genpac'].domains_outdate = True
-        except:
+        except Exception:
             pass
 
 
 def run():
     parser = argparse.ArgumentParser(
-                prog='genpac.server',
-                formatter_class=argparse.RawTextHelpFormatter,
-                description='genpac的服务端模式',
-                argument_default=argparse.SUPPRESS,
-                add_help=False)
+        prog='genpac.server',
+        formatter_class=argparse.RawTextHelpFormatter,
+        description='genpac的服务端模式',
+        argument_default=argparse.SUPPRESS,
+        add_help=False)
     parser.add_argument('--version', action='version',
                         version='%(prog)s {}'.format(__version__),
                         help='版本信息')

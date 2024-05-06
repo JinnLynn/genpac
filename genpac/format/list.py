@@ -11,6 +11,7 @@ _TPL = '''
 __GFWED_DOMAINS__
 '''
 
+
 @formater('list', desc="与GFWList格式相同的地址列表")
 class FmtList(FmtBase):
     _default_tpl = _TPL

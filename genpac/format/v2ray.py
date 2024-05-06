@@ -2,6 +2,7 @@ import json
 
 from .base import formater, FmtBase
 
+
 @formater('v2ray', desc='V2Ray')
 class FmtV2Ray(FmtBase):
     _DEF_PROXY_TAG = 'proxy'

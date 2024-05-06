@@ -4,7 +4,6 @@ from datetime import datetime, timedelta
 import threading
 from glob import glob
 
-from flask import current_app
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
@@ -33,7 +32,7 @@ def build(app):
                     for line in fp.readlines():
                         gp.add_rule(line.strip())
             gp.run()
-        except Exception as e:
+        except Exception:
             logger.error('GenPAC build fail.', exc_info=True)
         else:
             # 删除hash文件

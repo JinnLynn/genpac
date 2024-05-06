@@ -1,6 +1,8 @@
 
-from .base import formater, FmtBase
+from base64 import b64decode
+from collections import OrderedDict
 
+from .base import formater, FmtBase
 
 # == Wingy ==
 _TPL_WINGY = '''
@@ -26,6 +28,7 @@ __CRITERIA__
 #! Generated: __GENERATED__
 #! GFWList: __MODIFIED__ From __GFWLIST_FROM__
 '''
+
 
 @formater('wingy', desc='Wingy是iOS下基于NEKit的代理App. \n* 注意: 即将废弃 *')
 class FmtWingy(FmtBase):
@@ -71,7 +74,7 @@ class FmtWingy(FmtBase):
 
         def to_yaml(opts):
             tmp = []
-            for k, v in iteritems(opts):
+            for k, v in opts.items():
                 tmp.append('{:>6}{}: {}'.format('', k, v))
             tmp[0] = '{:>4}- {}'.format('', tmp[0].strip())
             return '\n'.join(tmp)
@@ -109,6 +112,7 @@ class FmtWingy(FmtBase):
             opts.append(to_yaml(od))
         return '\n'.join(opts)
 
+
 # == Potatso ==
 _TPL_POTATSO = '''
 #! __GENPAC__
@@ -126,6 +130,7 @@ __DIRECT_RULES__
 #! Generated: __GENERATED__
 #! GFWList: __GFWLIST_DETAIL__
 '''
+
 
 @formater('potatso', desc='Potatso2是iOS下基于NEKit的代理App, 无可选参数. \n* 注意: 即将废弃 *')
 class FmtPotatso(FmtBase):

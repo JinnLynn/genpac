@@ -1,6 +1,6 @@
 from ..core import GenPAC
-from .. import Namespace, TemplateFile, parse_rules
-from ..util import error, replace_all
+from .. import TemplateFile, parse_rules
+from ..util import error, replace_all, Namespace
 
 
 # decorator: 添加格式化器

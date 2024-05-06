@@ -27,6 +27,7 @@ _DESC = '''Surge是基于(Network Extension)API开发的一款网络调试工具
 本格式没有可选参数
 '''
 
+
 @formater('surge', desc=_DESC)
 class FmtSurge(FmtBase):
     _default_tpl = _TPL

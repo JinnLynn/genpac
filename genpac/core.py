@@ -17,32 +17,17 @@ from . import __version__, __project_url__
 from .config import Config
 from .deprecated import check_deprecated_args, check_deprecated_config
 from .util import surmise_domain, b64decode
-from .util import Error, FatalError, FatalIOError
-from .util import exit_error, exit_success
+from .util import FatalError, FatalIOError
+from .util import exit_error
 from .util import abspath, open_file, read_file, write_file
-from .util import get_resource_path, get_resource_data
+from .util import get_resource_data
 from .util import conv_bool, conv_list, conv_lower, conv_path
 from .util import logger
+from .util import Namespace
 
 
 _GFWLIST_URL = \
     'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
-
-
-class Namespace(argparse.Namespace):
-    def __init__(self, **kwargs):
-        self.update(**kwargs)
-
-    def update(self, **kwargs):
-        keys = [k.strip().replace('-', '_') for k in kwargs.keys()]
-        self.__dict__.update(**dict(zip(keys, kwargs.values())))
-
-    def dict(self):
-        return self.__dict__.copy()
-
-    @classmethod
-    def from_dict(cls, d):
-        return cls(**d)
 
 
 class GenPAC(object):
@@ -437,7 +422,6 @@ class Generator(object):
         # 支持目录
         rule_froms = []
         for f in self.options.user_rule_from:
-            files = []
             if os.path.isdir(f):
                 for sub_f in os.listdir(f):
                     if os.path.isfile(os.path.join(f, sub_f)):
@@ -473,6 +457,7 @@ class Generator(object):
             return (modified_datestr,
                     time.strftime('%a, %d %b %Y %H:%M:%S %z',
                                   time.localtime()))
+
     @classmethod
     def clear_cache(cls):
         logger.debug('Clear online data cache.')
@@ -524,7 +509,7 @@ def _parse_rule(rules):
                 if domain:
                     proxy_lst.append(domain)
                 continue
-            except:
+            except Exception:
                 pass
             try:
                 m = re.search(r'([a-z0-9]+)\.\((.*)\)', line)
@@ -534,7 +519,7 @@ def _parse_rule(rules):
                     if domain:
                         proxy_lst.append(domain)
                 continue
-            except:
+            except Exception:
                 pass
             # logger.info('Parse rule fail: %s', org_line)
         elif line.startswith('|') or line.endswith('|'):

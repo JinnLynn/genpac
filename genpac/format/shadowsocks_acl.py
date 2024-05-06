@@ -3,8 +3,6 @@ import math
 from IPy import IP, IPSet
 
 from ..util import read_file, get_resource_path
-from .. import template as tpl
-
 from .base import formater, FmtBase
 
 _TPL = '''
@@ -16,6 +14,7 @@ __GFWED_RULES__
 #! Generated: __GENERATED__
 #! GFWList: __GFWLIST_DETAIL__
 '''
+
 
 @formater('ssacl', desc='Shadowsocks访问控制列表.')
 class FmtSSACL(FmtBase):
@@ -61,8 +60,8 @@ class FmtSSACL(FmtBase):
 
     def gen_by_gfwlist(self, replacements):
         def parse_rules(rules):
-            rules = [l.replace('.', '\\.') for l in rules]
-            rules = ['(^|\\.){}$'.format(l) for l in rules]
+            rules = [r.replace('.', '\\.') for r in rules]
+            rules = ['(^|\\.){}$'.format(r) for r in rules]
             return rules
 
         gfwed_rules = parse_rules(self.gfwed_domains)

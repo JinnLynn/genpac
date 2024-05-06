@@ -7,6 +7,7 @@ import logging
 import base64
 import tempfile
 from urllib.parse import unquote, urlparse
+import argparse
 
 from publicsuffixlist import PublicSuffixList
 
@@ -14,11 +15,27 @@ logger = logging.getLogger(__name__.split('.')[0])
 logger.setLevel(logging.DEBUG)
 sh = logging.StreamHandler(stream=sys.stderr)
 sh.setFormatter(logging.Formatter(
-                    fmt='%(asctime)s[%(levelname)s]: %(message)s'))
+                fmt='%(asctime)s[%(levelname)s]: %(message)s'))
 logger.addHandler(sh)
 
 
 _PSL = None
+
+
+class Namespace(argparse.Namespace):
+    def __init__(self, **kwargs):
+        self.update(**kwargs)
+
+    def update(self, **kwargs):
+        keys = [k.strip().replace('-', '_') for k in kwargs.keys()]
+        self.__dict__.update(**dict(zip(keys, kwargs.values())))
+
+    def dict(self):
+        return self.__dict__.copy()
+
+    @classmethod
+    def from_dict(cls, d):
+        return cls(**d)
 
 
 class Error(Exception):
@@ -92,6 +109,7 @@ def exit_success(*args):
 
 def b64encode(s):
     return base64.encodebytes(bytes(s, 'utf-8')).decode()
+
 
 def b64decode(s):
     return base64.b64decode(s).decode('utf-8')

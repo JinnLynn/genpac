@@ -36,9 +36,7 @@ def send_file(filename, replacements={}, mimetype=None, add_etags=True):
 
     if not os.path.isabs(filename):
         filename = os.path.abspath(
-                    os.path.join(
-                        current_app.config.options.target_path,
-                        filename))
+            os.path.join(current_app.config.options.target_path, filename))
     try:
         with open(filename, 'r') as fp:
             content = fp.read()
@@ -51,7 +49,7 @@ def send_file(filename, replacements={}, mimetype=None, add_etags=True):
         resp.last_modified = os.path.getmtime(filename)
         resp.add_etag()
         return resp
-    except Exception as e:
+    except Exception:
         logger.error('Send file fail.', exc_info=True)
 
     return current_app.make_response(('Not Found.', 404))
@@ -96,7 +94,7 @@ def load_domains():
             current_app.extensions['genpac'].domains_direct = domains['d']
             current_app.extensions['genpac'].domains_outdate = False
             logger.info('Domains loaded.')
-    except Exception as e:
+    except Exception:
         logger.error('Domains load fail.', exc_info=True)
 
 
@@ -113,9 +111,9 @@ def powered_by():
             '%Y-%m-%d %H:%M:%S',
             time.localtime(current_app.extensions['genpac'].last_builded))
     return 'Last Builded: {}&nbsp;&nbsp;&nbsp;' \
-            'Powered by <a href="{}">GenPAC v{}</a>'.format(build_date,
-                                                            __project_url__,
-                                                            __version__)
+        'Powered by <a href="{}">GenPAC v{}</a>'.format(build_date,
+                                                        __project_url__,
+                                                        __version__)
 
 
 @main.route('/', methods=['GET'])
@@ -163,7 +161,7 @@ def shortener(code):
         cfgs = code_cfg.split(' ')
         cfgs.append('')
         filename, query = cfgs[0:2]
-    except Exception as e:
+    except Exception:
         logger.warning('shortener[{}] ERROR:'.format(code), exc_info=True)
         return current_app.make_response(('', 404))
 

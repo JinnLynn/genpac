@@ -11,6 +11,7 @@ IP_CC_DEF = 'CN'
 IP_DATA_DEF = 'https://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest'
 IP_FAMILIES = ['4', '6', 'all']
 
+
 @formater('ip', desc="IP地址列表")
 class FmtIP(FmtBase):
     # _default_tpl = _TPL
@@ -59,10 +60,9 @@ class FmtIP(FmtBase):
                                     content, re.IGNORECASE):
                 ipv4_record = ipv4_record + 1
                 ipset.add(IP('{}/{:d}'.format(item.group(1),
-                                int(32 - math.log(float(item.group(2)), 2)))))
+                             int(32 - math.log(float(item.group(2)), 2)))))
             logger.debug(f'IPv4[{cc}]: Nums: {ipset.len():.2e} '
                          f'Record: {ipv4_record} => {len(ipset.prefixes)}')
-
 
         # IPv6
         if self.options.ip_family in ['6', 'all']:
@@ -76,7 +76,6 @@ class FmtIP(FmtBase):
 
             logger.debug(f'IPv6[{cc}]: Nums: {ipset.len() - cur_set_nums:.2e} '
                          f'Record: {ipv6_record} => {len(ipset.prefixes) - cur_set_record}')
-
 
         return '\n'.join([str(i) for i in ipset])
 
