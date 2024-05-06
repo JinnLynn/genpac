@@ -2,9 +2,9 @@
 
 [![pypi-version]][pypi] [![pypi-license]][pypi] [![travis-ci-status]][travis-ci]
 
-基于gfwlist的多种代理软件配置文件生成工具，支持自定义规则，目前可生成的格式有pac, dnsmasq, wingy。
+基于[gfwlist][]的多种代理软件配置文件生成工具，支持自定义规则，目前可生成的格式有pac, dnsmasq, wingy。
 
-### 安装
+## 安装
 
 ```shell
 # 安装或更新
@@ -22,9 +22,9 @@ pip uninstall genpac
 
 **注意：** 如果安装后，执行时出现无法找到命令的错误，可能是因为`genpac`命令没有被安装到系统路径，如Ububtu 16.04且通过apt-get安装的pip的环境下，`genpac`执行入口文件被安装到了`~/.local/bin`，遇到这种情况，将`~/.local/bin`添加到系统路径，或卸载重新使用sudo安装，都可以解决问题。
 
-### 使用方法
+## 使用方法
 
-#### 命令行形式
+### 命令行形式
 
 ```shell
 genpac [-v] [-h] [--init [PATH]] [--format {dnsmasq,ip,list,pac,quantumultx,ssacl,surge,v2ray,wingy,potatso}] [--gfwlist-url URL] [--gfwlist-local FILE] [--gfwlist-update-local]
@@ -157,7 +157,7 @@ POTATSO:
   规则优先级从高到底为: user-rule > user-rule-from > gfwlist
 ```
 
-#### web服务形式
+### web服务形式
 
 支持以web形式自动生成及输出
 
@@ -165,11 +165,11 @@ POTATSO:
 
 配置参考见[sample/server/config.ini][]
 
-### 配置文件
+## 配置文件
 
 支持通过 `--config-from` 参数读入配置信息，配置文件书写方法可参考[sample/config.ini][]
 
-### 自定义规则
+## 自定义规则
 
 支持通过 `--user-rule` 自定义单个规则或 `--user-rule-from` 读入自定义规则文件，这两个参数均可重复使用。
 
@@ -188,13 +188,13 @@ POTATSO:
 
 规则优先级从高到底为: user-rule > user-rule-from > gfwlist
 
-### FAQ
+## FAQ
 
 1. PAC格式中，参数`--pac-precise`的精确匹配模式的作用是什么？
 
    1.4.0之后生成的PAC文件默认只对域名进行匹配，如规则`.ftchinese.com/channel/video`处理后为`ftchinese.com`，所有在`ftchinese.com`下的网址都将通过匹配，在这种模式下可以减少PAC文件尺寸，并在一定程度上提高效率，推荐使用，但如果你依然想用原有的规则进行精确的网址匹配判断，则使用参数`--pac-precise`或在配置文件中设置`pac-precise=true`即可。
 
-1. 出现`fetch gfwlist fail. `错误
+1. 出现`fetch gfwlist fail.`错误
 
    gfwlist是在线获取，某些情况下可能被和谐或其它原因导致获取失败，可以通过以下几种方法解决该问题：
    * 使用`--gfwlist-proxy`参数，通过代理获取gfwlist
@@ -212,7 +212,7 @@ POTATSO:
 
 ### 示例
 
-```
+```shell
 # 从gfwlist生成代理信息为SOCKS5 127.0.0.1:1080的PAC文件
 genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080"
 
@@ -233,7 +233,7 @@ genpac --config-from=~/config.ini --pac-proxy="SOCKS5 127.0.0.1:1080" --user-rul
 genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" --user-rule="||example.com" --user-rule="||example2.com" --user-rule-from=~/user-rule.txt,~/user-rule2.txt
 
 # PAC格式 使用HTTP代理127.0.0.1:8080获取在线gfwlist文件
-genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" --gfwlist-proxy="PROXY 127.0.0.1:8080"
+genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" --proxy="http://127.0.0.1:8080"
 
 # PAC格式 如果在线gfwlist获取失败使用本地文件，如果在线gfwlist获取成功更新本地gfwlist文件
 genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" --gfwlist-local=~/gfwlist.txt --update-gfwlist-local
@@ -245,7 +245,8 @@ genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" --gfwlist-url=- --user-r
 # DNSMASQ WINGY格式同样可以使用上述PAC格式中关于gfwlist和自定义规则的参数
 
 # DNSMASQ格式
-genpac --format=dnsmasq --dnsmasq-dns="127.0.0.1#53" --dnsmasq-ipset="ipset-name"
+genpac --format=dnsmasq --dnsmasq-dns="127.0.0.1#53" --dnsmasq-ipset="SET_NAME"
+genpac --format=dnsmasq --dnsmasq-dns="127.0.0.1#53" --dnsmasq-nftset="4#SET,6#SET6"
 
 # WINGY格式 使用默认模板生成
 genpac --format=wingy --wingy-opts="id:do-ss,type:ss,host:192.168.100.1,port:8888,method:bf-cfb,password:test" --wingy-rule-adapter-id=do-ss
@@ -254,12 +255,12 @@ genpac --format=wingy --wingy-opts="id:do-ss,type:ss,host:192.168.100.1,port:888
 genpac --format=wingy --template=/sample/wingy-tpl.yaml
 ```
 
-[gfwlist]: https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
-[sample/config.ini]: https://github.com/JinnLynn/genpac/blob/master/sample/config.ini
-[sample/user-rules.txt]: https://github.com/JinnLynn/genpac/blob/master/sample/user-rules.txt
+[gfwlist]:                  https://github.com/gfwlist/gfwlist
+[sample/config.ini]:        https://github.com/JinnLynn/genpac/blob/master/sample/config.ini
+[sample/user-rules.txt]:    https://github.com/JinnLynn/genpac/blob/master/sample/user-rules.txt
+[sample/server/config.ini]: https://github.com/JinnLynn/genpac/blob/master/sample/server/config.ini
 [pypi]:             https://pypi.python.org/pypi/genpac
 [travis-ci]:        https://travis-ci.org/JinnLynn/genpac
 [pypi-version]:     https://img.shields.io/pypi/v/genpac.svg?style=flat
 [pypi-license]:     https://img.shields.io/pypi/l/genpac.svg?style=flat
 [travis-ci-status]: https://img.shields.io/travis/JinnLynn/genpac.svg?style=flat
-[dev-badge]:        https://img.shields.io/badge/dev-2.0b2-orange.svg?style=flat
