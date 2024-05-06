@@ -6,8 +6,10 @@ from flask import Flask, Blueprint, current_app
 from flask_apscheduler import APScheduler
 
 from .. import __version__
-from .. import Namespace, Config, GenPAC, FatalError, formater, FmtBase
-from ..util import exit_error, mktemp
+from .. import GenPAC, formater, FmtBase
+from ..config import Config
+from ..util import Namespace
+from ..util import exit_error, FatalError, mktemp
 from ..util import logger, conv_bool, conv_list, conv_path
 from .build import start_watch, autobuild_task
 
