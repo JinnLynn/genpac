@@ -517,7 +517,7 @@ def _parse_rule(rules):
                 direct_lst.append(domain)
             continue
         elif line.find('.*') >= 0 or line.startswith('/'):
-            line = line.replace('\/', '/').replace('\.', '.')  # noqa: W605
+            line = line.replace('\\/', '/').replace('\\.', '.')
             try:
                 m = re.search(r'([a-z0-9\.]+)\/.*', line)
                 domain = surmise_domain(m.group(1))
