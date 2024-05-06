@@ -36,6 +36,7 @@ setup(
     keywords='proxy pac gfwlist gfw',
     description='convert gfwlist to pac, custom rules supported.',
     long_description=__doc__,
+    python_requires='>=3.8',
     packages=['genpac', 'genpac.format', 'genpac.server'],
     package_data={
         'genpac': ['res/*'],
@@ -74,5 +75,7 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
     ],
 )
