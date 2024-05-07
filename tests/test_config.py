@@ -1,14 +1,13 @@
-# -*- coding: utf-8 -*-
-from __future__ import (unicode_literals, absolute_import,
-                        division, print_function)
 import os
 
-from genpac import Config, GenPAC
-from tests.util import buildenv, _TMP_DIR, join_tmp
-from tests.util import parametrize, skipif, xfail
+from genpac import GenPAC
+from genpac.config import Config
+from tests.util import buildenv, _TMP_DIR
+from tests.util import parametrize
 
 # 测试配置文件
 # =====
+
 
 def test_config(config_file):
     parser = Config()
@@ -34,7 +33,7 @@ def test_config_env(config_file):
     assert get_test_env() == '${GENPAC_TEST_TMP}'
 
 
-@parametrize('argv, expected_rule, expected_rule_from',[
+@parametrize('argv, expected_rule, expected_rule_from', [
     ('', [], []),
     ('--user-rule=,,, --user-rule-from=,,,', [], []),
     ('--user-rule=a,b,c --user-rule-from=~/a.txt,b.txt,/c.txt',
@@ -42,8 +41,7 @@ def test_config_env(config_file):
      [os.path.expanduser('~/a.txt'), os.path.abspath('b.txt'), os.path.abspath('/c.txt')]),
     ('--user-rule=a --user-rule=b,c --user-rule-from=/a, --user-rule-from=/b,/c',
      ['a', 'b', 'c'],
-     ['/a', '/b', '/c'])
-    ])
+     ['/a', '/b', '/c'])])
 def test_argv_list(argv, expected_rule, expected_rule_from):
     with buildenv(argv=argv):
         gp = GenPAC()

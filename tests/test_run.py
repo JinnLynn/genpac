@@ -1,11 +1,7 @@
-# -*- coding: utf-8 -*-
-from __future__ import (unicode_literals, absolute_import,
-                        division, print_function)
-import pytest
-
 from genpac import run
 from tests.util import buildenv, join_etc, join_tmp, is_not_own
 from tests.util import parametrize, skipif, xfail
+
 
 @parametrize('cfg', [
     join_etc('config.ini')])
@@ -15,20 +11,20 @@ def test_run_by_config(cfg):
 
 
 @parametrize('argv', [
-        '--format dnsmasq --gfwlist-disabled -o/dev/null',
-        '--format dnsmasq --gfwlist-disabled -o-',
-        '--format dnsmasq --gfwlist-url=- --gfwlist-local={} -o/dev/null'.format(join_etc('gfwlist.txt')),
-        '--format dnsmasq -o/dev/null --user-rule-from=,,'
-    ])
+    '--format dnsmasq --gfwlist-disabled -o/dev/null',
+    '--format dnsmasq --gfwlist-disabled -o-',
+    '--format dnsmasq --gfwlist-url=- --gfwlist-local={} -o/dev/null'.format(join_etc('gfwlist.txt')),
+    '--format dnsmasq -o/dev/null --user-rule-from=,,'])
 def test_run_by_argv(argv, capsys):
     with buildenv(argv=argv):
         run()
 
 
 @skipif(is_not_own, reason='proxy')
-@parametrize('argv', [['--format', 'dnsmasq', '--gfwlist-proxy', 'SOCKS5 127.0.0.1:9527', '-o/dev/null']])
+@parametrize('argv', [['--format', 'dnsmasq', '--proxy', 'SOCKS5://127.0.0.1:9527', '-o/dev/null']])
 def test_run_by_argv_with_proxy(argv, capsys):
     test_run_by_argv(argv, capsys)
+
 
 @xfail(raises=SystemExit)
 @parametrize('argv', [
@@ -43,8 +39,7 @@ def test_run_by_argv_with_proxy(argv, capsys):
     '--format dnsmasq --gfwlist-proxy=error-proxy -o /dev/null',
     '--format dnsmasq --gfwlist-disabled -o missing/path/file',
     '--format dnsmasq --gfwlist-url=- --gfwlist-local=missing.txt -o/dev/null',
-    '--format dnsmasq --gfwlist-url=- --gfwlist-local={} -o/dev/null'.format(join_etc('gfwlist-error.txt'))
-    ])
+    '--format dnsmasq --gfwlist-url=- --gfwlist-local={} -o/dev/null'.format(join_etc('gfwlist-error.txt'))])
 def test_run_sysexit(argv):
     with buildenv(argv=argv):
         run()

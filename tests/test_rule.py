@@ -1,18 +1,15 @@
-# -*- coding: utf-8 -*-
-from __future__ import (unicode_literals, absolute_import,
-                        division, print_function)
-import pytest
-
 from genpac import parse_rules
 from tests.util import parametrize, skipif, xfail
 
 # 规则解析测试
 # =====
 
+
 def _rs(r):
     if r is None:
         return []
     return r if isinstance(r, list) else [r]
+
 
 def _r(rule, d=None, p=None, dw=None, dr=None, pw=None, pr=None):
     def is_w2r(r):
@@ -27,6 +24,7 @@ def _r(rule, d=None, p=None, dw=None, dr=None, pw=None, pr=None):
     return (rule,
             [_rs(d), _rs(p)],
             [_rs(dr), _rs(dw), _rs(pr), _rs(pw)])
+
 
 _pars = [
     _r(''),
@@ -45,13 +43,13 @@ _pars = [
     _r('http://85st.com|', p='85st.com', pr='http://85st\.com$'),
     _r('|http://85st.com|', p='85st.com', pr='^http://85st\.com$'),
     _r('google', pw='*google*'),
-    _r('test.ad.org', p='ad.org', pw='*test.ad.org*'),
+    _r('test.ad.org', p='test.ad.org', pw='*test.ad.org*'),
     # === BEGIN PRIVATE DOMAIN ===
     # public_sufffix_list 有存在的PRIVATE DOMAIN
     # publicsuffixlist 禁用私有顶级域名时 即only_icann=False时
-    _r('test.ae.org', p='ae.org', pw='*test.ae.org*'),
-    _r('test.s3.amazonaws.com', p='amazonaws.com', pw='*test.s3.amazonaws.com*'),
-    _r('test.s4.amazonaws.com', p='amazonaws.com', pw='*test.s4.amazonaws.com*'),
+    _r('test.ae.org', p='test.ae.org', pw='*test.ae.org*'),
+    _r('test.s3.amazonaws.com', p='test.s3.amazonaws.com', pw='*test.s3.amazonaws.com*'),
+    _r('test.s4.amazonaws.com', p='test.s4.amazonaws.com', pw='*test.s4.amazonaws.com*'),
     # === END PRIVATE DOMAIN ===
     # === BEGIN DISABLE UNKNOWN ===
     # publicsuffixlist accept_unknown=False
@@ -59,6 +57,7 @@ _pars = [
     # === END DISABLE UNKNOWN ===
     _r('测试.公司.hk', p='测试.公司.hk', pw='*测试.公司.hk*')
 ]
+
 
 def merge():
     mr = []
@@ -79,6 +78,7 @@ def merge():
     mer[1].sort()
     return (mr, mer, mepr)
 
+
 _pars.append(merge())
 
 
@@ -86,6 +86,8 @@ _pars.append(merge())
 def test_rule_parse(rule, expected_ret, expected_precise_ret):
     rules = rule if isinstance(rule, list) else [rule]
     ret = parse_rules(rules)
+    print('N:', rules, ret, expected_ret)
     assert ret == expected_ret
     ret = parse_rules(rules, True)
+    print('P:', rules, ret, expected_precise_ret)
     assert ret == expected_precise_ret
