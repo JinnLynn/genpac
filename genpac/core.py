@@ -7,11 +7,8 @@ from datetime import datetime, timedelta
 import copy
 from pprint import pprint  # noqa: F401
 from collections import OrderedDict
-from urllib.request import Request, urlopen
-import socket
 
-import socks
-from socks import PROXY_TYPES as _PROXY_TYPES
+import requests
 
 from . import __version__, __project_url__
 from .config import Config
@@ -319,41 +316,22 @@ class Generator(object):
 
         self.formater.post_generate()
 
-    def get_proxy(self):
-        if not self.options.proxy:
-            return
-
-        _PROXY_TYPES['SOCKS'] = _PROXY_TYPES['SOCKS4']
-        _PROXY_TYPES['PROXY'] = _PROXY_TYPES['HTTP']
-        try:
-            # format: [PROTOCOL://][USR:PWD]@HOST:PORT
-            # protocol: http,socks4,socks5,socks
-            matches = re.match(
-                r'(?:(HTTP|SOCKS4|SOCKS5|SOCKS):\/\/)?(?:(.+):(.+)@)?(.+):(\d+)',
-                self.options.proxy,
-                re.IGNORECASE)
-            type_, usr, pwd, host, port = matches.groups()
-            type_ = (type_ or 'http').upper()
-            logger.debug('PROXY TYPE: %s HOST: %s PORT: %d USR: %s PWD: %s', type_, host, int(port), usr, pwd)
-            type_ = _PROXY_TYPES[type_] if type_ else _PROXY_TYPES['HTTP']
-            return (type_, host, int(port), usr, pwd)
-        except Exception as e:
-            logger.error(e)
-            raise FatalError('解析在线获取代理`{}`失败'.format(
-                             self.options.proxy))
-
     def fetch_online(self, url):
         start = time.time()
-        request = Request(url)
-        proxy = self.get_proxy()
-        if proxy:
-            type_, host, port, usr, pwd = proxy
-            socks.set_default_proxy(type_, host, int(port), username=usr, password=pwd)
-            socket.socket = socks.socksocket
-        response = urlopen(request)
-        content = response.read()
+        proxies = {}
+        if self.options.proxy:
+            proxies = {
+                'http': self.options.proxy,
+                'https': self.options.proxy,
+            }
+        try:
+            rep = requests.get(url, proxies=proxies)
+            content = rep.content
+        except Exception as e:
+            logger.error(f'Fetch online fail: {e} {url}')
+            return
         td = int((time.time() - start) * 1000)
-        logger.debug('Fetch online done: {}ms {}'.format(td, url))
+        logger.debug(f'Fetch online done: {td}ms {url}')
         return content.decode('utf-8')
 
     # 使用类变量缓存在线获取的内容

@@ -50,7 +50,7 @@ setup(
     },
     platforms='any',
     install_requires=[
-        'PySocks==1.7.1',
+        'requests==2.31.0',
         'publicsuffixlist',
         'IPy==1.1'
     ],
