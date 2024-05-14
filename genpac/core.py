@@ -342,7 +342,8 @@ class Generator(object):
         return content
 
     def fetch_gfwlist(self):
-        if self.options.gfwlist_disabled:
+        if self.options.gfwlist_disabled or self.options.gfwlist_url == '-':
+            logger.info('在线获取gfwlist被禁用')
             return [], '-', '-'
 
         content = ''
