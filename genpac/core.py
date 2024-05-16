@@ -291,9 +291,12 @@ class Generator(object):
             return
 
         user_rules = self.fetch_user_rules()
-        gfwlist_rules, gfwlist_from, gfwlist_modified = self.fetch_gfwlist()
-        self.formater._update_orginal_rules(user_rules, gfwlist_rules)
+        if not getattr(self.formater, '_FORCE_IGNORE_GFWLIST', None):
+            gfwlist_rules, gfwlist_from, gfwlist_modified = self.fetch_gfwlist()
+        else:
+            gfwlist_rules, gfwlist_from, gfwlist_modified = [], '-', '-'
 
+        self.formater._update_orginal_rules(user_rules, gfwlist_rules)
         modified, generated = self.std_datetime(gfwlist_modified)
 
         replacements = {'__VERSION__': __version__,

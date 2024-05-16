@@ -14,7 +14,7 @@ IP_FAMILIES = ['4', '6', 'all']
 
 @formater('ip', desc="IP地址列表")
 class FmtIP(FmtBase):
-    # _default_tpl = _TPL
+    _FORCE_IGNORE_GFWLIST = True
 
     def __init__(self, *args, **kwargs):
         super(FmtIP, self).__init__(*args, **kwargs)
