@@ -2,15 +2,19 @@ import os
 import time
 from functools import wraps
 from urllib.parse import urlencode
+from zlib import adler32
 
 from flask import current_app, Response, request
-from flask import render_template, jsonify
+from flask import render_template, jsonify, \
+    send_from_directory, send_file as _send_file
 from werkzeug.urls import url_decode
+from werkzeug.exceptions import NotFound
 
 from .core import main
+from .util import hash_dict
 
 from .. import __version__, __project_url__
-from ..util import surmise_domain, replace_all, logger
+from ..util import surmise_domain, replace_all, logger, mktemp
 
 
 def query2replacements(query):
@@ -27,32 +31,51 @@ def replacements2query(replacements):
     return urlencode(sorted(replacements.items()))
 
 
-def send_file(filename, replacements={}, mimetype=None, add_etags=True):
+def send_file(filename, replacements={}, mimetype='text/plain'):
     # 忽略文件名以`_`开始的文件
     if filename.startswith('_'):
-        return current_app.make_response(('Not Found.', 404))
+        raise NotFound()
+
+    if not replacements:
+        return send_from_directory(current_app.config.options.target_path,
+                                   filename,
+                                   mimetype=mimetype)
 
     replacements.update(query2replacements(request.values))
 
     if not os.path.isabs(filename):
         filename = os.path.abspath(
             os.path.join(current_app.config.options.target_path, filename))
+    if not os.path.isfile(filename):
+        raise NotFound()
+
+    try:
+        f_ext = os.path.basename(filename).split('.')[-1]
+    except Exception:
+        f_ext = 'txt'
+
+    t_filename = mktemp(ext=f_ext)
+
     try:
         with open(filename, 'r') as fp:
             content = fp.read()
-
-        if replacements:
             content = replace_all(content, replacements)
-
-        resp = current_app.make_response(content)
-        resp.mimetype = mimetype or 'text/plain'
-        resp.last_modified = os.path.getmtime(filename)
-        resp.add_etag()
-        return resp
+            with open(t_filename, 'w') as fpt:
+                fpt.write(content)
     except Exception:
-        logger.error('Send file fail.', exc_info=True)
+        logger.error(f'Send file fail. {filename}', exc_info=True)
+        raise NotFound()
 
-    return current_app.make_response(('Not Found.', 404))
+    o_stat = os.stat(filename)
+    t_stat = os.stat(t_filename)
+    check = adler32(filename.encode()) & 0xFFFFFFFF
+    rep_hash = hash_dict(replacements)
+    etag = f'{o_stat.st_mtime}-{t_stat.st_size}-{check}-{rep_hash}'
+
+    return _send_file(t_filename,
+                      mimetype=mimetype,
+                      etag=etag,
+                      last_modified=o_stat.st_mtime)
 
 
 def is_authorized():

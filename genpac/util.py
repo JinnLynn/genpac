@@ -204,6 +204,9 @@ def conv_path(obj):
     return obj
 
 
-def mktemp():
-    tmp = tempfile.NamedTemporaryFile(delete=False)
+def mktemp(ext=None):
+    if ext is not None:
+        ext = str(ext).strip('.')
+    suffix = f'.{ext}' if ext else None
+    tmp = tempfile.NamedTemporaryFile(suffix=suffix, delete=False)
     return tmp.name

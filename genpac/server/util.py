@@ -1,21 +1,16 @@
-# import hashlib
-# import random
-# import string
-
-# from .. import FatalError  # noqa: F401
-# from ..util import logger  # noqa: F401
+import hashlib
+from json import dumps
 
 
-# def calc_hash(content):
-#     m = hashlib.md5()
-#     m.update(content.encode())
-#     return m.hexdigest()
+def calc_hash(content):
+    m = hashlib.md5()
+    m.update(content.encode())
+    return m.hexdigest()
 
 
-# def randstr(length=16):
-#     return ''.join(random.sample(string.ascii_letters + string.digits, length))
-
-
-# def log_and_raise(msg):
-#     logger.error(msg)
-#     raise FatalError(msg)
+def hash_dict(d):
+    if not d:
+        return 'none'
+    if not isinstance(d, dict):
+        raise ValueError()
+    return calc_hash(dumps(d, sort_keys=True))
