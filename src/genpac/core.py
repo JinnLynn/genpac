@@ -13,7 +13,6 @@ import requests
 from requests.structures import CaseInsensitiveDict
 
 from .config import Config
-from .deprecated import check_deprecated_args, check_deprecated_config
 from .util import get_version, get_project_url
 from .util import surmise_domain, b64decode
 from .util import FatalError, FatalIOError, exit_error
@@ -138,9 +137,6 @@ class GenPAC(object):
             '--etag-cache', action='store_true', help='获取外部文件时是否使用If-None-Match头进行缓存检查'
         )
 
-        # 检查弃用参数 警告
-        check_deprecated_args()
-
         self.__class__.walk_formaters('arguments', parser)
         return parser.parse_args()
 
@@ -223,7 +219,6 @@ class GenPAC(object):
         for c in cfgs:
             cfg = self.default_opts.copy()
             cfg.update(c)
-            check_deprecated_config(cfg.keys())
             job = Namespace.from_dict(
                 dict([(k, v) for k, v in cfg.items() if k in opts]))
             for k, v in opts.items():
