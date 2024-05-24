@@ -10,6 +10,7 @@ from urllib.parse import unquote, urlparse
 import argparse
 import hashlib
 import json
+from importlib import metadata
 
 from publicsuffixlist import PublicSuffixList
 
@@ -54,6 +55,21 @@ class FatalError(Error):
 
 class FatalIOError(FatalError):
     pass
+
+
+def get_version():
+    return metadata.version('genpac')
+
+
+def get_project_url():
+    for item in metadata.metadata('genpac').get_all('Project-URL'):
+        d = item.split(',')
+        try:
+            if d[0].strip().lower() == 'homepage':
+                return d[1].strip()
+        except Exception:
+            pass
+    raise ValueError('Project URL missing.')
 
 
 def surmise_domain(rule, subdomain=True):

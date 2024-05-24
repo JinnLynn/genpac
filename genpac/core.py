@@ -12,9 +12,9 @@ import json
 import requests
 from requests.structures import CaseInsensitiveDict
 
-from . import __version__, __project_url__
 from .config import Config
 from .deprecated import check_deprecated_args, check_deprecated_config
+from .util import get_version, get_project_url
 from .util import surmise_domain, b64decode
 from .util import FatalError, FatalIOError, exit_error
 from .util import abspath, open_file, read_file, write_file, get_resource_data
@@ -76,7 +76,7 @@ class GenPAC(object):
             add_help=False)
         parser.add_argument(
             '-v', '--version', action='version',
-            version='%(prog)s {}'.format(__version__),
+            version='%(prog)s {}'.format(get_version()),
             help='版本信息')
         parser.add_argument(
             '-h', '--help', action='help',
@@ -311,13 +311,15 @@ class Generator(object):
         self.formater._update_orginal_rules(user_rules, gfwlist_rules)
         modified, generated = self.std_datetime(gfwlist_modified)
 
-        replacements = {'__VERSION__': __version__,
+        version = get_version()
+        proj_url = get_project_url()
+
+        replacements = {'__VERSION__': version,
                         '__GENERATED__': generated,
                         '__MODIFIED__': modified,
                         '__GFWLIST_FROM__': gfwlist_from,
-                        '__GENPAC__': 'genpac {} {}'.format(__version__,
-                                                            __project_url__),
-                        '__PROJECT_URL__': __project_url__,
+                        '__GENPAC__': 'genpac {} {}'.format(version, proj_url),
+                        '__PROJECT_URL__': proj_url,
                         '__GFWLIST_DETAIL__': '{} From {}'.format(
                             modified, gfwlist_from)}
 

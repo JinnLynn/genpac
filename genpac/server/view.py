@@ -12,7 +12,7 @@ from werkzeug.exceptions import NotFound
 
 from .core import main
 
-from .. import __version__, __project_url__
+from ..util import get_version, get_project_url
 from ..util import surmise_domain, replace_all, logger, mktemp, hash_dict
 
 
@@ -134,8 +134,8 @@ def powered_by():
             time.localtime(current_app.extensions['genpac'].last_builded))
     return 'Last Builded: {}&nbsp;&nbsp;&nbsp;' \
         'Powered by <a href="{}">GenPAC v{}</a>'.format(build_date,
-                                                        __project_url__,
-                                                        __version__)
+                                                        get_project_url(),
+                                                        get_version())
 
 
 @main.route('/', methods=['GET'])

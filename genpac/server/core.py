@@ -5,9 +5,9 @@ import argparse
 from flask import Flask, Blueprint, current_app
 from flask_apscheduler import APScheduler
 
-from .. import __version__
 from .. import GenPAC, formater, FmtBase
 from ..config import Config
+from ..util import get_version
 from ..util import Namespace
 from ..util import exit_error, FatalError, mktemp
 from ..util import logger, conv_bool, conv_list, conv_path
@@ -179,7 +179,7 @@ def run():
         argument_default=argparse.SUPPRESS,
         add_help=False)
     parser.add_argument('--version', action='version',
-                        version='%(prog)s {}'.format(__version__),
+                        version='%(prog)s {}'.format(get_version()),
                         help='版本信息')
     parser.add_argument('--help', action='help',
                         help='帮助信息')

@@ -1,0 +1,51 @@
+[project]
+name = "GenPAC"
+version = "3.0.0.dev7"
+description = "convert gfwlist to pac, custom rules supported."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    {name = "JinnLynn", email = "eatfishlin@gmail.com"}
+]
+requires-python = ">=3.8"
+dependencies = [
+    "requests[socks]==2.31.0",
+    "publicsuffixlist",
+    "IPy==1.1"
+]
+optional-dependencies.server = [
+    "Werkzeug==2.2.2",
+    "Flask==2.2.2",
+    "Flask-APScheduler==1.12.4",
+    "watchdog==2.1.9"
+]
+optional-dependencies.dev = [
+    "flake8",
+    "pytest",
+    "pytest-cov",
+    "pytest-randomly",
+    "pacparser"
+]
+scripts.genpac = "genpac:run"
+scripts."genpac.server" = "genpac.server:run"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/JinnLynn/genpac"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["genpac", "genpac.format", "genpac.server"]
+package-data.genpac = ["res/*"]
+package-data."genpac.server" = ["templates/*", "static/*"]
