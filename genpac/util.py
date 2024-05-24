@@ -8,6 +8,8 @@ import base64
 import tempfile
 from urllib.parse import unquote, urlparse
 import argparse
+import hashlib
+import json
 
 from publicsuffixlist import PublicSuffixList
 
@@ -107,12 +109,14 @@ def exit_success(*args):
     sys.exit()
 
 
-def b64encode(s):
-    return base64.encodebytes(bytes(s, 'utf-8')).decode()
+def b64encode(data):
+    if isinstance(data, str):
+        data = data.encode()
+    return base64.b64encode(data).decode()
 
 
 def b64decode(s):
-    return base64.b64decode(s).decode('utf-8')
+    return base64.b64decode(s).decode()
 
 
 def abspath(path, base=None):
@@ -144,6 +148,18 @@ def write_file(path, content, fail_msg='写入文件{path}失败: {error}'):
             fp.write(content)
     except Exception as e:
         raise FatalError(fail_msg.format(**{'path': path, 'error': e}))
+
+
+def remove_file(path, error_raise=True):
+    try:
+        os.remove(path)
+        return True
+    except FileNotFoundError:
+        return True
+    except Exception as e:
+        if error_raise:
+            raise FatalIOError(f'remove file fail: {e} {path}')
+    return False
 
 
 def get_resource_path(path):
@@ -210,3 +226,32 @@ def mktemp(ext=None):
     suffix = f'.{ext}' if ext else None
     tmp = tempfile.NamedTemporaryFile(suffix=suffix, delete=False)
     return tmp.name
+
+
+def get_cache_file(name):
+    hash_ = calc_hash(name)
+    dst_dir = os.path.join(tempfile.gettempdir(), 'genpac')
+    if not os.path.isdir(dst_dir):
+        os.makedirs(dst_dir)
+    basename = os.path.join(dst_dir, hash_)
+    return f'{basename}.json', f'{basename}.data'
+
+
+def remove_cache_file(name):
+    f_info, f_data = get_cache_file(name)
+    remove_file(f_info, error_raise=False)
+    remove_file(f_data, error_raise=False)
+
+
+def calc_hash(content):
+    m = hashlib.md5()
+    m.update(content.encode())
+    return m.hexdigest()
+
+
+def hash_dict(d):
+    if not d:
+        return 'none'
+    if not isinstance(d, dict):
+        raise ValueError()
+    return calc_hash(json.dumps(d, sort_keys=True))

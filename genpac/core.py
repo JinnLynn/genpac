@@ -7,24 +7,31 @@ from datetime import datetime, timedelta
 import copy
 from pprint import pprint  # noqa: F401
 from collections import OrderedDict
+import json
 
 import requests
+from requests.structures import CaseInsensitiveDict
 
 from . import __version__, __project_url__
 from .config import Config
 from .deprecated import check_deprecated_args, check_deprecated_config
 from .util import surmise_domain, b64decode
-from .util import FatalError, FatalIOError
-from .util import exit_error
-from .util import abspath, open_file, read_file, write_file
-from .util import get_resource_data
+from .util import FatalError, FatalIOError, exit_error
+from .util import abspath, open_file, read_file, write_file, get_resource_data
 from .util import conv_bool, conv_list, conv_lower, conv_path
-from .util import logger
-from .util import Namespace
+from .util import logger, Namespace
+from .util import get_cache_file, remove_cache_file
 
 
 _GFWLIST_URL = \
     'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
+
+# def etag_cache(name, **options):
+#     dst_dir = os.path.join(tempfile.gettempdir(), 'genpac')
+#     def decorator(fmt_cls):
+#         GenPAC.add_formater(name, fmt_cls, **options)
+#         return fmt_cls
+#     return decorator
 
 
 class GenPAC(object):
@@ -127,6 +134,10 @@ class GenPAC(object):
                  '  SOCKS5://127.0.0.1:1080\n'
                  '  SOCKS5://username:password@127.0.0.1:1080\n')
 
+        group.add_argument(
+            '--etag-cache', action='store_true', help='获取外部文件时是否使用If-None-Match头进行缓存检查'
+        )
+
         # 检查弃用参数 警告
         check_deprecated_args()
 
@@ -196,6 +207,7 @@ class GenPAC(object):
         opts['output'] = {}
         opts['template'] = {'conv': conv_path}
         opts['proxy'] = {}
+        opts['etag-cache'] = {'conv': conv_bool}
 
         opts['_order'] = {'conv': int, 'default': 0}
 
@@ -319,23 +331,70 @@ class Generator(object):
 
         self.formater.post_generate()
 
-    def fetch_online(self, url):
+    def load_etag_cache(self, url):
+        f_info, f_data = get_cache_file(url)
+        if not os.path.isfile(f_info) or not os.path.isfile(f_data):
+            return None, None
+        try:
+
+            with open(f_info, 'r') as fp:
+                cached = json.load(fp, object_hook=CaseInsensitiveDict)
+            with open(f_data, 'rb') as fp:
+                content = fp.read()
+            return cached.get('etag'), content
+        except Exception:
+            remove_cache_file(url)
+
+    def save_etag_cache(self, url, data, **kwargs):
+        f_info, f_data = get_cache_file(url)
+        kwargs.update(url=url)
+        try:
+            with open(f_info, 'w') as fp:
+                json.dump(kwargs, fp)
+            with open(f_data, 'wb') as fp:
+                fp.write(data)
+        except Exception as e:
+            remove_cache_file(url)
+            logger.warning(f'save cache fail: {e} {url}')
+
+    def request(self, url):
         start = time.time()
+        logger.debug(f'request start: {url}')
+
         proxies = {}
         if self.options.proxy:
             proxies = {
                 'http': self.options.proxy,
                 'https': self.options.proxy,
             }
-        try:
-            rep = requests.get(url, proxies=proxies)
+
+        cached_etag, cached_data = self.load_etag_cache(url) if self.options.etag_cache else (None, None)
+
+        headers = {}
+        if cached_etag and cached_data is not None:
+            logger.debug(f'request with header If-None-Match: {cached_etag}')
+            headers.update({'If-None-Match': cached_etag})
+        rep = requests.get(url, proxies=proxies, headers=headers)
+        if rep.status_code == 304:
+            logger.debug(f'Cache Hitted: {url}')
+            content = cached_data
+        elif rep.status_code == 200:
+            etag = rep.headers.get('etag')
             content = rep.content
+            if etag and self.options.etag_cache:
+                logger.debug(f'Cache Writed: {url}')
+                self.save_etag_cache(url, content, **rep.headers)
+        td = int((time.time() - start) * 1000)
+        logger.debug(f'request finish: {td}ms {url}')
+        return content
+
+    def fetch_online(self, url):
+        try:
+            content = self.request(url)
         except Exception as e:
             logger.error(f'Fetch online fail: {e} {url}')
             return
-        td = int((time.time() - start) * 1000)
-        logger.debug(f'Fetch online done: {td}ms {url}')
-        return content.decode('utf-8')
+        return content.decode() if isinstance(content, bytes) else content
 
     # 使用类变量缓存在线获取的内容
     def fetch(self, url):

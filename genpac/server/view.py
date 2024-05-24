@@ -11,10 +11,9 @@ from werkzeug.urls import url_decode
 from werkzeug.exceptions import NotFound
 
 from .core import main
-from .util import hash_dict
 
 from .. import __version__, __project_url__
-from ..util import surmise_domain, replace_all, logger, mktemp
+from ..util import surmise_domain, replace_all, logger, mktemp, hash_dict
 
 
 def query2replacements(query):
