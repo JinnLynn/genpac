@@ -46,6 +46,5 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["genpac", "genpac.format", "genpac.server"]
 package-data.genpac = ["res/*"]
 package-data."genpac.server" = ["templates/*", "static/*"]
