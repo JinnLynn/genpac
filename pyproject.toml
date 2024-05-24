@@ -1,6 +1,6 @@
 [project]
 name = "GenPAC"
-version = "3.0.0.dev7"
+version = "3.0.0.dev8"
 description = "convert gfwlist to pac, custom rules supported."
 readme = "README.md"
 license = { text = "MIT" }
