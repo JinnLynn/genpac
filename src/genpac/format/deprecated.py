@@ -57,7 +57,7 @@ class FmtWingy(FmtBase):
 
     def generate(self, replacements):
         fmt = '{:>8}'.format(' ')
-        domains = ['{}- s,{}'.format(fmt, s) for s in self.gfwed_domains]
+        domains = [f'{fmt}- s,{s}' for s in self.gfwed_domains]
 
         # adapter
         adapter = self._parse_adapter()

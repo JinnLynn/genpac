@@ -75,7 +75,7 @@ def read_config(app, config_file):
     if not config_file:
         raise FatalError('服务模式: 未设置配置文件，可通过环境变量`GENPAC_CONFIG`指定.')
     if not os.path.exists(conv_path(config_file)):
-        raise FatalError('服务模式: 配置文件不存在: {}'.format(config_file or ''))
+        raise FatalError(f'服务模式: 配置文件不存在: {config_file}')
 
     options = copy.deepcopy(_DEFAULT_OPTIONS)
     cfg = {}
@@ -90,7 +90,7 @@ def read_config(app, config_file):
 
     def _update(attr, *convs, **kwargs):
         if not hasattr(options, attr):
-            logger.warn('ATTR MISSING: {}'.format(attr))
+            logger.warn(f'ATTR MISSING: {attr}')
             return
         key = kwargs.get('key', attr.strip().replace('_', '-'))
         default = kwargs['default'] if 'default' in kwargs else \
@@ -160,8 +160,8 @@ class FmtDomains(FmtBase):
         super(FmtDomains, self).__init__(*args, **kwargs)
 
     def generate(self, replacements):
-        gfwed = ['p,{}'.format(s) for s in self.gfwed_domains]
-        ignored = ['d,{}'.format(s) for s in self.ignored_domains]
+        gfwed = [f'p,{s}' for s in self.gfwed_domains]
+        ignored = [f'd,{s}' for s in self.ignored_domains]
         return '\n'.join(gfwed + ignored).strip()
 
     def post_generate(self):
@@ -179,7 +179,7 @@ def run():
         argument_default=argparse.SUPPRESS,
         add_help=False)
     parser.add_argument('--version', action='version',
-                        version='%(prog)s {}'.format(get_version()),
+                        version=f'%(prog)s {get_version()}',
                         help='版本信息')
     parser.add_argument('--help', action='help',
                         help='帮助信息')

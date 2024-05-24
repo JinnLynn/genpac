@@ -62,7 +62,7 @@ class FmtBase(object):
         return str(tpl).strip('\n') + '\n'
 
     def error(self, msg):
-        error('{}格式生成错误: {}'.format(self._name.upper(), msg))
+        error(f'{self._name.upper()}格式生成错误: {msg}')
 
     def replace(self, text, replacements):
         return replace_all(text, replacements)

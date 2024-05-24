@@ -18,7 +18,7 @@ class FmtQuantumultX(FmtBase):
 
     def generate(self, replacements):
         def to_rule(r, a):
-            return 'HOST-SUFFIX,{},{}'.format(r, a)
+            return f'HOST-SUFFIX,{r},{a}'
 
         # direct_rules = [to_rule(r, 'direct') for r in self.ignored_domains]
         gfwed_rules = [to_rule(r, 'proxy') for r in self.gfwed_domains]

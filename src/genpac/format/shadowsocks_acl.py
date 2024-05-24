@@ -61,7 +61,7 @@ class FmtSSACL(FmtBase):
     def gen_by_gfwlist(self, replacements):
         def parse_rules(rules):
             rules = [r.replace('.', '\\.') for r in rules]
-            rules = ['(^|\\.){}$'.format(r) for r in rules]
+            rules = [f'(^|\\.){r}$' for r in rules]
             return rules
 
         gfwed_rules = parse_rules(self.gfwed_domains)
@@ -105,6 +105,6 @@ class FmtSSACL(FmtBase):
             start_ip = units[3]
             ip_count = int(units[4])
             prefixlen = 32 - int(math.log(ip_count, 2))
-            results.append(IP('{}/{}'.format(start_ip, prefixlen)))
+            results.append(IP(f'{start_ip}/{prefixlen}'))
 
         return IPSet(results)

@@ -37,7 +37,7 @@ class FmtSurge(FmtBase):
 
     def generate(self, replacements):
         def to_rule(r, a):
-            return 'DOMAIN-SUFFIX,{},{}'.format(r, a)
+            return f'DOMAIN-SUFFIX,{r},{a}'
 
         direct_rules = [to_rule(r, 'DIRECT') for r in self.ignored_domains]
         gfwed_rules = [to_rule(r, 'PROXY') for r in self.gfwed_domains]

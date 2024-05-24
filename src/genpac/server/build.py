@@ -45,7 +45,7 @@ def build(app):
 
 
 def autobuild_task(app, event='CRON'):
-    logger.info('Autobuild[{}]...'.format(event))
+    logger.info(f'Autobuild[{event}]...')
     build(app)
 
 
@@ -58,7 +58,7 @@ class WatchHandler(FileSystemEventHandler):
         if event.is_directory:
             return None
 
-        logger.debug('File Event[{}]: {}'.format(event.event_type, event.src_path))
+        logger.debug(f'File Event[{event.event_type}]: {event.src_path}')
         # 添加到一次任务延时执行，防止多次响应
         self.app.apscheduler.add_job('build_file_change', autobuild_task,
                                      trigger='date', run_date=datetime.now() + timedelta(seconds=3),
@@ -70,7 +70,7 @@ def watch_process(app):
     observer = Observer()
     event_handler = WatchHandler(app)
     for path in app.config.options.watch_files:
-        logger.debug('Watch Path: {}'.format(path))
+        logger.debug(f'Watch Path: {path}')
         observer.schedule(event_handler, path, recursive=True)
     observer.start()
 

@@ -132,10 +132,9 @@ def powered_by():
         build_date = time.strftime(
             '%Y-%m-%d %H:%M:%S',
             time.localtime(current_app.extensions['genpac'].last_builded))
-    return 'Last Builded: {}&nbsp;&nbsp;&nbsp;' \
-        'Powered by <a href="{}">GenPAC v{}</a>'.format(build_date,
-                                                        get_project_url(),
-                                                        get_version())
+    ver = get_version()
+    proj_url = get_project_url()
+    return f'Last Builded: {build_date}&nbsp;&nbsp;&nbsp;Powered by <a href="{proj_url}">GenPAC v{ver}</a>'
 
 
 @main.route('/', methods=['GET'])
@@ -184,7 +183,7 @@ def shortener(code):
         cfgs.append('')
         filename, query = cfgs[0:2]
     except Exception:
-        logger.warning('shortener[{}] ERROR:'.format(code), exc_info=True)
+        logger.warning(f'shortener[{code}] ERROR:', exc_info=True)
         return current_app.make_response(('', 404))
 
     rms = query2replacements(query)
@@ -199,10 +198,10 @@ def view_gfwlist():
 @main.route('/ip/')
 def show_ip():
     ip = request.headers.get("X-Forwarded-For", request.remote_addr).split(',')[0]
-    return Response(
-        '{}\n'.format(ip), mimetype="text/plain",
-        headers={'X-Your-Ip': ip,
-                 'Access-Control-Allow-Origin': '*'})
+    return Response(f'{ip}\n',
+                    mimetype="text/plain",
+                    headers={'X-Your-Ip': ip,
+                             'Access-Control-Allow-Origin': '*'})
 
 
 @main.route('/api/test/', methods=['GET', 'POST'])
@@ -240,4 +239,4 @@ def view_api_rule_update():
             fp.write(content.strip())
         return make_res_data()
     except Exception as e:
-        return make_res_data(code=1, msg='出错了, {}'.format(e))
+        return make_res_data(code=1, msg=f'出错了, {e}')

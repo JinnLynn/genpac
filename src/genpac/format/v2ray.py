@@ -16,10 +16,10 @@ class FmtV2Ray(FmtBase):
         group = super(FmtV2Ray, cls).arguments(parser)
         group.add_argument(
             '--v2ray-proxy-tag', metavar='TAG',
-            help='走代理流量标签，默认: {}'.format(cls._DEF_PROXY_TAG))
+            help=f'走代理流量标签，默认: {cls._DEF_PROXY_TAG}')
         group.add_argument(
             '--v2ray-direct-tag', metavar='TAG',
-            help='直连流量标签，默认: {}'.format(cls._DEF_DIRECT_TAG))
+            help=f'直连流量标签，默认: {cls._DEF_DIRECT_TAG}')
         group.add_argument(
             '--v2ray-protocol', metavar='PROTOCOL[,PROTOCOL]',
             help='protocol')
@@ -37,7 +37,7 @@ class FmtV2Ray(FmtBase):
         gfwed_rules = {
             'outboundTag': self.options.v2ray_proxy_tag,
             'type': 'field',
-            'domains': ['domain:{}'.format(d) for d in self.gfwed_domains]
+            'domains': [f'domain:{d}' for d in self.gfwed_domains]
         }
         direct_rules = {
             'outboundTag': self.options.v2ray_direct_tag,

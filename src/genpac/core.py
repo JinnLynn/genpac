@@ -25,13 +25,6 @@ from .util import get_cache_file, remove_cache_file
 _GFWLIST_URL = \
     'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
 
-# def etag_cache(name, **options):
-#     dst_dir = os.path.join(tempfile.gettempdir(), 'genpac')
-#     def decorator(fmt_cls):
-#         GenPAC.add_formater(name, fmt_cls, **options)
-#         return fmt_cls
-#     return decorator
-
 
 class GenPAC(object):
     # 格式化器列表
@@ -75,7 +68,7 @@ class GenPAC(object):
             add_help=False)
         parser.add_argument(
             '-v', '--version', action='version',
-            version='%(prog)s {}'.format(get_version()),
+            version=f'%(prog)s {get_version()}',
             help='版本信息')
         parser.add_argument(
             '-h', '--help', action='help',
@@ -150,7 +143,7 @@ class GenPAC(object):
                 cfg.sections('job', sub_section_key='format') or [{}],
                 cfg.section('config') or {})
         except Exception:
-            raise FatalError('配置文件{}读取失败'.format(config_file))
+            raise FatalError(f'配置文件{config_file}读取失败')
 
     def update_opt(self, args, cfgs, key,
                    default=None, conv=None, dest=None, **kwargs):
@@ -247,14 +240,14 @@ class GenPAC(object):
     def generate_all(self):
         for job in self.walk_jobs():
             self.generate(job)
-            logger.debug('Job done: {0.format} => {0.output}'.format(job))
+            logger.debug(f'Job done: {job.format} => {job.output}')
 
     def generate(self, job):
         if not job.format:
             raise FatalError('生成的格式不能为空, 请检查参数--format或配置format.')
         if job.format not in self._formaters:
-            raise FatalError('发现不支持的生成格式: {}, 可选格式为: {}'.format(
-                job.format, ', '.join(self._formaters.keys())))
+            all_fmts = ', '.join(self._formaters.keys())
+            raise FatalError(f'发现不支持的生成格式: {job.format}, 可选格式为: {all_fmts}')
         generator = Generator(job, self._formaters[job.format]['cls'])
         generator.generate()
 
@@ -281,7 +274,7 @@ class GenPAC(object):
             with open_file(user_rule_dst, 'w') as fp:
                 fp.write(get_resource_data('res/tpl-user-rules.txt'))
         except Exception as e:
-            raise FatalError('初始化失败: {}'.format(e))
+            raise FatalError(f'初始化失败: {e}')
 
 
 class Generator(object):
@@ -313,10 +306,9 @@ class Generator(object):
                         '__GENERATED__': generated,
                         '__MODIFIED__': modified,
                         '__GFWLIST_FROM__': gfwlist_from,
-                        '__GENPAC__': 'genpac {} {}'.format(version, proj_url),
+                        '__GENPAC__': f'genpac {version} {proj_url}',
                         '__PROJECT_URL__': proj_url,
-                        '__GFWLIST_DETAIL__': '{} From {}'.format(
-                            modified, gfwlist_from)}
+                        '__GFWLIST_DETAIL__': f'{modified} From {gfwlist_from}'}
 
         content = self.formater.generate(replacements)
 
@@ -412,7 +404,7 @@ class Generator(object):
             content = self.fetch(self.options.gfwlist_url)
             if not content:
                 raise ValueError()
-            gfwlist_from = 'online[{}]'.format(self.options.gfwlist_url)
+            gfwlist_from = f'online[{self.options.gfwlist_url}]'
             if self.options.gfwlist_local \
                     and self.options.gfwlist_update_local:
                 write_file(self.options.gfwlist_local, content,
@@ -422,13 +414,11 @@ class Generator(object):
             if self.options.gfwlist_local:
                 content = read_file(self.options.gfwlist_local,
                                     fail_msg='读取本地gfwlist文件{path}失败')
-                gfwlist_from = 'local[{}]'.format(self.options.gfwlist_local)
+                gfwlist_from = f'local[{self.options.gfwlist_local}]'
 
         if not content:
             if self.options.gfwlist_url != '-' or self.options.gfwlist_local:
-                raise FatalError(
-                    '获取gfwlist失败. online: {} local: {}'.format(
-                        self.options.gfwlist_url, self.options.gfwlist_local))
+                raise FatalError(f'获取gfwlist失败. online: {self.options.gfwlist_url} local: {self.options.gfwlist_local}')
             else:
                 gfwlist_from = '-'
 
@@ -553,7 +543,7 @@ def _parse_rule(rules):
                 m = re.search(r'([a-z0-9]+)\.\((.*)\)', line)
                 m2 = re.split(r'[\(\)]', m.group(2))
                 for tld in re.split(r'\|', m2[0]):
-                    domain = surmise_domain('{}.{}'.format(m[1], tld))
+                    domain = surmise_domain(f'{m[1]}.{tld}')
                     if domain:
                         proxy_lst.append(domain)
                 continue

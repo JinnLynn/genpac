@@ -24,14 +24,14 @@ class FmtIP(FmtBase):
         families = ', '.join(IP_FAMILIES)
         group = super(FmtIP, cls).arguments(parser)
         group.add_argument('--ip-cc', metavar='CC',
-                           help='国家代码(ISO 3166-2) 默认: {}'.format(IP_CC_DEF))
+                           help=f'国家代码(ISO 3166-2) 默认: {IP_CC_DEF}')
         group.add_argument('--ip-family', metavar='FAMILY',
                            type=lambda s: s.lower(),
                            choices=IP_FAMILIES,
                            default='4',
                            help=f'IP类型 可选: {families} 默认: 4')
         group.add_argument('--ip-data-url', metavar='URL',
-                           help='IP数据地址 \n默认: {}'.format(IP_DATA_DEF))
+                           help=f'IP数据地址 \n默认: {IP_DATA_DEF}')
         group.add_argument('--ip-data-local', metavar='FILE',
                            help='IP数据本地, 当在线地址获取失败时使用')
         group.add_argument('--ip-data-update-local', action='store_true',

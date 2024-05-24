@@ -32,7 +32,7 @@ class FmtList(FmtBase):
         options['list-raw'] = {'conv': conv_bool, 'default': False}
 
     def generate(self, replacements):
-        gfwed = ['||{}'.format(s) for s in self.gfwed_domains]
+        gfwed = [f'||{s}' for s in self.gfwed_domains]
         replacements.update({'__GFWED_DOMAINS__': '\n'.join(gfwed).strip()})
         content = self.replace(self.tpl, replacements)
         return b64encode(content) if not self.options.list_raw else content
