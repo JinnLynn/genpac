@@ -13,5 +13,8 @@ trim_trailing_whitespace = true
 insert_final_newline = false
 trim_trailing_whitespace = false
 
-[*.{html, htm}]
+[*.{html,htm}]
 trim_trailing_whitespace = false
+
+[*.{yaml,yml}]
+indent_size = 2
