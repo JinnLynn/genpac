@@ -1,4 +1,4 @@
-*
-!/genpac/
-!/setup.py
-!/example/
+/dist/
+/.tox/
+/htmlcov/
+/tmp/
