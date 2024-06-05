@@ -1,12 +1,24 @@
 import json
+import yaml
 
 from .base import formater, FmtBase
+
+
+# 更合乎习惯的list缩进
+# REF: https://stackoverflow.com/a/39681672/1952172
+class Dumper(yaml.Dumper):
+    def increase_indent(self, flow=False, indentless=False):
+        return super(Dumper, self).increase_indent(flow, False)
+
+
+V2RAY_DUMPER = {'json': lambda d: json.dumps(d, indent=4),
+                'yaml': lambda d: yaml.dump(d, Dumper=Dumper, indent=2, sort_keys=False)}
 
 
 @formater('v2ray', desc='V2Ray')
 class FmtV2Ray(FmtBase):
     _DEF_PROXY_TAG = 'proxy'
-    _DEF_DIRECT_TAG = 'direct'
+    _DEF_FORMAT = list(V2RAY_DUMPER.keys())[0]
 
     def __init__(self, *args, **kwargs):
         super(FmtV2Ray, self).__init__(*args, **kwargs)
@@ -19,46 +31,33 @@ class FmtV2Ray(FmtBase):
             help=f'走代理流量标签，默认: {cls._DEF_PROXY_TAG}')
         group.add_argument(
             '--v2ray-direct-tag', metavar='TAG',
-            help=f'直连流量标签，默认: {cls._DEF_DIRECT_TAG}')
+            help='直连流量标签，未指定则不输出直连规则')
         group.add_argument(
-            '--v2ray-protocol', metavar='PROTOCOL[,PROTOCOL]',
-            help='protocol')
-        group.add_argument(
-            '--v2ray-pretty',
+            '--v2ray-format', choices=V2RAY_DUMPER.keys(),
+            help=f'输出格式，默认: {cls._DEF_FORMAT}'
         )
         return group
 
     @classmethod
     def config(cls, options):
         options['v2ray-proxy-tag'] = {'default': cls._DEF_PROXY_TAG}
-        options['v2ray-direct-tag'] = {'default': cls._DEF_DIRECT_TAG}
+        options['v2ray-direct-tag'] = {'default': None}
+        options['v2ray-format'] = {'default': cls._DEF_FORMAT}
 
     def generate(self, replacements):
-        gfwed_rules = {
-            'outboundTag': self.options.v2ray_proxy_tag,
-            'type': 'field',
-            'domains': [f'domain:{d}' for d in self.gfwed_domains]
-        }
-        direct_rules = {
-            'outboundTag': self.options.v2ray_direct_tag,
-            'type': 'field',
-            'port': '0-65535'
-        }
-        return json.dumps({
+        rules = []
+        if self.options.v2ray_proxy_tag:
+            rules.append(dict(outboundTag=self.options.v2ray_proxy_tag,
+                              type='field',
+                              domains=[f'domain:{d}' for d in self.gfwed_domains if d]))
+        if self.options.v2ray_direct_tag:
+            rules.append(dict(outboundTag=self.options.v2ray_direct_tag,
+                              type='field',
+                              port='0-65535'))
+        data = {
             'routing': {
                 'domainStrategy': 'AsIs',
-                'rules': [gfwed_rules, direct_rules]
+                'rules': rules
             }
-        }, indent=4)
-
-    def generate_v5(self, replacements):
-        gfwed_rules = {
-            'tag': self.options.v2ray_proxy_tag,
-            'domains': [{'type': 'RootDomain', 'value': d} for d in self.gfwed_domains]
         }
-        return json.dumps({
-            'routing': {
-                'domainStrategy': 'AsIs',
-                'rule': [gfwed_rules, {'tag': self.options.v2ray_direct_tag}]
-            }
-        }, indent=2)
+        return V2RAY_DUMPER[self.options.v2ray_format](data)

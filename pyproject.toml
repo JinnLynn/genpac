@@ -11,6 +11,7 @@ requires-python = ">=3.8"
 dependencies = [
     "requests[socks]==2.31.0",
     "publicsuffixlist",
+    "PyYAML==6.0.1",
     "IPy==1.1"
 ]
 optional-dependencies.server = [
