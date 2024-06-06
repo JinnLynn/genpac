@@ -1,23 +1,23 @@
 import re
 
-from netaddr import IPNetwork, IPRange, AddrFormatError
+from netaddr import IPNetwork, IPRange
 
 from .base import formater, FmtBase
 from ..util import FatalError
 from ..util import conv_lower
 from ..util import logger
 
-IP_CC_DEF = 'CN'
-IP_FAMILIES = ['4', '6', 'all']
+_CC_DEF = 'CN'
+_IP_FAMILIES = ['4', '6', 'all']
 
 # NOTE: 中国地区的数据来自IP_DATA_ASN 其它来自 IP_DATA_GEOLITE2
 # REF: https://github.com/gaoyifan/china-operator-ip/
 #      https://github.com/sapics/ip-location-db/tree/main/geolite2-country
-IP_DATA_ASN = {
+_IP_DATA_ASN = {
     4: 'https://github.com/gaoyifan/china-operator-ip/raw/ip-lists/china.txt',
     6: 'https://github.com/gaoyifan/china-operator-ip/raw/ip-lists/china6.txt'
 }
-IP_DATA_GEOLITE2 = {
+_IP_DATA_GEOLITE2 = {
     4: 'https://github.com/sapics/ip-location-db/raw/main/geolite2-country/geolite2-country-ipv4.csv',
     6: 'https://github.com/sapics/ip-location-db/raw/main/geolite2-country/geolite2-country-ipv6.csv'
 }
@@ -49,25 +49,23 @@ class FmtIP(FmtBase):
 
     @classmethod
     def arguments(cls, parser):
-        families = ', '.join(IP_FAMILIES)
+        families = ', '.join(_IP_FAMILIES)
         group = super(FmtIP, cls).arguments(parser)
         group.add_argument('--ip-cc', metavar='CC',
-                           help=f'国家代码(ISO 3166-1) 默认: {IP_CC_DEF}')
+                           help=f'国家代码(ISO 3166-1) 默认: {_CC_DEF}')
         group.add_argument('--ip-family', metavar='FAMILY',
                            type=lambda s: s.lower(),
-                           choices=IP_FAMILIES,
+                           choices=_IP_FAMILIES,
                            help=f'IP类型 可选: {families} 默认: 4')
         return group
 
     @classmethod
     def config(cls, options):
-        options['ip-cc'] = {'conv': conv_lower, 'default': IP_CC_DEF}
+        options['ip-cc'] = {'conv': conv_lower, 'default': _CC_DEF}
         options['ip-family'] = {'conv': conv_lower, 'default': '4'}
 
     def generate(self, replacements):
         cc = self.options.ip_cc
-
-        print(self.options)
 
         ip4s, ip6s = self._generate_by_cc(cc)
 
@@ -125,7 +123,7 @@ class FmtIP(FmtBase):
         return ip4s, ip6s
 
     def _fetch_data_cn(self, family):
-        url = IP_DATA_ASN[int(family)]
+        url = _IP_DATA_ASN[int(family)]
         content = self.generator.fetch(url)
         if not content:
             raise FatalError('获取IP数据失败')
@@ -142,7 +140,7 @@ class FmtIP(FmtBase):
 
         expr = re.compile(f'^[0-9a-f:,]+,{cc}' if family == 6 else f'^[0-9\\.,]+,{cc}',
                           flags=re.IGNORECASE)
-        url = IP_DATA_GEOLITE2[int(family)]
+        url = _IP_DATA_GEOLITE2[int(family)]
         content = self.generator.fetch(url)
         if not content:
             raise FatalError('获取IP数据失败')
