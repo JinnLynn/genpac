@@ -1,25 +1,30 @@
-import re
-import math
-from IPy import IP, IPSet
-
-from ..util import read_file, get_resource_path
+from ..util import Namespace
 from .base import formater, FmtBase
+from .ip import FmtIP
 
-_TPL = '''
+_TPL_DEF = '''
 #! __GENPAC__
+#! Generated: __GENERATED__
+#! GFWList: __GFWLIST_DETAIL__
 [bypass_all]
 
 [proxy_list]
 __GFWED_RULES__
+'''
+
+_TPL_GEOCN = '''
+#! __GENPAC__
 #! Generated: __GENERATED__
 #! GFWList: __GFWLIST_DETAIL__
+[proxy_all]
+
+[bypass_list]
+__CNIPS__
 '''
 
 
 @formater('ssacl', desc='Shadowsocks访问控制列表.')
 class FmtSSACL(FmtBase):
-    _default_tpl = _TPL
-
     def __init__(self, *args, **kwargs):
         super(FmtSSACL, self).__init__(*args, **kwargs)
 
@@ -40,19 +45,7 @@ class FmtSSACL(FmtBase):
 
     @property
     def tpl(self):
-        if self.options.ssacl_geocn:
-            return ('#! __GENPAC__\n'
-                    '#! Generated: __GENERATED__\n'
-                    '[proxy_all]\n\n'
-                    '[bypass_list]\n'
-                    '__CNIPS__\n')
-        else:
-            return ('#! __GENPAC__\n'
-                    '#! Generated: __GENERATED__\n'
-                    '#! GFWList: __GFWLIST_DETAIL__\n'
-                    '[bypass_all]\n\n'
-                    '[proxy_list]\n'
-                    '__GFWED_RULES__\n')
+        return _TPL_GEOCN if self.options.ssacl_geocn else _TPL_DEF
 
     def generate(self, replacements):
         return self.gen_by_geoip(replacements) if self.options.ssacl_geocn else \
@@ -72,39 +65,13 @@ class FmtSSACL(FmtBase):
         return self.replace(self.tpl, replacements)
 
     def gen_by_geoip(self, replacements):
-        ips = self.fetch_cnips()
         ip_data = []
-        for ip in ips:
-            ip_data.append({
-                'ip': ip.strNormal(wantprefixlen=0),
-                'prefixlen': ip.prefixlen(),
-                'netmask': ip.netmask(),
-                'broadcast': ip.broadcast(),
-                'net': ip.net(),
-                'int': ip.int(),
-                'hex': ip.strHex(wantprefixlen=0),
-                'bin': ip.strBin(wantprefixlen=0)
-            })
-        # fmt = '{ip} {prefixlen} {netmask} {broadcast} {net} {int} {hex} {bin}'
-        fmt = '{ip}/{prefixlen}'
-        ip_data = [fmt.format(**d) for d in ip_data]
-        print(len(ip_data))
+        for ip in self.fetch_cnips():
+            ip_data.append(ip)
         replacements.update({
             '__CNIPS__': '\n'.join(ip_data)})
         return self.replace(self.tpl, replacements)
 
     def fetch_cnips(self):
-        data = read_file(get_resource_path('res/ipdata.txt'))
-
-        cnregex = re.compile(r'apnic\|cn\|ipv4\|[0-9\.]+\|[0-9]+\|[0-9]+\|a.*',
-                             re.IGNORECASE)
-
-        results = []
-        for item in cnregex.findall(data):
-            units = item.split('|')
-            start_ip = units[3]
-            ip_count = int(units[4])
-            prefixlen = 32 - int(math.log(ip_count, 2))
-            results.append(IP(f'{start_ip}/{prefixlen}'))
-
-        return IPSet(results)
+        gen_ip = FmtIP(generator=self.generator, options=Namespace(ip_family='4', ip_cc='cn'))
+        yield from gen_ip._fetch_data_cn(4)
