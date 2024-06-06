@@ -1,7 +1,7 @@
 *.pac
 *.pyc
-__pycache__/
 tmp/
+/**/__pycache__/
 
 # 测试相关
 /.pytest_cache
