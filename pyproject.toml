@@ -12,7 +12,7 @@ dependencies = [
     "requests[socks]==2.31.0",
     "publicsuffixlist",
     "PyYAML==6.0.1",
-    "IPy==1.1"
+    "netaddr==1.3.0"
 ]
 optional-dependencies.server = [
     "Werkzeug==2.2.2",
