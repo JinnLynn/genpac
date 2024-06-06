@@ -6,7 +6,7 @@ on:
     - cron: "0 */12 * * *"
 
 jobs:
-  generate:
+  cooking:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -24,12 +24,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: |
+      - name: fire
+        run: |
           pip install ./dev/ && \
-          DEST=./cooked genpac --config=./dev/example/config.ini
-      - name: Commit changes
+          mkdir ./temp && \
+          DEST=./temp genpac --config=./dev/example/config.ini
+      - name: clean and copy
+        run: |
+          find ./cooked -maxdepth 1 -type f -name "*.*" ! -name "README.md" ! -name ".gitignore" -delete && \
+          cp ./temp/* ./cooked/
+      - name: commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           repository: ./cooked
-          commit_message: Automated Change
+          commit_message: update
           push_options: '--force'
