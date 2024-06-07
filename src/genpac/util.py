@@ -125,10 +125,11 @@ def exit_success(*args):
     sys.exit()
 
 
-def b64encode(data):
+def b64encode(data, newline=True):
     if isinstance(data, str):
         data = data.encode()
-    return base64.b64encode(data).decode()
+    encoded = base64.encodebytes(data) if newline else base64.b64encode(data)
+    return encoded.decode()
 
 
 def b64decode(s):
