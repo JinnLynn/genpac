@@ -17,11 +17,11 @@ class FmtDnsmasq(FmtBase):
     _default_dns = '127.0.0.1#53'
 
     def __init__(self, *args, **kwargs):
-        super(FmtDnsmasq, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @classmethod
     def arguments(cls, parser):
-        group = super(FmtDnsmasq, cls).arguments(parser)
+        group = super().arguments(parser)
         group.add_argument(
             '--dnsmasq-dns', metavar='DNS',
             help='生成规则域名查询使用的DNS服务器，格式: HOST#PORT\n'

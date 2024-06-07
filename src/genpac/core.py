@@ -31,7 +31,6 @@ class GenPAC(object):
     _formaters = OrderedDict()
 
     def __init__(self, config_file=None, argv_enabled=True):
-        super(GenPAC, self).__init__()
         self.config_file = config_file
         self.argv_enabled = argv_enabled
 
@@ -282,7 +281,6 @@ class Generator(object):
     _cache = {}
 
     def __init__(self, options, formater_cls):
-        super(Generator, self).__init__()
         self.options = copy.copy(options)
         self.formater = formater_cls(options=self.options, generator=self)
 

@@ -8,7 +8,7 @@ from .base import formater, FmtBase
 # REF: https://stackoverflow.com/a/39681672/1952172
 class Dumper(yaml.Dumper):
     def increase_indent(self, flow=False, indentless=False):
-        return super(Dumper, self).increase_indent(flow, False)
+        return super().increase_indent(flow, False)
 
 
 V2RAY_DUMPER = {'json': lambda d: json.dumps(d, indent=4),
@@ -21,17 +21,17 @@ class FmtV2Ray(FmtBase):
     _DEF_FORMAT = list(V2RAY_DUMPER.keys())[0]
 
     def __init__(self, *args, **kwargs):
-        super(FmtV2Ray, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @classmethod
     def arguments(cls, parser):
-        group = super(FmtV2Ray, cls).arguments(parser)
+        group = super().arguments(parser)
         group.add_argument(
             '--v2ray-proxy-tag', metavar='TAG',
-            help=f'走代理流量标签，默认: {cls._DEF_PROXY_TAG}')
+            help=f'代理标签，默认: {cls._DEF_PROXY_TAG}')
         group.add_argument(
             '--v2ray-direct-tag', metavar='TAG',
-            help='直连流量标签，未指定则不输出直连规则')
+            help='直连标签，未指定则不输出直连规则')
         group.add_argument(
             '--v2ray-format', choices=V2RAY_DUMPER.keys(),
             help=f'输出格式，默认: {cls._DEF_FORMAT}'

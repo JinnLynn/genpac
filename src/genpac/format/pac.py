@@ -16,7 +16,7 @@ class FmtPAC(FmtBase):
     _default_tpl = _TPL_PAC
 
     def __init__(self, *args, **kwargs):
-        super(FmtPAC, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
         if self.options.pac_precise:
             self._default_tpl = _TPL_PAC_PRECISE
@@ -27,7 +27,7 @@ class FmtPAC(FmtBase):
 
     @classmethod
     def arguments(cls, parser):
-        group = super(FmtPAC, cls).arguments(parser)
+        group = super().arguments(parser)
         group.add_argument(
             '--pac-proxy', metavar='PROXY',
             help='代理地址, 如 SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080')
@@ -62,7 +62,7 @@ class FmtPAC(FmtBase):
         if not self.options.pac_proxy:
             self.error('代理信息不存在，检查参数--pac-proxy或配置pac-proxy')
             return False
-        return super(FmtPAC, self).pre_generate()
+        return super().pre_generate()
 
     def generate(self, replacements):
         rules = json.dumps(

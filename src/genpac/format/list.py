@@ -17,11 +17,11 @@ class FmtList(FmtBase):
     _default_tpl = _TPL
 
     def __init__(self, *args, **kwargs):
-        super(FmtList, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @classmethod
     def arguments(cls, parser):
-        group = super(FmtList, cls).arguments(parser)
+        group = super().arguments(parser)
         group.add_argument(
             '--list-raw', action='store_true', dest='list_raw',
             help='明文，不进行base64编码')

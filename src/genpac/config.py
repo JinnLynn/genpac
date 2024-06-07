@@ -29,7 +29,6 @@ class Config(object):
         r'(?P<value>.*))?$')                  # everything up to eol
 
     def __init__(self):
-        super(Config, self).__init__()
         self._sections = OrderedDict()
         self._section_uniques = {}
         self._optcre = self._OPTCRE

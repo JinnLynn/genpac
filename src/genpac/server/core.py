@@ -157,7 +157,7 @@ def read_config(app, config_file):
 @formater('genpac-server-domains')
 class FmtDomains(FmtBase):
     def __init__(self, *args, **kwargs):
-        super(FmtDomains, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def generate(self, replacements):
         gfwed = [f'p,{s}' for s in self.gfwed_domains]

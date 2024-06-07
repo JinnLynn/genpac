@@ -26,14 +26,14 @@ __CNIPS__
 @formater('ssacl', desc='Shadowsocks访问控制列表.')
 class FmtSSACL(FmtBase):
     def __init__(self, *args, **kwargs):
-        super(FmtSSACL, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
         if self.options.ssacl_geocn:
             self.options.gfwlist_disabled = True
 
     @classmethod
     def arguments(cls, parser):
-        group = super(FmtSSACL, cls).arguments(parser)
+        group = super().arguments(parser)
         group.add_argument(
             '--ssacl-geocn', action='store_true',
             help='国内IP不走代理，所有国外IP走代理')

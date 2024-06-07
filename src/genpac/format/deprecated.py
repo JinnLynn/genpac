@@ -35,11 +35,11 @@ class FmtWingy(FmtBase):
     _default_tpl = _TPL_WINGY
 
     def __init__(self, *args, **kwargs):
-        super(FmtWingy, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @classmethod
     def arguments(cls, parser):
-        group = super(FmtWingy, cls).arguments(parser)
+        group = super().arguments(parser)
         group.add_argument(
             '--wingy-adapter-opts', metavar='OPTS',
             help='adapter选项, 选项间使用`,`分割, 多个adapter使用`;`分割, 如:\n'
@@ -137,7 +137,7 @@ class FmtPotatso(FmtBase):
     _default_tpl = _TPL_POTATSO
 
     def __init__(self, *args, **kwargs):
-        super(FmtPotatso, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def generate(self, replacements):
         def to_rule(r, a):

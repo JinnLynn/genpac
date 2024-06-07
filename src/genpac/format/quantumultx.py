@@ -14,7 +14,7 @@ class FmtQuantumultX(FmtBase):
     _default_tpl = _TPL
 
     def __init__(self, *args, **kwargs):
-        super(FmtQuantumultX, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def generate(self, replacements):
         def to_rule(r, a):

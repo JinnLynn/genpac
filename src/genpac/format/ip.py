@@ -45,12 +45,12 @@ class FmtIP(FmtBase):
     _FORCE_IGNORE_GFWLIST = True
 
     def __init__(self, *args, **kwargs):
-        super(FmtIP, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @classmethod
     def arguments(cls, parser):
+        group = super().arguments(parser)
         families = ', '.join(_IP_FAMILIES)
-        group = super(FmtIP, cls).arguments(parser)
         group.add_argument('--ip-cc', metavar='CC',
                            help=f'国家代码(ISO 3166-1) 默认: {_CC_DEF}')
         group.add_argument('--ip-family', metavar='FAMILY',

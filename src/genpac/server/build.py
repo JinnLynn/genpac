@@ -51,7 +51,7 @@ def autobuild_task(app, event='CRON'):
 
 class WatchHandler(FileSystemEventHandler):
     def __init__(self, app):
-        super(FileSystemEventHandler, self).__init__()
+        super().__init__()
         self.app = app
 
     def on_any_event(self, event):
