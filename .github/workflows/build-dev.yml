@@ -1,5 +1,6 @@
 name: build-dev
 on:
+  workflow_dispatch:
   push:
     branches:
       - dev
@@ -10,9 +11,10 @@ defaults:
     shell: bash
     working-directory: ./
 jobs:
-  # tests:
-  #   runs-on: ubuntu-latest
+  cook:
+    uses: ./.github/workflows/cook.yml
   docker:
+    needs: cook
     runs-on: ubuntu-latest
     steps:
       - name: Set up QEMU

@@ -1,7 +1,7 @@
 name: cook
 on:
   workflow_dispatch:
-  push:
+  workflow_call:
   schedule:
     - cron: "0 */12 * * *"
 
