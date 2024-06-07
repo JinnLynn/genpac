@@ -29,5 +29,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: dev
-      - run: |
+      - name: Build Docker
+        run: |
           docker buildx build --push --platform "${{ env.platform }}" -t ${{ secrets.DOCKER_USER }}/genpac:dev .
