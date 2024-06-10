@@ -185,10 +185,10 @@ def run():
                         help='帮助信息')
     parser.add_argument('-h', '--host', metavar="HOST", default='0.0.0.0',
                         help='绑定IP, 默认: 0.0.0.0')
-    parser.add_argument('-p', '--port', metavar="PORT", default=7000,
-                        help='绑定端口，默认: 7000')
+    parser.add_argument('-p', '--port', metavar="PORT", default=8000,
+                        help='绑定端口，默认: 8000')
     parser.add_argument('-c', '--config', metavar='FILE', default=None,
-                        help='配置文件，也可通过环境变量`GENPAC_CONFIG`设置')
+                        help='配置文件，也可使用环境变量`GENPAC_CONFIG`')
     args = parser.parse_args()
 
     app = create_app(args.config)
