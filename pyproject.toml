@@ -21,6 +21,7 @@ optional-dependencies.server = [
     "watchdog==2.1.9"
 ]
 optional-dependencies.dev = [
+    "tox==4.15.1",
     "flake8",
     "pytest",
     "pytest-cov",
