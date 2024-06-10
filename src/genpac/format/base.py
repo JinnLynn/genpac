@@ -70,6 +70,9 @@ class FmtBase(object):
     def replace(self, text, replacements):
         return replace_all(text, replacements)
 
+    def fetch(self, url):
+        return self.generator.fetch(url)
+
     # RETURN:
     # [0][0]: user.direct    [0][1]: user.proxy
     # [1][0]: gfwlist.direct [1][1]: gfwlist.proxy

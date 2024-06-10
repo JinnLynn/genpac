@@ -24,7 +24,7 @@ class FmtCopy(FmtBase):
                 with open_file(self.options.copy_from) as fp:
                     content = fp.read()
             else:
-                content = self.generator.fetch(self.options.copy_from)
+                content = self.fetch(self.options.copy_from)
                 if content is None:
                     raise Exception
         except Exception:

@@ -119,7 +119,7 @@ class FmtIP(FmtBase):
 
     def _fetch_data_cn(self, family):
         url = _IP_DATA_ASN[int(family)]
-        content = self.generator.fetch(url)
+        content = self.fetch(url)
         if not content:
             raise FatalError('获取IP数据失败')
         for ip in content.splitlines():
@@ -136,7 +136,7 @@ class FmtIP(FmtBase):
         expr = re.compile(f'^[0-9a-f:,]+,{cc}' if family == 6 else f'^[0-9\\.,]+,{cc}',
                           flags=re.IGNORECASE)
         url = _IP_DATA_GEOLITE2[int(family)]
-        content = self.generator.fetch(url)
+        content = self.fetch(url)
         if not content:
             raise FatalError('获取IP数据失败')
         for d in content.splitlines():
