@@ -1,7 +1,7 @@
 import itertools
 
-from .base import FmtBase, formater
 from ..util import conv_list
+from .base import FmtBase, formater
 
 _TPL = '''
 #! __GENPAC__
@@ -9,15 +9,31 @@ __DNSMASQ__
 #! Generated: __GENERATED__
 #! GFWList: __GFWLIST_DETAIL__
 '''
+_DEF_DNS = '127.0.0.1#53'
 
 
 @formater('dnsmasq', desc='Dnsmasq配合iptables/ipset、nftables/nftset可实现基于域名的透明代理.')
 class FmtDnsmasq(FmtBase):
     _default_tpl = _TPL
-    _default_dns = '127.0.0.1#53'
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+
+    @classmethod
+    def prepare(cls, parser):
+        super().prepare(parser)
+        cls.register_option('dnsmasq-dns', default=_DEF_DNS,
+                            metavar='DNS',
+                            help='生成规则域名查询使用的DNS服务器，格式: HOST#PORT\n'
+                                 f'默认: {_DEF_DNS}')
+        cls.register_option('dnsmasq-ipset', conv=conv_list,
+                            action='append', metavar='IPSET',
+                            help='使用ipset, 允许重复或使用`,`分割多个, \n'
+                                 '如: GFWLIST,GFWLIST6')
+        cls.register_option('dnsmasq-nftset', conv=conv_list,
+                            action="append", metavar='NFTSET',
+                            help='使用ntfset, 允许重复或使用`,`分割多个, \n'
+                                 '如: 4#GFWLIST,6#GFWLIST6')
 
     @classmethod
     def arguments(cls, parser):

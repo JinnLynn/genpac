@@ -1,5 +1,4 @@
 from ..util import conv_bool, b64encode
-
 from .base import formater, FmtBase
 
 _TPL = '''
@@ -20,16 +19,10 @@ class FmtList(FmtBase):
         super().__init__(*args, **kwargs)
 
     @classmethod
-    def arguments(cls, parser):
-        group = super().arguments(parser)
-        group.add_argument(
-            '--list-raw', action='store_true', dest='list_raw',
-            help='明文，不进行base64编码')
-        return group
-
-    @classmethod
-    def config(cls, options):
-        options['list-raw'] = {'conv': conv_bool, 'default': False}
+    def prepare(cls, parser):
+        super().prepare(parser)
+        cls.register_option('list-raw', conv=conv_bool, default=False,
+                            action='store_true', help='明文，不进行base64编码')
 
     def generate(self, replacements):
         gfwed = [f'||{s}' for s in self.gfwed_domains]

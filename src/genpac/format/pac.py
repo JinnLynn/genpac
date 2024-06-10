@@ -2,7 +2,6 @@ import json
 
 from ..template import TemplateFile
 from ..util import conv_bool
-
 from .base import formater, FmtBase
 
 _TPL_PAC = TemplateFile('res/tpl-pac.js', True)
@@ -26,37 +25,15 @@ class FmtPAC(FmtBase):
                 self._default_tpl = _TPL_PAC_PRECISE_MIN
 
     @classmethod
-    def arguments(cls, parser):
-        group = super().arguments(parser)
-        group.add_argument(
-            '--pac-proxy', metavar='PROXY',
-            help='代理地址, 如 SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080')
-        group.add_argument(
-            '--pac-precise', action='store_true',
-            help='精确匹配模式')
-        group.add_argument(
-            '--pac-compress', action='store_true',
-            help='压缩输出')
-
-        # 弃用的参数
-        # group.add_argument(
-        #     '-p', '--proxy', dest='pac_proxy', metavar='PROXY',
-        #     help='已弃用参数, 等同于--pac-proxy, 后续版本将删除, 避免使用')
-        # group.add_argument(
-        #     '-P', '--precise', action='store_true',
-        #     dest='pac_precise',
-        #     help='已弃用参数, 等同于--pac-precise, 后续版本将删除, 避免使用')
-        # group.add_argument(
-        #     '-z', '--compress', action='store_true',
-        #     dest='pac_compress',
-        #     help='已弃用参数, 等同于--pac-compress, 后续版本将删除, 避免使用')
-        return group
-
-    @classmethod
-    def config(cls, options):
-        options['pac-proxy'] = {'replaced': 'proxy'}
-        options['pac-compress'] = {'conv': conv_bool, 'replaced': 'compress'}
-        options['pac-precise'] = {'conv': conv_bool, 'replaced': 'precise'}
+    def prepare(cls, parser):
+        super().prepare(parser)
+        cls.register_option('pac-proxy',
+                            metavar='PROXY',
+                            help='代理地址, 如 SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080')
+        cls.register_option('pac-precise', conv=conv_bool,
+                            action='store_true', help='精确匹配模式')
+        cls.register_option('pac-compress', conv=conv_bool,
+                            action='store_true', help='压缩输出')
 
     def pre_generate(self):
         if not self.options.pac_proxy:

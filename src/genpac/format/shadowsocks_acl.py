@@ -32,16 +32,11 @@ class FmtSSACL(FmtBase):
             self.options.gfwlist_disabled = True
 
     @classmethod
-    def arguments(cls, parser):
-        group = super().arguments(parser)
-        group.add_argument(
-            '--ssacl-geocn', action='store_true',
-            help='国内IP不走代理，所有国外IP走代理')
-        return group
-
-    @classmethod
-    def config(cls, options):
-        options['ssacl-geocn'] = {'default': False}
+    def prepare(cls, parser):
+        super().prepare(parser)
+        cls.register_option('ssacl-geocn', default=False,
+                            action='store_true',
+                            help='国内IP不走代理，所有国外IP走代理')
 
     @property
     def tpl(self):
@@ -52,12 +47,12 @@ class FmtSSACL(FmtBase):
             self.gen_by_gfwlist(replacements)
 
     def gen_by_gfwlist(self, replacements):
-        def parse_rules(rules):
+        def _parse_rules(rules):
             rules = [r.replace('.', '\\.') for r in rules]
             rules = [f'(^|\\.){r}$' for r in rules]
             return rules
 
-        gfwed_rules = parse_rules(self.gfwed_domains)
+        gfwed_rules = _parse_rules(self.gfwed_domains)
 
         replacements.update({
             '__GFWED_RULES__': '\n'.join(gfwed_rules)})

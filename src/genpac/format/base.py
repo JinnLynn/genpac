@@ -2,7 +2,7 @@ import importlib
 from os import path
 import glob
 
-from ..core import GenPAC
+from ..core import GenPAC, register_option
 from .. import TemplateFile, parse_rules
 from ..util import error, replace_all, Namespace
 
@@ -26,6 +26,9 @@ def formater(name, **options):
 class FmtBase(object):
     _name = ''
     _desc = None
+    _parser = None
+    _options = {}
+
     _default_tpl = None
 
     def __init__(self, *args, **kwargs):
@@ -38,13 +41,13 @@ class FmtBase(object):
             kwargs.get('gfwlist_rules') or [])
 
     @classmethod
-    def arguments(cls, parser):
-        return parser.add_argument_group(title=cls._name.upper(),
-                                         description=cls._desc or '')
+    def prepare(cls, parser):
+        cls._parser = parser.add_argument_group(title=cls._name.upper(),
+                                                description=cls._desc or '')
 
     @classmethod
-    def config(cls, options):
-        pass
+    def register_option(cls, *args, **kwargs):
+        register_option(cls._parser, cls._options, *args, **kwargs)
 
     def pre_generate(self):
         return True

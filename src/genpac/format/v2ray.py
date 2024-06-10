@@ -13,15 +13,27 @@ class Dumper(yaml.Dumper):
 
 V2RAY_DUMPER = {'json': lambda d: json.dumps(d, indent=4),
                 'yaml': lambda d: yaml.dump(d, Dumper=Dumper, indent=2, sort_keys=False)}
+_DEF_PROXY_TAG = 'proxy'
+_DEF_FORMAT = list(V2RAY_DUMPER.keys())[0]
 
 
 @formater('v2ray', desc='V2Ray')
 class FmtV2Ray(FmtBase):
-    _DEF_PROXY_TAG = 'proxy'
-    _DEF_FORMAT = list(V2RAY_DUMPER.keys())[0]
-
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+
+    @classmethod
+    def prepare(cls, parser):
+        super().prepare(parser)
+        cls.register_option('v2ray-proxy-tag', default=_DEF_PROXY_TAG,
+                            metavar='TAG',
+                            help=f'代理标签，默认: {_DEF_PROXY_TAG}')
+        cls.register_option('v2ray-direct-tag', default=None,
+                            metavar='TAG',
+                            help='直连标签，未指定则不输出直连规则')
+        cls.register_option('v2ray-format', default=_DEF_FORMAT,
+                            choices=V2RAY_DUMPER.keys(),
+                            help=f'输出格式，默认: {_DEF_FORMAT}')
 
     @classmethod
     def arguments(cls, parser):

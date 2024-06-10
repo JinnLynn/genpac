@@ -38,22 +38,15 @@ class FmtWingy(FmtBase):
         super().__init__(*args, **kwargs)
 
     @classmethod
-    def arguments(cls, parser):
-        group = super().arguments(parser)
-        group.add_argument(
-            '--wingy-adapter-opts', metavar='OPTS',
-            help='adapter选项, 选项间使用`,`分割, 多个adapter使用`;`分割, 如:\n'
-                 '  id:ap1,type:http,host:127.0.0.1,port:8080;'
-                 'id:ap2,type:socks5,host:127.0.0.1,port:3128')
-        group.add_argument(
-            '--wingy-rule-adapter-id', metavar='ID',
-            help='生成规则使用的adapter ID')
-        return group
-
-    @classmethod
-    def config(cls, options):
-        options['wingy-adapter-opts'] = {}
-        options['wingy-rule-adapter-id'] = {}
+    def prepare(cls, parser):
+        super().prepare(parser)
+        cls.register_option('wingy-adapter-opts',
+                            metavar='OPTS',
+                            help='adapter选项, 选项间使用`,`分割, 多个adapter使用`;`分割, 如:\n'
+                                 '  id:ap1,type:http,host:127.0.0.1,port:8080;'
+                                 'id:ap2,type:socks5,host:127.0.0.1,port:3128')
+        cls.register_option('wingy-rule-adapter-id',
+                            metavar='ID', help='生成规则使用的adapter ID')
 
     def generate(self, replacements):
         fmt = '{:>8}'.format(' ')

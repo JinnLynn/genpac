@@ -2,10 +2,10 @@ import re
 
 from netaddr import IPNetwork, IPRange
 
-from .base import formater, FmtBase
 from ..util import FatalError
 from ..util import conv_lower
 from ..util import logger
+from .base import formater, FmtBase
 
 _CC_DEF = 'CN'
 _IP_FAMILIES = ['4', '6', 'all']
@@ -48,21 +48,16 @@ class FmtIP(FmtBase):
         super().__init__(*args, **kwargs)
 
     @classmethod
-    def arguments(cls, parser):
-        group = super().arguments(parser)
+    def prepare(cls, parser):
+        super().prepare(parser)
+        cls.register_option('ip-cc', conv=conv_lower, default=_CC_DEF,
+                            metavar='CC',
+                            help=f'国家代码(ISO 3166-1) 默认: {_CC_DEF}')
         families = ', '.join(_IP_FAMILIES)
-        group.add_argument('--ip-cc', metavar='CC',
-                           help=f'国家代码(ISO 3166-1) 默认: {_CC_DEF}')
-        group.add_argument('--ip-family', metavar='FAMILY',
-                           type=lambda s: s.lower(),
-                           choices=_IP_FAMILIES,
-                           help=f'IP类型 可选: {families} 默认: 4')
-        return group
-
-    @classmethod
-    def config(cls, options):
-        options['ip-cc'] = {'conv': conv_lower, 'default': _CC_DEF}
-        options['ip-family'] = {'conv': conv_lower, 'default': '4'}
+        cls.register_option('ip-family', conv=conv_lower, default='4',
+                            type=lambda s: s.lower(),
+                            choices=_IP_FAMILIES,
+                            help=f'IP类型 可选: {families} 默认: 4')
 
     def generate(self, replacements):
         cc = self.options.ip_cc

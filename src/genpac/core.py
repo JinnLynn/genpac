@@ -8,6 +8,7 @@ import copy
 from pprint import pprint  # noqa: F401
 from collections import OrderedDict
 import json
+import traceback
 
 import requests
 from requests.structures import CaseInsensitiveDict
@@ -26,6 +27,14 @@ _GFWLIST_URL = \
     'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
 
 
+def register_option(parser, options, flag, *args,
+                    conv=None, default=None, **kwargs):
+    flag = flag.lstrip('-').replace('_', '-')
+    if kwargs:
+        parser.add_argument(f'--{flag}', *args, **kwargs)
+    options[flag] = dict(conv=conv, default=default)
+
+
 class GenPAC(object):
     # 格式化器列表
     _formaters = OrderedDict()
@@ -34,7 +43,6 @@ class GenPAC(object):
         self.config_file = config_file
         self.argv_enabled = argv_enabled
 
-        self.default_opts = {}
         self.init_dest = None
         self.jobs = []
         self.extra_rules = []
@@ -52,6 +60,86 @@ class GenPAC(object):
     def walk_formaters(cls, attr, *args, **kargs):
         for fmter in cls._formaters.values():
             getattr(fmter['cls'], attr)(*args, **kargs)
+
+    def init_options(self):
+        options = {}
+        parser = argparse.ArgumentParser(
+            prog='genpac',
+            formatter_class=argparse.RawTextHelpFormatter,
+            description='获取gfwlist生成多种格式的翻墙工具配置文件, '
+                        '支持自定义规则',
+            epilog=get_resource_data('res/rule-syntax.txt'),
+            argument_default=argparse.SUPPRESS,
+            add_help=False)
+        parser.add_argument(
+            '-v', '--version', action='version',
+            version=f'%(prog)s {get_version()}',
+            help='版本信息')
+        parser.add_argument(
+            '-h', '--help', action='help',
+            help='帮助信息')
+        parser.add_argument(
+            '--init', nargs='?', const=True, default=False, metavar='PATH',
+            help='初始化配置和用户规则文件')
+
+        group = parser.add_argument_group(
+            title='通用参数')
+
+        register_option(group, options, 'format', conv=conv_lower,
+                        type=lambda s: s.lower(), choices=GenPAC._formaters.keys(),
+                        help='生成格式, 只有指定了格式, 相应格式的参数才作用')
+
+        register_option(group, options, 'gfwlist-url', default=_GFWLIST_URL,
+                        metavar='URL',
+                        help='gfwlist网址，无此参数或URL为空则使用默认地址, URL为-则不在线获取')
+        register_option(group, options, 'gfwlist-local', conv=conv_path,
+                        metavar='FILE',
+                        help='本地gfwlist文件地址, 当在线地址获取失败时使用')
+        register_option(group, options, 'gfwlist-update-local', conv=conv_bool,
+                        action='store_true',
+                        help='当在线gfwlist成功获取且--gfwlist-local参数存在时, '
+                             '更新gfwlist-local内容')
+        register_option(group, options, 'gfwlist-disabled', conv=conv_bool,
+                        action='store_true', help='禁用gfwlist')
+        register_option(group, options, 'gfwlist-decoded-save', conv=conv_path,
+                        metavar='FILE',
+                        help='保存解码后的gfwlist, 仅用于测试')
+
+        register_option(group, options, 'user-rule', conv=conv_list,
+                        action='append', metavar='RULE',
+                        help='自定义规则, 允许重复使用或在单个参数中使用`,`分割多个规则，如:\n'
+                             '  --user-rule="@@sina.com" --user-rule="||youtube.com"\n'
+                             '  --user-rule="@@sina.com,||youtube.com"')
+        register_option(group, options, 'user-rule-from', conv=[conv_list, conv_path],
+                        action='append', metavar='FILE',
+                        help='从文件中读取自定义规则, 使用方法如--user-rule')
+        register_option(group, options, 'output', '-o',
+                        metavar='FILE',
+                        help='输出到文件, 无此参数或FILE为-, 则输出到stdout')
+        register_option(group, options, 'config-from', '-c', conv=conv_path,
+                        metavar='FILE',
+                        help='从文件中读取配置信息')
+        register_option(group, options, 'template', conv=conv_path,
+                        metavar='FILE', help='自定义模板文件')
+
+        register_option(group, options, 'proxy',
+                        metavar='PROXY',
+                        help='在线获取外部数据时的代理, 如果可正常访问外部地址, 则无必要使用该选项\n'
+                             '格式: [PROTOCOL://][USERNAME:PASSWORD@]HOST:PORT \n'
+                             '其中协议、用户名、密码可选, 默认协议 http, 支持协议: http socks5 socks4 socks 如:\n'
+                             '  127.0.0.1:8080\n'
+                             '  SOCKS5://127.0.0.1:1080\n'
+                             '  SOCKS5://username:password@127.0.0.1:1080\n')
+
+        register_option(group, options, 'etag-cache', conv=conv_bool,
+                        action='store_true',
+                        help='获取外部文件时是否使用If-None-Match头进行缓存检查')
+
+        register_option(group, options, '_order', conv=int, default=0)
+
+        self.__class__.walk_formaters('prepare', parser)
+
+        return parser, options
 
     def parse_args(self):
         # 如果某选项同时可以在配置文件和命令行中设定，则必须使default=None
@@ -129,7 +217,7 @@ class GenPAC(object):
             '--etag-cache', action='store_true', help='获取外部文件时是否使用If-None-Match头进行缓存检查'
         )
 
-        self.__class__.walk_formaters('arguments', parser)
+        self.__class__.walk_formaters('init', parser)
         return parser.parse_args()
 
     def read_config(self, config_file):
@@ -156,11 +244,8 @@ class GenPAC(object):
         if hasattr(args, dest):
             v = getattr(args, dest)
         else:
-            replaced = kwargs.get('replaced')
             if key in cfgs:
                 v = cfgs[key]
-            elif replaced and replaced in cfgs:
-                v = cfgs[replaced]
             else:
                 v = default
 
@@ -173,43 +258,27 @@ class GenPAC(object):
         return dest, v
 
     def parse_options(self):
-        args = self.parse_args() if self.argv_enabled else Namespace()
+        parser, opts = self.init_options()
+        args = parser.parse_args() if self.argv_enabled else Namespace()
+        # args = self.parse_args() if self.argv_enabled else Namespace()
         self.init_dest = args.init if hasattr(args, 'init') else None
         config_file = args.config_from if hasattr(args, 'config_from') else \
             self.config_file
 
-        cfgs, self.default_opts = self.read_config(config_file)
-
-        opts = {}
-        opts['format'] = {'conv': conv_lower}
-
-        opts['gfwlist-url'] = {'default': _GFWLIST_URL}
-        opts['gfwlist-local'] = {'conv': conv_path}
-        opts['gfwlist-disabled'] = {'conv': conv_bool}
-        opts['gfwlist-update-local'] = {'conv': conv_bool}
-        opts['gfwlist-decoded-save'] = {'conv': conv_path}
-
-        opts['user-rule'] = {'conv': conv_list}
-        opts['user-rule-from'] = {'conv': [conv_list, conv_path]}
-
-        opts['output'] = {}
-        opts['template'] = {'conv': conv_path}
-        opts['proxy'] = {}
-        opts['etag-cache'] = {'conv': conv_bool}
-
-        opts['_order'] = {'conv': int, 'default': 0}
-
-        self.walk_formaters('config', opts)
+        for fmter in self.__class__._formaters.values():
+            opts.update(fmter['cls']._options)
 
         self.clear_jobs()
 
-        # 当配置没有[job]节点且参数没有--format 指定默认pac 可向前兼容
-        if not hasattr(args, 'format') and len(cfgs) == 1 and cfgs[0] == {}:
-            cfgs[0]['format'] = 'pac'
+        job_cfgs, common_cfgs = self.read_config(config_file)
 
-        cfgs.extend(self.extra_jobs)
-        for c in cfgs:
-            cfg = self.default_opts.copy()
+        # 当配置没有[job]节点且参数没有--format 指定默认pac 可向前兼容
+        if not hasattr(args, 'format') and len(job_cfgs) == 1 and job_cfgs[0] == {}:
+            job_cfgs[0]['format'] = 'pac'
+
+        job_cfgs.extend(self.extra_jobs)
+        for c in job_cfgs:
+            cfg = common_cfgs.copy()
             cfg.update(c)
             job = Namespace.from_dict(
                 dict([(k, v) for k, v in cfg.items() if k in opts]))
@@ -242,6 +311,7 @@ class GenPAC(object):
             logger.debug(f'Job done: {job.format} => {job.output}')
 
     def generate(self, job):
+        # logger.debug(f'Job Start: {job}')
         if not job.format:
             raise FatalError('生成的格式不能为空, 请检查参数--format或配置format.')
         if job.format not in self._formaters:
@@ -490,6 +560,15 @@ class Generator(object):
         cls._cache.clear()
 
 
+def run():
+    try:
+        gp = GenPAC()
+        gp.run()
+    except Exception as e:
+        logger.error(traceback.format_exc())
+        exit_error(e)
+
+
 # 解析规则
 # 参数 precise 影响返回格式
 # precise = False 时 返回域名
@@ -499,14 +578,6 @@ class Generator(object):
 # return: [忽略规则_正则表达式, 忽略规则_通配符, 被墙规则_正则表达式, 被墙规则_通配符]
 def parse_rules(rules, precise=False):
     return _parse_rule_precise(rules) if precise else _parse_rule(rules)
-
-
-def run():
-    try:
-        gp = GenPAC()
-        gp.run()
-    except Exception as e:
-        exit_error(e)
 
 
 # 普通解析

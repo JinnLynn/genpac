@@ -17,15 +17,10 @@ def add_formater():
             super(FmtTest, self).__init__(*args, **kwargs)
 
         @classmethod
-        def arguments(cls, parser):
-            group = parser.add_argument_group(title=cls._name.upper())
-            group.add_argument('--test-a', metavar='ARGA')
-            group.add_argument('--test-b', metavar='ARGB')
-
-        @classmethod
-        def config(cls, options):
-            options['test-a'] = {'default': 'va'}
-            options['test-b'] = {'default': 'vb'}
+        def prepare(cls, parser):
+            super().prepare(parser)
+            cls.register_option('--test-a', default='va', metavar='ARGA')
+            cls.register_option('--test-b', default='vb', metavar='ARGB')
 
     yield FmtTest
 

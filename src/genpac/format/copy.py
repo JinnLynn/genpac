@@ -5,22 +5,17 @@ from ..util import open_file, FatalError
 
 
 @formater('copy', desc="IP地址列表")
-class FMTCopy(FmtBase):
+class FmtCopy(FmtBase):
     _FORCE_IGNORE_GFWLIST = True
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
     @classmethod
-    def arguments(cls, parser):
-        group = super().arguments(parser)
-        group.add_argument('--copy-from', metavar='SRC',
-                           help='来源, 网址或文件路径')
-        return group
-
-    @classmethod
-    def config(cls, options):
-        options['copy-from'] = {}
+    def prepare(cls, parser):
+        super().prepare(parser)
+        cls.register_option('copy-from',
+                            metavar='SRC', help='来源, 网址或文件路径')
 
     def generate(self, replacements):
         content = ''
