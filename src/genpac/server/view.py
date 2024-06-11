@@ -1,12 +1,12 @@
 import os
+from os import path
 import time
 from functools import wraps
 from urllib.parse import urlencode
 from zlib import adler32
 
 from flask import current_app, Response, request
-from flask import render_template, jsonify, \
-    send_from_directory, send_file as _send_file
+from flask import render_template, jsonify, send_file as _send_file
 from werkzeug.urls import url_decode
 from werkzeug.exceptions import NotFound
 
@@ -35,21 +35,20 @@ def send_file(filename, replacements={}, mimetype='text/plain'):
     if filename.startswith('_'):
         raise NotFound()
 
+    if not path.isabs(filename):
+        filename = path.abspath(path.join(
+            current_app.config.options.target_path, filename))
+
     if not replacements:
-        return send_from_directory(current_app.config.options.target_path,
-                                   filename,
-                                   mimetype=mimetype)
+        return _send_file(filename, mimetype=mimetype)
 
     replacements.update(query2replacements(request.values))
 
-    if not os.path.isabs(filename):
-        filename = os.path.abspath(
-            os.path.join(current_app.config.options.target_path, filename))
-    if not os.path.isfile(filename):
+    if not path.isfile(filename):
         raise NotFound()
 
     try:
-        f_ext = os.path.basename(filename).split('.')[-1]
+        f_ext = path.basename(filename).split('.')[-1]
     except Exception:
         f_ext = 'txt'
 
