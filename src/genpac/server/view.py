@@ -4,6 +4,7 @@ import time
 from functools import wraps
 from urllib.parse import urlencode
 from zlib import adler32
+from io import BytesIO
 
 from flask import current_app, Response, request
 from flask import render_template, jsonify, send_file as _send_file
@@ -13,7 +14,7 @@ from werkzeug.exceptions import NotFound
 from .core import main
 
 from ..util import get_version, get_project_url
-from ..util import surmise_domain, replace_all, logger, mktemp, hash_dict
+from ..util import surmise_domain, replace_all, logger, hash_dict
 
 
 def query2replacements(query):
@@ -39,41 +40,31 @@ def send_file(filename, replacements={}, mimetype='text/plain'):
         filename = path.abspath(path.join(
             current_app.config.options.target_path, filename))
 
+    if not path.isfile(filename):
+        raise NotFound()
+
     if not replacements:
         return _send_file(filename, mimetype=mimetype)
 
     replacements.update(query2replacements(request.values))
 
-    if not path.isfile(filename):
-        raise NotFound()
-
-    try:
-        f_ext = path.basename(filename).split('.')[-1]
-    except Exception:
-        f_ext = 'txt'
-
-    t_filename = mktemp(ext=f_ext)
-
     try:
         with open(filename, 'r') as fp:
             content = fp.read()
             content = replace_all(content, replacements)
-            with open(t_filename, 'w') as fpt:
-                fpt.write(content)
     except Exception:
         logger.error(f'Send file fail. {filename}', exc_info=True)
         raise NotFound()
 
+    data = BytesIO(content.encode())
+
+    # NOTE: BytesIO方式不会自动生成etag, 需手动生成
     o_stat = os.stat(filename)
-    t_stat = os.stat(t_filename)
     check = adler32(filename.encode()) & 0xFFFFFFFF
     rep_hash = hash_dict(replacements)
-    etag = f'{o_stat.st_mtime}-{t_stat.st_size}-{check}-{rep_hash}'
+    etag = f'{o_stat.st_mtime}-{data.getbuffer().nbytes}-{check}-{rep_hash}'
 
-    return _send_file(t_filename,
-                      mimetype=mimetype,
-                      etag=etag,
-                      last_modified=o_stat.st_mtime)
+    return _send_file(data, etag=etag, mimetype=mimetype)
 
 
 def is_authorized():
