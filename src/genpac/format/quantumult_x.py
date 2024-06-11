@@ -9,7 +9,7 @@ final, direct
 '''
 
 
-@formater('quantumultx', desc='Quantumult X是iOS下一款功能强大的网络分析及代理工具.')
+@formater('qtx', desc='Quantumult X是iOS下一款功能强大的网络分析及代理工具.')
 class FmtQuantumultX(FmtBase):
     _default_tpl = _TPL
 
