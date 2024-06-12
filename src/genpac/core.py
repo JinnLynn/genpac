@@ -197,9 +197,8 @@ class GenPAC(object):
 
         job_cfgs, common_cfgs = self.read_config(config_file)
 
-        # 当配置没有[job]节点且参数没有--format 指定默认pac 可向前兼容
         if not hasattr(args, 'format') and len(job_cfgs) == 1 and job_cfgs[0] == {}:
-            job_cfgs[0]['format'] = 'pac'
+            raise FatalError('没有指定生成格式，检查命令参数--format或配置项format')
 
         job_cfgs.extend(self.extra_jobs)
         for c in job_cfgs:
@@ -236,9 +235,8 @@ class GenPAC(object):
             logger.debug(f'Job done: {job.format} => {job.output}')
 
     def generate(self, job):
-        # logger.debug(f'Job Start: {job}')
         if not job.format:
-            raise FatalError('生成的格式不能为空, 请检查参数--format或配置format.')
+            raise FatalError('生成的格式不能为空, 检查命令参数--format或配置项format')
         if job.format not in self._formaters:
             all_fmts = ', '.join(self._formaters.keys())
             raise FatalError(f'发现不支持的生成格式: {job.format}, 可选格式为: {all_fmts}')
