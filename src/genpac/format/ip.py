@@ -40,7 +40,7 @@ class IPList(list):
         return self
 
 
-@formater('ip', desc="IP地址列表")
+@formater('ip', desc="国别IP地址列表")
 class FmtIP(FmtBase):
     _FORCE_IGNORE_GFWLIST = True
 

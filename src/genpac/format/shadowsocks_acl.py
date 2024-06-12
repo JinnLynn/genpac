@@ -23,7 +23,7 @@ __CNIPS__
 '''
 
 
-@formater('ssacl', desc='Shadowsocks访问控制列表.')
+@formater('ssacl', desc='Shadowsocks访问控制列表')
 class FmtSSACL(FmtBase):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

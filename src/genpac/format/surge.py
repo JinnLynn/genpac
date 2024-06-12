@@ -20,7 +20,7 @@ FINAL,DIRECT
 #! GFWList: __GFWLIST_DETAIL__
 '''
 
-_DESC = '''Surge是基于(Network Extension)API开发的一款网络调试工具, 亦可做为代理使用。
+_DESC = '''Surge是基于(Network Extension)API开发的一款网络调试工具, 亦可做为代理使用
 以下APP也可使用该格式规则:
     * Shadowrocket
 本格式没有可选参数

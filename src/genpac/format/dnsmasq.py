@@ -12,7 +12,7 @@ __DNSMASQ__
 _DEF_DNS = '127.0.0.1#53'
 
 
-@formater('dnsmasq', desc='Dnsmasq配合iptables/ipset、nftables/nftset可实现基于域名的透明代理.')
+@formater('dnsmasq', desc='Dnsmasq配合iptables/ipset、nftables/nftset可实现基于域名的透明代理')
 class FmtDnsmasq(FmtBase):
     _default_tpl = _TPL
 

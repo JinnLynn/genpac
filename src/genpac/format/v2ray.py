@@ -17,7 +17,7 @@ _DEF_PROXY_TAG = 'proxy'
 _DEF_FORMAT = list(V2RAY_DUMPER.keys())[0]
 
 
-@formater('v2ray', desc='V2Ray')
+@formater('v2ray', desc='V2Ray的路由规则')
 class FmtV2Ray(FmtBase):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
