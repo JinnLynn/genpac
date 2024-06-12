@@ -35,29 +35,6 @@ class FmtDnsmasq(FmtBase):
                             help='使用ntfset, 允许重复或使用`,`分割多个, \n'
                                  '如: 4#GFWLIST,6#GFWLIST6')
 
-    @classmethod
-    def arguments(cls, parser):
-        group = super().arguments(parser)
-        group.add_argument(
-            '--dnsmasq-dns', metavar='DNS',
-            help='生成规则域名查询使用的DNS服务器，格式: HOST#PORT\n'
-                 f'默认: {cls._default_dns}')
-        group.add_argument(
-            '--dnsmasq-ipset', action='append', metavar='IPSET',
-            help='使用ipset, 允许重复或使用`,`分割多个, \n'
-                 '如: GFWLIST,GFWLIST6')
-        group.add_argument(
-            '--dnsmasq-nftset', action="append", metavar='NFTSET',
-            help='使用ntfset, 允许重复或使用`,`分割多个, \n'
-                 '如: 4#GFWLIST,6#GFWLIST6')
-        return group
-
-    @classmethod
-    def config(cls, options):
-        options['dnsmasq-dns'] = {'default': cls._default_dns}
-        options['dnsmasq-ipset'] = {'conv': conv_list}
-        options['dnsmasq-nftset'] = {'conv': conv_list}
-
     def generate(self, replacements):
         dns = self.options.dnsmasq_dns
         ipset = ','.join(self.options.dnsmasq_ipset)

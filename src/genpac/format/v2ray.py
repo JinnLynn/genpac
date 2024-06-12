@@ -35,27 +35,6 @@ class FmtV2Ray(FmtBase):
                             choices=V2RAY_DUMPER.keys(),
                             help=f'输出格式，默认: {_DEF_FORMAT}')
 
-    @classmethod
-    def arguments(cls, parser):
-        group = super().arguments(parser)
-        group.add_argument(
-            '--v2ray-proxy-tag', metavar='TAG',
-            help=f'代理标签，默认: {cls._DEF_PROXY_TAG}')
-        group.add_argument(
-            '--v2ray-direct-tag', metavar='TAG',
-            help='直连标签，未指定则不输出直连规则')
-        group.add_argument(
-            '--v2ray-format', choices=V2RAY_DUMPER.keys(),
-            help=f'输出格式，默认: {cls._DEF_FORMAT}'
-        )
-        return group
-
-    @classmethod
-    def config(cls, options):
-        options['v2ray-proxy-tag'] = {'default': cls._DEF_PROXY_TAG}
-        options['v2ray-direct-tag'] = {'default': None}
-        options['v2ray-format'] = {'default': cls._DEF_FORMAT}
-
     def generate(self, replacements):
         rules = []
         if self.options.v2ray_proxy_tag:

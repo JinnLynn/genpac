@@ -27,6 +27,15 @@ _GFWLIST_URL = \
     'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
 
 
+def run():
+    try:
+        gp = GenPAC()
+        gp.run()
+    except Exception as e:
+        logger.error(traceback.format_exc())
+        exit_error(e)
+
+
 def register_option(parser, options, flag, *args,
                     conv=None, default=None, **kwargs):
     flag = flag.lstrip('-').replace('_', '-')
@@ -57,11 +66,14 @@ class GenPAC(object):
                                 'options': options}
 
     @classmethod
-    def walk_formaters(cls, attr, *args, **kargs):
+    def walk_formaters(cls, attr, *args, **kwargs):
         for fmter in cls._formaters.values():
-            getattr(fmter['cls'], attr)(*args, **kargs)
+            getattr(fmter['cls'], attr)(*args, **kwargs)
 
     def init_options(self):
+        # 如果某选项同时可以在配置文件和命令行中设定，则必须使default=None
+        # 以避免命令行中即使没指定该参数，也会覆盖配置文件中的值
+        # 原因见parse_config() -> update(name, key, default=None)
         options = {}
         parser = argparse.ArgumentParser(
             prog='genpac',
@@ -71,23 +83,31 @@ class GenPAC(object):
             epilog=get_resource_data('res/rule-syntax.txt'),
             argument_default=argparse.SUPPRESS,
             add_help=False)
-        parser.add_argument(
-            '-v', '--version', action='version',
-            version=f'%(prog)s {get_version()}',
-            help='版本信息')
-        parser.add_argument(
-            '-h', '--help', action='help',
-            help='帮助信息')
-        parser.add_argument(
-            '--init', nargs='?', const=True, default=False, metavar='PATH',
-            help='初始化配置和用户规则文件')
+        parser.add_argument('--version', '-v', action='version',
+                            version=f'%(prog)s {get_version()}', help='版本信息')
+        parser.add_argument('--help', '-h', action='help', help='帮助信息')
+        parser.add_argument('--init', nargs='?', const=True, default=False,
+                            metavar='PATH', help='初始化配置和用户规则文件')
 
-        group = parser.add_argument_group(
-            title='通用参数')
+        group = parser.add_argument_group(title='通用参数')
 
         register_option(group, options, 'format', conv=conv_lower,
                         type=lambda s: s.lower(), choices=GenPAC._formaters.keys(),
                         help='生成格式, 只有指定了格式, 相应格式的参数才作用')
+        register_option(group, options, 'output', '-o',
+                        metavar='FILE',
+                        help='输出到文件, 无此参数或FILE为-, 则输出到stdout')
+        register_option(group, options, 'config-from', '-c', conv=conv_path,
+                        metavar='FILE',
+                        help='从文件中读取配置信息')
+        register_option(group, options, 'proxy',
+                        metavar='PROXY',
+                        help='在线获取外部数据时的代理, 如果可正常访问外部地址, 则无必要使用该选项\n'
+                             '格式: [PROTOCOL://][USERNAME:PASSWORD@]HOST:PORT \n'
+                             '其中协议、用户名、密码可选, 支持协议: http socks5 socks4 socks 如:\n'
+                             '  http://127.0.0.1:8080\n'
+                             '  SOCKS5://127.0.0.1:1080\n'
+                             '  SOCKS5://username:password@127.0.0.1:1080\n')
 
         register_option(group, options, 'gfwlist-url', default=_GFWLIST_URL,
                         metavar='URL',
@@ -113,23 +133,9 @@ class GenPAC(object):
         register_option(group, options, 'user-rule-from', conv=[conv_list, conv_path],
                         action='append', metavar='FILE',
                         help='从文件中读取自定义规则, 使用方法如--user-rule')
-        register_option(group, options, 'output', '-o',
-                        metavar='FILE',
-                        help='输出到文件, 无此参数或FILE为-, 则输出到stdout')
-        register_option(group, options, 'config-from', '-c', conv=conv_path,
-                        metavar='FILE',
-                        help='从文件中读取配置信息')
+
         register_option(group, options, 'template', conv=conv_path,
                         metavar='FILE', help='自定义模板文件')
-
-        register_option(group, options, 'proxy',
-                        metavar='PROXY',
-                        help='在线获取外部数据时的代理, 如果可正常访问外部地址, 则无必要使用该选项\n'
-                             '格式: [PROTOCOL://][USERNAME:PASSWORD@]HOST:PORT \n'
-                             '其中协议、用户名、密码可选, 默认协议 http, 支持协议: http socks5 socks4 socks 如:\n'
-                             '  127.0.0.1:8080\n'
-                             '  SOCKS5://127.0.0.1:1080\n'
-                             '  SOCKS5://username:password@127.0.0.1:1080\n')
 
         register_option(group, options, 'etag-cache', conv=conv_bool,
                         action='store_true',
@@ -141,94 +147,14 @@ class GenPAC(object):
 
         return parser, options
 
-    def parse_args(self):
-        # 如果某选项同时可以在配置文件和命令行中设定，则必须使default=None
-        # 以避免命令行中即使没指定该参数，也会覆盖配置文件中的值
-        # 原因见parse_config() -> update(name, key, default=None)
-        parser = argparse.ArgumentParser(
-            prog='genpac',
-            formatter_class=argparse.RawTextHelpFormatter,
-            description='获取gfwlist生成多种格式的翻墙工具配置文件, '
-                        '支持自定义规则',
-            epilog=get_resource_data('res/rule-syntax.txt'),
-            argument_default=argparse.SUPPRESS,
-            add_help=False)
-        parser.add_argument(
-            '-v', '--version', action='version',
-            version=f'%(prog)s {get_version()}',
-            help='版本信息')
-        parser.add_argument(
-            '-h', '--help', action='help',
-            help='帮助信息')
-        parser.add_argument(
-            '--init', nargs='?', const=True, default=False, metavar='PATH',
-            help='初始化配置和用户规则文件')
-
-        group = parser.add_argument_group(
-            title='通用参数')
-        group.add_argument(
-            '--format', type=lambda s: s.lower(),
-            choices=GenPAC._formaters.keys(),
-            help='生成格式, 只有指定了格式, 相应格式的参数才作用')
-        group.add_argument(
-            '--gfwlist-url', metavar='URL',
-            help='gfwlist网址，无此参数或URL为空则使用默认地址, URL为-则不在线获取')
-        group.add_argument(
-            '--gfwlist-local', metavar='FILE',
-            help='本地gfwlist文件地址, 当在线地址获取失败时使用')
-        group.add_argument(
-            '--gfwlist-update-local', action='store_true',
-            help='当在线gfwlist成功获取且--gfwlist-local参数存在时, '
-                 '更新gfwlist-local内容')
-        group.add_argument(
-            '--gfwlist-disabled', action='store_true',
-            help='禁用gfwlist')
-        group.add_argument(
-            '--gfwlist-decoded-save', metavar='FILE',
-            help='保存解码后的gfwlist, 仅用于测试')
-
-        group.add_argument(
-            '--user-rule', action='append', metavar='RULE',
-            help='自定义规则, 允许重复使用或在单个参数中使用`,`分割多个规则，如:\n'
-                 '  --user-rule="@@sina.com" --user-rule="||youtube.com"\n'
-                 '  --user-rule="@@sina.com,||youtube.com"')
-        group.add_argument(
-            '--user-rule-from', action='append', metavar='FILE',
-            help='从文件中读取自定义规则, 使用方法如--user-rule')
-        group.add_argument(
-            '-o', '--output', metavar='FILE',
-            help='输出到文件, 无此参数或FILE为-, 则输出到stdout')
-        group.add_argument(
-            '-c', '--config-from', default=None, metavar='FILE',
-            help='从文件中读取配置信息')
-        group.add_argument(
-            '--template', metavar='FILE', help='自定义模板文件')
-
-        group.add_argument(
-            '--proxy', metavar='PROXY',
-            help='在线获取外部数据时的代理, 如果可正常访问外部地址, 则无必要使用该选项\n'
-                 '格式: [PROTOCOL://][USERNAME:PASSWORD@]HOST:PORT \n'
-                 '其中协议、用户名、密码可选, 默认协议 http, 支持协议: http socks5 socks4 socks 如:\n'
-                 '  127.0.0.1:8080\n'
-                 '  SOCKS5://127.0.0.1:1080\n'
-                 '  SOCKS5://username:password@127.0.0.1:1080\n')
-
-        group.add_argument(
-            '--etag-cache', action='store_true', help='获取外部文件时是否使用If-None-Match头进行缓存检查'
-        )
-
-        self.__class__.walk_formaters('init', parser)
-        return parser.parse_args()
-
     def read_config(self, config_file):
         if not config_file:
             return [{}], {}
         try:
             cfg = Config()
             cfg.read(config_file)
-            return (
-                cfg.sections('job', sub_section_key='format') or [{}],
-                cfg.section('config') or {})
+            return (cfg.sections('job', sub_section_key='format') or [{}],
+                    cfg.section('config') or {})
         except Exception:
             raise FatalError(f'配置文件{config_file}读取失败')
 
@@ -260,7 +186,6 @@ class GenPAC(object):
     def parse_options(self):
         parser, opts = self.init_options()
         args = parser.parse_args() if self.argv_enabled else Namespace()
-        # args = self.parse_args() if self.argv_enabled else Namespace()
         self.init_dest = args.init if hasattr(args, 'init') else None
         config_file = args.config_from if hasattr(args, 'config_from') else \
             self.config_file
@@ -558,15 +483,6 @@ class Generator(object):
     def clear_cache(cls):
         logger.debug('Clear online data cache.')
         cls._cache.clear()
-
-
-def run():
-    try:
-        gp = GenPAC()
-        gp.run()
-    except Exception as e:
-        logger.error(traceback.format_exc())
-        exit_error(e)
 
 
 # 解析规则

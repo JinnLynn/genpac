@@ -25,7 +25,8 @@ class FmtList(FmtBase):
                             action='store_true', help='明文，不进行base64编码')
 
     def generate(self, replacements):
+        ignored = [f'@@||{s}' for s in self.ignored_domains]
         gfwed = [f'||{s}' for s in self.gfwed_domains]
-        replacements.update({'__GFWED_DOMAINS__': '\n'.join(gfwed).strip()})
+        replacements.update({'__GFWED_DOMAINS__': '\n'.join(ignored + gfwed).strip()})
         content = self.replace(self.tpl, replacements)
         return b64encode(content) if not self.options.list_raw else content
