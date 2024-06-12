@@ -6,6 +6,8 @@ from ..util import error, replace_all, Namespace
 # decorator: 添加格式化器
 def formater(name, **options):
     def decorator(fmt_cls):
+        if not issubclass(fmt_cls, FmtBase):
+            raise RuntimeError(f'格式类错误，必须继承自FmtBase: {fmt_cls}')
         GenPAC.add_formater(name, fmt_cls, **options)
         return fmt_cls
     return decorator

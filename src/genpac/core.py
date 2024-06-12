@@ -60,6 +60,8 @@ class GenPAC(object):
     @classmethod
     def add_formater(cls, name, fmt_cls, **options):
         fmt_cls._name = name.lower()
+        if fmt_cls._name in cls._formaters:
+            raise RuntimeError(f'输出格式{fmt_cls._name}重复')
         fmt_cls._desc = options.pop('desc', None)
         cls._formaters[name] = {'cls': fmt_cls,
                                 'options': options}
