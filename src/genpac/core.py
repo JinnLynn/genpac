@@ -70,13 +70,16 @@ class GenPAC(object):
         self.extra_jobs = []
 
     @classmethod
-    def add_formater(cls, name, fmt_cls, **options):
+    def add_formater(cls, name, fmt_cls, **kwargs):
         fmt_cls._name = name.lower()
         if fmt_cls._name in cls._formaters:
             raise RuntimeError(f'输出格式{fmt_cls._name}重复')
-        fmt_cls._desc = options.pop('desc', None)
+        fmt_cls._desc = kwargs.pop('desc', None)
+        order = kwargs.pop('order', 0)
         cls._formaters[name] = {'cls': fmt_cls,
-                                'options': options}
+                                'order': order,
+                                'options': kwargs}
+        cls._formaters = OrderedDict(sorted(cls._formaters.items(), key=lambda v: v[1].get('order')))
 
     @classmethod
     def walk_formaters(cls, attr, *args, **kwargs):
@@ -246,7 +249,6 @@ class GenPAC(object):
             logger.debug(f'Job done: {job.format} => {job.output}')
 
     def generate(self, job):
-        pprint(job)
         if not job.format:
             raise FatalError('生成的格式不能为空, 检查命令参数--format或配置项format')
         if job.format not in self._formaters:
