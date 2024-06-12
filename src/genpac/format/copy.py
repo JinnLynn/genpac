@@ -14,8 +14,7 @@ class FmtCopy(FmtBase):
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
-        cls.register_option('from',
-                            metavar='SRC', help='来源, 网址或文件路径')
+        cls.register_option('from', metavar='SRC', help='来源, 网址或文件路径')
 
     def generate(self, replacements):
         content = ''

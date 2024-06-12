@@ -30,7 +30,7 @@ __CRITERIA__
 '''
 
 
-@formater('wingy', desc='Wingy是iOS下基于NEKit的代理App，无可用参数\n* 注意: 即将废弃 *')
+@formater('wingy', desc='Wingy是iOS下基于NEKit的代理App, 无可用参数\n* 注意: 即将废弃 *')
 class FmtWingy(FmtBase):
     _default_tpl = _TPL_WINGY
 

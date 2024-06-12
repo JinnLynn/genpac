@@ -139,14 +139,14 @@ def read_config(app, config_file):
 
     # 如果允许监控文件更改
     if options.watch_enabled:
-        gp = GenPAC(config_file=options.config_file, argv_enabled=False)
+        gp = GenPAC(config_file=options.config_file)
         # 添加config_file到监控列表
         options.watch_files.add(options.config_file)
         if options.server_rule_enabled:
             # 添加服务器上的规则文件
             options.watch_files.add(options.server_rule_file)
         # 添加user_rule_from到监控文件列表
-        gp.parse_options()
+        gp.parse_options(cli=False)
         for job in gp.walk_jobs():
             options.watch_files.update(job.user_rule_from)
 

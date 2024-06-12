@@ -36,21 +36,33 @@ def run():
         exit_error(e)
 
 
-def register_option(parser, options, flag, *args,
+def register_option(parser, options, flag, *args, ignore_option=False,
                     conv=None, default=None, **kwargs):
-    flag = flag.lstrip('-').replace('_', '-')
+    # NOTE:
+    # 1. flag *args **kwargs 都是传递给add_argument
+    # 2. default是option的，argparse的default永远不指定，
+    #    否则命令行中即使没指定该参数，也会覆盖配置文件中的值
+    # 3. conv也是option的，argparse需要转换，需另外设置add_argument的type参数
+    # 4. ignore_option=True 则不加入option kwargs为空则不加入argparse
+    flag = flag.strip('- \n\t').lower()
+    if len(flag) <= 1:
+        raise FatalError('配置项的名称必须是两个字符及以上')
+    flag = flag.replace('_', '-')
+
     if kwargs:
         parser.add_argument(f'--{flag}', *args, **kwargs)
-    options[flag] = dict(conv=conv, default=default)
+    if not ignore_option:
+        if flag[0] == '-':
+            flag = flag.replace('-', '_', 1)
+        options[flag] = dict(conv=conv, default=default)
 
 
 class GenPAC(object):
     # 格式化器列表
     _formaters = OrderedDict()
 
-    def __init__(self, config_file=None, argv_enabled=True):
+    def __init__(self, config_file=None):
         self.config_file = config_file
-        self.argv_enabled = argv_enabled
 
         self.init_dest = None
         self.jobs = []
@@ -72,9 +84,6 @@ class GenPAC(object):
             getattr(fmter['cls'], attr)(*args, **kwargs)
 
     def init_options(self):
-        # 如果某选项同时可以在配置文件和命令行中设定，则必须使default=None
-        # 以避免命令行中即使没指定该参数，也会覆盖配置文件中的值
-        # 原因见parse_config() -> update(name, key, default=None)
         options = {}
         parser = argparse.ArgumentParser(
             prog='genpac',
@@ -92,13 +101,14 @@ class GenPAC(object):
 
         group = parser.add_argument_group(title='通用参数')
 
-        register_option(group, options, 'format', conv=conv_lower,
-                        type=lambda s: s.lower(), choices=GenPAC._formaters.keys(),
-                        help='生成格式, 只有指定了格式, 相应格式的参数才作用')
+        register_option(group, options, 'format', '-f', conv=conv_lower,
+                        metavar='FMT', type=lambda s: s.lower(), choices=GenPAC._formaters.keys(),
+                        help='生成格式, 只有指定了格式, 相应格式的参数才可用\n'
+                             f'可选: {",".join(GenPAC._formaters.keys())}')
         register_option(group, options, 'output', '-o',
                         metavar='FILE',
                         help='输出到文件, 无此参数或FILE为-, 则输出到stdout')
-        register_option(group, options, 'config-from', '-c', conv=conv_path,
+        register_option(group, options, 'config', '-c', ignore_option=True,
                         metavar='FILE',
                         help='从文件中读取配置信息')
         register_option(group, options, 'proxy',
@@ -184,11 +194,11 @@ class GenPAC(object):
 
         return dest, v
 
-    def parse_options(self):
+    def parse_options(self, cli=True):
         parser, opts = self.init_options()
-        args = parser.parse_args() if self.argv_enabled else Namespace()
+        args = parser.parse_args() if cli else Namespace()
         self.init_dest = args.init if hasattr(args, 'init') else None
-        config_file = args.config_from if hasattr(args, 'config_from') else \
+        config_file = args.config if hasattr(args, 'config') else \
             self.config_file
 
         for fmter in self.__class__._formaters.values():
@@ -236,6 +246,7 @@ class GenPAC(object):
             logger.debug(f'Job done: {job.format} => {job.output}')
 
     def generate(self, job):
+        pprint(job)
         if not job.format:
             raise FatalError('生成的格式不能为空, 检查命令参数--format或配置项format')
         if job.format not in self._formaters:
@@ -244,8 +255,8 @@ class GenPAC(object):
         generator = Generator(job, self._formaters[job.format]['cls'])
         generator.generate()
 
-    def run(self):
-        self.parse_options()
+    def run(self, cli=True):
+        self.parse_options(cli=cli)
 
         if self.init_dest:
             return self.init(self.init_dest)

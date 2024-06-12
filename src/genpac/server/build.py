@@ -19,8 +19,7 @@ def build(app):
         options = app.config.options
         try:
             Generator.clear_cache()
-            gp = GenPAC(config_file=options.config_file,
-                        argv_enabled=False)
+            gp = GenPAC(config_file=options.config_file)
             gp.add_job({'format': 'genpac-server-domains',
                         'output': options._private.domain_file,
                         '_order': -100})
@@ -31,7 +30,7 @@ def build(app):
                 with open(options.server_rule_file, 'r') as fp:
                     for line in fp.readlines():
                         gp.add_rule(line.strip())
-            gp.run()
+            gp.run(cli=False)
         except Exception:
             logger.error('GenPAC build fail.', exc_info=True)
         else:
