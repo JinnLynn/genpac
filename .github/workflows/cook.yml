@@ -1,41 +1,16 @@
 name: cook
 on:
   workflow_dispatch:
-  workflow_call:
   schedule:
     - cron: "0 */12 * * *"
+  push:
 
 jobs:
-  cooking:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout Branch dev
-        uses: actions/checkout@v4
-        with:
-          ref: dev
-          path: dev
-      - name: Checkout Branch cooked
-        uses: actions/checkout@v4
-        with:
-          ref: cooked
-          path: cooked
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: fire
-        run: |
-          pip install ./dev/ && \
-          mkdir ./temp && \
-          DEST=./temp genpac --config=./dev/example/config.ini
-      - name: clean and copy
-        run: |
-          find ./cooked -maxdepth 1 -type f -name "*.*" ! -name "README.md" ! -name ".gitignore" -delete && \
-          cp ./temp/* ./cooked/
-      - name: commit
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          repository: ./cooked
-          commit_message: update
-          push_options: '--force'
+  master:
+    uses: ./.github/workflows/cook-branch.yml
+    with:
+      branch: master
+  dev:
+    uses: ./.github/workflows/cook-branch.yml
+    with:
+      branch: dev

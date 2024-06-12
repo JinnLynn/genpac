@@ -1,0 +1,42 @@
+name: cook-branch
+on:
+  workflow_call:
+    inputs:
+      branch:
+        type: string
+        default: master
+        required: true
+jobs:
+  cooking:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch }}
+          path: work
+      - name: Checkout Branch cooked
+        uses: actions/checkout@v4
+        with:
+          ref: cooked
+          path: cooked
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: fire
+        run: |
+          pip install ./work/ && \
+          mkdir -p ./cooked/${{ inputs.branch }} && \
+          cd ./cooked/${{ inputs.branch }} && \
+          rm -rf * && \
+          genpac --config=../../work/example/config.ini && \
+          ls -alhR ./
+      - name: commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: ./cooked
+          commit_message: update
+          add_options: '-A'
+          push_options: '--force'
