@@ -25,13 +25,13 @@ class FmtV2Ray(FmtBase):
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
-        cls.register_option('v2ray-proxy-tag', default=_DEF_PROXY_TAG,
+        cls.register_option('proxy-tag', default=_DEF_PROXY_TAG,
                             metavar='TAG',
                             help=f'代理标签，默认: {_DEF_PROXY_TAG}')
-        cls.register_option('v2ray-direct-tag', default=None,
+        cls.register_option('direct-tag', default=None,
                             metavar='TAG',
                             help='直连标签，未指定则不输出直连规则')
-        cls.register_option('v2ray-format', default=_DEF_FORMAT,
+        cls.register_option('format', default=_DEF_FORMAT,
                             choices=V2RAY_DUMPER.keys(),
                             help=f'输出格式，默认: {_DEF_FORMAT}')
 

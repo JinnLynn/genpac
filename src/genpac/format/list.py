@@ -21,7 +21,7 @@ class FmtList(FmtBase):
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
-        cls.register_option('list-raw', conv=conv_bool, default=False,
+        cls.register_option('raw', conv=conv_bool, default=False,
                             action='store_true', help='明文，不进行base64编码')
 
     def generate(self, replacements):

@@ -34,7 +34,7 @@ class FmtSSACL(FmtBase):
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
-        cls.register_option('ssacl-geocn', default=False,
+        cls.register_option('geocn', default=False,
                             action='store_true',
                             help='国内IP不走代理，所有国外IP走代理')
 

@@ -27,12 +27,12 @@ class FmtPAC(FmtBase):
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
-        cls.register_option('pac-proxy',
+        cls.register_option('proxy',
                             metavar='PROXY',
                             help='代理地址, 如 SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080')
-        cls.register_option('pac-precise', conv=conv_bool,
+        cls.register_option('precise', conv=conv_bool,
                             action='store_true', help='精确匹配模式')
-        cls.register_option('pac-compress', conv=conv_bool,
+        cls.register_option('compress', conv=conv_bool,
                             action='store_true', help='压缩输出')
 
     def pre_generate(self):

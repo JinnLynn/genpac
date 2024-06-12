@@ -59,8 +59,7 @@ class GenPAC(object):
 
     @classmethod
     def add_formater(cls, name, fmt_cls, **options):
-        # TODO: 检查cls是否合法
-        fmt_cls._name = name
+        fmt_cls._name = name.lower()
         fmt_cls._desc = options.pop('desc', None)
         cls._formaters[name] = {'cls': fmt_cls,
                                 'options': options}
@@ -191,7 +190,7 @@ class GenPAC(object):
             self.config_file
 
         for fmter in self.__class__._formaters.values():
-            opts.update(fmter['cls']._options)
+            opts.update(fmter['cls']._predefined_options)
 
         self.clear_jobs()
 

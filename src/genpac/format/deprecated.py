@@ -40,12 +40,12 @@ class FmtWingy(FmtBase):
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
-        cls.register_option('wingy-adapter-opts',
+        cls.register_option('adapter-opts',
                             metavar='OPTS',
                             help='adapter选项, 选项间使用`,`分割, 多个adapter使用`;`分割, 如:\n'
                                  '  id:ap1,type:http,host:127.0.0.1,port:8080;'
                                  'id:ap2,type:socks5,host:127.0.0.1,port:3128')
-        cls.register_option('wingy-rule-adapter-id',
+        cls.register_option('rule-adapter-id',
                             metavar='ID', help='生成规则使用的adapter ID')
 
     def generate(self, replacements):

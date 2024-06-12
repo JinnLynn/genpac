@@ -50,11 +50,11 @@ class FmtIP(FmtBase):
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
-        cls.register_option('ip-cc', conv=conv_lower, default=_CC_DEF,
+        cls.register_option('cc', conv=conv_lower, default=_CC_DEF,
                             metavar='CC',
                             help=f'国家代码(ISO 3166-1) 默认: {_CC_DEF}')
         families = ', '.join(_IP_FAMILIES)
-        cls.register_option('ip-family', conv=conv_lower, default='4',
+        cls.register_option('family', conv=conv_lower, default='4',
                             type=lambda s: s.lower(),
                             choices=_IP_FAMILIES,
                             help=f'IP类型 可选: {families} 默认: 4')

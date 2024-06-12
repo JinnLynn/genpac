@@ -22,15 +22,15 @@ class FmtDnsmasq(FmtBase):
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
-        cls.register_option('dnsmasq-dns', default=_DEF_DNS,
+        cls.register_option('dns', default=_DEF_DNS,
                             metavar='DNS',
                             help='生成规则域名查询使用的DNS服务器，格式: HOST#PORT\n'
                                  f'默认: {_DEF_DNS}')
-        cls.register_option('dnsmasq-ipset', conv=conv_list,
+        cls.register_option('ipset', conv=conv_list,
                             action='append', metavar='IPSET',
                             help='使用ipset, 允许重复或使用`,`分割多个, \n'
                                  '如: GFWLIST,GFWLIST6')
-        cls.register_option('dnsmasq-nftset', conv=conv_list,
+        cls.register_option('nftset', conv=conv_list,
                             action="append", metavar='NFTSET',
                             help='使用ntfset, 允许重复或使用`,`分割多个, \n'
                                  '如: 4#GFWLIST,6#GFWLIST6')

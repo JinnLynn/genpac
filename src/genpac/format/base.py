@@ -1,18 +1,6 @@
-import importlib
-from os import path
-import glob
-
 from ..core import GenPAC, register_option
 from .. import TemplateFile, parse_rules
 from ..util import error, replace_all, Namespace
-
-
-def _import_all_format():
-    for f in glob.glob(path.join(path.dirname(__file__), "*.py")):
-        f_bn = path.basename(f)
-        if not path.isfile(f) or f_bn in ['__init__.py', 'base.py']:
-            continue
-        importlib.import_module(f'.{f_bn[:-3]}', __package__)
 
 
 # decorator: 添加格式化器
@@ -26,8 +14,7 @@ def formater(name, **options):
 class FmtBase(object):
     _name = ''
     _desc = None
-    _parser = None
-    _options = {}
+    _predefined_options = {}
 
     _default_tpl = None
 
@@ -46,8 +33,10 @@ class FmtBase(object):
                                                 description=cls._desc or '')
 
     @classmethod
-    def register_option(cls, *args, **kwargs):
-        register_option(cls._parser, cls._options, *args, **kwargs)
+    def register_option(cls, flag, *args, **kwargs):
+        flag = flag.lstrip('-')
+        flag = f'{cls._name}-{flag}'
+        register_option(cls._parser, cls._predefined_options, flag, *args, **kwargs)
 
     def pre_generate(self):
         return True
