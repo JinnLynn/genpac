@@ -3,9 +3,22 @@ from .base import formater, FmtBase
 
 _TPL = '''
 #! __GENPAC__
+#! Generated: __GENERATED__
+#! GFWList: __GFWLIST_DETAIL__
 [Rule]
 __RULES__
 
+FINAL,DIRECT
+'''
+
+_TPL_SET = '''
+#! __GENPAC__
+#! Generated: __GENERATED__
+#! GFWList: __GFWLIST_DETAIL__
+__RULES__
+'''
+
+_DEF_DIRECT = '''
 # Local Area Network
 DOMAIN-SUFFIX,local,DIRECT
 IP-CIDR,192.168.0.0/16,DIRECT
@@ -13,34 +26,45 @@ IP-CIDR,10.0.0.0/8,DIRECT
 IP-CIDR,172.16.0.0/12,DIRECT
 IP-CIDR,127.0.0.0/8,DIRECT
 IP-CIDR,100.64.0.0/10,DIRECT
-
-FINAL,DIRECT
-
-#! Generated: __GENERATED__
-#! GFWList: __GFWLIST_DETAIL__
 '''
 
 _DESC = '''Surge是基于(Network Extension)API开发的一款网络调试工具, 亦可做为代理使用
 以下APP也可使用该格式规则:
     * Shadowrocket
-本格式没有可选参数
 '''
+_PROXY_POLICY = 'PROXY'
 
 
-@formater('surge', desc=_DESC, order=100)
+@formater('surge', desc=_DESC, order=90)
 class FmtSurge(FmtBase):
     _default_tpl = _TPL
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-    def generate(self, replacements):
-        def to_rule(r, a):
-            return f'DOMAIN-SUFFIX,{r},{a}'
+    @classmethod
+    def prepare(cls, parser):
+        super().prepare(parser)
+        cls.register_option('policy', default=_PROXY_POLICY,
+                            metavar='POLICY', help=f'代理规则策略: 默认: {_PROXY_POLICY}')
+        cls.register_option('direct', default=False,
+                            action='store_true', help='输出直连规则，默认仅输出代理规则')
+        cls.register_option('set', default=False,
+                            action='store_true', help='输出为规则集')
 
-        direct_rules = [to_rule(r, 'DIRECT') for r in self.ignored_domains]
-        gfwed_rules = [to_rule(r, 'PROXY') for r in self.gfwed_domains]
-        rules = gfwed_rules + direct_rules
-        replacements.update({
-            '__RULES__': '\n'.join(rules)})
-        return self.replace(self.tpl, replacements)
+    def generate(self, replacements):
+        rules = []
+
+        if self.options.surge_direct:
+            rules.append(_DEF_DIRECT.strip())
+            for d in self.ignored_domains:
+                rules.append(f'DOMAIN-SUFFIX,{d},DIRECT')
+
+        for d in self.gfwed_domains:
+            rules.append(f'DOMAIN-SUFFIX,{d},{self.options.surge_policy}')
+
+        replacements.update({'__RULES__': '\n'.join(rules)})
+        tpl = _TPL_SET if self.options.surge_set else _TPL
+        tpl = tpl.lstrip()
+
+        return self.replace(tpl, replacements)
