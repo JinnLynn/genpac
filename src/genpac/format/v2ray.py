@@ -1,6 +1,7 @@
 import json
 import yaml
 
+from ..util import conv_lower
 from .base import formater, FmtBase
 
 
@@ -31,9 +32,15 @@ class FmtV2Ray(FmtBase):
         cls.register_option('direct-tag', default=None,
                             metavar='TAG',
                             help='直连标签，未指定则不输出直连规则')
-        cls.register_option('format', default=_DEF_FORMAT,
+        cls.register_option('format', conv=conv_lower, default=_DEF_FORMAT,
                             choices=V2RAY_DUMPER.keys(),
                             help=f'输出格式，默认: {_DEF_FORMAT}')
+
+    def pre_generate(self):
+        if self.options.v2ray_format not in V2RAY_DUMPER.keys():
+            self.error(f'输出的格式错误，只能是: {list(V2RAY_DUMPER.keys())}')
+            return False
+        return super().pre_generate()
 
     def generate(self, replacements):
         rules = []
