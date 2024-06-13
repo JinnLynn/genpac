@@ -60,7 +60,7 @@ class FmtIP(FmtBase):
                             help=f'IP类型 可选: {families} 默认: 4')
 
     def generate(self, replacements):
-        cc = self.options.ip_cc
+        cc = self.options.cc
 
         ip4s, ip6s = self._generate_by_cc(cc)
 
@@ -70,11 +70,11 @@ class FmtIP(FmtBase):
 
     @property
     def _ipv4(self):
-        return self.options.ip_family in [4, '4', 'all']
+        return self.options.family in [4, '4', 'all']
 
     @property
     def _ipv6(self):
-        return self.options.ip_family in [6, '6', 'all']
+        return self.options.family in [6, '6', 'all']
 
     def _ip_network(self, data):
         try:

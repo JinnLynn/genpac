@@ -29,4 +29,4 @@ class FmtList(FmtBase):
         gfwed = [f'||{s}' for s in self.gfwed_domains]
         replacements.update({'__GFWED_DOMAINS__': '\n'.join(ignored + gfwed).strip()})
         content = self.replace(self.tpl, replacements)
-        return b64encode(content) if not self.options.list_raw else content
+        return b64encode(content) if not self.options.raw else content

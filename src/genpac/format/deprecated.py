@@ -57,7 +57,7 @@ class FmtWingy(FmtBase):
 
         replacements.update({
             '__ADAPTER__': adapter,
-            '__RULE_ADAPTER_ID__': self.options.wingy_rule_adapter_id,
+            '__RULE_ADAPTER_ID__': self.options.rule_adapter_id,
             '__CRITERIA__': '\n'.join(domains)})
         return self.replace(self.tpl, replacements)
 
@@ -90,7 +90,7 @@ class FmtWingy(FmtBase):
                 opts.setdefault('protocol', 'verify_sha1')
             return opts
 
-        adapter_opts = self.options.wingy_adapter_opts
+        adapter_opts = self.options.adapter_opts
         if not adapter_opts:
             return
         opts = []

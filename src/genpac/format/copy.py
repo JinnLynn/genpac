@@ -14,18 +14,18 @@ class FmtCopy(FmtBase):
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
-        cls.register_option('from', metavar='SRC', help='来源, 网址或文件路径')
+        cls.register_option('source', metavar='SRC', help='来源, 网址或文件路径')
 
     def generate(self, replacements):
         content = ''
         try:
-            if path.isfile(self.options.copy_from):
-                with open_file(self.options.copy_from) as fp:
+            if path.isfile(self.options.source):
+                with open_file(self.options.source) as fp:
                     content = fp.read()
             else:
-                content = self.fetch(self.options.copy_from)
+                content = self.fetch(self.options.source)
                 if content is None:
                     raise Exception
         except Exception:
-            raise FatalError(f'copy: 无法读取或下载文件 {self.options.copy_from}')
+            raise FatalError(f'copy: 无法读取或下载文件 {self.options.source}')
         return content

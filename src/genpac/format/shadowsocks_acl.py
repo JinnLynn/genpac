@@ -28,7 +28,7 @@ class FmtSSACL(FmtBase):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        if self.options.ssacl_geocn:
+        if self.options.geocn:
             self.options.gfwlist_disabled = True
 
     @classmethod
@@ -40,10 +40,10 @@ class FmtSSACL(FmtBase):
 
     @property
     def tpl(self):
-        return _TPL_GEOCN if self.options.ssacl_geocn else _TPL_DEF
+        return _TPL_GEOCN if self.options.geocn else _TPL_DEF
 
     def generate(self, replacements):
-        return self.gen_by_geoip(replacements) if self.options.ssacl_geocn else \
+        return self.gen_by_geoip(replacements) if self.options.geocn else \
             self.gen_by_gfwlist(replacements)
 
     def gen_by_gfwlist(self, replacements):

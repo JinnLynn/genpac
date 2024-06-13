@@ -55,16 +55,16 @@ class FmtSurge(FmtBase):
     def generate(self, replacements):
         rules = []
 
-        if self.options.surge_direct:
+        if self.options.direct:
             rules.append(_DEF_DIRECT.strip())
             for d in self.ignored_domains:
                 rules.append(f'DOMAIN-SUFFIX,{d},DIRECT')
 
         for d in self.gfwed_domains:
-            rules.append(f'DOMAIN-SUFFIX,{d},{self.options.surge_policy}')
+            rules.append(f'DOMAIN-SUFFIX,{d},{self.options.policy}')
 
         replacements.update({'__RULES__': '\n'.join(rules)})
-        tpl = _TPL_SET if self.options.surge_set else _TPL
+        tpl = _TPL_SET if self.options.set else _TPL
         tpl = tpl.lstrip()
 
         return self.replace(tpl, replacements)

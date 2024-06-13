@@ -37,19 +37,19 @@ class FmtV2Ray(FmtBase):
                             help=f'输出格式，默认: {_DEF_FORMAT}')
 
     def pre_generate(self):
-        if self.options.v2ray_format not in V2RAY_DUMPER.keys():
+        if self.options.format not in V2RAY_DUMPER.keys():
             self.error(f'输出的格式错误，只能是: {list(V2RAY_DUMPER.keys())}')
             return False
         return super().pre_generate()
 
     def generate(self, replacements):
         rules = []
-        if self.options.v2ray_proxy_tag:
-            rules.append(dict(outboundTag=self.options.v2ray_proxy_tag,
+        if self.options.proxy_tag:
+            rules.append(dict(outboundTag=self.options.proxy_tag,
                               type='field',
                               domains=[f'domain:{d}' for d in self.gfwed_domains if d]))
-        if self.options.v2ray_direct_tag:
-            rules.append(dict(outboundTag=self.options.v2ray_direct_tag,
+        if self.options.direct_tag:
+            rules.append(dict(outboundTag=self.options.direct_tag,
                               type='field',
                               port='0-65535'))
         data = {
@@ -58,4 +58,4 @@ class FmtV2Ray(FmtBase):
                 'rules': rules
             }
         }
-        return V2RAY_DUMPER[self.options.v2ray_format](data)
+        return V2RAY_DUMPER[self.options.format](data)

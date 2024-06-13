@@ -36,9 +36,9 @@ class FmtDnsmasq(FmtBase):
                                  '如: 4#GFWLIST,6#GFWLIST6')
 
     def generate(self, replacements):
-        dns = self.options.dnsmasq_dns
-        ipset = ','.join(self.options.dnsmasq_ipset)
-        nftset = ','.join(self.options.dnsmasq_nftset)
+        dns = self.options.dns
+        ipset = ','.join(self.options.ipset)
+        nftset = ','.join(self.options.nftset)
 
         result = [
             [f'server=/{s}/{dns}' for s in self.gfwed_domains]

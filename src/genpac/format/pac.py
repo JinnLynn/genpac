@@ -17,11 +17,11 @@ class FmtPAC(FmtBase):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        if self.options.pac_precise:
+        if self.options.precise:
             self._default_tpl = _TPL_PAC_PRECISE
-        if self.options.pac_compress:
+        if self.options.compress:
             self._default_tpl = _TPL_PAC_MIN
-            if self.options.pac_precise:
+            if self.options.precise:
                 self._default_tpl = _TPL_PAC_PRECISE_MIN
 
     @classmethod
@@ -36,16 +36,16 @@ class FmtPAC(FmtBase):
                             action='store_true', help='压缩输出')
 
     def pre_generate(self):
-        if not self.options.pac_proxy:
+        if not self.options.proxy:
             self.error('代理信息不存在，检查参数--pac-proxy或配置pac-proxy')
             return False
         return super().pre_generate()
 
     def generate(self, replacements):
         rules = json.dumps(
-            self.precise_rules if self.options.pac_precise else self.rules,
-            indent=None if self.options.pac_compress else 4,
-            separators=(',', ':') if self.options.pac_compress else None)
-        replacements.update({'__PROXY__': self.options.pac_proxy,
+            self.precise_rules if self.options.precise else self.rules,
+            indent=None if self.options.compress else 4,
+            separators=(',', ':') if self.options.compress else None)
+        replacements.update({'__PROXY__': self.options.proxy,
                              '__RULES__': rules})
         return self.replace(self.tpl, replacements)

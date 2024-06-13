@@ -13,6 +13,19 @@ def formater(name, **options):
     return decorator
 
 
+class _FmtOption(Namespace):
+    def __init__(self, original, prefix):
+        self._prefix = prefix
+        self._original = original
+        for k, v in original.dict().items():
+            if not k.startswith(f'{prefix}_'):
+                continue
+            setattr(self, k.replace(f'{prefix}_', '', 1), v)
+
+    def __getattr__(self, name):
+        raise AttributeError(f'格式\'{self._prefix}\'没有自有设置\'{name}({self._prefix}_{name})\'')
+
+
 class FmtBase(object):
     _name = ''
     _desc = None
@@ -22,12 +35,13 @@ class FmtBase(object):
 
     def __init__(self, *args, **kwargs):
         super(FmtBase, self).__init__()
-        self.options = kwargs.get('options') or Namespace()
-        self.generator = kwargs.get('generator')
+        self.generator = kwargs.pop('generator', None)
 
-        self._update_orginal_rules(
-            kwargs.get('user_rules') or [],
-            kwargs.get('gfwlist_rules') or [])
+        options = kwargs.pop('options', Namespace())
+        self.options = _FmtOption(options, self._name)
+
+        self._update_orginal_rules(kwargs.pop('user_rules', []),
+                                   kwargs.pop('gfwlist_rules', []))
 
     @classmethod
     def prepare(cls, parser):
@@ -51,8 +65,8 @@ class FmtBase(object):
 
     @property
     def tpl(self):
-        tpl = TemplateFile(self.options.template) if self.options.template else \
-            self._default_tpl
+        template = self.options._original.template
+        tpl = TemplateFile(template) if template else self._default_tpl
         return str(tpl).strip('\n') + '\n'
 
     def error(self, msg):
