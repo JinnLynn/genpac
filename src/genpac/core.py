@@ -482,14 +482,13 @@ class Generator(object):
                 datetime.utcfromtimestamp(ts)
             return utc_date + offset
 
+        cur_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
+
         try:
             modified = to_local(modified_datestr)
-            return (modified.strftime('%Y-%m-%d %H:%M:%S'),
-                    datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+            return (modified.strftime('%Y-%m-%d %H:%M:%S'), cur_time)
         except Exception:
-            return (modified_datestr,
-                    time.strftime('%a, %d %b %Y %H:%M:%S %z',
-                                  time.localtime()))
+            return (modified_datestr, cur_time)
 
     @classmethod
     def clear_cache(cls):
