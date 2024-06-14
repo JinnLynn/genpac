@@ -1,7 +1,7 @@
 [project]
-name = "GenPAC"
+name = "genpac"
 version = "3.0.0.dev8"
-description = "convert gfwlist to pac, custom rules supported."
+description = "convert gfwlist to pac or other formats, support custom rules."
 readme = "README.md"
 license = { text = "MIT" }
 authors = [
@@ -31,13 +31,14 @@ optional-dependencies.dev = [
 scripts.genpac = "genpac:run"
 scripts."genpac.server" = "genpac.server:run"
 classifiers = [
+    "Topic :: Utilities",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.12"
 ]
 
 [project.urls]
