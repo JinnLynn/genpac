@@ -4,9 +4,9 @@
 
 基于[gfwlist][]的多种代理软件配置文件生成工具，支持自定义规则
 
-目前可生成的格式有: **PAC, Dnsmasq, V2Ray, Shadowsocks, Quantumult X, Shadowrocket, Surge, Wingy, Potatso**
+目前支持的格式有: **PAC, Dnsmasq, V2Ray, Shadowsocks, Quantumult X, Shadowrocket, Surge, Wingy, Potatso** 和 **IP** (国别IP列表), **List** (gfwlist格式的列表), **Copy** (复制源)。[示例](https://github.com/JinnLynn/genpac/tree/cooked)
 
-另外还有特殊的格式: **IP** (国别IP列表), **List** (与gfwlist格式相同的列表), **Copy** (复制源)
+**注意**: 生成后的规则不会匹配网址路径，只会检查域名(包括子域名)，如`|http://sub2.sub1.domain.com/path/to/file.ext` => `sub2.sub1.domain.com`
 
 ## 安装
 
@@ -32,10 +32,11 @@ pip uninstall genpac
 genpac [--version] [--help] [--init [PATH]] [--format FMT] [--output FILE] [--config FILE] [--proxy PROXY] [--gfwlist-url URL]
               [--gfwlist-local FILE] [--gfwlist-update-local] [--gfwlist-disabled] [--gfwlist-decoded-save FILE] [--user-rule RULE]
               [--user-rule-from FILE] [--template FILE] [--etag-cache] [--pac-proxy PROXY] [--pac-precise] [--pac-compress]
-              [--dnsmasq-dns DNS] [--dnsmasq-ipset IPSET] [--dnsmasq-nftset NFTSET] [--v2ray-proxy-tag TAG] [--v2ray-direct-tag TAG]
-              [--v2ray-format {json,yaml}] [--ip-cc CC] [--ip-family {4,6,all}] [--ssacl-geocn] [--list-raw] [--qtx-no-final]
-              [--copy-source SRC] [--shadowrocket-policy POLICY] [--shadowrocket-direct] [--shadowrocket-set] [--surge-policy POLICY]
-              [--surge-direct] [--surge-set] [--wingy-adapter-opts OPTS] [--wingy-rule-adapter-id ID]
+              [--dnsmasq-dns DNS] [--dnsmasq-ipset IPSET] [--dnsmasq-nftset NFTSET] [--v2ray-proxy TAG] [--v2ray-direct TAG]
+              [--v2ray-default TAG] [--v2ray-format {json,yaml}] [--ip-cc CC] [--ip-family {4,6,all}] [--ssacl-geocn] [--list-raw]
+              [--qtx-no-direct] [--qtx-no-final] [--copy-source SRC] [--shadowrocket-policy POLICY] [--shadowrocket-no-direct]
+              [--shadowrocket-no-final] [--shadowrocket-set] [--surge-policy POLICY] [--surge-no-direct] [--surge-no-final] [--surge-set]
+              [--wingy-adapter-opts OPTS] [--wingy-rule-adapter-id ID]
 
 获取gfwlist生成多种格式的翻墙工具配置文件, 支持自定义规则
 
@@ -94,10 +95,9 @@ DNSMASQ:
 V2RAY:
   V2Ray的路由规则
 
-  --v2ray-proxy-tag TAG
-                        代理标签，默认: proxy
-  --v2ray-direct-tag TAG
-                        直连标签，未指定则不输出直连规则
+  --v2ray-proxy TAG     代理标签，默认: proxy
+  --v2ray-direct TAG    直连标签，未指定则不输出直连规则
+  --v2ray-default TAG   默认标签，未指定则不输出默认规则
   --v2ray-format {json,yaml}
                         输出格式，默认: json
 
@@ -121,6 +121,7 @@ LIST:
 QTX:
   Quantumult X 的分流规则
 
+  --qtx-no-direct       不包含直连规则
   --qtx-no-final        不包含FINAL规则
 
 COPY:
@@ -133,8 +134,10 @@ SHADOWROCKET:
 
   --shadowrocket-policy POLICY
                         代理规则策略: 默认: PROXY
-  --shadowrocket-direct
-                        输出直连规则，默认仅输出代理规则
+  --shadowrocket-no-direct
+                        不包含直连规则
+  --shadowrocket-no-final
+                        不包含FINAL规则
   --shadowrocket-set    输出为规则集
 
 SURGE:
@@ -142,7 +145,8 @@ SURGE:
 
   --surge-policy POLICY
                         代理规则策略: 默认: PROXY
-  --surge-direct        输出直连规则，默认仅输出代理规则
+  --surge-no-direct     不包含直连规则
+  --surge-no-final      不包含FINAL规则
   --surge-set           输出为规则集
 
 WINGY:
@@ -162,7 +166,7 @@ POTATSO:
 
 ### web服务形式
 
-支持以web形式自动生成及输出
+支持以web形式自动生成及输出，需先安装服务器组件`pip install genpac[server]`。
 
 建议通过Docker部署: `docker pull jinnlynn/genpac:dev`
 
@@ -278,4 +282,3 @@ genpac --format=surge --surge-policy PROXY
 [pypi-version]:     https://img.shields.io/pypi/v/genpac
 [pypi-license]:     https://img.shields.io/pypi/l/genpac
 [dev-version]:      https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fgithub.com%2FJinnLynn%2Fgenpac%2Fraw%2Fdev%2Fpyproject.toml&query=%24.project.version&style=flat&label=dev
-
