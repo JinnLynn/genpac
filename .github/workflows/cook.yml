@@ -7,10 +7,12 @@ on:
 
 jobs:
   master:
+    if: ${{ github.ref_name == 'master' || github.event.schedule }}
     uses: ./.github/workflows/cook-branch.yml
     with:
       branch: master
   dev:
+    if: ${{ github.ref_name == 'dev' || github.event.schedule }}
     uses: ./.github/workflows/cook-branch.yml
     with:
       branch: dev
