@@ -1,18 +1,5 @@
 from .base import formater, FmtBase, TPL_LEAD_COMMENT
 
-_TPL = f'''
-{TPL_LEAD_COMMENT}
-[Rule]
-__RULES__
-
-FINAL,DIRECT
-'''
-
-_TPL_SET = f'''
-{TPL_LEAD_COMMENT}
-__RULES__
-'''
-
 _DEF_DIRECT = '''
 # Local Area Network
 DOMAIN-SUFFIX,local,DIRECT
@@ -31,22 +18,22 @@ class FmtSurge(FmtBase):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self._default_tpl = _TPL_SET if self.options.set else _TPL
-
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
         cls.register_option('policy', default=_DEF_POLICY,
                             metavar='POLICY', help=f'代理规则策略: 默认: {_DEF_POLICY}')
-        cls.register_option('direct', default=False,
-                            action='store_true', help='输出直连规则，默认仅输出代理规则')
+        cls.register_option('no-direct', default=False,
+                            action='store_true', help='不包含直连规则')
+        cls.register_option('no-final', default=False,
+                            action='store_true', help='不包含FINAL规则')
         cls.register_option('set', default=False,
                             action='store_true', help='输出为规则集')
 
     def generate(self, replacements):
         rules = []
 
-        if self.options.direct:
+        if not self.options.no_direct:
             rules.append(_DEF_DIRECT.strip())
             for d in self.ignored_domains:
                 rules.append(f'DOMAIN-SUFFIX,{d},DIRECT')
@@ -54,5 +41,15 @@ class FmtSurge(FmtBase):
         for d in self.gfwed_domains:
             rules.append(f'DOMAIN-SUFFIX,{d},{self.options.policy}')
 
+        if not self.options.no_final:
+            rules.extend(['', 'FINAL,DIRECT'])
+
         replacements.update(__RULES__='\n'.join(rules))
         return super().generate(replacements)
+
+    @property
+    def tpl(self):
+        tpl = [TPL_LEAD_COMMENT, '__RULES__']
+        if not self.options.set:
+            tpl.insert(1, '[Rule]')
+        return '\n'.join(tpl) + '\n'

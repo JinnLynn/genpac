@@ -27,12 +27,15 @@ class FmtV2Ray(FmtBase):
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
-        cls.register_option('proxy-tag', default=_DEF_PROXY_TAG,
+        cls.register_option('proxy', default=_DEF_PROXY_TAG,
                             metavar='TAG',
                             help=f'代理标签，默认: {_DEF_PROXY_TAG}')
-        cls.register_option('direct-tag', default=None,
+        cls.register_option('direct', default=None,
                             metavar='TAG',
                             help='直连标签，未指定则不输出直连规则')
+        cls.register_option('default', default=None,
+                            metavar='TAG',
+                            help='默认标签，未指定则不输出默认规则')
         cls.register_option('format', conv=conv_lower, default=_DEF_FORMAT,
                             choices=V2RAY_DUMPER.keys(),
                             help=f'输出格式，默认: {_DEF_FORMAT}')
@@ -46,12 +49,16 @@ class FmtV2Ray(FmtBase):
     @property
     def tpl(self):
         rules = []
-        if self.options.proxy_tag:
-            rules.append(dict(outboundTag=self.options.proxy_tag,
+        if self.options.direct:
+            rules.append(dict(outboundTag=self.options.direct,
+                              type='field',
+                              domains=[f'domain:{d}' for d in self.ignored_domains if d]))
+        if self.options.proxy:
+            rules.append(dict(outboundTag=self.options.proxy,
                               type='field',
                               domains=[f'domain:{d}' for d in self.gfwed_domains if d]))
-        if self.options.direct_tag:
-            rules.append(dict(outboundTag=self.options.direct_tag,
+        if self.options.default:
+            rules.append(dict(outboundTag=self.options.default,
                               type='field',
                               port='0-65535'))
         data = {
