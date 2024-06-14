@@ -23,14 +23,10 @@ IP-CIDR,127.0.0.0/8,DIRECT
 IP-CIDR,100.64.0.0/10,DIRECT
 '''
 
-_DESC = '''Surge是基于(Network Extension)API开发的一款网络调试工具, 亦可做为代理使用
-以下APP也可使用该格式规则:
-    * Shadowrocket
-'''
-_PROXY_POLICY = 'PROXY'
+_DEF_POLICY = 'PROXY'
 
 
-@formater('surge', desc=_DESC, order=90)
+@formater('surge', desc='Surge代理规则', order=90)
 class FmtSurge(FmtBase):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -40,8 +36,8 @@ class FmtSurge(FmtBase):
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
-        cls.register_option('policy', default=_PROXY_POLICY,
-                            metavar='POLICY', help=f'代理规则策略: 默认: {_PROXY_POLICY}')
+        cls.register_option('policy', default=_DEF_POLICY,
+                            metavar='POLICY', help=f'代理规则策略: 默认: {_DEF_POLICY}')
         cls.register_option('direct', default=False,
                             action='store_true', help='输出直连规则，默认仅输出代理规则')
         cls.register_option('set', default=False,
