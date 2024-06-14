@@ -307,13 +307,15 @@ class Generator(object):
         version = get_version()
         proj_url = get_project_url()
 
+        gfwlist_detail = f'{modified} {gfwlist_from}' if modified != '-' else '-'
+
         replacements = {'__VERSION__': version,
                         '__GENERATED__': generated,
                         '__MODIFIED__': modified,
                         '__GFWLIST_FROM__': gfwlist_from,
                         '__GENPAC__': f'genpac {version} {proj_url}',
                         '__PROJECT_URL__': proj_url,
-                        '__GFWLIST_DETAIL__': f'{modified} From {gfwlist_from}'}
+                        '__GFWLIST_DETAIL__': gfwlist_detail}
 
         content = self.formater.generate(replacements)
 

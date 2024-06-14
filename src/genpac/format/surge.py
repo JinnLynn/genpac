@@ -1,20 +1,15 @@
+from .base import formater, FmtBase, TPL_LEAD_COMMENT
 
-from .base import formater, FmtBase
-
-_TPL = '''
-#! __GENPAC__
-#! Generated: __GENERATED__
-#! GFWList: __GFWLIST_DETAIL__
+_TPL = f'''
+{TPL_LEAD_COMMENT}
 [Rule]
 __RULES__
 
 FINAL,DIRECT
 '''
 
-_TPL_SET = '''
-#! __GENPAC__
-#! Generated: __GENERATED__
-#! GFWList: __GFWLIST_DETAIL__
+_TPL_SET = f'''
+{TPL_LEAD_COMMENT}
 __RULES__
 '''
 
@@ -37,10 +32,10 @@ _PROXY_POLICY = 'PROXY'
 
 @formater('surge', desc=_DESC, order=90)
 class FmtSurge(FmtBase):
-    _default_tpl = _TPL
-
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+
+        self._default_tpl = _TPL_SET if self.options.set else _TPL
 
     @classmethod
     def prepare(cls, parser):
@@ -63,8 +58,5 @@ class FmtSurge(FmtBase):
         for d in self.gfwed_domains:
             rules.append(f'DOMAIN-SUFFIX,{d},{self.options.policy}')
 
-        replacements.update({'__RULES__': '\n'.join(rules)})
-        tpl = _TPL_SET if self.options.set else _TPL
-        tpl = tpl.lstrip()
-
-        return self.replace(tpl, replacements)
+        replacements.update(__RULES__='\n'.join(rules))
+        return super().generate(replacements)

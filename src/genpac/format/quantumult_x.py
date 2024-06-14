@@ -1,27 +1,23 @@
-from .base import formater, FmtBase
-
-_TPL = '''
-#! __GENPAC__
-#! Generated: __GENERATED__
-#! GFWList Last-Modified: __MODIFIED__
-__GFWED_RULES__
-final, direct
-'''
+from .base import formater, FmtBase, TPL_LEAD_COMMENT
 
 
 @formater('qtx', desc='Quantumult X 的分流规则')
 class FmtQuantumultX(FmtBase):
-    _default_tpl = _TPL
+    _default_tpl = f'{TPL_LEAD_COMMENT}\n__RULES__\n'
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-    def generate(self, replacements):
-        def to_rule(r, a):
-            return f'HOST-SUFFIX,{r},{a}'
+    @classmethod
+    def prepare(cls, parser):
+        super().prepare(parser)
+        cls.register_option('no-final', default=False,
+                            action='store_true', help='不包含FINAL规则')
 
-        # direct_rules = [to_rule(r, 'direct') for r in self.ignored_domains]
-        gfwed_rules = [to_rule(r, 'proxy') for r in self.gfwed_domains]
-        # rules = gfwed_rules + direct_rules
-        replacements.update({'__GFWED_RULES__': '\n'.join(gfwed_rules)})
-        return self.replace(self.tpl, replacements)
+    def generate(self, replacements):
+        rules = [f'HOST-SUFFIX,{r},PROXY' for r in self.gfwed_domains]
+        if not self.options.no_final:
+            rules.append('\nFINAL,DIRECT')
+
+        replacements.update(__RULES__='\n'.join(rules))
+        return super().generate(replacements)

@@ -2,7 +2,7 @@ import json
 import yaml
 
 from ..util import conv_lower
-from .base import formater, FmtBase
+from .base import formater, FmtBase, TPL_LEAD_COMMENT
 
 
 # 更合乎习惯的list缩进
@@ -13,7 +13,8 @@ class Dumper(yaml.Dumper):
 
 
 V2RAY_DUMPER = {'json': lambda d: json.dumps(d, indent=4),
-                'yaml': lambda d: yaml.dump(d, Dumper=Dumper, indent=2, sort_keys=False)}
+                'yaml': lambda d: f'{TPL_LEAD_COMMENT}\n' + yaml.dump(d, Dumper=Dumper, indent=2, sort_keys=False)}
+
 _DEF_PROXY_TAG = 'proxy'
 _DEF_FORMAT = list(V2RAY_DUMPER.keys())[0]
 
@@ -42,7 +43,8 @@ class FmtV2Ray(FmtBase):
             return False
         return super().pre_generate()
 
-    def generate(self, replacements):
+    @property
+    def tpl(self):
         rules = []
         if self.options.proxy_tag:
             rules.append(dict(outboundTag=self.options.proxy_tag,

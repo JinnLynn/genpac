@@ -195,13 +195,15 @@ def get_resource_data(path):
         return fp.read()
 
 
-def replace_all(text, replacements):
+def replace_all(text, replacements, **kwargs):
     def one_xlat(match):
         return replacements[match.group(0)]
 
-    if not replacements:
+    if not replacements and not kwargs:
         return text
 
+    replacements = replacements or {}
+    replacements.update(**kwargs)
     replacements = {k: str(v) for k, v in replacements.items()}
 
     rx = re.compile('|'.join(map(re.escape, replacements)))

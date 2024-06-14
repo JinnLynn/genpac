@@ -14,12 +14,12 @@ _IP_FAMILIES = ['4', '6', 'all']
 # REF: https://github.com/gaoyifan/china-operator-ip/
 #      https://github.com/sapics/ip-location-db/tree/main/geolite2-country
 _IP_DATA_ASN = {
-    4: 'https://github.com/gaoyifan/china-operator-ip/raw/ip-lists/china.txt',
-    6: 'https://github.com/gaoyifan/china-operator-ip/raw/ip-lists/china6.txt'
+    4: 'https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china.txt',
+    6: 'https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china6.txt'
 }
 _IP_DATA_GEOLITE2 = {
-    4: 'https://github.com/sapics/ip-location-db/raw/main/geolite2-country/geolite2-country-ipv4.csv',
-    6: 'https://github.com/sapics/ip-location-db/raw/main/geolite2-country/geolite2-country-ipv6.csv'
+    4: 'https://raw.githubusercontent.com/sapics/ip-location-db/main/geolite2-country/geolite2-country-ipv4.csv',
+    6: 'https://raw.githubusercontent.com/sapics/ip-location-db/main/geolite2-country/geolite2-country-ipv6.csv'
 }
 
 
@@ -60,12 +60,8 @@ class FmtIP(FmtBase):
                             help=f'IP类型 可选: {families} 默认: 4')
 
     def generate(self, replacements):
-        cc = self.options.cc
-
-        ip4s, ip6s = self._generate_by_cc(cc)
-
+        ip4s, ip6s = self._generate_by_cc(self.options.cc)
         output = ip4s + ip6s
-
         return '\n'.join([str(i) for i in output])
 
     @property

@@ -13,6 +13,15 @@ def formater(name, **options):
     return decorator
 
 
+def _lead_comment_tpl(prefix='#'):
+    return (f'{prefix}! __GENPAC__\n'
+            f'{prefix}! Generated: __GENERATED__\n'
+            f'{prefix}! GFWList: __GFWLIST_DETAIL__')
+
+
+TPL_LEAD_COMMENT = _lead_comment_tpl()
+
+
 class _FmtOption(Namespace):
     def __init__(self, original, prefix):
         self._prefix = prefix
@@ -67,13 +76,13 @@ class FmtBase(object):
     def tpl(self):
         template = self.options._original.template
         tpl = TemplateFile(template) if template else self._default_tpl
-        return str(tpl).strip('\n') + '\n'
+        return str(tpl).strip('\n') + '\n' if tpl else ''
 
     def error(self, msg):
         error(f'{self._name.upper()}格式生成错误: {msg}')
 
-    def replace(self, text, replacements):
-        return replace_all(text, replacements)
+    def replace(self, text, replacements, **kwargs):
+        return replace_all(text, replacements, **kwargs)
 
     def fetch(self, url):
         return self.generator.fetch(url)

@@ -1,21 +1,17 @@
 from ..util import Namespace
-from .base import formater, FmtBase
+from .base import formater, FmtBase, TPL_LEAD_COMMENT
 from .ip import FmtIP
 
-_TPL_DEF = '''
-#! __GENPAC__
-#! Generated: __GENERATED__
-#! GFWList: __GFWLIST_DETAIL__
+_TPL_DEF = f'''
+{TPL_LEAD_COMMENT}
 [bypass_all]
 
 [proxy_list]
 __GFWED_RULES__
 '''
 
-_TPL_GEOCN = '''
-#! __GENPAC__
-#! Generated: __GENERATED__
-#! GFWList: __GFWLIST_DETAIL__
+_TPL_GEOCN = f'''
+{TPL_LEAD_COMMENT}
 [proxy_all]
 
 [bypass_list]

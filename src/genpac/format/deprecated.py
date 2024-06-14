@@ -2,11 +2,11 @@
 from base64 import b64decode
 from collections import OrderedDict
 
-from .base import formater, FmtBase
+from .base import formater, FmtBase, TPL_LEAD_COMMENT
 
 # == Wingy ==
-_TPL_WINGY = '''
-#! __GENPAC__
+_TPL_WINGY = f'''
+{TPL_LEAD_COMMENT}
 version: 2
 adapter:
 __ADAPTER__
@@ -25,8 +25,6 @@ rule:
       adapter: __RULE_ADAPTER_ID__
       criteria:
 __CRITERIA__
-#! Generated: __GENERATED__
-#! GFWList: __MODIFIED__ From __GFWLIST_FROM__
 '''
 
 
@@ -107,8 +105,8 @@ class FmtWingy(FmtBase):
 
 
 # == Potatso ==
-_TPL_POTATSO = '''
-#! __GENPAC__
+_TPL_POTATSO = f'''
+{TPL_LEAD_COMMENT}
 [RULESET.gfwed]
 name = "GFWed rules"
 rules = [
@@ -120,8 +118,6 @@ name = "Direct rules"
 rules = [
 __DIRECT_RULES__
 ]
-#! Generated: __GENERATED__
-#! GFWList: __GFWLIST_DETAIL__
 '''
 
 

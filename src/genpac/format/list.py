@@ -1,12 +1,9 @@
 from ..util import conv_bool, b64encode
-from .base import formater, FmtBase
+from .base import formater, FmtBase, _lead_comment_tpl
 
-_TPL = '''
+_TPL = f'''
 [AutoProxy 0.2.9]
-! __GENPAC__
-! Generated: __GENERATED__
-! GFWList Last-Modified: __MODIFIED__
-! GFWList From: __GFWLIST_FROM__
+{_lead_comment_tpl(prefix='')}
 __GFWED_DOMAINS__
 '''
 
