@@ -9,6 +9,9 @@ on:
           - master
         default: "dev"
         required: true
+  push:
+    branches:
+      - dev
 env:
   platform: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6
 defaults:
@@ -42,7 +45,7 @@ jobs:
             -t ${{ secrets.DOCKER_USER }}/genpac \
             -t ${{ secrets.DOCKER_USER }}/genpac:${{steps.get_version.outputs.result}} \
             .
-      - if: ${{ inputs.branch == 'dev' }}
+      - if: ${{ inputs.branch == 'dev' || github.ref_name == 'dev' }}
         name: Build Docker From dev
         run: |
           docker buildx build --push --platform "${{ env.platform }}" \
