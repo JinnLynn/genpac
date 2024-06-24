@@ -170,17 +170,17 @@ POTATSO:
 
 建议通过Docker部署: `docker pull jinnlynn/genpac:dev`
 
-配置参考见[sample/server/config.ini][]
+配置参考见[example/server/config.ini][]
 
 ## 配置文件
 
-支持通过 `--config` 参数读入配置信息，配置文件书写方法可参考[sample/config.ini][]
+支持通过 `--config` 参数读入配置信息，配置文件书写方法可参考[example/config.ini][]
 
 ## 自定义规则
 
 支持通过 `--user-rule` 自定义单个规则或 `--user-rule-from` 读入自定义规则文件，这两个参数均可重复使用。
 
-自定义规则文件可参考[sample/user-rules.txt][]
+自定义规则文件可参考[example/user-rules.txt][]
 
 自定义规则的语法与gfwlist相同，使用AdBlock Plus过滤规则( http://adblockplus.org/en/filters )，简述如下:
 
@@ -275,9 +275,9 @@ genpac --format=surge --surge-policy PROXY
 ```
 
 [gfwlist]:                  https://github.com/gfwlist/gfwlist
-[sample/config.ini]:        https://github.com/JinnLynn/genpac/blob/master/sample/config.ini
-[sample/user-rules.txt]:    https://github.com/JinnLynn/genpac/blob/master/sample/user-rules.txt
-[sample/server/config.ini]: https://github.com/JinnLynn/genpac/blob/master/sample/server/config.ini
+[example/config.ini]:        https://github.com/JinnLynn/genpac/blob/master/example/config.ini
+[example/user-rules.txt]:    https://github.com/JinnLynn/genpac/blob/master/example/user-rules.txt
+[example/server/config.ini]: https://github.com/JinnLynn/genpac/blob/master/example/server/config.ini
 [pypi]:             https://pypi.python.org/pypi/genpac
 [pypi-version]:     https://img.shields.io/pypi/v/genpac
 [pypi-license]:     https://img.shields.io/pypi/l/genpac
