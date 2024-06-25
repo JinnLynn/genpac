@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.j2" %}
 {% block content %}
 <div id="head"><h1>GenPAC 测试</h1></div>
 <div id="content">
@@ -68,11 +68,11 @@
             $.post('{{ url_for(".view_api_test", _external=True) }}', {url: url, output: 'html'}, function(data){
                 console.log(data);
 
-                if (data.code != 0) 
+                if (data.code != 0)
                     return alert('测试失败:' + data.msg);
 
                 var ret = $('<div />').addClass('result-single');
-                
+
                 if (data.data.d && data.data.p)
                     ret.addClass('result-both');
                 else if (data.data.p)
@@ -84,7 +84,7 @@
             });
         };
 
-        
+
 
         var fetchIP = function() {
             // 设置超时

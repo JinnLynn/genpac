@@ -128,7 +128,7 @@ def powered_by():
 
 @main.route('/', methods=['GET'])
 def index():
-    return render_template('index.html',
+    return render_template('index.j2',
                            ip_srvs=current_app.config.options.ip_srvs)
 
 
@@ -158,7 +158,7 @@ def rules():
     except Exception:
         pass
 
-    return render_template('rules.html',
+    return render_template('rules.j2',
                            content=content,
                            token=request.values.get('token', ''))
 
