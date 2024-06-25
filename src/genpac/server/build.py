@@ -5,7 +5,8 @@ import threading
 from glob import glob
 
 from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
+from watchdog.events import FileSystemEventHandler, \
+    EVENT_TYPE_CLOSED, EVENT_TYPE_OPENED
 
 from .. import GenPAC, Generator
 from ..util import logger
@@ -54,7 +55,7 @@ class WatchHandler(FileSystemEventHandler):
         self.app = app
 
     def on_any_event(self, event):
-        if event.is_directory:
+        if event.is_directory or event.event_type in [EVENT_TYPE_OPENED, EVENT_TYPE_CLOSED]:
             return None
 
         logger.debug(f'File Event[{event.event_type}]: {event.src_path}')
@@ -78,9 +79,6 @@ def watch_process(app):
 # REF:
 # https://stackoverflow.com/questions/32059634/python3-threading-with-uwsgi
 def start_watch(app):
-    def _func():
-        t = threading.Thread(target=watch_process, args=[app])
-        t.setDaemon(True)
-        t.start()
-        return t
-    return _func() if not app.debug else app.before_first_request_funcs.append(_func)
+    thread = threading.Thread(target=watch_process, args=[app], daemon=True)
+    thread.start()
+    return thread

@@ -2,13 +2,12 @@ import os
 from os import path
 import time
 from functools import wraps
-from urllib.parse import urlencode
+from urllib.parse import urlencode, parse_qsl
 from zlib import adler32
 from io import BytesIO
 
 from flask import current_app, Response, request
 from flask import render_template, jsonify, send_file as _send_file
-from werkzeug.urls import url_decode
 from werkzeug.exceptions import NotFound
 
 from .core import main
@@ -19,7 +18,7 @@ from ..util import surmise_domain, replace_all, logger, hash_dict
 
 def query2replacements(query):
     if isinstance(query, str):
-        query = url_decode(query)
+        query = dict(parse_qsl(query))
     replacements = {}
     for k, v in query.items():
         if k.startswith('__') and k.endswith('__'):

@@ -9,19 +9,20 @@ authors = [
 ]
 requires-python = ">=3.8"
 dependencies = [
-    "requests[socks]==2.31.0",
-    "publicsuffixlist",
-    "PyYAML==6.0.1",
-    "netaddr==1.3.0"
+    "requests[socks]>=2.32.3",
+    "publicsuffixlist>=1.0.0",
+    "PyYAML>=6.0.1",
+    "netaddr>=1.3.0"
 ]
 optional-dependencies.server = [
-    "Werkzeug==2.2.2",
-    "Flask==2.2.2",
-    "Flask-APScheduler==1.12.4",
-    "watchdog==2.1.9"
+    "Flask>=3.0.3",
+    "Flask-APScheduler>=1.13.1",
+    "watchdog>=4.0.0"
 ]
 optional-dependencies.dev = [
-    "tox==4.15.1",
+    "tox>=4.0.0",
+    "build",
+    "twine",
     "flake8",
     "pytest",
     "pytest-cov",
