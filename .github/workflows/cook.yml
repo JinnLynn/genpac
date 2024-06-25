@@ -4,15 +4,46 @@ on:
   schedule:
     - cron: "0 */12 * * *"
   push:
-
+    branches:
+      - master
+      - dev
 jobs:
-  master:
-    if: ${{ github.ref_name == 'master' || github.event.schedule }}
-    uses: ./.github/workflows/cook-branch.yml
-    with:
-      branch: master
-  dev:
-    if: ${{ github.ref_name == 'dev' || github.event.schedule }}
-    uses: ./.github/workflows/cook-branch.yml
-    with:
-      branch: dev
+  cook:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    strategy:
+      max-parallel: 1
+      matrix:
+        branch: [master, dev]
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Checkout Branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.branch }}
+          path: src
+      - name: Checkout Branch cooked
+        uses: actions/checkout@v4
+        with:
+          ref: cooked
+          path: cooked
+      - name: fire
+        id: fire
+        run: |
+          pip install ./src/ && \
+          mkdir -p ./cooked/${{ matrix.branch }} && \
+          cd ./cooked/${{ matrix.branch }} && \
+          rm -rf * && \
+          genpac --config=../../src/example/config.ini && \
+          ls -lh ./ && \
+          echo "gen_time=$(date '+%Y-%m-%d %H:%M:%S %z')" >>$GITHUB_OUTPUT
+      - name: commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: ./cooked
+          commit_message: update ${{ steps.fire.outputs.gen_time }}
+          add_options: '-A'
+          push_options: '--force'
