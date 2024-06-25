@@ -1,6 +1,6 @@
 # GenPAC
 
-[![pypi-version]][pypi] [![pypi-license]][pypi] [![dev-version]](https://github.com/JinnLynn/genpac/tree/dev) [![build](https://github.com/JinnLynn/genpac/actions/workflows/build.yml/badge.svg)](https://github.com/JinnLynn/genpac/actions/workflows/build.yml) [![cook](https://github.com/JinnLynn/genpac/actions/workflows/cook.yml/badge.svg)](https://github.com/JinnLynn/genpac/actions/workflows/cook.yml)
+[![pypi-version]][pypi] ![pypi-pyversions] [![pypi-license]][pypi] [![dev-version]](https://github.com/JinnLynn/genpac/tree/dev) [![build](https://github.com/JinnLynn/genpac/actions/workflows/build.yml/badge.svg)](https://github.com/JinnLynn/genpac/actions/workflows/build.yml) [![cook](https://github.com/JinnLynn/genpac/actions/workflows/cook.yml/badge.svg)](https://github.com/JinnLynn/genpac/actions/workflows/cook.yml)
 
 基于[gfwlist][]的多种代理软件配置文件生成工具，支持自定义规则
 
@@ -12,13 +12,13 @@
 
 ```shell
 # 安装或更新
-pip install -U genpac
+pip install genpac
 # 安装开发版本
-pip install -U https://github.com/JinnLynn/genpac/archive/dev.tar.gz
+pip install https://github.com/JinnLynn/genpac/archive/dev.tar.gz
 
 # 安装服务器组件
-pip install -U genpac[server]
-pip install -U "genpac[server] @ https://github.com/JinnLynn/genpac/archive/dev.tar.gz"
+pip install genpac[server]
+pip install "genpac[server] @ https://github.com/JinnLynn/genpac/archive/dev.tar.gz"
 
 # 卸载
 pip uninstall genpac
@@ -90,7 +90,7 @@ DNSMASQ:
                         如: GFWLIST,GFWLIST6
   --dnsmasq-nftset NFTSET
                         使用ntfset, 允许重复或使用`,`分割多个,
-                        如: 4#GFWLIST,6#GFWLIST6
+                        如: 4#inet#TABLE#GFWLIST,6#inet#TABLE#GFWLIST6
 
 V2RAY:
   V2Ray的路由规则
@@ -166,9 +166,22 @@ POTATSO:
 
 ### web服务形式
 
-支持以web形式自动生成及输出，需先安装服务器组件`pip install genpac[server]`。
+支持以web形式自动生成及输出:
 
-建议通过Docker部署: `docker pull jinnlynn/genpac:dev`
+```shell
+# 安装服务组件
+pip install genpac[server]
+pip install "genpac[server] @ https://github.com/JinnLynn/genpac/archive/dev.tar.gz"
+
+# 本地运行
+genpac.server --config="/PATH/TO/CONFIG/FILE"
+
+# Docker 运行
+# 测试
+docker run --rm -p 8000:8000 jinnlynn/genpac
+# 自定义配置文件
+docker run --rm -p 8000:8000 -v /PATH/TO/CONFIG/FILE:/app/etc/config.ini jinnlynn/genpac
+```
 
 配置参考见[example/server/config.ini][]
 
@@ -221,10 +234,10 @@ POTATSO:
 
 ```shell
 # 从gfwlist生成代理信息为SOCKS5 127.0.0.1:1080的PAC文件
-genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080"
+genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080; DIRECT"
 
 # 从~/config.ini读取配置生成
-genpac --config-from=~/config.ini
+genpac --config=~/config.ini
 
 # PAC格式 压缩
 genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" --pac-compress
@@ -233,8 +246,7 @@ genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" --pac-compress
 genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" --pac-precise
 
 # PAC格式 自定义规则
-genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" "SOCKS5 127.0.0.1:1080" --user-rule="||example.com" --user-rule-from=~/user-rule.txt
-genpac --config-from=~/config.ini --pac-proxy="SOCKS5 127.0.0.1:1080" --user-rule="||example.com" --user-rule-from=~/user-rule.txt
+genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" --user-rule="||example.com" --user-rule-from=~/user-rule.txt
 
 # PAC格式 多个自定义规则文件
 genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" --user-rule="||example.com" --user-rule="||example2.com" --user-rule-from=~/user-rule.txt,~/user-rule2.txt
@@ -253,12 +265,12 @@ genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" --gfwlist-url=- --user-r
 
 # DNSMASQ
 genpac --format=dnsmasq --dnsmasq-dns="127.0.0.1#5353" --dnsmasq-ipset="SET_NAME"
-genpac --format=dnsmasq --dnsmasq-dns="127.0.0.1#5353" --dnsmasq-nftset="4#SET,6#SET6"
-genpac --format=dnsmasq --dnsmasq-nftset="4#SET,6#SET6"
+genpac --format=dnsmasq --dnsmasq-dns="127.0.0.1#5353" --dnsmasq-nftset="4#inet#TABLE#GFWLIST,6#inet#TABLE#GFWLIST6"
+genpac --format=dnsmasq --dnsmasq-nftset="4#inet#TABLE#GFWLIST,6#inet#TABLE#GFWLIST6"
 
 # V2RAY
-genpac --format=v2ray --v2ray-proxy-tag="proxy" --v2ray-proxy-tag="direct"
 genpac --format=v2ray --v2ray-proxy-tag="proxy"
+genpac --format=v2ray --v2ray-proxy-tag="proxy" --v2ray-direct-tag="direct"
 genpac --format=v2ray --v2ray-proxy-tag="proxy" --v2ray-format="yaml"
 
 # IP
@@ -266,10 +278,10 @@ genpac --format=ip --ip-cc="cn" --ip-family="all"
 genpac --format=ip --ip-cc="us" --ip-family="6"
 
 # Shadowrocket
-genpac --format=shadowrocket --shadowrocket-policy PROXY
+genpac --format=shadowrocket --shadowrocket-policy="PROXY"
 
 # Surge
-genpac --format=surge --surge-policy PROXY
+genpac --format=surge --surge-policy="PROXY"
 
 # ...
 ```
@@ -281,4 +293,7 @@ genpac --format=surge --surge-policy PROXY
 [pypi]:             https://pypi.python.org/pypi/genpac
 [pypi-version]:     https://img.shields.io/pypi/v/genpac
 [pypi-license]:     https://img.shields.io/pypi/l/genpac
-[dev-version]:      https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fgithub.com%2FJinnLynn%2Fgenpac%2Fraw%2Fdev%2Fpyproject.toml&query=%24.project.version&style=flat&label=dev
+[pypi-pyversions]:  https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fgithub.com%2FJinnLynn%2Fgenpac%2Fraw%2Fmaster%2Fpyproject.toml
+
+[dev-version]:      https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fgithub.com%2FJinnLynn%2Fgenpac%2Fraw%2Fdev%2Fpyproject.toml&query=%24.project.version&style=flat&label=dev&prefix=v
+[gh-dev]:
