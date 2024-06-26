@@ -18,7 +18,7 @@ _DEFAULT_OPTIONS = Namespace(
     config_file=None, auth_token=None,
     autobuild_interval=86400, build_on_start=True,
     watch_enabled=True, watch_files=set(), target_path=None,
-    server_rule_enabled=True, pacs={}, shortener={},
+    server_rule_enabled=True, shortener={},
     ip_srvs={'inland': 'https://4.ipw.cn',
              'abroad': 'https://4.icanhazip.com',
              'gfwed': '//jeekerip.appspot.com'},
@@ -130,13 +130,10 @@ def load_config(app, config_file):
     options.ip_srvs['abroad'] = _val('ip.abroad', options.ip_srvs['abroad'])
     options.ip_srvs['gfwed'] = _val('ip.gfwed', options.ip_srvs['gfwed'])
 
-    cfg = config.section('server-pac')
-    for k in cfg.keys():
-        options.pacs[k] = cfg[k].strip('"')
-
-    cfg = config.section('server-shortener')
-    for k in cfg.keys():
-        options.shortener[k] = cfg[k].strip('"')
+    cfg = config.sections('server-shortener', 'name')
+    for k in cfg:
+        if k.get('name'):
+            options.shortener[k['name']] = k
 
     # 如果允许监控文件更改
     if options.watch_enabled:

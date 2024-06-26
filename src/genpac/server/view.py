@@ -13,7 +13,7 @@ from werkzeug.exceptions import NotFound
 from .core import main
 
 from ..util import get_version, get_project_url
-from ..util import surmise_domain, replace_all, logger, hash_dict
+from ..util import surmise_domain, replace_all, logger, hash_dict, abspath
 
 
 def query2replacements(query):
@@ -35,9 +35,7 @@ def send_file(filename, replacements={}, mimetype='text/plain'):
     if filename.startswith('_'):
         raise NotFound()
 
-    if not path.isabs(filename):
-        filename = path.abspath(path.join(
-            current_app.config.options.target_path, filename))
+    filename = abspath(filename, base=current_app.config.options.target_path)
 
     if not path.isfile(filename):
         raise NotFound()
@@ -132,14 +130,6 @@ def index():
                            ip_srvs=current_app.config.options.ip_srvs)
 
 
-@main.route('/pac/<location>/', methods=['GET'])
-@authorized
-def get_pac(location):
-    proxy = current_app.config.options.pacs.get(location) or location
-    return send_file('pac.tpl', replacements={'__PROXY__': proxy},
-                     mimetype='application/javascript')
-
-
 @main.route('/file/<filename>', methods=['GET'])
 @authorized
 def get_file(filename):
@@ -149,7 +139,7 @@ def get_file(filename):
 @main.route('/rules/', methods=['GET'])
 def rules():
     if not current_app.config.options.server_rule_enabled:
-        return current_app.make_response(('Not Found.', 404))
+        return NotFound()
 
     content = ''
     try:
@@ -163,20 +153,17 @@ def rules():
                            token=request.values.get('token', ''))
 
 
-@main.route('/s/<code>', methods=['GET'])
+@main.route('/s/<string:code>', methods=['GET'])
 @authorized
 def shortener(code):
     try:
-        code_cfg = current_app.config.options.shortener.get(code)
-        cfgs = code_cfg.split(' ')
-        cfgs.append('')
-        filename, query = cfgs[0:2]
+        cfg = current_app.config.options.shortener.get(code)
+        source = cfg.get('source')
     except Exception:
         logger.warning(f'shortener[{code}] ERROR:', exc_info=True)
-        return current_app.make_response(('', 404))
+        return NotFound()
 
-    rms = query2replacements(query)
-    return send_file(filename, replacements=rms)
+    return send_file(source, replacements=cfg)
 
 
 @main.route('/list/', methods=['GET'])
