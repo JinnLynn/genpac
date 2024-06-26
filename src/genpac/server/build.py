@@ -21,7 +21,7 @@ def build(app):
         logger.info('GenPAC rebuild...')
         options = app.config.options
 
-        for f in glob(os.path.join(options.target_path, '*')):
+        for f in glob(os.path.join(options.target, '*')):
             if f in options._private.protected_files:
                 continue
             try:
@@ -48,8 +48,7 @@ def build(app):
             logger.error('GenPAC build fail.', exc_info=True)
         else:
             # 删除hash文件
-            for hashfile in glob(os.path.join(options.target_path,
-                                              '*.hash')):
+            for hashfile in glob(os.path.join(options.target, '*.hash')):
                 os.remove(hashfile)
             logger.info('GenPAC build success. [%.3fs]', time.time() - start_ts)
             app.extensions['genpac'].domains_outdate = True

@@ -5,7 +5,7 @@ from .. import GenPAC, formater, FmtBase
 
 def init_genpac(options):
     gp = GenPAC(config_file=options.config_file)
-    gp.parse_options(cli=False, workdir=options.target_path)
+    gp.parse_options(cli=False, workdir=options.target)
     return gp
 
 

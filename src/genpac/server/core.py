@@ -17,7 +17,7 @@ _SERVER_RULE_FILENAME = '_server_rules.txt'
 _DEFAULT_OPTIONS = Namespace(
     config_file=None, auth_token=None,
     autobuild_interval=86400, build_on_start=True,
-    watch_enabled=True, watch_files=set(), target_path=None,
+    watch_enabled=True, watch_files=set(), target=None,
     server_rule_enabled=True, shortener={},
     ip_srvs={'inland': 'https://4.ipw.cn',
              'abroad': 'https://4.icanhazip.com',
@@ -113,13 +113,13 @@ def load_config(app, config_file):
     _update('watch_files', conv_list, conv_path, set,
             key='watch-extra-files')
 
-    # 默认target_path与配置文件同目录
-    _update('target_path', conv_path,
+    # 默认target与配置文件同目录
+    _update('target', conv_path,
             default=os.path.dirname(options.config_file))
-    prepare_target(options.target_path)
+    prepare_target(options.target)
 
     _update('server_rule_enabled', conv_bool)
-    server_rule_file = os.path.join(options.target_path, _SERVER_RULE_FILENAME)
+    server_rule_file = os.path.join(options.target, _SERVER_RULE_FILENAME)
     options._private.server_rule_file = server_rule_file
     options._private.protected_files.add(server_rule_file)
     if options.server_rule_enabled:
@@ -155,12 +155,12 @@ def load_config(app, config_file):
 def prepare_target(target):
     if os.path.exists(target):
         if not os.path.isdir(target):
-            exit_error(f'target_path`{target}`必须是一个目录')
+            exit_error(f'target`{target}`必须是一个目录')
     else:
         try:
             os.makedirs(target)
         except Exception as e:
-            exit_error(f'创建target_path`{target}`失败: {e}')
+            exit_error(f'创建target`{target}`失败: {e}')
 
 
 def prepare_server_rule(file):

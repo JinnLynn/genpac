@@ -48,7 +48,7 @@ def send_file(filename, replacements={}, raw=False):
     if filename.startswith('_'):
         raise NotFound()
 
-    filename = abspath(filename, base=current_app.config.options.target_path)
+    filename = abspath(filename, base=current_app.config.options.target)
 
     if not path.isfile(filename):
         raise NotFound()
