@@ -1,5 +1,4 @@
 import os
-from os import getcwd
 import sys
 import codecs
 import re
@@ -137,7 +136,7 @@ def b64decode(s):
 
 
 def abspath(path, base=None):
-    base = base or getcwd()
+    base = base or os.getcwd()
     if not path:
         return base
     path = os.path.expandvars(os.path.expanduser(path))
@@ -231,11 +230,11 @@ def conv_lower(obj):
     return obj
 
 
-def conv_path(obj):
+def conv_path(obj, base=None):
     if isinstance(obj, str):
-        return abspath(obj)
+        return abspath(obj, base=base)
     if isinstance(obj, list):
-        return [abspath(p) for p in obj]
+        return [abspath(p, base=base) for p in obj]
     return obj
 
 

@@ -2,15 +2,15 @@ import os
 import copy
 import argparse
 
-from flask import Flask, Blueprint, current_app
+from flask import Flask, Blueprint
 from flask_apscheduler import APScheduler
 
-from .. import GenPAC, formater, FmtBase
 from ..config import Config
 from ..util import get_version
 from ..util import Namespace
 from ..util import exit_error, FatalError, mktemp
 from ..util import logger, conv_bool, conv_list, conv_path
+from .base import init_genpac
 from .build import start_watch, autobuild_task
 
 _SERVER_RULE_FILENAME = '_server_rules.txt'
@@ -140,14 +140,13 @@ def load_config(app, config_file):
 
     # 如果允许监控文件更改
     if options.watch_enabled:
-        gp = GenPAC(config_file=options.config_file)
+        gp = init_genpac(options)
         # 添加config_file到监控列表
         options.watch_files.add(options.config_file)
         if options.server_rule_enabled:
             # 添加服务器上的规则文件
             options.watch_files.add(server_rule_file)
         # 添加user_rule_from到监控文件列表
-        gp.parse_options(cli=False)
         for job in gp.walk_jobs():
             options._private.protected_files |= set([job.output, job.gfwlist_local, job.gfwlist_decoded_save])
             options.watch_files.update(job.user_rule_from)
@@ -175,23 +174,6 @@ def prepare_server_rule(file):
             fp.write('# GenPAC Server rules\n\n')
     except Exception as e:
         exit_error(f'创建服务端规则文件`{file}`失败: {e}')
-
-
-@formater('genpac-server-domains')
-class FmtDomains(FmtBase):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-    def generate(self, replacements):
-        gfwed = [f'p,{s}' for s in self.gfwed_domains]
-        ignored = [f'd,{s}' for s in self.ignored_domains]
-        return '\n'.join(gfwed + ignored).strip()
-
-    def post_generate(self):
-        try:
-            current_app.extensions['genpac'].domains_outdate = True
-        except Exception:
-            pass
 
 
 def run():

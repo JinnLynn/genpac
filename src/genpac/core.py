@@ -108,7 +108,7 @@ class GenPAC(object):
                         metavar='FMT', type=lambda s: s.lower(), choices=GenPAC._formaters.keys(),
                         help='生成格式, 只有指定了格式, 相应格式的参数才可用\n'
                              f'可选: {",".join(GenPAC._formaters.keys())}')
-        register_option(group, options, 'output', '-o',
+        register_option(group, options, 'output', '-o', conv=conv_path,
                         metavar='FILE',
                         help='输出到文件, 无此参数或FILE为-, 则输出到stdout')
         register_option(group, options, 'config', '-c', ignore_option=True,
@@ -155,6 +155,8 @@ class GenPAC(object):
                         action='store_true',
                         help='获取外部文件时是否使用If-None-Match头进行缓存检查')
 
+        register_option(group, options, 'workdir', default=None,
+                        metavar='DIR', help='工作目录')
         register_option(group, options, '_order', conv=int, default=0)
 
         self.__class__.walk_formaters('prepare', parser)
@@ -193,13 +195,13 @@ class GenPAC(object):
             v = v.strip(' \'\t"')
 
         for c in conv:
-            v = c(v)
+            v = c(v, base=cfgs.get('workdir', None)) if c.__name__ == 'conv_path' else c(v)
 
         return dest, v
 
-    def parse_options(self, cli=True):
+    def parse_options(self, cli=True, **kwargs):
         parser, opts = self.init_options()
-        args = parser.parse_args() if cli else Namespace()
+        args = parser.parse_args() if cli else Namespace(**kwargs)
         self.init_dest = args.init if hasattr(args, 'init') else None
         config_file = args.config if hasattr(args, 'config') else \
             self.config_file
@@ -210,6 +212,8 @@ class GenPAC(object):
         self.clear_jobs()
 
         job_cfgs, common_cfgs = self.read_config(config_file)
+        if hasattr(args, 'workdir'):
+            common_cfgs.update(workdir=args.workdir)
 
         if not hasattr(args, 'format') and len(job_cfgs) == 1 and job_cfgs[0] == {}:
             raise FatalError('没有指定生成格式，检查命令参数--format或配置项format')
