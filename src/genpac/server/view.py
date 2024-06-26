@@ -5,6 +5,7 @@ from functools import wraps
 from urllib.parse import urlencode, parse_qsl
 from zlib import adler32
 from io import BytesIO
+import mimetypes
 
 from flask import current_app, Response, request
 from flask import render_template, jsonify, send_file as _send_file
@@ -14,6 +15,11 @@ from .core import main
 
 from ..util import get_version, get_project_url
 from ..util import surmise_domain, replace_all, logger, hash_dict, abspath
+
+
+MT_PAC = 'application/x-ns-proxy-autoconfig'
+MT_TXT = 'text/plain'
+mimetypes.add_type(MT_PAC, '.pac')
 
 
 def query2replacements(query):
@@ -30,7 +36,14 @@ def replacements2query(replacements):
     return urlencode(sorted(replacements.items()))
 
 
-def send_file(filename, replacements={}, mimetype='text/plain'):
+def guess_mimetype(filename, raw):
+    if raw:
+        return MT_TXT
+    mimetype, _ = mimetypes.guess_type(filename)
+    return mimetype or MT_TXT
+
+
+def send_file(filename, replacements={}, raw=False):
     # 忽略文件名以`_`开始的文件
     if filename.startswith('_'):
         raise NotFound()
@@ -39,6 +52,8 @@ def send_file(filename, replacements={}, mimetype='text/plain'):
 
     if not path.isfile(filename):
         raise NotFound()
+
+    mimetype = guess_mimetype(filename, raw)
 
     if not replacements:
         return _send_file(filename, mimetype=mimetype)
@@ -124,16 +139,45 @@ def powered_by():
     return f'Last Builded: {build_date}&nbsp;&nbsp;&nbsp;Powered by <a href="{proj_url}">GenPAC v{ver}</a>'
 
 
-@main.route('/', methods=['GET'])
+@main.route('/')
 def index():
     return render_template('index.j2',
                            ip_srvs=current_app.config.options.ip_srvs)
 
 
-@main.route('/file/<filename>', methods=['GET'])
+@main.route('/file/<filename>')
+@main.route('/file/raw/<filename>', defaults={'raw': True})
 @authorized
-def get_file(filename):
-    return send_file(filename)
+def get_file(filename, raw=False):
+    return send_file(filename, raw=raw)
+
+
+@main.route('/s/<string:code>')
+@main.route('/s/raw/<string:code>', defaults={'raw': True})
+@authorized
+def shortener(code, raw=False):
+    try:
+        cfg = current_app.config.options.shortener.get(code)
+        source = cfg.get('source')
+    except Exception:
+        logger.warning(f'shortener[{code}] ERROR:', exc_info=True)
+        return NotFound()
+
+    return send_file(source, replacements=cfg, raw=raw)
+
+
+@main.route('/list/', methods=['GET'])
+def view_gfwlist():
+    return send_file(current_app.config.options._private.list_file)
+
+
+@main.route('/ip/')
+def show_ip():
+    ip = request.headers.get("X-Forwarded-For", request.remote_addr).split(',')[0]
+    return Response(f'{ip}\n',
+                    mimetype="text/plain",
+                    headers={'X-Your-Ip': ip,
+                             'Access-Control-Allow-Origin': '*'})
 
 
 @main.route('/rules/', methods=['GET'])
@@ -151,33 +195,6 @@ def rules():
     return render_template('rules.j2',
                            content=content,
                            token=request.values.get('token', ''))
-
-
-@main.route('/s/<string:code>', methods=['GET'])
-@authorized
-def shortener(code):
-    try:
-        cfg = current_app.config.options.shortener.get(code)
-        source = cfg.get('source')
-    except Exception:
-        logger.warning(f'shortener[{code}] ERROR:', exc_info=True)
-        return NotFound()
-
-    return send_file(source, replacements=cfg)
-
-
-@main.route('/list/', methods=['GET'])
-def view_gfwlist():
-    return send_file(current_app.config.options._private.list_file)
-
-
-@main.route('/ip/')
-def show_ip():
-    ip = request.headers.get("X-Forwarded-For", request.remote_addr).split(',')[0]
-    return Response(f'{ip}\n',
-                    mimetype="text/plain",
-                    headers={'X-Your-Ip': ip,
-                             'Access-Control-Allow-Origin': '*'})
 
 
 @main.route('/api/test/', methods=['GET', 'POST'])
