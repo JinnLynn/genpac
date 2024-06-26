@@ -81,7 +81,17 @@ class Config(object):
         return opts
 
     def _optionxform(self, optionstr):
-        return optionstr.lower()
+        # return optionstr.lower()
+        return optionstr
+
+    def _valuexform(self, value):
+        value = value.strip()
+        if len(value) < 2:
+            return value
+        if (value[0] == '"' and value[-1] == '"') or \
+           (value[1] == '\'' and value[-1] == '\''):
+            return value[1:-1]
+        return value
 
     def _section_unique(self, sectname):
         if sectname in self._section_uniques:
@@ -109,7 +119,7 @@ class Config(object):
                 continue
             # continuation line?
             if line[0].isspace() and cursect is not None and optname:
-                value = line.strip()
+                value = self._valuexform(line)
                 # print(value)
                 if value:
                     cursect[optname].append(value)
@@ -147,7 +157,7 @@ class Config(object):
                             # allow empty values
                             if optval == '""':
                                 optval = ''
-                            cursect[optname] = [optval]
+                            cursect[optname] = [self._valuexform(optval)]
                         else:
                             # valueless option handling
                             cursect[optname] = optval

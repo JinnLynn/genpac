@@ -191,9 +191,6 @@ class GenPAC(object):
             else:
                 v = default
 
-        if isinstance(v, str):
-            v = v.strip(' \'\t"')
-
         for c in conv:
             v = c(v, base=cfgs.get('workdir', None)) if c.__name__ == 'conv_path' else c(v)
 
@@ -212,6 +209,7 @@ class GenPAC(object):
         self.clear_jobs()
 
         job_cfgs, common_cfgs = self.read_config(config_file)
+
         if hasattr(args, 'workdir'):
             common_cfgs.update(workdir=args.workdir)
 
