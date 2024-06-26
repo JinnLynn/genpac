@@ -13,19 +13,21 @@ from ..util import exit_error, FatalError, mktemp
 from ..util import logger, conv_bool, conv_list, conv_path
 from .build import start_watch, autobuild_task
 
+_SERVER_RULE_FILENAME = '_server_rules.txt'
 _DEFAULT_OPTIONS = Namespace(
     config_file=None, auth_token=None,
     autobuild_interval=86400, build_on_start=True,
     watch_enabled=True, watch_files=set(), target_path=None,
-    server_rule_enabled=True, server_rule_file='server-rules.txt',
-    pacs={}, shortener={},
+    server_rule_enabled=True, pacs={}, shortener={},
     ip_srvs={'inland': 'https://4.ipw.cn',
              'abroad': 'https://4.icanhazip.com',
              'gfwed': '//jeekerip.appspot.com'},
     # 私有 不会被更改
     _private=Namespace(
         domain_file=mktemp(),
-        list_file=mktemp()
+        list_file=mktemp(),
+        server_rule_file='',
+        protected_files=set()
     ))
 
 main = Blueprint('main', __name__, static_folder='static')
@@ -38,7 +40,7 @@ def create_app(config_file=None):
 
     try:
         config_file = config_file or os.environ.get('GENPAC_CONFIG')
-        read_config(app, config_file)
+        load_config(app, config_file)
     except FatalError as e:
         exit_error(e)
 
@@ -71,7 +73,7 @@ def create_app(config_file=None):
     return app
 
 
-def read_config(app, config_file):
+def load_config(app, config_file):
     if not config_file:
         raise FatalError('服务模式: 未设置配置文件，可通过环境变量`GENPAC_CONFIG`指定.')
     if not os.path.exists(conv_path(config_file)):
@@ -114,15 +116,14 @@ def read_config(app, config_file):
     # 默认target_path与配置文件同目录
     _update('target_path', conv_path,
             default=os.path.dirname(options.config_file))
+    prepare_target(options.target_path)
 
     _update('server_rule_enabled', conv_bool)
-    _update('server_rule_file', conv_path,
-            default=os.path.join(options.target_path,
-                                 options.server_rule_file))
-    if options.server_rule_enabled and \
-            not os.path.exists(options.server_rule_file):
-        with open(options.server_rule_file, 'w') as fp:
-            fp.write('# GenPAC Server rules\n\n')
+    server_rule_file = os.path.join(options.target_path, _SERVER_RULE_FILENAME)
+    options._private.server_rule_file = server_rule_file
+    options._private.protected_files.add(server_rule_file)
+    if options.server_rule_enabled:
+        prepare_server_rule(server_rule_file)
 
     # 侦测IP的服务器列表
     options.ip_srvs['inland'] = _val('ip.inland', options.ip_srvs['inland'])
@@ -144,14 +145,36 @@ def read_config(app, config_file):
         options.watch_files.add(options.config_file)
         if options.server_rule_enabled:
             # 添加服务器上的规则文件
-            options.watch_files.add(options.server_rule_file)
+            options.watch_files.add(server_rule_file)
         # 添加user_rule_from到监控文件列表
         gp.parse_options(cli=False)
         for job in gp.walk_jobs():
+            options._private.protected_files |= set([job.output, job.gfwlist_local, job.gfwlist_decoded_save])
             options.watch_files.update(job.user_rule_from)
 
     app.config.options = options
     logger.debug(app.config.options)
+
+
+def prepare_target(target):
+    if os.path.exists(target):
+        if not os.path.isdir(target):
+            exit_error(f'target_path`{target}`必须是一个目录')
+    else:
+        try:
+            os.makedirs(target)
+        except Exception as e:
+            exit_error(f'创建target_path`{target}`失败: {e}')
+
+
+def prepare_server_rule(file):
+    if os.path.exists(file):
+        return
+    try:
+        with open(file, 'w') as fp:
+            fp.write('# GenPAC Server rules\n\n')
+    except Exception as e:
+        exit_error(f'创建服务端规则文件`{file}`失败: {e}')
 
 
 @formater('genpac-server-domains')

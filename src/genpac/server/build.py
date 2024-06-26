@@ -1,4 +1,5 @@
 import os
+import shutil
 import time
 from datetime import datetime, timedelta
 import threading
@@ -18,6 +19,16 @@ def build(app):
     with app.app_context():
         logger.info('GenPAC rebuild...')
         options = app.config.options
+
+        for f in glob(os.path.join(options.target_path, '*')):
+            if f in options._private.protected_files:
+                continue
+            try:
+                logger.debug(f'delete: {f}')
+                shutil.rmtree(f) if os.path.isdir(f) else os.remove(f)
+            except Exception as e:
+                logger.warning(f'delete fail: {f} {e}')
+
         try:
             Generator.clear_cache()
             gp = GenPAC(config_file=options.config_file)
@@ -28,7 +39,7 @@ def build(app):
                         'output': options._private.list_file,
                         '_order': -100})
             if options.server_rule_enabled:
-                with open(options.server_rule_file, 'r') as fp:
+                with open(options._private.server_rule_file, 'r') as fp:
                     for line in fp.readlines():
                         gp.add_rule(line.strip())
             gp.run(cli=False)

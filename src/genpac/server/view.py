@@ -153,7 +153,7 @@ def rules():
 
     content = ''
     try:
-        with open(current_app.config.options.server_rule_file) as fp:
+        with open(current_app.config.options._private.server_rule_file) as fp:
             content = fp.read()
     except Exception:
         pass
@@ -224,7 +224,7 @@ def view_api_rule_update():
 
     try:
         content = request.form.get('rules', '')
-        with open(current_app.config.options.server_rule_file, 'w') as fp:
+        with open(current_app.config.options._private.server_rule_file, 'w') as fp:
             fp.write(content.strip())
         return make_res_data()
     except Exception as e:
