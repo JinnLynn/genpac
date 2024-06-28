@@ -296,4 +296,3 @@ genpac --format=surge --surge-policy="PROXY"
 [pypi-pyversions]:  https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fgithub.com%2FJinnLynn%2Fgenpac%2Fraw%2Fmaster%2Fpyproject.toml
 
 [dev-version]:      https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fgithub.com%2FJinnLynn%2Fgenpac%2Fraw%2Fdev%2Fpyproject.toml&query=%24.project.version&style=flat&label=dev&prefix=v
-[gh-dev]:
