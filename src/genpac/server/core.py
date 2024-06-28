@@ -64,12 +64,6 @@ def create_app(config_file=None):
                           seconds=app.config.options.autobuild_interval)
     scheduler.start()
 
-    # if app.config.options.autobuild_interval > 0 or \
-    #         app.config.options.watch_enabled:
-    #     start_watch(app)
-    # elif app.config.options.build_on_start:
-    #     build(app)
-
     return app
 
 
@@ -130,10 +124,17 @@ def load_config(app, config_file):
     options.ip_srvs['abroad'] = _val('ip.abroad', options.ip_srvs['abroad'])
     options.ip_srvs['gfwed'] = _val('ip.gfwed', options.ip_srvs['gfwed'])
 
-    cfg = config.sections('server-shortener', 'name')
-    for k in cfg:
-        if k.get('name'):
-            options.shortener[k['name']] = k
+    cfg = config.section('shortener')
+    if cfg:
+        for k, v in cfg.items():
+            name, *var = k.split('.', maxsplit=1)
+            var = '.'.join(var)
+            if name not in options.shortener:
+                options.shortener[name] = {}
+            if not var:
+                options.shortener[name]['_shortener_source_'] = v
+            else:
+                options.shortener[name][var] = v
 
     # 如果允许监控文件更改
     if options.watch_enabled:

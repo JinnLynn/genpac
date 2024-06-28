@@ -158,9 +158,9 @@ def get_file(filename, raw=False):
 def shortener(code, raw=False):
     try:
         cfg = current_app.config.options.shortener.get(code)
-        source = cfg.get('source')
+        source = cfg.get('_shortener_source_')
     except Exception:
-        logger.warning(f'shortener[{code}] ERROR:', exc_info=True)
+        logger.warning(f'shortener[{code}] missing')
         return NotFound()
 
     return send_file(source, replacements=cfg, raw=raw)
