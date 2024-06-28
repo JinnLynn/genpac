@@ -200,7 +200,11 @@ class GenPAC(object):
     def parse_options(self, cli=True):
         parser, opts = self.init_options()
         args = parser.parse_args() if cli else Namespace()
+
         self.init_dest = args.init if hasattr(args, 'init') else None
+        if self.init_dest:
+            return
+
         config_file = args.config if hasattr(args, 'config') else \
             self.config_file
 
@@ -267,20 +271,20 @@ class GenPAC(object):
 
     def init(self, dest, force=False):
         try:
-            path = abspath(dest)
+            path = os.getcwd() if dest is True else abspath(dest)
             if not os.path.isdir(path):
                 os.makedirs(path)
             config_dst = os.path.join(path, 'config.ini')
             user_rule_dst = os.path.join(path, 'user-rules.txt')
             exist = os.path.exists(config_dst) or os.path.exists(user_rule_dst)
             if not force and exist:
-                raise FatalIOError('config file already exists.')
+                raise FatalIOError('配置文件已经存在')
             with open_file(config_dst, 'w') as fp:
                 fp.write(get_resource_data('res/tpl-config.ini'))
             with open_file(user_rule_dst, 'w') as fp:
                 fp.write(get_resource_data('res/tpl-user-rules.txt'))
         except Exception as e:
-            raise FatalError(f'初始化失败: {e}')
+            exit_error(f'初始化失败: {e}')
 
 
 class Generator(object):
