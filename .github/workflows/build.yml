@@ -33,20 +33,26 @@ jobs:
             password: ${{ secrets.DOCKER_TOKEN }}
       - uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.branch }}
+          ref: ${{ inputs.branch || github.ref_name }}
       - uses: mikefarah/yq@master
         id: get_version
         with:
           cmd: "yq -p toml -oy '.project.version' pyproject.toml"
-      - if: ${{ inputs.branch == 'master' }}
-        name: Build Docker From master
-        run: |
-          docker buildx build --push --platform "${{ env.platform }}" \
-            -t ${{ secrets.DOCKER_USER }}/genpac \
-            -t ${{ secrets.DOCKER_USER }}/genpac:${{steps.get_version.outputs.result}} \
-            .
-      - if: ${{ inputs.branch == 'dev' || github.ref_name == 'dev' }}
-        name: Build Docker From dev
-        run: |
-          docker buildx build --push --platform "${{ env.platform }}" \
-            -t ${{ secrets.DOCKER_USER }}/genpac:dev .
+      - name: Build and push (master)
+        uses: docker/build-push-action@v6
+        if: ${{ inputs.branch == 'master' || github.ref_name == 'master' }}
+        with:
+          push: true
+          context: .
+          platforms: ${{ env.platform }}
+          tags: |
+            ${{ secrets.DOCKER_USER }}/genpac
+            ${{ secrets.DOCKER_USER }}/genpac:${{steps.get_version.outputs.result}}
+      - name: Build and push (dev)
+        uses: docker/build-push-action@v6
+        if: ${{ inputs.branch == 'dev' || github.ref_name == 'dev' }}
+        with:
+          push: true
+          context: .
+          platforms: ${{ env.platform }}
+          tags: ${{ secrets.DOCKER_USER }}/genpac:dev

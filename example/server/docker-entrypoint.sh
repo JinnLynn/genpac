@@ -9,7 +9,7 @@
 
 : ${GENPAC_CONFIG:="/app/etc/config.ini"}
 
-if [ -z "$@" ] || [ "${1:0:1}" = "-" ]; then
+if [ -z "$1" ] || [ "${1:0:1}" = "-" ]; then
     set -- uwsgi --socket="$UWSGI_SOCKET" \
                 --protocol="$UWSGI_PROTOCOL" \
                 --plugin="python" \
