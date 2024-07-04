@@ -12,6 +12,7 @@ import json
 from importlib import metadata
 
 from publicsuffixlist import PublicSuffixList
+import yaml
 
 logger = logging.getLogger(__name__.split('.')[0])
 logger.setLevel(logging.DEBUG)
@@ -38,6 +39,20 @@ class Namespace(argparse.Namespace):
     @classmethod
     def from_dict(cls, d):
         return cls(**d)
+
+
+# 更合乎习惯的list缩进
+# REF: https://stackoverflow.com/a/39681672/1952172
+class YamlDumper(yaml.Dumper):
+    def increase_indent(self, flow=False, indentless=False):
+        return super().increase_indent(flow, False)
+
+
+def dump_yaml(data, **kwargs):
+    kwargs.setdefault('Dumper', YamlDumper)
+    kwargs.setdefault('indent', 2)
+    kwargs.setdefault('sort_keys', False)
+    return yaml.dump(data, **kwargs)
 
 
 class Error(Exception):

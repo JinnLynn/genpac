@@ -1,22 +1,13 @@
 import json
-import yaml
 
+from ..util import dump_yaml
 from ..util import conv_lower
 from .base import formater, FmtBase, TPL_LEAD_COMMENT
 
-
-# 更合乎习惯的list缩进
-# REF: https://stackoverflow.com/a/39681672/1952172
-class Dumper(yaml.Dumper):
-    def increase_indent(self, flow=False, indentless=False):
-        return super().increase_indent(flow, False)
-
-
 V2RAY_DUMPER = {'json': lambda d: json.dumps(d, indent=4),
-                'yaml': lambda d: f'{TPL_LEAD_COMMENT}\n' + yaml.dump(d, Dumper=Dumper, indent=2, sort_keys=False)}
-
-_DEF_PROXY_TAG = 'proxy'
+                'yaml': lambda d: f'{TPL_LEAD_COMMENT}\n' + dump_yaml(d)}
 _DEF_FORMAT = list(V2RAY_DUMPER.keys())[0]
+_DEF_PROXY_TAG = 'proxy'
 
 
 @formater('v2ray', desc='V2Ray的路由规则', order=-80)
