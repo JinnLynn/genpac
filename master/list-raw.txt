@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2024-07-20 12:33:26
-! GFWList: 2024-06-07 03:48:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2024-07-21 01:34:35
+! GFWList: 2024-07-20 17:42:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -406,6 +406,7 @@
 ||anpopo.com
 ||answering-islam.org
 ||anthonycalzadilla.com
+||anthropic.com
 ||anti1984.com
 ||antichristendom.com
 ||antiwave.net
@@ -767,6 +768,7 @@
 ||blubrry.com
 ||blueangellive.com
 ||bmfinn.com
+||bnbstatic.com
 ||bnews.co
 ||bnext.com.tw
 ||bnn.co
@@ -1131,6 +1133,7 @@
 ||cl.d0z.net
 ||clarionproject.org
 ||classicalguitarblog.net
+||claude.ai
 ||clb.org.hk
 ||cldr.unicode.org
 ||cleansite.biz
@@ -4090,6 +4093,7 @@
 ||perfect-privacy.com
 ||perfectgirls.net
 ||periscope.tv
+||perplexity.ai
 ||persecutionblog.com
 ||persiankitty.com
 ||phapluan.org
