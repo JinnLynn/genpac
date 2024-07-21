@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-07-20 12:33:52
-#! GFWList: 2024-06-07 03:48:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-07-21 01:34:58
+#! GFWList: 2024-07-20 17:42:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -299,6 +299,7 @@
 (^|\.)anpopo\.com$
 (^|\.)answering-islam\.org$
 (^|\.)anthonycalzadilla\.com$
+(^|\.)anthropic\.com$
 (^|\.)anti1984\.com$
 (^|\.)antichristendom\.com$
 (^|\.)antiwave\.net$
@@ -660,6 +661,7 @@
 (^|\.)blubrry\.com$
 (^|\.)blueangellive\.com$
 (^|\.)bmfinn\.com$
+(^|\.)bnbstatic\.com$
 (^|\.)bnews\.co$
 (^|\.)bnext\.com\.tw$
 (^|\.)bnn\.co$
@@ -1024,6 +1026,7 @@
 (^|\.)cl\.d0z\.net$
 (^|\.)clarionproject\.org$
 (^|\.)classicalguitarblog\.net$
+(^|\.)claude\.ai$
 (^|\.)clb\.org\.hk$
 (^|\.)cldr\.unicode\.org$
 (^|\.)cleansite\.biz$
@@ -3983,6 +3986,7 @@
 (^|\.)perfect-privacy\.com$
 (^|\.)perfectgirls\.net$
 (^|\.)periscope\.tv$
+(^|\.)perplexity\.ai$
 (^|\.)persecutionblog\.com$
 (^|\.)persiankitty\.com$
 (^|\.)phapluan\.org$

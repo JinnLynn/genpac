@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2024-07-20 12:33:51
- * GFWList Last-Modified: 2024-06-07 03:48:34
+ * Generated: 2024-07-21 01:34:58
+ * GFWList Last-Modified: 2024-07-20 17:42:41
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -419,6 +419,7 @@ var rules = [
             "anpopo.com",
             "answering-islam.org",
             "anthonycalzadilla.com",
+            "anthropic.com",
             "anti1984.com",
             "antichristendom.com",
             "antiwave.net",
@@ -780,6 +781,7 @@ var rules = [
             "blubrry.com",
             "blueangellive.com",
             "bmfinn.com",
+            "bnbstatic.com",
             "bnews.co",
             "bnext.com.tw",
             "bnn.co",
@@ -1144,6 +1146,7 @@ var rules = [
             "cl.d0z.net",
             "clarionproject.org",
             "classicalguitarblog.net",
+            "claude.ai",
             "clb.org.hk",
             "cldr.unicode.org",
             "cleansite.biz",
@@ -4103,6 +4106,7 @@ var rules = [
             "perfect-privacy.com",
             "perfectgirls.net",
             "periscope.tv",
+            "perplexity.ai",
             "persecutionblog.com",
             "persiankitty.com",
             "phapluan.org",

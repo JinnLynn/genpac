@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-07-20 12:33:52
-#! GFWList: 2024-06-07 03:48:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-07-21 01:34:59
+#! GFWList: 2024-07-20 17:42:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -312,6 +312,7 @@ rule:
         - s,anpopo.com
         - s,answering-islam.org
         - s,anthonycalzadilla.com
+        - s,anthropic.com
         - s,anti1984.com
         - s,antichristendom.com
         - s,antiwave.net
@@ -673,6 +674,7 @@ rule:
         - s,blubrry.com
         - s,blueangellive.com
         - s,bmfinn.com
+        - s,bnbstatic.com
         - s,bnews.co
         - s,bnext.com.tw
         - s,bnn.co
@@ -1037,6 +1039,7 @@ rule:
         - s,cl.d0z.net
         - s,clarionproject.org
         - s,classicalguitarblog.net
+        - s,claude.ai
         - s,clb.org.hk
         - s,cldr.unicode.org
         - s,cleansite.biz
@@ -3996,6 +3999,7 @@ rule:
         - s,perfect-privacy.com
         - s,perfectgirls.net
         - s,periscope.tv
+        - s,perplexity.ai
         - s,persecutionblog.com
         - s,persiankitty.com
         - s,phapluan.org
