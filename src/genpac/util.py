@@ -36,6 +36,10 @@ class Namespace(argparse.Namespace):
     def dict(self):
         return self.__dict__.copy()
 
+    def __iter__(self):
+        for k, v in self.__dict__.items():
+            yield (k, v)
+
     @classmethod
     def from_dict(cls, d):
         return cls(**d)
