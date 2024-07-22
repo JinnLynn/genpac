@@ -84,8 +84,8 @@ class FmtBase(object):
     def replace(self, text, replacements, **kwargs):
         return replace_all(text, replacements, **kwargs)
 
-    def fetch(self, url):
-        return self.generator.fetch(url)
+    def fetch(self, url, decode=True):
+        return self.generator.fetch(url, decode=decode)
 
     # RETURN:
     # [0][0]: user.direct    [0][1]: user.proxy

@@ -324,11 +324,21 @@ class Generator(object):
 
         content = self.formater.generate(replacements)
 
+        if content is None:
+            raise FatalError(f'{self.formater._name}: 生成失败')
+
         output = self.options.output
         if not output or output == '-':
-            sys.stdout.write(content)
+            if isinstance(content, str):
+                sys.stdout.write(content)
+            else:
+                logger.error('无法写入bytes内容到stdout.')
         else:
-            write_file(output, content, fail_msg='写入输出文件`{path}`失败')
+            try:
+                with open(output, 'w' if isinstance(content, str) else 'wb') as fp:
+                    fp.write(content)
+            except Exception as e:
+                raise FatalError(f'写入输出文件`{output}`失败: {e}')
 
         self.formater.post_generate()
 
@@ -392,17 +402,21 @@ class Generator(object):
     def fetch_online(self, url):
         try:
             content = self.request(url)
+            if content:
+                self.__class__._cache[url] = content
         except Exception as e:
             logger.error(f'Fetch online fail: {e} {url}')
             return
-        return content.decode() if isinstance(content, bytes) else content
+        return content
 
     # 使用类变量缓存在线获取的内容
-    def fetch(self, url):
+    def fetch(self, url, decode=True):
         content = self.__class__._cache.get(url) or self.fetch_online(url)
+
         if content:
-            self.__class__._cache[url] = content
-        return content
+            if decode in (False, None):
+                return content
+            return content.decode('utf-8' if not isinstance(decode, str) else decode)
 
     def fetch_gfwlist(self):
         if self.options.gfwlist_disabled or self.options.gfwlist_url == '-':

@@ -1,7 +1,7 @@
 from os import path
 
 from .base import formater, FmtBase
-from ..util import open_file, FatalError
+from ..util import FatalError
 
 
 @formater('copy', desc="IP地址列表")
@@ -17,13 +17,13 @@ class FmtCopy(FmtBase):
         cls.register_option('source', metavar='SRC', help='来源, 网址或文件路径')
 
     def generate(self, replacements):
-        content = ''
+        content = None
         try:
             if path.isfile(self.options.source):
-                with open_file(self.options.source) as fp:
+                with open(self.options.source, 'rb') as fp:
                     content = fp.read()
             else:
-                content = self.fetch(self.options.source)
+                content = self.fetch(self.options.source, decode=False)
                 if content is None:
                     raise Exception
         except Exception:
