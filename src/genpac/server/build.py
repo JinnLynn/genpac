@@ -9,9 +9,8 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler, \
     EVENT_TYPE_CLOSED, EVENT_TYPE_OPENED
 
-from .. import Generator
+from .. import GenPAC, Generator
 from ..util import logger
-from .base import init_genpac
 
 
 # ====
@@ -32,7 +31,7 @@ def build(app):
 
         try:
             Generator.clear_cache()
-            gp = init_genpac(options)
+            gp = GenPAC(config_file=options.config_file)
             gp.add_job({'format': 'genpac-server-domains',
                         'output': options._private.domain_file,
                         '_order': -100})
@@ -41,8 +40,8 @@ def build(app):
                         '_order': -100})
             if options.server_rule_enabled:
                 with open(options._private.server_rule_file, 'r') as fp:
-                    for line in fp.readlines():
-                        gp.add_rule(line.strip())
+                    gp.add_rule(fp.readlines())
+            gp.parse_options(cli=False, workdir=options.target)
             gp.generate_all()
         except Exception:
             logger.error('GenPAC build fail.', exc_info=True)

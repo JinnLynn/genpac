@@ -5,12 +5,12 @@ import argparse
 from flask import Flask, Blueprint
 from flask_apscheduler import APScheduler
 
+from .. import GenPAC
 from ..config import Config
 from ..util import get_version
 from ..util import Namespace
 from ..util import exit_error, FatalError, mktemp
 from ..util import logger, conv_bool, conv_list, conv_path
-from .base import init_genpac
 from .build import start_watch, autobuild_task
 
 _SERVER_RULE_FILENAME = '_server_rules.txt'
@@ -138,7 +138,8 @@ def load_config(app, config_file):
 
     # 如果允许监控文件更改
     if options.watch_enabled:
-        gp = init_genpac(options)
+        gp = GenPAC(config_file=options.config_file)
+        gp.parse_options(cli=False, workdir=options.target)
         # 添加config_file到监控列表
         options.watch_files.add(options.config_file)
         if options.server_rule_enabled:

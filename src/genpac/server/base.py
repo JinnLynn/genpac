@@ -1,12 +1,6 @@
 from flask import current_app
 
-from .. import GenPAC, formater, FmtBase
-
-
-def init_genpac(options):
-    gp = GenPAC(config_file=options.config_file)
-    gp.parse_options(cli=False, workdir=options.target)
-    return gp
+from .. import formater, FmtBase
 
 
 @formater('genpac-server-domains')

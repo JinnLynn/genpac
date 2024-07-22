@@ -210,7 +210,7 @@ class GenPAC(object):
         for fmter in self.__class__._formaters.values():
             opts.update(fmter['cls']._predefined_options)
 
-        self.clear_jobs()
+        self.jobs.clear()
 
         job_cfgs, common_cfgs = self.read_config(config_file)
 
@@ -235,15 +235,14 @@ class GenPAC(object):
         self.jobs.sort(key=lambda j: j._order)
 
     def add_rule(self, rule):
-        rule = rule.strip()
+        if not isinstance(rule, list):
+            rule = [str(rule)]
+        rule = [r.strip() for r in rule if r.strip()]
         if rule:
-            self.extra_rules.append(rule)
+            self.extra_rules.extend(rule)
 
     def add_job(self, job_cfgs):
         self.extra_jobs.append(job_cfgs)
-
-    def clear_jobs(self):
-        self.jobs = []
 
     def walk_jobs(self):
         for job in self.jobs:
