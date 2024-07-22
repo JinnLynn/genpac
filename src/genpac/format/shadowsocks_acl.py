@@ -1,6 +1,5 @@
-from ..util import Namespace
-from .base import formater, FmtBase, TPL_LEAD_COMMENT
-from .ip import FmtIP
+from .base import formater, TPL_LEAD_COMMENT
+from .ip import IPInterface
 
 _TPL_DEF = f'''
 {TPL_LEAD_COMMENT}
@@ -20,7 +19,7 @@ __CNIPS__
 
 
 @formater('ssacl', desc='Shadowsocks访问控制列表')
-class FmtSSACL(FmtBase):
+class FmtSSACL(IPInterface):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -56,13 +55,7 @@ class FmtSSACL(FmtBase):
         return self.replace(self.tpl, replacements)
 
     def gen_by_geoip(self, replacements):
-        ip_data = []
-        for ip in self.fetch_cnips():
-            ip_data.append(ip)
+        ip_data = [str(ip) for ip in self.iter_ip_cidr(4, 'cn')]
         replacements.update({
             '__CNIPS__': '\n'.join(ip_data)})
         return self.replace(self.tpl, replacements)
-
-    def fetch_cnips(self):
-        gen_ip = FmtIP(generator=self.generator, options=Namespace(ip_family='4', ip_cc='cn'))
-        yield from gen_ip._fetch_data_cn(4)

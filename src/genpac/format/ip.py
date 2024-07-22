@@ -29,18 +29,18 @@ class IPInterface(FmtBase):
         if family not in ['4', '6', 'all']:
             raise ValueError('IP family MUST BE: 4, 6, all')
         if family in ['4', 'all']:
-            yield from self._fetch_data(4, cc)
+            yield from self._fetch_ip_data(4, cc)
 
         if family in ['6', 'all']:
-            yield from self._fetch_data(6, cc)
+            yield from self._fetch_ip_data(6, cc)
 
     def iter_ip_range(self, family, cc):
         for d in self.iter_ip_cidr(family, cc):
-            yield str(IPAddress(d.first)), str(IPAddress(d.last))
+            yield IPAddress(d.first), IPAddress(d.last)
 
-    def _fetch_data(self, family, cc):
+    def _fetch_ip_data(self, family, cc):
         if cc.lower() == 'cn':
-            yield from self._fetch_data_cn(family)
+            yield from self._fetch_ip_data_cn(family)
             return
 
         expr = re.compile(f'^[0-9a-f:,]+,{cc}' if family == 6 else f'^[0-9\\.,]+,{cc}',
@@ -63,7 +63,7 @@ class IPInterface(FmtBase):
                 yield n
         logger.debug(f'IPv{family}[{cc}]: {count} => {size:.2e}')
 
-    def _fetch_data_cn(self, family):
+    def _fetch_ip_data_cn(self, family):
         url = _IP_DATA_ASN[int(family)]
         content = self.fetch(url)
         if not content:
