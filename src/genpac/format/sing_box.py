@@ -1,6 +1,4 @@
-import json
-
-from ..util import conv_lower, Namespace
+from ..util import conv_lower, Namespace, dump_json
 from .base import formater
 from .ip import IPInterface, _IP_FAMILIES, _CC_DEF
 
@@ -30,4 +28,4 @@ class FmtSingBox(IPInterface):
             data.rules.append({
                 'ip_cidr': [str(d) for d in self.iter_ip_cidr(self.options.ip_family, self.options.ip_cc)]
             })
-        return json.dumps(dict(data), indent=2)
+        return dump_json(data)

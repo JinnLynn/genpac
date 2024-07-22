@@ -59,6 +59,19 @@ def dump_yaml(data, **kwargs):
     return yaml.dump(data, **kwargs)
 
 
+class JSONEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, Namespace):
+            return dict(o)
+        return super().default(o)
+
+
+def dump_json(data, **kwargs):
+    kwargs.setdefault('indent', 2)
+    kwargs.setdefault('cls', JSONEncoder)
+    return json.dumps(data, **kwargs)
+
+
 class Error(Exception):
     def __init__(self, msg):
         self.msg = msg

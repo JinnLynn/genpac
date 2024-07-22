@@ -1,10 +1,8 @@
-import json
-
 from ..util import dump_yaml
-from ..util import conv_lower
+from ..util import conv_lower, dump_json
 from .base import formater, FmtBase, TPL_LEAD_COMMENT
 
-V2RAY_DUMPER = {'json': lambda d: json.dumps(d, indent=4),
+V2RAY_DUMPER = {'json': lambda d: dump_json(d),
                 'yaml': lambda d: f'{TPL_LEAD_COMMENT}\n' + dump_yaml(d)}
 _DEF_FORMAT = list(V2RAY_DUMPER.keys())[0]
 _DEF_PROXY_TAG = 'proxy'

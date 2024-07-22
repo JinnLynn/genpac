@@ -1,7 +1,5 @@
-import json
-
 from ..template import TemplateFile
-from ..util import conv_bool
+from ..util import conv_bool, dump_json
 from .base import formater, FmtBase
 
 _TPL_PAC = TemplateFile('res/tpl-pac.js', True)
@@ -42,7 +40,7 @@ class FmtPAC(FmtBase):
         return super().pre_generate()
 
     def generate(self, replacements):
-        rules = json.dumps(
+        rules = dump_json(
             self.precise_rules if self.options.precise else self.rules,
             indent=None if self.options.compress else 4,
             separators=(',', ':') if self.options.compress else None)
