@@ -4,7 +4,7 @@
 
 基于[gfwlist][]的多种代理软件配置文件生成工具，支持自定义规则
 
-目前支持的格式有: **PAC, Dnsmasq, V2Ray, Shadowsocks, Quantumult X, Shadowrocket, Surge, Wingy, Potatso** 和 **IP** (国别IP列表), **List** (gfwlist格式的列表), **Copy** (复制源)。[示例](https://github.com/JinnLynn/genpac/tree/cooked)
+目前支持的格式有: **PAC, Dnsmasq, V2Ray, Shadowsocks, Quantumult X, Shadowrocket, Surge, Sing-Box, Clash, Wingy, Potatso** 和 **IP** (国别IP列表), **List** (gfwlist格式的列表), **Copy** (复制源)。[示例](https://github.com/JinnLynn/genpac/tree/cooked)
 
 **注意**: 生成后的规则不会匹配网址路径，只会检查域名(包括子域名)，如`|http://sub2.sub1.domain.com/path/to/file.ext` => `sub2.sub1.domain.com`
 

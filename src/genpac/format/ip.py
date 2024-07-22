@@ -1,6 +1,6 @@
 import re
 
-from netaddr import IPNetwork, IPRange
+from netaddr import IPNetwork, IPRange, IPAddress
 
 from ..util import FatalError
 from ..util import conv_lower
@@ -23,25 +23,66 @@ _IP_DATA_GEOLITE2 = {
 }
 
 
-class IPList(list):
-    def add(self, item):
-        if isinstance(item, IPNetwork):
-            self.append(item)
-        elif isinstance(item, IPRange):
-            self.extend(item.cidrs())
-        else:
-            raise ValueError('ONLY IPNetwork or IPRange')
+class IPInterface(FmtBase):
+    def iter_ip_cidr(self, family, cc):
+        family = str(family)
+        if family not in ['4', '6', 'all']:
+            raise ValueError('IP family MUST BE: 4, 6, all')
+        if family in ['4', 'all']:
+            yield from self._fetch_data(4, cc)
 
-    @property
-    def size(self):
-        return sum(item.size for item in self)
+        if family in ['6', 'all']:
+            yield from self._fetch_data(6, cc)
 
-    def iter_cidrs(self):
-        return self
+    def iter_ip_range(self, family, cc):
+        for d in self.iter_ip_cidr(family, cc):
+            yield str(IPAddress(d.first)), str(IPAddress(d.last))
+
+    def _fetch_data(self, family, cc):
+        if cc.lower() == 'cn':
+            yield from self._fetch_data_cn(family)
+            return
+
+        expr = re.compile(f'^[0-9a-f:,]+,{cc}' if family == 6 else f'^[0-9\\.,]+,{cc}',
+                          flags=re.IGNORECASE)
+        url = _IP_DATA_GEOLITE2[int(family)]
+        content = self.fetch(url)
+        if not content:
+            raise FatalError('获取IP数据失败')
+        count = 0
+        size = 0
+        for d in content.splitlines():
+            d = d.strip()
+            if not d or not expr.fullmatch(d):
+                continue
+            first, last, _ = d.split(',')
+            d = IPRange(first, last)
+            for n in d.cidrs():
+                count = count + 1
+                size = size + n.size
+                yield n
+        logger.debug(f'IPv{family}[{cc}]: {count} => {size:.2e}')
+
+    def _fetch_data_cn(self, family):
+        url = _IP_DATA_ASN[int(family)]
+        content = self.fetch(url)
+        if not content:
+            raise FatalError('获取IP数据失败')
+        count = 0
+        size = 0
+        for ip in content.splitlines():
+            ip = ip.strip()
+            if not ip:
+                continue
+            net = IPNetwork(ip)
+            count = count + 1
+            size = size + net.size
+            yield net
+        logger.debug(f'IPv{family}[cn]: {count} => {size:.2e}')
 
 
 @formater('ip', desc="国别IP地址列表")
-class FmtIP(FmtBase):
+class FmtIP(IPInterface):
     _FORCE_IGNORE_GFWLIST = True
 
     def __init__(self, *args, **kwargs):
@@ -60,84 +101,4 @@ class FmtIP(FmtBase):
                             help=f'IP类型 可选: {families} 默认: 4')
 
     def generate(self, replacements):
-        ip4s, ip6s = self._generate_by_cc(self.options.cc)
-        output = ip4s + ip6s
-        return '\n'.join([str(i) for i in output])
-
-    @property
-    def _ipv4(self):
-        return self.options.family in [4, '4', 'all']
-
-    @property
-    def _ipv6(self):
-        return self.options.family in [6, '6', 'all']
-
-    def _ip_network(self, data):
-        try:
-            if isinstance(data, str):
-                return IPNetwork(data)
-            elif isinstance(data, tuple):
-                first, last = data
-                return IPRange(first, last)
-            raise ValueError('IP数据类型错误')
-        except Exception as e:
-            logger.warning(f'解析IP地址错误: {data} {e} {type(e)}')
-            return None
-
-    def _generate_by_cc(self, cc):
-        ip4s = IPList()
-        ip6s = IPList()
-
-        record = 0
-
-        if self._ipv4:
-            for d in self._fetch_data(4, cc):
-                ip_net = self._ip_network(d)
-                if ip_net:
-                    ip4s.add(ip_net)
-                record = record + 1
-            logger.debug(f'IPv4[{cc}]: Nums: {ip4s.size:.2e} '
-                         f'Record: {record} => {len(ip4s.iter_cidrs())}')
-
-        record = 0
-        if self._ipv6:
-            record = 0
-            for d in self._fetch_data(6, cc):
-                ip_net = self._ip_network(d)
-                if ip_net:
-                    ip6s.add(ip_net)
-                record = record + 1
-
-            logger.debug(f'IPv6[{cc}]: Nums: {ip6s.size:.2e} '
-                         f'Record: {record} => {len(ip6s.iter_cidrs())}')
-
-        return ip4s, ip6s
-
-    def _fetch_data_cn(self, family):
-        url = _IP_DATA_ASN[int(family)]
-        content = self.fetch(url)
-        if not content:
-            raise FatalError('获取IP数据失败')
-        for ip in content.splitlines():
-            ip = ip.strip()
-            if not ip:
-                continue
-            yield ip
-
-    def _fetch_data(self, family, cc):
-        if cc.lower() == 'cn':
-            yield from self._fetch_data_cn(family)
-            return
-
-        expr = re.compile(f'^[0-9a-f:,]+,{cc}' if family == 6 else f'^[0-9\\.,]+,{cc}',
-                          flags=re.IGNORECASE)
-        url = _IP_DATA_GEOLITE2[int(family)]
-        content = self.fetch(url)
-        if not content:
-            raise FatalError('获取IP数据失败')
-        for d in content.splitlines():
-            d = d.strip()
-            if not d or not expr.fullmatch(d):
-                continue
-            first, last, _ = d.split(',')
-            yield (first, last)
+        return '\n'.join(str(i) for i in self.iter_ip_cidr(self.options.family, self.options.cc))
