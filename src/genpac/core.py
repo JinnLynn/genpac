@@ -335,6 +335,8 @@ class Generator(object):
                 logger.error('无法写入bytes内容到stdout.')
         else:
             try:
+                if not os.path.isdir(os.path.dirname(output)):
+                    os.makedirs(os.path.dirname(output), mode=0o755, exist_ok=True)
                 with open(output, 'w' if isinstance(content, str) else 'wb') as fp:
                     fp.write(content)
             except Exception as e:
