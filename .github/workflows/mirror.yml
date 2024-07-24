@@ -1,0 +1,39 @@
+name: mirror
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Checkout Branch
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+          path: src
+      - name: Checkout Mirror
+        run: |
+          git clone ${{ secrets.MIRROR_REPO }} mirror && \
+          cd mirror && \
+          find . -mindepth 2 -maxdepth 2 -not -path '*/.*' -type f -delete
+      - name: Copy
+        id: copy
+        run: |
+          pip install ./src/ && \
+          cd mirror && \
+          genpac -c ./config.ini && \
+          [ -n "$(git status -s)" ] && \
+            echo "changed=true" >>$GITHUB_OUTPUT || \
+            echo "Nothing changed."
+      - name: Commit Mirror
+        if: ${{ steps.copy.outputs.changed }}
+        run: |
+          cd mirror && \
+          git add -A . && \
+          git -c user.name="github-actions[bot]" -c user.email="github-actions[bot]@users.noreply.github.com" \
+            commit -m "update $(date '+%Y-%m-%d %H:%M:%S %z')" && \
+          git push --force
