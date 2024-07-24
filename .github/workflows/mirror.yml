@@ -17,7 +17,7 @@ jobs:
           path: src
       - name: Checkout Mirror
         run: |
-          git clone ${{ secrets.MIRROR_REPO }} mirror && \
+          git clone --depth 1 ${{ secrets.MIRROR_REPO }} mirror && \
           cd mirror && \
           find . -mindepth 2 -maxdepth 2 -not -path '*/.*' -type f -delete
       - name: Copy
