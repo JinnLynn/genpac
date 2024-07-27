@@ -12,6 +12,7 @@ import traceback
 
 import requests
 from requests.structures import CaseInsensitiveDict
+from requests.exceptions import ConnectionError
 
 from .config import Config
 from .util import get_version, get_project_url
@@ -387,7 +388,14 @@ class Generator(object):
         if cached_etag and cached_data is not None:
             logger.debug(f'request with header If-None-Match: {cached_etag}')
             headers.update({'If-None-Match': cached_etag})
-        rep = requests.get(url, proxies=proxies, headers=headers)
+            try:
+                rep = requests.get(url, proxies=proxies, headers=headers)
+            except (ConnectionResetError, ConnectionError) as e:
+                logger.warning(f'request error, use cached data: ERR: {e} URL: {url}')
+                return cached_data
+        else:
+            rep = requests.get(url, proxies=proxies, headers=headers)
+
         if rep.status_code == 304:
             logger.debug(f'Cache Hitted: {url}')
             content = cached_data
@@ -437,8 +445,7 @@ class Generator(object):
                     and self.options.gfwlist_update_local:
                 write_file(self.options.gfwlist_local, content,
                            fail_msg='更新本地gfwlist文件{path}失败')
-        except Exception as e:
-            logger.error(e)
+        except Exception:
             if self.options.gfwlist_local:
                 content = read_file(self.options.gfwlist_local,
                                     fail_msg='读取本地gfwlist文件{path}失败')
