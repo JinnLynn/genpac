@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: 5eWY5ApCBo3ergQEJ/WCwg
+! Checksum: b4hNel8o8vwW1DMQwRcAmQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 20 Jul 2024 13:42:41 -0400
+! Last Modified: Sun, 28 Jul 2024 20:49:46 -0400
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2354,6 +2354,7 @@ avaaz.org
 ||axureformac.com
 .azerbaycan.tv
 azerimix.com
+||azirevpn.com
 !--boxun.azurewebsites.net doesn't exist.
 boxun*.azurewebsites.net
 ||boxun*.azurewebsites.net
@@ -2979,7 +2980,8 @@ cloakpoint.com
 ||cloudflare-ipfs.com
 ||club1069.com
 ||clubhouseapi.com
-cmi.org.tw
+||cmegroup.com
+||cmi.org.tw
 |http://www.cmoinc.org
 cmp.hku.hk
 hkupop.hku.hk
@@ -4775,7 +4777,8 @@ ifjc.org
 .imagefap.com
 ||imagefap.com
 ||imageflea.com
-imageshack.us
+||imageglass.org
+||imageshack.us
 ||imagevenue.com
 ||imagezilla.net
 .imb.org
