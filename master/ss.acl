@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-07-28 12:33:34
-#! GFWList: 2024-07-20 17:42:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-07-29 01:25:04
+#! GFWList: 2024-07-29 00:49:46 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -435,6 +435,7 @@
 (^|\.)axureformac\.com$
 (^|\.)azerbaycan\.tv$
 (^|\.)azerimix\.com$
+(^|\.)azirevpn\.com$
 (^|\.)azubu\.tv$
 (^|\.)azurewebsites\.net$
 (^|\.)b-ok\.cc$
@@ -1047,6 +1048,7 @@
 (^|\.)clubhouseapi\.com$
 (^|\.)clyp\.it$
 (^|\.)cmcn\.org$
+(^|\.)cmegroup\.com$
 (^|\.)cmi\.org\.tw$
 (^|\.)cmp\.hku\.hk$
 (^|\.)cms\.gov$
@@ -2751,6 +2753,7 @@
 (^|\.)imageab\.com$
 (^|\.)imagefap\.com$
 (^|\.)imageflea\.com$
+(^|\.)imageglass\.org$
 (^|\.)images-gaytube\.com$
 (^|\.)images\.comico\.tw$
 (^|\.)imageshack\.us$
