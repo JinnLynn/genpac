@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: b4hNel8o8vwW1DMQwRcAmQ
+! Checksum: zdzBqa1drIB9jEVG5pOdTw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 28 Jul 2024 20:49:46 -0400
+! Last Modified: Sat, 03 Aug 2024 21:26:19 -0400
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -4842,7 +4842,7 @@ inxian.com
 ||inxian.com
 ipalter.com
 !--||ipcf.org.tw
-.ipfire.org
+||ipfire.org
 ||iphone4hongkong.com
 ||iphonehacks.com
 ||iphonetaiwan.org
@@ -4913,6 +4913,7 @@ ithelp.ithome.com.tw
 .iverycd.com
 .ivpn.net
 ||ivpn.net
+||iwara.tv
 ||ixquick.com
 .ixxx.com
 .iyouport.com
@@ -7283,11 +7284,11 @@ tibetoffice.eu
 tibetonline.com
 ||tibetonline.com
 .tibetoffice.com.au
-|http://tibetoffice.com.au
+||tibetoffice.com.au
 ||tibetonline.tv
 .tibetonline.tv
 .tibetoralhistory.org
-|http://tibetoralhistory.org
+||tibetoralhistory.org
 .tibetpolicy.eu
 .tibetrelieffund.co.uk
 tibetsites.com
@@ -7295,10 +7296,11 @@ tibetsites.com
 ||tibetsociety.com
 .tibetsun.com
 .tibetsupportgroup.org
-|http://tibetsupportgroup.org
+||tibetsupportgroup.org
 .tibetswiss.ch
 .tibettelegraph.com
 tibettimes.net
+||tibettruth.com
 ||tibetwrites.org
 .ticket.com.tw
 .tigervpn.com
