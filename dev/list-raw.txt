@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2024-08-03 12:34:02
-! GFWList: 2024-07-29 00:49:46 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2024-08-04 01:35:54
+! GFWList: 2024-08-04 01:26:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -2979,6 +2979,7 @@
 ||ivacy.com
 ||iverycd.com
 ||ivpn.net
+||iwara.tv
 ||ixquick.com
 ||ixxx.com
 ||iyouport.com
@@ -5190,6 +5191,7 @@
 ||tibetswiss.ch
 ||tibettelegraph.com
 ||tibettimes.net
+||tibettruth.com
 ||tibetwrites.org
 ||ticket.com.tw
 ||tigervpn.com

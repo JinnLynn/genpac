@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-08-03 12:34:02
-#! GFWList: 2024-07-29 00:49:46 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-08-04 01:35:54
+#! GFWList: 2024-08-04 01:26:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2987,6 +2987,7 @@ routing:
         - domain:ivacy.com
         - domain:iverycd.com
         - domain:ivpn.net
+        - domain:iwara.tv
         - domain:ixquick.com
         - domain:ixxx.com
         - domain:iyouport.com
@@ -5198,6 +5199,7 @@ routing:
         - domain:tibetswiss.ch
         - domain:tibettelegraph.com
         - domain:tibettimes.net
+        - domain:tibettruth.com
         - domain:tibetwrites.org
         - domain:ticket.com.tw
         - domain:tigervpn.com

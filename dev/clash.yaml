@@ -2985,6 +2985,7 @@ rules:
   - DOMAIN-SUFFIX,ivacy.com,PROXY
   - DOMAIN-SUFFIX,iverycd.com,PROXY
   - DOMAIN-SUFFIX,ivpn.net,PROXY
+  - DOMAIN-SUFFIX,iwara.tv,PROXY
   - DOMAIN-SUFFIX,ixquick.com,PROXY
   - DOMAIN-SUFFIX,ixxx.com,PROXY
   - DOMAIN-SUFFIX,iyouport.com,PROXY
@@ -5196,6 +5197,7 @@ rules:
   - DOMAIN-SUFFIX,tibetswiss.ch,PROXY
   - DOMAIN-SUFFIX,tibettelegraph.com,PROXY
   - DOMAIN-SUFFIX,tibettimes.net,PROXY
+  - DOMAIN-SUFFIX,tibettruth.com,PROXY
   - DOMAIN-SUFFIX,tibetwrites.org,PROXY
   - DOMAIN-SUFFIX,ticket.com.tw,PROXY
   - DOMAIN-SUFFIX,tigervpn.com,PROXY
