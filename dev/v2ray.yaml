@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-08-14 12:38:08
-#! GFWList: 2024-08-04 01:26:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-08-15 01:20:52
+#! GFWList: 2024-08-14 19:07:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1334,7 +1334,6 @@ routing:
         - domain:dalailama.com
         - domain:dalailama.mn
         - domain:dalailama.ru
-        - domain:dalailama.usc.edu
         - domain:dalailama80.org
         - domain:dalailamacenter.org
         - domain:dalailamafellows.org
@@ -4865,6 +4864,7 @@ routing:
         - domain:store.steampowered.com
         - domain:stories.google
         - domain:storify.com
+        - domain:storj.io
         - domain:storm.mg
         - domain:stormmediagroup.com
         - domain:stoweboyd.com
@@ -5548,6 +5548,7 @@ routing:
         - domain:us.to
         - domain:usacn.com
         - domain:usaip.eu
+        - domain:uscardforum.com
         - domain:uscnpm.org
         - domain:userapi.nytlog.com
         - domain:users.skynet.be

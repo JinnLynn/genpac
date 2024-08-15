@@ -1332,7 +1332,6 @@ rules:
   - DOMAIN-SUFFIX,dalailama.com,PROXY
   - DOMAIN-SUFFIX,dalailama.mn,PROXY
   - DOMAIN-SUFFIX,dalailama.ru,PROXY
-  - DOMAIN-SUFFIX,dalailama.usc.edu,PROXY
   - DOMAIN-SUFFIX,dalailama80.org,PROXY
   - DOMAIN-SUFFIX,dalailamacenter.org,PROXY
   - DOMAIN-SUFFIX,dalailamafellows.org,PROXY
@@ -4863,6 +4862,7 @@ rules:
   - DOMAIN-SUFFIX,store.steampowered.com,PROXY
   - DOMAIN-SUFFIX,stories.google,PROXY
   - DOMAIN-SUFFIX,storify.com,PROXY
+  - DOMAIN-SUFFIX,storj.io,PROXY
   - DOMAIN-SUFFIX,storm.mg,PROXY
   - DOMAIN-SUFFIX,stormmediagroup.com,PROXY
   - DOMAIN-SUFFIX,stoweboyd.com,PROXY
@@ -5546,6 +5546,7 @@ rules:
   - DOMAIN-SUFFIX,us.to,PROXY
   - DOMAIN-SUFFIX,usacn.com,PROXY
   - DOMAIN-SUFFIX,usaip.eu,PROXY
+  - DOMAIN-SUFFIX,uscardforum.com,PROXY
   - DOMAIN-SUFFIX,uscnpm.org,PROXY
   - DOMAIN-SUFFIX,userapi.nytlog.com,PROXY
   - DOMAIN-SUFFIX,users.skynet.be,PROXY

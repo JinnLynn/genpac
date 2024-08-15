@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2024-08-14 12:38:07
- * GFWList Last-Modified: 2024-08-04 01:26:19
+ * Generated: 2024-08-15 01:20:52
+ * GFWList Last-Modified: 2024-08-14 19:07:05
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1339,7 +1339,6 @@ var rules = [
             "dalailama.com",
             "dalailama.mn",
             "dalailama.ru",
-            "dalailama.usc.edu",
             "dalailama80.org",
             "dalailamacenter.org",
             "dalailamafellows.org",
@@ -4870,6 +4869,7 @@ var rules = [
             "store.steampowered.com",
             "stories.google",
             "storify.com",
+            "storj.io",
             "storm.mg",
             "stormmediagroup.com",
             "stoweboyd.com",
@@ -5553,6 +5553,7 @@ var rules = [
             "us.to",
             "usacn.com",
             "usaip.eu",
+            "uscardforum.com",
             "uscnpm.org",
             "userapi.nytlog.com",
             "users.skynet.be",
