@@ -34,10 +34,10 @@ def build(app):
             gp = GenPAC(config_file=options.config_file)
             gp.add_job({'format': 'genpac-server-domains',
                         'output': options._private.domain_file,
-                        '_order': -100})
+                        '_order': -1})
             gp.add_job({'format': 'list',
                         'output': options._private.list_file,
-                        '_order': -100})
+                        '_order': -1})
             if options.server_rule_enabled:
                 with open(options._private.server_rule_file, 'r') as fp:
                     gp.add_rule(fp.readlines())
