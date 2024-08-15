@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-08-14 12:37:34
-#! GFWList: 2024-08-04 01:26:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-08-15 01:20:25
+#! GFWList: 2024-08-14 19:07:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1232,7 +1232,6 @@ rule:
         - s,dalailama.com
         - s,dalailama.mn
         - s,dalailama.ru
-        - s,dalailama.usc.edu
         - s,dalailama80.org
         - s,dalailamacenter.org
         - s,dalailamafellows.org
@@ -4763,6 +4762,7 @@ rule:
         - s,store.steampowered.com
         - s,stories.google
         - s,storify.com
+        - s,storj.io
         - s,storm.mg
         - s,stormmediagroup.com
         - s,stoweboyd.com
@@ -5446,6 +5446,7 @@ rule:
         - s,us.to
         - s,usacn.com
         - s,usaip.eu
+        - s,uscardforum.com
         - s,uscnpm.org
         - s,userapi.nytlog.com
         - s,users.skynet.be
