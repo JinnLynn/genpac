@@ -56,6 +56,7 @@ def dump_yaml(data, **kwargs):
     kwargs.setdefault('Dumper', YamlDumper)
     kwargs.setdefault('indent', 2)
     kwargs.setdefault('sort_keys', False)
+    kwargs.setdefault('allow_unicode', True)
     return yaml.dump(data, **kwargs)
 
 

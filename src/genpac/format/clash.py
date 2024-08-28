@@ -14,7 +14,9 @@ _DEF_POLICY = 'PROXY'
 
 
 @formater('clash', desc='Clash的代理规则', order=89)
-class FmtShadowrocket(FmtBase):
+class FmtClash(FmtBase):
+    _default_tpl = f'{TPL_LEAD_COMMENT}\n__RULES__\n'
+
     @classmethod
     def prepare(cls, parser):
         super().prepare(parser)
@@ -24,8 +26,17 @@ class FmtShadowrocket(FmtBase):
                             action='store_true', help='不包含直连规则')
         cls.register_option('no-final', default=False,
                             action='store_true', help='不包含FINAL规则')
+        cls.register_option('set', default=False,
+                            action='store_true', help='输出Rule-Set')
+        cls.register_option('set-direct', default=False,
+                            action='store_true', help='输出Rule-Set时默认输出代理规则，使用该选项则输出直连规则')
 
     def generate(self, replacements):
+        data = self.generate_rule_set() if self.options.set else self.generate_rule()
+        replacements.update(__RULES__=dump_yaml(data))
+        return super().generate(replacements)
+
+    def generate_rule(self):
         rules = []
         if not self.options.no_direct:
             rules.extend(_DEF_DIRECT)
@@ -38,4 +49,8 @@ class FmtShadowrocket(FmtBase):
         if not self.options.no_final:
             rules.append('MATCH,DIRECT')
 
-        return TPL_LEAD_COMMENT + '\n' + dump_yaml({'rules': rules})
+        return {'rules': rules}
+
+    def generate_rule_set(self):
+        rules = [f'DOMAIN-SUFFIX,{d}' for d in (self.gfwed_domains if not self.options.set_direct else self.ignored_domains)]
+        return {'payload': rules}
