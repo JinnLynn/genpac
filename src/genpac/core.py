@@ -139,6 +139,8 @@ class GenPAC(object):
         register_option(group, options, 'gfwlist-decoded-save', conv=conv_path,
                         metavar='FILE',
                         help='保存解码后的gfwlist, 仅用于测试')
+        register_option(group, options, 'gfwlist-ignore-exception-rule', conv=conv_bool,
+                        action='store_true', help='忽略gfwlist中的例外规则（即不使用代理规则）')
 
         register_option(group, options, 'user-rule', conv=conv_list,
                         action='append', metavar='RULE',

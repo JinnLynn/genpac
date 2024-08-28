@@ -124,9 +124,11 @@ class FmtBase(object):
     def ignored_domains(self):
         if isinstance(self._ignored_domains, list):
             return self._ignored_domains
+        self._ignored_domains = []
         # 1. gfwlist.direct
         # 2. 过滤掉gfwlist.proxy包含的
-        self._ignored_domains = [d for d in self.rules[1][0] if d not in self.rules[1][1]]
+        if not self.options._original.gfwlist_ignore_exception_rule:
+            self._ignored_domains += [d for d in self.rules[1][0] if d not in self.rules[1][1]]
         # 3. 合并上 user.direct
         self._ignored_domains += self.rules[0][0]
         # 4. 过滤到 user.proxy 包含的
