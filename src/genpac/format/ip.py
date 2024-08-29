@@ -1,3 +1,4 @@
+import os
 import re
 
 from netaddr import IPNetwork, IPRange, IPAddress
@@ -14,12 +15,12 @@ _IP_FAMILIES = ['4', '6', 'all']
 # REF: https://github.com/gaoyifan/china-operator-ip/
 #      https://github.com/sapics/ip-location-db/tree/main/geolite2-country
 _IP_DATA_ASN = {
-    4: 'https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china.txt',
-    6: 'https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china6.txt'
+    4: os.getenv('GP_RES_IP_ASN_4', 'https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china.txt'),
+    6: os.getenv('GP_RES_IP_ASN_6', 'https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china6.txt')
 }
 _IP_DATA_GEOLITE2 = {
-    4: 'https://raw.githubusercontent.com/sapics/ip-location-db/main/geolite2-country/geolite2-country-ipv4.csv',
-    6: 'https://raw.githubusercontent.com/sapics/ip-location-db/main/geolite2-country/geolite2-country-ipv6.csv'
+    4: os.getenv('GP_RES_IP_GEOLITE2_4', 'https://raw.githubusercontent.com/sapics/ip-location-db/main/geolite2-country/geolite2-country-ipv4.csv'),
+    6: os.getenv('GP_RES_IP_GEOLITE2_6', 'https://raw.githubusercontent.com/sapics/ip-location-db/main/geolite2-country/geolite2-country-ipv6.csv')
 }
 
 

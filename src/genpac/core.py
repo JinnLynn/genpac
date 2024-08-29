@@ -24,8 +24,8 @@ from .util import logger, Namespace
 from .util import get_cache_file, remove_cache_file
 
 
-_GFWLIST_URL = \
-    'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
+_GFWLIST_URL = os.getenv('GP_RES_GFWLIST',
+                         'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt')
 
 
 def run():
