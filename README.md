@@ -214,6 +214,7 @@ docker run --rm -p 8000:8000 -v /PATH/TO/CONFIG/FILE:/app/etc/config.ini jinnlyn
 
    gfwlist是在线获取，某些情况下可能被和谐或其它原因导致获取失败，可以通过以下几种方法解决该问题：
    * 使用`--proxy`参数，通过代理获取gfwlist
+   * 使用环境变量`GP_RES_GFWLIST`或`--gfwlist-url`配置镜像加速地址
    * 通过其它方式下载到本地，再通过`--gfwlist-local`加载
    * 使用参数`--gfwlist-url=-`不进行在线获取，这种情况下你只能使用自定义规则
 
@@ -221,6 +222,10 @@ docker run --rm -p 8000:8000 -v /PATH/TO/CONFIG/FILE:/app/etc/config.ini jinnlyn
 
    * 检查--proxy参数或配置proxy值是格式否符合`PROTOCOL://HOST:POST`，如`socks5://127.0.0.1:1080、http://127.0.0.1:8080`
    * OSX Linux如果存在http_proxy、https_proxy环境变量，代理可能无法正常使用
+
+1. 如何移除在gfwlist存在的规则
+
+   在用户规则中添加例外规则，如要删除gfwlist中的`example.com`规则则仅需在用户规则中添加`@@example.com`
 
 1. PAC格式中，参数`--pac-precise`的精确匹配模式的作用是什么？
 
