@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-09-02 12:40:37
-#! GFWList: 2024-08-14 19:07:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-09-03 01:34:53
+#! GFWList: 2024-09-02 15:03:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -434,7 +434,6 @@ rules:
   - DOMAIN-SUFFIX,api.ai,PROXY
   - DOMAIN-SUFFIX,api.dropboxapi.com,PROXY
   - DOMAIN-SUFFIX,api.linksalpha.com,PROXY
-  - DOMAIN-SUFFIX,api.proxlet.com,PROXY
   - DOMAIN-SUFFIX,api.pureapk.com,PROXY
   - DOMAIN-SUFFIX,api.recaptcha.net,PROXY
   - DOMAIN-SUFFIX,apiary.io,PROXY
@@ -737,7 +736,6 @@ rules:
   - DOMAIN-SUFFIX,blog.martinoei.com,PROXY
   - DOMAIN-SUFFIX,blog.pathtosharepoint.com,PROXY
   - DOMAIN-SUFFIX,blog.pentalogic.net,PROXY
-  - DOMAIN-SUFFIX,blog.qooza.hk,PROXY
   - DOMAIN-SUFFIX,blog.ranxiang.com,PROXY
   - DOMAIN-SUFFIX,blog.sina.com.tw,PROXY
   - DOMAIN-SUFFIX,blog.sogoo.org,PROXY
@@ -868,6 +866,7 @@ rules:
   - DOMAIN-SUFFIX,buzzhand.com,PROXY
   - DOMAIN-SUFFIX,buzzhand.net,PROXY
   - DOMAIN-SUFFIX,buzzorange.com,PROXY
+  - DOMAIN-SUFFIX,buzzsprout.com,PROXY
   - DOMAIN-SUFFIX,bvpn.com,PROXY
   - DOMAIN-SUFFIX,bwgyhw.com,PROXY
   - DOMAIN-SUFFIX,bwh1.net,PROXY
@@ -2983,6 +2982,7 @@ rules:
   - DOMAIN-SUFFIX,iuksky.com,PROXY
   - DOMAIN-SUFFIX,ivacy.com,PROXY
   - DOMAIN-SUFFIX,iverycd.com,PROXY
+  - DOMAIN-SUFFIX,ivonblog.com,PROXY
   - DOMAIN-SUFFIX,ivpn.net,PROXY
   - DOMAIN-SUFFIX,iwara.tv,PROXY
   - DOMAIN-SUFFIX,ixquick.com,PROXY
@@ -2998,6 +2998,7 @@ rules:
   - DOMAIN-SUFFIX,jamaat.org,PROXY
   - DOMAIN-SUFFIX,jamestown.org,PROXY
   - DOMAIN-SUFFIX,jamyangnorbu.com,PROXY
+  - DOMAIN-SUFFIX,jan.ai,PROXY
   - DOMAIN-SUFFIX,jandyx.com,PROXY
   - DOMAIN-SUFFIX,janwongphoto.com,PROXY
   - DOMAIN-SUFFIX,japan-whores.com,PROXY
@@ -4091,8 +4092,6 @@ rules:
   - DOMAIN-SUFFIX,pen.io,PROXY
   - DOMAIN-SUFFIX,penchinese.com,PROXY
   - DOMAIN-SUFFIX,penchinese.net,PROXY
-  - DOMAIN-SUFFIX,pengyulong.com,PROXY
-  - DOMAIN-SUFFIX,penisbot.com,PROXY
   - DOMAIN-SUFFIX,penthouse.com,PROXY
   - DOMAIN-SUFFIX,pentoy.hk,PROXY
   - DOMAIN-SUFFIX,peoplebookcafe.com,PROXY
@@ -4108,7 +4107,6 @@ rules:
   - DOMAIN-SUFFIX,phapluan.org,PROXY
   - DOMAIN-SUFFIX,phayul.com,PROXY
   - DOMAIN-SUFFIX,philborges.com,PROXY
-  - DOMAIN-SUFFIX,philly.com,PROXY
   - DOMAIN-SUFFIX,phmsociety.org,PROXY
   - DOMAIN-SUFFIX,phncdn.com,PROXY
   - DOMAIN-SUFFIX,phosphation13.rssing.com,PROXY
@@ -4354,12 +4352,10 @@ rules:
   - DOMAIN-SUFFIX,raizoji.or.jp,PROXY
   - DOMAIN-SUFFIX,ramcity.com.au,PROXY
   - DOMAIN-SUFFIX,rangwang.biz,PROXY
-  - DOMAIN-SUFFIX,rangzen.com,PROXY
   - DOMAIN-SUFFIX,rangzen.net,PROXY
   - DOMAIN-SUFFIX,rangzen.org,PROXY
   - DOMAIN-SUFFIX,ranyunfei.com,PROXY
   - DOMAIN-SUFFIX,rapbull.net,PROXY
-  - DOMAIN-SUFFIX,rapidgator.net,PROXY
   - DOMAIN-SUFFIX,rapidmoviez.com,PROXY
   - DOMAIN-SUFFIX,rapidvpn.com,PROXY
   - DOMAIN-SUFFIX,rarbgprx.org,PROXY
@@ -5202,6 +5198,7 @@ rules:
   - DOMAIN-SUFFIX,ticket.com.tw,PROXY
   - DOMAIN-SUFFIX,tigervpn.com,PROXY
   - DOMAIN-SUFFIX,tiktok.com,PROXY
+  - DOMAIN-SUFFIX,tiktokv.com,PROXY
   - DOMAIN-SUFFIX,tiltbrush.com,PROXY
   - DOMAIN-SUFFIX,timdir.com,PROXY
   - DOMAIN-SUFFIX,time.com,PROXY

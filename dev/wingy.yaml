@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-09-02 12:40:37
-#! GFWList: 2024-08-14 19:07:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-09-03 01:34:54
+#! GFWList: 2024-09-02 15:03:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -334,7 +334,6 @@ rule:
         - s,api.ai
         - s,api.dropboxapi.com
         - s,api.linksalpha.com
-        - s,api.proxlet.com
         - s,api.pureapk.com
         - s,api.recaptcha.net
         - s,apiary.io
@@ -637,7 +636,6 @@ rule:
         - s,blog.martinoei.com
         - s,blog.pathtosharepoint.com
         - s,blog.pentalogic.net
-        - s,blog.qooza.hk
         - s,blog.ranxiang.com
         - s,blog.sina.com.tw
         - s,blog.sogoo.org
@@ -768,6 +766,7 @@ rule:
         - s,buzzhand.com
         - s,buzzhand.net
         - s,buzzorange.com
+        - s,buzzsprout.com
         - s,bvpn.com
         - s,bwgyhw.com
         - s,bwh1.net
@@ -2883,6 +2882,7 @@ rule:
         - s,iuksky.com
         - s,ivacy.com
         - s,iverycd.com
+        - s,ivonblog.com
         - s,ivpn.net
         - s,iwara.tv
         - s,ixquick.com
@@ -2898,6 +2898,7 @@ rule:
         - s,jamaat.org
         - s,jamestown.org
         - s,jamyangnorbu.com
+        - s,jan.ai
         - s,jandyx.com
         - s,janwongphoto.com
         - s,japan-whores.com
@@ -3991,8 +3992,6 @@ rule:
         - s,pen.io
         - s,penchinese.com
         - s,penchinese.net
-        - s,pengyulong.com
-        - s,penisbot.com
         - s,penthouse.com
         - s,pentoy.hk
         - s,peoplebookcafe.com
@@ -4008,7 +4007,6 @@ rule:
         - s,phapluan.org
         - s,phayul.com
         - s,philborges.com
-        - s,philly.com
         - s,phmsociety.org
         - s,phncdn.com
         - s,phosphation13.rssing.com
@@ -4254,12 +4252,10 @@ rule:
         - s,raizoji.or.jp
         - s,ramcity.com.au
         - s,rangwang.biz
-        - s,rangzen.com
         - s,rangzen.net
         - s,rangzen.org
         - s,ranyunfei.com
         - s,rapbull.net
-        - s,rapidgator.net
         - s,rapidmoviez.com
         - s,rapidvpn.com
         - s,rarbgprx.org
@@ -5102,6 +5098,7 @@ rule:
         - s,ticket.com.tw
         - s,tigervpn.com
         - s,tiktok.com
+        - s,tiktokv.com
         - s,tiltbrush.com
         - s,timdir.com
         - s,time.com
