@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-09-17 12:40:22
-#! GFWList: 2024-09-02 15:03:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-09-18 01:37:02
+#! GFWList: 2024-09-17 15:45:49 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3947,6 +3947,7 @@
 (^|\.)partypoker\.com$
 (^|\.)passion\.com$
 (^|\.)passiontimes\.hk$
+(^|\.)passwords\.google$
 (^|\.)paste\.ee$
 (^|\.)pastebin\.com$
 (^|\.)pastie\.org$
