@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-10-07 12:42:48
-#! GFWList: 2024-09-17 15:45:49 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-10-08 01:41:35
+#! GFWList: 2024-10-07 15:39:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1622,6 +1622,7 @@ rule:
         - s,fa.gov.tw
         - s,facebook.br
         - s,facebook.com
+        - s,facebook.de
         - s,facebook.design
         - s,facebook.hu
         - s,facebook.in
@@ -3359,6 +3360,7 @@ rule:
         - s,meshrep.com
         - s,mesotw.com
         - s,messenger.com
+        - s,meta.com
         - s,metacafe.com
         - s,metafilter.com
         - s,metart.com
@@ -5165,6 +5167,7 @@ rule:
         - s,torrentproject.se
         - s,torrenty.org
         - s,torrentz.eu
+        - s,tortoisesvn.net
         - s,torvpn.com
         - s,tosh.comedycentral.com
         - s,totalvpn.com

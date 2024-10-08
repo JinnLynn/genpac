@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-10-07 12:42:47
-#! GFWList: 2024-09-17 15:45:49 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-10-08 01:41:32
+#! GFWList: 2024-10-07 15:39:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1724,6 +1724,7 @@ routing:
         - domain:fa.gov.tw
         - domain:facebook.br
         - domain:facebook.com
+        - domain:facebook.de
         - domain:facebook.design
         - domain:facebook.hu
         - domain:facebook.in
@@ -3461,6 +3462,7 @@ routing:
         - domain:meshrep.com
         - domain:mesotw.com
         - domain:messenger.com
+        - domain:meta.com
         - domain:metacafe.com
         - domain:metafilter.com
         - domain:metart.com
@@ -5267,6 +5269,7 @@ routing:
         - domain:torrentproject.se
         - domain:torrenty.org
         - domain:torrentz.eu
+        - domain:tortoisesvn.net
         - domain:torvpn.com
         - domain:tosh.comedycentral.com
         - domain:totalvpn.com

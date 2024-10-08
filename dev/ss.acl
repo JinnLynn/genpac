@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-10-07 12:42:47
-#! GFWList: 2024-09-17 15:45:49 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-10-08 01:41:32
+#! GFWList: 2024-10-07 15:39:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1609,6 +1609,7 @@
 (^|\.)fa\.gov\.tw$
 (^|\.)facebook\.br$
 (^|\.)facebook\.com$
+(^|\.)facebook\.de$
 (^|\.)facebook\.design$
 (^|\.)facebook\.hu$
 (^|\.)facebook\.in$
@@ -3346,6 +3347,7 @@
 (^|\.)meshrep\.com$
 (^|\.)mesotw\.com$
 (^|\.)messenger\.com$
+(^|\.)meta\.com$
 (^|\.)metacafe\.com$
 (^|\.)metafilter\.com$
 (^|\.)metart\.com$
@@ -5152,6 +5154,7 @@
 (^|\.)torrentproject\.se$
 (^|\.)torrenty\.org$
 (^|\.)torrentz\.eu$
+(^|\.)tortoisesvn\.net$
 (^|\.)torvpn\.com$
 (^|\.)tosh\.comedycentral\.com$
 (^|\.)totalvpn\.com$

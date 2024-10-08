@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: L0wQ4D97enAmsuAyhbexKA
+! Checksum: j9+lCGr2eTNyrwZCFg8ZzQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 17 Sep 2024 11:45:49 -0400
+! Last Modified: Mon, 07 Oct 2024 11:39:43 -0400
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -832,6 +832,7 @@ cdninstagram.com
 ||facebook.com
 !--/^https?:\/\/[^\/]+facebook\.com/
 @@||v6.facebook.com
+||facebook.de
 ||facebook.design
 ||connect.facebook.net
 ||facebook.hu
@@ -850,6 +851,7 @@ cdninstagram.com
 ||instagram.com
 ||m.me
 ||messenger.com
+||meta.com
 ||oculus.com
 ||oculuscdn.com
 ||rocksdb.org
@@ -7360,6 +7362,7 @@ torrentprivacy.com
 |http://torrentproject.se
 ||torrenty.org
 ||torrentz.eu
+||tortoisesvn.net
 ||torvpn.com
 ||totalvpn.com
 .toutiaoabc.com
