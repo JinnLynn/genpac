@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-12-30 12:41:15
-#! GFWList: 2024-10-07 15:39:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-12-31 01:41:11
+#! GFWList: 2024-12-30 15:11:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -834,7 +834,8 @@ routing:
         - domain:brookings.edu
         - domain:brucewang.net
         - domain:brutaltgp.com
-        - domain:bt2mag.com
+        - domain:bsky.app
+        - domain:bsky.social
         - domain:bt95.com
         - domain:btaia.com
         - domain:btbtav.com
@@ -1385,6 +1386,7 @@ routing:
         - domain:debug.com
         - domain:deck.ly
         - domain:decodet.co
+        - domain:deepai.org
         - domain:deepmind.com
         - domain:deezer.com
         - domain:definebabe.com
@@ -1465,6 +1467,7 @@ routing:
         - domain:dnsrd.com
         - domain:dnssec.net
         - domain:dnvod.tv
+        - domain:docs.new
         - domain:doctorvoice.org
         - domain:documentingreality.com
         - domain:dogfartnetwork.com
@@ -2520,16 +2523,12 @@ routing:
         - domain:h528.com
         - domain:h5dm.com
         - domain:h5galgame.me
-        - domain:hacg.club
-        - domain:hacg.in
-        - domain:hacg.li
-        - domain:hacg.me
-        - domain:hacg.red
         - domain:hacken.cc
         - domain:hacker.org
         - domain:hackmd.io
         - domain:hackthatphone.net
         - domain:hahlo.com
+        - domain:haijiao.com
         - domain:hakkatv.org.tw
         - domain:handcraftedsoftware.org
         - domain:hanime.tv
@@ -4623,6 +4622,7 @@ routing:
         - domain:sharpdaily.tw
         - domain:shat-tibet.com
         - domain:shattered.io
+        - domain:sheets.new
         - domain:sheikyermami.com
         - domain:shellfire.de
         - domain:shenshou.org
@@ -4706,6 +4706,7 @@ routing:
         - domain:sleazydream.com
         - domain:slheng.com
         - domain:slickvpn.com
+        - domain:slides.new
         - domain:slideshare.net
         - domain:slinkset.com
         - domain:slutload.com
@@ -4721,6 +4722,7 @@ routing:
         - domain:smith.edu
         - domain:smyxy.org
         - domain:snapchat.com
+        - domain:snapseed.com
         - domain:snaptu.com
         - domain:sndcdn.com
         - domain:sneakme.net
@@ -5726,6 +5728,7 @@ routing:
         - domain:vporn.com
         - domain:vpser.net
         - domain:vraiesagesse.net
+        - domain:vrchat.com
         - domain:vrmtr.com
         - domain:vrsmash.com
         - domain:vtunnel.com
@@ -5826,6 +5829,7 @@ routing:
         - domain:wha.la
         - domain:whatblocked.com
         - domain:whatbrowser.org
+        - domain:whats.new
         - domain:whatsapp.com
         - domain:whatsapp.net
         - domain:whatsonweibo.com

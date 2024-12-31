@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-12-30 12:41:17
-#! GFWList: 2024-10-07 15:39:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-12-31 01:41:13
+#! GFWList: 2024-12-30 15:11:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -732,7 +732,8 @@ rule:
         - s,brookings.edu
         - s,brucewang.net
         - s,brutaltgp.com
-        - s,bt2mag.com
+        - s,bsky.app
+        - s,bsky.social
         - s,bt95.com
         - s,btaia.com
         - s,btbtav.com
@@ -1283,6 +1284,7 @@ rule:
         - s,debug.com
         - s,deck.ly
         - s,decodet.co
+        - s,deepai.org
         - s,deepmind.com
         - s,deezer.com
         - s,definebabe.com
@@ -1363,6 +1365,7 @@ rule:
         - s,dnsrd.com
         - s,dnssec.net
         - s,dnvod.tv
+        - s,docs.new
         - s,doctorvoice.org
         - s,documentingreality.com
         - s,dogfartnetwork.com
@@ -2418,16 +2421,12 @@ rule:
         - s,h528.com
         - s,h5dm.com
         - s,h5galgame.me
-        - s,hacg.club
-        - s,hacg.in
-        - s,hacg.li
-        - s,hacg.me
-        - s,hacg.red
         - s,hacken.cc
         - s,hacker.org
         - s,hackmd.io
         - s,hackthatphone.net
         - s,hahlo.com
+        - s,haijiao.com
         - s,hakkatv.org.tw
         - s,handcraftedsoftware.org
         - s,hanime.tv
@@ -4521,6 +4520,7 @@ rule:
         - s,sharpdaily.tw
         - s,shat-tibet.com
         - s,shattered.io
+        - s,sheets.new
         - s,sheikyermami.com
         - s,shellfire.de
         - s,shenshou.org
@@ -4604,6 +4604,7 @@ rule:
         - s,sleazydream.com
         - s,slheng.com
         - s,slickvpn.com
+        - s,slides.new
         - s,slideshare.net
         - s,slinkset.com
         - s,slutload.com
@@ -4619,6 +4620,7 @@ rule:
         - s,smith.edu
         - s,smyxy.org
         - s,snapchat.com
+        - s,snapseed.com
         - s,snaptu.com
         - s,sndcdn.com
         - s,sneakme.net
@@ -5624,6 +5626,7 @@ rule:
         - s,vporn.com
         - s,vpser.net
         - s,vraiesagesse.net
+        - s,vrchat.com
         - s,vrmtr.com
         - s,vrsmash.com
         - s,vtunnel.com
@@ -5724,6 +5727,7 @@ rule:
         - s,wha.la
         - s,whatblocked.com
         - s,whatbrowser.org
+        - s,whats.new
         - s,whatsapp.com
         - s,whatsapp.net
         - s,whatsonweibo.com

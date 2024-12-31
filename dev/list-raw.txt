@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2024-12-30 12:41:15
-! GFWList: 2024-10-07 15:39:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2024-12-31 01:41:11
+! GFWList: 2024-12-30 15:11:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -826,7 +826,8 @@
 ||brookings.edu
 ||brucewang.net
 ||brutaltgp.com
-||bt2mag.com
+||bsky.app
+||bsky.social
 ||bt95.com
 ||btaia.com
 ||btbtav.com
@@ -1377,6 +1378,7 @@
 ||debug.com
 ||deck.ly
 ||decodet.co
+||deepai.org
 ||deepmind.com
 ||deezer.com
 ||definebabe.com
@@ -1457,6 +1459,7 @@
 ||dnsrd.com
 ||dnssec.net
 ||dnvod.tv
+||docs.new
 ||doctorvoice.org
 ||documentingreality.com
 ||dogfartnetwork.com
@@ -2512,16 +2515,12 @@
 ||h528.com
 ||h5dm.com
 ||h5galgame.me
-||hacg.club
-||hacg.in
-||hacg.li
-||hacg.me
-||hacg.red
 ||hacken.cc
 ||hacker.org
 ||hackmd.io
 ||hackthatphone.net
 ||hahlo.com
+||haijiao.com
 ||hakkatv.org.tw
 ||handcraftedsoftware.org
 ||hanime.tv
@@ -4615,6 +4614,7 @@
 ||sharpdaily.tw
 ||shat-tibet.com
 ||shattered.io
+||sheets.new
 ||sheikyermami.com
 ||shellfire.de
 ||shenshou.org
@@ -4698,6 +4698,7 @@
 ||sleazydream.com
 ||slheng.com
 ||slickvpn.com
+||slides.new
 ||slideshare.net
 ||slinkset.com
 ||slutload.com
@@ -4713,6 +4714,7 @@
 ||smith.edu
 ||smyxy.org
 ||snapchat.com
+||snapseed.com
 ||snaptu.com
 ||sndcdn.com
 ||sneakme.net
@@ -5718,6 +5720,7 @@
 ||vporn.com
 ||vpser.net
 ||vraiesagesse.net
+||vrchat.com
 ||vrmtr.com
 ||vrsmash.com
 ||vtunnel.com
@@ -5818,6 +5821,7 @@
 ||wha.la
 ||whatblocked.com
 ||whatbrowser.org
+||whats.new
 ||whatsapp.com
 ||whatsapp.net
 ||whatsonweibo.com

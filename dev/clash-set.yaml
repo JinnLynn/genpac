@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-12-30 12:41:16
-#! GFWList: 2024-10-07 15:39:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2024-12-31 01:41:12
+#! GFWList: 2024-12-30 15:11:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -716,7 +716,8 @@ payload:
   - DOMAIN-SUFFIX,brookings.edu
   - DOMAIN-SUFFIX,brucewang.net
   - DOMAIN-SUFFIX,brutaltgp.com
-  - DOMAIN-SUFFIX,bt2mag.com
+  - DOMAIN-SUFFIX,bsky.app
+  - DOMAIN-SUFFIX,bsky.social
   - DOMAIN-SUFFIX,bt95.com
   - DOMAIN-SUFFIX,btaia.com
   - DOMAIN-SUFFIX,btbtav.com
@@ -1267,6 +1268,7 @@ payload:
   - DOMAIN-SUFFIX,debug.com
   - DOMAIN-SUFFIX,deck.ly
   - DOMAIN-SUFFIX,decodet.co
+  - DOMAIN-SUFFIX,deepai.org
   - DOMAIN-SUFFIX,deepmind.com
   - DOMAIN-SUFFIX,deezer.com
   - DOMAIN-SUFFIX,definebabe.com
@@ -1347,6 +1349,7 @@ payload:
   - DOMAIN-SUFFIX,dnsrd.com
   - DOMAIN-SUFFIX,dnssec.net
   - DOMAIN-SUFFIX,dnvod.tv
+  - DOMAIN-SUFFIX,docs.new
   - DOMAIN-SUFFIX,doctorvoice.org
   - DOMAIN-SUFFIX,documentingreality.com
   - DOMAIN-SUFFIX,dogfartnetwork.com
@@ -2402,16 +2405,12 @@ payload:
   - DOMAIN-SUFFIX,h528.com
   - DOMAIN-SUFFIX,h5dm.com
   - DOMAIN-SUFFIX,h5galgame.me
-  - DOMAIN-SUFFIX,hacg.club
-  - DOMAIN-SUFFIX,hacg.in
-  - DOMAIN-SUFFIX,hacg.li
-  - DOMAIN-SUFFIX,hacg.me
-  - DOMAIN-SUFFIX,hacg.red
   - DOMAIN-SUFFIX,hacken.cc
   - DOMAIN-SUFFIX,hacker.org
   - DOMAIN-SUFFIX,hackmd.io
   - DOMAIN-SUFFIX,hackthatphone.net
   - DOMAIN-SUFFIX,hahlo.com
+  - DOMAIN-SUFFIX,haijiao.com
   - DOMAIN-SUFFIX,hakkatv.org.tw
   - DOMAIN-SUFFIX,handcraftedsoftware.org
   - DOMAIN-SUFFIX,hanime.tv
@@ -4505,6 +4504,7 @@ payload:
   - DOMAIN-SUFFIX,sharpdaily.tw
   - DOMAIN-SUFFIX,shat-tibet.com
   - DOMAIN-SUFFIX,shattered.io
+  - DOMAIN-SUFFIX,sheets.new
   - DOMAIN-SUFFIX,sheikyermami.com
   - DOMAIN-SUFFIX,shellfire.de
   - DOMAIN-SUFFIX,shenshou.org
@@ -4588,6 +4588,7 @@ payload:
   - DOMAIN-SUFFIX,sleazydream.com
   - DOMAIN-SUFFIX,slheng.com
   - DOMAIN-SUFFIX,slickvpn.com
+  - DOMAIN-SUFFIX,slides.new
   - DOMAIN-SUFFIX,slideshare.net
   - DOMAIN-SUFFIX,slinkset.com
   - DOMAIN-SUFFIX,slutload.com
@@ -4603,6 +4604,7 @@ payload:
   - DOMAIN-SUFFIX,smith.edu
   - DOMAIN-SUFFIX,smyxy.org
   - DOMAIN-SUFFIX,snapchat.com
+  - DOMAIN-SUFFIX,snapseed.com
   - DOMAIN-SUFFIX,snaptu.com
   - DOMAIN-SUFFIX,sndcdn.com
   - DOMAIN-SUFFIX,sneakme.net
@@ -5608,6 +5610,7 @@ payload:
   - DOMAIN-SUFFIX,vporn.com
   - DOMAIN-SUFFIX,vpser.net
   - DOMAIN-SUFFIX,vraiesagesse.net
+  - DOMAIN-SUFFIX,vrchat.com
   - DOMAIN-SUFFIX,vrmtr.com
   - DOMAIN-SUFFIX,vrsmash.com
   - DOMAIN-SUFFIX,vtunnel.com
@@ -5708,6 +5711,7 @@ payload:
   - DOMAIN-SUFFIX,wha.la
   - DOMAIN-SUFFIX,whatblocked.com
   - DOMAIN-SUFFIX,whatbrowser.org
+  - DOMAIN-SUFFIX,whats.new
   - DOMAIN-SUFFIX,whatsapp.com
   - DOMAIN-SUFFIX,whatsapp.net
   - DOMAIN-SUFFIX,whatsonweibo.com
