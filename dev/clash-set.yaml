@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-12-31 12:40:25
-#! GFWList: 2024-12-30 15:11:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-01 01:49:04
+#! GFWList: 2024-12-31 14:47:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -2362,6 +2362,7 @@ payload:
   - DOMAIN-SUFFIX,greenvpn.org
   - DOMAIN-SUFFIX,grindr.com
   - DOMAIN-SUFFIX,grotty-monday.com
+  - DOMAIN-SUFFIX,ground.news
   - DOMAIN-SUFFIX,groups.google.cn
   - DOMAIN-SUFFIX,grow.google
   - DOMAIN-SUFFIX,gs-discuss.com
@@ -2454,6 +2455,7 @@ payload:
   - DOMAIN-SUFFIX,hentaivideoworld.com
   - DOMAIN-SUFFIX,heqinglian.net
   - DOMAIN-SUFFIX,heritage.org
+  - DOMAIN-SUFFIX,herokuapp.com
   - DOMAIN-SUFFIX,heungkongdiscuss.com
   - DOMAIN-SUFFIX,hexieshe.com
   - DOMAIN-SUFFIX,hexieshe.xyz
@@ -2606,6 +2608,7 @@ payload:
   - DOMAIN-SUFFIX,howtoforge.com
   - DOMAIN-SUFFIX,hoxx.com
   - DOMAIN-SUFFIX,hpa.gov.tw
+  - DOMAIN-SUFFIX,hpjav.com
   - DOMAIN-SUFFIX,hqcdp.org
   - DOMAIN-SUFFIX,hqjapanesesex.com
   - DOMAIN-SUFFIX,hqmovies.com
@@ -2693,6 +2696,7 @@ payload:
   - DOMAIN-SUFFIX,iask.bz
   - DOMAIN-SUFFIX,iask.ca
   - DOMAIN-SUFFIX,iav19.com
+  - DOMAIN-SUFFIX,iavian.net
   - DOMAIN-SUFFIX,ibiblio.org
   - DOMAIN-SUFFIX,ibit.am
   - DOMAIN-SUFFIX,iblist.com
@@ -3960,6 +3964,7 @@ payload:
   - DOMAIN-SUFFIX,pcanywhere.net
   - DOMAIN-SUFFIX,pcc.gov.tw
   - DOMAIN-SUFFIX,pcdvd.com.tw
+  - DOMAIN-SUFFIX,pcgamestorrents.com
   - DOMAIN-SUFFIX,pchome.com.tw
   - DOMAIN-SUFFIX,pcij.org
   - DOMAIN-SUFFIX,pcstore.com.tw

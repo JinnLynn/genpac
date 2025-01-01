@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-12-31 12:40:25
-#! GFWList: 2024-12-30 15:11:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-01 01:49:04
+#! GFWList: 2024-12-31 14:47:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -2478,6 +2478,7 @@ rules:
   - DOMAIN-SUFFIX,greenvpn.org,PROXY
   - DOMAIN-SUFFIX,grindr.com,PROXY
   - DOMAIN-SUFFIX,grotty-monday.com,PROXY
+  - DOMAIN-SUFFIX,ground.news,PROXY
   - DOMAIN-SUFFIX,groups.google.cn,PROXY
   - DOMAIN-SUFFIX,grow.google,PROXY
   - DOMAIN-SUFFIX,gs-discuss.com,PROXY
@@ -2570,6 +2571,7 @@ rules:
   - DOMAIN-SUFFIX,hentaivideoworld.com,PROXY
   - DOMAIN-SUFFIX,heqinglian.net,PROXY
   - DOMAIN-SUFFIX,heritage.org,PROXY
+  - DOMAIN-SUFFIX,herokuapp.com,PROXY
   - DOMAIN-SUFFIX,heungkongdiscuss.com,PROXY
   - DOMAIN-SUFFIX,hexieshe.com,PROXY
   - DOMAIN-SUFFIX,hexieshe.xyz,PROXY
@@ -2722,6 +2724,7 @@ rules:
   - DOMAIN-SUFFIX,howtoforge.com,PROXY
   - DOMAIN-SUFFIX,hoxx.com,PROXY
   - DOMAIN-SUFFIX,hpa.gov.tw,PROXY
+  - DOMAIN-SUFFIX,hpjav.com,PROXY
   - DOMAIN-SUFFIX,hqcdp.org,PROXY
   - DOMAIN-SUFFIX,hqjapanesesex.com,PROXY
   - DOMAIN-SUFFIX,hqmovies.com,PROXY
@@ -2809,6 +2812,7 @@ rules:
   - DOMAIN-SUFFIX,iask.bz,PROXY
   - DOMAIN-SUFFIX,iask.ca,PROXY
   - DOMAIN-SUFFIX,iav19.com,PROXY
+  - DOMAIN-SUFFIX,iavian.net,PROXY
   - DOMAIN-SUFFIX,ibiblio.org,PROXY
   - DOMAIN-SUFFIX,ibit.am,PROXY
   - DOMAIN-SUFFIX,iblist.com,PROXY
@@ -4076,6 +4080,7 @@ rules:
   - DOMAIN-SUFFIX,pcanywhere.net,PROXY
   - DOMAIN-SUFFIX,pcc.gov.tw,PROXY
   - DOMAIN-SUFFIX,pcdvd.com.tw,PROXY
+  - DOMAIN-SUFFIX,pcgamestorrents.com,PROXY
   - DOMAIN-SUFFIX,pchome.com.tw,PROXY
   - DOMAIN-SUFFIX,pcij.org,PROXY
   - DOMAIN-SUFFIX,pcstore.com.tw,PROXY

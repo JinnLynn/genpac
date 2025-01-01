@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2024-12-31 12:40:24
-! GFWList: 2024-12-30 15:11:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-01-01 01:49:03
+! GFWList: 2024-12-31 14:47:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -2472,6 +2472,7 @@
 ||greenvpn.org
 ||grindr.com
 ||grotty-monday.com
+||ground.news
 ||groups.google.cn
 ||grow.google
 ||gs-discuss.com
@@ -2564,6 +2565,7 @@
 ||hentaivideoworld.com
 ||heqinglian.net
 ||heritage.org
+||herokuapp.com
 ||heungkongdiscuss.com
 ||hexieshe.com
 ||hexieshe.xyz
@@ -2716,6 +2718,7 @@
 ||howtoforge.com
 ||hoxx.com
 ||hpa.gov.tw
+||hpjav.com
 ||hqcdp.org
 ||hqjapanesesex.com
 ||hqmovies.com
@@ -2803,6 +2806,7 @@
 ||iask.bz
 ||iask.ca
 ||iav19.com
+||iavian.net
 ||ibiblio.org
 ||ibit.am
 ||iblist.com
@@ -4070,6 +4074,7 @@
 ||pcanywhere.net
 ||pcc.gov.tw
 ||pcdvd.com.tw
+||pcgamestorrents.com
 ||pchome.com.tw
 ||pcij.org
 ||pcstore.com.tw

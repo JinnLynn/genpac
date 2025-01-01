@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-12-31 12:40:25
-#! GFWList: 2024-12-30 15:11:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-01 01:49:04
+#! GFWList: 2024-12-31 14:47:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2378,6 +2378,7 @@ rule:
         - s,greenvpn.org
         - s,grindr.com
         - s,grotty-monday.com
+        - s,ground.news
         - s,groups.google.cn
         - s,grow.google
         - s,gs-discuss.com
@@ -2470,6 +2471,7 @@ rule:
         - s,hentaivideoworld.com
         - s,heqinglian.net
         - s,heritage.org
+        - s,herokuapp.com
         - s,heungkongdiscuss.com
         - s,hexieshe.com
         - s,hexieshe.xyz
@@ -2622,6 +2624,7 @@ rule:
         - s,howtoforge.com
         - s,hoxx.com
         - s,hpa.gov.tw
+        - s,hpjav.com
         - s,hqcdp.org
         - s,hqjapanesesex.com
         - s,hqmovies.com
@@ -2709,6 +2712,7 @@ rule:
         - s,iask.bz
         - s,iask.ca
         - s,iav19.com
+        - s,iavian.net
         - s,ibiblio.org
         - s,ibit.am
         - s,iblist.com
@@ -3976,6 +3980,7 @@ rule:
         - s,pcanywhere.net
         - s,pcc.gov.tw
         - s,pcdvd.com.tw
+        - s,pcgamestorrents.com
         - s,pchome.com.tw
         - s,pcij.org
         - s,pcstore.com.tw

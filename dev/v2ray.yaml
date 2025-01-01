@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2024-12-31 12:40:24
-#! GFWList: 2024-12-30 15:11:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-01 01:49:03
+#! GFWList: 2024-12-31 14:47:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2480,6 +2480,7 @@ routing:
         - domain:greenvpn.org
         - domain:grindr.com
         - domain:grotty-monday.com
+        - domain:ground.news
         - domain:groups.google.cn
         - domain:grow.google
         - domain:gs-discuss.com
@@ -2572,6 +2573,7 @@ routing:
         - domain:hentaivideoworld.com
         - domain:heqinglian.net
         - domain:heritage.org
+        - domain:herokuapp.com
         - domain:heungkongdiscuss.com
         - domain:hexieshe.com
         - domain:hexieshe.xyz
@@ -2724,6 +2726,7 @@ routing:
         - domain:howtoforge.com
         - domain:hoxx.com
         - domain:hpa.gov.tw
+        - domain:hpjav.com
         - domain:hqcdp.org
         - domain:hqjapanesesex.com
         - domain:hqmovies.com
@@ -2811,6 +2814,7 @@ routing:
         - domain:iask.bz
         - domain:iask.ca
         - domain:iav19.com
+        - domain:iavian.net
         - domain:ibiblio.org
         - domain:ibit.am
         - domain:iblist.com
@@ -4078,6 +4082,7 @@ routing:
         - domain:pcanywhere.net
         - domain:pcc.gov.tw
         - domain:pcdvd.com.tw
+        - domain:pcgamestorrents.com
         - domain:pchome.com.tw
         - domain:pcij.org
         - domain:pcstore.com.tw

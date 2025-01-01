@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: 0jT5GkangF3+MOkDbG12LA
+! Checksum: q0o2rxP+msVBKsQgeTrYNA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 30 Dec 2024 10:11:29 -0500
+! Last Modified: Tue, 31 Dec 2024 09:47:01 -0500
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -4119,6 +4119,7 @@ greatzhonghua.org
 ||greenvpn.net
 .greenvpn.org
 ||grindr.com
+||ground.news
 ||grotty-monday.com
 gs-discuss.com
 ||gsearch.media
@@ -4466,8 +4467,8 @@ hentaitube.tv
 !--@@||f.cl.ly
 !--EC2 DNS Poisoned
 ||id.heroku.com
+||herokuapp.com
 
-heqinglian.net
 ||heqinglian.net
 ||heritage.org
 ||heungkongdiscuss.com
@@ -4628,6 +4629,7 @@ hotpot.hk
 ||hougaige.com
 ||howtoforge.com
 ||hoxx.com
+||hpjav.com
 .hqcdp.org
 ||hqcdp.org
 ||hqjapanesesex.com
@@ -4708,6 +4710,7 @@ iask.ca
 iask.bz
 ||iask.bz
 .iav19.com
+||iavian.net
 ibiblio.org/pub/packages/ccic
 ||ibit.am
 .iblist.com
@@ -6046,8 +6049,9 @@ pbwiki.com
 ||pbxes.com
 ||pbxes.org
 pcdvd.com.tw
+||pcgamestorrents.com
 .pchome.com.tw
-|http://pcij.org
+||pcij.org
 .pcstore.com.tw
 ||pct.org.tw
 pdetails.com
