@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: q0o2rxP+msVBKsQgeTrYNA
+! Checksum: QZiCBuiVJrwVYDpxySTygQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 31 Dec 2024 09:47:01 -0500
+! Last Modified: Sat, 04 Jan 2025 11:07:40 -0500
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -49,6 +49,7 @@
 ||ciciai.com
 ||claude.ai
 ||clearsurance.com
+||cnbeta.com.tw
 ||images.comico.tw
 ||static.comico.tw
 ||counter.social

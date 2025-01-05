@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-04 12:38:35
-#! GFWList: 2024-12-31 14:47:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-05 01:48:02
+#! GFWList: 2025-01-04 16:07:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1074,6 +1074,7 @@
 (^|\.)cna\.com\.tw$
 (^|\.)cnabc\.com$
 (^|\.)cnbbnews\.wordpress\.com$
+(^|\.)cnbeta\.com\.tw$
 (^|\.)cnd\.org$
 (^|\.)cnex\.org\.cn$
 (^|\.)cnineu\.com$

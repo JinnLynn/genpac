@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-04 12:38:37
-#! GFWList: 2024-12-31 14:47:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-05 01:48:03
+#! GFWList: 2025-01-04 16:07:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1087,6 +1087,7 @@ rule:
         - s,cna.com.tw
         - s,cnabc.com
         - s,cnbbnews.wordpress.com
+        - s,cnbeta.com.tw
         - s,cnd.org
         - s,cnex.org.cn
         - s,cnineu.com
