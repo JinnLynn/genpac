@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-04 12:39:03
-#! GFWList: 2024-12-31 14:47:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-05 01:48:30
+#! GFWList: 2025-01-04 16:07:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1189,6 +1189,7 @@ routing:
         - domain:cna.com.tw
         - domain:cnabc.com
         - domain:cnbbnews.wordpress.com
+        - domain:cnbeta.com.tw
         - domain:cnd.org
         - domain:cnex.org.cn
         - domain:cnineu.com
