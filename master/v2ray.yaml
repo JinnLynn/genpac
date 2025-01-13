@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-12 12:38:12
-#! GFWList: 2025-01-04 16:07:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-13 01:46:37
+#! GFWList: 2025-01-12 16:56:36 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -160,6 +160,7 @@ routing:
         - domain:1eew.com
         - domain:1mobile.com
         - domain:1mobile.tw
+        - domain:1point3acres.com
         - domain:1pondo.tv
         - domain:2-hand.info
         - domain:2000fun.com
@@ -168,8 +169,6 @@ routing:
         - domain:2021hkcharter.com
         - domain:2047.name
         - domain:21andy.com
-        - domain:21join.com
-        - domain:21pron.com
         - domain:21sextury.com
         - domain:228.net.tw
         - domain:233abc.com
@@ -242,6 +241,7 @@ routing:
         - domain:9001700.com
         - domain:908taiwan.org
         - domain:91porn.com
+        - domain:91porny.com
         - domain:91vps.club
         - domain:92ccav.com
         - domain:991.com
@@ -520,6 +520,7 @@ routing:
         - domain:atlaspost.com
         - domain:atnext.com
         - domain:auctions.yahoo.co.jp
+        - domain:audacy.com
         - domain:auntology.fandom.com
         - domain:authorizeddns.net
         - domain:authorizeddns.org
@@ -977,6 +978,7 @@ routing:
         - domain:cdp2006.org
         - domain:cdpa.url.tw
         - domain:cdpeu.org
+        - domain:cdpuk.co.uk
         - domain:cdpusa.org
         - domain:cdpweb.org
         - domain:cdpwu.org
@@ -1368,7 +1370,6 @@ routing:
         - domain:daxa.cn
         - domain:daylife.com
         - domain:db.tt
-        - domain:dbc.hk
         - domain:dbgjd.com
         - domain:dcard.tw
         - domain:dcmilitary.com
@@ -1382,6 +1383,7 @@ routing:
         - domain:ddns.net
         - domain:ddns.us
         - domain:de-sci.org
+        - domain:deadhouse.org
         - domain:deadline.com
         - domain:deaftone.com
         - domain:debug.com
@@ -1868,6 +1870,7 @@ routing:
         - domain:firstfivefollowers.com
         - domain:firstpost.com
         - domain:firstrade.com
+        - domain:fish.audio
         - domain:flagsonline.it
         - domain:flecheinthepeche.fr
         - domain:fleshbot.com
@@ -2741,6 +2744,7 @@ routing:
         - domain:hrtsea.com
         - domain:hrw.org
         - domain:hrweb.org
+        - domain:hsex.men
         - domain:hsjp.net
         - domain:hsselite.com
         - domain:hst.net.tw
@@ -2902,6 +2906,7 @@ routing:
         - domain:indiandefensenews.in
         - domain:indiemerch.com
         - domain:info-graf.fr
+        - domain:inherit.live
         - domain:initiativesforchina.org
         - domain:inkbunny.net
         - domain:inkui.com
@@ -3524,6 +3529,7 @@ routing:
         - domain:minzhuhua.net
         - domain:minzhuzhanxian.com
         - domain:minzhuzhongguo.org
+        - domain:miraheze.org
         - domain:miroguide.com
         - domain:mirrorbooks.com
         - domain:mirrormedia.mg
@@ -3565,6 +3571,7 @@ routing:
         - domain:mojim.com
         - domain:mol.gov.tw
         - domain:molihua.org
+        - domain:momoshop.com.tw
         - domain:mondex.org
         - domain:money-link.com.tw
         - domain:moneyhome.biz
@@ -4347,6 +4354,7 @@ routing:
         - domain:radicalparty.org
         - domain:radiko.jp
         - domain:radio-canada.ca
+        - domain:radio-en-ligne.fr
         - domain:radio.garden
         - domain:radioaustralia.net.au
         - domain:radiohilight.net
@@ -4710,6 +4718,7 @@ routing:
         - domain:slacker.com
         - domain:slaytizle.com
         - domain:sleazydream.com
+        - domain:sleazyfork.org
         - domain:slheng.com
         - domain:slickvpn.com
         - domain:slides.new
@@ -4807,6 +4816,7 @@ routing:
         - domain:spotflux.com
         - domain:spotify.com
         - domain:spreadshirt.es
+        - domain:spreaker.com
         - domain:spring4u.info
         - domain:springboardplatform.com
         - domain:springwood.me
@@ -5211,7 +5221,9 @@ routing:
         - domain:ticket.com.tw
         - domain:tigervpn.com
         - domain:tiktok.com
+        - domain:tiktokcdn-us.com
         - domain:tiktokv.com
+        - domain:tiktokv.us
         - domain:tiltbrush.com
         - domain:timdir.com
         - domain:time.com
@@ -6186,6 +6198,7 @@ routing:
         - domain:yyjlymb.xyz
         - domain:yysub.net
         - domain:yzzk.com
+        - domain:z-lib.io
         - domain:z-lib.org
         - domain:zacebook.com
         - domain:zalmos.com

@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-12 12:38:12
-#! GFWList: 2025-01-04 16:07:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-13 01:46:40
+#! GFWList: 2025-01-12 16:56:36 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -58,6 +58,7 @@ rule:
         - s,1eew.com
         - s,1mobile.com
         - s,1mobile.tw
+        - s,1point3acres.com
         - s,1pondo.tv
         - s,2-hand.info
         - s,2000fun.com
@@ -66,8 +67,6 @@ rule:
         - s,2021hkcharter.com
         - s,2047.name
         - s,21andy.com
-        - s,21join.com
-        - s,21pron.com
         - s,21sextury.com
         - s,228.net.tw
         - s,233abc.com
@@ -140,6 +139,7 @@ rule:
         - s,9001700.com
         - s,908taiwan.org
         - s,91porn.com
+        - s,91porny.com
         - s,91vps.club
         - s,92ccav.com
         - s,991.com
@@ -418,6 +418,7 @@ rule:
         - s,atlaspost.com
         - s,atnext.com
         - s,auctions.yahoo.co.jp
+        - s,audacy.com
         - s,auntology.fandom.com
         - s,authorizeddns.net
         - s,authorizeddns.org
@@ -875,6 +876,7 @@ rule:
         - s,cdp2006.org
         - s,cdpa.url.tw
         - s,cdpeu.org
+        - s,cdpuk.co.uk
         - s,cdpusa.org
         - s,cdpweb.org
         - s,cdpwu.org
@@ -1266,7 +1268,6 @@ rule:
         - s,daxa.cn
         - s,daylife.com
         - s,db.tt
-        - s,dbc.hk
         - s,dbgjd.com
         - s,dcard.tw
         - s,dcmilitary.com
@@ -1280,6 +1281,7 @@ rule:
         - s,ddns.net
         - s,ddns.us
         - s,de-sci.org
+        - s,deadhouse.org
         - s,deadline.com
         - s,deaftone.com
         - s,debug.com
@@ -1766,6 +1768,7 @@ rule:
         - s,firstfivefollowers.com
         - s,firstpost.com
         - s,firstrade.com
+        - s,fish.audio
         - s,flagsonline.it
         - s,flecheinthepeche.fr
         - s,fleshbot.com
@@ -2639,6 +2642,7 @@ rule:
         - s,hrtsea.com
         - s,hrw.org
         - s,hrweb.org
+        - s,hsex.men
         - s,hsjp.net
         - s,hsselite.com
         - s,hst.net.tw
@@ -2800,6 +2804,7 @@ rule:
         - s,indiandefensenews.in
         - s,indiemerch.com
         - s,info-graf.fr
+        - s,inherit.live
         - s,initiativesforchina.org
         - s,inkbunny.net
         - s,inkui.com
@@ -3422,6 +3427,7 @@ rule:
         - s,minzhuhua.net
         - s,minzhuzhanxian.com
         - s,minzhuzhongguo.org
+        - s,miraheze.org
         - s,miroguide.com
         - s,mirrorbooks.com
         - s,mirrormedia.mg
@@ -3463,6 +3469,7 @@ rule:
         - s,mojim.com
         - s,mol.gov.tw
         - s,molihua.org
+        - s,momoshop.com.tw
         - s,mondex.org
         - s,money-link.com.tw
         - s,moneyhome.biz
@@ -4245,6 +4252,7 @@ rule:
         - s,radicalparty.org
         - s,radiko.jp
         - s,radio-canada.ca
+        - s,radio-en-ligne.fr
         - s,radio.garden
         - s,radioaustralia.net.au
         - s,radiohilight.net
@@ -4608,6 +4616,7 @@ rule:
         - s,slacker.com
         - s,slaytizle.com
         - s,sleazydream.com
+        - s,sleazyfork.org
         - s,slheng.com
         - s,slickvpn.com
         - s,slides.new
@@ -4705,6 +4714,7 @@ rule:
         - s,spotflux.com
         - s,spotify.com
         - s,spreadshirt.es
+        - s,spreaker.com
         - s,spring4u.info
         - s,springboardplatform.com
         - s,springwood.me
@@ -5109,7 +5119,9 @@ rule:
         - s,ticket.com.tw
         - s,tigervpn.com
         - s,tiktok.com
+        - s,tiktokcdn-us.com
         - s,tiktokv.com
+        - s,tiktokv.us
         - s,tiltbrush.com
         - s,timdir.com
         - s,time.com
@@ -6084,6 +6096,7 @@ rule:
         - s,yyjlymb.xyz
         - s,yysub.net
         - s,yzzk.com
+        - s,z-lib.io
         - s,z-lib.org
         - s,zacebook.com
         - s,zalmos.com
