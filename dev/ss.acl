@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-18 12:36:50
-#! GFWList: 2025-01-12 16:56:36 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-19 01:45:19
+#! GFWList: 2025-01-18 14:37:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -147,6 +147,7 @@
 (^|\.)abc\.xyz$
 (^|\.)abchinese\.com$
 (^|\.)abclite\.net$
+(^|\.)abebooks\.co\.uk$
 (^|\.)abebooks\.com$
 (^|\.)abematv\.akamaized\.net$
 (^|\.)abitno\.linpie\.com$
@@ -805,6 +806,7 @@
 (^|\.)cari\.com\.my$
 (^|\.)caribbeancom\.com$
 (^|\.)carmotorshow\.com$
+(^|\.)carousell\.com\.hk$
 (^|\.)carrd\.co$
 (^|\.)cartoonmovement\.com$
 (^|\.)casadeltibetbcn\.org$
@@ -891,6 +893,7 @@
 (^|\.)changp\.com$
 (^|\.)changsa\.net$
 (^|\.)channelnewsasia\.com$
+(^|\.)chanworld\.org$
 (^|\.)chaoex\.com$
 (^|\.)chapm25\.com$
 (^|\.)chat\.lmsys\.org$
@@ -1058,7 +1061,6 @@
 (^|\.)cmule\.org$
 (^|\.)cmx\.im$
 (^|\.)cn-proxy\.com$
-(^|\.)cn\.dayabook\.com$
 (^|\.)cn\.fmnnow\.com$
 (^|\.)cn\.freeones\.com$
 (^|\.)cn\.giganews\.com$
@@ -1129,6 +1131,7 @@
 (^|\.)coolloud\.org\.tw$
 (^|\.)coolncute\.com$
 (^|\.)coolstuffinc\.com$
+(^|\.)copilot\.microsoft\.com$
 (^|\.)corumcollege\.com$
 (^|\.)cos-moe\.com$
 (^|\.)cosmic\.monar\.ch$
@@ -1245,6 +1248,7 @@
 (^|\.)darktoy\.net$
 (^|\.)darpa\.mil$
 (^|\.)darrenliuwei\.com$
+(^|\.)dashlane\.com$
 (^|\.)dastrassi\.org$
 (^|\.)data-vocabulary\.org$
 (^|\.)data\.flurry\.com$
@@ -1567,7 +1571,6 @@
 (^|\.)esg\.t91y\.com$
 (^|\.)eslite\.com$
 (^|\.)esmtp\.biz$
-(^|\.)esu\.dog$
 (^|\.)esurance\.com$
 (^|\.)etaa\.org\.au$
 (^|\.)etadult\.com$
@@ -4084,6 +4087,7 @@
 (^|\.)polymer-project\.org$
 (^|\.)polymerhk\.com$
 (^|\.)poolin\.com$
+(^|\.)popai\.pro$
 (^|\.)popo\.tw$
 (^|\.)popvote\.hk$
 (^|\.)popxi\.click$
@@ -5587,6 +5591,7 @@
 (^|\.)vovo2000\.com$
 (^|\.)voxer\.com$
 (^|\.)voy\.com$
+(^|\.)vpl\.bibliocommons\.com$
 (^|\.)vpn\.ac$
 (^|\.)vpn\.cmu\.edu$
 (^|\.)vpn\.sv\.cmu\.edu$
@@ -5751,7 +5756,6 @@
 (^|\.)widevine\.com$
 (^|\.)wikaba\.com$
 (^|\.)wiki\.cnitter\.com$
-(^|\.)wiki\.esu\.im$
 (^|\.)wiki\.gamerp\.jp$
 (^|\.)wiki\.jqueryui\.com$
 (^|\.)wiki\.keso\.cn$

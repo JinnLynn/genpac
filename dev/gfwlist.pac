@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-01-18 12:36:50
- * GFWList Last-Modified: 2025-01-12 16:56:36
+ * Generated: 2025-01-19 01:45:18
+ * GFWList Last-Modified: 2025-01-18 14:37:56
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -267,6 +267,7 @@ var rules = [
             "abc.xyz",
             "abchinese.com",
             "abclite.net",
+            "abebooks.co.uk",
             "abebooks.com",
             "abematv.akamaized.net",
             "abitno.linpie.com",
@@ -925,6 +926,7 @@ var rules = [
             "cari.com.my",
             "caribbeancom.com",
             "carmotorshow.com",
+            "carousell.com.hk",
             "carrd.co",
             "cartoonmovement.com",
             "casadeltibetbcn.org",
@@ -1011,6 +1013,7 @@ var rules = [
             "changp.com",
             "changsa.net",
             "channelnewsasia.com",
+            "chanworld.org",
             "chaoex.com",
             "chapm25.com",
             "chat.lmsys.org",
@@ -1178,7 +1181,6 @@ var rules = [
             "cmule.org",
             "cmx.im",
             "cn-proxy.com",
-            "cn.dayabook.com",
             "cn.fmnnow.com",
             "cn.freeones.com",
             "cn.giganews.com",
@@ -1249,6 +1251,7 @@ var rules = [
             "coolloud.org.tw",
             "coolncute.com",
             "coolstuffinc.com",
+            "copilot.microsoft.com",
             "corumcollege.com",
             "cos-moe.com",
             "cosmic.monar.ch",
@@ -1365,6 +1368,7 @@ var rules = [
             "darktoy.net",
             "darpa.mil",
             "darrenliuwei.com",
+            "dashlane.com",
             "dastrassi.org",
             "data-vocabulary.org",
             "data.flurry.com",
@@ -1687,7 +1691,6 @@ var rules = [
             "esg.t91y.com",
             "eslite.com",
             "esmtp.biz",
-            "esu.dog",
             "esurance.com",
             "etaa.org.au",
             "etadult.com",
@@ -4204,6 +4207,7 @@ var rules = [
             "polymer-project.org",
             "polymerhk.com",
             "poolin.com",
+            "popai.pro",
             "popo.tw",
             "popvote.hk",
             "popxi.click",
@@ -5707,6 +5711,7 @@ var rules = [
             "vovo2000.com",
             "voxer.com",
             "voy.com",
+            "vpl.bibliocommons.com",
             "vpn.ac",
             "vpn.cmu.edu",
             "vpn.sv.cmu.edu",
@@ -5871,7 +5876,6 @@ var rules = [
             "widevine.com",
             "wikaba.com",
             "wiki.cnitter.com",
-            "wiki.esu.im",
             "wiki.gamerp.jp",
             "wiki.jqueryui.com",
             "wiki.keso.cn",
