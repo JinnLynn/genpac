@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-18 12:36:23
-#! GFWList: 2025-01-12 16:56:36 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-19 01:44:50
+#! GFWList: 2025-01-18 14:37:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -160,6 +160,7 @@ rule:
         - s,abc.xyz
         - s,abchinese.com
         - s,abclite.net
+        - s,abebooks.co.uk
         - s,abebooks.com
         - s,abematv.akamaized.net
         - s,abitno.linpie.com
@@ -818,6 +819,7 @@ rule:
         - s,cari.com.my
         - s,caribbeancom.com
         - s,carmotorshow.com
+        - s,carousell.com.hk
         - s,carrd.co
         - s,cartoonmovement.com
         - s,casadeltibetbcn.org
@@ -904,6 +906,7 @@ rule:
         - s,changp.com
         - s,changsa.net
         - s,channelnewsasia.com
+        - s,chanworld.org
         - s,chaoex.com
         - s,chapm25.com
         - s,chat.lmsys.org
@@ -1071,7 +1074,6 @@ rule:
         - s,cmule.org
         - s,cmx.im
         - s,cn-proxy.com
-        - s,cn.dayabook.com
         - s,cn.fmnnow.com
         - s,cn.freeones.com
         - s,cn.giganews.com
@@ -1142,6 +1144,7 @@ rule:
         - s,coolloud.org.tw
         - s,coolncute.com
         - s,coolstuffinc.com
+        - s,copilot.microsoft.com
         - s,corumcollege.com
         - s,cos-moe.com
         - s,cosmic.monar.ch
@@ -1258,6 +1261,7 @@ rule:
         - s,darktoy.net
         - s,darpa.mil
         - s,darrenliuwei.com
+        - s,dashlane.com
         - s,dastrassi.org
         - s,data-vocabulary.org
         - s,data.flurry.com
@@ -1580,7 +1584,6 @@ rule:
         - s,esg.t91y.com
         - s,eslite.com
         - s,esmtp.biz
-        - s,esu.dog
         - s,esurance.com
         - s,etaa.org.au
         - s,etadult.com
@@ -4097,6 +4100,7 @@ rule:
         - s,polymer-project.org
         - s,polymerhk.com
         - s,poolin.com
+        - s,popai.pro
         - s,popo.tw
         - s,popvote.hk
         - s,popxi.click
@@ -5600,6 +5604,7 @@ rule:
         - s,vovo2000.com
         - s,voxer.com
         - s,voy.com
+        - s,vpl.bibliocommons.com
         - s,vpn.ac
         - s,vpn.cmu.edu
         - s,vpn.sv.cmu.edu
@@ -5764,7 +5769,6 @@ rule:
         - s,widevine.com
         - s,wikaba.com
         - s,wiki.cnitter.com
-        - s,wiki.esu.im
         - s,wiki.gamerp.jp
         - s,wiki.jqueryui.com
         - s,wiki.keso.cn

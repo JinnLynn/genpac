@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: BZUefB22itmhAjqqdpvRkA
+! Checksum: N6yZx2+iTViptrt5/U8fhQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 12 Jan 2025 11:56:36 -0500
+! Last Modified: Sat, 18 Jan 2025 09:37:56 -0500
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -207,6 +207,7 @@ share.dmhy.org
 ||phmsociety.org
 |http://*.pimg.tw/
 ||podcast.co
+||popai.pro
 ||pure18.com
 ||pytorch.org
 ||qq.co.za
@@ -1570,6 +1571,10 @@ blogspot.com
 !!---KickASS---
 !--OFFICIAL URL list at: https://kastatus.com
 
+!!---Microsoft---
+!--@@||bing.com
+||copilot.microsoft.com
+
 !!---NaughtyAmerica---
 ||naughtyamerica.com
 
@@ -2080,6 +2085,7 @@ a5.com.ru
 .abchinese.com
 abclite.net
 |https://www.abclite.net
+||abebooks.co.uk
 .ablwang.com
 .aboluowang.com
 ||aboluowang.com
@@ -2485,8 +2491,8 @@ beric.me
 @@||bianlei.com
 biantailajiao.com
 biantailajiao.in
-.biblesforamerica.org
-|http://biblesforamerica.org
+||biblesforamerica.org
+||vpl.bibliocommons.com
 .bic2011.org
 ||biedian.me
 bigfools.com
@@ -2743,6 +2749,7 @@ ss.carryzhou.com
 .cari.com.my
 ||cari.com.my
 ||caribbeancom.com
+||carousell.com.hk
 .casinoking.com
 .casinoriva.com
 ||catch22.net
@@ -2828,6 +2835,7 @@ cdp2006.org
 .changsa.net
 |http://changsa.net
 ||channelnewsasia.com
+||chanworld.org
 .chapm25.com
 ||chatgpt.com
 .chaturbate.com
@@ -3196,13 +3204,13 @@ dalianmeng.org
 daolan.net
 darktoy.net
 ||darrenliuwei.com
+||dashlane.com
 ||dastrassi.org
 ||daum.net
 .david-kilgour.com
 |http://david-kilgour.com
 daxa.cn
 ||daxa.cn
-cn.dayabook.com
 .daylife.com/topic/dalai_lama
 ||db.tt
 ||dbgjd.com
@@ -3512,10 +3520,6 @@ erabaru.net
 .eroticsaloon.net
 .eslite.com
 ||eslite.com
-!--.eslite.com/product
-!--.eslite.com/Search_BW.aspx?q
-wiki.esu.im/%E8%9B%A4%E8%9B%A4%E8%AF%AD%E5%BD%95
-||esu.dog
 .etaa.org.au
 .etadult.com
 etaiwannews.com
@@ -6554,7 +6558,7 @@ sacom.hk
 ||cn.sandscotaicentral.com
 ||sankakucomplex.com
 ||sankei.com
-.sanmin.com.tw
+||sanmin.com.tw
 sapikachu.net
 savemedia.com
 ||savethesounds.info
@@ -8463,7 +8467,6 @@ ultrasurf
 !################Whitelist Start################
 @@||aliyun.com
 @@||baidu.com
-!--@@||bing.com
 @@||chinaso.com
 @@||chinaz.com
 @@|http://nrch.culture.tw/
