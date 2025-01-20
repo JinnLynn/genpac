@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: N6yZx2+iTViptrt5/U8fhQ
+! Checksum: Tn+26PEG5OK8JR+VDw3J/w
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 18 Jan 2025 09:37:56 -0500
+! Last Modified: Mon, 20 Jan 2025 01:23:11 -0500
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -21,6 +21,7 @@
 !--||adorama.com
 ||afreecatv.com
 ||agnesb.fr
+||airitilibrary.com
 ||akiba-web.com
 ||altrec.com
 ||angela-merkel.de
@@ -2031,6 +2032,7 @@ taiwannation.50webs.com
 .66.ca
 666kb.com
 ||6do.news
+||6do.world
 .6park.com
 ||6park.com
 ||6parkbbs.com
@@ -2308,7 +2310,7 @@ archive.today
 ||archiveofourown.com
 ||archiveofourown.org
 .arctosia.com
-|http://arctosia.com
+||arctosia.com
 ||areca-backup.org
 .arethusa.su
 ||arethusa.su
@@ -2469,10 +2471,11 @@ beric.me
 .bestgore.com
 .bestpornstardb.com
 ||bestvpn.com
-.bestvpnanalysis.com
-.bestvpnserver.com
-.bestvpnservice.com
-.bestvpnusa.com
+||bestvpnanalysis.com
+||bestvpnforchina.net
+||bestvpnserver.com
+||bestvpnservice.com
+||bestvpnusa.com
 ||bet365.com
 .betfair.com
 ||betternet.co
@@ -2836,7 +2839,9 @@ cdp2006.org
 |http://changsa.net
 ||channelnewsasia.com
 ||chanworld.org
+||chaos.social
 .chapm25.com
+||character.ai
 ||chatgpt.com
 .chaturbate.com
 ||chaturbate.com
@@ -4016,6 +4021,7 @@ gigporno.ru
 !---GitHub---
 ||github.blog
 ||github.com
+||githubcopilot.com
 !--github.com/getlantern
 !--|https://gist.github.com
 !--http://cthlo.github.io/hktv
@@ -6143,6 +6149,7 @@ piraattilahti.org
 .pk.com
 ||placemix.com
 !--.planetsuzy.org
+||play-asia.com
 |http://pictures.playboy.com
 ||playboy.com
 .playboyplus.com
@@ -6202,6 +6209,7 @@ pobieramy.top
 .pornsharing.com
 |http://pornsharing.com
 .pornsocket.com
+||pornstarbyface.com
 .pornstarclub.com
 ||pornstarclub.com
 .porntube.com
@@ -6792,9 +6800,10 @@ forum.slime.com.tw
 .smarthide.com
 ||app.smartmailcloud.com
 smchbooks.com
-.smh.com.au/world/death-of-chinese-playboy-leaves-fresh-scratches-in-party-paintwork-20120903-25a8v
+||smh.com.au
 smhric.org
 .smith.edu/dalailama
+||smn.news
 .smyxy.org
 !--TODO-no-homepage
 ||snapchat.com
@@ -6852,6 +6861,7 @@ sokamonline.com
 ||nakedsecurity.sophos.com
 .sorazone.net
 ||sos.org
+||sosad.fun
 bbs.sou-tong.org
 .soubory.com
 |http://soubory.com
@@ -6869,12 +6879,14 @@ soundofhope.org
 |http://sourceforge.net/p*/shadowsocksgui/
 .sourcewadio.com
 ||south-plus.org
-southnews.com.tw
-sowers.org.hk
+||southmongolia.org
+||southnews.com.tw
+||sowers.org.hk
 ||wlx.sowiki.net
 ||spankbang.com
 .spankingtube.com
 .spankwire.com
+||spatial.io
 ||spb.com
 ||speakerdeck.com
 ||speedify.com
@@ -7910,6 +7922,7 @@ vpnjack.com
 vraiesagesse.net
 ||vrchat.com
 .vrmtr.com
+||vrporn.com
 ||vtunnel.com
 ||vuku.cc
 
@@ -8156,8 +8169,7 @@ wzyboy.im/post/160
 ||x-berry.com
 ||x-art.com
 ||x-wall.org
-x1949x.com
-x365x.com
+||x3guide.com
 xanga.com
 ||xbabe.com
 .xbookcn.com

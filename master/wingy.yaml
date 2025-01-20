@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-20 01:40:36
-#! GFWList: 2025-01-18 14:37:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-20 12:41:01
+#! GFWList: 2025-01-20 06:23:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -118,6 +118,7 @@ rule:
         - s,66.ca
         - s,666kb.com
         - s,6do.news
+        - s,6do.world
         - s,6park.com
         - s,6parkbbs.com
         - s,6parker.com
@@ -222,6 +223,7 @@ rule:
         - s,aiph.net
         - s,airasia.com
         - s,airconsole.com
+        - s,airitilibrary.com
         - s,airvpn.org
         - s,aisex.com
         - s,aiss.anws.gov.tw
@@ -552,6 +554,7 @@ rule:
         - s,bestpornstardb.com
         - s,bestvpn.com
         - s,bestvpnanalysis.com
+        - s,bestvpnforchina.net
         - s,bestvpnserver.com
         - s,bestvpnservice.com
         - s,bestvpnusa.com
@@ -908,7 +911,9 @@ rule:
         - s,channelnewsasia.com
         - s,chanworld.org
         - s,chaoex.com
+        - s,chaos.social
         - s,chapm25.com
+        - s,character.ai
         - s,chat.lmsys.org
         - s,chatgpt.com
         - s,chatnook.com
@@ -2043,6 +2048,7 @@ rule:
         - s,github.com
         - s,github.io
         - s,githubassets.com
+        - s,githubcopilot.com
         - s,githubusercontent.com
         - s,gizlen.net
         - s,gjczz.com
@@ -4070,6 +4076,7 @@ rule:
         - s,pk.com
         - s,pki.goog
         - s,placemix.com
+        - s,play-asia.com
         - s,playboy.com
         - s,playboyplus.com
         - s,player.fm
@@ -4120,6 +4127,7 @@ rule:
         - s,pornrapidshare.com
         - s,pornsharing.com
         - s,pornsocket.com
+        - s,pornstarbyface.com
         - s,pornstarclub.com
         - s,porntube.com
         - s,porntubenews.com
@@ -4637,6 +4645,7 @@ rule:
         - s,smh.com.au
         - s,smhric.org
         - s,smith.edu
+        - s,smn.news
         - s,smyxy.org
         - s,snapchat.com
         - s,snapseed.com
@@ -4682,6 +4691,7 @@ rule:
         - s,sorazone.net
         - s,sorting-algorithms.com
         - s,sos.org
+        - s,sosad.fun
         - s,sosreader.com
         - s,sostibet.org
         - s,soubory.com
@@ -4696,6 +4706,7 @@ rule:
         - s,sourceforge.net
         - s,sourcewadio.com
         - s,south-plus.org
+        - s,southmongolia.org
         - s,southnews.com.tw
         - s,southpark.cc.com
         - s,sowers.org.hk
@@ -4704,6 +4715,7 @@ rule:
         - s,spankbang.com
         - s,spankingtube.com
         - s,spankwire.com
+        - s,spatial.io
         - s,spb.com
         - s,speakerdeck.com
         - s,specxinzl.jigsy.com
@@ -5651,6 +5663,7 @@ rule:
         - s,vraiesagesse.net
         - s,vrchat.com
         - s,vrmtr.com
+        - s,vrporn.com
         - s,vrsmash.com
         - s,vtunnel.com
         - s,vuku.cc
@@ -5919,9 +5932,8 @@ rule:
         - s,x.co
         - s,x.com
         - s,x.company
-        - s,x1949x.com
         - s,x24hr.com
-        - s,x365x.com
+        - s,x3guide.com
         - s,xa.yimg.com
         - s,xanga.com
         - s,xbabe.com

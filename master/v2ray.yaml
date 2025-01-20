@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-20 01:40:34
-#! GFWList: 2025-01-18 14:37:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-20 12:40:55
+#! GFWList: 2025-01-20 06:23:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -220,6 +220,7 @@ routing:
         - domain:66.ca
         - domain:666kb.com
         - domain:6do.news
+        - domain:6do.world
         - domain:6park.com
         - domain:6parkbbs.com
         - domain:6parker.com
@@ -324,6 +325,7 @@ routing:
         - domain:aiph.net
         - domain:airasia.com
         - domain:airconsole.com
+        - domain:airitilibrary.com
         - domain:airvpn.org
         - domain:aisex.com
         - domain:aiss.anws.gov.tw
@@ -654,6 +656,7 @@ routing:
         - domain:bestpornstardb.com
         - domain:bestvpn.com
         - domain:bestvpnanalysis.com
+        - domain:bestvpnforchina.net
         - domain:bestvpnserver.com
         - domain:bestvpnservice.com
         - domain:bestvpnusa.com
@@ -1010,7 +1013,9 @@ routing:
         - domain:channelnewsasia.com
         - domain:chanworld.org
         - domain:chaoex.com
+        - domain:chaos.social
         - domain:chapm25.com
+        - domain:character.ai
         - domain:chat.lmsys.org
         - domain:chatgpt.com
         - domain:chatnook.com
@@ -2145,6 +2150,7 @@ routing:
         - domain:github.com
         - domain:github.io
         - domain:githubassets.com
+        - domain:githubcopilot.com
         - domain:githubusercontent.com
         - domain:gizlen.net
         - domain:gjczz.com
@@ -4172,6 +4178,7 @@ routing:
         - domain:pk.com
         - domain:pki.goog
         - domain:placemix.com
+        - domain:play-asia.com
         - domain:playboy.com
         - domain:playboyplus.com
         - domain:player.fm
@@ -4222,6 +4229,7 @@ routing:
         - domain:pornrapidshare.com
         - domain:pornsharing.com
         - domain:pornsocket.com
+        - domain:pornstarbyface.com
         - domain:pornstarclub.com
         - domain:porntube.com
         - domain:porntubenews.com
@@ -4739,6 +4747,7 @@ routing:
         - domain:smh.com.au
         - domain:smhric.org
         - domain:smith.edu
+        - domain:smn.news
         - domain:smyxy.org
         - domain:snapchat.com
         - domain:snapseed.com
@@ -4784,6 +4793,7 @@ routing:
         - domain:sorazone.net
         - domain:sorting-algorithms.com
         - domain:sos.org
+        - domain:sosad.fun
         - domain:sosreader.com
         - domain:sostibet.org
         - domain:soubory.com
@@ -4798,6 +4808,7 @@ routing:
         - domain:sourceforge.net
         - domain:sourcewadio.com
         - domain:south-plus.org
+        - domain:southmongolia.org
         - domain:southnews.com.tw
         - domain:southpark.cc.com
         - domain:sowers.org.hk
@@ -4806,6 +4817,7 @@ routing:
         - domain:spankbang.com
         - domain:spankingtube.com
         - domain:spankwire.com
+        - domain:spatial.io
         - domain:spb.com
         - domain:speakerdeck.com
         - domain:specxinzl.jigsy.com
@@ -5753,6 +5765,7 @@ routing:
         - domain:vraiesagesse.net
         - domain:vrchat.com
         - domain:vrmtr.com
+        - domain:vrporn.com
         - domain:vrsmash.com
         - domain:vtunnel.com
         - domain:vuku.cc
@@ -6021,9 +6034,8 @@ routing:
         - domain:x.co
         - domain:x.com
         - domain:x.company
-        - domain:x1949x.com
         - domain:x24hr.com
-        - domain:x365x.com
+        - domain:x3guide.com
         - domain:xa.yimg.com
         - domain:xanga.com
         - domain:xbabe.com

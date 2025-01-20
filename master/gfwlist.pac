@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-01-20 01:40:33
- * GFWList Last-Modified: 2025-01-18 14:37:56
+ * Generated: 2025-01-20 12:40:55
+ * GFWList Last-Modified: 2025-01-20 06:23:11
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -225,6 +225,7 @@ var rules = [
             "66.ca",
             "666kb.com",
             "6do.news",
+            "6do.world",
             "6park.com",
             "6parkbbs.com",
             "6parker.com",
@@ -329,6 +330,7 @@ var rules = [
             "aiph.net",
             "airasia.com",
             "airconsole.com",
+            "airitilibrary.com",
             "airvpn.org",
             "aisex.com",
             "aiss.anws.gov.tw",
@@ -659,6 +661,7 @@ var rules = [
             "bestpornstardb.com",
             "bestvpn.com",
             "bestvpnanalysis.com",
+            "bestvpnforchina.net",
             "bestvpnserver.com",
             "bestvpnservice.com",
             "bestvpnusa.com",
@@ -1015,7 +1018,9 @@ var rules = [
             "channelnewsasia.com",
             "chanworld.org",
             "chaoex.com",
+            "chaos.social",
             "chapm25.com",
+            "character.ai",
             "chat.lmsys.org",
             "chatgpt.com",
             "chatnook.com",
@@ -2150,6 +2155,7 @@ var rules = [
             "github.com",
             "github.io",
             "githubassets.com",
+            "githubcopilot.com",
             "githubusercontent.com",
             "gizlen.net",
             "gjczz.com",
@@ -4177,6 +4183,7 @@ var rules = [
             "pk.com",
             "pki.goog",
             "placemix.com",
+            "play-asia.com",
             "playboy.com",
             "playboyplus.com",
             "player.fm",
@@ -4227,6 +4234,7 @@ var rules = [
             "pornrapidshare.com",
             "pornsharing.com",
             "pornsocket.com",
+            "pornstarbyface.com",
             "pornstarclub.com",
             "porntube.com",
             "porntubenews.com",
@@ -4744,6 +4752,7 @@ var rules = [
             "smh.com.au",
             "smhric.org",
             "smith.edu",
+            "smn.news",
             "smyxy.org",
             "snapchat.com",
             "snapseed.com",
@@ -4789,6 +4798,7 @@ var rules = [
             "sorazone.net",
             "sorting-algorithms.com",
             "sos.org",
+            "sosad.fun",
             "sosreader.com",
             "sostibet.org",
             "soubory.com",
@@ -4803,6 +4813,7 @@ var rules = [
             "sourceforge.net",
             "sourcewadio.com",
             "south-plus.org",
+            "southmongolia.org",
             "southnews.com.tw",
             "southpark.cc.com",
             "sowers.org.hk",
@@ -4811,6 +4822,7 @@ var rules = [
             "spankbang.com",
             "spankingtube.com",
             "spankwire.com",
+            "spatial.io",
             "spb.com",
             "speakerdeck.com",
             "specxinzl.jigsy.com",
@@ -5758,6 +5770,7 @@ var rules = [
             "vraiesagesse.net",
             "vrchat.com",
             "vrmtr.com",
+            "vrporn.com",
             "vrsmash.com",
             "vtunnel.com",
             "vuku.cc",
@@ -6026,9 +6039,8 @@ var rules = [
             "x.co",
             "x.com",
             "x.company",
-            "x1949x.com",
             "x24hr.com",
-            "x365x.com",
+            "x3guide.com",
             "xa.yimg.com",
             "xanga.com",
             "xbabe.com",
