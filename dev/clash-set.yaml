@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-20 01:41:07
-#! GFWList: 2025-01-18 14:37:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-20 12:41:34
+#! GFWList: 2025-01-20 06:23:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -102,6 +102,7 @@ payload:
   - DOMAIN-SUFFIX,66.ca
   - DOMAIN-SUFFIX,666kb.com
   - DOMAIN-SUFFIX,6do.news
+  - DOMAIN-SUFFIX,6do.world
   - DOMAIN-SUFFIX,6park.com
   - DOMAIN-SUFFIX,6parkbbs.com
   - DOMAIN-SUFFIX,6parker.com
@@ -206,6 +207,7 @@ payload:
   - DOMAIN-SUFFIX,aiph.net
   - DOMAIN-SUFFIX,airasia.com
   - DOMAIN-SUFFIX,airconsole.com
+  - DOMAIN-SUFFIX,airitilibrary.com
   - DOMAIN-SUFFIX,airvpn.org
   - DOMAIN-SUFFIX,aisex.com
   - DOMAIN-SUFFIX,aiss.anws.gov.tw
@@ -536,6 +538,7 @@ payload:
   - DOMAIN-SUFFIX,bestpornstardb.com
   - DOMAIN-SUFFIX,bestvpn.com
   - DOMAIN-SUFFIX,bestvpnanalysis.com
+  - DOMAIN-SUFFIX,bestvpnforchina.net
   - DOMAIN-SUFFIX,bestvpnserver.com
   - DOMAIN-SUFFIX,bestvpnservice.com
   - DOMAIN-SUFFIX,bestvpnusa.com
@@ -892,7 +895,9 @@ payload:
   - DOMAIN-SUFFIX,channelnewsasia.com
   - DOMAIN-SUFFIX,chanworld.org
   - DOMAIN-SUFFIX,chaoex.com
+  - DOMAIN-SUFFIX,chaos.social
   - DOMAIN-SUFFIX,chapm25.com
+  - DOMAIN-SUFFIX,character.ai
   - DOMAIN-SUFFIX,chat.lmsys.org
   - DOMAIN-SUFFIX,chatgpt.com
   - DOMAIN-SUFFIX,chatnook.com
@@ -2027,6 +2032,7 @@ payload:
   - DOMAIN-SUFFIX,github.com
   - DOMAIN-SUFFIX,github.io
   - DOMAIN-SUFFIX,githubassets.com
+  - DOMAIN-SUFFIX,githubcopilot.com
   - DOMAIN-SUFFIX,githubusercontent.com
   - DOMAIN-SUFFIX,gizlen.net
   - DOMAIN-SUFFIX,gjczz.com
@@ -4054,6 +4060,7 @@ payload:
   - DOMAIN-SUFFIX,pk.com
   - DOMAIN-SUFFIX,pki.goog
   - DOMAIN-SUFFIX,placemix.com
+  - DOMAIN-SUFFIX,play-asia.com
   - DOMAIN-SUFFIX,playboy.com
   - DOMAIN-SUFFIX,playboyplus.com
   - DOMAIN-SUFFIX,player.fm
@@ -4104,6 +4111,7 @@ payload:
   - DOMAIN-SUFFIX,pornrapidshare.com
   - DOMAIN-SUFFIX,pornsharing.com
   - DOMAIN-SUFFIX,pornsocket.com
+  - DOMAIN-SUFFIX,pornstarbyface.com
   - DOMAIN-SUFFIX,pornstarclub.com
   - DOMAIN-SUFFIX,porntube.com
   - DOMAIN-SUFFIX,porntubenews.com
@@ -4621,6 +4629,7 @@ payload:
   - DOMAIN-SUFFIX,smh.com.au
   - DOMAIN-SUFFIX,smhric.org
   - DOMAIN-SUFFIX,smith.edu
+  - DOMAIN-SUFFIX,smn.news
   - DOMAIN-SUFFIX,smyxy.org
   - DOMAIN-SUFFIX,snapchat.com
   - DOMAIN-SUFFIX,snapseed.com
@@ -4666,6 +4675,7 @@ payload:
   - DOMAIN-SUFFIX,sorazone.net
   - DOMAIN-SUFFIX,sorting-algorithms.com
   - DOMAIN-SUFFIX,sos.org
+  - DOMAIN-SUFFIX,sosad.fun
   - DOMAIN-SUFFIX,sosreader.com
   - DOMAIN-SUFFIX,sostibet.org
   - DOMAIN-SUFFIX,soubory.com
@@ -4680,6 +4690,7 @@ payload:
   - DOMAIN-SUFFIX,sourceforge.net
   - DOMAIN-SUFFIX,sourcewadio.com
   - DOMAIN-SUFFIX,south-plus.org
+  - DOMAIN-SUFFIX,southmongolia.org
   - DOMAIN-SUFFIX,southnews.com.tw
   - DOMAIN-SUFFIX,southpark.cc.com
   - DOMAIN-SUFFIX,sowers.org.hk
@@ -4688,6 +4699,7 @@ payload:
   - DOMAIN-SUFFIX,spankbang.com
   - DOMAIN-SUFFIX,spankingtube.com
   - DOMAIN-SUFFIX,spankwire.com
+  - DOMAIN-SUFFIX,spatial.io
   - DOMAIN-SUFFIX,spb.com
   - DOMAIN-SUFFIX,speakerdeck.com
   - DOMAIN-SUFFIX,specxinzl.jigsy.com
@@ -5635,6 +5647,7 @@ payload:
   - DOMAIN-SUFFIX,vraiesagesse.net
   - DOMAIN-SUFFIX,vrchat.com
   - DOMAIN-SUFFIX,vrmtr.com
+  - DOMAIN-SUFFIX,vrporn.com
   - DOMAIN-SUFFIX,vrsmash.com
   - DOMAIN-SUFFIX,vtunnel.com
   - DOMAIN-SUFFIX,vuku.cc
@@ -5903,9 +5916,8 @@ payload:
   - DOMAIN-SUFFIX,x.co
   - DOMAIN-SUFFIX,x.com
   - DOMAIN-SUFFIX,x.company
-  - DOMAIN-SUFFIX,x1949x.com
   - DOMAIN-SUFFIX,x24hr.com
-  - DOMAIN-SUFFIX,x365x.com
+  - DOMAIN-SUFFIX,x3guide.com
   - DOMAIN-SUFFIX,xa.yimg.com
   - DOMAIN-SUFFIX,xanga.com
   - DOMAIN-SUFFIX,xbabe.com
