@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-21 12:40:40
-#! GFWList: 2025-01-20 22:58:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-22 01:40:42
+#! GFWList: 2025-01-21 14:48:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2006,7 +2006,7 @@ routing:
         - domain:freexinwen.com
         - domain:freeyellow.com
         - domain:freeyoutubeproxy.net
-        - domain:friendfeed-media.com
+        - domain:freezhihu.org
         - domain:friendfeed.com
         - domain:friends-of-tibet.org
         - domain:friendsoftibet.org
@@ -3174,6 +3174,7 @@ routing:
         - domain:kichiku-doujinko.com
         - domain:kik.com
         - domain:killwall.com
+        - domain:kindle4rss.com
         - domain:kindleren.com
         - domain:kineox.free.fr
         - domain:kingdomsalvation.org
@@ -3797,12 +3798,12 @@ routing:
         - domain:news.ycombinator.com
         - domain:news100.com.tw
         - domain:newsancai.com
+        - domain:newsblur.com
         - domain:newschinacomment.org
         - domain:newscn.org
         - domain:newsdetox.ca
         - domain:newsdh.com
         - domain:newsmax.com
-        - domain:newspeak.cc
         - domain:newstamago.com
         - domain:newstapa.org
         - domain:newstarnet.com
@@ -4354,6 +4355,7 @@ routing:
         - domain:qi-gong.me
         - domain:qianbai.tw
         - domain:qiandao.today
+        - domain:qianglie.com
         - domain:qiangwaikan.com
         - domain:qiangyou.org
         - domain:qidian.ca
@@ -4409,19 +4411,17 @@ routing:
         - domain:rapidmoviez.com
         - domain:rapidvpn.com
         - domain:rarbgprx.org
-        - domain:raremovie.cc
-        - domain:raremovie.net
         - domain:rateyourmusic.com
         - domain:rationalwiki.org
         - domain:raw.githack.com
         - domain:rawgit.com
         - domain:rawgithub.com
-        - domain:razyboard.com
         - domain:rcam.target.com
         - domain:rcinet.ca
         - domain:rconversation.blogs.com
         - domain:rd.com
         - domain:rdio.com
+        - domain:reabble.com
         - domain:read01.com
         - domain:read100.com
         - domain:readingtimes.com.tw
@@ -5745,6 +5745,7 @@ routing:
         - domain:vpl.bibliocommons.com
         - domain:vpn.ac
         - domain:vpn.cmu.edu
+        - domain:vpn.net
         - domain:vpn.sv.cmu.edu
         - domain:vpn4all.com
         - domain:vpnaccount.org
@@ -6112,6 +6113,7 @@ routing:
         - domain:xn--czq75pvv1aj5c.org
         - domain:xn--i2ru8q2qg.com
         - domain:xn--ngstr-lra8j.com
+        - domain:xn--noss43i.com
         - domain:xn--oiq.cc
         - domain:xn--p8j9a0d9c9a.xn--q9jyb4c
         - domain:xnxx.com

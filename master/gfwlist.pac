@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-01-21 12:40:39
- * GFWList Last-Modified: 2025-01-20 22:58:31
+ * Generated: 2025-01-22 01:40:41
+ * GFWList Last-Modified: 2025-01-21 14:48:39
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -2011,7 +2011,7 @@ var rules = [
             "freexinwen.com",
             "freeyellow.com",
             "freeyoutubeproxy.net",
-            "friendfeed-media.com",
+            "freezhihu.org",
             "friendfeed.com",
             "friends-of-tibet.org",
             "friendsoftibet.org",
@@ -3179,6 +3179,7 @@ var rules = [
             "kichiku-doujinko.com",
             "kik.com",
             "killwall.com",
+            "kindle4rss.com",
             "kindleren.com",
             "kineox.free.fr",
             "kingdomsalvation.org",
@@ -3802,12 +3803,12 @@ var rules = [
             "news.ycombinator.com",
             "news100.com.tw",
             "newsancai.com",
+            "newsblur.com",
             "newschinacomment.org",
             "newscn.org",
             "newsdetox.ca",
             "newsdh.com",
             "newsmax.com",
-            "newspeak.cc",
             "newstamago.com",
             "newstapa.org",
             "newstarnet.com",
@@ -4359,6 +4360,7 @@ var rules = [
             "qi-gong.me",
             "qianbai.tw",
             "qiandao.today",
+            "qianglie.com",
             "qiangwaikan.com",
             "qiangyou.org",
             "qidian.ca",
@@ -4414,19 +4416,17 @@ var rules = [
             "rapidmoviez.com",
             "rapidvpn.com",
             "rarbgprx.org",
-            "raremovie.cc",
-            "raremovie.net",
             "rateyourmusic.com",
             "rationalwiki.org",
             "raw.githack.com",
             "rawgit.com",
             "rawgithub.com",
-            "razyboard.com",
             "rcam.target.com",
             "rcinet.ca",
             "rconversation.blogs.com",
             "rd.com",
             "rdio.com",
+            "reabble.com",
             "read01.com",
             "read100.com",
             "readingtimes.com.tw",
@@ -5750,6 +5750,7 @@ var rules = [
             "vpl.bibliocommons.com",
             "vpn.ac",
             "vpn.cmu.edu",
+            "vpn.net",
             "vpn.sv.cmu.edu",
             "vpn4all.com",
             "vpnaccount.org",
@@ -6117,6 +6118,7 @@ var rules = [
             "xn--czq75pvv1aj5c.org",
             "xn--i2ru8q2qg.com",
             "xn--ngstr-lra8j.com",
+            "xn--noss43i.com",
             "xn--oiq.cc",
             "xn--p8j9a0d9c9a.xn--q9jyb4c",
             "xnxx.com",

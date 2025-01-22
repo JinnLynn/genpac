@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-21 12:40:43
-#! GFWList: 2025-01-20 22:58:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-22 01:40:45
+#! GFWList: 2025-01-21 14:48:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1904,7 +1904,7 @@ rule:
         - s,freexinwen.com
         - s,freeyellow.com
         - s,freeyoutubeproxy.net
-        - s,friendfeed-media.com
+        - s,freezhihu.org
         - s,friendfeed.com
         - s,friends-of-tibet.org
         - s,friendsoftibet.org
@@ -3072,6 +3072,7 @@ rule:
         - s,kichiku-doujinko.com
         - s,kik.com
         - s,killwall.com
+        - s,kindle4rss.com
         - s,kindleren.com
         - s,kineox.free.fr
         - s,kingdomsalvation.org
@@ -3695,12 +3696,12 @@ rule:
         - s,news.ycombinator.com
         - s,news100.com.tw
         - s,newsancai.com
+        - s,newsblur.com
         - s,newschinacomment.org
         - s,newscn.org
         - s,newsdetox.ca
         - s,newsdh.com
         - s,newsmax.com
-        - s,newspeak.cc
         - s,newstamago.com
         - s,newstapa.org
         - s,newstarnet.com
@@ -4252,6 +4253,7 @@ rule:
         - s,qi-gong.me
         - s,qianbai.tw
         - s,qiandao.today
+        - s,qianglie.com
         - s,qiangwaikan.com
         - s,qiangyou.org
         - s,qidian.ca
@@ -4307,19 +4309,17 @@ rule:
         - s,rapidmoviez.com
         - s,rapidvpn.com
         - s,rarbgprx.org
-        - s,raremovie.cc
-        - s,raremovie.net
         - s,rateyourmusic.com
         - s,rationalwiki.org
         - s,raw.githack.com
         - s,rawgit.com
         - s,rawgithub.com
-        - s,razyboard.com
         - s,rcam.target.com
         - s,rcinet.ca
         - s,rconversation.blogs.com
         - s,rd.com
         - s,rdio.com
+        - s,reabble.com
         - s,read01.com
         - s,read100.com
         - s,readingtimes.com.tw
@@ -5643,6 +5643,7 @@ rule:
         - s,vpl.bibliocommons.com
         - s,vpn.ac
         - s,vpn.cmu.edu
+        - s,vpn.net
         - s,vpn.sv.cmu.edu
         - s,vpn4all.com
         - s,vpnaccount.org
@@ -6010,6 +6011,7 @@ rule:
         - s,xn--czq75pvv1aj5c.org
         - s,xn--i2ru8q2qg.com
         - s,xn--ngstr-lra8j.com
+        - s,xn--noss43i.com
         - s,xn--oiq.cc
         - s,xn--p8j9a0d9c9a.xn--q9jyb4c
         - s,xnxx.com

@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: rb09xkhwHWp32Lc8pg5+pw
+! Checksum: poVMIOfIRMPExJOj4BqcrA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 20 Jan 2025 17:58:31 -0500
+! Last Modified: Tue, 21 Jan 2025 09:48:39 -0500
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -289,6 +289,7 @@ share.dmhy.org
 ||xn--4gq171p.com
 ||xn--czq75pvv1aj5c.org
 ||xn--i2ru8q2qg.com
+||xn--noss43i.com
 ||xn--oiq.cc
 ||xn--p8j9a0d9c9a.xn--q9jyb4c
 ||xn--9pr62r24a.com
@@ -2946,7 +2947,7 @@ chinayuanmin.org
 ||chinayuanmin.org
 .chinese-hermit.net
 chinese-leaders.org
-chinese-memorial.org
+||chinese-memorial.org
 .chinesedaily.com
 ||chinesedailynews.com
 .chinesedemocracy.com
@@ -3863,9 +3864,9 @@ freeweibo.com
 .freexinwen.com
 .freeyoutubeproxy.net
 ||freeyoutubeproxy.net
-friendfeed.com
-friendfeed-media.com/e99a4ebe2fb4c1985c2a58775eb4422961aa5a2e
-friends-of-tibet.org
+||freezhihu.org
+||friendfeed.com
+||friends-of-tibet.org
 .friendsoftibet.org
 ||friendsoftibet.org
 freechina.net
@@ -5135,6 +5136,7 @@ kinghost.com
 ||kinokuniya.com
 killwall.com
 ||killwall.com
+||kindle4rss.com
 ||kinmen.travel
 .kir.jp
 .kissbbao.cn
@@ -5764,9 +5766,9 @@ news100.com.tw
 newschinacomment.org
 .newscn.org
 ||newscn.org
-newspeak.cc/story
 .newsancai.com
 ||newsancai.com
+||newsblur.com
 .newsdetox.ca
 .newsdh.com
 ||newsmax.com
@@ -6350,6 +6352,7 @@ ss.pythonic.life
 ||qgirl.com.tw
 ||qianbai.tw
 ||qiandao.today
+||qianglie.com
 ||qiangwaikan.com
 .qi-gong.me
 ||qi-gong.me
@@ -6417,23 +6420,18 @@ ranyunfei.com
 rapidvpn.com
 ||rapidvpn.com
 ||rarbgprx.org
-.raremovie.cc
-|http://raremovie.cc
-.raremovie.net
-|http://raremovie.net
 ||rationalwiki.org
 ||rawgit.com
 ||rawgithub.com
-!--.rayfme.com/bbs
-||razyboard.com
-rcinet.ca
+||rcinet.ca
+||reabble.com
 .read100.com
 .readingtimes.com.tw
 ||readingtimes.com.tw
 ||readmoo.com
 .readydown.com
 |http://readydown.com
-.realcourage.org
+||realcourage.org
 .realitykings.com
 ||realitykings.com
 .realraptalk.com
@@ -6447,7 +6445,7 @@ rcinet.ca
 redballoonsolidarity.org
 ||redbubble.com
 .redchinacn.net
-|http://redchinacn.net
+||redchinacn.net
 redchinacn.org
 redtube.com
 referer.us
@@ -7870,6 +7868,7 @@ vocn.tv
 ||voxer.com
 .voy.com
 ||vpn.ac
+||vpn.net
 .vpn4all.com
 ||vpn4all.com
 .vpnaccount.org
