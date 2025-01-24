@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: poVMIOfIRMPExJOj4BqcrA
+! Checksum: qtbu2bOGE+7DWtHKrz/Esw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 21 Jan 2025 09:48:39 -0500
+! Last Modified: Fri, 24 Jan 2025 00:13:12 -0500
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -167,6 +167,7 @@ share.dmhy.org
 ||moonbingo.com
 ||mos.ru
 ||msha.gov
+||www.msn.com
 ||muzu.tv
 ||mvg.jp
 .mybet.com
@@ -299,6 +300,7 @@ share.dmhy.org
 !-||cdn-images.mailchimp.com
 ||abebooks.com
 |https://*.s3.amazonaws.com
+||s3-ap-southeast-1.amazonaws.com
 ||s3-ap-southeast-2.amazonaws.com
 
 ||43110.cf
@@ -1624,6 +1626,7 @@ cn.nytstyle.com
 ||cdn-telegram.org
 ||comments.app
 ||graph.org
+||legra.ph
 ||quiz.directory
 ||t.me
 ||updates.tdesktop.com
@@ -1674,12 +1677,16 @@ cn.nytstyle.com
 ||tacc.cwb.gov.tw
 ||data.gov.tw
 ||epa.gov.tw
+||exam.gov.tw
+||ey.gov.tw
 ||fa.gov.tw
 ||fda.gov.tw
 ||hpa.gov.tw
 ||immigration.gov.tw
 ||itaiwan.gov.tw
+||judicial.gov.tw
 ||li.taipei
+||ly.gov.tw
 ||mjib.gov.tw
 ||moeaic.gov.tw
 ||mofa.gov.tw
@@ -2287,6 +2294,7 @@ video.ap.org
 ||apkpure.com
 ||apkpure.net
 .aplusvpn.com
+||appadvice.com
 !--||appannie.com
 ||appbrain.com
 .appdownloader.net/Android
@@ -2535,6 +2543,7 @@ bizhat.com
 .bjs.org
 bjzc.org
 ||bjzc.org
+||blacked.com
 .blacklogic.com
 .blackvpn.com
 ||blackvpn.com
@@ -2544,7 +2553,7 @@ tor.blingblingsquad.net
 ||blinkx.com
 blinw.com
 .blip.tv
-||blip.tv/
+||blip.tv
 ||blockcast.it
 .blockcn.com
 ||blockcn.com
@@ -3422,6 +3431,7 @@ e-info.org.tw
 .earthcam.com
 .earthvpn.com
 ||earthvpn.com
+||eastasiaforum.org
 eastern-ark.com
 .easternlightning.org
 .eastturkestan.com
@@ -3516,7 +3526,7 @@ epochtimes.com
 .epochweek.com
 ||epochweek.com
 ||epochweekly.com
-.eporner.com
+||eporner.com
 .equinenow.com
 erabaru.net
 .eracom.com.tw
@@ -3724,7 +3734,7 @@ finler.net
 .firearmsworld.net
 |http://firearmsworld.net
 ||relay.firefox.com
-.fireofliberty.org
+||fireofliberty.info
 ||fireofliberty.org
 .firetweet.io
 ||firetweet.io
@@ -3783,6 +3793,7 @@ video.foxbusiness.com
 ||fooooo.com
 ||foreignaffairs.com
 .fotile.me
+||fountmedia.io
 ||fourthinternational.org
 ||foxdie.us
 ||foxsub.com
@@ -4728,6 +4739,7 @@ huyandex.com
 ||hxwk.org
 hxwq.org
 ||hyperrate.com
+||hypothes.is
 ebook.hyread.com.tw
 ||ebook.hyread.com.tw
 
@@ -4907,6 +4919,7 @@ chinese.irib.ir
 .ironsocket.com
 ||ironsocket.com
 .is.gd
+||ishr.ch
 .islahhaber.net
 .islam.org.hk
 |http://islam.org.hk
@@ -4984,6 +4997,7 @@ jamaat.org
 ||javakiba.org
 .javbus.com
 ||javbus.com
+||javfinder.ai
 ||javfor.me
 .javhd.com
 .javhip.com
@@ -5184,6 +5198,7 @@ kyohk.net
 ||kyoyue.com
 .kyzyhello.com
 ||kyzyhello.com
+||kzaobao.com
 .kzeng.info
 ||kzeng.info
 
@@ -5457,7 +5472,7 @@ megavideo.com
 .meltoday.com
 .memehk.com
 ||memehk.com
-memorybbs.com
+||memes.tw
 .memri.org
 .memrijttm.org
 ||mercdn.net
@@ -5552,6 +5567,7 @@ mixpod.com
 ||mixx.com
 ||mizzmona.com
 .mk5000.com
+||mlc.ai
 .mlcool.com
 ||mlzs.work
 .mm-cg.com
@@ -5608,7 +5624,6 @@ mponline.hk
 |http://mqxd.org
 mrtweet.com
 ||mrtweet.com
-news.hk.msn.com
 news.msn.com.tw
 msguancha.com
 .mswe1.org
@@ -6126,6 +6141,7 @@ philborges.com
 .picidae.net
 ||img*.picturedip.com
 picturesocial.com
+||pigav.com
 ||pin-cong.com
 .pin6.com
 ||pin6.com
@@ -6323,7 +6339,7 @@ psblog.name
 ||ptt.cc
 ||pttgame.com
 .puffstore.com
-.puuko.com
+||main-ecnpaper-economist.content.pugpig.com
 ||pullfolio.com
 .punyu.com/puny
 ||pureconcepts.net
@@ -6451,6 +6467,7 @@ redtube.com
 referer.us
 ||referer.us
 ||reflectivecode.com
+||blog.reimu.net
 relaxbbs.com
 .relay.com.tw
 .releaseinternational.org
@@ -6620,14 +6637,14 @@ securityinabox.org
 .securitykiss.com
 ||securitykiss.com
 ||seed4.me
-news.seehua.com
+||news.seehua.com
 seesmic.com
 ||seevpn.com
 ||seezone.net
+||sehuatang.net
 sejie.com
 .sendspace.com
 ||sensortower.com
-|http://tweets.seraph.me/
 sesawe.net
 ||sesawe.net
 .sesawe.org
@@ -6781,7 +6798,6 @@ sis001.us
 ||sitemaps.org
 .sjrt.org
 |http://sjrt.org
-||sjum.cn
 ||sketchappsources.com
 ||skimtube.com
 ||lab.skk.moe
@@ -6964,6 +6980,7 @@ sthoo.com
 .stickam.com
 stickeraction.com/sesawe
 .stileproject.com
+||stitcher.com
 .sto.cc
 .stoporganharvesting.org
 ||storagenewsletter.com
@@ -7218,8 +7235,8 @@ thevivekspot.com
 |http://theync.com
 .thinkingtaiwan.com
 ||thinkingtaiwan.com
-.thisav.com
-|http://thisav.com
+||thirdmill.org
+||thisav.com
 .thlib.org
 ||thomasbernhard.org
 .thongdreams.com
@@ -7384,6 +7401,7 @@ top81.ws
 .topnews.in
 .toppornsites.com
 |http://toppornsites.com
+||toptoon.net
 .torguard.net
 ||torguard.net
 ||top.tv
@@ -7506,12 +7524,11 @@ tuitwit.com
 .tv.com
 |http://tv.com
 tvants.com
-forum.tvb.com
-news.tvb.com/list/world
-news.tvb.com/local
+||forum.tvb.com
+||inews-api.tvb.com
 news.tvbs.com.tw
 .tvboxnow.com
-|http://tvboxnow.com/
+||tvboxnow.com
 tvider.com
 .tvmost.com.hk
 .tvplayvideos.com
@@ -7726,6 +7743,7 @@ unpo.org
 ||unstable.icu
 .untraceable.us
 |http://untraceable.us
+||unwire.hk
 ||uocn.org
 tor.updatestar.com
 ||upghsbc.com
@@ -7795,7 +7813,7 @@ uygur.org
 .vanemu.cn
 .vanilla-jp.com
 .vanpeople.com
-vansky.com
+||vansky.com
 ||vaticannews.va
 ||vcf-online.org
 ||vcfbuilder.org
@@ -7845,7 +7863,10 @@ visibletweets.com
 .vital247.org
 ||viu.com
 .vivahentai4u.net
+
+!--apex not blocked, adding to reduce complexity
 ||vivaldi.com
+
 .vivatube.com
 .vivthomas.com
 ||vivthomas.com
@@ -7971,15 +7992,15 @@ www.wangruowang.org
 wapedia.mobi/zhsimp
 ||warroom.org
 ||waselpro.com
-.watchinese.com
+||watchinese.com
 ||watchout.tw
 .wattpad.com
 ||wattpad.com
 .makzhou.warehouse333.com
-washeng.net
 .watch8x.com
 ||watchmygf.net
 ||wav.tv
+||waybig.com
 ||wd.bible
 .wdf5.com
 ||wealth.com.tw
@@ -8523,7 +8544,7 @@ ultrasurf
 @@||haosou.com
 @@||ip.cn
 @@||jike.com
-@@|http://translate.google.cn
+@@||translate.google.cn
 @@|http://www.google.cn/maps
 @@||http2.golang.org
 @@||gov.cn

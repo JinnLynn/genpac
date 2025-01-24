@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-24 01:39:40
-#! GFWList: 2025-01-21 14:48:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-24 12:40:20
+#! GFWList: 2025-01-24 05:13:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -357,6 +357,7 @@ rule:
         - s,app.heywire.com
         - s,app.smartmailcloud.com
         - s,app.tutanota.com
+        - s,appadvice.com
         - s,appbrain.com
         - s,appdownloader.net
         - s,appledaily.com
@@ -612,6 +613,7 @@ rule:
         - s,bjs.org
         - s,bjzc.org
         - s,bl-doujinsouko.com
+        - s,blacked.com
         - s,blacklogic.com
         - s,blackvpn.com
         - s,blewpass.com
@@ -643,6 +645,7 @@ rule:
         - s,blog.pathtosharepoint.com
         - s,blog.pentalogic.net
         - s,blog.ranxiang.com
+        - s,blog.reimu.net
         - s,blog.sina.com.tw
         - s,blog.sogoo.org
         - s,blog.soylent.com
@@ -1493,6 +1496,7 @@ rule:
         - s,earlytibet.com
         - s,earthcam.com
         - s,earthvpn.com
+        - s,eastasiaforum.org
         - s,eastern-ark.com
         - s,easternlightning.org
         - s,eastturkestan.com
@@ -1620,6 +1624,7 @@ rule:
         - s,euronews.com
         - s,evchk.wikia.com
         - s,evschool.net
+        - s,exam.gov.tw
         - s,exblog.jp
         - s,exchristian.hk
         - s,exhentai.org
@@ -1635,6 +1640,7 @@ rule:
         - s,extmatrix.com
         - s,extremetube.com
         - s,exx.com
+        - s,ey.gov.tw
         - s,eyevio.jp
         - s,eyny.com
         - s,ezpc.tk
@@ -1780,6 +1786,7 @@ rule:
         - s,finler.net
         - s,firearmsworld.net
         - s,firebaseio.com
+        - s,fireofliberty.info
         - s,fireofliberty.org
         - s,firetweet.io
         - s,firstfivefollowers.com
@@ -1830,6 +1837,7 @@ rule:
         - s,forum.xinbao.de
         - s,forum4hk.com
         - s,fotile.me
+        - s,fountmedia.io
         - s,fourface.nodesnoop.com
         - s,fourthinternational.org
         - s,foxdie.us
@@ -2726,6 +2734,7 @@ rule:
         - s,hxwq.org
         - s,hybrid-analysis.com
         - s,hyperrate.com
+        - s,hypothes.is
         - s,i-cable.com
         - s,i-part.com.tw
         - s,i-scmp.com
@@ -2825,6 +2834,7 @@ rule:
         - s,indianarrative.com
         - s,indiandefensenews.in
         - s,indiemerch.com
+        - s,inews-api.tvb.com
         - s,info-graf.fr
         - s,inherit.live
         - s,initiativesforchina.org
@@ -2878,6 +2888,7 @@ rule:
         - s,isasecret.com
         - s,isc.sans.edu
         - s,isgreat.org
+        - s,ishr.ch
         - s,islahhaber.net
         - s,islam.org.hk
         - s,islamawareness.net
@@ -2942,6 +2953,7 @@ rule:
         - s,jav68.tv
         - s,javakiba.org
         - s,javbus.com
+        - s,javfinder.ai
         - s,javfor.me
         - s,javhd.com
         - s,javhip.com
@@ -3007,6 +3019,7 @@ rule:
         - s,jsdelivr.net
         - s,jtvnw.net
         - s,jubushoushen.com
+        - s,judicial.gov.tw
         - s,juhuaren.com
         - s,jukujo-club.com
         - s,juliepost.com
@@ -3123,6 +3136,7 @@ rule:
         - s,kyohk.net
         - s,kyoyue.com
         - s,kyzyhello.com
+        - s,kzaobao.com
         - s,kzeng.info
         - s,la-forum.org
         - s,lab.skk.moe
@@ -3161,6 +3175,7 @@ rule:
         - s,left21.hk
         - s,legalporno.com
         - s,legaltech.law.com
+        - s,legra.ph
         - s,legsjapan.com
         - s,leirentv.ca
         - s,leisurecafe.ca
@@ -3279,6 +3294,7 @@ rule:
         - s,luxebc.com
         - s,lvhai.org
         - s,lvv2.com
+        - s,ly.gov.tw
         - s,lyfhk.net
         - s,lzjscript.com
         - s,lzmtnews.org
@@ -3302,6 +3318,7 @@ rule:
         - s,maiio.net
         - s,mail-archive.com
         - s,maildns.xyz
+        - s,main-ecnpaper-economist.content.pugpig.com
         - s,maiplus.com
         - s,maizhong.org
         - s,makemymood.com
@@ -3381,7 +3398,7 @@ rule:
         - s,meltoday.com
         - s,meme.yahoo.com
         - s,memehk.com
-        - s,memorybbs.com
+        - s,memes.tw
         - s,memri.org
         - s,memrijttm.org
         - s,mercatox.com
@@ -3467,6 +3484,7 @@ rule:
         - s,mjib.gov.tw
         - s,mjlsh.usc.cuhk.edu.hk
         - s,mk5000.com
+        - s,mlc.ai
         - s,mlcool.com
         - s,mlzs.work
         - s,mm-cg.com
@@ -3681,7 +3699,6 @@ rule:
         - s,newnews.ca
         - s,news.cnyes.com
         - s,news.ebc.net.tw
-        - s,news.hk.msn.com
         - s,news.msn.com.tw
         - s,news.nationalgeographic.com
         - s,news.omy.sg
@@ -3690,7 +3707,6 @@ rule:
         - s,news.sina.com.tw
         - s,news.sinchew.com.my
         - s,news.singtao.ca
-        - s,news.tvb.com
         - s,news.tvbs.com.tw
         - s,news.yahoo.com
         - s,news.ycombinator.com
@@ -4062,6 +4078,7 @@ rule:
         - s,picturedip.com
         - s,pictures.playboy.com
         - s,picturesocial.com
+        - s,pigav.com
         - s,pimg.tw
         - s,pin-cong.com
         - s,pin6.com
@@ -4239,7 +4256,6 @@ rule:
         - s,putihome.org
         - s,putlocker.com
         - s,putty.org
-        - s,puuko.com
         - s,pwned.com
         - s,pximg.net
         - s,python.com
@@ -4436,6 +4452,7 @@ rule:
         - s,s1heng.com
         - s,s1s1s1.com
         - s,s3-ap-northeast-1.amazonaws.com
+        - s,s3-ap-southeast-1.amazonaws.com
         - s,s3-ap-southeast-2.amazonaws.com
         - s,s3.amazonaws.com
         - s,s8forum.com
@@ -4509,6 +4526,7 @@ rule:
         - s,seesmic.com
         - s,seevpn.com
         - s,seezone.net
+        - s,sehuatang.net
         - s,sejie.com
         - s,sellclassics.com
         - s,sendsmtp.com
@@ -4639,7 +4657,6 @@ rule:
         - s,six-degrees.io
         - s,sixth.biz
         - s,sjrt.org
-        - s,sjum.cn
         - s,sketchappsources.com
         - s,skimtube.com
         - s,skybet.com
@@ -4810,6 +4827,7 @@ rule:
         - s,stickam.com
         - s,stickeraction.com
         - s,stileproject.com
+        - s,stitcher.com
         - s,sto.cc
         - s,stoporganharvesting.org
         - s,stoptibetcrisis.net
@@ -5050,6 +5068,7 @@ rule:
         - s,thinkgeek.com
         - s,thinkingtaiwan.com
         - s,thinkwithgoogle.com
+        - s,thirdmill.org
         - s,thisav.com
         - s,thlib.org
         - s,thomasbernhard.org
@@ -5214,6 +5233,7 @@ rule:
         - s,topshareware.com
         - s,topsy.com
         - s,toptip.ca
+        - s,toptoon.net
         - s,tor.blingblingsquad.net
         - s,tor.updatestar.com
         - s,tora.to
@@ -5353,7 +5373,6 @@ rule:
         - s,tweetphoto.com
         - s,tweetrans.com
         - s,tweetree.com
-        - s,tweets.seraph.me
         - s,tweettunnel.com
         - s,tweetwally.com
         - s,tweetymail.com
@@ -5482,6 +5501,7 @@ rule:
         - s,unseen.is
         - s,unstable.icu
         - s,untraceable.us
+        - s,unwire.hk
         - s,uocn.org
         - s,upcoming.yahoo.com
         - s,updates.tdesktop.com
@@ -5721,7 +5741,6 @@ rule:
         - s,warbler.iconfactory.net
         - s,warroom.org
         - s,waselpro.com
-        - s,washeng.net
         - s,washingtonpost.com
         - s,watch8x.com
         - s,watchinese.com
@@ -5730,6 +5749,7 @@ rule:
         - s,wattpad.com
         - s,wav.tv
         - s,waveprotocol.org
+        - s,waybig.com
         - s,waymo.com
         - s,wd.bible
         - s,wda.gov.tw
@@ -5926,6 +5946,7 @@ rule:
         - s,www.m-sport.co.uk
         - s,www.monlamit.org
         - s,www.moztw.org
+        - s,www.msn.com
         - s,www.nbc.com
         - s,www.orchidbbs.com
         - s,www.owind.com
