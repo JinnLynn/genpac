@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-24 12:40:20
-#! GFWList: 2025-01-24 05:13:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-25 01:35:08
+#! GFWList: 2025-01-24 23:06:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -101,6 +101,8 @@ rule:
         - s,4rbtv.com
         - s,4shared.com
         - s,4sqi.net
+        - s,500px.com
+        - s,500px.org
         - s,51.ca
         - s,51jav.org
         - s,51luoben.com
@@ -516,6 +518,7 @@ rule:
         - s,bbs.morbell.com
         - s,bbs.mychat.to
         - s,bbs.netbig.com
+        - s,bbs.nyinfor.com
         - s,bbs.ozchinese.com
         - s,bbs.qmzdd.com
         - s,bbs.sina.com
@@ -753,6 +756,7 @@ rule:
         - s,btctrade.im
         - s,btdig.com
         - s,btdigg.org
+        - s,btguard.com
         - s,btku.me
         - s,btku.org
         - s,btspread.com
@@ -1360,6 +1364,7 @@ rule:
         - s,disp.cc
         - s,disqus.com
         - s,dit-inc.us
+        - s,diyin.org
         - s,dizhidizhi.com
         - s,dizhuzhishang.com
         - s,djangosnippets.org
@@ -1370,6 +1375,7 @@ rule:
         - s,dlsite.com
         - s,dlyoutube.com
         - s,dm530.net
+        - s,dma.mil
         - s,dmc.nico
         - s,dmcdn.net
         - s,dmhy.org
@@ -2367,6 +2373,7 @@ rule:
         - s,googlepagecreator.com
         - s,googleplay.com
         - s,googleplus.com
+        - s,googlescholar.com
         - s,googlesile.com
         - s,googlesource.com
         - s,googleusercontent.com
@@ -3213,6 +3220,7 @@ rule:
         - s,lih.kg
         - s,lihkg.com
         - s,like.com
+        - s,lilaoshibushinilaoshi.com
         - s,limiao.net
         - s,line-apps.com
         - s,line-scdn.net
@@ -3330,6 +3338,7 @@ rule:
         - s,mandiant.com
         - s,mangafox.com
         - s,mangafox.me
+        - s,mangmang.run
         - s,maniash.com
         - s,manicur4ik.ru
         - s,mansion.com
@@ -5015,6 +5024,7 @@ rule:
         - s,terabox.com
         - s,tew.org
         - s,textnow.me
+        - s,tfc-taiwan.org.tw
         - s,tfhub.dev
         - s,tfiflve.com
         - s,th.hao123.com
@@ -5058,7 +5068,6 @@ rule:
         - s,thetibetconnection.org
         - s,thetibetmuseum.org
         - s,thetibetpost.com
-        - s,thetinhat.com
         - s,thetrotskymovie.com
         - s,thetvdb.com
         - s,thevivekspot.com
@@ -5453,6 +5462,7 @@ rule:
         - s,typora.io
         - s,u15.info
         - s,u9un.com
+        - s,ua5v.com
         - s,ub0.cc
         - s,ubddns.org
         - s,uberproxy.net
@@ -5476,6 +5486,8 @@ rule:
         - s,uku.im
         - s,ulike.net
         - s,ulop.net
+        - s,ultrasurf.us
+        - s,ultravpn.com
         - s,ultravpn.fr
         - s,ultraxs.com
         - s,umich.edu
@@ -5527,6 +5539,7 @@ rule:
         - s,usacn.com
         - s,usaip.eu
         - s,uscardforum.com
+        - s,uscg.mil
         - s,uscnpm.org
         - s,userapi.nytlog.com
         - s,usercontent.goog
@@ -5691,6 +5704,7 @@ rule:
         - s,vpnpick.com
         - s,vpnpop.com
         - s,vpnpronet.com
+        - s,vpnproxymaster.com
         - s,vpnreactor.com
         - s,vpnreviewz.com
         - s,vpnsecure.me
@@ -6078,6 +6092,7 @@ rule:
         - s,yanghengjun.com
         - s,yangjianli.com
         - s,yasni.co.uk
+        - s,yasukuni.or.jp
         - s,yayabay.com
         - s,ydy.com
         - s,yeahteentube.com
@@ -6149,6 +6164,7 @@ rule:
         - s,yuanzhengtang.org
         - s,yulghun.com
         - s,yunchao.net
+        - s,yunomi.tokyo
         - s,yuvutu.com
         - s,yvesgeleyn.com
         - s,ywpw.com
@@ -6218,6 +6234,7 @@ rule:
         - s,ziporn.com
         - s,zippyshare.com
         - s,zkaip.com
+        - s,zmedia.com.tw
         - s,zmw.cn
         - s,zodgame.us
         - s,zomobo.net
