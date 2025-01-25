@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: qtbu2bOGE+7DWtHKrz/Esw
+! Checksum: n3J2lqLJqyrWb0tqDFfWsg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 24 Jan 2025 00:13:12 -0500
+! Last Modified: Fri, 24 Jan 2025 18:06:35 -0500
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -16,6 +16,8 @@
 ! https://github.com/gfwlist/gfwlist/issues/.
 
 !---------403/451/503/520 & URL Redirects---------
+||500px.com
+||500px.org
 !--ehentai
 |http://85.17.73.31/
 !--||adorama.com
@@ -197,6 +199,7 @@ share.dmhy.org
 ||s1.nudezz.com
 ||nusatrip.com
 ||nuuvem.com
+||bbs.nyinfor.com
 ||olehdtv.com
 ||omni7.jp
 ||onapp.com
@@ -1488,7 +1491,7 @@ blogspot.com
 ||googlepagecreator.com
 ||googleplay.com
 ||googleplus.com
-||googlescholar.comUSA
+||googlescholar.com
 ||googlesource.com
 !--||googlesyndication.com
 !--||googletagmanager.com
@@ -1551,6 +1554,7 @@ blogspot.com
 ||tiltbrush.com
 ||translate.goog
 ||tv.google
+||ua5v.com
 ||urchin.com
 ||usercontent.goog
 !--||www.google
@@ -1792,10 +1796,13 @@ cn.nytstyle.com
 
 !!---USA---
 |http://www.americorps.gov
+||dma.mil
 ||jpl.nasa.gov
 ||pds.nasa.gov
+||soc.mil
 ||solarsystem.nasa.gov
 iipdigital.usembassy.gov
+||uscg.mil
 ||usfk.mil
 ||usmc.mil
 |http://tarr.uspto.gov/
@@ -2666,6 +2673,7 @@ brucewang.net
 .btbtav.com
 ||btdig.com
 ||btdigg.org
+||btguard.com
 .btku.me
 ||btku.me
 ||btku.org
@@ -2964,7 +2972,7 @@ chinese-leaders.org
 ||chinesegay.org
 .chinesen.de
 ||chinesen.de
-.chinesenews.net.au/
+||chinesenews.net.au
 .chinesepen.org
 ||chineseradioseattle.com
 .chinesetalks.net/ch
@@ -3297,6 +3305,7 @@ disp.cc
 ||disqus.com
 .dit-inc.us
 ||dit-inc.us
+||diyin.org
 .dizhidizhi.com
 ||dizhuzhishang.com
 djangosnippets.org
@@ -5281,6 +5290,7 @@ blogs.libraryinformationtechnology.com/jxyz
 ||libredd.it
 ||lighten.org.tw
 ||lightnovel.cn
+||lilaoshibushinilaoshi.com
 limiao.net
 linkuswell.com
 abitno.linpie.com/use-ipv6-to-fuck-gfw
@@ -5401,6 +5411,7 @@ my.mail.ru
 .maizhong.org
 makkahnewspaper.com
 .mamingzhe.com
+||mangmang.run
 manicur4ik.ru
 ||manyvoices.news
 .maplew.com
@@ -6838,7 +6849,6 @@ smhric.org
 sneakme.net
 snowlionpub.com
 home.so-net.net.tw/yisa_tsai
-||soc.mil
 ||socialblade.com
 .socks-proxy.net
 ||socks-proxy.net
@@ -7175,6 +7185,7 @@ teensinasia.com
 ||tenzinpalmo.com
 .tew.org
 ||tew.org
+||tfc-taiwan.org.tw
 ||tfiflve.com
 .thaicn.com
 ||theatlantic.com
@@ -7224,8 +7235,6 @@ thetibetconnection.org
 .thetibetmuseum.org
 .thetibetpost.com
 ||thetibetpost.com
-!--Tor
-||thetinhat.com
 thetrotskymovie.com
 ||thetvdb.com
 thevivekspot.com
@@ -7711,7 +7720,8 @@ uighurbiz.net
 ukcdp.co.uk
 ukliferadio.co.uk
 ||ukliferadio.co.uk
-ultravpn.fr
+||ultrasurf.us
+||ultravpn.com
 ||ultravpn.fr
 ultraxs.com
 umich.edu/~falun
@@ -7788,7 +7798,7 @@ usus.cc
 ||uwants.com
 .uwants.net
 uyghur.co.uk
-|http://uyghur-j.org
+||uyghur-j.org
 ||uyghuraa.org
 ||uyghuramerican.org
 ||uyghurbiz.org
@@ -7929,6 +7939,7 @@ vpnjack.com
 ||vpnpick.com
 ||vpnpop.com
 ||vpnpronet.com
+||vpnproxymaster.com
 .vpnreactor.com
 ||vpnreactor.com
 ||vpnreviewz.com
@@ -8298,7 +8309,7 @@ xyy69.info
 yangjianli.com
 .yasni.co.uk
 ||yasni.co.uk
-!--||yasukuni.or.jp
+||yasukuni.or.jp
 .yayabay.com/forum
 ||news.ycombinator.com
 .ydy.com
@@ -8383,6 +8394,7 @@ yuanming.net
 .yulghun.com
 ||yulghun.com
 ||yunchao.net
+||yunomi.tokyo
 .yuvutu.com
 ||yvesgeleyn.com
 .ywpw.com/forums/history/post/A0/p0/html/227
@@ -8459,6 +8471,7 @@ zhuichaguoji.org
 ||zkaip.com
 realforum.zkiz.com
 !--||zlib.net
+||zmedia.com.tw
 ||zmw.cn
 .zodgame.us
 zomobo.net
@@ -8488,20 +8501,6 @@ zyzc9.com
 !##############General List End#################
 
 !###########Supplemental List Start#############
-!-----------------URL Keywords------------------
-64memo
-aHR0cHM6Ly95ZWNsLm5ldA
-freenet
-.google.*/falun
-phobos.apple.com*/video
-q=freedom
-q%3Dfreedom
-remembering_tiananmen_20_years
-search*safeweb
-q=triangle
-q%3DTriangle
-ultrareach
-ultrasurf
 !#############Supplemental List End#############
 
 !################Whitelist Start################

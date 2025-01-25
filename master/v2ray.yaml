@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-24 12:39:48
-#! GFWList: 2025-01-24 05:13:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-25 01:34:36
+#! GFWList: 2025-01-24 23:06:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -203,6 +203,8 @@ routing:
         - domain:4rbtv.com
         - domain:4shared.com
         - domain:4sqi.net
+        - domain:500px.com
+        - domain:500px.org
         - domain:51.ca
         - domain:51jav.org
         - domain:51luoben.com
@@ -618,6 +620,7 @@ routing:
         - domain:bbs.morbell.com
         - domain:bbs.mychat.to
         - domain:bbs.netbig.com
+        - domain:bbs.nyinfor.com
         - domain:bbs.ozchinese.com
         - domain:bbs.qmzdd.com
         - domain:bbs.sina.com
@@ -855,6 +858,7 @@ routing:
         - domain:btctrade.im
         - domain:btdig.com
         - domain:btdigg.org
+        - domain:btguard.com
         - domain:btku.me
         - domain:btku.org
         - domain:btspread.com
@@ -1462,6 +1466,7 @@ routing:
         - domain:disp.cc
         - domain:disqus.com
         - domain:dit-inc.us
+        - domain:diyin.org
         - domain:dizhidizhi.com
         - domain:dizhuzhishang.com
         - domain:djangosnippets.org
@@ -1472,6 +1477,7 @@ routing:
         - domain:dlsite.com
         - domain:dlyoutube.com
         - domain:dm530.net
+        - domain:dma.mil
         - domain:dmc.nico
         - domain:dmcdn.net
         - domain:dmhy.org
@@ -2469,6 +2475,7 @@ routing:
         - domain:googlepagecreator.com
         - domain:googleplay.com
         - domain:googleplus.com
+        - domain:googlescholar.com
         - domain:googlesile.com
         - domain:googlesource.com
         - domain:googleusercontent.com
@@ -3315,6 +3322,7 @@ routing:
         - domain:lih.kg
         - domain:lihkg.com
         - domain:like.com
+        - domain:lilaoshibushinilaoshi.com
         - domain:limiao.net
         - domain:line-apps.com
         - domain:line-scdn.net
@@ -3432,6 +3440,7 @@ routing:
         - domain:mandiant.com
         - domain:mangafox.com
         - domain:mangafox.me
+        - domain:mangmang.run
         - domain:maniash.com
         - domain:manicur4ik.ru
         - domain:mansion.com
@@ -5117,6 +5126,7 @@ routing:
         - domain:terabox.com
         - domain:tew.org
         - domain:textnow.me
+        - domain:tfc-taiwan.org.tw
         - domain:tfhub.dev
         - domain:tfiflve.com
         - domain:th.hao123.com
@@ -5160,7 +5170,6 @@ routing:
         - domain:thetibetconnection.org
         - domain:thetibetmuseum.org
         - domain:thetibetpost.com
-        - domain:thetinhat.com
         - domain:thetrotskymovie.com
         - domain:thetvdb.com
         - domain:thevivekspot.com
@@ -5555,6 +5564,7 @@ routing:
         - domain:typora.io
         - domain:u15.info
         - domain:u9un.com
+        - domain:ua5v.com
         - domain:ub0.cc
         - domain:ubddns.org
         - domain:uberproxy.net
@@ -5578,6 +5588,8 @@ routing:
         - domain:uku.im
         - domain:ulike.net
         - domain:ulop.net
+        - domain:ultrasurf.us
+        - domain:ultravpn.com
         - domain:ultravpn.fr
         - domain:ultraxs.com
         - domain:umich.edu
@@ -5629,6 +5641,7 @@ routing:
         - domain:usacn.com
         - domain:usaip.eu
         - domain:uscardforum.com
+        - domain:uscg.mil
         - domain:uscnpm.org
         - domain:userapi.nytlog.com
         - domain:usercontent.goog
@@ -5793,6 +5806,7 @@ routing:
         - domain:vpnpick.com
         - domain:vpnpop.com
         - domain:vpnpronet.com
+        - domain:vpnproxymaster.com
         - domain:vpnreactor.com
         - domain:vpnreviewz.com
         - domain:vpnsecure.me
@@ -6180,6 +6194,7 @@ routing:
         - domain:yanghengjun.com
         - domain:yangjianli.com
         - domain:yasni.co.uk
+        - domain:yasukuni.or.jp
         - domain:yayabay.com
         - domain:ydy.com
         - domain:yeahteentube.com
@@ -6251,6 +6266,7 @@ routing:
         - domain:yuanzhengtang.org
         - domain:yulghun.com
         - domain:yunchao.net
+        - domain:yunomi.tokyo
         - domain:yuvutu.com
         - domain:yvesgeleyn.com
         - domain:ywpw.com
@@ -6320,6 +6336,7 @@ routing:
         - domain:ziporn.com
         - domain:zippyshare.com
         - domain:zkaip.com
+        - domain:zmedia.com.tw
         - domain:zmw.cn
         - domain:zodgame.us
         - domain:zomobo.net
