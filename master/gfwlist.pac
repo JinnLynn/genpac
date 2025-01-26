@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-01-25 12:36:22
- * GFWList Last-Modified: 2025-01-24 23:06:35
+ * Generated: 2025-01-26 01:41:18
+ * GFWList Last-Modified: 2025-01-25 16:16:19
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -3050,7 +3050,6 @@ var rules = [
             "izles.net",
             "izlesem.org",
             "j.mp",
-            "ja.wikipedia.org",
             "jable.tv",
             "jamaat.org",
             "jamestown.org",
@@ -5953,6 +5952,8 @@ var rules = [
             "wiki.keso.cn",
             "wiki.oauth.net",
             "wiki.phonegap.com",
+            "wikibooks.org",
+            "wikidata.org",
             "wikileaks-forum.com",
             "wikileaks.ch",
             "wikileaks.com",
@@ -5965,8 +5966,11 @@ var rules = [
             "wikimapia.org",
             "wikimedia.org",
             "wikipedia.org",
+            "wikiversity.org",
+            "wikivoyage.org",
             "wikiwand.com",
             "wikiwiki.jp",
+            "wiktionary.org",
             "wildammo.com",
             "williamhill.com",
             "willw.net",
@@ -5991,6 +5995,7 @@ var rules = [
             "wlcnew.jigsy.com",
             "wlx.sowiki.net",
             "wmflabs.org",
+            "wmfusercontent.org",
             "wn.com",
             "wnacg.com",
             "wnacg.org",

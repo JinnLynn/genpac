@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-25 12:36:22
-#! GFWList: 2025-01-24 23:06:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-26 01:41:19
+#! GFWList: 2025-01-25 16:16:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3045,7 +3045,6 @@ routing:
         - domain:izles.net
         - domain:izlesem.org
         - domain:j.mp
-        - domain:ja.wikipedia.org
         - domain:jable.tv
         - domain:jamaat.org
         - domain:jamestown.org
@@ -5948,6 +5947,8 @@ routing:
         - domain:wiki.keso.cn
         - domain:wiki.oauth.net
         - domain:wiki.phonegap.com
+        - domain:wikibooks.org
+        - domain:wikidata.org
         - domain:wikileaks-forum.com
         - domain:wikileaks.ch
         - domain:wikileaks.com
@@ -5960,8 +5961,11 @@ routing:
         - domain:wikimapia.org
         - domain:wikimedia.org
         - domain:wikipedia.org
+        - domain:wikiversity.org
+        - domain:wikivoyage.org
         - domain:wikiwand.com
         - domain:wikiwiki.jp
+        - domain:wiktionary.org
         - domain:wildammo.com
         - domain:williamhill.com
         - domain:willw.net
@@ -5986,6 +5990,7 @@ routing:
         - domain:wlcnew.jigsy.com
         - domain:wlx.sowiki.net
         - domain:wmflabs.org
+        - domain:wmfusercontent.org
         - domain:wn.com
         - domain:wnacg.com
         - domain:wnacg.org
