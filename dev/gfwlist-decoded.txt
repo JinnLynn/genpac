@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: n3J2lqLJqyrWb0tqDFfWsg
+! Checksum: aMcHx7QbeRnb34dCTRamPA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 24 Jan 2025 18:06:35 -0500
+! Last Modified: Sat, 25 Jan 2025 11:16:19 -0500
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1855,49 +1855,33 @@ zh.uncyclopedia.wikia.com
 !!Emergency need only(IP/Port block usage)!!
 !------0------
 !--||mediawiki.org
-!--@@||m.mediawiki.org
 !------1------
-!--||wikidata.org
-!--@@||m.wikidata.org
+||wikidata.org
 !------2------
 ||wikimedia.org
-!--@@||lists.wikimedia.org
-!--@@||m.wikimedia.org
-!--@@||phabricator.wikimedia.org
-!--@@||upload.wikimedia.org
-!--@@||wikitech.wikimedia.org
 !------3------
-!--||wikibooks.org
-!--@@||m.wikibooks.org
+||wikibooks.org
 !------4------
-!--||wikiversity.org
-!--@@||m.wikiversity.org
+||wikiversity.org
 !------5------
 !--||wikisource.org
-!--@@||m.wikisource.org
 |http://zh.wikisource.org
 !------6------
 ||zh.wikiquote.org
-!--@@||m.wikiquote.org
 !------7------
 !--||wikinews.org
-!--@@||m.wikinews.org
 ||zh.wikinews.org
 !------8------
-!--||wikivoyage.org
-!--@@||m.wikivoyage.org
+||wikivoyage.org
 !--|http://zh.wikivoyage.org
 !------9------
-!--||wiktionary.org
-!--@@||m.wiktionary.org
-!--|http://zh.wiktionary.org
+||wiktionary.org
 !-----10------
 !--||wikimediafoundation.org
-!--@@||m.wikimediafoundation.org
 !----Main-----
 !!--||en.wikipedia.org
 !--||wikipedia.org
-||ja.wikipedia.org
+!--||ja.wikipedia.org
 !!--zh.wikipedia.org
 !--||zh.wikipedia.org
 !!--||ug.m.wikipedia.org
@@ -1912,6 +1896,7 @@ zh.uncyclopedia.wikia.com
 !!--|https://zh-yue.wikipedia.org
 !!! Starting with !! are previous rules replaced by:
 ||wikipedia.org
+||wmfusercontent.org
 
 !!---Yahoo---
 ||data.flurry.com

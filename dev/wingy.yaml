@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-01-25 12:36:55
-#! GFWList: 2025-01-24 23:06:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-01-26 01:42:05
+#! GFWList: 2025-01-25 16:16:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2943,7 +2943,6 @@ rule:
         - s,izles.net
         - s,izlesem.org
         - s,j.mp
-        - s,ja.wikipedia.org
         - s,jable.tv
         - s,jamaat.org
         - s,jamestown.org
@@ -5846,6 +5845,8 @@ rule:
         - s,wiki.keso.cn
         - s,wiki.oauth.net
         - s,wiki.phonegap.com
+        - s,wikibooks.org
+        - s,wikidata.org
         - s,wikileaks-forum.com
         - s,wikileaks.ch
         - s,wikileaks.com
@@ -5858,8 +5859,11 @@ rule:
         - s,wikimapia.org
         - s,wikimedia.org
         - s,wikipedia.org
+        - s,wikiversity.org
+        - s,wikivoyage.org
         - s,wikiwand.com
         - s,wikiwiki.jp
+        - s,wiktionary.org
         - s,wildammo.com
         - s,williamhill.com
         - s,willw.net
@@ -5884,6 +5888,7 @@ rule:
         - s,wlcnew.jigsy.com
         - s,wlx.sowiki.net
         - s,wmflabs.org
+        - s,wmfusercontent.org
         - s,wn.com
         - s,wnacg.com
         - s,wnacg.org
