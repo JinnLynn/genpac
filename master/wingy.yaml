@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-02-07 01:41:05
-#! GFWList: 2025-01-25 16:16:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-02-07 12:40:04
+#! GFWList: 2025-02-07 04:07:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -280,6 +280,7 @@ rule:
         - s,ameblo.jp
         - s,americangreencard.com
         - s,americanunfinished.com
+        - s,americorps.gov
         - s,amiblockedornot.com
         - s,amigobbs.net
         - s,amitabhafoundation.us
@@ -859,6 +860,7 @@ rule:
         - s,cccat.cc
         - s,cccat.co
         - s,ccdtr.org
+        - s,ccfd.org.tw
         - s,cchere.com
         - s,ccim.org
         - s,cclife.ca
@@ -2108,7 +2110,6 @@ rule:
         - s,goagent.biz
         - s,goagent.codeplex.com
         - s,goagentplus.com
-        - s,gobet.cc
         - s,godaddy.com
         - s,godfootsteps.org
         - s,godns.work
@@ -2400,6 +2401,7 @@ rule:
         - s,graphis.ne.jp
         - s,graphql.org
         - s,gravatar.com
+        - s,greasyfork.org
         - s,great-firewall.com
         - s,great-roc.org
         - s,greatfire.org
@@ -2869,6 +2871,7 @@ rule:
         - s,iownyour.biz
         - s,iownyour.org
         - s,ipalter.com
+        - s,ipdefenseforum.com
         - s,ipfire.org
         - s,ipfs.io
         - s,iphone4hongkong.com
@@ -3781,6 +3784,7 @@ rule:
         - s,nobel.se
         - s,nobelprize.org
         - s,nobodycanstop.us
+        - s,nodeseek.com
         - s,nofile.io
         - s,nokogiri.org
         - s,nokola.com
@@ -3804,7 +3808,6 @@ rule:
         - s,npa.gov.tw
         - s,npm.gov.tw
         - s,npnt.me
-        - s,nps.gov
         - s,npsboost.com
         - s,nradio.me
         - s,nrk.no
@@ -3991,6 +3994,7 @@ rule:
         - s,pachosting.com
         - s,pacificpoker.com
         - s,packetix.net
+        - s,pacom.mil
         - s,pacopacomama.com
         - s,padmanet.com
         - s,page.bid.yahoo.com
@@ -5545,7 +5549,6 @@ rule:
         - s,users.skynet.be
         - s,usfk.mil
         - s,ushuarencity.echainhost.com
-        - s,usinfo.state.gov
         - s,usma.edu
         - s,usmc.mil
         - s,usmgtcg.ning.com
@@ -5944,7 +5947,6 @@ rule:
         - s,wwitv.com
         - s,www.abclite.net
         - s,www.ajsands.com
-        - s,www.americorps.gov
         - s,www.antd.org
         - s,www.aolnews.com
         - s,www.businessinsider.com.au

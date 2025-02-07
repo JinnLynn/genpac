@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: aMcHx7QbeRnb34dCTRamPA
+! Checksum: auYo+Zt/tz2hqdYUau8teg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 25 Jan 2025 11:16:19 -0500
+! Last Modified: Thu, 06 Feb 2025 23:07:23 -0500
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1795,10 +1795,12 @@ cn.nytstyle.com
 ||kinmen.org.tw
 
 !!---USA---
-|http://www.americorps.gov
+||americorps.gov
+||dfas.mil
 ||dma.mil
 ||jpl.nasa.gov
 ||pds.nasa.gov
+||pacom.mil
 ||soc.mil
 ||solarsystem.nasa.gov
 iipdigital.usembassy.gov
@@ -2791,6 +2793,7 @@ catholic.org.tw
 ||cccat.co
 .ccdtr.org
 ||ccdtr.org
+||ccfd.org.tw
 .cchere.com
 ||cchere.com
 .ccim.org
@@ -3122,14 +3125,12 @@ csdparty.com
 ||csis.org
 ||csmonitor.com
 ||csuchen.de
-.csw.org.uk
-.ct.org.tw
+||csw.org.uk
 ||ct.org.tw
 .ctao.org
 .ctfriend.net
-.ctitv.com.tw
+||ctitv.com.tw
 ||ctowc.org
-.cts.com.tw
 ||cts.com.tw
 ||ctwant.com
 |http://library.usc.cuhk.edu.hk/
@@ -3265,7 +3266,6 @@ delicious.com/GFWbookmark
 ||devio.us
 ||devpn.com
 ||devv.ai
-||dfas.mil
 dfn.org
 dharmakara.net
 .dharamsalanet.com
@@ -4089,7 +4089,6 @@ gluckman.com/DalaiLama
 go-pki.com
 ||goagent.biz
 ||goagentplus.com
-gobet.cc
 ||godaddy.com
 godfootsteps.org
 ||godfootsteps.org
@@ -4148,6 +4147,7 @@ greatfirewall.biz
 .greenparty.org.tw
 ||greenpeace.org
 .greenreadings.com/forum
+||greasyfork.org
 great-firewall.com
 great-roc.org
 greatroc.org
@@ -4888,6 +4888,7 @@ inxian.com
 ||inxian.com
 ipalter.com
 !--||ipcf.org.tw
+||ipdefenseforum.com
 ||ipfire.org
 ||iphone4hongkong.com
 ||iphonehacks.com
@@ -5851,6 +5852,7 @@ nobelprize.org/nobel_prizes/peace/laureates/1989
 nobelprize.org/nobel_prizes/peace/laureates/2010
 nobodycanstop.us
 ||nobodycanstop.us
+||nodeseek.com
 ||nokogiri.org
 ||nokola.com
 noodlevpn.com
@@ -5868,7 +5870,6 @@ nordvpn.com
 ||npa.go.jp
 .npnt.me
 |http://npnt.me
-.nps.gov
 .nradio.me
 |http://nradio.me
 .nrk.no
@@ -6950,7 +6951,6 @@ sstmlt.net
 ||standupfortibet.org
 ||standwithhk.org
 stanford.edu/group/falun
-usinfo.state.gov
 ||statueofdemocracy.org
 .starfishfx.com
 .starp2p.com
