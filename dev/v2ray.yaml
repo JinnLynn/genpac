@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-02-07 01:41:29
-#! GFWList: 2025-01-25 16:16:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-02-07 12:40:34
+#! GFWList: 2025-02-07 04:07:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -382,6 +382,7 @@ routing:
         - domain:ameblo.jp
         - domain:americangreencard.com
         - domain:americanunfinished.com
+        - domain:americorps.gov
         - domain:amiblockedornot.com
         - domain:amigobbs.net
         - domain:amitabhafoundation.us
@@ -961,6 +962,7 @@ routing:
         - domain:cccat.cc
         - domain:cccat.co
         - domain:ccdtr.org
+        - domain:ccfd.org.tw
         - domain:cchere.com
         - domain:ccim.org
         - domain:cclife.ca
@@ -2210,7 +2212,6 @@ routing:
         - domain:goagent.biz
         - domain:goagent.codeplex.com
         - domain:goagentplus.com
-        - domain:gobet.cc
         - domain:godaddy.com
         - domain:godfootsteps.org
         - domain:godns.work
@@ -2502,6 +2503,7 @@ routing:
         - domain:graphis.ne.jp
         - domain:graphql.org
         - domain:gravatar.com
+        - domain:greasyfork.org
         - domain:great-firewall.com
         - domain:great-roc.org
         - domain:greatfire.org
@@ -2971,6 +2973,7 @@ routing:
         - domain:iownyour.biz
         - domain:iownyour.org
         - domain:ipalter.com
+        - domain:ipdefenseforum.com
         - domain:ipfire.org
         - domain:ipfs.io
         - domain:iphone4hongkong.com
@@ -3883,6 +3886,7 @@ routing:
         - domain:nobel.se
         - domain:nobelprize.org
         - domain:nobodycanstop.us
+        - domain:nodeseek.com
         - domain:nofile.io
         - domain:nokogiri.org
         - domain:nokola.com
@@ -3906,7 +3910,6 @@ routing:
         - domain:npa.gov.tw
         - domain:npm.gov.tw
         - domain:npnt.me
-        - domain:nps.gov
         - domain:npsboost.com
         - domain:nradio.me
         - domain:nrk.no
@@ -4093,6 +4096,7 @@ routing:
         - domain:pachosting.com
         - domain:pacificpoker.com
         - domain:packetix.net
+        - domain:pacom.mil
         - domain:pacopacomama.com
         - domain:padmanet.com
         - domain:page.bid.yahoo.com
@@ -5647,7 +5651,6 @@ routing:
         - domain:users.skynet.be
         - domain:usfk.mil
         - domain:ushuarencity.echainhost.com
-        - domain:usinfo.state.gov
         - domain:usma.edu
         - domain:usmc.mil
         - domain:usmgtcg.ning.com
@@ -6046,7 +6049,6 @@ routing:
         - domain:wwitv.com
         - domain:www.abclite.net
         - domain:www.ajsands.com
-        - domain:www.americorps.gov
         - domain:www.antd.org
         - domain:www.aolnews.com
         - domain:www.businessinsider.com.au
