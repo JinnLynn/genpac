@@ -1,6 +1,6 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-02-12 01:40:39
+#! Generated: 2025-02-12 12:41:07
 #! GFWList: 2025-02-07 04:07:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [proxy_all]
 
@@ -2914,8 +2914,7 @@
 157.148.0.0/16
 157.156.0.0/16
 157.255.0.0/16
-158.140.252.0/23
-158.140.254.0/24
+158.140.252.0/22
 159.27.0.0/16
 159.75.0.0/16
 159.226.0.0/16
