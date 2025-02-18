@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-02-18 01:40:46
-#! GFWList: 2025-02-07 04:07:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-02-18 12:39:48
+#! GFWList: 2025-02-18 06:24:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -113,6 +113,7 @@ rule:
         - s,5i01.com
         - s,5isotoi5.org
         - s,5maodang.com
+        - s,611study.icu
         - s,63i.com
         - s,64museum.org
         - s,64tianwang.com
@@ -3721,6 +3722,7 @@ rule:
         - s,news.tvbs.com.tw
         - s,news.yahoo.com
         - s,news.ycombinator.com
+        - s,news1.kr
         - s,news100.com.tw
         - s,newsancai.com
         - s,newsblur.com
@@ -4090,6 +4092,7 @@ rule:
         - s,picturedip.com
         - s,pictures.playboy.com
         - s,picturesocial.com
+        - s,picuki.com
         - s,pigav.com
         - s,pimg.tw
         - s,pin-cong.com
@@ -4861,7 +4864,6 @@ rule:
         - s,strikingly.com
         - s,strongvpn.com
         - s,strongwindpress.com
-        - s,student.tw
         - s,studentsforafreetibet.org
         - s,stumbleupon.com
         - s,stupidvideos.com

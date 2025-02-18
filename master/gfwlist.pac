@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-02-18 01:40:44
- * GFWList Last-Modified: 2025-02-07 04:07:23
+ * Generated: 2025-02-18 12:39:46
+ * GFWList Last-Modified: 2025-02-18 06:24:21
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -220,6 +220,7 @@ var rules = [
             "5i01.com",
             "5isotoi5.org",
             "5maodang.com",
+            "611study.icu",
             "63i.com",
             "64museum.org",
             "64tianwang.com",
@@ -3828,6 +3829,7 @@ var rules = [
             "news.tvbs.com.tw",
             "news.yahoo.com",
             "news.ycombinator.com",
+            "news1.kr",
             "news100.com.tw",
             "newsancai.com",
             "newsblur.com",
@@ -4197,6 +4199,7 @@ var rules = [
             "picturedip.com",
             "pictures.playboy.com",
             "picturesocial.com",
+            "picuki.com",
             "pigav.com",
             "pimg.tw",
             "pin-cong.com",
@@ -4968,7 +4971,6 @@ var rules = [
             "strikingly.com",
             "strongvpn.com",
             "strongwindpress.com",
-            "student.tw",
             "studentsforafreetibet.org",
             "stumbleupon.com",
             "stupidvideos.com",
