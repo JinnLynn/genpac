@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-02-18 01:41:14
-! GFWList: 2025-02-07 04:07:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-02-18 12:40:15
+! GFWList: 2025-02-18 06:24:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -207,6 +207,7 @@
 ||5i01.com
 ||5isotoi5.org
 ||5maodang.com
+||611study.icu
 ||63i.com
 ||64museum.org
 ||64tianwang.com
@@ -3815,6 +3816,7 @@
 ||news.tvbs.com.tw
 ||news.yahoo.com
 ||news.ycombinator.com
+||news1.kr
 ||news100.com.tw
 ||newsancai.com
 ||newsblur.com
@@ -4184,6 +4186,7 @@
 ||picturedip.com
 ||pictures.playboy.com
 ||picturesocial.com
+||picuki.com
 ||pigav.com
 ||pimg.tw
 ||pin-cong.com
@@ -4955,7 +4958,6 @@
 ||strikingly.com
 ||strongvpn.com
 ||strongwindpress.com
-||student.tw
 ||studentsforafreetibet.org
 ||stumbleupon.com
 ||stupidvideos.com

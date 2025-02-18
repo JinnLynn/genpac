@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-02-18 01:41:14
-#! GFWList: 2025-02-07 04:07:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-02-18 12:40:15
+#! GFWList: 2025-02-18 06:24:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -215,6 +215,7 @@ routing:
         - domain:5i01.com
         - domain:5isotoi5.org
         - domain:5maodang.com
+        - domain:611study.icu
         - domain:63i.com
         - domain:64museum.org
         - domain:64tianwang.com
@@ -3823,6 +3824,7 @@ routing:
         - domain:news.tvbs.com.tw
         - domain:news.yahoo.com
         - domain:news.ycombinator.com
+        - domain:news1.kr
         - domain:news100.com.tw
         - domain:newsancai.com
         - domain:newsblur.com
@@ -4192,6 +4194,7 @@ routing:
         - domain:picturedip.com
         - domain:pictures.playboy.com
         - domain:picturesocial.com
+        - domain:picuki.com
         - domain:pigav.com
         - domain:pimg.tw
         - domain:pin-cong.com
@@ -4963,7 +4966,6 @@ routing:
         - domain:strikingly.com
         - domain:strongvpn.com
         - domain:strongwindpress.com
-        - domain:student.tw
         - domain:studentsforafreetibet.org
         - domain:stumbleupon.com
         - domain:stupidvideos.com
