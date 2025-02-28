@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-02-28 01:44:10
-#! GFWList: 2025-02-22 16:48:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-02-28 12:41:41
+#! GFWList: 2025-02-28 03:29:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -749,6 +749,7 @@ rule:
         - s,brucewang.net
         - s,brutaltgp.com
         - s,bsky.app
+        - s,bsky.network
         - s,bsky.social
         - s,bt95.com
         - s,btaia.com

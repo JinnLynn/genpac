@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-02-28 01:44:07
- * GFWList Last-Modified: 2025-02-22 16:48:53
+ * Generated: 2025-02-28 12:41:39
+ * GFWList Last-Modified: 2025-02-28 03:29:48
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -856,6 +856,7 @@ var rules = [
             "brucewang.net",
             "brutaltgp.com",
             "bsky.app",
+            "bsky.network",
             "bsky.social",
             "bt95.com",
             "btaia.com",

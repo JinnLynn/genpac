@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-02-28 01:44:07
-#! GFWList: 2025-02-22 16:48:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-02-28 12:41:39
+#! GFWList: 2025-02-28 03:29:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -851,6 +851,7 @@ routing:
         - domain:brucewang.net
         - domain:brutaltgp.com
         - domain:bsky.app
+        - domain:bsky.network
         - domain:bsky.social
         - domain:bt95.com
         - domain:btaia.com
