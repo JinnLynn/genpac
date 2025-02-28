@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: /SI3N6/yBInVeNOpZp93qw
+! Checksum: 8eF7ev5C1CD7WR48GBsGVA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 22 Feb 2025 11:48:53 -0500
+! Last Modified: Thu, 27 Feb 2025 22:29:48 -0500
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2204,6 +2204,7 @@ brucewang.net
 .brutaltgp.com
 ||brutaltgp.com
 ||bsky.app
+||bsky.network
 ||bsky.social
 ||bt95.com
 .btaia.com

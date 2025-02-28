@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-02-28 01:44:34
-#! GFWList: 2025-02-22 16:48:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-02-28 12:42:06
+#! GFWList: 2025-02-28 03:29:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -849,6 +849,7 @@ rules:
   - DOMAIN-SUFFIX,brucewang.net,PROXY
   - DOMAIN-SUFFIX,brutaltgp.com,PROXY
   - DOMAIN-SUFFIX,bsky.app,PROXY
+  - DOMAIN-SUFFIX,bsky.network,PROXY
   - DOMAIN-SUFFIX,bsky.social,PROXY
   - DOMAIN-SUFFIX,bt95.com,PROXY
   - DOMAIN-SUFFIX,btaia.com,PROXY
