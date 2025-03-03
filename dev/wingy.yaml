@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-02 12:38:18
-#! GFWList: 2025-02-28 03:29:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-03 01:47:25
+#! GFWList: 2025-03-02 14:55:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -179,6 +179,7 @@ rule:
         - s,accountkit.com
         - s,aceros-de-hispania.com
         - s,acevpn.com
+        - s,acg.rip
         - s,acg18.me
         - s,acgbox.org
         - s,acgkj.com
@@ -310,6 +311,7 @@ rule:
         - s,angularjs.org
         - s,animecrazy.net
         - s,aniscartujo.com
+        - s,annas-archive.se
         - s,annatam.com
         - s,anobii.com
         - s,anonfiles.com
@@ -486,6 +488,7 @@ rule:
         - s,bangchen.net
         - s,bangdream.space
         - s,bangkokpost.com
+        - s,bangumi.moe
         - s,bangyoulater.com
         - s,bankmobilevibe.com
         - s,bannedbook.org
@@ -711,6 +714,7 @@ rule:
         - s,booktopia.com.au
         - s,bookwalker.com.tw
         - s,boomssr.com
+        - s,bootstrapcdn.com
         - s,borgenmagazine.com
         - s,bot.nu
         - s,botanwang.com
@@ -1042,6 +1046,7 @@ rule:
         - s,chubun.com
         - s,churchinhongkong.org
         - s,chushigangdrug.ch
+        - s,ci-en.jp
         - s,ciciai.com
         - s,cienen.com
         - s,cineastentreff.de
@@ -1398,6 +1403,7 @@ rule:
         - s,dnsrd.com
         - s,dnssec.net
         - s,dnvod.tv
+        - s,docker.com
         - s,docs.new
         - s,doctorvoice.org
         - s,documentingreality.com
@@ -1415,6 +1421,7 @@ rule:
         - s,dongyangjing.com
         - s,dontfilter.us
         - s,dontmovetochina.com
+        - s,doosho.com
         - s,doourbest.org
         - s,dorjeshugden.com
         - s,dotplane.com
@@ -1657,6 +1664,7 @@ rule:
         - s,ezpc.tk
         - s,ezpeer.com
         - s,ezua.com
+        - s,f-droid.org
         - s,f2pool.com
         - s,f8.com
         - s,fa.gov.tw
@@ -1707,6 +1715,7 @@ rule:
         - s,familyfed.org
         - s,famunion.com
         - s,fan-qiang.com
+        - s,fanbox.cc
         - s,fangbinxing.com
         - s,fangeming.com
         - s,fangeqiang.com
@@ -1870,6 +1879,7 @@ rule:
         - s,free-proxy.cz
         - s,free-ss.site
         - s,free-ssh.com
+        - s,free.bg
         - s,free.fr
         - s,free4u.com.ar
         - s,freealim.com
@@ -2634,6 +2644,7 @@ rule:
         - s,hojemacau.com.mo
         - s,hola.com
         - s,hola.org
+        - s,hole.thu.monster
         - s,holymountaincn.com
         - s,holyspiritspeaks.org
         - s,home.sina.com
@@ -2670,6 +2681,7 @@ rule:
         - s,hougaige.com
         - s,howtoforge.com
         - s,hoxx.com
+        - s,hoy.tv
         - s,hpa.gov.tw
         - s,hpjav.com
         - s,hqcdp.org
@@ -2708,7 +2720,6 @@ rule:
         - s,huaxiabao.org
         - s,huaxin.ph
         - s,huayuworld.org
-        - s,hub.docker.com
         - s,hudatoriq.web.id
         - s,hudson.org
         - s,huffingtonpost.com
@@ -3127,6 +3138,7 @@ rule:
         - s,koornk.com
         - s,koranmandarin.com
         - s,korenan2.com
+        - s,kpkuang.org
         - s,kqes.net
         - s,kraken.com
         - s,ksdl.org
@@ -3342,6 +3354,7 @@ rule:
         - s,mamingzhe.com
         - s,manchukuo.net
         - s,mandiant.com
+        - s,mangabz.com
         - s,mangafox.com
         - s,mangafox.me
         - s,mangmang.run
@@ -3741,6 +3754,7 @@ rule:
         - s,newsweek.com
         - s,newtaiwan.com.tw
         - s,newtalk.tw
+        - s,newthuhole.com
         - s,newyorker.com
         - s,newyorktimes.com
         - s,nexon.com
@@ -4006,6 +4020,7 @@ rule:
         - s,page.link
         - s,page2rss.com
         - s,pagodabox.com
+        - s,paimon.moe
         - s,palacemoon.com
         - s,paldengyal.com
         - s,paljorpublications.com
@@ -4067,6 +4082,7 @@ rule:
         - s,pen.io
         - s,penchinese.com
         - s,penchinese.net
+        - s,pendrivelinux.com
         - s,penthouse.com
         - s,pentoy.hk
         - s,peoplebookcafe.com
@@ -4087,6 +4103,7 @@ rule:
         - s,phosphation13.rssing.com
         - s,photodharma.net
         - s,photofocus.com
+        - s,photonmedia.net
         - s,phuquocservices.com
         - s,picacomic.com
         - s,picacomiccn.com
@@ -4125,11 +4142,13 @@ rule:
         - s,pixeldrain.com
         - s,pixelqi.com
         - s,pixiv.net
+        - s,pixiv.org
         - s,pixivsketch.net
         - s,pixnet.net
         - s,pk.com
         - s,pki.goog
         - s,pkqjiasu.com
+        - s,pkuanvil.com
         - s,placemix.com
         - s,play-asia.com
         - s,playboy.com
@@ -4153,6 +4172,7 @@ rule:
         - s,podcast.co
         - s,podictionary.com
         - s,poe.com
+        - s,points-media.com
         - s,pokerstars.com
         - s,pokerstars.net
         - s,politicalchina.org
@@ -4915,6 +4935,7 @@ rule:
         - s,sylfoundation.org
         - s,syncback.com
         - s,synergyse.com
+        - s,syosetu.com
         - s,sysresccd.org
         - s,sytes.net
         - s,szbbs.net
@@ -5046,6 +5067,7 @@ rule:
         - s,thebobs.com
         - s,thebodyshop-usa.com
         - s,thecenter.mit.edu
+        - s,thechasernews.co.uk
         - s,thechinabeat.org
         - s,thechinacollection.org
         - s,theconversation.com
@@ -5094,6 +5116,7 @@ rule:
         - s,threads.net
         - s,threatchaos.com
         - s,throughnightsfire.com
+        - s,thuhole.com
         - s,thumbzilla.com
         - s,thywords.com
         - s,thywords.com.tw
@@ -5549,6 +5572,7 @@ rule:
         - s,uscardforum.com
         - s,uscg.mil
         - s,uscnpm.org
+        - s,use.typekit.net
         - s,userapi.nytlog.com
         - s,usercontent.goog
         - s,users.skynet.be
@@ -5851,6 +5875,7 @@ rule:
         - s,wiki.gamerp.jp
         - s,wiki.jqueryui.com
         - s,wiki.keso.cn
+        - s,wiki.metacubex.one
         - s,wiki.oauth.net
         - s,wiki.phonegap.com
         - s,wikibooks.org
@@ -5875,6 +5900,7 @@ rule:
         - s,wildammo.com
         - s,williamhill.com
         - s,willw.net
+        - s,wilsoncenter.org
         - s,windowsphoneme.com
         - s,windscribe.com
         - s,wingamestore.com

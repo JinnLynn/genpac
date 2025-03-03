@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-02 12:38:15
-#! GFWList: 2025-02-28 03:29:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-03 01:47:24
+#! GFWList: 2025-03-02 14:55:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -281,6 +281,7 @@ routing:
         - domain:accountkit.com
         - domain:aceros-de-hispania.com
         - domain:acevpn.com
+        - domain:acg.rip
         - domain:acg18.me
         - domain:acgbox.org
         - domain:acgkj.com
@@ -412,6 +413,7 @@ routing:
         - domain:angularjs.org
         - domain:animecrazy.net
         - domain:aniscartujo.com
+        - domain:annas-archive.se
         - domain:annatam.com
         - domain:anobii.com
         - domain:anonfiles.com
@@ -588,6 +590,7 @@ routing:
         - domain:bangchen.net
         - domain:bangdream.space
         - domain:bangkokpost.com
+        - domain:bangumi.moe
         - domain:bangyoulater.com
         - domain:bankmobilevibe.com
         - domain:bannedbook.org
@@ -813,6 +816,7 @@ routing:
         - domain:booktopia.com.au
         - domain:bookwalker.com.tw
         - domain:boomssr.com
+        - domain:bootstrapcdn.com
         - domain:borgenmagazine.com
         - domain:bot.nu
         - domain:botanwang.com
@@ -1144,6 +1148,7 @@ routing:
         - domain:chubun.com
         - domain:churchinhongkong.org
         - domain:chushigangdrug.ch
+        - domain:ci-en.jp
         - domain:ciciai.com
         - domain:cienen.com
         - domain:cineastentreff.de
@@ -1500,6 +1505,7 @@ routing:
         - domain:dnsrd.com
         - domain:dnssec.net
         - domain:dnvod.tv
+        - domain:docker.com
         - domain:docs.new
         - domain:doctorvoice.org
         - domain:documentingreality.com
@@ -1517,6 +1523,7 @@ routing:
         - domain:dongyangjing.com
         - domain:dontfilter.us
         - domain:dontmovetochina.com
+        - domain:doosho.com
         - domain:doourbest.org
         - domain:dorjeshugden.com
         - domain:dotplane.com
@@ -1759,6 +1766,7 @@ routing:
         - domain:ezpc.tk
         - domain:ezpeer.com
         - domain:ezua.com
+        - domain:f-droid.org
         - domain:f2pool.com
         - domain:f8.com
         - domain:fa.gov.tw
@@ -1809,6 +1817,7 @@ routing:
         - domain:familyfed.org
         - domain:famunion.com
         - domain:fan-qiang.com
+        - domain:fanbox.cc
         - domain:fangbinxing.com
         - domain:fangeming.com
         - domain:fangeqiang.com
@@ -1972,6 +1981,7 @@ routing:
         - domain:free-proxy.cz
         - domain:free-ss.site
         - domain:free-ssh.com
+        - domain:free.bg
         - domain:free.fr
         - domain:free4u.com.ar
         - domain:freealim.com
@@ -2736,6 +2746,7 @@ routing:
         - domain:hojemacau.com.mo
         - domain:hola.com
         - domain:hola.org
+        - domain:hole.thu.monster
         - domain:holymountaincn.com
         - domain:holyspiritspeaks.org
         - domain:home.sina.com
@@ -2772,6 +2783,7 @@ routing:
         - domain:hougaige.com
         - domain:howtoforge.com
         - domain:hoxx.com
+        - domain:hoy.tv
         - domain:hpa.gov.tw
         - domain:hpjav.com
         - domain:hqcdp.org
@@ -2810,7 +2822,6 @@ routing:
         - domain:huaxiabao.org
         - domain:huaxin.ph
         - domain:huayuworld.org
-        - domain:hub.docker.com
         - domain:hudatoriq.web.id
         - domain:hudson.org
         - domain:huffingtonpost.com
@@ -3229,6 +3240,7 @@ routing:
         - domain:koornk.com
         - domain:koranmandarin.com
         - domain:korenan2.com
+        - domain:kpkuang.org
         - domain:kqes.net
         - domain:kraken.com
         - domain:ksdl.org
@@ -3444,6 +3456,7 @@ routing:
         - domain:mamingzhe.com
         - domain:manchukuo.net
         - domain:mandiant.com
+        - domain:mangabz.com
         - domain:mangafox.com
         - domain:mangafox.me
         - domain:mangmang.run
@@ -3843,6 +3856,7 @@ routing:
         - domain:newsweek.com
         - domain:newtaiwan.com.tw
         - domain:newtalk.tw
+        - domain:newthuhole.com
         - domain:newyorker.com
         - domain:newyorktimes.com
         - domain:nexon.com
@@ -4108,6 +4122,7 @@ routing:
         - domain:page.link
         - domain:page2rss.com
         - domain:pagodabox.com
+        - domain:paimon.moe
         - domain:palacemoon.com
         - domain:paldengyal.com
         - domain:paljorpublications.com
@@ -4169,6 +4184,7 @@ routing:
         - domain:pen.io
         - domain:penchinese.com
         - domain:penchinese.net
+        - domain:pendrivelinux.com
         - domain:penthouse.com
         - domain:pentoy.hk
         - domain:peoplebookcafe.com
@@ -4189,6 +4205,7 @@ routing:
         - domain:phosphation13.rssing.com
         - domain:photodharma.net
         - domain:photofocus.com
+        - domain:photonmedia.net
         - domain:phuquocservices.com
         - domain:picacomic.com
         - domain:picacomiccn.com
@@ -4227,11 +4244,13 @@ routing:
         - domain:pixeldrain.com
         - domain:pixelqi.com
         - domain:pixiv.net
+        - domain:pixiv.org
         - domain:pixivsketch.net
         - domain:pixnet.net
         - domain:pk.com
         - domain:pki.goog
         - domain:pkqjiasu.com
+        - domain:pkuanvil.com
         - domain:placemix.com
         - domain:play-asia.com
         - domain:playboy.com
@@ -4255,6 +4274,7 @@ routing:
         - domain:podcast.co
         - domain:podictionary.com
         - domain:poe.com
+        - domain:points-media.com
         - domain:pokerstars.com
         - domain:pokerstars.net
         - domain:politicalchina.org
@@ -5017,6 +5037,7 @@ routing:
         - domain:sylfoundation.org
         - domain:syncback.com
         - domain:synergyse.com
+        - domain:syosetu.com
         - domain:sysresccd.org
         - domain:sytes.net
         - domain:szbbs.net
@@ -5148,6 +5169,7 @@ routing:
         - domain:thebobs.com
         - domain:thebodyshop-usa.com
         - domain:thecenter.mit.edu
+        - domain:thechasernews.co.uk
         - domain:thechinabeat.org
         - domain:thechinacollection.org
         - domain:theconversation.com
@@ -5196,6 +5218,7 @@ routing:
         - domain:threads.net
         - domain:threatchaos.com
         - domain:throughnightsfire.com
+        - domain:thuhole.com
         - domain:thumbzilla.com
         - domain:thywords.com
         - domain:thywords.com.tw
@@ -5651,6 +5674,7 @@ routing:
         - domain:uscardforum.com
         - domain:uscg.mil
         - domain:uscnpm.org
+        - domain:use.typekit.net
         - domain:userapi.nytlog.com
         - domain:usercontent.goog
         - domain:users.skynet.be
@@ -5953,6 +5977,7 @@ routing:
         - domain:wiki.gamerp.jp
         - domain:wiki.jqueryui.com
         - domain:wiki.keso.cn
+        - domain:wiki.metacubex.one
         - domain:wiki.oauth.net
         - domain:wiki.phonegap.com
         - domain:wikibooks.org
@@ -5977,6 +6002,7 @@ routing:
         - domain:wildammo.com
         - domain:williamhill.com
         - domain:willw.net
+        - domain:wilsoncenter.org
         - domain:windowsphoneme.com
         - domain:windscribe.com
         - domain:wingamestore.com
