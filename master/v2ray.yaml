@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-03 01:46:58
-#! GFWList: 2025-03-02 14:55:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-03 12:43:15
+#! GFWList: 2025-03-03 12:30:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -18,6 +18,7 @@ routing:
         - domain:chinaso.com
         - domain:chinaz.com
         - domain:chukuang.gov.tw
+        - domain:ci.android.com
         - domain:clientservices.googleapis.com
         - domain:cn.gravatar.com
         - domain:cn.noxinfluencer.com
@@ -145,6 +146,7 @@ routing:
         - domain:17t17p.com
         - domain:18board.com
         - domain:18board.info
+        - domain:18comic.org
         - domain:18onlygirls.com
         - domain:18p2p.com
         - domain:18virginsex.com
@@ -295,6 +297,7 @@ routing:
         - domain:aculo.us
         - domain:adcex.com
         - domain:addictedtocoffee.de
+        - domain:addons.mozilla.org
         - domain:addyoutube.com
         - domain:adelaidebbs.com
         - domain:admin.recaptcha.net
@@ -413,6 +416,7 @@ routing:
         - domain:angularjs.org
         - domain:animecrazy.net
         - domain:aniscartujo.com
+        - domain:annas-archive.org
         - domain:annas-archive.se
         - domain:annatam.com
         - domain:anobii.com
@@ -541,6 +545,7 @@ routing:
         - domain:av.com
         - domain:av.movie
         - domain:av.nightlife141.com
+        - domain:av01.tv
         - domain:avaaz.org
         - domain:avbody.tv
         - domain:avcity.tv
@@ -887,7 +892,6 @@ routing:
         - domain:busu.org
         - domain:busytrade.com
         - domain:buugaa.com
-        - domain:buy.yahoo.com.tw
         - domain:buzzhand.com
         - domain:buzzhand.net
         - domain:buzzorange.com
@@ -905,6 +909,7 @@ routing:
         - domain:c-est-simple.com
         - domain:c-span.org
         - domain:c-spanvideo.org
+        - domain:c.mi.com
         - domain:c100tibet.org
         - domain:c2cx.com
         - domain:cableav.tv
@@ -1099,7 +1104,6 @@ routing:
         - domain:chinasocialdemocraticparty.com
         - domain:chinasoul.org
         - domain:chinasucks.net
-        - domain:chinatimes.com
         - domain:chinatopsex.com
         - domain:chinatown.com.au
         - domain:chinatweeps.com
@@ -1186,8 +1190,10 @@ routing:
         - domain:clementine-player.org
         - domain:cling.omy.sg
         - domain:clinica-tibet.ru
+        - domain:clipconverter.cc
         - domain:clipfish.de
         - domain:cloakpoint.com
+        - domain:cloud.dify.ai
         - domain:cloud.mail.ru
         - domain:cloudflare-ipfs.com
         - domain:cloudfunctions.net
@@ -1249,6 +1255,7 @@ routing:
         - domain:cointiger.com
         - domain:cointobe.com
         - domain:coinut.com
+        - domain:colacloud.net
         - domain:collateralmurder.com
         - domain:collateralmurder.org
         - domain:com.google
@@ -1395,7 +1402,6 @@ routing:
         - domain:dashlane.com
         - domain:dastrassi.org
         - domain:data-vocabulary.org
-        - domain:data.flurry.com
         - domain:data.gov.tw
         - domain:daum.net
         - domain:david-kilgour.com
@@ -1430,6 +1436,7 @@ routing:
         - domain:delcamp.net
         - domain:delicious.com
         - domain:demo.opera-mini.net
+        - domain:demo.unlock-music.dev
         - domain:democrats.org
         - domain:demosisto.hk
         - domain:depositphotos.com
@@ -1655,6 +1662,7 @@ routing:
         - domain:eireinikotaerukai.com
         - domain:eisbb.com
         - domain:eksisozluk.com
+        - domain:elconfidencial.com
         - domain:electionsmeter.com
         - domain:elgoog.im
         - domain:ellawine.org
@@ -1737,7 +1745,6 @@ routing:
         - domain:etsy.com
         - domain:ettoday.net
         - domain:etvonline.hk
-        - domain:eu.org
         - domain:eucasino.com
         - domain:eulam.com
         - domain:eurekavpt.com
@@ -1844,6 +1851,7 @@ routing:
         - domain:farwestchina.com
         - domain:fast.wistia.com
         - domain:fastestvpn.com
+        - domain:fastgpt.run
         - domain:fastpic.ru
         - domain:fastssh.com
         - domain:faststone.org
@@ -1869,7 +1877,7 @@ routing:
         - domain:fdc89.jp
         - domain:feedburner.com
         - domain:feeder.co
-        - domain:feedly.com
+        - domain:feedly.comfastgpt.run
         - domain:feeds.fileforum.com
         - domain:feedx.net
         - domain:feelssh.com
@@ -1982,6 +1990,7 @@ routing:
         - domain:free-ss.site
         - domain:free-ssh.com
         - domain:free.bg
+        - domain:free.com.tw
         - domain:free.fr
         - domain:free4u.com.ar
         - domain:freealim.com
@@ -2047,6 +2056,7 @@ routing:
         - domain:frommel.net
         - domain:frontlinedefenders.org
         - domain:frootvpn.com
+        - domain:froth.zone
         - domain:fscked.org
         - domain:fsurf.com
         - domain:ftchinese.com
@@ -2187,10 +2197,10 @@ routing:
         - domain:gigporno.ru
         - domain:girlbanker.com
         - domain:git.io
+        - domain:gitbook.io
         - domain:github.blog
         - domain:github.com
         - domain:github.io
-        - domain:githubassets.com
         - domain:githubcopilot.com
         - domain:githubusercontent.com
         - domain:gizlen.net
@@ -2220,6 +2230,7 @@ routing:
         - domain:gnci.org.hk
         - domain:gnews.org
         - domain:go-pki.com
+        - domain:go-to-zlibrary.se
         - domain:go.nesnode.com
         - domain:go141.com
         - domain:goagent.biz
@@ -2587,6 +2598,7 @@ routing:
         - domain:hackthatphone.net
         - domain:hahlo.com
         - domain:haijiao.com
+        - domain:haiwaikan.com
         - domain:hakkatv.org.tw
         - domain:handcraftedsoftware.org
         - domain:hanime.tv
@@ -2677,13 +2689,6 @@ routing:
         - domain:hk.gradconnection.com
         - domain:hk.hao123img.com
         - domain:hk.jiepang.com
-        - domain:hk.knowledge.yahoo.com
-        - domain:hk.myblog.yahoo.com
-        - domain:hk.news.yahoo.com
-        - domain:hk.rd.yahoo.com
-        - domain:hk.search.yahoo.com
-        - domain:hk.video.news.yahoo.com
-        - domain:hk.yahoo.com
         - domain:hk01.com
         - domain:hk32168.com
         - domain:hka8964.wordpress.com
@@ -2749,6 +2754,7 @@ routing:
         - domain:hole.thu.monster
         - domain:holymountaincn.com
         - domain:holyspiritspeaks.org
+        - domain:home.saxo
         - domain:home.sina.com
         - domain:home.so-net.net.tw
         - domain:homedepot.com
@@ -2922,6 +2928,7 @@ routing:
         - domain:ikwb.com
         - domain:ilbe.com
         - domain:ilhamtohtiinstitute.org
+        - domain:illawarramercury.com.au
         - domain:illusionfactory.com
         - domain:ilove80.be
         - domain:ilovelongtoes.com
@@ -2936,6 +2943,7 @@ routing:
         - domain:imageshack.us
         - domain:imagevenue.com
         - domain:imagezilla.net
+        - domain:imago-images.com
         - domain:imb.org
         - domain:imdb.com
         - domain:img.dlsite.jp
@@ -3079,6 +3087,7 @@ routing:
         - domain:jav68.tv
         - domain:javakiba.org
         - domain:javbus.com
+        - domain:javdb.com
         - domain:javfinder.ai
         - domain:javfor.me
         - domain:javhd.com
@@ -3108,6 +3117,7 @@ routing:
         - domain:jichangtj.com
         - domain:jiehua.cz
         - domain:jieshibaobao.com
+        - domain:jifangge.com
         - domain:jigglegifs.com
         - domain:jigong1024.com
         - domain:jihadintel.meforum.org
@@ -3352,6 +3362,7 @@ routing:
         - domain:link-o-rama.com
         - domain:linkedin.com
         - domain:linkideo.com
+        - domain:linktr.ee
         - domain:linkuswell.com
         - domain:linux.org.hk
         - domain:linuxtoy.org
@@ -3438,11 +3449,13 @@ routing:
         - domain:mad-ar.ch
         - domain:madewithcode.com
         - domain:madonna-av.com
+        - domain:madou.club
         - domain:madrau.com
         - domain:madthumbs.com
         - domain:magazines.sina.com.tw
         - domain:magic-net.info
         - domain:mahabodhi.org
+        - domain:mahjongsoul.com
         - domain:maiio.net
         - domain:mail-archive.com
         - domain:maildns.xyz
@@ -3510,6 +3523,7 @@ routing:
         - domain:mediachinese.com
         - domain:mediafire.com
         - domain:mediafreakcity.com
+        - domain:mediawiki.org
         - domain:medium.com
         - domain:meetav.com
         - domain:meetup.com
@@ -3526,7 +3540,6 @@ routing:
         - domain:meizhong.blog
         - domain:meizhong.report
         - domain:meltoday.com
-        - domain:meme.yahoo.com
         - domain:memehk.com
         - domain:memes.tw
         - domain:memri.org
@@ -3602,10 +3615,12 @@ routing:
         - domain:miroguide.com
         - domain:mirrorbooks.com
         - domain:mirrormedia.mg
+        - domain:missav.com
         - domain:mist.vip
         - domain:mitao.com.tw
         - domain:mitbbs.com
         - domain:mitbbsau.com
+        - domain:miuipolska.pl
         - domain:mixero.com
         - domain:mixi.jp
         - domain:mixpod.com
@@ -3757,6 +3772,7 @@ routing:
         - domain:myspacecdn.com
         - domain:mytalkbox.com
         - domain:mytizi.com
+        - domain:mywife.cc
         - domain:mywww.biz
         - domain:myz.info
         - domain:naacoalition.org
@@ -3838,7 +3854,6 @@ routing:
         - domain:news.sinchew.com.my
         - domain:news.singtao.ca
         - domain:news.tvbs.com.tw
-        - domain:news.yahoo.com
         - domain:news.ycombinator.com
         - domain:news1.kr
         - domain:news100.com.tw
@@ -4118,7 +4133,6 @@ routing:
         - domain:pacom.mil
         - domain:pacopacomama.com
         - domain:padmanet.com
-        - domain:page.bid.yahoo.com
         - domain:page.link
         - domain:page2rss.com
         - domain:pagodabox.com
@@ -4207,6 +4221,7 @@ routing:
         - domain:photofocus.com
         - domain:photonmedia.net
         - domain:phuquocservices.com
+        - domain:piaotia.com
         - domain:picacomic.com
         - domain:picacomiccn.com
         - domain:picasaweb.com
@@ -4373,15 +4388,14 @@ routing:
         - domain:psiphontoday.com
         - domain:pstatic.net
         - domain:pt.im
-        - domain:pts.org.tw
         - domain:ptt.cc
         - domain:pttgame.com
         - domain:pttvan.org
+        - domain:ptwxz.com
         - domain:pubu.com.tw
         - domain:puffinbrowser.com
         - domain:puffstore.com
         - domain:pullfolio.com
-        - domain:pulse.yahoo.com
         - domain:punyu.com
         - domain:pure18.com
         - domain:pureconcepts.net
@@ -4648,7 +4662,6 @@ routing:
         - domain:search.com
         - domain:search.xxx
         - domain:search.yahoo.co.jp
-        - domain:search.yahoo.com
         - domain:searchtruth.com
         - domain:searx.me
         - domain:seattlefdc.com
@@ -4667,6 +4680,7 @@ routing:
         - domain:seevpn.com
         - domain:seezone.net
         - domain:sehuatang.net
+        - domain:sehuatang.org
         - domain:sejie.com
         - domain:sellclassics.com
         - domain:sendsmtp.com
@@ -4771,6 +4785,7 @@ routing:
         - domain:sinchew.com.my
         - domain:singaporepools.com.sg
         - domain:singfortibet.com
+        - domain:singlelogin.se
         - domain:singpao.com.hk
         - domain:singtao.com
         - domain:singtaousa.com
@@ -4809,6 +4824,7 @@ routing:
         - domain:sleazyfork.org
         - domain:slheng.com
         - domain:slickvpn.com
+        - domain:slides.com
         - domain:slides.new
         - domain:slideshare.net
         - domain:slinkset.com
@@ -5007,6 +5023,8 @@ routing:
         - domain:sun1911.com
         - domain:sundayguardianlive.com
         - domain:sunmedia.ca
+        - domain:suno.ai
+        - domain:suno.com
         - domain:sunporno.com
         - domain:sunskyforum.com
         - domain:sunta.com.tw
@@ -5033,6 +5051,7 @@ routing:
         - domain:swissvpn.net
         - domain:switch1.jp
         - domain:switchvpn.net
+        - domain:sydney.bing.com
         - domain:sydneytoday.com
         - domain:sylfoundation.org
         - domain:syncback.com
@@ -5196,6 +5215,7 @@ routing:
         - domain:therock.net.nz
         - domain:thesaturdaypaper.com.au
         - domain:thestandnews.com
+        - domain:thetatoken.org
         - domain:thetibetcenter.org
         - domain:thetibetconnection.org
         - domain:thetibetmuseum.org
@@ -5360,6 +5380,7 @@ routing:
         - domain:tokyo-hot.com
         - domain:tokyo-porn-tube.com
         - domain:tokyocn.com
+        - domain:tomp3.cc
         - domain:tongil.or.kr
         - domain:tono-oka.jp
         - domain:tonyyan.net
@@ -5448,6 +5469,7 @@ routing:
         - domain:tuidang.org
         - domain:tuidang.se
         - domain:tuitwit.com
+        - domain:tukaani.org
         - domain:tumblr.com
         - domain:tumutanzi.com
         - domain:tumview.com
@@ -5476,22 +5498,13 @@ routing:
         - domain:tvunetworks.com
         - domain:tw-blog.com
         - domain:tw-npo.org
-        - domain:tw.answers.yahoo.com
-        - domain:tw.bid.yahoo.com
         - domain:tw.gigacircle.com
         - domain:tw.hao123.com
         - domain:tw.iqiyi.com
         - domain:tw.jiepang.com
-        - domain:tw.knowledge.yahoo.com
-        - domain:tw.mall.yahoo.com
-        - domain:tw.mobi.yahoo.com
-        - domain:tw.money.yahoo.com
-        - domain:tw.myblog.yahoo.com
-        - domain:tw.news.yahoo.com
         - domain:tw.streetvoice.com
         - domain:tw.tomonews.net
         - domain:tw.voa.mobi
-        - domain:tw.yahoo.com
         - domain:tw01.org
         - domain:twaitter.com
         - domain:twapperkeeper.com
@@ -5592,6 +5605,7 @@ routing:
         - domain:txxx.com
         - domain:tycool.com
         - domain:typepad.com
+        - domain:typeset.io
         - domain:typora.io
         - domain:u15.info
         - domain:u9un.com
@@ -5648,7 +5662,6 @@ routing:
         - domain:untraceable.us
         - domain:unwire.hk
         - domain:uocn.org
-        - domain:upcoming.yahoo.com
         - domain:updates.tdesktop.com
         - domain:upghsbc.com
         - domain:upholdjustice.org
@@ -5736,6 +5749,7 @@ routing:
         - domain:veoh.com
         - domain:vercel.app
         - domain:vermonttibet.org
+        - domain:vern.cc
         - domain:versavpn.com
         - domain:verybs.com
         - domain:vevo.com
@@ -5751,7 +5765,6 @@ routing:
         - domain:video.ap.org
         - domain:video.fdbox.com
         - domain:video.foxbusiness.com
-        - domain:video.yahoo.com
         - domain:videobam.com
         - domain:videodetective.com
         - domain:videomega.tv
@@ -5861,7 +5874,6 @@ routing:
         - domain:vuku.cc
         - domain:vultryhw.com
         - domain:w.idaiwan.com
-        - domain:w3schools.com
         - domain:waffle1999.com
         - domain:wahas.com
         - domain:waigaobu.com
@@ -5990,10 +6002,13 @@ routing:
         - domain:wikileaks.lu
         - domain:wikileaks.org
         - domain:wikileaks.pl
+        - domain:wikiless.funami.tech
         - domain:wikilivres.info
         - domain:wikimapia.org
         - domain:wikimedia.org
+        - domain:wikinews.org
         - domain:wikipedia.org
+        - domain:wikisource.org
         - domain:wikiversity.org
         - domain:wikivoyage.org
         - domain:wikiwand.com
@@ -6075,6 +6090,7 @@ routing:
         - domain:wujie.net
         - domain:wujieliulan.com
         - domain:wukangrui.net
+        - domain:wunderground.com
         - domain:wuw.red
         - domain:wuyanblog.com
         - domain:wwitv.com
@@ -6097,6 +6113,7 @@ routing:
         - domain:www.lamenhu.com
         - domain:www.lib.virginia.edu
         - domain:www.linksalpha.com
+        - domain:www.lorenzetti.com.br
         - domain:www.m-sport.co.uk
         - domain:www.monlamit.org
         - domain:www.moztw.org
@@ -6224,7 +6241,9 @@ routing:
         - domain:xyy69.info
         - domain:y2mate.com
         - domain:yadi.sk
+        - domain:yahoo.com
         - domain:yahoo.com.hk
+        - domain:yahoo.com.tw
         - domain:yakbutterblues.com
         - domain:yam.com
         - domain:yam.org.tw
@@ -6319,7 +6338,6 @@ routing:
         - domain:zalmos.com
         - domain:zamimg.com
         - domain:zannel.com
-        - domain:zaobao.com
         - domain:zaobao.com.sg
         - domain:zaozon.com
         - domain:zapto.org
@@ -6336,13 +6354,12 @@ routing:
         - domain:zfreet.com
         - domain:zgsddh.com
         - domain:zgzcjj.net
+        - domain:zh-hans.cfsh99.com
         - domain:zh.ecdm.wikia.com
         - domain:zh.pokerstrategy.com
         - domain:zh.pttpedia.wikia.com
         - domain:zh.uncyclopedia.wikia.com
-        - domain:zh.wikinews.org
         - domain:zh.wikiquote.org
-        - domain:zh.wikisource.org
         - domain:zhanbin.net
         - domain:zhangboli.net
         - domain:zhangtianliang.com

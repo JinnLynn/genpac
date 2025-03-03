@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-03 01:47:00
-#! GFWList: 2025-03-02 14:55:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-03 12:43:17
+#! GFWList: 2025-03-03 12:30:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -43,6 +43,7 @@ rule:
         - s,17t17p.com
         - s,18board.com
         - s,18board.info
+        - s,18comic.org
         - s,18onlygirls.com
         - s,18p2p.com
         - s,18virginsex.com
@@ -193,6 +194,7 @@ rule:
         - s,aculo.us
         - s,adcex.com
         - s,addictedtocoffee.de
+        - s,addons.mozilla.org
         - s,addyoutube.com
         - s,adelaidebbs.com
         - s,admin.recaptcha.net
@@ -311,6 +313,7 @@ rule:
         - s,angularjs.org
         - s,animecrazy.net
         - s,aniscartujo.com
+        - s,annas-archive.org
         - s,annas-archive.se
         - s,annatam.com
         - s,anobii.com
@@ -439,6 +442,7 @@ rule:
         - s,av.com
         - s,av.movie
         - s,av.nightlife141.com
+        - s,av01.tv
         - s,avaaz.org
         - s,avbody.tv
         - s,avcity.tv
@@ -785,7 +789,6 @@ rule:
         - s,busu.org
         - s,busytrade.com
         - s,buugaa.com
-        - s,buy.yahoo.com.tw
         - s,buzzhand.com
         - s,buzzhand.net
         - s,buzzorange.com
@@ -803,6 +806,7 @@ rule:
         - s,c-est-simple.com
         - s,c-span.org
         - s,c-spanvideo.org
+        - s,c.mi.com
         - s,c100tibet.org
         - s,c2cx.com
         - s,cableav.tv
@@ -997,7 +1001,6 @@ rule:
         - s,chinasocialdemocraticparty.com
         - s,chinasoul.org
         - s,chinasucks.net
-        - s,chinatimes.com
         - s,chinatopsex.com
         - s,chinatown.com.au
         - s,chinatweeps.com
@@ -1084,8 +1087,10 @@ rule:
         - s,clementine-player.org
         - s,cling.omy.sg
         - s,clinica-tibet.ru
+        - s,clipconverter.cc
         - s,clipfish.de
         - s,cloakpoint.com
+        - s,cloud.dify.ai
         - s,cloud.mail.ru
         - s,cloudflare-ipfs.com
         - s,cloudfunctions.net
@@ -1147,6 +1152,7 @@ rule:
         - s,cointiger.com
         - s,cointobe.com
         - s,coinut.com
+        - s,colacloud.net
         - s,collateralmurder.com
         - s,collateralmurder.org
         - s,com.google
@@ -1293,7 +1299,6 @@ rule:
         - s,dashlane.com
         - s,dastrassi.org
         - s,data-vocabulary.org
-        - s,data.flurry.com
         - s,data.gov.tw
         - s,daum.net
         - s,david-kilgour.com
@@ -1328,6 +1333,7 @@ rule:
         - s,delcamp.net
         - s,delicious.com
         - s,demo.opera-mini.net
+        - s,demo.unlock-music.dev
         - s,democrats.org
         - s,demosisto.hk
         - s,depositphotos.com
@@ -1553,6 +1559,7 @@ rule:
         - s,eireinikotaerukai.com
         - s,eisbb.com
         - s,eksisozluk.com
+        - s,elconfidencial.com
         - s,electionsmeter.com
         - s,elgoog.im
         - s,ellawine.org
@@ -1635,7 +1642,6 @@ rule:
         - s,etsy.com
         - s,ettoday.net
         - s,etvonline.hk
-        - s,eu.org
         - s,eucasino.com
         - s,eulam.com
         - s,eurekavpt.com
@@ -1742,6 +1748,7 @@ rule:
         - s,farwestchina.com
         - s,fast.wistia.com
         - s,fastestvpn.com
+        - s,fastgpt.run
         - s,fastpic.ru
         - s,fastssh.com
         - s,faststone.org
@@ -1767,7 +1774,7 @@ rule:
         - s,fdc89.jp
         - s,feedburner.com
         - s,feeder.co
-        - s,feedly.com
+        - s,feedly.comfastgpt.run
         - s,feeds.fileforum.com
         - s,feedx.net
         - s,feelssh.com
@@ -1880,6 +1887,7 @@ rule:
         - s,free-ss.site
         - s,free-ssh.com
         - s,free.bg
+        - s,free.com.tw
         - s,free.fr
         - s,free4u.com.ar
         - s,freealim.com
@@ -1945,6 +1953,7 @@ rule:
         - s,frommel.net
         - s,frontlinedefenders.org
         - s,frootvpn.com
+        - s,froth.zone
         - s,fscked.org
         - s,fsurf.com
         - s,ftchinese.com
@@ -2085,10 +2094,10 @@ rule:
         - s,gigporno.ru
         - s,girlbanker.com
         - s,git.io
+        - s,gitbook.io
         - s,github.blog
         - s,github.com
         - s,github.io
-        - s,githubassets.com
         - s,githubcopilot.com
         - s,githubusercontent.com
         - s,gizlen.net
@@ -2118,6 +2127,7 @@ rule:
         - s,gnci.org.hk
         - s,gnews.org
         - s,go-pki.com
+        - s,go-to-zlibrary.se
         - s,go.nesnode.com
         - s,go141.com
         - s,goagent.biz
@@ -2485,6 +2495,7 @@ rule:
         - s,hackthatphone.net
         - s,hahlo.com
         - s,haijiao.com
+        - s,haiwaikan.com
         - s,hakkatv.org.tw
         - s,handcraftedsoftware.org
         - s,hanime.tv
@@ -2575,13 +2586,6 @@ rule:
         - s,hk.gradconnection.com
         - s,hk.hao123img.com
         - s,hk.jiepang.com
-        - s,hk.knowledge.yahoo.com
-        - s,hk.myblog.yahoo.com
-        - s,hk.news.yahoo.com
-        - s,hk.rd.yahoo.com
-        - s,hk.search.yahoo.com
-        - s,hk.video.news.yahoo.com
-        - s,hk.yahoo.com
         - s,hk01.com
         - s,hk32168.com
         - s,hka8964.wordpress.com
@@ -2647,6 +2651,7 @@ rule:
         - s,hole.thu.monster
         - s,holymountaincn.com
         - s,holyspiritspeaks.org
+        - s,home.saxo
         - s,home.sina.com
         - s,home.so-net.net.tw
         - s,homedepot.com
@@ -2820,6 +2825,7 @@ rule:
         - s,ikwb.com
         - s,ilbe.com
         - s,ilhamtohtiinstitute.org
+        - s,illawarramercury.com.au
         - s,illusionfactory.com
         - s,ilove80.be
         - s,ilovelongtoes.com
@@ -2834,6 +2840,7 @@ rule:
         - s,imageshack.us
         - s,imagevenue.com
         - s,imagezilla.net
+        - s,imago-images.com
         - s,imb.org
         - s,imdb.com
         - s,img.dlsite.jp
@@ -2977,6 +2984,7 @@ rule:
         - s,jav68.tv
         - s,javakiba.org
         - s,javbus.com
+        - s,javdb.com
         - s,javfinder.ai
         - s,javfor.me
         - s,javhd.com
@@ -3006,6 +3014,7 @@ rule:
         - s,jichangtj.com
         - s,jiehua.cz
         - s,jieshibaobao.com
+        - s,jifangge.com
         - s,jigglegifs.com
         - s,jigong1024.com
         - s,jihadintel.meforum.org
@@ -3250,6 +3259,7 @@ rule:
         - s,link-o-rama.com
         - s,linkedin.com
         - s,linkideo.com
+        - s,linktr.ee
         - s,linkuswell.com
         - s,linux.org.hk
         - s,linuxtoy.org
@@ -3336,11 +3346,13 @@ rule:
         - s,mad-ar.ch
         - s,madewithcode.com
         - s,madonna-av.com
+        - s,madou.club
         - s,madrau.com
         - s,madthumbs.com
         - s,magazines.sina.com.tw
         - s,magic-net.info
         - s,mahabodhi.org
+        - s,mahjongsoul.com
         - s,maiio.net
         - s,mail-archive.com
         - s,maildns.xyz
@@ -3408,6 +3420,7 @@ rule:
         - s,mediachinese.com
         - s,mediafire.com
         - s,mediafreakcity.com
+        - s,mediawiki.org
         - s,medium.com
         - s,meetav.com
         - s,meetup.com
@@ -3424,7 +3437,6 @@ rule:
         - s,meizhong.blog
         - s,meizhong.report
         - s,meltoday.com
-        - s,meme.yahoo.com
         - s,memehk.com
         - s,memes.tw
         - s,memri.org
@@ -3500,10 +3512,12 @@ rule:
         - s,miroguide.com
         - s,mirrorbooks.com
         - s,mirrormedia.mg
+        - s,missav.com
         - s,mist.vip
         - s,mitao.com.tw
         - s,mitbbs.com
         - s,mitbbsau.com
+        - s,miuipolska.pl
         - s,mixero.com
         - s,mixi.jp
         - s,mixpod.com
@@ -3655,6 +3669,7 @@ rule:
         - s,myspacecdn.com
         - s,mytalkbox.com
         - s,mytizi.com
+        - s,mywife.cc
         - s,mywww.biz
         - s,myz.info
         - s,naacoalition.org
@@ -3736,7 +3751,6 @@ rule:
         - s,news.sinchew.com.my
         - s,news.singtao.ca
         - s,news.tvbs.com.tw
-        - s,news.yahoo.com
         - s,news.ycombinator.com
         - s,news1.kr
         - s,news100.com.tw
@@ -4016,7 +4030,6 @@ rule:
         - s,pacom.mil
         - s,pacopacomama.com
         - s,padmanet.com
-        - s,page.bid.yahoo.com
         - s,page.link
         - s,page2rss.com
         - s,pagodabox.com
@@ -4105,6 +4118,7 @@ rule:
         - s,photofocus.com
         - s,photonmedia.net
         - s,phuquocservices.com
+        - s,piaotia.com
         - s,picacomic.com
         - s,picacomiccn.com
         - s,picasaweb.com
@@ -4271,15 +4285,14 @@ rule:
         - s,psiphontoday.com
         - s,pstatic.net
         - s,pt.im
-        - s,pts.org.tw
         - s,ptt.cc
         - s,pttgame.com
         - s,pttvan.org
+        - s,ptwxz.com
         - s,pubu.com.tw
         - s,puffinbrowser.com
         - s,puffstore.com
         - s,pullfolio.com
-        - s,pulse.yahoo.com
         - s,punyu.com
         - s,pure18.com
         - s,pureconcepts.net
@@ -4546,7 +4559,6 @@ rule:
         - s,search.com
         - s,search.xxx
         - s,search.yahoo.co.jp
-        - s,search.yahoo.com
         - s,searchtruth.com
         - s,searx.me
         - s,seattlefdc.com
@@ -4565,6 +4577,7 @@ rule:
         - s,seevpn.com
         - s,seezone.net
         - s,sehuatang.net
+        - s,sehuatang.org
         - s,sejie.com
         - s,sellclassics.com
         - s,sendsmtp.com
@@ -4669,6 +4682,7 @@ rule:
         - s,sinchew.com.my
         - s,singaporepools.com.sg
         - s,singfortibet.com
+        - s,singlelogin.se
         - s,singpao.com.hk
         - s,singtao.com
         - s,singtaousa.com
@@ -4707,6 +4721,7 @@ rule:
         - s,sleazyfork.org
         - s,slheng.com
         - s,slickvpn.com
+        - s,slides.com
         - s,slides.new
         - s,slideshare.net
         - s,slinkset.com
@@ -4905,6 +4920,8 @@ rule:
         - s,sun1911.com
         - s,sundayguardianlive.com
         - s,sunmedia.ca
+        - s,suno.ai
+        - s,suno.com
         - s,sunporno.com
         - s,sunskyforum.com
         - s,sunta.com.tw
@@ -4931,6 +4948,7 @@ rule:
         - s,swissvpn.net
         - s,switch1.jp
         - s,switchvpn.net
+        - s,sydney.bing.com
         - s,sydneytoday.com
         - s,sylfoundation.org
         - s,syncback.com
@@ -5094,6 +5112,7 @@ rule:
         - s,therock.net.nz
         - s,thesaturdaypaper.com.au
         - s,thestandnews.com
+        - s,thetatoken.org
         - s,thetibetcenter.org
         - s,thetibetconnection.org
         - s,thetibetmuseum.org
@@ -5258,6 +5277,7 @@ rule:
         - s,tokyo-hot.com
         - s,tokyo-porn-tube.com
         - s,tokyocn.com
+        - s,tomp3.cc
         - s,tongil.or.kr
         - s,tono-oka.jp
         - s,tonyyan.net
@@ -5346,6 +5366,7 @@ rule:
         - s,tuidang.org
         - s,tuidang.se
         - s,tuitwit.com
+        - s,tukaani.org
         - s,tumblr.com
         - s,tumutanzi.com
         - s,tumview.com
@@ -5374,22 +5395,13 @@ rule:
         - s,tvunetworks.com
         - s,tw-blog.com
         - s,tw-npo.org
-        - s,tw.answers.yahoo.com
-        - s,tw.bid.yahoo.com
         - s,tw.gigacircle.com
         - s,tw.hao123.com
         - s,tw.iqiyi.com
         - s,tw.jiepang.com
-        - s,tw.knowledge.yahoo.com
-        - s,tw.mall.yahoo.com
-        - s,tw.mobi.yahoo.com
-        - s,tw.money.yahoo.com
-        - s,tw.myblog.yahoo.com
-        - s,tw.news.yahoo.com
         - s,tw.streetvoice.com
         - s,tw.tomonews.net
         - s,tw.voa.mobi
-        - s,tw.yahoo.com
         - s,tw01.org
         - s,twaitter.com
         - s,twapperkeeper.com
@@ -5490,6 +5502,7 @@ rule:
         - s,txxx.com
         - s,tycool.com
         - s,typepad.com
+        - s,typeset.io
         - s,typora.io
         - s,u15.info
         - s,u9un.com
@@ -5546,7 +5559,6 @@ rule:
         - s,untraceable.us
         - s,unwire.hk
         - s,uocn.org
-        - s,upcoming.yahoo.com
         - s,updates.tdesktop.com
         - s,upghsbc.com
         - s,upholdjustice.org
@@ -5634,6 +5646,7 @@ rule:
         - s,veoh.com
         - s,vercel.app
         - s,vermonttibet.org
+        - s,vern.cc
         - s,versavpn.com
         - s,verybs.com
         - s,vevo.com
@@ -5649,7 +5662,6 @@ rule:
         - s,video.ap.org
         - s,video.fdbox.com
         - s,video.foxbusiness.com
-        - s,video.yahoo.com
         - s,videobam.com
         - s,videodetective.com
         - s,videomega.tv
@@ -5759,7 +5771,6 @@ rule:
         - s,vuku.cc
         - s,vultryhw.com
         - s,w.idaiwan.com
-        - s,w3schools.com
         - s,waffle1999.com
         - s,wahas.com
         - s,waigaobu.com
@@ -5888,10 +5899,13 @@ rule:
         - s,wikileaks.lu
         - s,wikileaks.org
         - s,wikileaks.pl
+        - s,wikiless.funami.tech
         - s,wikilivres.info
         - s,wikimapia.org
         - s,wikimedia.org
+        - s,wikinews.org
         - s,wikipedia.org
+        - s,wikisource.org
         - s,wikiversity.org
         - s,wikivoyage.org
         - s,wikiwand.com
@@ -5973,6 +5987,7 @@ rule:
         - s,wujie.net
         - s,wujieliulan.com
         - s,wukangrui.net
+        - s,wunderground.com
         - s,wuw.red
         - s,wuyanblog.com
         - s,wwitv.com
@@ -5995,6 +6010,7 @@ rule:
         - s,www.lamenhu.com
         - s,www.lib.virginia.edu
         - s,www.linksalpha.com
+        - s,www.lorenzetti.com.br
         - s,www.m-sport.co.uk
         - s,www.monlamit.org
         - s,www.moztw.org
@@ -6122,7 +6138,9 @@ rule:
         - s,xyy69.info
         - s,y2mate.com
         - s,yadi.sk
+        - s,yahoo.com
         - s,yahoo.com.hk
+        - s,yahoo.com.tw
         - s,yakbutterblues.com
         - s,yam.com
         - s,yam.org.tw
@@ -6217,7 +6235,6 @@ rule:
         - s,zalmos.com
         - s,zamimg.com
         - s,zannel.com
-        - s,zaobao.com
         - s,zaobao.com.sg
         - s,zaozon.com
         - s,zapto.org
@@ -6234,13 +6251,12 @@ rule:
         - s,zfreet.com
         - s,zgsddh.com
         - s,zgzcjj.net
+        - s,zh-hans.cfsh99.com
         - s,zh.ecdm.wikia.com
         - s,zh.pokerstrategy.com
         - s,zh.pttpedia.wikia.com
         - s,zh.uncyclopedia.wikia.com
-        - s,zh.wikinews.org
         - s,zh.wikiquote.org
-        - s,zh.wikisource.org
         - s,zhanbin.net
         - s,zhangboli.net
         - s,zhangtianliang.com
