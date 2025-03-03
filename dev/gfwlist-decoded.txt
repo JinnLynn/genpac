@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: V13cLK+7WfT1GhgMhqoqOA
+! Checksum: RERRSPwyZGPESzZbArbxpg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 02 Mar 2025 22:55:13 +0800
+! Last Modified: Mon, 03 Mar 2025 20:30:23 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -16,6 +16,10 @@
 ! https://github.com/gfwlist/gfwlist/issues/.
 
 !---------403/451/503/520 & URL Redirects---------
+||ptwxz.com
+||miuipolska.pl
+||piaotia.com
+||wunderground.com
 ||500px.com
 ||500px.org
 !--ehentai
@@ -324,7 +328,6 @@ share.dmhy.org
 ||boomssr.com
 ||bwgyhw.com
 ||castbox.fm
-||chinatimes.com
 ||clyp.it
 ||cmcn.org
 ||cmx.im
@@ -338,7 +341,7 @@ share.dmhy.org
 ||encyclopedia.com
 ||fangeqiang.com
 ||fanqiangdang.com
-||feedly.com
+||feedly.comfastgpt.run
 ||feedx.net
 ||flyzy2005.com
 ||foreignpolicy.com
@@ -902,6 +905,7 @@ cdninstagram.com
 @@|https://www.ampproject.org
 @@|https://cdn.ampproject.org
 ||android.com
+@@||ci.android.com
 ||androidify.com
 ||androidtv.com
 ||api.ai
@@ -1406,7 +1410,7 @@ zh.uncyclopedia.wikia.com
 !-------------Wikipedia Related-------------
 !!Emergency need only(IP/Port block usage)!!
 !------0------
-!--||mediawiki.org
+||mediawiki.org
 !------1------
 ||wikidata.org
 !------2------
@@ -1416,13 +1420,11 @@ zh.uncyclopedia.wikia.com
 !------4------
 ||wikiversity.org
 !------5------
-!--||wikisource.org
-|http://zh.wikisource.org
+||wikisource.org
 !------6------
 ||zh.wikiquote.org
 !------7------
-!--||wikinews.org
-||zh.wikinews.org
+wikinews.org
 !------8------
 ||wikivoyage.org
 !--|http://zh.wikivoyage.org
@@ -1451,40 +1453,16 @@ zh.uncyclopedia.wikia.com
 ||wmfusercontent.org
 
 !!---Yahoo---
-||data.flurry.com
-||page.bid.yahoo.com
-||tw.bid.yahoo.com
 ||auctions.yahoo.co.jp
 ||blogs.yahoo.co.jp
 ||search.yahoo.co.jp
-||buy.yahoo.com.tw
-||hk.yahoo.com
-||hk.knowledge.yahoo.com
-||tw.money.yahoo.com
-||hk.myblog.yahoo.com
-news.yahoo.com/china-blocks-bbc
-||hk.news.yahoo.com
-hk.rd.yahoo.com
-hk.search.yahoo.com/search
-hk.video.news.yahoo.com/video
-meme.yahoo.com
-!--tw.yahoo.com
-tw.answers.yahoo.com
-|https://tw.answers.yahoo.com
-||tw.knowledge.yahoo.com
-||tw.mall.yahoo.com
-||tw.yahoo.com
-||tw.mobi.yahoo.com
-tw.myblog.yahoo.com
-||tw.news.yahoo.com
-pulse.yahoo.com
-||search.yahoo.com
-upcoming.yahoo.com
-video.yahoo.com
+||yahoo.com.tw
 ||yahoo.com.hk
+||yahoo.com
 ||duckduckgo-owned-server.yahoo.net
 
 !------------------Numerics---------------------
+||18comic.org
 ||000webhost.com
 .030buy.com
 .0rz.tw
@@ -1632,6 +1610,8 @@ taiwannation.50webs.com
 ||9news.com.au
 
 !--------------------AA-------------------------
+||annas-archive.org
+||av01.tv
 ||acg.rip
 ||annas-archive.se
 .tibet.a.se
@@ -2263,6 +2243,9 @@ bwsj.hk
 ||bypasscensorship.org
 
 !--------------------CC-------------------------
+||clipconverter.cc
+||zh-hans.cfsh99.com
+||colacloud.net
 ||ci-en.jp
 ||c-span.org
 .c-spanvideo.org
@@ -2719,6 +2702,7 @@ cytode.us
 ||nic.cz.cc
 
 !--------------------DD-------------------------
+||cloud.dify.ai
 .d-fukyu.com
 |http://d-fukyu.com
 cl.d0z.net
@@ -2966,6 +2950,7 @@ xys.dxiong.com
 .dzze.com
 
 !--------------------EE-------------------------
+||elconfidencial.com
 ||e-classical.com.tw
 ||e-gold.com
 .e-gold.com
@@ -3107,11 +3092,8 @@ etaiwannews.com
 ||etizer.org
 ||etokki.com
 ||etsy.com
-!--.ettoday.net
-.ettoday.net/news/20151216/614081
+||*.ettoday.net
 etvonline.hk
-.eu.org
-||eu.org
 .eucasino.com
 .eulam.com
 .eurekavpt.com
@@ -3146,6 +3128,9 @@ eyevio.jp
 .ezpeer.com
 
 !--------------------FF-------------------------
+||free.com.tw
+||fastgpt.run
+||froth.zone
 ||fanbox.cc
 ||free.bg
 ||f-droid.org
@@ -3483,6 +3468,8 @@ fzh999.net
 fzlm.com
 
 !--------------------GG-------------------------
+||go-to-zlibrary.se
+||gitbook.io
 .g6hentai.com
 |http://g6hentai.com
 ||g-queen.com
@@ -3623,7 +3610,6 @@ gigporno.ru
 .github.io
 ||github.io
 ||githubusercontent.com
-||githubassets.com
 
 .gizlen.net
 ||gizlen.net
@@ -3987,6 +3973,8 @@ guruonline.hk
 .gyatsostudio.com
 
 !--------------------HH-------------------------
+||haiwaikan.com
+||home.saxo
 ||hoy.tv
 .h528.com
 .h5dm.com
@@ -4301,6 +4289,8 @@ ebook.hyread.com.tw
 ||ebook.hyread.com.tw
 
 !--------------------II-------------------------
+||illawarramercury.com.au
+||imago-images.com
 ||i1.hk
 ||i2p2.de
 ||i2runner.com
@@ -4537,6 +4527,8 @@ ithelp.ithome.com.tw
 .izlesem.org
 
 !--------------------JJ-------------------------
+||javdb.com
+||jifangge.com
 ||j.mp
 ||jable.tv
 ||blog.jackjia.com
@@ -4762,6 +4754,8 @@ kyohk.net
 ||kzeng.info
 
 !--------------------LL-------------------------
+||www.lorenzetti.com.br
+||linktr.ee
 la-forum.org
 ladbrokes.com
 ||labiennale.org
@@ -4946,6 +4940,13 @@ lvhai.org
 ||lzmtnews.org
 
 !--------------------MM-------------------------
+||mywife.cc
+||c.mi.com
+||addons.mozilla.org/*-*/firefox/addon/ublock-origin/*
+||addons.mozilla.org/firefox/downloads/file/*/ublock_origin-*.xpi
+||missav.com
+||madou.club
+||mahjongsoul.com
 ||mangabz.com
 http://*.m-team.cc
 !--m-team.cc/forum
@@ -5840,7 +5841,6 @@ provpnaccounts.com
 proxyanonimo.es
 .proxynetwork.org.uk
 ||proxynetwork.org.uk
-||pts.org.tw
 .pttvan.org
 ||pubu.com.tw
 ||puffinbrowser.com
@@ -6135,6 +6135,12 @@ rutube.ru
 |http://rxhj.net
 
 !--------------------SS-------------------------
+||slides.com
+||suno.com
+||sydney.bing.com
+||sehuatang.org
+||singlelogin.se
+||suno.ai
 ||syosetu.com
 .s1s1s1.com
 ||s-cute.com
@@ -6633,6 +6639,10 @@ blog.syx86.cn/2009/09/puff
 .szetowah.org.hk
 
 !--------------------TT-------------------------
+||tomp3.cc
+||tukaani.org
+||thetatoken.org
+||typeset.io
 ||thechasernews.co.uk
 ||hole.thu.monster
 ||thuhole.com
@@ -7254,6 +7264,7 @@ twurl.nl
 ||typora.io
 
 !--------------------UU-------------------------
+||demo.unlock-music.dev
 .u9un.com
 ||u9un.com
 .ubddns.org
@@ -7375,6 +7386,7 @@ uygur.org
 |http://uymaarip.com/
 
 !--------------------VV-------------------------
+||vern.cc
 ||v2fly.org
 .v2ray.com
 ||v2ray.com
@@ -7534,8 +7546,8 @@ vraiesagesse.net
 ||vuku.cc
 
 !--------------------WW-------------------------
+||wikiless.funami.tech
 lists.w3.org/archives/public
-||w3schools.com
 ||waffle1999.com
 .wahas.com
 .waigaobu.com
@@ -7977,8 +7989,6 @@ zacebook.com
 .zalmos.com
 ||zalmos.com
 ||zannel.com
-.zaobao.com
-||zaobao.com
 ||zaobao.com.sg
 .zaozon.com
 ||zdnet.com.tw
