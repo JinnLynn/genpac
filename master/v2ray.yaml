@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-04 01:45:42
-#! GFWList: 2025-03-03 12:30:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-04 12:43:02
+#! GFWList: 2025-03-04 10:45:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -20,7 +20,6 @@ routing:
         - domain:chukuang.gov.tw
         - domain:ci.android.com
         - domain:clientservices.googleapis.com
-        - domain:cn.gravatar.com
         - domain:cn.noxinfluencer.com
         - domain:cromotc.nat.gov.tw
         - domain:cwb.gov.tw
@@ -217,6 +216,7 @@ routing:
         - domain:5i01.com
         - domain:5isotoi5.org
         - domain:5maodang.com
+        - domain:611study.com
         - domain:611study.icu
         - domain:63i.com
         - domain:64museum.org
@@ -343,6 +343,7 @@ routing:
         - domain:akamaihd.net
         - domain:akiba-online.com
         - domain:akiba-web.com
+        - domain:akinator.com
         - domain:akow.org
         - domain:al-islam.com
         - domain:al-qimmah.net
@@ -451,6 +452,7 @@ routing:
         - domain:api.linksalpha.com
         - domain:api.pureapk.com
         - domain:api.recaptcha.net
+        - domain:api.steampowered.com
         - domain:apiary.io
         - domain:apidocs.linksalpha.com
         - domain:apigee.com
@@ -489,6 +491,7 @@ routing:
         - domain:archive.org
         - domain:archive.ph
         - domain:archive.today
+        - domain:archive.vn
         - domain:archiveofourown.com
         - domain:archiveofourown.org
         - domain:archives.gov
@@ -739,6 +742,7 @@ routing:
         - domain:blockcn.com
         - domain:blockedbyhk.com
         - domain:blockless.com
+        - domain:blocktempo.com
         - domain:blog.calibre-ebook.com
         - domain:blog.cnyes.com
         - domain:blog.cryptographyengineering.com
@@ -1000,6 +1004,7 @@ routing:
         - domain:cdn.printfriendly.com
         - domain:cdn.seatguru.com
         - domain:cdn.softlayer.net
+        - domain:cdn.statically.io
         - domain:cdn1.lp.saboom.com
         - domain:cdnews.com.tw
         - domain:cdninstagram.com
@@ -1309,6 +1314,7 @@ routing:
         - domain:crossfire.co.kr
         - domain:crossthewall.net
         - domain:crossvpn.net
+        - domain:crosswall.org
         - domain:croxyproxy.com
         - domain:crrev.com
         - domain:crucial.com
@@ -2048,6 +2054,7 @@ routing:
         - domain:friendfeed.com
         - domain:friends-of-tibet.org
         - domain:friendsoftibet.org
+        - domain:fril.jp
         - domain:fring.com
         - domain:fringenetwork.com
         - domain:from-pr.com
@@ -2600,6 +2607,7 @@ routing:
         - domain:haijiao.com
         - domain:haiwaikan.com
         - domain:hakkatv.org.tw
+        - domain:halktv.com.tr
         - domain:handcraftedsoftware.org
         - domain:hanime.tv
         - domain:hanunyi.com
@@ -3084,6 +3092,7 @@ routing:
         - domain:japantimes.co.jp
         - domain:jav.com
         - domain:jav101.com
+        - domain:jav321.com
         - domain:jav68.tv
         - domain:javakiba.org
         - domain:javbus.com
@@ -3188,6 +3197,7 @@ routing:
         - domain:kaiyuan.de
         - domain:kakao.com
         - domain:kalachakralugano.org
+        - domain:kanald.com.tr
         - domain:kankan.today
         - domain:kannewyork.com
         - domain:kanshifang.com
@@ -3613,6 +3623,7 @@ routing:
         - domain:minzhuzhongguo.org
         - domain:miraheze.org
         - domain:miroguide.com
+        - domain:mirror.xyz
         - domain:mirrorbooks.com
         - domain:mirrormedia.mg
         - domain:missav.com
@@ -4039,6 +4050,7 @@ routing:
         - domain:old.honeynet.org
         - domain:old.nabble.com
         - domain:olehdtv.com
+        - domain:olelive.com
         - domain:olevod.com
         - domain:olumpo.com
         - domain:olympicwatch.org
@@ -4452,6 +4464,7 @@ routing:
         - domain:qxbbs.org
         - domain:qz.com
         - domain:r0.ru
+        - domain:r10s.jp
         - domain:r18.com
         - domain:radicalparty.org
         - domain:radiko.jp
@@ -4470,6 +4483,7 @@ routing:
         - domain:rainbowplan.org
         - domain:raindrop.io
         - domain:raizoji.or.jp
+        - domain:rakuten.co.jp
         - domain:ramcity.com.au
         - domain:rangwang.biz
         - domain:rangzen.net
@@ -4950,6 +4964,7 @@ routing:
         - domain:sspro.ml
         - domain:ssr.tools
         - domain:ssrshare.com
+        - domain:ssrshare.us
         - domain:sss.camp
         - domain:sstm.moe
         - domain:sstmlt.moe
@@ -4973,6 +4988,7 @@ routing:
         - domain:stboy.net
         - domain:stc.com.sa
         - domain:steamcommunity.com
+        - domain:steamstatic.com
         - domain:steel-storm.com
         - domain:steemit.com
         - domain:steganos.com
@@ -4987,6 +5003,7 @@ routing:
         - domain:sto.cc
         - domain:stoporganharvesting.org
         - domain:stoptibetcrisis.net
+        - domain:storage.yandex.net
         - domain:storagenewsletter.com
         - domain:store.steampowered.com
         - domain:stories.google
@@ -5114,6 +5131,7 @@ routing:
         - domain:taolun.info
         - domain:tapanwap.com
         - domain:tapatalk.com
+        - domain:tardigrade.io
         - domain:tarr.uspto.gov
         - domain:tascn.com.au
         - domain:taup.net
@@ -5404,6 +5422,7 @@ routing:
         - domain:torguard.net
         - domain:torlock.com
         - domain:torproject.org
+        - domain:torrentgalaxy.to
         - domain:torrentkitty.tv
         - domain:torrentprivacy.com
         - domain:torrentproject.se
@@ -5424,6 +5443,7 @@ routing:
         - domain:tradingview.com
         - domain:trans.wenweipo.com
         - domain:translate.goog
+        - domain:translate.googleapis.com
         - domain:transparency.org
         - domain:treemall.com.tw
         - domain:trendsmap.com
@@ -6053,6 +6073,7 @@ routing:
         - domain:woopie.jp
         - domain:woopie.tv
         - domain:wordpress.com
+        - domain:work2icu.org
         - domain:workatruna.com
         - domain:workerdemo.org.hk
         - domain:workerempowerment.org
@@ -6098,6 +6119,7 @@ routing:
         - domain:www.ajsands.com
         - domain:www.antd.org
         - domain:www.aolnews.com
+        - domain:www.bing.com
         - domain:www.businessinsider.com.au
         - domain:www.cmoinc.org
         - domain:www.dmm.com
@@ -6198,6 +6220,7 @@ routing:
         - domain:xm.com
         - domain:xml-training-guide.com
         - domain:xmovies.com
+        - domain:xn--11xs86f.icu
         - domain:xn--4gq171p.com
         - domain:xn--9pr62r24a.com
         - domain:xn--czq75pvv1aj5c.org
@@ -6213,6 +6236,8 @@ routing:
         - domain:xsden.info
         - domain:xskywalker.com
         - domain:xskywalker.net
+        - domain:xt.com
+        - domain:xt.pub
         - domain:xtube.com
         - domain:xuchao.net
         - domain:xuchao.org
@@ -6399,6 +6424,7 @@ routing:
         - domain:zonghexinwen.com
         - domain:zonghexinwen.net
         - domain:zoogvpn.com
+        - domain:zoominfo.com
         - domain:zootool.com
         - domain:zoozle.net
         - domain:zophar.net

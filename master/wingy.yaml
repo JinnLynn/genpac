@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-04 01:45:45
-#! GFWList: 2025-03-03 12:30:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-04 12:43:02
+#! GFWList: 2025-03-04 10:45:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -114,6 +114,7 @@ rule:
         - s,5i01.com
         - s,5isotoi5.org
         - s,5maodang.com
+        - s,611study.com
         - s,611study.icu
         - s,63i.com
         - s,64museum.org
@@ -240,6 +241,7 @@ rule:
         - s,akamaihd.net
         - s,akiba-online.com
         - s,akiba-web.com
+        - s,akinator.com
         - s,akow.org
         - s,al-islam.com
         - s,al-qimmah.net
@@ -348,6 +350,7 @@ rule:
         - s,api.linksalpha.com
         - s,api.pureapk.com
         - s,api.recaptcha.net
+        - s,api.steampowered.com
         - s,apiary.io
         - s,apidocs.linksalpha.com
         - s,apigee.com
@@ -386,6 +389,7 @@ rule:
         - s,archive.org
         - s,archive.ph
         - s,archive.today
+        - s,archive.vn
         - s,archiveofourown.com
         - s,archiveofourown.org
         - s,archives.gov
@@ -636,6 +640,7 @@ rule:
         - s,blockcn.com
         - s,blockedbyhk.com
         - s,blockless.com
+        - s,blocktempo.com
         - s,blog.calibre-ebook.com
         - s,blog.cnyes.com
         - s,blog.cryptographyengineering.com
@@ -897,6 +902,7 @@ rule:
         - s,cdn.printfriendly.com
         - s,cdn.seatguru.com
         - s,cdn.softlayer.net
+        - s,cdn.statically.io
         - s,cdn1.lp.saboom.com
         - s,cdnews.com.tw
         - s,cdninstagram.com
@@ -1206,6 +1212,7 @@ rule:
         - s,crossfire.co.kr
         - s,crossthewall.net
         - s,crossvpn.net
+        - s,crosswall.org
         - s,croxyproxy.com
         - s,crrev.com
         - s,crucial.com
@@ -1945,6 +1952,7 @@ rule:
         - s,friendfeed.com
         - s,friends-of-tibet.org
         - s,friendsoftibet.org
+        - s,fril.jp
         - s,fring.com
         - s,fringenetwork.com
         - s,from-pr.com
@@ -2497,6 +2505,7 @@ rule:
         - s,haijiao.com
         - s,haiwaikan.com
         - s,hakkatv.org.tw
+        - s,halktv.com.tr
         - s,handcraftedsoftware.org
         - s,hanime.tv
         - s,hanunyi.com
@@ -2981,6 +2990,7 @@ rule:
         - s,japantimes.co.jp
         - s,jav.com
         - s,jav101.com
+        - s,jav321.com
         - s,jav68.tv
         - s,javakiba.org
         - s,javbus.com
@@ -3085,6 +3095,7 @@ rule:
         - s,kaiyuan.de
         - s,kakao.com
         - s,kalachakralugano.org
+        - s,kanald.com.tr
         - s,kankan.today
         - s,kannewyork.com
         - s,kanshifang.com
@@ -3510,6 +3521,7 @@ rule:
         - s,minzhuzhongguo.org
         - s,miraheze.org
         - s,miroguide.com
+        - s,mirror.xyz
         - s,mirrorbooks.com
         - s,mirrormedia.mg
         - s,missav.com
@@ -3936,6 +3948,7 @@ rule:
         - s,old.honeynet.org
         - s,old.nabble.com
         - s,olehdtv.com
+        - s,olelive.com
         - s,olevod.com
         - s,olumpo.com
         - s,olympicwatch.org
@@ -4349,6 +4362,7 @@ rule:
         - s,qxbbs.org
         - s,qz.com
         - s,r0.ru
+        - s,r10s.jp
         - s,r18.com
         - s,radicalparty.org
         - s,radiko.jp
@@ -4367,6 +4381,7 @@ rule:
         - s,rainbowplan.org
         - s,raindrop.io
         - s,raizoji.or.jp
+        - s,rakuten.co.jp
         - s,ramcity.com.au
         - s,rangwang.biz
         - s,rangzen.net
@@ -4847,6 +4862,7 @@ rule:
         - s,sspro.ml
         - s,ssr.tools
         - s,ssrshare.com
+        - s,ssrshare.us
         - s,sss.camp
         - s,sstm.moe
         - s,sstmlt.moe
@@ -4870,6 +4886,7 @@ rule:
         - s,stboy.net
         - s,stc.com.sa
         - s,steamcommunity.com
+        - s,steamstatic.com
         - s,steel-storm.com
         - s,steemit.com
         - s,steganos.com
@@ -4884,6 +4901,7 @@ rule:
         - s,sto.cc
         - s,stoporganharvesting.org
         - s,stoptibetcrisis.net
+        - s,storage.yandex.net
         - s,storagenewsletter.com
         - s,store.steampowered.com
         - s,stories.google
@@ -5011,6 +5029,7 @@ rule:
         - s,taolun.info
         - s,tapanwap.com
         - s,tapatalk.com
+        - s,tardigrade.io
         - s,tarr.uspto.gov
         - s,tascn.com.au
         - s,taup.net
@@ -5301,6 +5320,7 @@ rule:
         - s,torguard.net
         - s,torlock.com
         - s,torproject.org
+        - s,torrentgalaxy.to
         - s,torrentkitty.tv
         - s,torrentprivacy.com
         - s,torrentproject.se
@@ -5321,6 +5341,7 @@ rule:
         - s,tradingview.com
         - s,trans.wenweipo.com
         - s,translate.goog
+        - s,translate.googleapis.com
         - s,transparency.org
         - s,treemall.com.tw
         - s,trendsmap.com
@@ -5950,6 +5971,7 @@ rule:
         - s,woopie.jp
         - s,woopie.tv
         - s,wordpress.com
+        - s,work2icu.org
         - s,workatruna.com
         - s,workerdemo.org.hk
         - s,workerempowerment.org
@@ -5995,6 +6017,7 @@ rule:
         - s,www.ajsands.com
         - s,www.antd.org
         - s,www.aolnews.com
+        - s,www.bing.com
         - s,www.businessinsider.com.au
         - s,www.cmoinc.org
         - s,www.dmm.com
@@ -6095,6 +6118,7 @@ rule:
         - s,xm.com
         - s,xml-training-guide.com
         - s,xmovies.com
+        - s,xn--11xs86f.icu
         - s,xn--4gq171p.com
         - s,xn--9pr62r24a.com
         - s,xn--czq75pvv1aj5c.org
@@ -6110,6 +6134,8 @@ rule:
         - s,xsden.info
         - s,xskywalker.com
         - s,xskywalker.net
+        - s,xt.com
+        - s,xt.pub
         - s,xtube.com
         - s,xuchao.net
         - s,xuchao.org
@@ -6296,6 +6322,7 @@ rule:
         - s,zonghexinwen.com
         - s,zonghexinwen.net
         - s,zoogvpn.com
+        - s,zoominfo.com
         - s,zootool.com
         - s,zoozle.net
         - s,zophar.net
