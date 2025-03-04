@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: RERRSPwyZGPESzZbArbxpg
+! Checksum: U4pyU2WFqxZG1aGE/h8w8w
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 03 Mar 2025 20:30:23 +0800
+! Last Modified: Tue, 04 Mar 2025 18:45:53 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -16,6 +16,7 @@
 ! https://github.com/gfwlist/gfwlist/issues/.
 
 !---------403/451/503/520 & URL Redirects---------
+||zoominfo.com
 ||ptwxz.com
 ||miuipolska.pl
 ||piaotia.com
@@ -295,6 +296,7 @@ share.dmhy.org
 69.65.19.160
 
 !----------------------IDN----------------------
+||xn--11xs86f.icu
 ||xn--4gq171p.com
 ||xn--czq75pvv1aj5c.org
 ||xn--i2ru8q2qg.com
@@ -843,7 +845,6 @@ d3c33hcgiwev3.cloudfront.net
 
 !!---Facebook---
 ||accountkit.com
-cdninstagram.com
 ||cdninstagram.com
 ||f8.com
 ||facebook.br
@@ -890,6 +891,7 @@ cdninstagram.com
 ||ftchinese.com
 
 !!---Google---
+||translate.googleapis.com
 !###https://www.google.com/supported_domains###
 !...GFWList doesn't intend to support typosquatting...
 ||1e100.net
@@ -1178,7 +1180,8 @@ cn.nytstyle.com
 !--steamcommunity.com/groups/zhonggong
 !--steamcommunity.com/id/CJT_Jackton
 ||store.steampowered.com
-
+||api.steampowered.com
+||steamstatic.com
 !!---Telegram---
 !!!---Domain---
 ||cdn-telegram.org
@@ -1462,6 +1465,7 @@ wikinews.org
 ||duckduckgo-owned-server.yahoo.net
 
 !------------------Numerics---------------------
+||611study.com
 ||18comic.org
 ||000webhost.com
 .030buy.com
@@ -1610,6 +1614,7 @@ taiwannation.50webs.com
 ||9news.com.au
 
 !--------------------AA-------------------------
+||akinator.com
 ||annas-archive.org
 ||av01.tv
 ||acg.rip
@@ -1840,15 +1845,15 @@ appledaily.com.tw
 ||archives.gov
 .archive.fo
 ||archive.fo
-.archive.is
+||archive.vn
 ||archive.is
-.archive.li
+||archive.is
+||archive.li
 ||archive.li
 ||archive.md
 ||archive.org
 ||archive.ph
-archive.today
-|https://archive.today
+||archive.today
 ||archiveofourown.com
 ||archiveofourown.org
 .arctosia.com
@@ -1926,6 +1931,9 @@ boxun*.azurewebsites.net
 ||boxun*.azurewebsites.net
 
 !--------------------BB-------------------------
+||blocktempo.com
+||blockcast.it
+||www.bing.com
 ||bangumi.moe
 ||b-ok.cc
 forum.baby-kingdom.com
@@ -2243,6 +2251,7 @@ bwsj.hk
 ||bypasscensorship.org
 
 !--------------------CC-------------------------
+||crosswall.org
 ||clipconverter.cc
 ||zh-hans.cfsh99.com
 ||colacloud.net
@@ -3128,6 +3137,7 @@ eyevio.jp
 .ezpeer.com
 
 !--------------------FF-------------------------
+||fril.jp
 ||free.com.tw
 ||fastgpt.run
 ||froth.zone
@@ -3973,6 +3983,7 @@ guruonline.hk
 .gyatsostudio.com
 
 !--------------------HH-------------------------
+||halktv.com.tr
 ||haiwaikan.com
 ||home.saxo
 ||hoy.tv
@@ -4527,6 +4538,7 @@ ithelp.ithome.com.tw
 .izlesem.org
 
 !--------------------JJ-------------------------
+||jav321.com
 ||javdb.com
 ||jifangge.com
 ||j.mp
@@ -4636,6 +4648,7 @@ juziyue.com
 .jyxf.net
 
 !--------------------KK-------------------------
+||kanald.com.tr
 ||kpkuang.org
 ||k-doujin.net
 ||ka-wai.com
@@ -4940,6 +4953,7 @@ lvhai.org
 ||lzmtnews.org
 
 !--------------------MM-------------------------
+||mirror.xyz
 ||mywife.cc
 ||c.mi.com
 ||addons.mozilla.org/*-*/firefox/addon/ublock-origin/*
@@ -5481,6 +5495,7 @@ nylonstockingsonline.com
 ||nzchinese.net.nz
 
 !--------------------OO-------------------------
+||olelive.com
 ||oann.com
 observechina.net
 .obutu.com
@@ -5975,6 +5990,8 @@ nemesis2.qx.net/pages/MyEnTunnel
 qxbbs.org
 
 !--------------------RR-------------------------
+||r10s.jp
+||rakuten.co.jp
 ||r0.ru
 ||radio-canada.ca
 ||radio-en-ligne.fr
@@ -6135,6 +6152,8 @@ rutube.ru
 |http://rxhj.net
 
 !--------------------SS-------------------------
+||ssrshare.us
+||cdn.statically.io
 ||slides.com
 ||suno.com
 ||sydney.bing.com
@@ -6639,6 +6658,8 @@ blog.syx86.cn/2009/09/puff
 .szetowah.org.hk
 
 !--------------------TT-------------------------
+||tardigrade.io
+||torrentgalaxy.to
 ||tomp3.cc
 ||tukaani.org
 ||thetatoken.org
@@ -7546,6 +7567,7 @@ vraiesagesse.net
 ||vuku.cc
 
 !--------------------WW-------------------------
+||work2icu.org
 ||wikiless.funami.tech
 lists.w3.org/archives/public
 ||waffle1999.com
@@ -7779,6 +7801,8 @@ wukangrui.net
 wzyboy.im/post/160
 
 !--------------------XX-------------------------
+||xt.com
+||xt.pub
 ||x.co
 .x-berry.com
 ||x-berry.com
@@ -7873,6 +7897,7 @@ xyy69.com
 xyy69.info
 
 !--------------------YY-------------------------
+||storage.yandex.net
 ||y2mate.com
 ||yadi.sk
 ||yakbutterblues.com
@@ -8106,10 +8131,8 @@ zyzc9.com
 !--@@||khm3.googleapis.com
 !--@@||khmdb.googleapis.com
 @@||storage.googleapis.com
-!--@@||translate.googleapis.com
 @@||update.googleapis.com
 @@||safebrowsing.googleapis.com
-@@||cn.gravatar.com
 !--@@||connectivitycheck.gstatic.com
 !--@@||csi.gstatic.com
 !--@@||fonts.gstatic.com

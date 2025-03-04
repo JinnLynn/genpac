@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-04 01:46:09
-#! GFWList: 2025-03-03 12:30:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-04 12:43:30
+#! GFWList: 2025-03-04 10:45:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -101,6 +101,7 @@
 (^|\.)5i01\.com$
 (^|\.)5isotoi5\.org$
 (^|\.)5maodang\.com$
+(^|\.)611study\.com$
 (^|\.)611study\.icu$
 (^|\.)63i\.com$
 (^|\.)64museum\.org$
@@ -227,6 +228,7 @@
 (^|\.)akamaihd\.net$
 (^|\.)akiba-online\.com$
 (^|\.)akiba-web\.com$
+(^|\.)akinator\.com$
 (^|\.)akow\.org$
 (^|\.)al-islam\.com$
 (^|\.)al-qimmah\.net$
@@ -335,6 +337,7 @@
 (^|\.)api\.linksalpha\.com$
 (^|\.)api\.pureapk\.com$
 (^|\.)api\.recaptcha\.net$
+(^|\.)api\.steampowered\.com$
 (^|\.)apiary\.io$
 (^|\.)apidocs\.linksalpha\.com$
 (^|\.)apigee\.com$
@@ -373,6 +376,7 @@
 (^|\.)archive\.org$
 (^|\.)archive\.ph$
 (^|\.)archive\.today$
+(^|\.)archive\.vn$
 (^|\.)archiveofourown\.com$
 (^|\.)archiveofourown\.org$
 (^|\.)archives\.gov$
@@ -623,6 +627,7 @@
 (^|\.)blockcn\.com$
 (^|\.)blockedbyhk\.com$
 (^|\.)blockless\.com$
+(^|\.)blocktempo\.com$
 (^|\.)blog\.calibre-ebook\.com$
 (^|\.)blog\.cnyes\.com$
 (^|\.)blog\.cryptographyengineering\.com$
@@ -884,6 +889,7 @@
 (^|\.)cdn\.printfriendly\.com$
 (^|\.)cdn\.seatguru\.com$
 (^|\.)cdn\.softlayer\.net$
+(^|\.)cdn\.statically\.io$
 (^|\.)cdn1\.lp\.saboom\.com$
 (^|\.)cdnews\.com\.tw$
 (^|\.)cdninstagram\.com$
@@ -1193,6 +1199,7 @@
 (^|\.)crossfire\.co\.kr$
 (^|\.)crossthewall\.net$
 (^|\.)crossvpn\.net$
+(^|\.)crosswall\.org$
 (^|\.)croxyproxy\.com$
 (^|\.)crrev\.com$
 (^|\.)crucial\.com$
@@ -1932,6 +1939,7 @@
 (^|\.)friendfeed\.com$
 (^|\.)friends-of-tibet\.org$
 (^|\.)friendsoftibet\.org$
+(^|\.)fril\.jp$
 (^|\.)fring\.com$
 (^|\.)fringenetwork\.com$
 (^|\.)from-pr\.com$
@@ -2484,6 +2492,7 @@
 (^|\.)haijiao\.com$
 (^|\.)haiwaikan\.com$
 (^|\.)hakkatv\.org\.tw$
+(^|\.)halktv\.com\.tr$
 (^|\.)handcraftedsoftware\.org$
 (^|\.)hanime\.tv$
 (^|\.)hanunyi\.com$
@@ -2968,6 +2977,7 @@
 (^|\.)japantimes\.co\.jp$
 (^|\.)jav\.com$
 (^|\.)jav101\.com$
+(^|\.)jav321\.com$
 (^|\.)jav68\.tv$
 (^|\.)javakiba\.org$
 (^|\.)javbus\.com$
@@ -3072,6 +3082,7 @@
 (^|\.)kaiyuan\.de$
 (^|\.)kakao\.com$
 (^|\.)kalachakralugano\.org$
+(^|\.)kanald\.com\.tr$
 (^|\.)kankan\.today$
 (^|\.)kannewyork\.com$
 (^|\.)kanshifang\.com$
@@ -3497,6 +3508,7 @@
 (^|\.)minzhuzhongguo\.org$
 (^|\.)miraheze\.org$
 (^|\.)miroguide\.com$
+(^|\.)mirror\.xyz$
 (^|\.)mirrorbooks\.com$
 (^|\.)mirrormedia\.mg$
 (^|\.)missav\.com$
@@ -3923,6 +3935,7 @@
 (^|\.)old\.honeynet\.org$
 (^|\.)old\.nabble\.com$
 (^|\.)olehdtv\.com$
+(^|\.)olelive\.com$
 (^|\.)olevod\.com$
 (^|\.)olumpo\.com$
 (^|\.)olympicwatch\.org$
@@ -4336,6 +4349,7 @@
 (^|\.)qxbbs\.org$
 (^|\.)qz\.com$
 (^|\.)r0\.ru$
+(^|\.)r10s\.jp$
 (^|\.)r18\.com$
 (^|\.)radicalparty\.org$
 (^|\.)radiko\.jp$
@@ -4354,6 +4368,7 @@
 (^|\.)rainbowplan\.org$
 (^|\.)raindrop\.io$
 (^|\.)raizoji\.or\.jp$
+(^|\.)rakuten\.co\.jp$
 (^|\.)ramcity\.com\.au$
 (^|\.)rangwang\.biz$
 (^|\.)rangzen\.net$
@@ -4834,6 +4849,7 @@
 (^|\.)sspro\.ml$
 (^|\.)ssr\.tools$
 (^|\.)ssrshare\.com$
+(^|\.)ssrshare\.us$
 (^|\.)sss\.camp$
 (^|\.)sstm\.moe$
 (^|\.)sstmlt\.moe$
@@ -4857,6 +4873,7 @@
 (^|\.)stboy\.net$
 (^|\.)stc\.com\.sa$
 (^|\.)steamcommunity\.com$
+(^|\.)steamstatic\.com$
 (^|\.)steel-storm\.com$
 (^|\.)steemit\.com$
 (^|\.)steganos\.com$
@@ -4871,6 +4888,7 @@
 (^|\.)sto\.cc$
 (^|\.)stoporganharvesting\.org$
 (^|\.)stoptibetcrisis\.net$
+(^|\.)storage\.yandex\.net$
 (^|\.)storagenewsletter\.com$
 (^|\.)store\.steampowered\.com$
 (^|\.)stories\.google$
@@ -4998,6 +5016,7 @@
 (^|\.)taolun\.info$
 (^|\.)tapanwap\.com$
 (^|\.)tapatalk\.com$
+(^|\.)tardigrade\.io$
 (^|\.)tarr\.uspto\.gov$
 (^|\.)tascn\.com\.au$
 (^|\.)taup\.net$
@@ -5288,6 +5307,7 @@
 (^|\.)torguard\.net$
 (^|\.)torlock\.com$
 (^|\.)torproject\.org$
+(^|\.)torrentgalaxy\.to$
 (^|\.)torrentkitty\.tv$
 (^|\.)torrentprivacy\.com$
 (^|\.)torrentproject\.se$
@@ -5308,6 +5328,7 @@
 (^|\.)tradingview\.com$
 (^|\.)trans\.wenweipo\.com$
 (^|\.)translate\.goog$
+(^|\.)translate\.googleapis\.com$
 (^|\.)transparency\.org$
 (^|\.)treemall\.com\.tw$
 (^|\.)trendsmap\.com$
@@ -5937,6 +5958,7 @@
 (^|\.)woopie\.jp$
 (^|\.)woopie\.tv$
 (^|\.)wordpress\.com$
+(^|\.)work2icu\.org$
 (^|\.)workatruna\.com$
 (^|\.)workerdemo\.org\.hk$
 (^|\.)workerempowerment\.org$
@@ -5982,6 +6004,7 @@
 (^|\.)www\.ajsands\.com$
 (^|\.)www\.antd\.org$
 (^|\.)www\.aolnews\.com$
+(^|\.)www\.bing\.com$
 (^|\.)www\.businessinsider\.com\.au$
 (^|\.)www\.cmoinc\.org$
 (^|\.)www\.dmm\.com$
@@ -6082,6 +6105,7 @@
 (^|\.)xm\.com$
 (^|\.)xml-training-guide\.com$
 (^|\.)xmovies\.com$
+(^|\.)xn--11xs86f\.icu$
 (^|\.)xn--4gq171p\.com$
 (^|\.)xn--9pr62r24a\.com$
 (^|\.)xn--czq75pvv1aj5c\.org$
@@ -6097,6 +6121,8 @@
 (^|\.)xsden\.info$
 (^|\.)xskywalker\.com$
 (^|\.)xskywalker\.net$
+(^|\.)xt\.com$
+(^|\.)xt\.pub$
 (^|\.)xtube\.com$
 (^|\.)xuchao\.net$
 (^|\.)xuchao\.org$
@@ -6283,6 +6309,7 @@
 (^|\.)zonghexinwen\.com$
 (^|\.)zonghexinwen\.net$
 (^|\.)zoogvpn\.com$
+(^|\.)zoominfo\.com$
 (^|\.)zootool\.com$
 (^|\.)zoozle\.net$
 (^|\.)zophar\.net$
