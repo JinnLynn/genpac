@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: rvtpxIXgZeNYB5b3Ykr4Qw
+! Checksum: OB2KGMMsX2yNgYKy9ZfCrg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 04 Mar 2025 22:20:01 +0800
+! Last Modified: Wed, 05 Mar 2025 18:44:39 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -16,6 +16,7 @@
 ! https://github.com/gfwlist/gfwlist/issues/.
 
 !---------403/451/503/520 & URL Redirects---------
+||blogjav.net
 ||zoominfo.com
 ||ptwxz.com
 ||miuipolska.pl
@@ -78,7 +79,6 @@
 ||dish.com
 |http://img.dlsite.jp/
 ||dm530.net
-share.dmhy.org
 ||dmhy.org
 ||dmm.co.jp
 |http://www.dmm.com/netgame
@@ -445,6 +445,7 @@ share.dmhy.org
 ||cdn.seatguru.com
 ||secure.raxcdn.com
 ||redd.it
+||redditspace.com
 ||reddit.com
 .redditlist.com
 |http://redditlist.com
@@ -621,10 +622,9 @@ china-mmm.sa.com
 .now.im
 
 !!---Amazon---
+||payments-jp.amazon.com
 ||amazon.co.jp
-.amazon.com/Dalai-Lama
-amazon.com/Prisoner-State-Secret-Journal-Premier
-s3-ap-northeast-1.amazonaws.com
+||s3-ap-*.amazonaws.com
 
 !!---AOL---
 ||aolchannels.aol.com
@@ -927,7 +927,20 @@ bloomberg.de
 ||ftchinese.com
 
 !!---Google---
+||doc.new
+||form.new
+||forms.new
+||sheet.new
+||sheets.new
+||spreadsheet.new
+||site.new
+||sites.new
+||website.new
+||slides.new
+||deck.new
+||presentation.new
 ||translate.googleapis.com
+||maps.googleapis.com
 !###https://www.google.com/supported_domains###
 !...GFWList doesn't intend to support typosquatting...
 ||1e100.net
@@ -1490,6 +1503,7 @@ wikinews.org
 ||wmfusercontent.org
 
 !!---Yahoo---
+||shopping.yahoo.co.jp
 ||auctions.yahoo.co.jp
 ||blogs.yahoo.co.jp
 ||search.yahoo.co.jp
@@ -1499,6 +1513,7 @@ wikinews.org
 ||duckduckgo-owned-server.yahoo.net
 
 !------------------Numerics---------------------
+||2049bbs.xyz
 ||611study.com
 ||18comic.org
 ||000webhost.com
@@ -1648,6 +1663,7 @@ taiwannation.50webs.com
 ||9news.com.au
 
 !--------------------AA-------------------------
+||aljazeera.com
 ||akinator.com
 ||annas-archive.org
 ||av01.tv
@@ -1928,7 +1944,6 @@ asg.to
 atgfw.org
 .atlaspost.com
 ||atlaspost.com
-||atdmt.com
 .atlanta168.com
 ||atlanta168.com
 .atnext.com
@@ -1965,6 +1980,8 @@ boxun*.azurewebsites.net
 ||boxun*.azurewebsites.net
 
 !--------------------BB-------------------------
+||btbtt.me
+||btbtt.co
 ||btbit.net
 ||betaclouds.net
 ||blocktempo.com
@@ -2287,6 +2304,9 @@ bwsj.hk
 ||bypasscensorship.org
 
 !--------------------CC-------------------------
+||cixiaoya.club
+||campaign-archive.com
+||chinauncensored.tv
 ||catbox.moe
 ||crosswall.org
 ||clipconverter.cc
@@ -2748,6 +2768,7 @@ cytode.us
 ||nic.cz.cc
 
 !--------------------DD-------------------------
+||ddex.io
 ||d.cash
 ||doubiyunbackup.com
 ||cloud.dify.ai
@@ -2875,7 +2896,7 @@ dharmakara.net
 .discuss.com.hk
 ||discuss.com.hk
 .discuss4u.com
-disp.cc
+||disp.cc
 .disqus.com
 ||disqus.com
 .dit-inc.us
@@ -2998,8 +3019,10 @@ xys.dxiong.com
 .dzze.com
 
 !--------------------EE-------------------------
+||edx-cdn.org
+||everipedia.org
 ||epochtimes.com.tw
-||cn.etherscan.com
+||etherscan.com
 ||elconfidencial.com
 ||e-classical.com.tw
 ||e-gold.com
@@ -3178,6 +3201,7 @@ eyevio.jp
 .ezpeer.com
 
 !--------------------FF-------------------------
+||fuchsia.dev
 ||freess.org
 ||fril.jp
 ||free.com.tw
@@ -4344,6 +4368,7 @@ ebook.hyread.com.tw
 ||ebook.hyread.com.tw
 
 !--------------------II-------------------------
+||invidio.us
 ||improd.works
 ||illawarramercury.com.au
 ||imago-images.com
@@ -4583,6 +4608,7 @@ ithelp.ithome.com.tw
 .izlesem.org
 
 !--------------------JJ-------------------------
+||justmysockscn.com
 ||justmysocks.net
 ||jav321.com
 ||javdb.com
@@ -4694,6 +4720,7 @@ juziyue.com
 .jyxf.net
 
 !--------------------KK-------------------------
+||kingkong.com.tw
 ||kanald.com.tr
 ||kpkuang.org
 ||k-doujin.net
@@ -4813,6 +4840,7 @@ kyohk.net
 ||kzeng.info
 
 !--------------------LL-------------------------
+||ltn.com.tw
 ||litenews.hk
 ||www.lorenzetti.com.br
 ||linktr.ee
@@ -5000,6 +5028,7 @@ lvhai.org
 ||lzmtnews.org
 
 !--------------------MM-------------------------
+||mergersandinquisitions.com
 ||m.moegirl.org
 ||myjs.tw
 ||mercari.com
@@ -5325,6 +5354,7 @@ mysinablog.com
 .mytizi.com
 
 !--------------------NN-------------------------
+||nightswatch.top
 ||nbyy.tv
 ||newthuhole.com
 ||naacoalition.org
@@ -5546,6 +5576,7 @@ nylonstockingsonline.com
 ||nzchinese.net.nz
 
 !--------------------OO-------------------------
+||onevps.com
 ||onedrive.com
 ||olelive.com
 ||oann.com
@@ -5672,6 +5703,8 @@ bbs.ozchinese.com
 .ozyoyo.com
 
 !--------------------PP-------------------------
+||pandafan.pub
+||proxz.com
 ||potatso.com
 ||pendrivelinux.com
 ||paimon.moe
@@ -5790,19 +5823,8 @@ picturesocial.com
 ||pinimg.com
 .pinkrod.com
 ||pinoy-n.com
-||pinterest.at
-||pinterest.ca
-||pinterest.co.kr
-||pinterest.co.uk
-.pinterest.com
-||pinterest.com
-||pinterest.com.mx
-||pinterest.de
-||pinterest.dk
-||pinterest.fr
-||pinterest.jp
-||pinterest.nl
-||pinterest.se
+||pinterest.*
+@@||pinterest.cn
 .pipii.tv
 .piposay.com
 piraattilahti.org
@@ -6001,6 +6023,7 @@ pythonhackers.com/p
 ss.pythonic.life
 
 !--------------------QQ-------------------------
+||qianmo.tw
 .qanote.com
 ||qanote.com
 ||qbittorrent.org
@@ -6205,6 +6228,12 @@ rutube.ru
 |http://rxhj.net
 
 !--------------------SS-------------------------
+||ssrtool.com
+||ssrshare.us
+||secure.shadowsocks.nu
+||synapse.org
+||south-plus.net
+||silvergatebank.com
 ||share-videos.se
 ||ssrshare.us
 ||cdn.statically.io
@@ -6269,7 +6298,6 @@ savevid.com
 ||scmp.com
 .scmpchinese.com
 ||scramble.io
-.scribd.com
 ||scribd.com
 ||scriptspot.com
 ||search.com
@@ -6300,7 +6328,7 @@ sesawe.net
 ||sesawe.net
 .sesawe.org
 ||sethwklein.net
-.setn.com
+||setn.com
 .settv.com.tw
 forum.setty.com.tw
 .sevenload.com
@@ -6401,7 +6429,7 @@ ch.shvoong.com
 ||simbolostwitter.com
 simplecd.org
 ||simplecd.org
-@@||simplecd.me
+||simplecd.me
 simpleproductivityblog.com
 bbs.sina.com/
 bbs.sina.com%2F
@@ -6711,6 +6739,8 @@ blog.syx86.cn/2009/09/puff
 .szetowah.org.hk
 
 !--------------------TT-------------------------
+||tunein.streamguys1.com
+||tou.tv
 ||tinyurl.com
 ||textnow.com
 ||textnow.me
@@ -7046,7 +7076,7 @@ tintuc101.com
 |http://tnp.org
 .to-porno.com
 ||to-porno.com
-togetter.com
+||togetter.com
 .tokyo-247.com
 .tokyo-hot.com
 ||tokyo-porn-tube.com
@@ -7465,6 +7495,8 @@ uygur.org
 |http://uymaarip.com/
 
 !--------------------VV-------------------------
+||vilanet.me
+||vewas.net
 ||v2.help
 ||vocaroo.com
 ||vern.cc
@@ -8196,10 +8228,10 @@ zyzc9.com
 @@||storage.googleapis.com
 @@||update.googleapis.com
 @@||safebrowsing.googleapis.com
-!--@@||connectivitycheck.gstatic.com
-!--@@||csi.gstatic.com
-!--@@||fonts.gstatic.com
-!--@@||ssl.gstatic.com
+@@||connectivitycheck.gstatic.com
+@@||csi.gstatic.com
+@@||fonts.gstatic.com
+@@||ssl.gstatic.com
 @@||haosou.com
 @@||ip.cn
 @@||jike.com
