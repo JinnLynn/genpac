@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: U4pyU2WFqxZG1aGE/h8w8w
+! Checksum: rvtpxIXgZeNYB5b3Ykr4Qw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 04 Mar 2025 18:45:53 +0800
+! Last Modified: Tue, 04 Mar 2025 22:20:01 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -102,7 +102,9 @@ share.dmhy.org
 ||funkyimg.com
 ||fxnetworks.com
 ||g-area.org
-||gettyimages.com
+||gettyimages.*
+@@||gettyimages.com
+@@||gettyimages.cn
 ||getuploader.com
 ||ghidra-sre.org
 !--|https://github.com/programthink/zhao
@@ -135,8 +137,7 @@ share.dmhy.org
 |http://imgmega.com/*.jpg.html
 |http://imgmega.com/*.jpeg.html
 |http://imgmega.com/*.png.html
-||imlive.com
-||tw.iqiyi.com
+||imlive.co
 ||javhub.net
 ||javhuge.com
 .javlibrary.com
@@ -288,6 +289,34 @@ share.dmhy.org
 ||zozotown.com
 
 !##############General List Start###############
+!-------------------Coin Pool-------------------
+||c3pool.com
+||unmineable.com
+||666pool.cn
+||antpool.com
+||crazypool.org
+||cruxpool.com
+||miningpoolhub.com
+||huobipool.com
+||poolbinance.com
+||hiveon.net
+||sparkpool.com
+||flypool.org
+||nanopool.org
+||xnpool.com
+||beepool.com
+||zhizhu.top
+||spiderpool.com
+||uupool.cn
+||flexpool.io
+||beepool.org
+||dpool.top
+||okpool.me
+||binancezh.cc
+||btc.com
+||r-pool.net
+||w-pool.com
+
 !-------------------Pure IP---------------------
 14.102.250.18
 14.102.250.19
@@ -574,6 +603,19 @@ china-mmm.jp.net
 china-mmm.sa.com
 
 !---------------------Groups--------------------
+!!---Masterdon---
+||bgme.me
+||o3o.ca
+||go5.dev
+||me.ns.ci
+||moresci.sale
+||social.edu.ci
+||mstdn.social
+||douchi.space
+||slashine.onl
+||social.datalabour.com
+||mastodon.online
+
 !!---Afraid FreeDNS---
 .allowed.org
 .now.im
@@ -800,13 +842,7 @@ bloomberg.de
 !--||pages.dev
 
 !!---CloudFront---
-d1b183sg0nvnuh.cloudfront.net
-|https://d1b183sg0nvnuh.cloudfront.net
-d1c37gjwa26taa.cloudfront.net
-|https://d1c37gjwa26taa.cloudfront.net
-d3c33hcgiwev3.cloudfront.net
-|https://d3c33hcgiwev3.cloudfront.net
-||d3rhr7kgmtrq1v.cloudfront.net
+||cloudfront.net
 
 !!---DtDNS---
 !###https://www.dtdns.com/dtsite/faq
@@ -1022,8 +1058,6 @@ blogspot.com
 /^https?:\/\/([^\/]+\.)*google\.(ac|ad|ae|af|ai|al|am|as|at|az|ba|be|bf|bg|bi|bj|bs|bt|by|ca|cat|cd|cf|cg|ch|ci|cl|cm|co.ao|co.bw|co.ck|co.cr|co.id|co.il|co.in|co.jp|co.ke|co.kr|co.ls|co.ma|com|com.af|com.ag|com.ai|com.ar|com.au|com.bd|com.bh|com.bn|com.bo|com.br|com.bz|com.co|com.cu|com.cy|com.do|com.ec|com.eg|com.et|com.fj|com.gh|com.gi|com.gt|com.hk|com.jm|com.kh|com.kw|com.lb|com.ly|com.mm|com.mt|com.mx|com.my|com.na|com.nf|com.ng|com.ni|com.np|com.om|com.pa|com.pe|com.pg|com.ph|com.pk|com.pr|com.py|com.qa|com.sa|com.sb|com.sg|com.sl|com.sv|com.tj|com.tr|com.tw|com.ua|com.uy|com.vc|com.vn|co.mz|co.nz|co.th|co.tz|co.ug|co.uk|co.uz|co.ve|co.vi|co.za|co.zm|co.zw|cv|cz|de|dj|dk|dm|dz|ee|es|eu|fi|fm|fr|ga|ge|gg|gl|gm|gp|gr|gy|hk|hn|hr|ht|hu|ie|im|iq|is|it|it.ao|je|jo|kg|ki|kz|la|li|lk|lt|lu|lv|md|me|mg|mk|ml|mn|ms|mu|mv|mw|mx|ne|nl|no|nr|nu|org|pl|pn|ps|pt|ro|rs|ru|rw|sc|se|sh|si|sk|sm|sn|so|sr|st|td|tg|tk|tl|tm|tn|to|tt|us|vg|vn|vu|ws)\/.*/
 !--||google-analytics.com
 !--||googleadservices.com
-||googleapis.cn
-||googleapis.com
 ||googleapps.com
 ||googleartproject.com
 ||googleblog.com
@@ -1931,6 +1965,8 @@ boxun*.azurewebsites.net
 ||boxun*.azurewebsites.net
 
 !--------------------BB-------------------------
+||btbit.net
+||betaclouds.net
 ||blocktempo.com
 ||blockcast.it
 ||www.bing.com
@@ -2251,6 +2287,7 @@ bwsj.hk
 ||bypasscensorship.org
 
 !--------------------CC-------------------------
+||catbox.moe
 ||crosswall.org
 ||clipconverter.cc
 ||zh-hans.cfsh99.com
@@ -2711,6 +2748,8 @@ cytode.us
 ||nic.cz.cc
 
 !--------------------DD-------------------------
+||d.cash
+||doubiyunbackup.com
 ||cloud.dify.ai
 .d-fukyu.com
 |http://d-fukyu.com
@@ -2876,7 +2915,7 @@ dongtaiwang.com
 .dongtaiwang.net
 ||dongtaiwang.net
 .dongyangjing.com
-|http://danbooru.donmai.us
+||danbooru.donmai.us
 .dontfilter.us
 ||dontmovetochina.com
 ||doosho.com
@@ -2959,6 +2998,8 @@ xys.dxiong.com
 .dzze.com
 
 !--------------------EE-------------------------
+||epochtimes.com.tw
+||cn.etherscan.com
 ||elconfidencial.com
 ||e-classical.com.tw
 ||e-gold.com
@@ -3137,6 +3178,7 @@ eyevio.jp
 .ezpeer.com
 
 !--------------------FF-------------------------
+||freess.org
 ||fril.jp
 ||free.com.tw
 ||fastgpt.run
@@ -3219,7 +3261,8 @@ fangeming.com
 !--Fastly
 en.favotter.net
 !--||rnw.global.ssl.fastly.net
-!--|https://*global.ssl.fastly.net/
+||*.global.ssl.fastly.net
+||*.freetls.fastly.net
 nytimes.map.fastly.net
 ||nytimes.map.fastly.net
 ||fast.wistia.com
@@ -3478,6 +3521,7 @@ fzh999.net
 fzlm.com
 
 !--------------------GG-------------------------
+||gfwatch.org
 ||go-to-zlibrary.se
 ||gitbook.io
 .g6hentai.com
@@ -4300,6 +4344,7 @@ ebook.hyread.com.tw
 ||ebook.hyread.com.tw
 
 !--------------------II-------------------------
+||improd.works
 ||illawarramercury.com.au
 ||imago-images.com
 ||i1.hk
@@ -4538,6 +4583,7 @@ ithelp.ithome.com.tw
 .izlesem.org
 
 !--------------------JJ-------------------------
+||justmysocks.net
 ||jav321.com
 ||javdb.com
 ||jifangge.com
@@ -4767,6 +4813,7 @@ kyohk.net
 ||kzeng.info
 
 !--------------------LL-------------------------
+||litenews.hk
 ||www.lorenzetti.com.br
 ||linktr.ee
 la-forum.org
@@ -4953,6 +5000,10 @@ lvhai.org
 ||lzmtnews.org
 
 !--------------------MM-------------------------
+||m.moegirl.org
+||myjs.tw
+||mercari.com
+||mercari.jp
 ||mirror.xyz
 ||mywife.cc
 ||c.mi.com
@@ -5274,6 +5325,7 @@ mysinablog.com
 .mytizi.com
 
 !--------------------NN-------------------------
+||nbyy.tv
 ||newthuhole.com
 ||naacoalition.org
 old.nabble.com
@@ -5397,7 +5449,6 @@ ngensis.com
 .nhentai.net
 |http://nhentai.net
 .nhk-ondemand.jp
-.nicovideo.jp/watch
 ||nicovideo.jp
 ||nighost.org
 av.nightlife141.com
@@ -5495,6 +5546,7 @@ nylonstockingsonline.com
 ||nzchinese.net.nz
 
 !--------------------OO-------------------------
+||onedrive.com
 ||olelive.com
 ||oann.com
 observechina.net
@@ -5620,6 +5672,7 @@ bbs.ozchinese.com
 .ozyoyo.com
 
 !--------------------PP-------------------------
+||potatso.com
 ||pendrivelinux.com
 ||paimon.moe
 ||photonmedia.net
@@ -6152,6 +6205,7 @@ rutube.ru
 |http://rxhj.net
 
 !--------------------SS-------------------------
+||share-videos.se
 ||ssrshare.us
 ||cdn.statically.io
 ||slides.com
@@ -6428,7 +6482,6 @@ smhric.org
 ||smn.news
 .smyxy.org
 !--TODO-no-homepage
-||snapchat.com
 .snaptu.com
 ||snaptu.com
 ||sndcdn.com
@@ -6658,6 +6711,11 @@ blog.syx86.cn/2009/09/puff
 .szetowah.org.hk
 
 !--------------------TT-------------------------
+||tinyurl.com
+||textnow.com
+||textnow.me
+||token.im
+||tokenlon.im
 ||tardigrade.io
 ||torrentgalaxy.to
 ||tomp3.cc
@@ -7407,6 +7465,8 @@ uygur.org
 |http://uymaarip.com/
 
 !--------------------VV-------------------------
+||v2.help
+||vocaroo.com
 ||vern.cc
 ||v2fly.org
 .v2ray.com
@@ -7760,6 +7820,7 @@ worldjournal.com
 ||wo3ttt.wordpress.com
 ||sujiatun.wordpress.com
 ||xijie.wordpress.com
+||ifreechina.wordpress.com
 ||wp.com
 
 !-||wormsculptor.com
@@ -8008,6 +8069,8 @@ yx51.net
 ||yzzk.com
 
 !--------------------ZZ-------------------------
+||zhongzidi.com
+||zooqle.com
 ||z-lib.io
 ||z-lib.org
 zacebook.com

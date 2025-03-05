@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-04 12:43:02
-#! GFWList: 2025-03-04 10:45:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-05 01:45:39
+#! GFWList: 2025-03-04 14:20:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -109,6 +109,7 @@
 (^|\.)64wiki\.com$
 (^|\.)66\.ca$
 (^|\.)666kb\.com$
+(^|\.)666pool\.cn$
 (^|\.)6do\.news$
 (^|\.)6do\.world$
 (^|\.)6park\.com$
@@ -318,6 +319,7 @@
 (^|\.)anti1984\.com$
 (^|\.)antichristendom\.com$
 (^|\.)antiwave\.net$
+(^|\.)antpool\.com$
 (^|\.)anyporn\.com$
 (^|\.)anysex\.com$
 (^|\.)ao3\.org$
@@ -540,6 +542,8 @@
 (^|\.)beaconevents\.com$
 (^|\.)bebo\.com$
 (^|\.)beeg\.com$
+(^|\.)beepool\.com$
+(^|\.)beepool\.org$
 (^|\.)beevpn\.com$
 (^|\.)behance\.net$
 (^|\.)behindkink\.com$
@@ -564,6 +568,7 @@
 (^|\.)bestvpnservice\.com$
 (^|\.)bestvpnusa\.com$
 (^|\.)bet365\.com$
+(^|\.)betaclouds\.net$
 (^|\.)betfair\.com$
 (^|\.)betternet\.co$
 (^|\.)bettervpn\.com$
@@ -573,6 +578,7 @@
 (^|\.)beyondfirewall\.com$
 (^|\.)bfnn\.org$
 (^|\.)bfsh\.hk$
+(^|\.)bgme\.me$
 (^|\.)bgvpn\.com$
 (^|\.)bianlei\.com$
 (^|\.)biantailajiao\.com$
@@ -592,6 +598,7 @@
 (^|\.)biliworld\.com$
 (^|\.)billypan\.com$
 (^|\.)binance\.com$
+(^|\.)binancezh\.cc$
 (^|\.)binux\.me$
 (^|\.)bird\.so$
 (^|\.)bit-z\.com$
@@ -753,7 +760,9 @@
 (^|\.)bsky\.social$
 (^|\.)bt95\.com$
 (^|\.)btaia\.com$
+(^|\.)btbit\.net$
 (^|\.)btbtav\.com$
+(^|\.)btc\.com$
 (^|\.)btc98\.com$
 (^|\.)btcbank\.bank$
 (^|\.)btctrade\.im$
@@ -801,6 +810,7 @@
 (^|\.)c\.mi\.com$
 (^|\.)c100tibet\.org$
 (^|\.)c2cx\.com$
+(^|\.)c3pool\.com$
 (^|\.)cableav\.tv$
 (^|\.)cablegatesearch\.net$
 (^|\.)cachinese\.com$
@@ -846,6 +856,7 @@
 (^|\.)casinoking\.com$
 (^|\.)casinoriva\.com$
 (^|\.)castbox\.fm$
+(^|\.)catbox\.moe$
 (^|\.)catch22\.net$
 (^|\.)catchgod\.com$
 (^|\.)catfightpayperview\.xxx$
@@ -1086,6 +1097,7 @@
 (^|\.)cloud\.dify\.ai$
 (^|\.)cloud\.mail\.ru$
 (^|\.)cloudflare-ipfs\.com$
+(^|\.)cloudfront\.net$
 (^|\.)cloudfunctions\.net$
 (^|\.)club1069\.com$
 (^|\.)clubhouseapi\.com$
@@ -1099,6 +1111,7 @@
 (^|\.)cmule\.org$
 (^|\.)cmx\.im$
 (^|\.)cn-proxy\.com$
+(^|\.)cn\.etherscan\.com$
 (^|\.)cn\.fmnnow\.com$
 (^|\.)cn\.freeones\.com$
 (^|\.)cn\.giganews\.com$
@@ -1185,6 +1198,7 @@
 (^|\.)cpj\.org$
 (^|\.)cq99\.us$
 (^|\.)crackle\.com$
+(^|\.)crazypool\.org$
 (^|\.)crazys\.cc$
 (^|\.)crazyshit\.com$
 (^|\.)crbug\.com$
@@ -1204,6 +1218,7 @@
 (^|\.)crrev\.com$
 (^|\.)crucial\.com$
 (^|\.)crunchyroll\.com$
+(^|\.)cruxpool\.com$
 (^|\.)csdparty\.com$
 (^|\.)csis\.org$
 (^|\.)csmonitor\.com$
@@ -1232,13 +1247,10 @@
 (^|\.)cynscribe\.com$
 (^|\.)cytode\.us$
 (^|\.)d-fukyu\.com$
+(^|\.)d\.cash$
 (^|\.)d100\.net$
-(^|\.)d1b183sg0nvnuh\.cloudfront\.net$
-(^|\.)d1c37gjwa26taa\.cloudfront\.net$
 (^|\.)d2bay\.com$
 (^|\.)d2pass\.com$
-(^|\.)d3c33hcgiwev3\.cloudfront\.net$
-(^|\.)d3rhr7kgmtrq1v\.cloudfront\.net$
 (^|\.)dabr\.co\.uk$
 (^|\.)dabr\.eu$
 (^|\.)dabr\.me$
@@ -1429,8 +1441,10 @@
 (^|\.)dotvpn\.com$
 (^|\.)doub\.io$
 (^|\.)doubibackup\.com$
+(^|\.)doubiyunbackup\.com$
 (^|\.)doublethinklab\.org$
 (^|\.)doubmirror\.cf$
+(^|\.)douchi\.space$
 (^|\.)dougscripts\.com$
 (^|\.)douhokanko\.net$
 (^|\.)doujincafe\.com$
@@ -1438,6 +1452,7 @@
 (^|\.)download\.aircrack-ng\.org$
 (^|\.)download\.cnet\.com$
 (^|\.)dphk\.org$
+(^|\.)dpool\.top$
 (^|\.)dpp\.org\.tw$
 (^|\.)dpr\.info$
 (^|\.)dragonex\.io$
@@ -1589,6 +1604,7 @@
 (^|\.)epochtimes\.co\.il$
 (^|\.)epochtimes\.co\.kr$
 (^|\.)epochtimes\.com$
+(^|\.)epochtimes\.com\.tw$
 (^|\.)epochtimes\.cz$
 (^|\.)epochtimes\.de$
 (^|\.)epochtimes\.fr$
@@ -1818,6 +1834,7 @@
 (^|\.)flecheinthepeche\.fr$
 (^|\.)fleshbot\.com$
 (^|\.)fleursdeslettres\.com$
+(^|\.)flexpool\.io$
 (^|\.)flgg\.us$
 (^|\.)flgjustice\.org$
 (^|\.)flickr\.com$
@@ -1830,6 +1847,7 @@
 (^|\.)flnet\.org$
 (^|\.)flog\.tw$
 (^|\.)flowhongkong\.net$
+(^|\.)flypool\.org$
 (^|\.)flyvpn\.com$
 (^|\.)flyzy2005\.com$
 (^|\.)fnac\.be$
@@ -1917,11 +1935,13 @@
 (^|\.)freenewscn\.com$
 (^|\.)freeopenvpn\.com$
 (^|\.)freeoz\.org$
+(^|\.)freess\.org$
 (^|\.)freessh\.us$
 (^|\.)freetcp\.com$
 (^|\.)freetibet\.net$
 (^|\.)freetibet\.org$
 (^|\.)freetibetanheroes\.org$
+(^|\.)freetls\.fastly\.net$
 (^|\.)freetribe\.me$
 (^|\.)freeviewmovies\.com$
 (^|\.)freevpn\.me$
@@ -2070,7 +2090,6 @@
 (^|\.)getsync\.com$
 (^|\.)gettr\.com$
 (^|\.)gettrials\.com$
-(^|\.)gettyimages\.com$
 (^|\.)getuploader\.com$
 (^|\.)gfbv\.de$
 (^|\.)gfgold\.com\.hk$
@@ -2078,6 +2097,7 @@
 (^|\.)gfw\.org\.ua$
 (^|\.)gfw\.press$
 (^|\.)gfw\.report$
+(^|\.)gfwatch\.org$
 (^|\.)ggpht\.com$
 (^|\.)ggssl\.com$
 (^|\.)ghidra-sre\.org$
@@ -2100,6 +2120,7 @@
 (^|\.)glarity\.app$
 (^|\.)glass8\.eu$
 (^|\.)global\.bing\.com$
+(^|\.)global\.ssl\.fastly\.net$
 (^|\.)globaljihad\.net$
 (^|\.)globalmediaoutreach\.com$
 (^|\.)globalmuseumoncommunism\.org$
@@ -2125,6 +2146,7 @@
 (^|\.)go-to-zlibrary\.se$
 (^|\.)go\.nesnode\.com$
 (^|\.)go141\.com$
+(^|\.)go5\.dev$
 (^|\.)goagent\.biz$
 (^|\.)goagent\.codeplex\.com$
 (^|\.)goagentplus\.com$
@@ -2368,8 +2390,6 @@
 (^|\.)google\.vn$
 (^|\.)google\.vu$
 (^|\.)google\.ws$
-(^|\.)googleapis\.cn$
-(^|\.)googleapis\.com$
 (^|\.)googleapps\.com$
 (^|\.)googlearth\.com$
 (^|\.)googleartproject\.com$
@@ -2571,6 +2591,7 @@
 (^|\.)himemix\.net$
 (^|\.)hitbtc\.com$
 (^|\.)hitomi\.la$
+(^|\.)hiveon\.net$
 (^|\.)hiwifi\.com$
 (^|\.)hizb-ut-tahrir\.info$
 (^|\.)hizb-ut-tahrir\.org$
@@ -2743,6 +2764,7 @@
 (^|\.)huobi\.me$
 (^|\.)huobi\.pro$
 (^|\.)huobi\.sc$
+(^|\.)huobipool\.com$
 (^|\.)huobipro\.com$
 (^|\.)huping\.net$
 (^|\.)hurgokbayrak\.com$
@@ -2803,6 +2825,7 @@
 (^|\.)ifanqiang\.com$
 (^|\.)ifcss\.org$
 (^|\.)ifjc\.org$
+(^|\.)ifreechina\.wordpress\.com$
 (^|\.)ifreewares\.com$
 (^|\.)ift\.tt$
 (^|\.)igcd\.net$
@@ -2846,11 +2869,13 @@
 (^|\.)imgmega\.com$
 (^|\.)imgur\.com$
 (^|\.)imkev\.com$
+(^|\.)imlive\.co$
 (^|\.)imlive\.com$
 (^|\.)immigration\.gov\.tw$
 (^|\.)immoral\.jp$
 (^|\.)impact\.org\.au$
 (^|\.)impp\.mn$
+(^|\.)improd\.works$
 (^|\.)in-disguise\.com$
 (^|\.)in99\.org$
 (^|\.)incapdns\.net$
@@ -3063,6 +3088,7 @@
 (^|\.)justfreevpn\.com$
 (^|\.)justhost\.ru$
 (^|\.)justicefortenzin\.org$
+(^|\.)justmysocks\.net$
 (^|\.)justmysocks1\.net$
 (^|\.)justpaste\.it$
 (^|\.)justtristan\.com$
@@ -3269,6 +3295,7 @@
 (^|\.)listentoyoutube\.com$
 (^|\.)listorious\.com$
 (^|\.)lists\.w3\.org$
+(^|\.)litenews\.hk$
 (^|\.)liu-xiaobo\.org$
 (^|\.)liudejun\.com$
 (^|\.)liuhanyu\.com$
@@ -3335,6 +3362,7 @@
 (^|\.)m-team\.cc$
 (^|\.)m\.hkgalden\.com$
 (^|\.)m\.me$
+(^|\.)m\.moegirl\.org$
 (^|\.)m\.plixi\.com$
 (^|\.)m\.slandr\.net$
 (^|\.)ma\.hao123\.com$
@@ -3388,6 +3416,7 @@
 (^|\.)maskedip\.com$
 (^|\.)mastodon\.cloud$
 (^|\.)mastodon\.host$
+(^|\.)mastodon\.online$
 (^|\.)mastodon\.social$
 (^|\.)mastodon\.xyz$
 (^|\.)matainja\.com$
@@ -3411,6 +3440,7 @@
 (^|\.)mcreasite\.com$
 (^|\.)md-t\.org$
 (^|\.)me\.me$
+(^|\.)me\.ns\.ci$
 (^|\.)me\.youthwant\.com\.tw$
 (^|\.)meansys\.com$
 (^|\.)media\.nu\.nl$
@@ -3439,6 +3469,8 @@
 (^|\.)memes\.tw$
 (^|\.)memri\.org$
 (^|\.)memrijttm\.org$
+(^|\.)mercari\.com$
+(^|\.)mercari\.jp$
 (^|\.)mercatox\.com$
 (^|\.)mercdn\.net$
 (^|\.)mercyprophet\.org$
@@ -3502,6 +3534,7 @@
 (^|\.)mingshengbao\.com$
 (^|\.)minhhue\.net$
 (^|\.)miniforum\.org$
+(^|\.)miningpoolhub\.com$
 (^|\.)ministrybooks\.org$
 (^|\.)minzhuhua\.net$
 (^|\.)minzhuzhanxian\.com$
@@ -3567,6 +3600,7 @@
 (^|\.)moonbbs\.com$
 (^|\.)moonbingo\.com$
 (^|\.)moptt\.tw$
+(^|\.)moresci\.sale$
 (^|\.)morningsun\.org$
 (^|\.)moroneta\.com$
 (^|\.)mos\.ru$
@@ -3590,6 +3624,7 @@
 (^|\.)msa-it\.org$
 (^|\.)msguancha\.com$
 (^|\.)msha\.gov$
+(^|\.)mstdn\.social$
 (^|\.)mswe1\.org$
 (^|\.)mthruf\.com$
 (^|\.)mtw\.tl$
@@ -3643,6 +3678,7 @@
 (^|\.)myftp\.info$
 (^|\.)myftp\.name$
 (^|\.)myiphide\.com$
+(^|\.)myjs\.tw$
 (^|\.)mykomica\.org$
 (^|\.)mylftv\.com$
 (^|\.)mymediarom\.com$
@@ -3681,6 +3717,7 @@
 (^|\.)namgyal\.org$
 (^|\.)namgyalmonastery\.org$
 (^|\.)namsisi\.com$
+(^|\.)nanopool\.org$
 (^|\.)nanyang\.com$
 (^|\.)nanyangpost\.com$
 (^|\.)nanzao\.com$
@@ -3700,6 +3737,7 @@
 (^|\.)naweeklytimes\.com$
 (^|\.)nbcnews\.com$
 (^|\.)nbtvpn\.com$
+(^|\.)nbyy\.tv$
 (^|\.)nccwatch\.org\.tw$
 (^|\.)nch\.com\.tw$
 (^|\.)nchrd\.org$
@@ -3901,6 +3939,7 @@
 (^|\.)nytstyle\.com$
 (^|\.)nzchinese\.com$
 (^|\.)nzchinese\.net\.nz$
+(^|\.)o3o\.ca$
 (^|\.)oanda\.com$
 (^|\.)oann\.com$
 (^|\.)observechina\.net$
@@ -3930,6 +3969,7 @@
 (^|\.)okayfreedom\.com$
 (^|\.)okex\.com$
 (^|\.)okk\.tw$
+(^|\.)okpool\.me$
 (^|\.)okx\.com$
 (^|\.)old-cat\.net$
 (^|\.)old\.honeynet\.org$
@@ -3948,6 +3988,7 @@
 (^|\.)on\.cc$
 (^|\.)on2\.com$
 (^|\.)onapp\.com$
+(^|\.)onedrive\.com$
 (^|\.)onedrive\.live\.com$
 (^|\.)onedumb\.com$
 (^|\.)onejav\.com$
@@ -4195,6 +4236,7 @@
 (^|\.)poloniex\.com$
 (^|\.)polymer-project\.org$
 (^|\.)polymerhk\.com$
+(^|\.)poolbinance\.com$
 (^|\.)poolin\.com$
 (^|\.)popai\.pro$
 (^|\.)popo\.tw$
@@ -4232,6 +4274,7 @@
 (^|\.)postimg\.org$
 (^|\.)posts\.careerengine\.us$
 (^|\.)potato\.im$
+(^|\.)potatso\.com$
 (^|\.)potvpn\.com$
 (^|\.)pourquoi\.tw$
 (^|\.)power\.com$
@@ -4348,6 +4391,7 @@
 (^|\.)qvodzy\.org$
 (^|\.)qxbbs\.org$
 (^|\.)qz\.com$
+(^|\.)r-pool\.net$
 (^|\.)r0\.ru$
 (^|\.)r10s\.jp$
 (^|\.)r18\.com$
@@ -4626,6 +4670,7 @@
 (^|\.)shambhalasun\.com$
 (^|\.)shangfang\.org$
 (^|\.)shapeservices\.com$
+(^|\.)share-videos\.se$
 (^|\.)share\.america\.gov$
 (^|\.)share\.dmhy\.org$
 (^|\.)share\.ovi\.com$
@@ -4718,6 +4763,7 @@
 (^|\.)skyvegas\.com$
 (^|\.)skyxvpn\.com$
 (^|\.)slacker\.com$
+(^|\.)slashine\.onl$
 (^|\.)slaytizle\.com$
 (^|\.)sleazydream\.com$
 (^|\.)sleazyfork\.org$
@@ -4740,7 +4786,6 @@
 (^|\.)smith\.edu$
 (^|\.)smn\.news$
 (^|\.)smyxy\.org$
-(^|\.)snapchat\.com$
 (^|\.)snapseed\.com$
 (^|\.)snaptu\.com$
 (^|\.)sndcdn\.com$
@@ -4748,6 +4793,8 @@
 (^|\.)snowlionpub\.com$
 (^|\.)sobees\.com$
 (^|\.)soc\.mil$
+(^|\.)social\.datalabour\.com$
+(^|\.)social\.edu\.ci$
 (^|\.)socialblade\.com$
 (^|\.)socialwhale\.com$
 (^|\.)socks-proxy\.net$
@@ -4808,6 +4855,7 @@
 (^|\.)spankbang\.com$
 (^|\.)spankingtube\.com$
 (^|\.)spankwire\.com$
+(^|\.)sparkpool\.com$
 (^|\.)spatial\.io$
 (^|\.)spb\.com$
 (^|\.)speakerdeck\.com$
@@ -4819,6 +4867,7 @@
 (^|\.)spendee\.com$
 (^|\.)spicevpn\.com$
 (^|\.)spideroak\.com$
+(^|\.)spiderpool\.com$
 (^|\.)spike\.com$
 (^|\.)sports\.williamhill\.com$
 (^|\.)spotflux\.com$
@@ -5076,6 +5125,7 @@
 (^|\.)tenzinpalmo\.com$
 (^|\.)terabox\.com$
 (^|\.)tew\.org$
+(^|\.)textnow\.com$
 (^|\.)textnow\.me$
 (^|\.)tfc-taiwan\.org\.tw$
 (^|\.)tfhub\.dev$
@@ -5259,6 +5309,7 @@
 (^|\.)tiny\.cc$
 (^|\.)tinychat\.com$
 (^|\.)tinypaste\.com$
+(^|\.)tinyurl\.com$
 (^|\.)tipas\.net$
 (^|\.)tipo\.gov\.tw$
 (^|\.)tistory\.com$
@@ -5279,6 +5330,8 @@
 (^|\.)to-porno\.com$
 (^|\.)togetter\.com$
 (^|\.)toh\.info$
+(^|\.)token\.im$
+(^|\.)tokenlon\.im$
 (^|\.)tokyo-247\.com$
 (^|\.)tokyo-hot\.com$
 (^|\.)tokyo-porn-tube\.com$
@@ -5405,7 +5458,6 @@
 (^|\.)tw-npo\.org$
 (^|\.)tw\.gigacircle\.com$
 (^|\.)tw\.hao123\.com$
-(^|\.)tw\.iqiyi\.com$
 (^|\.)tw\.jiepang\.com$
 (^|\.)tw\.streetvoice\.com$
 (^|\.)tw\.tomonews\.net$
@@ -5560,6 +5612,7 @@
 (^|\.)unitedsocialpress\.com$
 (^|\.)unix100\.com$
 (^|\.)unknownspace\.org$
+(^|\.)unmineable\.com$
 (^|\.)unodedos\.com$
 (^|\.)unpo\.org$
 (^|\.)unseen\.is$
@@ -5610,6 +5663,7 @@
 (^|\.)uu-gg\.com$
 (^|\.)uujiasu\.com$
 (^|\.)uukanshu\.com$
+(^|\.)uupool\.cn$
 (^|\.)uvwxyz\.xyz$
 (^|\.)uwants\.com$
 (^|\.)uwants\.net$
@@ -5627,6 +5681,7 @@
 (^|\.)uygur\.fc2web\.com$
 (^|\.)uygur\.org$
 (^|\.)uymaarip\.com$
+(^|\.)v2\.help$
 (^|\.)v2ex\.com$
 (^|\.)v2fly\.org$
 (^|\.)v2ray\.com$
@@ -5714,6 +5769,7 @@
 (^|\.)voanews\.com$
 (^|\.)voatibetan\.com$
 (^|\.)voatibetanenglish\.com$
+(^|\.)vocaroo\.com$
 (^|\.)vocativ\.com$
 (^|\.)vocn\.tv$
 (^|\.)vocus\.cc$
@@ -5778,6 +5834,7 @@
 (^|\.)vtunnel\.com$
 (^|\.)vuku\.cc$
 (^|\.)vultryhw\.com$
+(^|\.)w-pool\.com$
 (^|\.)w\.idaiwan\.com$
 (^|\.)waffle1999\.com$
 (^|\.)wahas\.com$
@@ -6114,6 +6171,7 @@
 (^|\.)xn--noss43i\.com$
 (^|\.)xn--oiq\.cc$
 (^|\.)xn--p8j9a0d9c9a\.xn--q9jyb4c$
+(^|\.)xnpool\.com$
 (^|\.)xnxx\.com$
 (^|\.)xpdo\.net$
 (^|\.)xpud\.org$
@@ -6283,10 +6341,12 @@
 (^|\.)zhenlibu1984\.com$
 (^|\.)zhenxiang\.biz$
 (^|\.)zhinengluyou\.com$
+(^|\.)zhizhu\.top$
 (^|\.)zhongguo\.ca$
 (^|\.)zhongguorenquan\.org$
 (^|\.)zhongguotese\.net$
 (^|\.)zhongmeng\.org$
+(^|\.)zhongzidi\.com$
 (^|\.)zhoushuguang\.com$
 (^|\.)zhreader\.com$
 (^|\.)zhuangbi\.me$
@@ -6310,6 +6370,7 @@
 (^|\.)zonghexinwen\.net$
 (^|\.)zoogvpn\.com$
 (^|\.)zoominfo\.com$
+(^|\.)zooqle\.com$
 (^|\.)zootool\.com$
 (^|\.)zoozle\.net$
 (^|\.)zophar\.net$
