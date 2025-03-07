@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-07 01:46:17
-#! GFWList: 2025-03-05 10:44:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-07 12:42:02
+#! GFWList: 2025-03-07 10:20:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -124,6 +124,7 @@ rule:
         - s,66.ca
         - s,666kb.com
         - s,666pool.cn
+        - s,69shuba.cx
         - s,6do.news
         - s,6do.world
         - s,6park.com
@@ -2140,6 +2141,7 @@ rule:
         - s,github.blog
         - s,github.com
         - s,github.io
+        - s,githubassets.com
         - s,githubcopilot.com
         - s,githubusercontent.com
         - s,gizlen.net
@@ -2417,6 +2419,7 @@ rule:
         - s,google.vn
         - s,google.vu
         - s,google.ws
+        - s,googleapis.com
         - s,googleapps.com
         - s,googlearth.com
         - s,googleartproject.com
@@ -3433,7 +3436,6 @@ rule:
         - s,manta.com
         - s,manyvoices.news
         - s,maplew.com
-        - s,maps.googleapis.com
         - s,marc.info
         - s,marguerite.su
         - s,martau.com
@@ -4258,6 +4260,7 @@ rule:
         - s,politicalconsultation.org
         - s,politiscales.net
         - s,poloniex.com
+        - s,polymarket.com
         - s,polymer-project.org
         - s,polymerhk.com
         - s,poolbinance.com
@@ -5420,7 +5423,6 @@ rule:
         - s,tradingview.com
         - s,trans.wenweipo.com
         - s,translate.goog
-        - s,translate.googleapis.com
         - s,transparency.org
         - s,treemall.com.tw
         - s,trendsmap.com
@@ -6017,7 +6019,6 @@ rule:
         - s,wikiversity.org
         - s,wikivoyage.org
         - s,wikiwand.com
-        - s,wikiwiki.jp
         - s,wiktionary.org
         - s,wildammo.com
         - s,williamhill.com
