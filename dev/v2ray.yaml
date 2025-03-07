@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-07 01:46:42
-#! GFWList: 2025-03-05 10:44:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-07 12:42:28
+#! GFWList: 2025-03-07 10:20:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -232,6 +232,7 @@ routing:
         - domain:66.ca
         - domain:666kb.com
         - domain:666pool.cn
+        - domain:69shuba.cx
         - domain:6do.news
         - domain:6do.world
         - domain:6park.com
@@ -2248,6 +2249,7 @@ routing:
         - domain:github.blog
         - domain:github.com
         - domain:github.io
+        - domain:githubassets.com
         - domain:githubcopilot.com
         - domain:githubusercontent.com
         - domain:gizlen.net
@@ -2525,6 +2527,7 @@ routing:
         - domain:google.vn
         - domain:google.vu
         - domain:google.ws
+        - domain:googleapis.com
         - domain:googleapps.com
         - domain:googlearth.com
         - domain:googleartproject.com
@@ -3541,7 +3544,6 @@ routing:
         - domain:manta.com
         - domain:manyvoices.news
         - domain:maplew.com
-        - domain:maps.googleapis.com
         - domain:marc.info
         - domain:marguerite.su
         - domain:martau.com
@@ -4366,6 +4368,7 @@ routing:
         - domain:politicalconsultation.org
         - domain:politiscales.net
         - domain:poloniex.com
+        - domain:polymarket.com
         - domain:polymer-project.org
         - domain:polymerhk.com
         - domain:poolbinance.com
@@ -5528,7 +5531,6 @@ routing:
         - domain:tradingview.com
         - domain:trans.wenweipo.com
         - domain:translate.goog
-        - domain:translate.googleapis.com
         - domain:transparency.org
         - domain:treemall.com.tw
         - domain:trendsmap.com
@@ -6125,7 +6127,6 @@ routing:
         - domain:wikiversity.org
         - domain:wikivoyage.org
         - domain:wikiwand.com
-        - domain:wikiwiki.jp
         - domain:wiktionary.org
         - domain:wildammo.com
         - domain:williamhill.com

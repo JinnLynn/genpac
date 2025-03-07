@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: OB2KGMMsX2yNgYKy9ZfCrg
+! Checksum: r/DDUt7HqDm+E/FNFPNUyg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 05 Mar 2025 18:44:39 +0800
+! Last Modified: Fri, 07 Mar 2025 18:20:58 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -939,8 +939,7 @@ bloomberg.de
 ||slides.new
 ||deck.new
 ||presentation.new
-||translate.googleapis.com
-||maps.googleapis.com
+||googleapis.com
 !###https://www.google.com/supported_domains###
 !...GFWList doesn't intend to support typosquatting...
 ||1e100.net
@@ -1513,6 +1512,7 @@ wikinews.org
 ||duckduckgo-owned-server.yahoo.net
 
 !------------------Numerics---------------------
+||69shuba.cx
 ||2049bbs.xyz
 ||611study.com
 ||18comic.org
@@ -3165,7 +3165,7 @@ etaiwannews.com
 ||etizer.org
 ||etokki.com
 ||etsy.com
-||*.ettoday.net
+.ettoday.net
 etvonline.hk
 .eucasino.com
 .eulam.com
@@ -3285,8 +3285,8 @@ fangeming.com
 !--Fastly
 en.favotter.net
 !--||rnw.global.ssl.fastly.net
-||*.global.ssl.fastly.net
-||*.freetls.fastly.net
+.global.ssl.fastly.net
+.freetls.fastly.net
 nytimes.map.fastly.net
 ||nytimes.map.fastly.net
 ||fast.wistia.com
@@ -3688,6 +3688,7 @@ gigporno.ru
 .github.io
 ||github.io
 ||githubusercontent.com
+||githubassets.com
 
 .gizlen.net
 ||gizlen.net
@@ -5703,6 +5704,7 @@ bbs.ozchinese.com
 .ozyoyo.com
 
 !--------------------PP-------------------------
+||polymarket.com
 ||pandafan.pub
 ||proxz.com
 ||potatso.com
@@ -7788,7 +7790,6 @@ wikilivres.info/wiki/%E9%9B%B6%E5%85%AB%E5%AE%AA%E7%AB%A0
 ||wikimapia.org
 .wikiwand.com
 ||wikiwand.com
-||wikiwiki.jp
 ||casino.williamhill.com
 ||sports.williamhill.com
 ||vegas.williamhill.com
