@@ -1,6 +1,6 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-03-07 12:42:28
+! Generated: 2025-03-08 01:19:10
 ! GFWList: 2025-03-07 10:20:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
