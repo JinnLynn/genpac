@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-08 01:19:13
-#! GFWList: 2025-03-07 10:20:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-08 12:32:16
+#! GFWList: 2025-03-08 03:02:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -114,6 +114,7 @@ rules:
   - DOMAIN-SUFFIX,wanfang.gov.tw,DIRECT
   - DOMAIN-SUFFIX,weibo.com,DIRECT
   - DOMAIN-SUFFIX,www.ampproject.org,DIRECT
+  - DOMAIN-SUFFIX,www.ettoday.net,DIRECT
   - DOMAIN-SUFFIX,www.exblog.jp,DIRECT
   - DOMAIN-SUFFIX,www.google.cn,DIRECT
   - DOMAIN-SUFFIX,www.kodingen.com,DIRECT
@@ -3777,6 +3778,7 @@ rules:
   - DOMAIN-SUFFIX,mummysgold.com,PROXY
   - DOMAIN-SUFFIX,murmur.tw,PROXY
   - DOMAIN-SUFFIX,musicade.net,PROXY
+  - DOMAIN-SUFFIX,musixmatch.com,PROXY
   - DOMAIN-SUFFIX,muslimvideo.com,PROXY
   - DOMAIN-SUFFIX,muzi.com,PROXY
   - DOMAIN-SUFFIX,muzi.net,PROXY
@@ -5696,6 +5698,7 @@ rules:
   - DOMAIN-SUFFIX,twitvid.com,PROXY
   - DOMAIN-SUFFIX,twitzap.com,PROXY
   - DOMAIN-SUFFIX,twiyia.com,PROXY
+  - DOMAIN-SUFFIX,twkan.com,PROXY
   - DOMAIN-SUFFIX,twnorth.org.tw,PROXY
   - DOMAIN-SUFFIX,twreporter.org,PROXY
   - DOMAIN-SUFFIX,twskype.com,PROXY
