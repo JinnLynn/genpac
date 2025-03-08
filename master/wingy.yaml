@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-08 01:18:42
-#! GFWList: 2025-03-07 10:20:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-08 12:31:51
+#! GFWList: 2025-03-08 03:02:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3671,6 +3671,7 @@ rule:
         - s,mummysgold.com
         - s,murmur.tw
         - s,musicade.net
+        - s,musixmatch.com
         - s,muslimvideo.com
         - s,muzi.com
         - s,muzi.net
@@ -5590,6 +5591,7 @@ rule:
         - s,twitvid.com
         - s,twitzap.com
         - s,twiyia.com
+        - s,twkan.com
         - s,twnorth.org.tw
         - s,twreporter.org
         - s,twskype.com

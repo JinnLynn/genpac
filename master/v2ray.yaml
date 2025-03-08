@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-08 01:18:40
-#! GFWList: 2025-03-07 10:20:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-08 12:31:48
+#! GFWList: 2025-03-08 03:02:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -113,6 +113,7 @@ routing:
         - domain:wanfang.gov.tw
         - domain:weibo.com
         - domain:www.ampproject.org
+        - domain:www.ettoday.net
         - domain:www.exblog.jp
         - domain:www.google.cn
         - domain:www.kodingen.com
@@ -3779,6 +3780,7 @@ routing:
         - domain:mummysgold.com
         - domain:murmur.tw
         - domain:musicade.net
+        - domain:musixmatch.com
         - domain:muslimvideo.com
         - domain:muzi.com
         - domain:muzi.net
@@ -5698,6 +5700,7 @@ routing:
         - domain:twitvid.com
         - domain:twitzap.com
         - domain:twiyia.com
+        - domain:twkan.com
         - domain:twnorth.org.tw
         - domain:twreporter.org
         - domain:twskype.com

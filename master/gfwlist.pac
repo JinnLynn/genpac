@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-03-08 01:18:39
- * GFWList Last-Modified: 2025-03-07 10:20:58
+ * Generated: 2025-03-08 12:31:48
+ * GFWList Last-Modified: 2025-03-08 03:02:43
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -119,6 +119,7 @@ var rules = [
             "wanfang.gov.tw",
             "weibo.com",
             "www.ampproject.org",
+            "www.ettoday.net",
             "www.exblog.jp",
             "www.google.cn",
             "www.kodingen.com",
@@ -3784,6 +3785,7 @@ var rules = [
             "mummysgold.com",
             "murmur.tw",
             "musicade.net",
+            "musixmatch.com",
             "muslimvideo.com",
             "muzi.com",
             "muzi.net",
@@ -5703,6 +5705,7 @@ var rules = [
             "twitvid.com",
             "twitzap.com",
             "twiyia.com",
+            "twkan.com",
             "twnorth.org.tw",
             "twreporter.org",
             "twskype.com",

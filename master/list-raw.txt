@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-03-08 01:18:40
-! GFWList: 2025-03-07 10:20:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-03-08 12:31:48
+! GFWList: 2025-03-08 03:02:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -108,6 +108,7 @@
 @@||wanfang.gov.tw
 @@||weibo.com
 @@||www.ampproject.org
+@@||www.ettoday.net
 @@||www.exblog.jp
 @@||www.google.cn
 @@||www.kodingen.com
@@ -3771,6 +3772,7 @@
 ||mummysgold.com
 ||murmur.tw
 ||musicade.net
+||musixmatch.com
 ||muslimvideo.com
 ||muzi.com
 ||muzi.net
@@ -5690,6 +5692,7 @@
 ||twitvid.com
 ||twitzap.com
 ||twiyia.com
+||twkan.com
 ||twnorth.org.tw
 ||twreporter.org
 ||twskype.com
