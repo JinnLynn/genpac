@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-10 12:45:30
-#! GFWList: 2025-03-08 03:02:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-11 01:47:07
+#! GFWList: 2025-03-10 13:59:17 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -961,6 +961,7 @@ rule:
         - s,chapm25.com
         - s,character.ai
         - s,chat.lmsys.org
+        - s,chat.openai.com
         - s,chatgpt.com
         - s,chatnook.com
         - s,chaturbate.com
@@ -4048,7 +4049,7 @@ rule:
         - s,oopsforum.com
         - s,open.com.hk
         - s,open.firstory.me
-        - s,openai.com
+        - s,open.spotify.com
         - s,openallweb.com
         - s,opendemocracy.net
         - s,opendn.xyz
@@ -4910,7 +4911,6 @@ rule:
         - s,spike.com
         - s,sports.williamhill.com
         - s,spotflux.com
-        - s,spotify.com
         - s,spreadsheet.new
         - s,spreadshirt.es
         - s,spreaker.com

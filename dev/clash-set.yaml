@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-10 12:45:30
-#! GFWList: 2025-03-08 03:02:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-11 01:47:07
+#! GFWList: 2025-03-10 13:59:17 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -945,6 +945,7 @@ payload:
   - DOMAIN-SUFFIX,chapm25.com
   - DOMAIN-SUFFIX,character.ai
   - DOMAIN-SUFFIX,chat.lmsys.org
+  - DOMAIN-SUFFIX,chat.openai.com
   - DOMAIN-SUFFIX,chatgpt.com
   - DOMAIN-SUFFIX,chatnook.com
   - DOMAIN-SUFFIX,chaturbate.com
@@ -4032,7 +4033,7 @@ payload:
   - DOMAIN-SUFFIX,oopsforum.com
   - DOMAIN-SUFFIX,open.com.hk
   - DOMAIN-SUFFIX,open.firstory.me
-  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,open.spotify.com
   - DOMAIN-SUFFIX,openallweb.com
   - DOMAIN-SUFFIX,opendemocracy.net
   - DOMAIN-SUFFIX,opendn.xyz
@@ -4894,7 +4895,6 @@ payload:
   - DOMAIN-SUFFIX,spike.com
   - DOMAIN-SUFFIX,sports.williamhill.com
   - DOMAIN-SUFFIX,spotflux.com
-  - DOMAIN-SUFFIX,spotify.com
   - DOMAIN-SUFFIX,spreadsheet.new
   - DOMAIN-SUFFIX,spreadshirt.es
   - DOMAIN-SUFFIX,spreaker.com

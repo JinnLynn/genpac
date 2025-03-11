@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-03-10 12:45:27
- * GFWList Last-Modified: 2025-03-08 03:02:43
+ * Generated: 2025-03-11 01:47:04
+ * GFWList Last-Modified: 2025-03-10 13:59:17
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1075,6 +1075,7 @@ var rules = [
             "chapm25.com",
             "character.ai",
             "chat.lmsys.org",
+            "chat.openai.com",
             "chatgpt.com",
             "chatnook.com",
             "chaturbate.com",
@@ -4162,7 +4163,7 @@ var rules = [
             "oopsforum.com",
             "open.com.hk",
             "open.firstory.me",
-            "openai.com",
+            "open.spotify.com",
             "openallweb.com",
             "opendemocracy.net",
             "opendn.xyz",
@@ -5024,7 +5025,6 @@ var rules = [
             "spike.com",
             "sports.williamhill.com",
             "spotflux.com",
-            "spotify.com",
             "spreadsheet.new",
             "spreadshirt.es",
             "spreaker.com",

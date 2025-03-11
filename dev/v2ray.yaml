@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-10 12:45:27
-#! GFWList: 2025-03-08 03:02:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-11 01:47:04
+#! GFWList: 2025-03-10 13:59:17 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1070,6 +1070,7 @@ routing:
         - domain:chapm25.com
         - domain:character.ai
         - domain:chat.lmsys.org
+        - domain:chat.openai.com
         - domain:chatgpt.com
         - domain:chatnook.com
         - domain:chaturbate.com
@@ -4157,7 +4158,7 @@ routing:
         - domain:oopsforum.com
         - domain:open.com.hk
         - domain:open.firstory.me
-        - domain:openai.com
+        - domain:open.spotify.com
         - domain:openallweb.com
         - domain:opendemocracy.net
         - domain:opendn.xyz
@@ -5019,7 +5020,6 @@ routing:
         - domain:spike.com
         - domain:sports.williamhill.com
         - domain:spotflux.com
-        - domain:spotify.com
         - domain:spreadsheet.new
         - domain:spreadshirt.es
         - domain:spreaker.com
