@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-03-10 12:44:56
-! GFWList: 2025-03-08 03:02:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-03-11 01:46:32
+! GFWList: 2025-03-10 13:59:17 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -1062,6 +1062,7 @@
 ||chapm25.com
 ||character.ai
 ||chat.lmsys.org
+||chat.openai.com
 ||chatgpt.com
 ||chatnook.com
 ||chaturbate.com
@@ -4149,7 +4150,7 @@
 ||oopsforum.com
 ||open.com.hk
 ||open.firstory.me
-||openai.com
+||open.spotify.com
 ||openallweb.com
 ||opendemocracy.net
 ||opendn.xyz
@@ -5011,7 +5012,6 @@
 ||spike.com
 ||sports.williamhill.com
 ||spotflux.com
-||spotify.com
 ||spreadsheet.new
 ||spreadshirt.es
 ||spreaker.com
