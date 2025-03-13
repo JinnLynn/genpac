@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: DzjvuRPrnUE9IAbb33HhWQ
+! Checksum: r73/Lu49fvgtDvpaXCxA2A
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 10 Mar 2025 21:59:17 +0800
+! Last Modified: Thu, 13 Mar 2025 19:15:09 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -372,7 +372,6 @@
 ||encyclopedia.com
 ||fangeqiang.com
 ||fanqiangdang.com
-||feedly.comfastgpt.run
 ||feedx.net
 ||flyzy2005.com
 ||foreignpolicy.com
@@ -1512,6 +1511,7 @@ wikinews.org
 ||duckduckgo-owned-server.yahoo.net
 
 !------------------Numerics---------------------
+||2047.one
 ||69shuba.cx
 ||2049bbs.xyz
 ||611study.com
@@ -1980,6 +1980,7 @@ boxun*.azurewebsites.net
 ||boxun*.azurewebsites.net
 
 !--------------------BB-------------------------
+||bearteach.com
 ||btbtt.me
 ||btbtt.co
 ||btbit.net
@@ -2304,6 +2305,9 @@ bwsj.hk
 ||bypasscensorship.org
 
 !--------------------CC-------------------------
+||cachefly.com
+||cachefly.net
+||cutout.pro
 ||cixiaoya.club
 ||campaign-archive.com
 ||chinauncensored.tv
@@ -3201,6 +3205,8 @@ eyevio.jp
 .ezpeer.com
 
 !--------------------FF-------------------------
+||factchecklab.org
+||ft.com
 ||fuchsia.dev
 ||freess.org
 ||fril.jp
@@ -3545,6 +3551,8 @@ fzh999.net
 fzlm.com
 
 !--------------------GG-------------------------
+||getsession.org
+||gdaily.org
 ||gfwatch.org
 ||go-to-zlibrary.se
 ||gitbook.io
@@ -5356,6 +5364,7 @@ mysinablog.com
 .mytizi.com
 
 !--------------------NN-------------------------
+||netlify.app
 ||nightswatch.top
 ||nbyy.tv
 ||newthuhole.com
@@ -6231,6 +6240,7 @@ rutube.ru
 |http://rxhj.net
 
 !--------------------SS-------------------------
+||soundon.fm
 ||ssrtool.com
 ||ssrshare.us
 ||secure.shadowsocks.nu
@@ -6742,6 +6752,7 @@ blog.syx86.cn/2009/09/puff
 .szetowah.org.hk
 
 !--------------------TT-------------------------
+||tg-me.com
 ||twkan.com
 ||tunein.streamguys1.com
 ||tou.tv
@@ -6900,7 +6911,6 @@ thefrontier.hk/tf
 ||thehun.net
 .theinitium.com
 ||theinitium.com
-||themoviedb.org
 .thenewslens.com
 ||thenewslens.com
 .thepiratebay.org
@@ -7897,6 +7907,7 @@ wukangrui.net
 wzyboy.im/post/160
 
 !--------------------XX-------------------------
+||x.ai
 ||xt.com
 ||xt.pub
 ||x.co

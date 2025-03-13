@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-13 01:47:41
-#! GFWList: 2025-03-10 13:59:17 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-13 12:45:10
+#! GFWList: 2025-03-13 11:15:09 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -67,6 +67,7 @@ rule:
         - s,2017.hk
         - s,2021hkcharter.com
         - s,2047.name
+        - s,2047.one
         - s,2049bbs.xyz
         - s,21andy.com
         - s,21sextury.com
@@ -554,6 +555,7 @@ rule:
         - s,bcmorning.com
         - s,bdsmvideos.net
         - s,beaconevents.com
+        - s,bearteach.com
         - s,bebo.com
         - s,beeg.com
         - s,beepool.com
@@ -830,6 +832,8 @@ rule:
         - s,c3pool.com
         - s,cableav.tv
         - s,cablegatesearch.net
+        - s,cachefly.com
+        - s,cachefly.net
         - s,cachinese.com
         - s,cacnw.com
         - s,cactusvpn.com
@@ -1260,6 +1264,7 @@ rule:
         - s,curvefish.com
         - s,cusp.hk
         - s,cusu.hk
+        - s,cutout.pro
         - s,cutscenes.net
         - s,cw.com.tw
         - s,cyberghost.natado.com
@@ -1723,6 +1728,7 @@ rule:
         - s,faceless.me
         - s,facesofnyfw.com
         - s,facesoftibetanselfimmolators.info
+        - s,factchecklab.org
         - s,factpedia.org
         - s,fail.hk
         - s,faith100.org
@@ -1810,7 +1816,6 @@ rule:
         - s,fdc89.jp
         - s,feedburner.com
         - s,feeder.co
-        - s,feedly.comfastgpt.run
         - s,feeds.fileforum.com
         - s,feedx.net
         - s,feelssh.com
@@ -1999,6 +2004,7 @@ rule:
         - s,froth.zone
         - s,fscked.org
         - s,fsurf.com
+        - s,ft.com
         - s,ftchinese.com
         - s,ftp1.biz
         - s,ftpserver.biz
@@ -2084,6 +2090,7 @@ rule:
         - s,gcmasia.com
         - s,gcpnews.com
         - s,gcr.io
+        - s,gdaily.org
         - s,gdbt.net
         - s,gdzf.org
         - s,geek-art.net
@@ -2115,6 +2122,7 @@ rule:
         - s,getmalus.com
         - s,getmdl.io
         - s,getoutline.org
+        - s,getsession.org
         - s,getsocialscope.com
         - s,getsync.com
         - s,gettr.com
@@ -3794,6 +3802,7 @@ rule:
         - s,netflav.com
         - s,netflix.com
         - s,netflix.net
+        - s,netlify.app
         - s,netme.cc
         - s,netsarang.com
         - s,netsneak.com
@@ -4880,6 +4889,7 @@ rule:
         - s,soundcloud.com
         - s,soundofhope.kr
         - s,soundofhope.org
+        - s,soundon.fm
         - s,soup.io
         - s,soupofmedia.com
         - s,sourceforge.net
@@ -5172,6 +5182,7 @@ rule:
         - s,tfc-taiwan.org.tw
         - s,tfhub.dev
         - s,tfiflve.com
+        - s,tg-me.com
         - s,th.hao123.com
         - s,thaicn.com
         - s,thb.gov.tw
@@ -5200,7 +5211,6 @@ rule:
         - s,thehindu.com
         - s,thehun.net
         - s,theinitium.com
-        - s,themoviedb.org
         - s,thenewslens.com
         - s,thepiratebay.org
         - s,theporndude.com
@@ -6154,6 +6164,7 @@ rule:
         - s,x-art.com
         - s,x-berry.com
         - s,x-wall.org
+        - s,x.ai
         - s,x.co
         - s,x.com
         - s,x.company
