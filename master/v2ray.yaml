@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-13 01:47:09
-#! GFWList: 2025-03-10 13:59:17 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-13 12:44:42
+#! GFWList: 2025-03-13 11:15:09 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -176,6 +176,7 @@ routing:
         - domain:2017.hk
         - domain:2021hkcharter.com
         - domain:2047.name
+        - domain:2047.one
         - domain:2049bbs.xyz
         - domain:21andy.com
         - domain:21sextury.com
@@ -663,6 +664,7 @@ routing:
         - domain:bcmorning.com
         - domain:bdsmvideos.net
         - domain:beaconevents.com
+        - domain:bearteach.com
         - domain:bebo.com
         - domain:beeg.com
         - domain:beepool.com
@@ -939,6 +941,8 @@ routing:
         - domain:c3pool.com
         - domain:cableav.tv
         - domain:cablegatesearch.net
+        - domain:cachefly.com
+        - domain:cachefly.net
         - domain:cachinese.com
         - domain:cacnw.com
         - domain:cactusvpn.com
@@ -1369,6 +1373,7 @@ routing:
         - domain:curvefish.com
         - domain:cusp.hk
         - domain:cusu.hk
+        - domain:cutout.pro
         - domain:cutscenes.net
         - domain:cw.com.tw
         - domain:cyberghost.natado.com
@@ -1832,6 +1837,7 @@ routing:
         - domain:faceless.me
         - domain:facesofnyfw.com
         - domain:facesoftibetanselfimmolators.info
+        - domain:factchecklab.org
         - domain:factpedia.org
         - domain:fail.hk
         - domain:faith100.org
@@ -1919,7 +1925,6 @@ routing:
         - domain:fdc89.jp
         - domain:feedburner.com
         - domain:feeder.co
-        - domain:feedly.comfastgpt.run
         - domain:feeds.fileforum.com
         - domain:feedx.net
         - domain:feelssh.com
@@ -2108,6 +2113,7 @@ routing:
         - domain:froth.zone
         - domain:fscked.org
         - domain:fsurf.com
+        - domain:ft.com
         - domain:ftchinese.com
         - domain:ftp1.biz
         - domain:ftpserver.biz
@@ -2193,6 +2199,7 @@ routing:
         - domain:gcmasia.com
         - domain:gcpnews.com
         - domain:gcr.io
+        - domain:gdaily.org
         - domain:gdbt.net
         - domain:gdzf.org
         - domain:geek-art.net
@@ -2224,6 +2231,7 @@ routing:
         - domain:getmalus.com
         - domain:getmdl.io
         - domain:getoutline.org
+        - domain:getsession.org
         - domain:getsocialscope.com
         - domain:getsync.com
         - domain:gettr.com
@@ -3903,6 +3911,7 @@ routing:
         - domain:netflav.com
         - domain:netflix.com
         - domain:netflix.net
+        - domain:netlify.app
         - domain:netme.cc
         - domain:netsarang.com
         - domain:netsneak.com
@@ -4989,6 +4998,7 @@ routing:
         - domain:soundcloud.com
         - domain:soundofhope.kr
         - domain:soundofhope.org
+        - domain:soundon.fm
         - domain:soup.io
         - domain:soupofmedia.com
         - domain:sourceforge.net
@@ -5281,6 +5291,7 @@ routing:
         - domain:tfc-taiwan.org.tw
         - domain:tfhub.dev
         - domain:tfiflve.com
+        - domain:tg-me.com
         - domain:th.hao123.com
         - domain:thaicn.com
         - domain:thb.gov.tw
@@ -5309,7 +5320,6 @@ routing:
         - domain:thehindu.com
         - domain:thehun.net
         - domain:theinitium.com
-        - domain:themoviedb.org
         - domain:thenewslens.com
         - domain:thepiratebay.org
         - domain:theporndude.com
@@ -6263,6 +6273,7 @@ routing:
         - domain:x-art.com
         - domain:x-berry.com
         - domain:x-wall.org
+        - domain:x.ai
         - domain:x.co
         - domain:x.com
         - domain:x.company
