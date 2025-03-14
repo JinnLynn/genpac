@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: r73/Lu49fvgtDvpaXCxA2A
+! Checksum: 4ZUV8FNiUePy06rOmgEkKA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Thu, 13 Mar 2025 19:15:09 +0800
+! Last Modified: Fri, 14 Mar 2025 17:50:30 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -3211,7 +3211,6 @@ eyevio.jp
 ||freess.org
 ||fril.jp
 ||free.com.tw
-||fastgpt.run
 ||froth.zone
 ||fanbox.cc
 ||free.bg
