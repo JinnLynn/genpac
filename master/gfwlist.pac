@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-03-14 01:45:05
- * GFWList Last-Modified: 2025-03-13 11:15:09
+ * Generated: 2025-03-14 12:41:40
+ * GFWList Last-Modified: 2025-03-14 09:50:30
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1904,7 +1904,6 @@ var rules = [
             "farwestchina.com",
             "fast.wistia.com",
             "fastestvpn.com",
-            "fastgpt.run",
             "fastpic.ru",
             "fastssh.com",
             "faststone.org",

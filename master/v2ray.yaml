@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-14 01:45:05
-#! GFWList: 2025-03-13 11:15:09 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-14 12:41:41
+#! GFWList: 2025-03-14 09:50:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1899,7 +1899,6 @@ routing:
         - domain:farwestchina.com
         - domain:fast.wistia.com
         - domain:fastestvpn.com
-        - domain:fastgpt.run
         - domain:fastpic.ru
         - domain:fastssh.com
         - domain:faststone.org
