@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-03-15 12:39:30
- * GFWList Last-Modified: 2025-03-14 09:50:30
+ * Generated: 2025-03-16 01:53:09
+ * GFWList Last-Modified: 2025-03-16 01:22:30
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -458,6 +458,7 @@ var rules = [
             "aofriend.com.au",
             "aojiao.org",
             "aolchannels.aol.com",
+            "aomedia.org",
             "aomiwang.com",
             "apartmentratings.com",
             "apartments.com",

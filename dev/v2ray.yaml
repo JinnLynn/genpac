@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-15 12:39:31
-#! GFWList: 2025-03-14 09:50:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-16 01:53:10
+#! GFWList: 2025-03-16 01:22:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -453,6 +453,7 @@ routing:
         - domain:aofriend.com.au
         - domain:aojiao.org
         - domain:aolchannels.aol.com
+        - domain:aomedia.org
         - domain:aomiwang.com
         - domain:apartmentratings.com
         - domain:apartments.com

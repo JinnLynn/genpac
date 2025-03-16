@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: 4ZUV8FNiUePy06rOmgEkKA
+! Checksum: IgwcVYBdMYD2O/RIPiZPJg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 14 Mar 2025 17:50:30 +0800
+! Last Modified: Sun, 16 Mar 2025 09:22:30 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -333,6 +333,8 @@
 ||xn--oiq.cc
 ||xn--p8j9a0d9c9a.xn--q9jyb4c
 ||xn--9pr62r24a.com
+@@/^https?:\/\/(?=.*?(2x3|ni5|j5o))[a-z0-9.-]+\.xn--ngstr-lra8j\.com$
+||xn--ngstr-lra8j.com
 
 !-----------------DNS Poisoning-----------------
 !---Amazon---
@@ -1663,6 +1665,7 @@ taiwannation.50webs.com
 ||9news.com.au
 
 !--------------------AA-------------------------
+||aomedia.org
 ||aljazeera.com
 ||akinator.com
 ||annas-archive.org

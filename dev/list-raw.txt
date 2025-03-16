@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-03-15 12:39:30
-! GFWList: 2025-03-14 09:50:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-03-16 01:53:10
+! GFWList: 2025-03-16 01:22:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -445,6 +445,7 @@
 ||aofriend.com.au
 ||aojiao.org
 ||aolchannels.aol.com
+||aomedia.org
 ||aomiwang.com
 ||apartmentratings.com
 ||apartments.com

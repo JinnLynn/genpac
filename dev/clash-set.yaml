@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-15 12:39:34
-#! GFWList: 2025-03-14 09:50:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-16 01:53:14
+#! GFWList: 2025-03-16 01:22:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -328,6 +328,7 @@ payload:
   - DOMAIN-SUFFIX,aofriend.com.au
   - DOMAIN-SUFFIX,aojiao.org
   - DOMAIN-SUFFIX,aolchannels.aol.com
+  - DOMAIN-SUFFIX,aomedia.org
   - DOMAIN-SUFFIX,aomiwang.com
   - DOMAIN-SUFFIX,apartmentratings.com
   - DOMAIN-SUFFIX,apartments.com
