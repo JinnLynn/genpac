@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-16 12:39:24
-#! GFWList: 2025-03-16 01:22:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-17 01:49:41
+#! GFWList: 2025-03-16 17:09:18 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -4430,7 +4430,7 @@ routing:
         - domain:powerphoto.org
         - domain:ppy.sh
         - domain:prayforchina.net
-        - domain:premeforwindows7.com
+        - domain:prcleader.org
         - domain:premproxy.com
         - domain:presentation.new
         - domain:presentationzen.com

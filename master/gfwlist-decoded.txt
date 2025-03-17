@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: IgwcVYBdMYD2O/RIPiZPJg
+! Checksum: 86XvbvzwAAtrE5j/a13juA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 16 Mar 2025 09:22:30 +0800
+! Last Modified: Sun, 16 Mar 2025 13:09:18 -0400
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -5969,13 +5969,13 @@ powerapple.com
 ||abc.pp.ru
 heix.pp.ru
 ||prayforchina.net
-||premeforwindows7.com
+||prcleader.org
 ||presentationzen.com
 ||prestige-av.com
 .prisoneralert.com
 ||pritunl.com
 ||privacybox.de
-.private.com/home
+||private.com
 ||privateinternetaccess.com
 privatepaste.com
 ||privatepaste.com
