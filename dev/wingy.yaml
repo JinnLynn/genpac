@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-16 12:39:54
-#! GFWList: 2025-03-16 01:22:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-17 01:50:10
+#! GFWList: 2025-03-16 17:09:18 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -4321,7 +4321,7 @@ rule:
         - s,powerphoto.org
         - s,ppy.sh
         - s,prayforchina.net
-        - s,premeforwindows7.com
+        - s,prcleader.org
         - s,premproxy.com
         - s,presentation.new
         - s,presentationzen.com
