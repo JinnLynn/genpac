@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-23 01:54:29
-#! GFWList: 2025-03-16 17:09:18 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-23 12:40:46
+#! GFWList: 2025-03-23 08:14:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -1158,6 +1158,7 @@ payload:
   - DOMAIN-SUFFIX,coin2co.in
   - DOMAIN-SUFFIX,coinbase.com
   - DOMAIN-SUFFIX,coinbene.com
+  - DOMAIN-SUFFIX,coincarp.com
   - DOMAIN-SUFFIX,coinegg.com
   - DOMAIN-SUFFIX,coinex.com
   - DOMAIN-SUFFIX,coingecko.com
@@ -1595,7 +1596,6 @@ payload:
   - DOMAIN-SUFFIX,emule-ed2k.com
   - DOMAIN-SUFFIX,emulefans.com
   - DOMAIN-SUFFIX,emuparadise.me
-  - DOMAIN-SUFFIX,en.favotter.net
   - DOMAIN-SUFFIX,en.hao123.com
   - DOMAIN-SUFFIX,enanyang.my
   - DOMAIN-SUFFIX,encrypt.me
@@ -1751,6 +1751,7 @@ payload:
   - DOMAIN-SUFFIX,fanbox.cc
   - DOMAIN-SUFFIX,fangbinxing.com
   - DOMAIN-SUFFIX,fangeming.com
+  - DOMAIN-SUFFIX,fangeming.comffvpn.com
   - DOMAIN-SUFFIX,fangeqiang.com
   - DOMAIN-SUFFIX,fanglizhi.info
   - DOMAIN-SUFFIX,fangmincn.org
@@ -1773,13 +1774,11 @@ payload:
   - DOMAIN-SUFFIX,faqserv.com
   - DOMAIN-SUFFIX,fartit.com
   - DOMAIN-SUFFIX,farwestchina.com
-  - DOMAIN-SUFFIX,fast.wistia.com
   - DOMAIN-SUFFIX,fastestvpn.com
   - DOMAIN-SUFFIX,fastpic.ru
   - DOMAIN-SUFFIX,fastssh.com
   - DOMAIN-SUFFIX,faststone.org
   - DOMAIN-SUFFIX,fatbtc.com
-  - DOMAIN-SUFFIX,favstar.fm
   - DOMAIN-SUFFIX,fawanghuihui.org
   - DOMAIN-SUFFIX,faydao.com
   - DOMAIN-SUFFIX,faz.net
@@ -1790,14 +1789,10 @@ payload:
   - DOMAIN-SUFFIX,fbcdn.net
   - DOMAIN-SUFFIX,fbsbx.com
   - DOMAIN-SUFFIX,fbworkmail.com
-  - DOMAIN-SUFFIX,fc2.com
-  - DOMAIN-SUFFIX,fc2blog.net
-  - DOMAIN-SUFFIX,fc2china.com
   - DOMAIN-SUFFIX,fc2cn.com
   - DOMAIN-SUFFIX,fda.gov.tw
   - DOMAIN-SUFFIX,fdc64.de
   - DOMAIN-SUFFIX,fdc64.org
-  - DOMAIN-SUFFIX,fdc89.jp
   - DOMAIN-SUFFIX,feedburner.com
   - DOMAIN-SUFFIX,feeder.co
   - DOMAIN-SUFFIX,feeds.fileforum.com
@@ -1813,8 +1808,6 @@ payload:
   - DOMAIN-SUFFIX,fengzhenghu.net
   - DOMAIN-SUFFIX,fevernet.com
   - DOMAIN-SUFFIX,ff.im
-  - DOMAIN-SUFFIX,fffff.at
-  - DOMAIN-SUFFIX,fflick.com
   - DOMAIN-SUFFIX,ffvpn.com
   - DOMAIN-SUFFIX,fgmtv.net
   - DOMAIN-SUFFIX,fgmtv.org
@@ -2082,6 +2075,7 @@ payload:
   - DOMAIN-SUFFIX,geekheart.info
   - DOMAIN-SUFFIX,gekikame.com
   - DOMAIN-SUFFIX,gelbooru.com
+  - DOMAIN-SUFFIX,gemini.com
   - DOMAIN-SUFFIX,generated.photos
   - DOMAIN-SUFFIX,genius.com
   - DOMAIN-SUFFIX,geocities.co.jp
@@ -4018,6 +4012,7 @@ payload:
   - DOMAIN-SUFFIX,on.cc
   - DOMAIN-SUFFIX,on2.com
   - DOMAIN-SUFFIX,onapp.com
+  - DOMAIN-SUFFIX,one.one.one.one
   - DOMAIN-SUFFIX,onedrive.com
   - DOMAIN-SUFFIX,onedrive.live.com
   - DOMAIN-SUFFIX,onedumb.com
@@ -5762,7 +5757,6 @@ payload:
   - DOMAIN-SUFFIX,video.aol.co.uk
   - DOMAIN-SUFFIX,video.aol.com
   - DOMAIN-SUFFIX,video.ap.org
-  - DOMAIN-SUFFIX,video.fdbox.com
   - DOMAIN-SUFFIX,video.foxbusiness.com
   - DOMAIN-SUFFIX,videobam.com
   - DOMAIN-SUFFIX,videodetective.com

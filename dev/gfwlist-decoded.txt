@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: 86XvbvzwAAtrE5j/a13juA
+! Checksum: cWxSOzdwl2xdDEHDpEwKYA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 16 Mar 2025 13:09:18 -0400
+! Last Modified: Sun, 23 Mar 2025 16:14:59 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -16,6 +16,7 @@
 ! https://github.com/gfwlist/gfwlist/issues/.
 
 !---------403/451/503/520 & URL Redirects---------
+||coincarp.com
 ||blogjav.net
 ||zoominfo.com
 ||ptwxz.com
@@ -841,6 +842,9 @@ bloomberg.de
 
 !!--Cloudflare--
 !--||pages.dev
+||1.1.1.1
+||1.0.0.1
+||one.one.one.one
 
 !!---CloudFront---
 ||cloudfront.net
@@ -3281,7 +3285,7 @@ fail.hk
 .fan-qiang.com
 .fangbinxing.com
 ||fangbinxing.com
-fangeming.com
+fangeming.comffvpn.com
 .fangmincn.org
 ||fangmincn.org
 .fanhaodang.com
@@ -3291,31 +3295,20 @@ fangeming.com
 .farwestchina.com
 
 !--Fastly
-en.favotter.net
 !--||rnw.global.ssl.fastly.net
-.global.ssl.fastly.net
-.freetls.fastly.net
-nytimes.map.fastly.net
+||global.ssl.fastly.net
+||freetls.fastly.net
 ||nytimes.map.fastly.net
-||fast.wistia.com
 
 ||fastestvpn.com
 ||fastssh.com
 ||faststone.org
-favstar.fm
-||favstar.fm
-faydao.com/weblog
+||faydao.com
 ||faz.net
-.fc2.com
-.fc2china.com
-.fc2cn.com
 ||fc2cn.com
-fc2blog.net
 |http://uygur.fc2web.com/
-video.fdbox.com
-.fdc64.de
-.fdc64.org
-.fdc89.jp
+||fdc64.de
+||fdc64.org
 ||fourface.nodesnoop.com
 !--feedbooks.mobi
 ||feeder.co
@@ -3331,9 +3324,7 @@ feer.com
 .fengzhenghu.net
 ||fengzhenghu.net
 .fevernet.com
-|http://ff.im
-fffff.at
-fflick.com
+||ff.im
 .ffvpn.com
 fgmtv.net
 .fgmtv.org
@@ -3553,6 +3544,7 @@ fzh999.net
 fzlm.com
 
 !--------------------GG-------------------------
+||gemini.com
 ||getsession.org
 ||gdaily.org
 ||gfwatch.org

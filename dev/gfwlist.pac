@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-03-23 01:54:26
- * GFWList Last-Modified: 2025-03-16 17:09:18
+ * Generated: 2025-03-23 12:40:44
+ * GFWList Last-Modified: 2025-03-23 08:14:59
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1288,6 +1288,7 @@ var rules = [
             "coin2co.in",
             "coinbase.com",
             "coinbene.com",
+            "coincarp.com",
             "coinegg.com",
             "coinex.com",
             "coingecko.com",
@@ -1725,7 +1726,6 @@ var rules = [
             "emule-ed2k.com",
             "emulefans.com",
             "emuparadise.me",
-            "en.favotter.net",
             "en.hao123.com",
             "enanyang.my",
             "encrypt.me",
@@ -1881,6 +1881,7 @@ var rules = [
             "fanbox.cc",
             "fangbinxing.com",
             "fangeming.com",
+            "fangeming.comffvpn.com",
             "fangeqiang.com",
             "fanglizhi.info",
             "fangmincn.org",
@@ -1903,13 +1904,11 @@ var rules = [
             "faqserv.com",
             "fartit.com",
             "farwestchina.com",
-            "fast.wistia.com",
             "fastestvpn.com",
             "fastpic.ru",
             "fastssh.com",
             "faststone.org",
             "fatbtc.com",
-            "favstar.fm",
             "fawanghuihui.org",
             "faydao.com",
             "faz.net",
@@ -1920,14 +1919,10 @@ var rules = [
             "fbcdn.net",
             "fbsbx.com",
             "fbworkmail.com",
-            "fc2.com",
-            "fc2blog.net",
-            "fc2china.com",
             "fc2cn.com",
             "fda.gov.tw",
             "fdc64.de",
             "fdc64.org",
-            "fdc89.jp",
             "feedburner.com",
             "feeder.co",
             "feeds.fileforum.com",
@@ -1943,8 +1938,6 @@ var rules = [
             "fengzhenghu.net",
             "fevernet.com",
             "ff.im",
-            "fffff.at",
-            "fflick.com",
             "ffvpn.com",
             "fgmtv.net",
             "fgmtv.org",
@@ -2212,6 +2205,7 @@ var rules = [
             "geekheart.info",
             "gekikame.com",
             "gelbooru.com",
+            "gemini.com",
             "generated.photos",
             "genius.com",
             "geocities.co.jp",
@@ -4148,6 +4142,7 @@ var rules = [
             "on.cc",
             "on2.com",
             "onapp.com",
+            "one.one.one.one",
             "onedrive.com",
             "onedrive.live.com",
             "onedumb.com",
@@ -5892,7 +5887,6 @@ var rules = [
             "video.aol.co.uk",
             "video.aol.com",
             "video.ap.org",
-            "video.fdbox.com",
             "video.foxbusiness.com",
             "videobam.com",
             "videodetective.com",
