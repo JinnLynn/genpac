@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-23 01:53:56
-#! GFWList: 2025-03-16 17:09:18 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-23 12:40:16
+#! GFWList: 2025-03-23 08:14:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1283,6 +1283,7 @@ routing:
         - domain:coin2co.in
         - domain:coinbase.com
         - domain:coinbene.com
+        - domain:coincarp.com
         - domain:coinegg.com
         - domain:coinex.com
         - domain:coingecko.com
@@ -1720,7 +1721,6 @@ routing:
         - domain:emule-ed2k.com
         - domain:emulefans.com
         - domain:emuparadise.me
-        - domain:en.favotter.net
         - domain:en.hao123.com
         - domain:enanyang.my
         - domain:encrypt.me
@@ -1876,6 +1876,7 @@ routing:
         - domain:fanbox.cc
         - domain:fangbinxing.com
         - domain:fangeming.com
+        - domain:fangeming.comffvpn.com
         - domain:fangeqiang.com
         - domain:fanglizhi.info
         - domain:fangmincn.org
@@ -1898,13 +1899,11 @@ routing:
         - domain:faqserv.com
         - domain:fartit.com
         - domain:farwestchina.com
-        - domain:fast.wistia.com
         - domain:fastestvpn.com
         - domain:fastpic.ru
         - domain:fastssh.com
         - domain:faststone.org
         - domain:fatbtc.com
-        - domain:favstar.fm
         - domain:fawanghuihui.org
         - domain:faydao.com
         - domain:faz.net
@@ -1915,14 +1914,10 @@ routing:
         - domain:fbcdn.net
         - domain:fbsbx.com
         - domain:fbworkmail.com
-        - domain:fc2.com
-        - domain:fc2blog.net
-        - domain:fc2china.com
         - domain:fc2cn.com
         - domain:fda.gov.tw
         - domain:fdc64.de
         - domain:fdc64.org
-        - domain:fdc89.jp
         - domain:feedburner.com
         - domain:feeder.co
         - domain:feeds.fileforum.com
@@ -1938,8 +1933,6 @@ routing:
         - domain:fengzhenghu.net
         - domain:fevernet.com
         - domain:ff.im
-        - domain:fffff.at
-        - domain:fflick.com
         - domain:ffvpn.com
         - domain:fgmtv.net
         - domain:fgmtv.org
@@ -2207,6 +2200,7 @@ routing:
         - domain:geekheart.info
         - domain:gekikame.com
         - domain:gelbooru.com
+        - domain:gemini.com
         - domain:generated.photos
         - domain:genius.com
         - domain:geocities.co.jp
@@ -4143,6 +4137,7 @@ routing:
         - domain:on.cc
         - domain:on2.com
         - domain:onapp.com
+        - domain:one.one.one.one
         - domain:onedrive.com
         - domain:onedrive.live.com
         - domain:onedumb.com
@@ -5887,7 +5882,6 @@ routing:
         - domain:video.aol.co.uk
         - domain:video.aol.com
         - domain:video.ap.org
-        - domain:video.fdbox.com
         - domain:video.foxbusiness.com
         - domain:videobam.com
         - domain:videodetective.com

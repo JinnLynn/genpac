@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-03-23 01:53:57
-#! GFWList: 2025-03-16 17:09:18 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-03-23 12:40:18
+#! GFWList: 2025-03-23 08:14:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1174,6 +1174,7 @@ rule:
         - s,coin2co.in
         - s,coinbase.com
         - s,coinbene.com
+        - s,coincarp.com
         - s,coinegg.com
         - s,coinex.com
         - s,coingecko.com
@@ -1611,7 +1612,6 @@ rule:
         - s,emule-ed2k.com
         - s,emulefans.com
         - s,emuparadise.me
-        - s,en.favotter.net
         - s,en.hao123.com
         - s,enanyang.my
         - s,encrypt.me
@@ -1767,6 +1767,7 @@ rule:
         - s,fanbox.cc
         - s,fangbinxing.com
         - s,fangeming.com
+        - s,fangeming.comffvpn.com
         - s,fangeqiang.com
         - s,fanglizhi.info
         - s,fangmincn.org
@@ -1789,13 +1790,11 @@ rule:
         - s,faqserv.com
         - s,fartit.com
         - s,farwestchina.com
-        - s,fast.wistia.com
         - s,fastestvpn.com
         - s,fastpic.ru
         - s,fastssh.com
         - s,faststone.org
         - s,fatbtc.com
-        - s,favstar.fm
         - s,fawanghuihui.org
         - s,faydao.com
         - s,faz.net
@@ -1806,14 +1805,10 @@ rule:
         - s,fbcdn.net
         - s,fbsbx.com
         - s,fbworkmail.com
-        - s,fc2.com
-        - s,fc2blog.net
-        - s,fc2china.com
         - s,fc2cn.com
         - s,fda.gov.tw
         - s,fdc64.de
         - s,fdc64.org
-        - s,fdc89.jp
         - s,feedburner.com
         - s,feeder.co
         - s,feeds.fileforum.com
@@ -1829,8 +1824,6 @@ rule:
         - s,fengzhenghu.net
         - s,fevernet.com
         - s,ff.im
-        - s,fffff.at
-        - s,fflick.com
         - s,ffvpn.com
         - s,fgmtv.net
         - s,fgmtv.org
@@ -2098,6 +2091,7 @@ rule:
         - s,geekheart.info
         - s,gekikame.com
         - s,gelbooru.com
+        - s,gemini.com
         - s,generated.photos
         - s,genius.com
         - s,geocities.co.jp
@@ -4034,6 +4028,7 @@ rule:
         - s,on.cc
         - s,on2.com
         - s,onapp.com
+        - s,one.one.one.one
         - s,onedrive.com
         - s,onedrive.live.com
         - s,onedumb.com
@@ -5778,7 +5773,6 @@ rule:
         - s,video.aol.co.uk
         - s,video.aol.com
         - s,video.ap.org
-        - s,video.fdbox.com
         - s,video.foxbusiness.com
         - s,videobam.com
         - s,videodetective.com
