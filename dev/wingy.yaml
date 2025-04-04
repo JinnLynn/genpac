@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-04-04 01:49:22
-#! GFWList: 2025-03-23 08:14:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-04-04 12:45:55
+#! GFWList: 2025-04-04 02:23:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -443,6 +443,7 @@ rule:
         - s,auctions.yahoo.co.jp
         - s,audacy.com
         - s,auntology.fandom.com
+        - s,auth.openai.com
         - s,authorizeddns.net
         - s,authorizeddns.org
         - s,authorizeddns.us
@@ -4056,6 +4057,7 @@ rule:
         - s,open.spotify.com
         - s,openallweb.com
         - s,opendemocracy.net
+        - s,opendesktop.org
         - s,opendn.xyz
         - s,openervpn.in
         - s,openid.net
