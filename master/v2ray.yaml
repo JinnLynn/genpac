@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-04-12 01:47:39
-#! GFWList: 2025-04-04 02:23:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-04-12 12:40:27
+#! GFWList: 2025-04-12 07:50:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -551,6 +551,7 @@ routing:
         - domain:atnext.com
         - domain:auctions.yahoo.co.jp
         - domain:audacy.com
+        - domain:audiomack.com
         - domain:auntology.fandom.com
         - domain:auth.openai.com
         - domain:authorizeddns.net
@@ -1233,7 +1234,6 @@ routing:
         - domain:cloud.dify.ai
         - domain:cloud.mail.ru
         - domain:cloudflare-ipfs.com
-        - domain:cloudfront.net
         - domain:cloudfunctions.net
         - domain:club1069.com
         - domain:clubhouseapi.com
@@ -4700,6 +4700,7 @@ routing:
         - domain:s3-ap-southeast-1.amazonaws.com
         - domain:s3-ap-southeast-2.amazonaws.com
         - domain:s3.amazonaws.com
+        - domain:s3.eu-central-1.amazonaws.com
         - domain:s8forum.com
         - domain:sa.hao123.com
         - domain:sacks.com

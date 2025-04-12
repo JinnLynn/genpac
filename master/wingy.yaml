@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-04-12 01:47:43
-#! GFWList: 2025-04-04 02:23:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-04-12 12:40:29
+#! GFWList: 2025-04-12 07:50:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -442,6 +442,7 @@ rule:
         - s,atnext.com
         - s,auctions.yahoo.co.jp
         - s,audacy.com
+        - s,audiomack.com
         - s,auntology.fandom.com
         - s,auth.openai.com
         - s,authorizeddns.net
@@ -1124,7 +1125,6 @@ rule:
         - s,cloud.dify.ai
         - s,cloud.mail.ru
         - s,cloudflare-ipfs.com
-        - s,cloudfront.net
         - s,cloudfunctions.net
         - s,club1069.com
         - s,clubhouseapi.com
@@ -4591,6 +4591,7 @@ rule:
         - s,s3-ap-southeast-1.amazonaws.com
         - s,s3-ap-southeast-2.amazonaws.com
         - s,s3.amazonaws.com
+        - s,s3.eu-central-1.amazonaws.com
         - s,s8forum.com
         - s,sa.hao123.com
         - s,sacks.com
