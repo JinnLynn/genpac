@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: hg47X/OFkQeBZyMfkrySrA
+! Checksum: LYkw6fyv7TeOTUI7dvy4Rw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 04 Apr 2025 10:23:48 +0800
+! Last Modified: Sat, 12 Apr 2025 15:50:02 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -345,6 +345,7 @@
 |https://*.s3.amazonaws.com
 ||s3-ap-southeast-1.amazonaws.com
 ||s3-ap-southeast-2.amazonaws.com
+||s3.eu-central-1.amazonaws.com
 
 ||43110.cf
 ||9cache.com
@@ -848,7 +849,7 @@ bloomberg.de
 ||one.one.one.one
 
 !!---CloudFront---
-||cloudfront.net
+
 
 !!---DtDNS---
 !###https://www.dtdns.com/dtsite/faq
@@ -1670,6 +1671,7 @@ taiwannation.50webs.com
 ||9news.com.au
 
 !--------------------AA-------------------------
+||audiomack.com
 ||aomedia.org
 ||aljazeera.com
 ||akinator.com
