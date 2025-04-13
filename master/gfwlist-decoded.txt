@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: LYkw6fyv7TeOTUI7dvy4Rw
+! Checksum: /IYhoVTMgS6SFNqqultYcQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 12 Apr 2025 15:50:02 +0800
+! Last Modified: Sun, 13 Apr 2025 15:09:40 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -847,6 +847,7 @@ bloomberg.de
 ||1.1.1.1
 ||1.0.0.1
 ||one.one.one.one
+||cloudflare-dns.com
 
 !!---CloudFront---
 
@@ -1519,6 +1520,7 @@ wikinews.org
 ||duckduckgo-owned-server.yahoo.net
 
 !------------------Numerics---------------------
+||8888.google
 ||2047.one
 ||69shuba.cx
 ||2049bbs.xyz
@@ -3215,6 +3217,8 @@ eyevio.jp
 .ezpeer.com
 
 !--------------------FF-------------------------
+||fani.com
+||favcomic.com
 ||factchecklab.org
 ||ft.com
 ||fuchsia.dev
@@ -4057,6 +4061,8 @@ guruonline.hk
 .gyatsostudio.com
 
 !--------------------HH-------------------------
+||v2.hysteria.network
+||h-ciyuan.com
 ||halktv.com.tr
 ||haiwaikan.com
 ||home.saxo
@@ -5034,6 +5040,7 @@ lvhai.org
 ||lzmtnews.org
 
 !--------------------MM-------------------------
+||manwa.me
 ||musixmatch.com
 ||mergersandinquisitions.com
 ||m.moegirl.org
@@ -6238,6 +6245,9 @@ rutube.ru
 |http://rxhj.net
 
 !--------------------SS-------------------------
+||sing-box.sagernet.org
+||ssm.fun
+||sotwe.com
 ||soundon.fm
 ||ssrtool.com
 ||ssrshare.us
@@ -6750,6 +6760,7 @@ blog.syx86.cn/2009/09/puff
 .szetowah.org.hk
 
 !--------------------TT-------------------------
+||thotsbay.tv
 ||tg-me.com
 ||twkan.com
 ||tunein.streamguys1.com

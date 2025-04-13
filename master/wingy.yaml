@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-04-13 03:16:30
-#! GFWList: 2025-04-12 07:50:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-04-13 12:40:59
+#! GFWList: 2025-04-13 07:09:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -140,6 +140,7 @@ rule:
         - s,85st.com
         - s,881903.com
         - s,888.com
+        - s,8888.google
         - s,888poker.com
         - s,89-64.org
         - s,89.64.charter.constitutionalism.solutions
@@ -1124,6 +1125,7 @@ rule:
         - s,cloakpoint.com
         - s,cloud.dify.ai
         - s,cloud.mail.ru
+        - s,cloudflare-dns.com
         - s,cloudflare-ipfs.com
         - s,cloudfunctions.net
         - s,club1069.com
@@ -1777,6 +1779,7 @@ rule:
         - s,fangongheike.com
         - s,fanhaodang.com
         - s,fanhaolou.com
+        - s,fani.com
         - s,fanqiang.network
         - s,fanqiang.tk
         - s,fanqiangdang.com
@@ -1796,6 +1799,7 @@ rule:
         - s,fastssh.com
         - s,faststone.org
         - s,fatbtc.com
+        - s,favcomic.com
         - s,fawanghuihui.org
         - s,faydao.com
         - s,faz.net
@@ -2533,6 +2537,7 @@ rule:
         - s,gzm.tv
         - s,gzone-anime.info
         - s,h-china.org
+        - s,h-ciyuan.com
         - s,h-moe.com
         - s,h1n1china.org
         - s,h528.com
@@ -3438,6 +3443,7 @@ rule:
         - s,mansion.com
         - s,mansionpoker.com
         - s,manta.com
+        - s,manwa.me
         - s,manyvoices.news
         - s,maplew.com
         - s,marc.info
@@ -4771,6 +4777,7 @@ rule:
         - s,simpleproductivityblog.com
         - s,simpleswap.io
         - s,sinchew.com.my
+        - s,sing-box.sagernet.org
         - s,singaporepools.com.sg
         - s,singfortibet.com
         - s,singlelogin.se
@@ -4880,6 +4887,7 @@ rule:
         - s,sosad.fun
         - s,sosreader.com
         - s,sostibet.org
+        - s,sotwe.com
         - s,soubory.com
         - s,soul-plus.net
         - s,soulcaliburhentai.net
@@ -4942,6 +4950,7 @@ rule:
         - s,ssh91.com
         - s,ssl.webpack.de
         - s,ssl443.org
+        - s,ssm.fun
         - s,sspanel.net
         - s,sspro.ml
         - s,ssr.tools
@@ -5237,6 +5246,7 @@ rule:
         - s,thlib.org
         - s,thomasbernhard.org
         - s,thongdreams.com
+        - s,thotsbay.tv
         - s,threadreaderapp.com
         - s,threads.net
         - s,threatchaos.com
@@ -5734,6 +5744,7 @@ rule:
         - s,uygur.org
         - s,uymaarip.com
         - s,v2.help
+        - s,v2.hysteria.network
         - s,v2ex.com
         - s,v2fly.org
         - s,v2ray.com
