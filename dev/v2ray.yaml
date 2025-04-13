@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-04-13 03:16:55
-#! GFWList: 2025-04-12 07:50:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-04-13 12:41:28
+#! GFWList: 2025-04-13 07:09:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -249,6 +249,7 @@ routing:
         - domain:85st.com
         - domain:881903.com
         - domain:888.com
+        - domain:8888.google
         - domain:888poker.com
         - domain:89-64.org
         - domain:89.64.charter.constitutionalism.solutions
@@ -1233,6 +1234,7 @@ routing:
         - domain:cloakpoint.com
         - domain:cloud.dify.ai
         - domain:cloud.mail.ru
+        - domain:cloudflare-dns.com
         - domain:cloudflare-ipfs.com
         - domain:cloudfunctions.net
         - domain:club1069.com
@@ -1886,6 +1888,7 @@ routing:
         - domain:fangongheike.com
         - domain:fanhaodang.com
         - domain:fanhaolou.com
+        - domain:fani.com
         - domain:fanqiang.network
         - domain:fanqiang.tk
         - domain:fanqiangdang.com
@@ -1905,6 +1908,7 @@ routing:
         - domain:fastssh.com
         - domain:faststone.org
         - domain:fatbtc.com
+        - domain:favcomic.com
         - domain:fawanghuihui.org
         - domain:faydao.com
         - domain:faz.net
@@ -2642,6 +2646,7 @@ routing:
         - domain:gzm.tv
         - domain:gzone-anime.info
         - domain:h-china.org
+        - domain:h-ciyuan.com
         - domain:h-moe.com
         - domain:h1n1china.org
         - domain:h528.com
@@ -3547,6 +3552,7 @@ routing:
         - domain:mansion.com
         - domain:mansionpoker.com
         - domain:manta.com
+        - domain:manwa.me
         - domain:manyvoices.news
         - domain:maplew.com
         - domain:marc.info
@@ -4880,6 +4886,7 @@ routing:
         - domain:simpleproductivityblog.com
         - domain:simpleswap.io
         - domain:sinchew.com.my
+        - domain:sing-box.sagernet.org
         - domain:singaporepools.com.sg
         - domain:singfortibet.com
         - domain:singlelogin.se
@@ -4989,6 +4996,7 @@ routing:
         - domain:sosad.fun
         - domain:sosreader.com
         - domain:sostibet.org
+        - domain:sotwe.com
         - domain:soubory.com
         - domain:soul-plus.net
         - domain:soulcaliburhentai.net
@@ -5051,6 +5059,7 @@ routing:
         - domain:ssh91.com
         - domain:ssl.webpack.de
         - domain:ssl443.org
+        - domain:ssm.fun
         - domain:sspanel.net
         - domain:sspro.ml
         - domain:ssr.tools
@@ -5346,6 +5355,7 @@ routing:
         - domain:thlib.org
         - domain:thomasbernhard.org
         - domain:thongdreams.com
+        - domain:thotsbay.tv
         - domain:threadreaderapp.com
         - domain:threads.net
         - domain:threatchaos.com
@@ -5843,6 +5853,7 @@ routing:
         - domain:uygur.org
         - domain:uymaarip.com
         - domain:v2.help
+        - domain:v2.hysteria.network
         - domain:v2ex.com
         - domain:v2fly.org
         - domain:v2ray.com
