@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: /IYhoVTMgS6SFNqqultYcQ
+! Checksum: cMhCjC0HVz2hEbTa3hBBqQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 13 Apr 2025 15:09:40 +0800
+! Last Modified: Thu, 17 Apr 2025 20:38:12 +0800
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1518,6 +1518,57 @@ wikinews.org
 ||yahoo.com.hk
 ||yahoo.com
 ||duckduckgo-owned-server.yahoo.net
+
+!!---Zlibrary---
+z-library.sk
+go-to-library.sk
+1lib.cloud
+1lib.sk
+italian-books.sk
+1lib.cz
+1lib.domains
+1lib.education
+1lib.eu
+1lib.limited
+1lib.pl
+1lib.to
+1lib.tw
+2lib.org
+3lib.net
+art1lib.com
+b-ok.africa
+b-ok.asia
+b-ok.cc
+b-ok.global
+b-ok.org
+book4you.org
+bookfi.net
+booksc.eu
+booksc.me
+booksc.org
+booksc.xyz
+bookshome.info
+bookshome.net
+bookshome.world
+de1lib.org
+hk1lib.org
+libsolutions.app
+libsolutions.domains
+libsolutions.net
+ma1lib.org
+sg1lib.org
+singlelogin.app
+singlelogin.me
+singlelogin.re
+singlelogin.site
+z-lib.org
+z-lib.ps
+z-lib.gd
+z-lib.gs
+z-library.se
+zlib.life
+zlibcdn.com
+zlibcdn2.com
 
 !------------------Numerics---------------------
 ||8888.google

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-04-17 01:51:55
-#! GFWList: 2025-04-13 07:09:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-04-17 12:47:45
+#! GFWList: 2025-04-17 12:38:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -57,6 +57,16 @@ rule:
         - s,1dumb.com
         - s,1e100.net
         - s,1eew.com
+        - s,1lib.cloud
+        - s,1lib.cz
+        - s,1lib.domains
+        - s,1lib.education
+        - s,1lib.eu
+        - s,1lib.limited
+        - s,1lib.pl
+        - s,1lib.sk
+        - s,1lib.to
+        - s,1lib.tw
         - s,1mobile.com
         - s,1mobile.tw
         - s,1point3acres.com
@@ -76,6 +86,7 @@ rule:
         - s,24hrs.ca
         - s,24smile.org
         - s,25u.com
+        - s,2lib.org
         - s,2lipstube.com
         - s,2shared.com
         - s,2waky.com
@@ -88,6 +99,7 @@ rule:
         - s,3arabtv.com
         - s,3boys2girls.com
         - s,3d-game.com
+        - s,3lib.net
         - s,3proxy.ru
         - s,3ren.ca
         - s,3tui.net
@@ -407,6 +419,7 @@ rule:
         - s,arethusa.su
         - s,arlingtoncemetery.mil
         - s,army.mil
+        - s,art1lib.com
         - s,art4tibet1998.org
         - s,arte.tv
         - s,artofpeacefoundation.org
@@ -478,7 +491,11 @@ rule:
         - s,azirevpn.com
         - s,azubu.tv
         - s,azurewebsites.net
+        - s,b-ok.africa
+        - s,b-ok.asia
         - s,b-ok.cc
+        - s,b-ok.global
+        - s,b-ok.org
         - s,b.hatena.ne.jp
         - s,b0ne.com
         - s,babylonbee.com
@@ -732,9 +749,18 @@ rule:
         - s,boobstagram.com
         - s,book.com.tw
         - s,book.zi5.me
+        - s,book4you.org
         - s,bookdepository.com
         - s,bookepub.com
+        - s,bookfi.net
         - s,books.com.tw
+        - s,booksc.eu
+        - s,booksc.me
+        - s,booksc.org
+        - s,booksc.xyz
+        - s,bookshome.info
+        - s,bookshome.net
+        - s,bookshome.world
         - s,booktopia.com.au
         - s,bookwalker.com.tw
         - s,boomssr.com
@@ -1356,6 +1382,7 @@ rule:
         - s,ddns.net
         - s,ddns.us
         - s,de-sci.org
+        - s,de1lib.org
         - s,deadhouse.org
         - s,deadline.com
         - s,deaftone.com
@@ -2180,6 +2207,7 @@ rule:
         - s,gnci.org.hk
         - s,gnews.org
         - s,go-pki.com
+        - s,go-to-library.sk
         - s,go-to-zlibrary.se
         - s,go.nesnode.com
         - s,go141.com
@@ -2643,6 +2671,7 @@ rule:
         - s,hk.hao123img.com
         - s,hk.jiepang.com
         - s,hk01.com
+        - s,hk1lib.org
         - s,hk32168.com
         - s,hka8964.wordpress.com
         - s,hkacg.com
@@ -3003,6 +3032,7 @@ rule:
         - s,isupportuyghurs.org
         - s,itaboo.info
         - s,itaiwan.gov.tw
+        - s,italian-books.sk
         - s,italiatibet.org
         - s,itasoftware.com
         - s,itemdb.com
@@ -3305,6 +3335,9 @@ rule:
         - s,libertytimes.com.tw
         - s,library.usc.cuhk.edu.hk
         - s,libredd.it
+        - s,libsolutions.app
+        - s,libsolutions.domains
+        - s,libsolutions.net
         - s,lifemiles.com
         - s,lighten.org.tw
         - s,lighti.me
@@ -3408,6 +3441,7 @@ rule:
         - s,m.plixi.com
         - s,m.slandr.net
         - s,ma.hao123.com
+        - s,ma1lib.org
         - s,macgamestore.com
         - s,macrovpn.com
         - s,macts.com.tw
@@ -4702,6 +4736,7 @@ rule:
         - s,sfshibao.com
         - s,sftindia.org
         - s,sftuk.org
+        - s,sg1lib.org
         - s,shadeyouvpn.com
         - s,shadow.ma
         - s,shadowsky.xyz
@@ -4780,7 +4815,11 @@ rule:
         - s,sing-box.sagernet.org
         - s,singaporepools.com.sg
         - s,singfortibet.com
+        - s,singlelogin.app
+        - s,singlelogin.me
+        - s,singlelogin.re
         - s,singlelogin.se
+        - s,singlelogin.site
         - s,singpao.com.hk
         - s,singtao.com
         - s,singtaousa.com
@@ -6365,8 +6404,13 @@ rule:
         - s,yyjlymb.xyz
         - s,yysub.net
         - s,yzzk.com
+        - s,z-lib.gd
+        - s,z-lib.gs
         - s,z-lib.io
         - s,z-lib.org
+        - s,z-lib.ps
+        - s,z-library.se
+        - s,z-library.sk
         - s,zacebook.com
         - s,zalmos.com
         - s,zamimg.com
@@ -6426,6 +6470,9 @@ rule:
         - s,ziporn.com
         - s,zippyshare.com
         - s,zkaip.com
+        - s,zlib.life
+        - s,zlibcdn.com
+        - s,zlibcdn2.com
         - s,zmedia.com.tw
         - s,zmw.cn
         - s,zodgame.us
