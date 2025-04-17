@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-04-17 01:51:22
-#! GFWList: 2025-04-13 07:09:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-04-17 12:47:12
+#! GFWList: 2025-04-17 12:38:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -166,6 +166,16 @@ routing:
         - domain:1dumb.com
         - domain:1e100.net
         - domain:1eew.com
+        - domain:1lib.cloud
+        - domain:1lib.cz
+        - domain:1lib.domains
+        - domain:1lib.education
+        - domain:1lib.eu
+        - domain:1lib.limited
+        - domain:1lib.pl
+        - domain:1lib.sk
+        - domain:1lib.to
+        - domain:1lib.tw
         - domain:1mobile.com
         - domain:1mobile.tw
         - domain:1point3acres.com
@@ -185,6 +195,7 @@ routing:
         - domain:24hrs.ca
         - domain:24smile.org
         - domain:25u.com
+        - domain:2lib.org
         - domain:2lipstube.com
         - domain:2shared.com
         - domain:2waky.com
@@ -197,6 +208,7 @@ routing:
         - domain:3arabtv.com
         - domain:3boys2girls.com
         - domain:3d-game.com
+        - domain:3lib.net
         - domain:3proxy.ru
         - domain:3ren.ca
         - domain:3tui.net
@@ -516,6 +528,7 @@ routing:
         - domain:arethusa.su
         - domain:arlingtoncemetery.mil
         - domain:army.mil
+        - domain:art1lib.com
         - domain:art4tibet1998.org
         - domain:arte.tv
         - domain:artofpeacefoundation.org
@@ -587,7 +600,11 @@ routing:
         - domain:azirevpn.com
         - domain:azubu.tv
         - domain:azurewebsites.net
+        - domain:b-ok.africa
+        - domain:b-ok.asia
         - domain:b-ok.cc
+        - domain:b-ok.global
+        - domain:b-ok.org
         - domain:b.hatena.ne.jp
         - domain:b0ne.com
         - domain:babylonbee.com
@@ -841,9 +858,18 @@ routing:
         - domain:boobstagram.com
         - domain:book.com.tw
         - domain:book.zi5.me
+        - domain:book4you.org
         - domain:bookdepository.com
         - domain:bookepub.com
+        - domain:bookfi.net
         - domain:books.com.tw
+        - domain:booksc.eu
+        - domain:booksc.me
+        - domain:booksc.org
+        - domain:booksc.xyz
+        - domain:bookshome.info
+        - domain:bookshome.net
+        - domain:bookshome.world
         - domain:booktopia.com.au
         - domain:bookwalker.com.tw
         - domain:boomssr.com
@@ -1465,6 +1491,7 @@ routing:
         - domain:ddns.net
         - domain:ddns.us
         - domain:de-sci.org
+        - domain:de1lib.org
         - domain:deadhouse.org
         - domain:deadline.com
         - domain:deaftone.com
@@ -2289,6 +2316,7 @@ routing:
         - domain:gnci.org.hk
         - domain:gnews.org
         - domain:go-pki.com
+        - domain:go-to-library.sk
         - domain:go-to-zlibrary.se
         - domain:go.nesnode.com
         - domain:go141.com
@@ -2752,6 +2780,7 @@ routing:
         - domain:hk.hao123img.com
         - domain:hk.jiepang.com
         - domain:hk01.com
+        - domain:hk1lib.org
         - domain:hk32168.com
         - domain:hka8964.wordpress.com
         - domain:hkacg.com
@@ -3112,6 +3141,7 @@ routing:
         - domain:isupportuyghurs.org
         - domain:itaboo.info
         - domain:itaiwan.gov.tw
+        - domain:italian-books.sk
         - domain:italiatibet.org
         - domain:itasoftware.com
         - domain:itemdb.com
@@ -3414,6 +3444,9 @@ routing:
         - domain:libertytimes.com.tw
         - domain:library.usc.cuhk.edu.hk
         - domain:libredd.it
+        - domain:libsolutions.app
+        - domain:libsolutions.domains
+        - domain:libsolutions.net
         - domain:lifemiles.com
         - domain:lighten.org.tw
         - domain:lighti.me
@@ -3517,6 +3550,7 @@ routing:
         - domain:m.plixi.com
         - domain:m.slandr.net
         - domain:ma.hao123.com
+        - domain:ma1lib.org
         - domain:macgamestore.com
         - domain:macrovpn.com
         - domain:macts.com.tw
@@ -4811,6 +4845,7 @@ routing:
         - domain:sfshibao.com
         - domain:sftindia.org
         - domain:sftuk.org
+        - domain:sg1lib.org
         - domain:shadeyouvpn.com
         - domain:shadow.ma
         - domain:shadowsky.xyz
@@ -4889,7 +4924,11 @@ routing:
         - domain:sing-box.sagernet.org
         - domain:singaporepools.com.sg
         - domain:singfortibet.com
+        - domain:singlelogin.app
+        - domain:singlelogin.me
+        - domain:singlelogin.re
         - domain:singlelogin.se
+        - domain:singlelogin.site
         - domain:singpao.com.hk
         - domain:singtao.com
         - domain:singtaousa.com
@@ -6474,8 +6513,13 @@ routing:
         - domain:yyjlymb.xyz
         - domain:yysub.net
         - domain:yzzk.com
+        - domain:z-lib.gd
+        - domain:z-lib.gs
         - domain:z-lib.io
         - domain:z-lib.org
+        - domain:z-lib.ps
+        - domain:z-library.se
+        - domain:z-library.sk
         - domain:zacebook.com
         - domain:zalmos.com
         - domain:zamimg.com
@@ -6535,6 +6579,9 @@ routing:
         - domain:ziporn.com
         - domain:zippyshare.com
         - domain:zkaip.com
+        - domain:zlib.life
+        - domain:zlibcdn.com
+        - domain:zlibcdn2.com
         - domain:zmedia.com.tw
         - domain:zmw.cn
         - domain:zodgame.us
