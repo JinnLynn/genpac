@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-04-21 12:45:55
-#! GFWList: 2025-04-17 12:38:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-04-22 01:52:23
+#! GFWList: 2025-04-21 14:47:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -57,16 +57,6 @@ rule:
         - s,1dumb.com
         - s,1e100.net
         - s,1eew.com
-        - s,1lib.cloud
-        - s,1lib.cz
-        - s,1lib.domains
-        - s,1lib.education
-        - s,1lib.eu
-        - s,1lib.limited
-        - s,1lib.pl
-        - s,1lib.sk
-        - s,1lib.to
-        - s,1lib.tw
         - s,1mobile.com
         - s,1mobile.tw
         - s,1point3acres.com
@@ -86,7 +76,6 @@ rule:
         - s,24hrs.ca
         - s,24smile.org
         - s,25u.com
-        - s,2lib.org
         - s,2lipstube.com
         - s,2shared.com
         - s,2waky.com
@@ -99,7 +88,6 @@ rule:
         - s,3arabtv.com
         - s,3boys2girls.com
         - s,3d-game.com
-        - s,3lib.net
         - s,3proxy.ru
         - s,3ren.ca
         - s,3tui.net
@@ -152,7 +140,6 @@ rule:
         - s,85st.com
         - s,881903.com
         - s,888.com
-        - s,8888.google
         - s,888poker.com
         - s,89-64.org
         - s,89.64.charter.constitutionalism.solutions
@@ -419,7 +406,6 @@ rule:
         - s,arethusa.su
         - s,arlingtoncemetery.mil
         - s,army.mil
-        - s,art1lib.com
         - s,art4tibet1998.org
         - s,arte.tv
         - s,artofpeacefoundation.org
@@ -456,9 +442,7 @@ rule:
         - s,atnext.com
         - s,auctions.yahoo.co.jp
         - s,audacy.com
-        - s,audiomack.com
         - s,auntology.fandom.com
-        - s,auth.openai.com
         - s,authorizeddns.net
         - s,authorizeddns.org
         - s,authorizeddns.us
@@ -491,11 +475,7 @@ rule:
         - s,azirevpn.com
         - s,azubu.tv
         - s,azurewebsites.net
-        - s,b-ok.africa
-        - s,b-ok.asia
         - s,b-ok.cc
-        - s,b-ok.global
-        - s,b-ok.org
         - s,b.hatena.ne.jp
         - s,b0ne.com
         - s,babylonbee.com
@@ -749,18 +729,9 @@ rule:
         - s,boobstagram.com
         - s,book.com.tw
         - s,book.zi5.me
-        - s,book4you.org
         - s,bookdepository.com
         - s,bookepub.com
-        - s,bookfi.net
         - s,books.com.tw
-        - s,booksc.eu
-        - s,booksc.me
-        - s,booksc.org
-        - s,booksc.xyz
-        - s,bookshome.info
-        - s,bookshome.net
-        - s,bookshome.world
         - s,booktopia.com.au
         - s,bookwalker.com.tw
         - s,boomssr.com
@@ -1151,8 +1122,8 @@ rule:
         - s,cloakpoint.com
         - s,cloud.dify.ai
         - s,cloud.mail.ru
-        - s,cloudflare-dns.com
         - s,cloudflare-ipfs.com
+        - s,cloudfront.net
         - s,cloudfunctions.net
         - s,club1069.com
         - s,clubhouseapi.com
@@ -1203,7 +1174,6 @@ rule:
         - s,coin2co.in
         - s,coinbase.com
         - s,coinbene.com
-        - s,coincarp.com
         - s,coinegg.com
         - s,coinex.com
         - s,coingecko.com
@@ -1382,7 +1352,6 @@ rule:
         - s,ddns.net
         - s,ddns.us
         - s,de-sci.org
-        - s,de1lib.org
         - s,deadhouse.org
         - s,deadline.com
         - s,deaftone.com
@@ -1642,6 +1611,7 @@ rule:
         - s,emule-ed2k.com
         - s,emulefans.com
         - s,emuparadise.me
+        - s,en.favotter.net
         - s,en.hao123.com
         - s,enanyang.my
         - s,encrypt.me
@@ -1797,7 +1767,6 @@ rule:
         - s,fanbox.cc
         - s,fangbinxing.com
         - s,fangeming.com
-        - s,fangeming.comffvpn.com
         - s,fangeqiang.com
         - s,fanglizhi.info
         - s,fangmincn.org
@@ -1806,7 +1775,6 @@ rule:
         - s,fangongheike.com
         - s,fanhaodang.com
         - s,fanhaolou.com
-        - s,fani.com
         - s,fanqiang.network
         - s,fanqiang.tk
         - s,fanqiangdang.com
@@ -1821,12 +1789,13 @@ rule:
         - s,faqserv.com
         - s,fartit.com
         - s,farwestchina.com
+        - s,fast.wistia.com
         - s,fastestvpn.com
         - s,fastpic.ru
         - s,fastssh.com
         - s,faststone.org
         - s,fatbtc.com
-        - s,favcomic.com
+        - s,favstar.fm
         - s,fawanghuihui.org
         - s,faydao.com
         - s,faz.net
@@ -1837,10 +1806,14 @@ rule:
         - s,fbcdn.net
         - s,fbsbx.com
         - s,fbworkmail.com
+        - s,fc2.com
+        - s,fc2blog.net
+        - s,fc2china.com
         - s,fc2cn.com
         - s,fda.gov.tw
         - s,fdc64.de
         - s,fdc64.org
+        - s,fdc89.jp
         - s,feedburner.com
         - s,feeder.co
         - s,feeds.fileforum.com
@@ -1856,6 +1829,8 @@ rule:
         - s,fengzhenghu.net
         - s,fevernet.com
         - s,ff.im
+        - s,fffff.at
+        - s,fflick.com
         - s,ffvpn.com
         - s,fgmtv.net
         - s,fgmtv.org
@@ -2123,7 +2098,6 @@ rule:
         - s,geekheart.info
         - s,gekikame.com
         - s,gelbooru.com
-        - s,gemini.com
         - s,generated.photos
         - s,genius.com
         - s,geocities.co.jp
@@ -2207,7 +2181,6 @@ rule:
         - s,gnci.org.hk
         - s,gnews.org
         - s,go-pki.com
-        - s,go-to-library.sk
         - s,go-to-zlibrary.se
         - s,go.nesnode.com
         - s,go141.com
@@ -2493,6 +2466,7 @@ rule:
         - s,got-game.org
         - s,gotdns.ch
         - s,gotgeeks.com
+        - s,gotquestions.org
         - s,gotrusted.com
         - s,gotw.ca
         - s,gov.taipei
@@ -2565,7 +2539,6 @@ rule:
         - s,gzm.tv
         - s,gzone-anime.info
         - s,h-china.org
-        - s,h-ciyuan.com
         - s,h-moe.com
         - s,h1n1china.org
         - s,h528.com
@@ -2671,7 +2644,6 @@ rule:
         - s,hk.hao123img.com
         - s,hk.jiepang.com
         - s,hk01.com
-        - s,hk1lib.org
         - s,hk32168.com
         - s,hka8964.wordpress.com
         - s,hkacg.com
@@ -2883,6 +2855,7 @@ rule:
         - s,idemocracy.asia
         - s,identi.ca
         - s,idiomconnection.com
+        - s,idope.se
         - s,idouga.com
         - s,idreamx.com
         - s,ieasy5.com
@@ -3032,7 +3005,6 @@ rule:
         - s,isupportuyghurs.org
         - s,itaboo.info
         - s,itaiwan.gov.tw
-        - s,italian-books.sk
         - s,italiatibet.org
         - s,itasoftware.com
         - s,itemdb.com
@@ -3335,9 +3307,6 @@ rule:
         - s,libertytimes.com.tw
         - s,library.usc.cuhk.edu.hk
         - s,libredd.it
-        - s,libsolutions.app
-        - s,libsolutions.domains
-        - s,libsolutions.net
         - s,lifemiles.com
         - s,lighten.org.tw
         - s,lighti.me
@@ -3441,7 +3410,6 @@ rule:
         - s,m.plixi.com
         - s,m.slandr.net
         - s,ma.hao123.com
-        - s,ma1lib.org
         - s,macgamestore.com
         - s,macrovpn.com
         - s,macts.com.tw
@@ -3477,7 +3445,6 @@ rule:
         - s,mansion.com
         - s,mansionpoker.com
         - s,manta.com
-        - s,manwa.me
         - s,manyvoices.news
         - s,maplew.com
         - s,marc.info
@@ -4069,7 +4036,6 @@ rule:
         - s,on.cc
         - s,on2.com
         - s,onapp.com
-        - s,one.one.one.one
         - s,onedrive.com
         - s,onedrive.live.com
         - s,onedumb.com
@@ -4097,7 +4063,6 @@ rule:
         - s,open.spotify.com
         - s,openallweb.com
         - s,opendemocracy.net
-        - s,opendesktop.org
         - s,opendn.xyz
         - s,openervpn.in
         - s,openid.net
@@ -4631,7 +4596,6 @@ rule:
         - s,s3-ap-southeast-1.amazonaws.com
         - s,s3-ap-southeast-2.amazonaws.com
         - s,s3.amazonaws.com
-        - s,s3.eu-central-1.amazonaws.com
         - s,s8forum.com
         - s,sa.hao123.com
         - s,sacks.com
@@ -4736,7 +4700,6 @@ rule:
         - s,sfshibao.com
         - s,sftindia.org
         - s,sftuk.org
-        - s,sg1lib.org
         - s,shadeyouvpn.com
         - s,shadow.ma
         - s,shadowsky.xyz
@@ -4812,14 +4775,9 @@ rule:
         - s,simpleproductivityblog.com
         - s,simpleswap.io
         - s,sinchew.com.my
-        - s,sing-box.sagernet.org
         - s,singaporepools.com.sg
         - s,singfortibet.com
-        - s,singlelogin.app
-        - s,singlelogin.me
-        - s,singlelogin.re
         - s,singlelogin.se
-        - s,singlelogin.site
         - s,singpao.com.hk
         - s,singtao.com
         - s,singtaousa.com
@@ -4926,7 +4884,6 @@ rule:
         - s,sosad.fun
         - s,sosreader.com
         - s,sostibet.org
-        - s,sotwe.com
         - s,soubory.com
         - s,soul-plus.net
         - s,soulcaliburhentai.net
@@ -4989,7 +4946,6 @@ rule:
         - s,ssh91.com
         - s,ssl.webpack.de
         - s,ssl443.org
-        - s,ssm.fun
         - s,sspanel.net
         - s,sspro.ml
         - s,ssr.tools
@@ -5057,6 +5013,7 @@ rule:
         - s,stumbleupon.com
         - s,stupidvideos.com
         - s,subacme.rerouted.org
+        - s,subhd.tv
         - s,substack.com
         - s,successfn.com
         - s,suche.gmx.net
@@ -5285,7 +5242,6 @@ rule:
         - s,thlib.org
         - s,thomasbernhard.org
         - s,thongdreams.com
-        - s,thotsbay.tv
         - s,threadreaderapp.com
         - s,threads.net
         - s,threatchaos.com
@@ -5783,7 +5739,6 @@ rule:
         - s,uygur.org
         - s,uymaarip.com
         - s,v2.help
-        - s,v2.hysteria.network
         - s,v2ex.com
         - s,v2fly.org
         - s,v2ray.com
@@ -5826,6 +5781,7 @@ rule:
         - s,video.aol.co.uk
         - s,video.aol.com
         - s,video.ap.org
+        - s,video.fdbox.com
         - s,video.foxbusiness.com
         - s,videobam.com
         - s,videodetective.com
@@ -6404,13 +6360,8 @@ rule:
         - s,yyjlymb.xyz
         - s,yysub.net
         - s,yzzk.com
-        - s,z-lib.gd
-        - s,z-lib.gs
         - s,z-lib.io
         - s,z-lib.org
-        - s,z-lib.ps
-        - s,z-library.se
-        - s,z-library.sk
         - s,zacebook.com
         - s,zalmos.com
         - s,zamimg.com
@@ -6470,9 +6421,6 @@ rule:
         - s,ziporn.com
         - s,zippyshare.com
         - s,zkaip.com
-        - s,zlib.life
-        - s,zlibcdn.com
-        - s,zlibcdn2.com
         - s,zmedia.com.tw
         - s,zmw.cn
         - s,zodgame.us
