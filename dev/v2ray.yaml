@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-04-24 01:53:45
-#! GFWList: 2025-04-21 14:47:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-04-24 12:49:35
+#! GFWList: 2025-04-24 11:57:46 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -166,6 +166,16 @@ routing:
         - domain:1dumb.com
         - domain:1e100.net
         - domain:1eew.com
+        - domain:1lib.cloud
+        - domain:1lib.cz
+        - domain:1lib.domains
+        - domain:1lib.education
+        - domain:1lib.eu
+        - domain:1lib.limited
+        - domain:1lib.pl
+        - domain:1lib.sk
+        - domain:1lib.to
+        - domain:1lib.tw
         - domain:1mobile.com
         - domain:1mobile.tw
         - domain:1point3acres.com
@@ -185,6 +195,7 @@ routing:
         - domain:24hrs.ca
         - domain:24smile.org
         - domain:25u.com
+        - domain:2lib.org
         - domain:2lipstube.com
         - domain:2shared.com
         - domain:2waky.com
@@ -197,6 +208,7 @@ routing:
         - domain:3arabtv.com
         - domain:3boys2girls.com
         - domain:3d-game.com
+        - domain:3lib.net
         - domain:3proxy.ru
         - domain:3ren.ca
         - domain:3tui.net
@@ -249,6 +261,7 @@ routing:
         - domain:85st.com
         - domain:881903.com
         - domain:888.com
+        - domain:8888.google
         - domain:888poker.com
         - domain:89-64.org
         - domain:89.64.charter.constitutionalism.solutions
@@ -515,6 +528,7 @@ routing:
         - domain:arethusa.su
         - domain:arlingtoncemetery.mil
         - domain:army.mil
+        - domain:art1lib.com
         - domain:art4tibet1998.org
         - domain:arte.tv
         - domain:artofpeacefoundation.org
@@ -551,7 +565,9 @@ routing:
         - domain:atnext.com
         - domain:auctions.yahoo.co.jp
         - domain:audacy.com
+        - domain:audiomack.com
         - domain:auntology.fandom.com
+        - domain:auth.openai.com
         - domain:authorizeddns.net
         - domain:authorizeddns.org
         - domain:authorizeddns.us
@@ -584,7 +600,11 @@ routing:
         - domain:azirevpn.com
         - domain:azubu.tv
         - domain:azurewebsites.net
+        - domain:b-ok.africa
+        - domain:b-ok.asia
         - domain:b-ok.cc
+        - domain:b-ok.global
+        - domain:b-ok.org
         - domain:b.hatena.ne.jp
         - domain:b0ne.com
         - domain:babylonbee.com
@@ -838,9 +858,18 @@ routing:
         - domain:boobstagram.com
         - domain:book.com.tw
         - domain:book.zi5.me
+        - domain:book4you.org
         - domain:bookdepository.com
         - domain:bookepub.com
+        - domain:bookfi.net
         - domain:books.com.tw
+        - domain:booksc.eu
+        - domain:booksc.me
+        - domain:booksc.org
+        - domain:booksc.xyz
+        - domain:bookshome.info
+        - domain:bookshome.net
+        - domain:bookshome.world
         - domain:booktopia.com.au
         - domain:bookwalker.com.tw
         - domain:boomssr.com
@@ -1231,8 +1260,8 @@ routing:
         - domain:cloakpoint.com
         - domain:cloud.dify.ai
         - domain:cloud.mail.ru
+        - domain:cloudflare-dns.com
         - domain:cloudflare-ipfs.com
-        - domain:cloudfront.net
         - domain:cloudfunctions.net
         - domain:club1069.com
         - domain:clubhouseapi.com
@@ -1283,6 +1312,7 @@ routing:
         - domain:coin2co.in
         - domain:coinbase.com
         - domain:coinbene.com
+        - domain:coincarp.com
         - domain:coinegg.com
         - domain:coinex.com
         - domain:coingecko.com
@@ -1461,6 +1491,7 @@ routing:
         - domain:ddns.net
         - domain:ddns.us
         - domain:de-sci.org
+        - domain:de1lib.org
         - domain:deadhouse.org
         - domain:deadline.com
         - domain:deaftone.com
@@ -1615,7 +1646,6 @@ routing:
         - domain:duanzhihu.com
         - domain:dubox.com
         - domain:duck.com
-        - domain:duckdns.org
         - domain:duckduckgo-owned-server.yahoo.net
         - domain:duckduckgo.com
         - domain:duckload.com
@@ -1720,7 +1750,6 @@ routing:
         - domain:emule-ed2k.com
         - domain:emulefans.com
         - domain:emuparadise.me
-        - domain:en.favotter.net
         - domain:en.hao123.com
         - domain:enanyang.my
         - domain:encrypt.me
@@ -1876,6 +1905,7 @@ routing:
         - domain:fanbox.cc
         - domain:fangbinxing.com
         - domain:fangeming.com
+        - domain:fangeming.comffvpn.com
         - domain:fangeqiang.com
         - domain:fanglizhi.info
         - domain:fangmincn.org
@@ -1884,6 +1914,7 @@ routing:
         - domain:fangongheike.com
         - domain:fanhaodang.com
         - domain:fanhaolou.com
+        - domain:fani.com
         - domain:fanqiang.network
         - domain:fanqiang.tk
         - domain:fanqiangdang.com
@@ -1898,13 +1929,12 @@ routing:
         - domain:faqserv.com
         - domain:fartit.com
         - domain:farwestchina.com
-        - domain:fast.wistia.com
         - domain:fastestvpn.com
         - domain:fastpic.ru
         - domain:fastssh.com
         - domain:faststone.org
         - domain:fatbtc.com
-        - domain:favstar.fm
+        - domain:favcomic.com
         - domain:fawanghuihui.org
         - domain:faydao.com
         - domain:faz.net
@@ -1915,14 +1945,10 @@ routing:
         - domain:fbcdn.net
         - domain:fbsbx.com
         - domain:fbworkmail.com
-        - domain:fc2.com
-        - domain:fc2blog.net
-        - domain:fc2china.com
         - domain:fc2cn.com
         - domain:fda.gov.tw
         - domain:fdc64.de
         - domain:fdc64.org
-        - domain:fdc89.jp
         - domain:feedburner.com
         - domain:feeder.co
         - domain:feeds.fileforum.com
@@ -1938,8 +1964,6 @@ routing:
         - domain:fengzhenghu.net
         - domain:fevernet.com
         - domain:ff.im
-        - domain:fffff.at
-        - domain:fflick.com
         - domain:ffvpn.com
         - domain:fgmtv.net
         - domain:fgmtv.org
@@ -2207,6 +2231,7 @@ routing:
         - domain:geekheart.info
         - domain:gekikame.com
         - domain:gelbooru.com
+        - domain:gemini.com
         - domain:generated.photos
         - domain:genius.com
         - domain:geocities.co.jp
@@ -2290,6 +2315,7 @@ routing:
         - domain:gnci.org.hk
         - domain:gnews.org
         - domain:go-pki.com
+        - domain:go-to-library.sk
         - domain:go-to-zlibrary.se
         - domain:go.nesnode.com
         - domain:go141.com
@@ -2575,7 +2601,6 @@ routing:
         - domain:got-game.org
         - domain:gotdns.ch
         - domain:gotgeeks.com
-        - domain:gotquestions.org
         - domain:gotrusted.com
         - domain:gotw.ca
         - domain:gov.taipei
@@ -2648,6 +2673,7 @@ routing:
         - domain:gzm.tv
         - domain:gzone-anime.info
         - domain:h-china.org
+        - domain:h-ciyuan.com
         - domain:h-moe.com
         - domain:h1n1china.org
         - domain:h528.com
@@ -2753,6 +2779,7 @@ routing:
         - domain:hk.hao123img.com
         - domain:hk.jiepang.com
         - domain:hk01.com
+        - domain:hk1lib.org
         - domain:hk32168.com
         - domain:hka8964.wordpress.com
         - domain:hkacg.com
@@ -2964,7 +2991,6 @@ routing:
         - domain:idemocracy.asia
         - domain:identi.ca
         - domain:idiomconnection.com
-        - domain:idope.se
         - domain:idouga.com
         - domain:idreamx.com
         - domain:ieasy5.com
@@ -3114,6 +3140,7 @@ routing:
         - domain:isupportuyghurs.org
         - domain:itaboo.info
         - domain:itaiwan.gov.tw
+        - domain:italian-books.sk
         - domain:italiatibet.org
         - domain:itasoftware.com
         - domain:itemdb.com
@@ -3416,6 +3443,9 @@ routing:
         - domain:libertytimes.com.tw
         - domain:library.usc.cuhk.edu.hk
         - domain:libredd.it
+        - domain:libsolutions.app
+        - domain:libsolutions.domains
+        - domain:libsolutions.net
         - domain:lifemiles.com
         - domain:lighten.org.tw
         - domain:lighti.me
@@ -3519,6 +3549,7 @@ routing:
         - domain:m.plixi.com
         - domain:m.slandr.net
         - domain:ma.hao123.com
+        - domain:ma1lib.org
         - domain:macgamestore.com
         - domain:macrovpn.com
         - domain:macts.com.tw
@@ -3554,6 +3585,7 @@ routing:
         - domain:mansion.com
         - domain:mansionpoker.com
         - domain:manta.com
+        - domain:manwa.me
         - domain:manyvoices.news
         - domain:maplew.com
         - domain:marc.info
@@ -3936,6 +3968,7 @@ routing:
         - domain:news.cnyes.com
         - domain:news.ebc.net.tw
         - domain:news.msn.com.tw
+        - domain:news.mt.co.kr
         - domain:news.nationalgeographic.com
         - domain:news.omy.sg
         - domain:news.seehua.com
@@ -4145,6 +4178,7 @@ routing:
         - domain:on.cc
         - domain:on2.com
         - domain:onapp.com
+        - domain:one.one.one.one
         - domain:onedrive.com
         - domain:onedrive.live.com
         - domain:onedumb.com
@@ -4172,6 +4206,7 @@ routing:
         - domain:open.spotify.com
         - domain:openallweb.com
         - domain:opendemocracy.net
+        - domain:opendesktop.org
         - domain:opendn.xyz
         - domain:openervpn.in
         - domain:openid.net
@@ -4692,6 +4727,7 @@ routing:
         - domain:rusvpn.com
         - domain:ruten.com.tw
         - domain:rutracker.net
+        - domain:rutracker.org
         - domain:rutube.ru
         - domain:ruyiseek.com
         - domain:rxhj.net
@@ -4705,6 +4741,7 @@ routing:
         - domain:s3-ap-southeast-1.amazonaws.com
         - domain:s3-ap-southeast-2.amazonaws.com
         - domain:s3.amazonaws.com
+        - domain:s3.eu-central-1.amazonaws.com
         - domain:s8forum.com
         - domain:sa.hao123.com
         - domain:sacks.com
@@ -4809,6 +4846,7 @@ routing:
         - domain:sfshibao.com
         - domain:sftindia.org
         - domain:sftuk.org
+        - domain:sg1lib.org
         - domain:shadeyouvpn.com
         - domain:shadow.ma
         - domain:shadowsky.xyz
@@ -4884,9 +4922,14 @@ routing:
         - domain:simpleproductivityblog.com
         - domain:simpleswap.io
         - domain:sinchew.com.my
+        - domain:sing-box.sagernet.org
         - domain:singaporepools.com.sg
         - domain:singfortibet.com
+        - domain:singlelogin.app
+        - domain:singlelogin.me
+        - domain:singlelogin.re
         - domain:singlelogin.se
+        - domain:singlelogin.site
         - domain:singpao.com.hk
         - domain:singtao.com
         - domain:singtaousa.com
@@ -4993,6 +5036,7 @@ routing:
         - domain:sosad.fun
         - domain:sosreader.com
         - domain:sostibet.org
+        - domain:sotwe.com
         - domain:soubory.com
         - domain:soul-plus.net
         - domain:soulcaliburhentai.net
@@ -5055,6 +5099,7 @@ routing:
         - domain:ssh91.com
         - domain:ssl.webpack.de
         - domain:ssl443.org
+        - domain:ssm.fun
         - domain:sspanel.net
         - domain:sspro.ml
         - domain:ssr.tools
@@ -5122,7 +5167,6 @@ routing:
         - domain:stumbleupon.com
         - domain:stupidvideos.com
         - domain:subacme.rerouted.org
-        - domain:subhd.tv
         - domain:substack.com
         - domain:successfn.com
         - domain:suche.gmx.net
@@ -5351,6 +5395,7 @@ routing:
         - domain:thlib.org
         - domain:thomasbernhard.org
         - domain:thongdreams.com
+        - domain:thotsbay.tv
         - domain:threadreaderapp.com
         - domain:threads.net
         - domain:threatchaos.com
@@ -5848,6 +5893,7 @@ routing:
         - domain:uygur.org
         - domain:uymaarip.com
         - domain:v2.help
+        - domain:v2.hysteria.network
         - domain:v2ex.com
         - domain:v2fly.org
         - domain:v2ray.com
@@ -5890,7 +5936,6 @@ routing:
         - domain:video.aol.co.uk
         - domain:video.aol.com
         - domain:video.ap.org
-        - domain:video.fdbox.com
         - domain:video.foxbusiness.com
         - domain:videobam.com
         - domain:videodetective.com
@@ -6469,8 +6514,13 @@ routing:
         - domain:yyjlymb.xyz
         - domain:yysub.net
         - domain:yzzk.com
+        - domain:z-lib.gd
+        - domain:z-lib.gs
         - domain:z-lib.io
         - domain:z-lib.org
+        - domain:z-lib.ps
+        - domain:z-library.se
+        - domain:z-library.sk
         - domain:zacebook.com
         - domain:zalmos.com
         - domain:zamimg.com
@@ -6530,6 +6580,9 @@ routing:
         - domain:ziporn.com
         - domain:zippyshare.com
         - domain:zkaip.com
+        - domain:zlib.life
+        - domain:zlibcdn.com
+        - domain:zlibcdn2.com
         - domain:zmedia.com.tw
         - domain:zmw.cn
         - domain:zodgame.us
