@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-05-04 02:04:24
- * GFWList Last-Modified: 2025-05-03 04:36:56
+ * Generated: 2025-05-04 12:43:20
+ * GFWList Last-Modified: 2025-05-04 02:29:11
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1080,7 +1080,6 @@ var rules = [
             "chapm25.com",
             "character.ai",
             "chat.lmsys.org",
-            "chat.openai.com",
             "chatgpt.com",
             "chatnook.com",
             "chaturbate.com",
@@ -1525,6 +1524,7 @@ var rules = [
             "dish.com",
             "disk.yandex.com",
             "disk.yandex.ru",
+            "disneyplus.com",
             "disp.cc",
             "disqus.com",
             "dit-inc.us",
@@ -1902,6 +1902,7 @@ var rules = [
             "faqserv.com",
             "fartit.com",
             "farwestchina.com",
+            "fast.com",
             "fast.wistia.com",
             "fastestvpn.com",
             "fastpic.ru",
@@ -2668,6 +2669,7 @@ var rules = [
             "halktv.com.tr",
             "handcraftedsoftware.org",
             "hanime.tv",
+            "hanime1.me",
             "hanunyi.com",
             "hao.news",
             "happy-vpn.com",
@@ -3703,6 +3705,7 @@ var rules = [
             "mirrorbooks.com",
             "mirrormedia.mg",
             "missav.com",
+            "missav.ws",
             "mist.vip",
             "mitao.com.tw",
             "mitbbs.com",
@@ -4175,7 +4178,7 @@ var rules = [
             "oopsforum.com",
             "open.com.hk",
             "open.firstory.me",
-            "open.spotify.com",
+            "openai.com",
             "openallweb.com",
             "opendemocracy.net",
             "opendn.xyz",
@@ -4890,6 +4893,7 @@ var rules = [
             "simplecd.org",
             "simpleproductivityblog.com",
             "simpleswap.io",
+            "simplex.chat",
             "sinchew.com.my",
             "singaporepools.com.sg",
             "singfortibet.com",
@@ -5039,6 +5043,7 @@ var rules = [
             "spike.com",
             "sports.williamhill.com",
             "spotflux.com",
+            "spotify.com",
             "spreadsheet.new",
             "spreadshirt.es",
             "spreaker.com",
@@ -5280,6 +5285,7 @@ var rules = [
             "teensinasia.com",
             "tehrantimes.com",
             "telecomspace.com",
+            "telega.one",
             "telegra.ph",
             "telegram-cdn.org",
             "telegram.dog",
@@ -5289,6 +5295,7 @@ var rules = [
             "telegramdownload.com",
             "telegraph.co.uk",
             "telesco.pe",
+            "tellapart.com",
             "tellme.pw",
             "tenacy.com",
             "tenor.com",
@@ -5302,6 +5309,7 @@ var rules = [
             "tfhub.dev",
             "tfiflve.com",
             "tg-me.com",
+            "tg.dev",
             "th.hao123.com",
             "thaicn.com",
             "thb.gov.tw",
@@ -5733,6 +5741,7 @@ var rules = [
             "twttr.com",
             "twurl.nl",
             "twyac.org",
+            "tx.me",
             "txxx.com",
             "tycool.com",
             "typepad.com",
@@ -6541,6 +6550,7 @@ var rules = [
             "zmedia.com.tw",
             "zmw.cn",
             "zodgame.us",
+            "zodgame.xyz",
             "zomobo.net",
             "zonaeuropa.com",
             "zonghexinwen.com",

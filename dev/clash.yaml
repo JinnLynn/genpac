@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-04 02:04:27
-#! GFWList: 2025-05-03 04:36:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-04 12:43:23
+#! GFWList: 2025-05-04 02:29:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -1073,7 +1073,6 @@ rules:
   - DOMAIN-SUFFIX,chapm25.com,PROXY
   - DOMAIN-SUFFIX,character.ai,PROXY
   - DOMAIN-SUFFIX,chat.lmsys.org,PROXY
-  - DOMAIN-SUFFIX,chat.openai.com,PROXY
   - DOMAIN-SUFFIX,chatgpt.com,PROXY
   - DOMAIN-SUFFIX,chatnook.com,PROXY
   - DOMAIN-SUFFIX,chaturbate.com,PROXY
@@ -1518,6 +1517,7 @@ rules:
   - DOMAIN-SUFFIX,dish.com,PROXY
   - DOMAIN-SUFFIX,disk.yandex.com,PROXY
   - DOMAIN-SUFFIX,disk.yandex.ru,PROXY
+  - DOMAIN-SUFFIX,disneyplus.com,PROXY
   - DOMAIN-SUFFIX,disp.cc,PROXY
   - DOMAIN-SUFFIX,disqus.com,PROXY
   - DOMAIN-SUFFIX,dit-inc.us,PROXY
@@ -1895,6 +1895,7 @@ rules:
   - DOMAIN-SUFFIX,faqserv.com,PROXY
   - DOMAIN-SUFFIX,fartit.com,PROXY
   - DOMAIN-SUFFIX,farwestchina.com,PROXY
+  - DOMAIN-SUFFIX,fast.com,PROXY
   - DOMAIN-SUFFIX,fast.wistia.com,PROXY
   - DOMAIN-SUFFIX,fastestvpn.com,PROXY
   - DOMAIN-SUFFIX,fastpic.ru,PROXY
@@ -2661,6 +2662,7 @@ rules:
   - DOMAIN-SUFFIX,halktv.com.tr,PROXY
   - DOMAIN-SUFFIX,handcraftedsoftware.org,PROXY
   - DOMAIN-SUFFIX,hanime.tv,PROXY
+  - DOMAIN-SUFFIX,hanime1.me,PROXY
   - DOMAIN-SUFFIX,hanunyi.com,PROXY
   - DOMAIN-SUFFIX,hao.news,PROXY
   - DOMAIN-SUFFIX,happy-vpn.com,PROXY
@@ -3696,6 +3698,7 @@ rules:
   - DOMAIN-SUFFIX,mirrorbooks.com,PROXY
   - DOMAIN-SUFFIX,mirrormedia.mg,PROXY
   - DOMAIN-SUFFIX,missav.com,PROXY
+  - DOMAIN-SUFFIX,missav.ws,PROXY
   - DOMAIN-SUFFIX,mist.vip,PROXY
   - DOMAIN-SUFFIX,mitao.com.tw,PROXY
   - DOMAIN-SUFFIX,mitbbs.com,PROXY
@@ -4168,7 +4171,7 @@ rules:
   - DOMAIN-SUFFIX,oopsforum.com,PROXY
   - DOMAIN-SUFFIX,open.com.hk,PROXY
   - DOMAIN-SUFFIX,open.firstory.me,PROXY
-  - DOMAIN-SUFFIX,open.spotify.com,PROXY
+  - DOMAIN-SUFFIX,openai.com,PROXY
   - DOMAIN-SUFFIX,openallweb.com,PROXY
   - DOMAIN-SUFFIX,opendemocracy.net,PROXY
   - DOMAIN-SUFFIX,opendn.xyz,PROXY
@@ -4883,6 +4886,7 @@ rules:
   - DOMAIN-SUFFIX,simplecd.org,PROXY
   - DOMAIN-SUFFIX,simpleproductivityblog.com,PROXY
   - DOMAIN-SUFFIX,simpleswap.io,PROXY
+  - DOMAIN-SUFFIX,simplex.chat,PROXY
   - DOMAIN-SUFFIX,sinchew.com.my,PROXY
   - DOMAIN-SUFFIX,singaporepools.com.sg,PROXY
   - DOMAIN-SUFFIX,singfortibet.com,PROXY
@@ -5032,6 +5036,7 @@ rules:
   - DOMAIN-SUFFIX,spike.com,PROXY
   - DOMAIN-SUFFIX,sports.williamhill.com,PROXY
   - DOMAIN-SUFFIX,spotflux.com,PROXY
+  - DOMAIN-SUFFIX,spotify.com,PROXY
   - DOMAIN-SUFFIX,spreadsheet.new,PROXY
   - DOMAIN-SUFFIX,spreadshirt.es,PROXY
   - DOMAIN-SUFFIX,spreaker.com,PROXY
@@ -5273,6 +5278,7 @@ rules:
   - DOMAIN-SUFFIX,teensinasia.com,PROXY
   - DOMAIN-SUFFIX,tehrantimes.com,PROXY
   - DOMAIN-SUFFIX,telecomspace.com,PROXY
+  - DOMAIN-SUFFIX,telega.one,PROXY
   - DOMAIN-SUFFIX,telegra.ph,PROXY
   - DOMAIN-SUFFIX,telegram-cdn.org,PROXY
   - DOMAIN-SUFFIX,telegram.dog,PROXY
@@ -5282,6 +5288,7 @@ rules:
   - DOMAIN-SUFFIX,telegramdownload.com,PROXY
   - DOMAIN-SUFFIX,telegraph.co.uk,PROXY
   - DOMAIN-SUFFIX,telesco.pe,PROXY
+  - DOMAIN-SUFFIX,tellapart.com,PROXY
   - DOMAIN-SUFFIX,tellme.pw,PROXY
   - DOMAIN-SUFFIX,tenacy.com,PROXY
   - DOMAIN-SUFFIX,tenor.com,PROXY
@@ -5295,6 +5302,7 @@ rules:
   - DOMAIN-SUFFIX,tfhub.dev,PROXY
   - DOMAIN-SUFFIX,tfiflve.com,PROXY
   - DOMAIN-SUFFIX,tg-me.com,PROXY
+  - DOMAIN-SUFFIX,tg.dev,PROXY
   - DOMAIN-SUFFIX,th.hao123.com,PROXY
   - DOMAIN-SUFFIX,thaicn.com,PROXY
   - DOMAIN-SUFFIX,thb.gov.tw,PROXY
@@ -5726,6 +5734,7 @@ rules:
   - DOMAIN-SUFFIX,twttr.com,PROXY
   - DOMAIN-SUFFIX,twurl.nl,PROXY
   - DOMAIN-SUFFIX,twyac.org,PROXY
+  - DOMAIN-SUFFIX,tx.me,PROXY
   - DOMAIN-SUFFIX,txxx.com,PROXY
   - DOMAIN-SUFFIX,tycool.com,PROXY
   - DOMAIN-SUFFIX,typepad.com,PROXY
@@ -6534,6 +6543,7 @@ rules:
   - DOMAIN-SUFFIX,zmedia.com.tw,PROXY
   - DOMAIN-SUFFIX,zmw.cn,PROXY
   - DOMAIN-SUFFIX,zodgame.us,PROXY
+  - DOMAIN-SUFFIX,zodgame.xyz,PROXY
   - DOMAIN-SUFFIX,zomobo.net,PROXY
   - DOMAIN-SUFFIX,zonaeuropa.com,PROXY
   - DOMAIN-SUFFIX,zonghexinwen.com,PROXY

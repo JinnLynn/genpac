@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-04 02:04:25
-#! GFWList: 2025-05-03 04:36:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-04 12:43:21
+#! GFWList: 2025-05-04 02:29:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1075,7 +1075,6 @@ routing:
         - domain:chapm25.com
         - domain:character.ai
         - domain:chat.lmsys.org
-        - domain:chat.openai.com
         - domain:chatgpt.com
         - domain:chatnook.com
         - domain:chaturbate.com
@@ -1520,6 +1519,7 @@ routing:
         - domain:dish.com
         - domain:disk.yandex.com
         - domain:disk.yandex.ru
+        - domain:disneyplus.com
         - domain:disp.cc
         - domain:disqus.com
         - domain:dit-inc.us
@@ -1897,6 +1897,7 @@ routing:
         - domain:faqserv.com
         - domain:fartit.com
         - domain:farwestchina.com
+        - domain:fast.com
         - domain:fast.wistia.com
         - domain:fastestvpn.com
         - domain:fastpic.ru
@@ -2663,6 +2664,7 @@ routing:
         - domain:halktv.com.tr
         - domain:handcraftedsoftware.org
         - domain:hanime.tv
+        - domain:hanime1.me
         - domain:hanunyi.com
         - domain:hao.news
         - domain:happy-vpn.com
@@ -3698,6 +3700,7 @@ routing:
         - domain:mirrorbooks.com
         - domain:mirrormedia.mg
         - domain:missav.com
+        - domain:missav.ws
         - domain:mist.vip
         - domain:mitao.com.tw
         - domain:mitbbs.com
@@ -4170,7 +4173,7 @@ routing:
         - domain:oopsforum.com
         - domain:open.com.hk
         - domain:open.firstory.me
-        - domain:open.spotify.com
+        - domain:openai.com
         - domain:openallweb.com
         - domain:opendemocracy.net
         - domain:opendn.xyz
@@ -4885,6 +4888,7 @@ routing:
         - domain:simplecd.org
         - domain:simpleproductivityblog.com
         - domain:simpleswap.io
+        - domain:simplex.chat
         - domain:sinchew.com.my
         - domain:singaporepools.com.sg
         - domain:singfortibet.com
@@ -5034,6 +5038,7 @@ routing:
         - domain:spike.com
         - domain:sports.williamhill.com
         - domain:spotflux.com
+        - domain:spotify.com
         - domain:spreadsheet.new
         - domain:spreadshirt.es
         - domain:spreaker.com
@@ -5275,6 +5280,7 @@ routing:
         - domain:teensinasia.com
         - domain:tehrantimes.com
         - domain:telecomspace.com
+        - domain:telega.one
         - domain:telegra.ph
         - domain:telegram-cdn.org
         - domain:telegram.dog
@@ -5284,6 +5290,7 @@ routing:
         - domain:telegramdownload.com
         - domain:telegraph.co.uk
         - domain:telesco.pe
+        - domain:tellapart.com
         - domain:tellme.pw
         - domain:tenacy.com
         - domain:tenor.com
@@ -5297,6 +5304,7 @@ routing:
         - domain:tfhub.dev
         - domain:tfiflve.com
         - domain:tg-me.com
+        - domain:tg.dev
         - domain:th.hao123.com
         - domain:thaicn.com
         - domain:thb.gov.tw
@@ -5728,6 +5736,7 @@ routing:
         - domain:twttr.com
         - domain:twurl.nl
         - domain:twyac.org
+        - domain:tx.me
         - domain:txxx.com
         - domain:tycool.com
         - domain:typepad.com
@@ -6536,6 +6545,7 @@ routing:
         - domain:zmedia.com.tw
         - domain:zmw.cn
         - domain:zodgame.us
+        - domain:zodgame.xyz
         - domain:zomobo.net
         - domain:zonaeuropa.com
         - domain:zonghexinwen.com

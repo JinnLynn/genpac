@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: wQiw1JgeFQvpSO2Nc23qqA
+! Checksum: eI80QJjHP4QAczje6L7QPw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 03 May 2025 12:36:56 +0800
+! Last Modified: Sun, 04 May 2025 02:29:11 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -213,7 +213,7 @@
 !--We are confused as well
 ||ontrac.com
 @@|http://blog.ontrac.com
-||chat.openai.com
+||openai.com
 ||pandora.com
 .pandora.tv
 ||parkansky.com
@@ -239,7 +239,7 @@
 ||sm-miracle.com
 ||softnology.biz
 ||soylentnews.org
-||open.spotify.com
+||spotify.com
 ||spreadshirt.es
 ||springboardplatform.com
 ||sprite.org
@@ -1231,6 +1231,9 @@ cn.nytstyle.com
 ||steamstatic.com
 !!---Telegram---
 !!!---Domain---
+||tx.me
+||tg.dev
+||telega.one
 ||cdn-telegram.org
 ||comments.app
 ||graph.org
@@ -2775,6 +2778,7 @@ cytode.us
 ||nic.cz.cc
 
 !--------------------DD-------------------------
+||disneyplus.com
 ||ddex.io
 ||d.cash
 ||doubiyunbackup.com
@@ -3206,6 +3210,7 @@ eyevio.jp
 .ezpeer.com
 
 !--------------------FF-------------------------
+||fast.com
 ||factchecklab.org
 ||ft.com
 ||fuchsia.dev
@@ -4061,6 +4066,7 @@ guruonline.hk
 .gyatsostudio.com
 
 !--------------------HH-------------------------
+||hanime1.me
 ||halktv.com.tr
 ||haiwaikan.com
 ||home.saxo
@@ -5039,6 +5045,7 @@ lvhai.org
 ||lzmtnews.org
 
 !--------------------MM-------------------------
+||missav.ws
 ||news.mt.co.kr
 ||musixmatch.com
 ||mergersandinquisitions.com
@@ -6245,6 +6252,7 @@ rutube.ru
 |http://rxhj.net
 
 !--------------------SS-------------------------
+||simplex.chat
 ||soundon.fm
 ||ssrtool.com
 ||ssrshare.us
@@ -6758,6 +6766,7 @@ blog.syx86.cn/2009/09/puff
 .szetowah.org.hk
 
 !--------------------TT-------------------------
+||tellapart.com
 ||threads.com
 ||tg-me.com
 ||twkan.com
@@ -8122,6 +8131,7 @@ yx51.net
 ||yzzk.com
 
 !--------------------ZZ-------------------------
+||zodgame.xyz
 ||zhongzidi.com
 ||zooqle.com
 ||z-lib.io
