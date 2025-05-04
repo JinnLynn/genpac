@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-04 02:03:58
-#! GFWList: 2025-05-03 04:36:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-04 12:42:57
+#! GFWList: 2025-05-04 02:29:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -966,7 +966,6 @@ rule:
         - s,chapm25.com
         - s,character.ai
         - s,chat.lmsys.org
-        - s,chat.openai.com
         - s,chatgpt.com
         - s,chatnook.com
         - s,chaturbate.com
@@ -1411,6 +1410,7 @@ rule:
         - s,dish.com
         - s,disk.yandex.com
         - s,disk.yandex.ru
+        - s,disneyplus.com
         - s,disp.cc
         - s,disqus.com
         - s,dit-inc.us
@@ -1788,6 +1788,7 @@ rule:
         - s,faqserv.com
         - s,fartit.com
         - s,farwestchina.com
+        - s,fast.com
         - s,fast.wistia.com
         - s,fastestvpn.com
         - s,fastpic.ru
@@ -2554,6 +2555,7 @@ rule:
         - s,halktv.com.tr
         - s,handcraftedsoftware.org
         - s,hanime.tv
+        - s,hanime1.me
         - s,hanunyi.com
         - s,hao.news
         - s,happy-vpn.com
@@ -3589,6 +3591,7 @@ rule:
         - s,mirrorbooks.com
         - s,mirrormedia.mg
         - s,missav.com
+        - s,missav.ws
         - s,mist.vip
         - s,mitao.com.tw
         - s,mitbbs.com
@@ -4061,7 +4064,7 @@ rule:
         - s,oopsforum.com
         - s,open.com.hk
         - s,open.firstory.me
-        - s,open.spotify.com
+        - s,openai.com
         - s,openallweb.com
         - s,opendemocracy.net
         - s,opendn.xyz
@@ -4776,6 +4779,7 @@ rule:
         - s,simplecd.org
         - s,simpleproductivityblog.com
         - s,simpleswap.io
+        - s,simplex.chat
         - s,sinchew.com.my
         - s,singaporepools.com.sg
         - s,singfortibet.com
@@ -4925,6 +4929,7 @@ rule:
         - s,spike.com
         - s,sports.williamhill.com
         - s,spotflux.com
+        - s,spotify.com
         - s,spreadsheet.new
         - s,spreadshirt.es
         - s,spreaker.com
@@ -5166,6 +5171,7 @@ rule:
         - s,teensinasia.com
         - s,tehrantimes.com
         - s,telecomspace.com
+        - s,telega.one
         - s,telegra.ph
         - s,telegram-cdn.org
         - s,telegram.dog
@@ -5175,6 +5181,7 @@ rule:
         - s,telegramdownload.com
         - s,telegraph.co.uk
         - s,telesco.pe
+        - s,tellapart.com
         - s,tellme.pw
         - s,tenacy.com
         - s,tenor.com
@@ -5188,6 +5195,7 @@ rule:
         - s,tfhub.dev
         - s,tfiflve.com
         - s,tg-me.com
+        - s,tg.dev
         - s,th.hao123.com
         - s,thaicn.com
         - s,thb.gov.tw
@@ -5619,6 +5627,7 @@ rule:
         - s,twttr.com
         - s,twurl.nl
         - s,twyac.org
+        - s,tx.me
         - s,txxx.com
         - s,tycool.com
         - s,typepad.com
@@ -6427,6 +6436,7 @@ rule:
         - s,zmedia.com.tw
         - s,zmw.cn
         - s,zodgame.us
+        - s,zodgame.xyz
         - s,zomobo.net
         - s,zonaeuropa.com
         - s,zonghexinwen.com
