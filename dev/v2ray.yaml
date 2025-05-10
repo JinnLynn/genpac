@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-10 01:51:40
-#! GFWList: 2025-05-04 02:29:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-10 12:42:44
+#! GFWList: 2025-05-10 11:14:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -166,6 +166,7 @@ routing:
         - domain:1dumb.com
         - domain:1e100.net
         - domain:1eew.com
+        - domain:1lib.sk
         - domain:1mobile.com
         - domain:1mobile.tw
         - domain:1point3acres.com
@@ -338,7 +339,6 @@ routing:
         - domain:ai-kan.net
         - domain:ai-wen.net
         - domain:ai.binwang.me
-        - domain:ai.google
         - domain:aiosearch.com
         - domain:aiph.net
         - domain:airasia.com
@@ -1554,6 +1554,7 @@ routing:
         - domain:dnvod.tv
         - domain:doc.new
         - domain:docker.com
+        - domain:docker.io
         - domain:docs.new
         - domain:doctorvoice.org
         - domain:documentingreality.com
@@ -2287,6 +2288,7 @@ routing:
         - domain:gmll.org
         - domain:gmodules.com
         - domain:gmozomg.izihost.org
+        - domain:gmp4.com
         - domain:gnci.org.hk
         - domain:gnews.org
         - domain:go-pki.com
@@ -2935,6 +2937,7 @@ routing:
         - domain:i-cable.com
         - domain:i-part.com.tw
         - domain:i-scmp.com
+        - domain:i.111666.best
         - domain:i.lithium.com
         - domain:i1.hk
         - domain:i2p2.de
@@ -4149,6 +4152,7 @@ routing:
         - domain:on.cc
         - domain:on2.com
         - domain:onapp.com
+        - domain:one.one.one.one
         - domain:onedrive.com
         - domain:onedrive.live.com
         - domain:onedumb.com
@@ -4358,6 +4362,7 @@ routing:
         - domain:pkuanvil.com
         - domain:placemix.com
         - domain:play-asia.com
+        - domain:play.google
         - domain:playboy.com
         - domain:playboyplus.com
         - domain:player.fm
@@ -4494,6 +4499,7 @@ routing:
         - domain:punyu.com
         - domain:pure18.com
         - domain:pureconcepts.net
+        - domain:puredns.org
         - domain:pureinsight.org
         - domain:purepdf.com
         - domain:purevpn.com
@@ -4527,6 +4533,7 @@ routing:
         - domain:qiwen.lu
         - domain:qixianglu.cn
         - domain:qkshare.com
+        - domain:qmp4.com
         - domain:qoos.com
         - domain:qpoe.com
         - domain:qq.co.za
@@ -4686,10 +4693,12 @@ routing:
         - domain:rthklive2-lh.akamaihd.net
         - domain:rti.org.tw
         - domain:rti.tw
+        - domain:rtm.tnt-ea.com
         - domain:rtycminnesota.org
         - domain:ruanyifeng.com
         - domain:rukor.org
         - domain:rule34.xxx
+        - domain:rule34video.com
         - domain:rumble.com
         - domain:runbtx.com
         - domain:rushbee.com
@@ -6481,8 +6490,13 @@ routing:
         - domain:yyjlymb.xyz
         - domain:yysub.net
         - domain:yzzk.com
+        - domain:z-lib.fm
+        - domain:z-lib.fo
+        - domain:z-lib.gd
+        - domain:z-lib.gl
         - domain:z-lib.io
         - domain:z-lib.org
+        - domain:z-library.sk
         - domain:zacebook.com
         - domain:zalmos.com
         - domain:zamimg.com

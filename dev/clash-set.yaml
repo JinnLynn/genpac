@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-10 01:51:43
-#! GFWList: 2025-05-04 02:29:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-10 12:42:45
+#! GFWList: 2025-05-10 11:14:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -41,6 +41,7 @@ payload:
   - DOMAIN-SUFFIX,1dumb.com
   - DOMAIN-SUFFIX,1e100.net
   - DOMAIN-SUFFIX,1eew.com
+  - DOMAIN-SUFFIX,1lib.sk
   - DOMAIN-SUFFIX,1mobile.com
   - DOMAIN-SUFFIX,1mobile.tw
   - DOMAIN-SUFFIX,1point3acres.com
@@ -213,7 +214,6 @@ payload:
   - DOMAIN-SUFFIX,ai-kan.net
   - DOMAIN-SUFFIX,ai-wen.net
   - DOMAIN-SUFFIX,ai.binwang.me
-  - DOMAIN-SUFFIX,ai.google
   - DOMAIN-SUFFIX,aiosearch.com
   - DOMAIN-SUFFIX,aiph.net
   - DOMAIN-SUFFIX,airasia.com
@@ -1429,6 +1429,7 @@ payload:
   - DOMAIN-SUFFIX,dnvod.tv
   - DOMAIN-SUFFIX,doc.new
   - DOMAIN-SUFFIX,docker.com
+  - DOMAIN-SUFFIX,docker.io
   - DOMAIN-SUFFIX,docs.new
   - DOMAIN-SUFFIX,doctorvoice.org
   - DOMAIN-SUFFIX,documentingreality.com
@@ -2162,6 +2163,7 @@ payload:
   - DOMAIN-SUFFIX,gmll.org
   - DOMAIN-SUFFIX,gmodules.com
   - DOMAIN-SUFFIX,gmozomg.izihost.org
+  - DOMAIN-SUFFIX,gmp4.com
   - DOMAIN-SUFFIX,gnci.org.hk
   - DOMAIN-SUFFIX,gnews.org
   - DOMAIN-SUFFIX,go-pki.com
@@ -2810,6 +2812,7 @@ payload:
   - DOMAIN-SUFFIX,i-cable.com
   - DOMAIN-SUFFIX,i-part.com.tw
   - DOMAIN-SUFFIX,i-scmp.com
+  - DOMAIN-SUFFIX,i.111666.best
   - DOMAIN-SUFFIX,i.lithium.com
   - DOMAIN-SUFFIX,i1.hk
   - DOMAIN-SUFFIX,i2p2.de
@@ -4024,6 +4027,7 @@ payload:
   - DOMAIN-SUFFIX,on.cc
   - DOMAIN-SUFFIX,on2.com
   - DOMAIN-SUFFIX,onapp.com
+  - DOMAIN-SUFFIX,one.one.one.one
   - DOMAIN-SUFFIX,onedrive.com
   - DOMAIN-SUFFIX,onedrive.live.com
   - DOMAIN-SUFFIX,onedumb.com
@@ -4233,6 +4237,7 @@ payload:
   - DOMAIN-SUFFIX,pkuanvil.com
   - DOMAIN-SUFFIX,placemix.com
   - DOMAIN-SUFFIX,play-asia.com
+  - DOMAIN-SUFFIX,play.google
   - DOMAIN-SUFFIX,playboy.com
   - DOMAIN-SUFFIX,playboyplus.com
   - DOMAIN-SUFFIX,player.fm
@@ -4369,6 +4374,7 @@ payload:
   - DOMAIN-SUFFIX,punyu.com
   - DOMAIN-SUFFIX,pure18.com
   - DOMAIN-SUFFIX,pureconcepts.net
+  - DOMAIN-SUFFIX,puredns.org
   - DOMAIN-SUFFIX,pureinsight.org
   - DOMAIN-SUFFIX,purepdf.com
   - DOMAIN-SUFFIX,purevpn.com
@@ -4402,6 +4408,7 @@ payload:
   - DOMAIN-SUFFIX,qiwen.lu
   - DOMAIN-SUFFIX,qixianglu.cn
   - DOMAIN-SUFFIX,qkshare.com
+  - DOMAIN-SUFFIX,qmp4.com
   - DOMAIN-SUFFIX,qoos.com
   - DOMAIN-SUFFIX,qpoe.com
   - DOMAIN-SUFFIX,qq.co.za
@@ -4561,10 +4568,12 @@ payload:
   - DOMAIN-SUFFIX,rthklive2-lh.akamaihd.net
   - DOMAIN-SUFFIX,rti.org.tw
   - DOMAIN-SUFFIX,rti.tw
+  - DOMAIN-SUFFIX,rtm.tnt-ea.com
   - DOMAIN-SUFFIX,rtycminnesota.org
   - DOMAIN-SUFFIX,ruanyifeng.com
   - DOMAIN-SUFFIX,rukor.org
   - DOMAIN-SUFFIX,rule34.xxx
+  - DOMAIN-SUFFIX,rule34video.com
   - DOMAIN-SUFFIX,rumble.com
   - DOMAIN-SUFFIX,runbtx.com
   - DOMAIN-SUFFIX,rushbee.com
@@ -6356,8 +6365,13 @@ payload:
   - DOMAIN-SUFFIX,yyjlymb.xyz
   - DOMAIN-SUFFIX,yysub.net
   - DOMAIN-SUFFIX,yzzk.com
+  - DOMAIN-SUFFIX,z-lib.fm
+  - DOMAIN-SUFFIX,z-lib.fo
+  - DOMAIN-SUFFIX,z-lib.gd
+  - DOMAIN-SUFFIX,z-lib.gl
   - DOMAIN-SUFFIX,z-lib.io
   - DOMAIN-SUFFIX,z-lib.org
+  - DOMAIN-SUFFIX,z-library.sk
   - DOMAIN-SUFFIX,zacebook.com
   - DOMAIN-SUFFIX,zalmos.com
   - DOMAIN-SUFFIX,zamimg.com
