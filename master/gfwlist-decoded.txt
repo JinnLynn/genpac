@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: eI80QJjHP4QAczje6L7QPw
+! Checksum: gSWEza97imT59cJvtVaj2w
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 04 May 2025 02:29:11 +0000
+! Last Modified: Sat, 10 May 2025 11:14:27 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -841,6 +841,8 @@ bloomberg.de
 
 !!--Cloudflare--
 !--||pages.dev
+||workers.dev
+||one.one.one.one
 
 !!---CloudFront---
 ||cloudfront.net
@@ -928,6 +930,7 @@ bloomberg.de
 ||ftchinese.com
 
 !!---Google---
+||play.google
 ||doc.new
 ||form.new
 ||forms.new
@@ -951,7 +954,6 @@ bloomberg.de
 ||adsense.com
 ||advertisercommunity.com
 ||agoogleaday.com
-||ai.google
 ||ampproject.org
 @@|https://www.ampproject.org
 @@|https://cdn.ampproject.org
@@ -1516,6 +1518,8 @@ wikinews.org
 ||duckduckgo-owned-server.yahoo.net
 
 !------------------Numerics---------------------
+||i.111666.best
+||1lib.sk
 ||2047.one
 ||69shuba.cx
 ||2049bbs.xyz
@@ -2778,6 +2782,7 @@ cytode.us
 ||nic.cz.cc
 
 !--------------------DD-------------------------
+||docker.io
 ||disneyplus.com
 ||ddex.io
 ||d.cash
@@ -3556,6 +3561,7 @@ fzh999.net
 fzlm.com
 
 !--------------------GG-------------------------
+|http://gmp4.com
 ||getsession.org
 ||gdaily.org
 ||gfwatch.org
@@ -5725,6 +5731,7 @@ bbs.ozchinese.com
 .ozyoyo.com
 
 !--------------------PP-------------------------
+||puredns.org
 ||polymarket.com
 ||pandafan.pub
 ||proxz.com
@@ -6046,6 +6053,7 @@ pythonhackers.com/p
 ss.pythonic.life
 
 !--------------------QQ-------------------------
+|http://qmp4.com
 ||qianmo.tw
 .qanote.com
 ||qanote.com
@@ -6089,6 +6097,7 @@ nemesis2.qx.net/pages/MyEnTunnel
 qxbbs.org
 
 !--------------------RR-------------------------
+||rule34video.com
 ||r10s.jp
 ||rakuten.co.jp
 ||r0.ru
@@ -6766,6 +6775,7 @@ blog.syx86.cn/2009/09/puff
 .szetowah.org.hk
 
 !--------------------TT-------------------------
+||rtm.tnt-ea.com
 ||tellapart.com
 ||threads.com
 ||tg-me.com
@@ -7856,7 +7866,6 @@ wikilivres.info/wiki/%E9%9B%B6%E5%85%AB%E5%AE%AA%E7%AB%A0
 ||workatruna.com
 ||workerdemo.org.hk
 ||workerempowerment.org
-||workers.dev
 ||workersthebig.net
 .worldcat.org
 worldjournal.com
@@ -8131,6 +8140,11 @@ yx51.net
 ||yzzk.com
 
 !--------------------ZZ-------------------------
+||z-library.sk
+||z-lib.fm
+||z-lib.gd
+||z-lib.gl
+||z-lib.fo
 ||zodgame.xyz
 ||zhongzidi.com
 ||zooqle.com

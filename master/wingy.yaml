@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-10 01:51:14
-#! GFWList: 2025-05-04 02:29:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-10 12:42:20
+#! GFWList: 2025-05-10 11:14:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -57,6 +57,7 @@ rule:
         - s,1dumb.com
         - s,1e100.net
         - s,1eew.com
+        - s,1lib.sk
         - s,1mobile.com
         - s,1mobile.tw
         - s,1point3acres.com
@@ -229,7 +230,6 @@ rule:
         - s,ai-kan.net
         - s,ai-wen.net
         - s,ai.binwang.me
-        - s,ai.google
         - s,aiosearch.com
         - s,aiph.net
         - s,airasia.com
@@ -1445,6 +1445,7 @@ rule:
         - s,dnvod.tv
         - s,doc.new
         - s,docker.com
+        - s,docker.io
         - s,docs.new
         - s,doctorvoice.org
         - s,documentingreality.com
@@ -2178,6 +2179,7 @@ rule:
         - s,gmll.org
         - s,gmodules.com
         - s,gmozomg.izihost.org
+        - s,gmp4.com
         - s,gnci.org.hk
         - s,gnews.org
         - s,go-pki.com
@@ -2826,6 +2828,7 @@ rule:
         - s,i-cable.com
         - s,i-part.com.tw
         - s,i-scmp.com
+        - s,i.111666.best
         - s,i.lithium.com
         - s,i1.hk
         - s,i2p2.de
@@ -4040,6 +4043,7 @@ rule:
         - s,on.cc
         - s,on2.com
         - s,onapp.com
+        - s,one.one.one.one
         - s,onedrive.com
         - s,onedrive.live.com
         - s,onedumb.com
@@ -4249,6 +4253,7 @@ rule:
         - s,pkuanvil.com
         - s,placemix.com
         - s,play-asia.com
+        - s,play.google
         - s,playboy.com
         - s,playboyplus.com
         - s,player.fm
@@ -4385,6 +4390,7 @@ rule:
         - s,punyu.com
         - s,pure18.com
         - s,pureconcepts.net
+        - s,puredns.org
         - s,pureinsight.org
         - s,purepdf.com
         - s,purevpn.com
@@ -4418,6 +4424,7 @@ rule:
         - s,qiwen.lu
         - s,qixianglu.cn
         - s,qkshare.com
+        - s,qmp4.com
         - s,qoos.com
         - s,qpoe.com
         - s,qq.co.za
@@ -4577,10 +4584,12 @@ rule:
         - s,rthklive2-lh.akamaihd.net
         - s,rti.org.tw
         - s,rti.tw
+        - s,rtm.tnt-ea.com
         - s,rtycminnesota.org
         - s,ruanyifeng.com
         - s,rukor.org
         - s,rule34.xxx
+        - s,rule34video.com
         - s,rumble.com
         - s,runbtx.com
         - s,rushbee.com
@@ -6372,8 +6381,13 @@ rule:
         - s,yyjlymb.xyz
         - s,yysub.net
         - s,yzzk.com
+        - s,z-lib.fm
+        - s,z-lib.fo
+        - s,z-lib.gd
+        - s,z-lib.gl
         - s,z-lib.io
         - s,z-lib.org
+        - s,z-library.sk
         - s,zacebook.com
         - s,zalmos.com
         - s,zamimg.com
