@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-12 02:00:19
-#! GFWList: 2025-05-10 11:14:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-12 12:51:08
+#! GFWList: 2025-05-12 10:04:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -339,6 +339,7 @@ routing:
         - domain:ai-kan.net
         - domain:ai-wen.net
         - domain:ai.binwang.me
+        - domain:ai.google
         - domain:aiosearch.com
         - domain:aiph.net
         - domain:airasia.com
@@ -3996,6 +3997,10 @@ routing:
         - domain:nicovideo.jp
         - domain:nighost.org
         - domain:nightswatch.top
+        - domain:nikke-en.com
+        - domain:nikke-jp.com
+        - domain:nikke-kr.com
+        - domain:nikke.hotcool.tw
         - domain:nikkei.com
         - domain:ninecommentaries.com
         - domain:ninjacloak.com
@@ -4029,6 +4034,7 @@ routing:
         - domain:nordstromrack.com
         - domain:nordvpn.com
         - domain:nos.nl
+        - domain:notebooklm.google
         - domain:notepad-plus-plus.org
         - domain:nottinghampost.com
         - domain:novelasia.com
@@ -5476,6 +5482,7 @@ routing:
         - domain:tigervpn.com
         - domain:tiktok.com
         - domain:tiktokcdn-us.com
+        - domain:tiktokcdn.com
         - domain:tiktokv.com
         - domain:tiktokv.us
         - domain:tiltbrush.com

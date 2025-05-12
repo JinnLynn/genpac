@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: gSWEza97imT59cJvtVaj2w
+! Checksum: mR941+kNxCqOf9AYHPOZKQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 10 May 2025 11:14:27 +0000
+! Last Modified: Mon, 12 May 2025 10:04:00 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -930,6 +930,8 @@ bloomberg.de
 ||ftchinese.com
 
 !!---Google---
+||ai.google
+||notebooklm.google
 ||play.google
 ||doc.new
 ||form.new
@@ -1258,6 +1260,7 @@ cn.nytstyle.com
 ||tiktokv.com
 ||tiktokv.us
 ||tiktokcdn-us.com
+||tiktokcdn.com
 
 !!---Twitch---
 ||jtvnw.net
@@ -5380,6 +5383,10 @@ mysinablog.com
 .mytizi.com
 
 !--------------------NN-------------------------
+||nikke.hotcool.tw
+||nikke-kr.com
+||nikke-jp.com
+||nikke-en.com
 ||nodeloc.com
 ||netlify.app
 ||nightswatch.top
