@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-12 01:59:53
-#! GFWList: 2025-05-10 11:14:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-12 12:50:41
+#! GFWList: 2025-05-12 10:04:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -230,6 +230,7 @@ rule:
         - s,ai-kan.net
         - s,ai-wen.net
         - s,ai.binwang.me
+        - s,ai.google
         - s,aiosearch.com
         - s,aiph.net
         - s,airasia.com
@@ -3887,6 +3888,10 @@ rule:
         - s,nicovideo.jp
         - s,nighost.org
         - s,nightswatch.top
+        - s,nikke-en.com
+        - s,nikke-jp.com
+        - s,nikke-kr.com
+        - s,nikke.hotcool.tw
         - s,nikkei.com
         - s,ninecommentaries.com
         - s,ninjacloak.com
@@ -3920,6 +3925,7 @@ rule:
         - s,nordstromrack.com
         - s,nordvpn.com
         - s,nos.nl
+        - s,notebooklm.google
         - s,notepad-plus-plus.org
         - s,nottinghampost.com
         - s,novelasia.com
@@ -5367,6 +5373,7 @@ rule:
         - s,tigervpn.com
         - s,tiktok.com
         - s,tiktokcdn-us.com
+        - s,tiktokcdn.com
         - s,tiktokv.com
         - s,tiktokv.us
         - s,tiltbrush.com
