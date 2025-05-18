@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-17 01:53:50
-#! GFWList: 2025-05-12 10:04:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-18 02:03:26
+#! GFWList: 2025-05-17 13:05:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -645,6 +645,7 @@ routing:
         - domain:bbs.mikocon.com
         - domain:bbs.morbell.com
         - domain:bbs.mychat.to
+        - domain:bbs.naixi.net
         - domain:bbs.netbig.com
         - domain:bbs.nyinfor.com
         - domain:bbs.ozchinese.com
@@ -3382,6 +3383,8 @@ routing:
         - domain:lausan.hk
         - domain:lbank.info
         - domain:ld.hao123img.com
+        - domain:ldplayer.net
+        - domain:ldplayer.tw
         - domain:le-vpn.com
         - domain:leafyvpn.net
         - domain:lecloud.net
@@ -4735,6 +4738,7 @@ routing:
         - domain:safeguarddefenders.com
         - domain:safervpn.com
         - domain:safety.google
+        - domain:sagernet.org
         - domain:saintyculture.com
         - domain:saiq.me
         - domain:sakuralive.com
@@ -5481,6 +5485,7 @@ routing:
         - domain:ticket.com.tw
         - domain:tigervpn.com
         - domain:tiktok.com
+        - domain:tiktokcdn-eu.com
         - domain:tiktokcdn-us.com
         - domain:tiktokcdn.com
         - domain:tiktokv.com
