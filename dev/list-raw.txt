@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-05-17 01:54:16
-! GFWList: 2025-05-12 10:04:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-05-18 12:44:15
+! GFWList: 2025-05-17 13:05:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -637,6 +637,7 @@
 ||bbs.mikocon.com
 ||bbs.morbell.com
 ||bbs.mychat.to
+||bbs.naixi.net
 ||bbs.netbig.com
 ||bbs.nyinfor.com
 ||bbs.ozchinese.com
@@ -3374,6 +3375,8 @@
 ||lausan.hk
 ||lbank.info
 ||ld.hao123img.com
+||ldplayer.net
+||ldplayer.tw
 ||le-vpn.com
 ||leafyvpn.net
 ||lecloud.net
@@ -4727,6 +4730,7 @@
 ||safeguarddefenders.com
 ||safervpn.com
 ||safety.google
+||sagernet.org
 ||saintyculture.com
 ||saiq.me
 ||sakuralive.com
@@ -5473,6 +5477,7 @@
 ||ticket.com.tw
 ||tigervpn.com
 ||tiktok.com
+||tiktokcdn-eu.com
 ||tiktokcdn-us.com
 ||tiktokcdn.com
 ||tiktokv.com

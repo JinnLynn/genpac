@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-17 01:54:20
-#! GFWList: 2025-05-12 10:04:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-18 12:44:16
+#! GFWList: 2025-05-17 13:05:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -536,6 +536,7 @@ rule:
         - s,bbs.mikocon.com
         - s,bbs.morbell.com
         - s,bbs.mychat.to
+        - s,bbs.naixi.net
         - s,bbs.netbig.com
         - s,bbs.nyinfor.com
         - s,bbs.ozchinese.com
@@ -3273,6 +3274,8 @@ rule:
         - s,lausan.hk
         - s,lbank.info
         - s,ld.hao123img.com
+        - s,ldplayer.net
+        - s,ldplayer.tw
         - s,le-vpn.com
         - s,leafyvpn.net
         - s,lecloud.net
@@ -4626,6 +4629,7 @@ rule:
         - s,safeguarddefenders.com
         - s,safervpn.com
         - s,safety.google
+        - s,sagernet.org
         - s,saintyculture.com
         - s,saiq.me
         - s,sakuralive.com
@@ -5372,6 +5376,7 @@ rule:
         - s,ticket.com.tw
         - s,tigervpn.com
         - s,tiktok.com
+        - s,tiktokcdn-eu.com
         - s,tiktokcdn-us.com
         - s,tiktokcdn.com
         - s,tiktokv.com
