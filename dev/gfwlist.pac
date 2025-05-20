@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-05-19 12:51:39
- * GFWList Last-Modified: 2025-05-17 13:05:21
+ * Generated: 2025-05-20 12:51:35
+ * GFWList Last-Modified: 2025-05-20 11:14:44
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -402,6 +402,7 @@ var rules = [
             "alwaysvpn.com",
             "am730.com.hk",
             "amazon.co.jp",
+            "amazonvideo.com",
             "ameblo.jp",
             "americangreencard.com",
             "americanunfinished.com",
@@ -4462,6 +4463,7 @@ var rules = [
             "presidentlee.tw",
             "prestige-av.com",
             "pride.google",
+            "primevideo.com",
             "prism-break.org",
             "prisoneralert.com",
             "pritunl.com",

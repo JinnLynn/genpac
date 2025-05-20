@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-19 12:51:43
-#! GFWList: 2025-05-17 13:05:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-20 12:51:37
+#! GFWList: 2025-05-20 11:14:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -288,6 +288,7 @@ rule:
         - s,alwaysvpn.com
         - s,am730.com.hk
         - s,amazon.co.jp
+        - s,amazonvideo.com
         - s,ameblo.jp
         - s,americangreencard.com
         - s,americanunfinished.com
@@ -4348,6 +4349,7 @@ rule:
         - s,presidentlee.tw
         - s,prestige-av.com
         - s,pride.google
+        - s,primevideo.com
         - s,prism-break.org
         - s,prisoneralert.com
         - s,pritunl.com

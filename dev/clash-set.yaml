@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-19 12:51:42
-#! GFWList: 2025-05-17 13:05:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-20 12:51:37
+#! GFWList: 2025-05-20 11:14:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -272,6 +272,7 @@ payload:
   - DOMAIN-SUFFIX,alwaysvpn.com
   - DOMAIN-SUFFIX,am730.com.hk
   - DOMAIN-SUFFIX,amazon.co.jp
+  - DOMAIN-SUFFIX,amazonvideo.com
   - DOMAIN-SUFFIX,ameblo.jp
   - DOMAIN-SUFFIX,americangreencard.com
   - DOMAIN-SUFFIX,americanunfinished.com
@@ -4332,6 +4333,7 @@ payload:
   - DOMAIN-SUFFIX,presidentlee.tw
   - DOMAIN-SUFFIX,prestige-av.com
   - DOMAIN-SUFFIX,pride.google
+  - DOMAIN-SUFFIX,primevideo.com
   - DOMAIN-SUFFIX,prism-break.org
   - DOMAIN-SUFFIX,prisoneralert.com
   - DOMAIN-SUFFIX,pritunl.com
