@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-05-20 01:58:10
-! GFWList: 2025-05-17 13:05:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-05-20 12:51:04
+! GFWList: 2025-05-20 11:14:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -389,6 +389,7 @@
 ||alwaysvpn.com
 ||am730.com.hk
 ||amazon.co.jp
+||amazonvideo.com
 ||ameblo.jp
 ||americangreencard.com
 ||americanunfinished.com
@@ -4449,6 +4450,7 @@
 ||presidentlee.tw
 ||prestige-av.com
 ||pride.google
+||primevideo.com
 ||prism-break.org
 ||prisoneralert.com
 ||pritunl.com

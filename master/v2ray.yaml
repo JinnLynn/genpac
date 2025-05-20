@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-20 01:58:10
-#! GFWList: 2025-05-17 13:05:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-20 12:51:05
+#! GFWList: 2025-05-20 11:14:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -397,6 +397,7 @@ routing:
         - domain:alwaysvpn.com
         - domain:am730.com.hk
         - domain:amazon.co.jp
+        - domain:amazonvideo.com
         - domain:ameblo.jp
         - domain:americangreencard.com
         - domain:americanunfinished.com
@@ -4457,6 +4458,7 @@ routing:
         - domain:presidentlee.tw
         - domain:prestige-av.com
         - domain:pride.google
+        - domain:primevideo.com
         - domain:prism-break.org
         - domain:prisoneralert.com
         - domain:pritunl.com
