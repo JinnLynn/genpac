@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-24 01:52:50
-#! GFWList: 2025-05-20 11:14:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-24 12:43:19
+#! GFWList: 2025-05-24 02:43:20 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -4026,7 +4026,6 @@ routing:
         - domain:nobel.se
         - domain:nobelprize.org
         - domain:nobodycanstop.us
-        - domain:nodeloc.com
         - domain:nodeseek.com
         - domain:nofile.io
         - domain:nokogiri.org
@@ -4629,6 +4628,7 @@ routing:
         - domain:redchinacn.org
         - domain:redd.it
         - domain:reddit.com
+        - domain:reddithelp.com
         - domain:redditlist.com
         - domain:redditmedia.com
         - domain:redditspace.com
@@ -6286,6 +6286,7 @@ routing:
         - domain:www.moztw.org
         - domain:www.msn.com
         - domain:www.nbc.com
+        - domain:www.nodeloc.com
         - domain:www.orchidbbs.com
         - domain:www.owind.com
         - domain:www.oxid.it
