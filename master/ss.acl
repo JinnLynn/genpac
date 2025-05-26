@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-26 02:00:48
-#! GFWList: 2025-05-24 02:43:20 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-26 12:48:27
+#! GFWList: 2025-05-26 12:04:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -2089,6 +2089,7 @@
 (^|\.)geekheart\.info$
 (^|\.)gekikame\.com$
 (^|\.)gelbooru\.com$
+(^|\.)gemini\.google$
 (^|\.)generated\.photos$
 (^|\.)genius\.com$
 (^|\.)geocities\.co\.jp$

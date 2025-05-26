@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-26 02:00:51
-#! GFWList: 2025-05-24 02:43:20 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-26 12:48:30
+#! GFWList: 2025-05-26 12:04:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2102,6 +2102,7 @@ rule:
         - s,geekheart.info
         - s,gekikame.com
         - s,gelbooru.com
+        - s,gemini.google
         - s,generated.photos
         - s,genius.com
         - s,geocities.co.jp
