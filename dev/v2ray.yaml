@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-26 02:01:19
-#! GFWList: 2025-05-24 02:43:20 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-26 12:48:59
+#! GFWList: 2025-05-26 12:04:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2211,6 +2211,7 @@ routing:
         - domain:geekheart.info
         - domain:gekikame.com
         - domain:gelbooru.com
+        - domain:gemini.google
         - domain:generated.photos
         - domain:genius.com
         - domain:geocities.co.jp
