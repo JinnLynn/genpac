@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-27 01:56:52
-#! GFWList: 2025-05-26 12:04:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-27 12:51:35
+#! GFWList: 2025-05-27 11:32:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -177,7 +177,6 @@ rule:
         - s,abitno.linpie.com
         - s,ablwang.com
         - s,aboluowang.com
-        - s,about.google
         - s,about.me
         - s,aboutgfw.com
         - s,abs.edu
@@ -230,7 +229,6 @@ rule:
         - s,ai-kan.net
         - s,ai-wen.net
         - s,ai.binwang.me
-        - s,ai.google
         - s,aiosearch.com
         - s,aiph.net
         - s,airasia.com
@@ -666,7 +664,6 @@ rule:
         - s,blog.foolsmountain.com
         - s,blog.fuckgfw233.org
         - s,blog.goo.ne.jp
-        - s,blog.google
         - s,blog.istef.info
         - s,blog.jackjia.com
         - s,blog.jp
@@ -1070,7 +1067,6 @@ rule:
         - s,chrlawyers.hk
         - s,chrome.com
         - s,chromecast.com
-        - s,chromeenterprise.google
         - s,chromeexperiments.com
         - s,chromercise.com
         - s,chromestatus.com
@@ -1188,7 +1184,6 @@ rule:
         - s,colacloud.net
         - s,collateralmurder.com
         - s,collateralmurder.org
-        - s,com.google
         - s,comefromchina.com
         - s,comic-mega.me
         - s,commandarms.com
@@ -1234,7 +1229,6 @@ rule:
         - s,creaders.net
         - s,creadersnet.com
         - s,creativelab5.com
-        - s,crisisresponse.google
         - s,cristyli.com
         - s,crocotube.com
         - s,crossfire.co.kr
@@ -1375,7 +1369,6 @@ rule:
         - s,depositphotos.com
         - s,derekhsu.homeip.net
         - s,desc.se
-        - s,design.google
         - s,desipro.de
         - s,dessci.com
         - s,destiny.xfiles.to
@@ -1435,7 +1428,6 @@ rule:
         - s,dmm.co.jp
         - s,dns-dns.com
         - s,dns-stuff.com
-        - s,dns.google
         - s,dns04.com
         - s,dns05.com
         - s,dns1.us
@@ -1459,7 +1451,6 @@ rule:
         - s,dolf.org.hk
         - s,dollf.com
         - s,domain.club.tw
-        - s,domains.google
         - s,domaintoday.com.au
         - s,dongtaiwang.com
         - s,dongtaiwang.net
@@ -1627,7 +1618,6 @@ rule:
         - s,englishpen.org
         - s,enlighten.org.tw
         - s,entermap.com
-        - s,environment.google
         - s,epa.gov.tw
         - s,epac.to
         - s,episcopalchurch.org
@@ -2102,7 +2092,6 @@ rule:
         - s,geekheart.info
         - s,gekikame.com
         - s,gelbooru.com
-        - s,gemini.google
         - s,generated.photos
         - s,genius.com
         - s,geocities.co.jp
@@ -2508,7 +2497,6 @@ rule:
         - s,grotty-monday.com
         - s,ground.news
         - s,groups.google.cn
-        - s,grow.google
         - s,gs-discuss.com
         - s,gsearch.media
         - s,gsp.target.com
@@ -3297,7 +3285,6 @@ rule:
         - s,lenwhite.com
         - s,leorockwell.com
         - s,lerosua.org
-        - s,lers.google
         - s,lesoir.be
         - s,letou.com
         - s,letscorp.net
@@ -3888,7 +3875,6 @@ rule:
         - s,nhi.gov.tw
         - s,nhk-ondemand.jp
         - s,nic.cz.cc
-        - s,nic.google
         - s,nic.gov
         - s,nicovideo.jp
         - s,nighost.org
@@ -3929,7 +3915,6 @@ rule:
         - s,nordstromrack.com
         - s,nordvpn.com
         - s,nos.nl
-        - s,notebooklm.google
         - s,notepad-plus-plus.org
         - s,nottinghampost.com
         - s,novelasia.com
@@ -4086,7 +4071,6 @@ rule:
         - s,openid.net
         - s,openleaks.org
         - s,opensea.io
-        - s,opensource.google
         - s,openstreetmap.org
         - s,opentech.fund
         - s,openvpn.net
@@ -4169,7 +4153,6 @@ rule:
         - s,partypoker.com
         - s,passion.com
         - s,passiontimes.hk
-        - s,passwords.google
         - s,paste.ee
         - s,pastebin.com
         - s,pastie.org
@@ -4263,7 +4246,6 @@ rule:
         - s,pkuanvil.com
         - s,placemix.com
         - s,play-asia.com
-        - s,play.google
         - s,playboy.com
         - s,playboyplus.com
         - s,player.fm
@@ -4348,7 +4330,6 @@ rule:
         - s,presentationzen.com
         - s,presidentlee.tw
         - s,prestige-av.com
-        - s,pride.google
         - s,primevideo.com
         - s,prism-break.org
         - s,prisoneralert.com
@@ -4529,7 +4510,6 @@ rule:
         - s,redtube.com
         - s,referer.us
         - s,reflectivecode.com
-        - s,registry.google
         - s,relaxbbs.com
         - s,relay.com.tw
         - s,relay.firefox.com
@@ -4538,7 +4518,6 @@ rule:
         - s,religioustolerance.org
         - s,renminbao.com
         - s,renyurenquan.org
-        - s,research.google
         - s,resilio.com
         - s,resistchina.org
         - s,retweeteffect.com
@@ -4631,7 +4610,6 @@ rule:
         - s,safechat.com
         - s,safeguarddefenders.com
         - s,safervpn.com
-        - s,safety.google
         - s,sagernet.org
         - s,saintyculture.com
         - s,saiq.me
@@ -5022,7 +5000,6 @@ rule:
         - s,storage.yandex.net
         - s,storagenewsletter.com
         - s,store.steampowered.com
-        - s,stories.google
         - s,storify.com
         - s,storj.io
         - s,storm.mg
@@ -5078,7 +5055,6 @@ rule:
         - s,surfshark.com
         - s,suroot.com
         - s,surrenderat20.net
-        - s,sustainability.google
         - s,svsfx.com
         - s,swagbucks.com
         - s,swissinfo.ch
@@ -5537,7 +5513,6 @@ rule:
         - s,tuvpn.com
         - s,tuzaijidi.com
         - s,tv.com
-        - s,tv.google
         - s,tv.jtbc.joins.com
         - s,tvants.com
         - s,tvboxnow.com
