@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-27 01:56:08
-#! GFWList: 2025-05-26 12:04:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-27 12:51:07
+#! GFWList: 2025-05-27 11:32:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -286,7 +286,6 @@ routing:
         - domain:abitno.linpie.com
         - domain:ablwang.com
         - domain:aboluowang.com
-        - domain:about.google
         - domain:about.me
         - domain:aboutgfw.com
         - domain:abs.edu
@@ -339,7 +338,6 @@ routing:
         - domain:ai-kan.net
         - domain:ai-wen.net
         - domain:ai.binwang.me
-        - domain:ai.google
         - domain:aiosearch.com
         - domain:aiph.net
         - domain:airasia.com
@@ -775,7 +773,6 @@ routing:
         - domain:blog.foolsmountain.com
         - domain:blog.fuckgfw233.org
         - domain:blog.goo.ne.jp
-        - domain:blog.google
         - domain:blog.istef.info
         - domain:blog.jackjia.com
         - domain:blog.jp
@@ -1179,7 +1176,6 @@ routing:
         - domain:chrlawyers.hk
         - domain:chrome.com
         - domain:chromecast.com
-        - domain:chromeenterprise.google
         - domain:chromeexperiments.com
         - domain:chromercise.com
         - domain:chromestatus.com
@@ -1297,7 +1293,6 @@ routing:
         - domain:colacloud.net
         - domain:collateralmurder.com
         - domain:collateralmurder.org
-        - domain:com.google
         - domain:comefromchina.com
         - domain:comic-mega.me
         - domain:commandarms.com
@@ -1343,7 +1338,6 @@ routing:
         - domain:creaders.net
         - domain:creadersnet.com
         - domain:creativelab5.com
-        - domain:crisisresponse.google
         - domain:cristyli.com
         - domain:crocotube.com
         - domain:crossfire.co.kr
@@ -1484,7 +1478,6 @@ routing:
         - domain:depositphotos.com
         - domain:derekhsu.homeip.net
         - domain:desc.se
-        - domain:design.google
         - domain:desipro.de
         - domain:dessci.com
         - domain:destiny.xfiles.to
@@ -1544,7 +1537,6 @@ routing:
         - domain:dmm.co.jp
         - domain:dns-dns.com
         - domain:dns-stuff.com
-        - domain:dns.google
         - domain:dns04.com
         - domain:dns05.com
         - domain:dns1.us
@@ -1568,7 +1560,6 @@ routing:
         - domain:dolf.org.hk
         - domain:dollf.com
         - domain:domain.club.tw
-        - domain:domains.google
         - domain:domaintoday.com.au
         - domain:dongtaiwang.com
         - domain:dongtaiwang.net
@@ -1736,7 +1727,6 @@ routing:
         - domain:englishpen.org
         - domain:enlighten.org.tw
         - domain:entermap.com
-        - domain:environment.google
         - domain:epa.gov.tw
         - domain:epac.to
         - domain:episcopalchurch.org
@@ -2211,7 +2201,6 @@ routing:
         - domain:geekheart.info
         - domain:gekikame.com
         - domain:gelbooru.com
-        - domain:gemini.google
         - domain:generated.photos
         - domain:genius.com
         - domain:geocities.co.jp
@@ -2617,7 +2606,6 @@ routing:
         - domain:grotty-monday.com
         - domain:ground.news
         - domain:groups.google.cn
-        - domain:grow.google
         - domain:gs-discuss.com
         - domain:gsearch.media
         - domain:gsp.target.com
@@ -3406,7 +3394,6 @@ routing:
         - domain:lenwhite.com
         - domain:leorockwell.com
         - domain:lerosua.org
-        - domain:lers.google
         - domain:lesoir.be
         - domain:letou.com
         - domain:letscorp.net
@@ -3997,7 +3984,6 @@ routing:
         - domain:nhi.gov.tw
         - domain:nhk-ondemand.jp
         - domain:nic.cz.cc
-        - domain:nic.google
         - domain:nic.gov
         - domain:nicovideo.jp
         - domain:nighost.org
@@ -4038,7 +4024,6 @@ routing:
         - domain:nordstromrack.com
         - domain:nordvpn.com
         - domain:nos.nl
-        - domain:notebooklm.google
         - domain:notepad-plus-plus.org
         - domain:nottinghampost.com
         - domain:novelasia.com
@@ -4195,7 +4180,6 @@ routing:
         - domain:openid.net
         - domain:openleaks.org
         - domain:opensea.io
-        - domain:opensource.google
         - domain:openstreetmap.org
         - domain:opentech.fund
         - domain:openvpn.net
@@ -4278,7 +4262,6 @@ routing:
         - domain:partypoker.com
         - domain:passion.com
         - domain:passiontimes.hk
-        - domain:passwords.google
         - domain:paste.ee
         - domain:pastebin.com
         - domain:pastie.org
@@ -4372,7 +4355,6 @@ routing:
         - domain:pkuanvil.com
         - domain:placemix.com
         - domain:play-asia.com
-        - domain:play.google
         - domain:playboy.com
         - domain:playboyplus.com
         - domain:player.fm
@@ -4457,7 +4439,6 @@ routing:
         - domain:presentationzen.com
         - domain:presidentlee.tw
         - domain:prestige-av.com
-        - domain:pride.google
         - domain:primevideo.com
         - domain:prism-break.org
         - domain:prisoneralert.com
@@ -4638,7 +4619,6 @@ routing:
         - domain:redtube.com
         - domain:referer.us
         - domain:reflectivecode.com
-        - domain:registry.google
         - domain:relaxbbs.com
         - domain:relay.com.tw
         - domain:relay.firefox.com
@@ -4647,7 +4627,6 @@ routing:
         - domain:religioustolerance.org
         - domain:renminbao.com
         - domain:renyurenquan.org
-        - domain:research.google
         - domain:resilio.com
         - domain:resistchina.org
         - domain:retweeteffect.com
@@ -4740,7 +4719,6 @@ routing:
         - domain:safechat.com
         - domain:safeguarddefenders.com
         - domain:safervpn.com
-        - domain:safety.google
         - domain:sagernet.org
         - domain:saintyculture.com
         - domain:saiq.me
@@ -5131,7 +5109,6 @@ routing:
         - domain:storage.yandex.net
         - domain:storagenewsletter.com
         - domain:store.steampowered.com
-        - domain:stories.google
         - domain:storify.com
         - domain:storj.io
         - domain:storm.mg
@@ -5187,7 +5164,6 @@ routing:
         - domain:surfshark.com
         - domain:suroot.com
         - domain:surrenderat20.net
-        - domain:sustainability.google
         - domain:svsfx.com
         - domain:swagbucks.com
         - domain:swissinfo.ch
@@ -5646,7 +5622,6 @@ routing:
         - domain:tuvpn.com
         - domain:tuzaijidi.com
         - domain:tv.com
-        - domain:tv.google
         - domain:tv.jtbc.joins.com
         - domain:tvants.com
         - domain:tvboxnow.com
