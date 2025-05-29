@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: WTa6NPP4xPU+O0HXni7Ugw
+! Checksum: xZ+lOvHcCznDcNr3f+wGjA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 27 May 2025 11:32:32 +0000
+! Last Modified: Thu, 29 May 2025 11:02:04 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -352,8 +352,6 @@
 !-||cdn-images.mailchimp.com
 ||abebooks.com
 |https://*.s3.amazonaws.com
-||s3-ap-southeast-1.amazonaws.com
-||s3-ap-southeast-2.amazonaws.com
 
 ||43110.cf
 ||9cache.com
@@ -638,6 +636,14 @@ china-mmm.sa.com
 ||payments-jp.amazon.com
 ||amazon.co.jp
 ||s3-ap-*.amazonaws.com
+||s3.eu-central-1.amazonaws.com
+||s3-eu-central-1.amazonaws.com
+||s3.us-east-1.amazonaws.com
+||s3-ap-northeast-2.amazonaws.com
+||s3.ap-northeast-2.amazonaws.com
+||s3-ap-northeast-1.amazonaws.com
+||s3-ap-southeast-1.amazonaws.com
+||s3-ap-southeast-2.amazonaws.com
 
 !!---AOL---
 ||aolchannels.aol.com
@@ -942,7 +948,7 @@ bloomberg.de
 ||ftchinese.com
 
 !!---Google---
-||google
+||*.google
 ||doc.new
 ||form.new
 ||forms.new

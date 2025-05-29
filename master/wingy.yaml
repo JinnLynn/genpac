@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-29 01:57:56
-#! GFWList: 2025-05-27 11:32:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-29 12:49:38
+#! GFWList: 2025-05-29 11:02:04 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -4598,9 +4598,15 @@ rule:
         - s,s1heng.com
         - s,s1s1s1.com
         - s,s3-ap-*.amazonaws.com
+        - s,s3-ap-northeast-1.amazonaws.com
+        - s,s3-ap-northeast-2.amazonaws.com
         - s,s3-ap-southeast-1.amazonaws.com
         - s,s3-ap-southeast-2.amazonaws.com
+        - s,s3-eu-central-1.amazonaws.com
         - s,s3.amazonaws.com
+        - s,s3.ap-northeast-2.amazonaws.com
+        - s,s3.eu-central-1.amazonaws.com
+        - s,s3.us-east-1.amazonaws.com
         - s,s8forum.com
         - s,sa.hao123.com
         - s,sacks.com
