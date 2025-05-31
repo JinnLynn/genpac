@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-30 12:49:51
-#! GFWList: 2025-05-29 11:02:04 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-31 01:55:19
+#! GFWList: 2025-05-31 00:49:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -643,6 +643,7 @@ rule:
         - s,bl-doujinsouko.com
         - s,blacked.com
         - s,blacklogic.com
+        - s,blackmagicdesign.com
         - s,blackvpn.com
         - s,blewpass.com
         - s,blinkx.com
