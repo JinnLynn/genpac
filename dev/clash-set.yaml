@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-05-30 12:50:23
-#! GFWList: 2025-05-29 11:02:04 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-05-31 01:55:46
+#! GFWList: 2025-05-31 00:49:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -627,6 +627,7 @@ payload:
   - DOMAIN-SUFFIX,bl-doujinsouko.com
   - DOMAIN-SUFFIX,blacked.com
   - DOMAIN-SUFFIX,blacklogic.com
+  - DOMAIN-SUFFIX,blackmagicdesign.com
   - DOMAIN-SUFFIX,blackvpn.com
   - DOMAIN-SUFFIX,blewpass.com
   - DOMAIN-SUFFIX,blinkx.com

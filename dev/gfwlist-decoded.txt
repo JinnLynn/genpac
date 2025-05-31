@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: xZ+lOvHcCznDcNr3f+wGjA
+! Checksum: Cn1HARKBFoPyjUiRr50N0A
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Thu, 29 May 2025 11:02:04 +0000
+! Last Modified: Sat, 31 May 2025 00:49:37 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1984,6 +1984,7 @@ boxun*.azurewebsites.net
 ||boxun*.azurewebsites.net
 
 !--------------------BB-------------------------
+||blackmagicdesign.com
 ||bearteach.com
 ||btbtt.me
 ||btbtt.co
