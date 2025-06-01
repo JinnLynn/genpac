@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-06-01 02:22:50
- * GFWList Last-Modified: 2025-05-31 00:49:37
+ * Generated: 2025-06-01 12:46:37
+ * GFWList Last-Modified: 2025-06-01 06:55:54
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1364,6 +1364,7 @@ var rules = [
             "ct.org.tw",
             "ctao.org",
             "ctfriend.net",
+            "ctinews.com",
             "ctitv.com.tw",
             "ctowc.org",
             "cts.com.tw",
