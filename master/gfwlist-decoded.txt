@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: zNqPNi3Bbz2/c/mUalvDZg
+! Checksum: 8v3t9799gsMOdKa0vtCweg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 01 Jun 2025 06:55:54 +0000
+! Last Modified: Wed, 04 Jun 2025 11:19:28 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -61,6 +61,7 @@
 ||centauro.com.br
 ||chobit.cc
 ||ciciai.com
+||cici.com
 ||claude.ai
 ||clearsurance.com
 ||cnbeta.com.tw
@@ -1671,6 +1672,7 @@ taiwannation.50webs.com
 ||9news.com.au
 
 !--------------------AA-------------------------
+||cdn.arstechnica.net
 ||aomedia.org
 ||aljazeera.com
 ||akinator.com

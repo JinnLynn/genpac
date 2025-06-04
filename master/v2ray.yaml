@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-04 01:59:56
-#! GFWList: 2025-06-01 06:55:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-04 12:51:38
+#! GFWList: 2025-06-04 11:19:28 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1027,6 +1027,7 @@ routing:
         - domain:cdjp.org
         - domain:cdn-images.mailchimp.com
         - domain:cdn-telegram.org
+        - domain:cdn.arstechnica.net
         - domain:cdn.assets.lfpcontent.com
         - domain:cdn.helixstudios.net
         - domain:cdn.jwplayer.com
@@ -1187,6 +1188,7 @@ routing:
         - domain:churchinhongkong.org
         - domain:chushigangdrug.ch
         - domain:ci-en.jp
+        - domain:cici.com
         - domain:ciciai.com
         - domain:cienen.com
         - domain:cineastentreff.de
