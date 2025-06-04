@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-04 02:00:29
-#! GFWList: 2025-06-01 06:55:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-04 12:52:12
+#! GFWList: 2025-06-04 11:19:28 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -1025,6 +1025,7 @@ rules:
   - DOMAIN-SUFFIX,cdjp.org,PROXY
   - DOMAIN-SUFFIX,cdn-images.mailchimp.com,PROXY
   - DOMAIN-SUFFIX,cdn-telegram.org,PROXY
+  - DOMAIN-SUFFIX,cdn.arstechnica.net,PROXY
   - DOMAIN-SUFFIX,cdn.assets.lfpcontent.com,PROXY
   - DOMAIN-SUFFIX,cdn.helixstudios.net,PROXY
   - DOMAIN-SUFFIX,cdn.jwplayer.com,PROXY
@@ -1185,6 +1186,7 @@ rules:
   - DOMAIN-SUFFIX,churchinhongkong.org,PROXY
   - DOMAIN-SUFFIX,chushigangdrug.ch,PROXY
   - DOMAIN-SUFFIX,ci-en.jp,PROXY
+  - DOMAIN-SUFFIX,cici.com,PROXY
   - DOMAIN-SUFFIX,ciciai.com,PROXY
   - DOMAIN-SUFFIX,cienen.com,PROXY
   - DOMAIN-SUFFIX,cineastentreff.de,PROXY

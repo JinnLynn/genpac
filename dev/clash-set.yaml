@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-04 02:00:30
-#! GFWList: 2025-06-01 06:55:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-04 12:52:12
+#! GFWList: 2025-06-04 11:19:28 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -902,6 +902,7 @@ payload:
   - DOMAIN-SUFFIX,cdjp.org
   - DOMAIN-SUFFIX,cdn-images.mailchimp.com
   - DOMAIN-SUFFIX,cdn-telegram.org
+  - DOMAIN-SUFFIX,cdn.arstechnica.net
   - DOMAIN-SUFFIX,cdn.assets.lfpcontent.com
   - DOMAIN-SUFFIX,cdn.helixstudios.net
   - DOMAIN-SUFFIX,cdn.jwplayer.com
@@ -1062,6 +1063,7 @@ payload:
   - DOMAIN-SUFFIX,churchinhongkong.org
   - DOMAIN-SUFFIX,chushigangdrug.ch
   - DOMAIN-SUFFIX,ci-en.jp
+  - DOMAIN-SUFFIX,cici.com
   - DOMAIN-SUFFIX,ciciai.com
   - DOMAIN-SUFFIX,cienen.com
   - DOMAIN-SUFFIX,cineastentreff.de

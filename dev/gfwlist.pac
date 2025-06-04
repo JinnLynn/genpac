@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-06-04 02:00:26
- * GFWList Last-Modified: 2025-06-01 06:55:54
+ * Generated: 2025-06-04 12:52:10
+ * GFWList Last-Modified: 2025-06-04 11:19:28
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1032,6 +1032,7 @@ var rules = [
             "cdjp.org",
             "cdn-images.mailchimp.com",
             "cdn-telegram.org",
+            "cdn.arstechnica.net",
             "cdn.assets.lfpcontent.com",
             "cdn.helixstudios.net",
             "cdn.jwplayer.com",
@@ -1192,6 +1193,7 @@ var rules = [
             "churchinhongkong.org",
             "chushigangdrug.ch",
             "ci-en.jp",
+            "cici.com",
             "ciciai.com",
             "cienen.com",
             "cineastentreff.de",
