@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-06 01:58:41
-#! GFWList: 2025-06-05 13:19:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-06 12:50:05
+#! GFWList: 2025-06-06 11:15:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -149,6 +149,7 @@ rule:
         - s,8z1.net
         - s,9001700.com
         - s,908taiwan.org
+        - s,91dasai.com
         - s,91porn.com
         - s,91porny.com
         - s,91vps.club
