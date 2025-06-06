@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-05 12:51:24
-#! GFWList: 2025-06-04 11:19:28 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-06 01:58:41
+#! GFWList: 2025-06-05 13:19:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1172,6 +1172,7 @@ rule:
         - s,codeshare.io
         - s,codeskulptor.org
         - s,cofacts.tw
+        - s,coffeemanga.to
         - s,coin2co.in
         - s,coinbase.com
         - s,coinbene.com

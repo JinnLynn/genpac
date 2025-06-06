@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: 8v3t9799gsMOdKa0vtCweg
+! Checksum: IxBEDo4F9YjxfujVqWWDAA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 04 Jun 2025 11:19:28 +0000
+! Last Modified: Thu, 05 Jun 2025 13:19:31 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2309,6 +2309,7 @@ bwsj.hk
 ||bypasscensorship.org
 
 !--------------------CC-------------------------
+||coffeemanga.to
 ||ctinews.com
 ||cachefly.com
 ||cachefly.net

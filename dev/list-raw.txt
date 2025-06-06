@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-06-05 12:51:21
-! GFWList: 2025-06-04 11:19:28 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-06-06 01:58:38
+! GFWList: 2025-06-05 13:19:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -1273,6 +1273,7 @@
 ||codeshare.io
 ||codeskulptor.org
 ||cofacts.tw
+||coffeemanga.to
 ||coin2co.in
 ||coinbase.com
 ||coinbene.com
