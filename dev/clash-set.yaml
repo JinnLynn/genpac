@@ -1,5 +1,5 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-07 01:57:58
+#! Generated: 2025-06-07 12:45:44
 #! GFWList: 2025-06-06 11:15:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
