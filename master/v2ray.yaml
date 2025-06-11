@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-11 02:00:36
-#! GFWList: 2025-06-06 11:15:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-11 12:51:31
+#! GFWList: 2025-06-11 09:28:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3435,6 +3435,7 @@ routing:
         - domain:line.naver.jp
         - domain:linear-abematv.akamaized.net
         - domain:linglingfa.com
+        - domain:lingualeo.com
         - domain:lingvodics.com
         - domain:link-o-rama.com
         - domain:linkedin.com

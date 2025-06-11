@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-11 02:00:36
-#! GFWList: 2025-06-06 11:15:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-11 12:51:31
+#! GFWList: 2025-06-11 09:28:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3313,6 +3313,7 @@
 (^|\.)line\.naver\.jp$
 (^|\.)linear-abematv\.akamaized\.net$
 (^|\.)linglingfa\.com$
+(^|\.)lingualeo\.com$
 (^|\.)lingvodics\.com$
 (^|\.)link-o-rama\.com$
 (^|\.)linkedin\.com$
