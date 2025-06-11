@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-11 02:01:11
-#! GFWList: 2025-06-06 11:15:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-11 12:52:03
+#! GFWList: 2025-06-11 09:28:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -3310,6 +3310,7 @@ payload:
   - DOMAIN-SUFFIX,line.naver.jp
   - DOMAIN-SUFFIX,linear-abematv.akamaized.net
   - DOMAIN-SUFFIX,linglingfa.com
+  - DOMAIN-SUFFIX,lingualeo.com
   - DOMAIN-SUFFIX,lingvodics.com
   - DOMAIN-SUFFIX,link-o-rama.com
   - DOMAIN-SUFFIX,linkedin.com

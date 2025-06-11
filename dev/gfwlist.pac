@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-06-11 02:01:07
- * GFWList Last-Modified: 2025-06-06 11:15:55
+ * Generated: 2025-06-11 12:52:02
+ * GFWList Last-Modified: 2025-06-11 09:28:12
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -3440,6 +3440,7 @@ var rules = [
             "line.naver.jp",
             "linear-abematv.akamaized.net",
             "linglingfa.com",
+            "lingualeo.com",
             "lingvodics.com",
             "link-o-rama.com",
             "linkedin.com",
