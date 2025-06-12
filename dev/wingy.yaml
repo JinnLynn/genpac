@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-12 01:59:54
-#! GFWList: 2025-06-11 09:28:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-12 12:51:26
+#! GFWList: 2025-06-12 09:12:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1223,6 +1223,7 @@ rule:
         - s,coursehero.com
         - s,coze.com
         - s,cpj.org
+        - s,cpu-monkey.com
         - s,cq99.us
         - s,crackle.com
         - s,crazypool.org
@@ -2817,7 +2818,6 @@ rule:
         - s,huyandex.com
         - s,hwadzan.tw
         - s,hwayue.org.tw
-        - s,hwinfo.com
         - s,hxwk.org
         - s,hxwq.org
         - s,hybrid-analysis.com
