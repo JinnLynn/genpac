@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: H2mjvO1iBJFotlM3KeMfbA
+! Checksum: cwYncSfCPTxPsFT+5XV3Uw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 11 Jun 2025 09:28:12 +0000
+! Last Modified: Thu, 12 Jun 2025 09:12:58 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2310,6 +2310,7 @@ bwsj.hk
 ||bypasscensorship.org
 
 !--------------------CC-------------------------
+||cpu-monkey.com
 ||coffeemanga.to
 ||ctinews.com
 ||cachefly.com
@@ -4378,7 +4379,6 @@ hutong9.net
 huyandex.com
 .hwadzan.tw
 ||hwayue.org.tw
-||hwinfo.com
 ||hxwk.org
 hxwq.org
 ||hyperrate.com

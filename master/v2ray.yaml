@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-12 01:59:17
-#! GFWList: 2025-06-11 09:28:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-12 12:50:53
+#! GFWList: 2025-06-12 09:12:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1332,6 +1332,7 @@ routing:
         - domain:coursehero.com
         - domain:coze.com
         - domain:cpj.org
+        - domain:cpu-monkey.com
         - domain:cq99.us
         - domain:crackle.com
         - domain:crazypool.org
@@ -2926,7 +2927,6 @@ routing:
         - domain:huyandex.com
         - domain:hwadzan.tw
         - domain:hwayue.org.tw
-        - domain:hwinfo.com
         - domain:hxwk.org
         - domain:hxwq.org
         - domain:hybrid-analysis.com

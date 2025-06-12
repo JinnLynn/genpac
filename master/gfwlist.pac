@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-06-12 01:59:16
- * GFWList Last-Modified: 2025-06-11 09:28:12
+ * Generated: 2025-06-12 12:50:52
+ * GFWList Last-Modified: 2025-06-12 09:12:58
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1337,6 +1337,7 @@ var rules = [
             "coursehero.com",
             "coze.com",
             "cpj.org",
+            "cpu-monkey.com",
             "cq99.us",
             "crackle.com",
             "crazypool.org",
@@ -2931,7 +2932,6 @@ var rules = [
             "huyandex.com",
             "hwadzan.tw",
             "hwayue.org.tw",
-            "hwinfo.com",
             "hxwk.org",
             "hxwq.org",
             "hybrid-analysis.com",
