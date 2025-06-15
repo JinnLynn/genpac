@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-14 12:45:38
-#! GFWList: 2025-06-13 15:18:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-15 02:10:53
+#! GFWList: 2025-06-15 02:04:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1926,6 +1926,7 @@ rule:
         - s,githubassets.com
         - s,githubcopilot.com
         - s,githubusercontent.com
+        - s,gitlab.net
         - s,gizlen.net
         - s,gjczz.com
         - s,glarity.app
@@ -2361,6 +2362,7 @@ rule:
         - s,himalayanglacier.com
         - s,himemix.com
         - s,hindustantimes.com
+        - s,hinet.net
         - s,hitbtc.com
         - s,hitomi.la
         - s,hiveon.net

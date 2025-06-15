@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-14 12:45:37
-#! GFWList: 2025-06-13 15:18:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-15 02:10:52
+#! GFWList: 2025-06-15 02:04:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1913,6 +1913,7 @@
 (^|\.)githubassets\.com$
 (^|\.)githubcopilot\.com$
 (^|\.)githubusercontent\.com$
+(^|\.)gitlab\.net$
 (^|\.)gizlen\.net$
 (^|\.)gjczz\.com$
 (^|\.)glarity\.app$
@@ -2348,6 +2349,7 @@
 (^|\.)himalayanglacier\.com$
 (^|\.)himemix\.com$
 (^|\.)hindustantimes\.com$
+(^|\.)hinet\.net$
 (^|\.)hitbtc\.com$
 (^|\.)hitomi\.la$
 (^|\.)hiveon\.net$
