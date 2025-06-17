@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-06-17 02:01:09
-! GFWList: 2025-06-16 12:30:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-06-17 12:51:56
+! GFWList: 2025-06-17 09:20:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -1105,7 +1105,6 @@
 ||cloud.dify.ai
 ||cloud.mail.ru
 ||cloudflare-ipfs.com
-||cloudfront.net
 ||cloudfunctions.net
 ||club1069.com
 ||clubhouseapi.com

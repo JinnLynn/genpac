@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: wAIUVSWf14YeiyIjqyxCdQ
+! Checksum: fZeTLk8l1S1p0SjF8lTZ7Q
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 16 Jun 2025 12:30:48 +0000
+! Last Modified: Tue, 17 Jun 2025 09:20:42 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -814,9 +814,6 @@ bloomberg.de
 !--||pages.dev
 ||workers.dev
 ||one.one.one.one
-
-!!---CloudFront---
-||cloudfront.net
 
 !!---DtDNS---
 !###https://www.dtdns.com/dtsite/faq
