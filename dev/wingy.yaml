@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-17 02:01:40
-#! GFWList: 2025-06-16 12:30:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-17 12:52:25
+#! GFWList: 2025-06-17 09:20:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1005,7 +1005,6 @@ rule:
         - s,cloud.dify.ai
         - s,cloud.mail.ru
         - s,cloudflare-ipfs.com
-        - s,cloudfront.net
         - s,cloudfunctions.net
         - s,club1069.com
         - s,clubhouseapi.com

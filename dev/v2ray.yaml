@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-17 02:01:36
-#! GFWList: 2025-06-16 12:30:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-17 12:52:24
+#! GFWList: 2025-06-17 09:20:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1113,7 +1113,6 @@ routing:
         - domain:cloud.dify.ai
         - domain:cloud.mail.ru
         - domain:cloudflare-ipfs.com
-        - domain:cloudfront.net
         - domain:cloudfunctions.net
         - domain:club1069.com
         - domain:clubhouseapi.com
