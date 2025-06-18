@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-17 12:51:57
-#! GFWList: 2025-06-17 09:20:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-18 02:00:20
+#! GFWList: 2025-06-17 13:43:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1350,6 +1350,7 @@
 (^|\.)dw-world\.de$
 (^|\.)dw\.com$
 (^|\.)dw\.de$
+(^|\.)dweb\.link$
 (^|\.)dwnews\.com$
 (^|\.)dwnews\.net$
 (^|\.)dynamic-dns\.net$
@@ -2638,6 +2639,7 @@
 (^|\.)iownyour\.org$
 (^|\.)ipdefenseforum\.com$
 (^|\.)ipfire\.org$
+(^|\.)ipfs\.4everland\.io$
 (^|\.)ipfs\.io$
 (^|\.)iphone4hongkong\.com$
 (^|\.)iphonetaiwan\.org$
@@ -3464,6 +3466,7 @@
 (^|\.)nflximg\.net$
 (^|\.)nflxso\.net$
 (^|\.)nflxvideo\.net$
+(^|\.)nftstorage\.link$
 (^|\.)nga\.mil$
 (^|\.)ngensis\.com$
 (^|\.)nhentai\.net$
@@ -4496,6 +4499,7 @@
 (^|\.)storj\.io$
 (^|\.)storm\.mg$
 (^|\.)stormmediagroup\.com$
+(^|\.)storry\.tv$
 (^|\.)stoweboyd\.com$
 (^|\.)straitstimes\.com$
 (^|\.)stranabg\.com$
@@ -5316,6 +5320,7 @@
 (^|\.)vultryhw\.com$
 (^|\.)w-pool\.com$
 (^|\.)w\.idaiwan\.com$
+(^|\.)w3s\.link$
 (^|\.)waffle1999\.com$
 (^|\.)wahas\.com$
 (^|\.)waikeung\.org$

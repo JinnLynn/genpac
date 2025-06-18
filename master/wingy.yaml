@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-17 12:51:59
-#! GFWList: 2025-06-17 09:20:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-18 02:00:21
+#! GFWList: 2025-06-17 13:43:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1363,6 +1363,7 @@ rule:
         - s,dw-world.de
         - s,dw.com
         - s,dw.de
+        - s,dweb.link
         - s,dwnews.com
         - s,dwnews.net
         - s,dynamic-dns.net
@@ -2651,6 +2652,7 @@ rule:
         - s,iownyour.org
         - s,ipdefenseforum.com
         - s,ipfire.org
+        - s,ipfs.4everland.io
         - s,ipfs.io
         - s,iphone4hongkong.com
         - s,iphonetaiwan.org
@@ -3477,6 +3479,7 @@ rule:
         - s,nflximg.net
         - s,nflxso.net
         - s,nflxvideo.net
+        - s,nftstorage.link
         - s,nga.mil
         - s,ngensis.com
         - s,nhentai.net
@@ -4509,6 +4512,7 @@ rule:
         - s,storj.io
         - s,storm.mg
         - s,stormmediagroup.com
+        - s,storry.tv
         - s,stoweboyd.com
         - s,straitstimes.com
         - s,stranabg.com
@@ -5329,6 +5333,7 @@ rule:
         - s,vultryhw.com
         - s,w-pool.com
         - s,w.idaiwan.com
+        - s,w3s.link
         - s,waffle1999.com
         - s,wahas.com
         - s,waikeung.org
