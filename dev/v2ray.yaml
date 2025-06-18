@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-17 12:52:24
-#! GFWList: 2025-06-17 09:20:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-18 02:00:49
+#! GFWList: 2025-06-17 13:43:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1471,6 +1471,7 @@ routing:
         - domain:dw-world.de
         - domain:dw.com
         - domain:dw.de
+        - domain:dweb.link
         - domain:dwnews.com
         - domain:dwnews.net
         - domain:dynamic-dns.net
@@ -2759,6 +2760,7 @@ routing:
         - domain:iownyour.org
         - domain:ipdefenseforum.com
         - domain:ipfire.org
+        - domain:ipfs.4everland.io
         - domain:ipfs.io
         - domain:iphone4hongkong.com
         - domain:iphonetaiwan.org
@@ -3585,6 +3587,7 @@ routing:
         - domain:nflximg.net
         - domain:nflxso.net
         - domain:nflxvideo.net
+        - domain:nftstorage.link
         - domain:nga.mil
         - domain:ngensis.com
         - domain:nhentai.net
@@ -4617,6 +4620,7 @@ routing:
         - domain:storj.io
         - domain:storm.mg
         - domain:stormmediagroup.com
+        - domain:storry.tv
         - domain:stoweboyd.com
         - domain:straitstimes.com
         - domain:stranabg.com
@@ -5437,6 +5441,7 @@ routing:
         - domain:vultryhw.com
         - domain:w-pool.com
         - domain:w.idaiwan.com
+        - domain:w3s.link
         - domain:waffle1999.com
         - domain:wahas.com
         - domain:waikeung.org

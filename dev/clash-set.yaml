@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-17 12:52:25
-#! GFWList: 2025-06-17 09:20:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-18 02:00:52
+#! GFWList: 2025-06-17 13:43:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -1347,6 +1347,7 @@ payload:
   - DOMAIN-SUFFIX,dw-world.de
   - DOMAIN-SUFFIX,dw.com
   - DOMAIN-SUFFIX,dw.de
+  - DOMAIN-SUFFIX,dweb.link
   - DOMAIN-SUFFIX,dwnews.com
   - DOMAIN-SUFFIX,dwnews.net
   - DOMAIN-SUFFIX,dynamic-dns.net
@@ -2635,6 +2636,7 @@ payload:
   - DOMAIN-SUFFIX,iownyour.org
   - DOMAIN-SUFFIX,ipdefenseforum.com
   - DOMAIN-SUFFIX,ipfire.org
+  - DOMAIN-SUFFIX,ipfs.4everland.io
   - DOMAIN-SUFFIX,ipfs.io
   - DOMAIN-SUFFIX,iphone4hongkong.com
   - DOMAIN-SUFFIX,iphonetaiwan.org
@@ -3461,6 +3463,7 @@ payload:
   - DOMAIN-SUFFIX,nflximg.net
   - DOMAIN-SUFFIX,nflxso.net
   - DOMAIN-SUFFIX,nflxvideo.net
+  - DOMAIN-SUFFIX,nftstorage.link
   - DOMAIN-SUFFIX,nga.mil
   - DOMAIN-SUFFIX,ngensis.com
   - DOMAIN-SUFFIX,nhentai.net
@@ -4493,6 +4496,7 @@ payload:
   - DOMAIN-SUFFIX,storj.io
   - DOMAIN-SUFFIX,storm.mg
   - DOMAIN-SUFFIX,stormmediagroup.com
+  - DOMAIN-SUFFIX,storry.tv
   - DOMAIN-SUFFIX,stoweboyd.com
   - DOMAIN-SUFFIX,straitstimes.com
   - DOMAIN-SUFFIX,stranabg.com
@@ -5313,6 +5317,7 @@ payload:
   - DOMAIN-SUFFIX,vultryhw.com
   - DOMAIN-SUFFIX,w-pool.com
   - DOMAIN-SUFFIX,w.idaiwan.com
+  - DOMAIN-SUFFIX,w3s.link
   - DOMAIN-SUFFIX,waffle1999.com
   - DOMAIN-SUFFIX,wahas.com
   - DOMAIN-SUFFIX,waikeung.org
