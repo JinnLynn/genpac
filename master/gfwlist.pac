@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-06-19 02:01:03
- * GFWList Last-Modified: 2025-06-17 13:43:35
+ * Generated: 2025-06-19 12:51:01
+ * GFWList Last-Modified: 2025-06-19 11:48:54
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1813,6 +1813,7 @@ var rules = [
             "focusvpn.com",
             "fofg.org",
             "fooooo.com",
+            "forbes.com",
             "foreignaffairs.com",
             "foreignpolicy.com",
             "form.new",

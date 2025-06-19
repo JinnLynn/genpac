@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-19 02:01:04
-#! GFWList: 2025-06-17 13:43:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-19 12:51:01
+#! GFWList: 2025-06-19 11:48:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1687,6 +1687,7 @@
 (^|\.)focusvpn\.com$
 (^|\.)fofg\.org$
 (^|\.)fooooo\.com$
+(^|\.)forbes\.com$
 (^|\.)foreignaffairs\.com$
 (^|\.)foreignpolicy\.com$
 (^|\.)form\.new$
