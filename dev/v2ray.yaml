@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-19 02:01:36
-#! GFWList: 2025-06-17 13:43:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-19 12:51:30
+#! GFWList: 2025-06-19 11:48:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1808,6 +1808,7 @@ routing:
         - domain:focusvpn.com
         - domain:fofg.org
         - domain:fooooo.com
+        - domain:forbes.com
         - domain:foreignaffairs.com
         - domain:foreignpolicy.com
         - domain:form.new

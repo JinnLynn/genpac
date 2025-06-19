@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-19 02:01:37
-#! GFWList: 2025-06-17 13:43:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-19 12:51:31
+#! GFWList: 2025-06-19 11:48:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -1684,6 +1684,7 @@ payload:
   - DOMAIN-SUFFIX,focusvpn.com
   - DOMAIN-SUFFIX,fofg.org
   - DOMAIN-SUFFIX,fooooo.com
+  - DOMAIN-SUFFIX,forbes.com
   - DOMAIN-SUFFIX,foreignaffairs.com
   - DOMAIN-SUFFIX,foreignpolicy.com
   - DOMAIN-SUFFIX,form.new
