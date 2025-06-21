@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-20 12:50:43
-#! GFWList: 2025-06-19 11:48:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-21 01:57:49
+#! GFWList: 2025-06-20 14:29:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -383,6 +383,7 @@ routing:
         - domain:amnestyusa.org
         - domain:ampproject.org
         - domain:amtb-taipei.org
+        - domain:amuletmc.com
         - domain:anchor.fm
         - domain:anchorfree.com
         - domain:ancsconf.org
