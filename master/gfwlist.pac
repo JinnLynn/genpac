@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-06-22 02:09:47
- * GFWList Last-Modified: 2025-06-20 14:29:33
+ * Generated: 2025-06-22 12:45:35
+ * GFWList Last-Modified: 2025-06-22 10:34:55
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -485,6 +485,7 @@ var rules = [
             "artofpeacefoundation.org",
             "artstation.com",
             "artsy.net",
+            "arvanstorage.ir",
             "asacp.org",
             "asdfg.jp",
             "asg.to",
@@ -2782,7 +2783,9 @@ var rules = [
             "iptv.com.tw",
             "iptvbin.com",
             "ipvanish.com",
+            "irangov.ir",
             "iredmail.org",
+            "irna.ir",
             "ironpython.net",
             "ironsocket.com",
             "is-a-hunter.com",
@@ -4017,6 +4020,7 @@ var rules = [
             "premproxy.com",
             "presentation.new",
             "presentationzen.com",
+            "president.ir",
             "presidentlee.tw",
             "prestige-av.com",
             "primevideo.com",
