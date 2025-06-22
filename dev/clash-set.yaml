@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-22 02:10:18
-#! GFWList: 2025-06-20 14:29:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-22 12:46:06
+#! GFWList: 2025-06-22 10:34:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -356,6 +356,7 @@ payload:
   - DOMAIN-SUFFIX,artofpeacefoundation.org
   - DOMAIN-SUFFIX,artstation.com
   - DOMAIN-SUFFIX,artsy.net
+  - DOMAIN-SUFFIX,arvanstorage.ir
   - DOMAIN-SUFFIX,asacp.org
   - DOMAIN-SUFFIX,asdfg.jp
   - DOMAIN-SUFFIX,asg.to
@@ -2653,7 +2654,9 @@ payload:
   - DOMAIN-SUFFIX,iptv.com.tw
   - DOMAIN-SUFFIX,iptvbin.com
   - DOMAIN-SUFFIX,ipvanish.com
+  - DOMAIN-SUFFIX,irangov.ir
   - DOMAIN-SUFFIX,iredmail.org
+  - DOMAIN-SUFFIX,irna.ir
   - DOMAIN-SUFFIX,ironpython.net
   - DOMAIN-SUFFIX,ironsocket.com
   - DOMAIN-SUFFIX,is-a-hunter.com
@@ -3888,6 +3891,7 @@ payload:
   - DOMAIN-SUFFIX,premproxy.com
   - DOMAIN-SUFFIX,presentation.new
   - DOMAIN-SUFFIX,presentationzen.com
+  - DOMAIN-SUFFIX,president.ir
   - DOMAIN-SUFFIX,presidentlee.tw
   - DOMAIN-SUFFIX,prestige-av.com
   - DOMAIN-SUFFIX,primevideo.com

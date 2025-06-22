@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-22 02:10:19
-#! GFWList: 2025-06-20 14:29:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-22 12:46:06
+#! GFWList: 2025-06-22 10:34:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -372,6 +372,7 @@ rule:
         - s,artofpeacefoundation.org
         - s,artstation.com
         - s,artsy.net
+        - s,arvanstorage.ir
         - s,asacp.org
         - s,asdfg.jp
         - s,asg.to
@@ -2669,7 +2670,9 @@ rule:
         - s,iptv.com.tw
         - s,iptvbin.com
         - s,ipvanish.com
+        - s,irangov.ir
         - s,iredmail.org
+        - s,irna.ir
         - s,ironpython.net
         - s,ironsocket.com
         - s,is-a-hunter.com
@@ -3904,6 +3907,7 @@ rule:
         - s,premproxy.com
         - s,presentation.new
         - s,presentationzen.com
+        - s,president.ir
         - s,presidentlee.tw
         - s,prestige-av.com
         - s,primevideo.com

@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: CQjh0VPNbbXoEc9t2uUhVQ
+! Checksum: LJvo0n6Ww/nX76Bt8J7caA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 20 Jun 2025 14:29:33 +0000
+! Last Modified: Sun, 22 Jun 2025 10:34:55 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -4025,6 +4025,11 @@ ebook.hyread.com.tw
 ||ebook.hyread.com.tw
 
 !--------------------II-------------------------
+||president.ir
+||gov.ir
+||irna.ir
+||arvanstorage.ir
+||irangov.ir
 ||india.com
 ||indiatoday.in
 ||invidio.us

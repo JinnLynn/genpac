@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-22 02:10:18
-#! GFWList: 2025-06-20 14:29:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-22 12:46:06
+#! GFWList: 2025-06-22 10:34:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -478,6 +478,7 @@ rules:
   - DOMAIN-SUFFIX,artofpeacefoundation.org,PROXY
   - DOMAIN-SUFFIX,artstation.com,PROXY
   - DOMAIN-SUFFIX,artsy.net,PROXY
+  - DOMAIN-SUFFIX,arvanstorage.ir,PROXY
   - DOMAIN-SUFFIX,asacp.org,PROXY
   - DOMAIN-SUFFIX,asdfg.jp,PROXY
   - DOMAIN-SUFFIX,asg.to,PROXY
@@ -2775,7 +2776,9 @@ rules:
   - DOMAIN-SUFFIX,iptv.com.tw,PROXY
   - DOMAIN-SUFFIX,iptvbin.com,PROXY
   - DOMAIN-SUFFIX,ipvanish.com,PROXY
+  - DOMAIN-SUFFIX,irangov.ir,PROXY
   - DOMAIN-SUFFIX,iredmail.org,PROXY
+  - DOMAIN-SUFFIX,irna.ir,PROXY
   - DOMAIN-SUFFIX,ironpython.net,PROXY
   - DOMAIN-SUFFIX,ironsocket.com,PROXY
   - DOMAIN-SUFFIX,is-a-hunter.com,PROXY
@@ -4010,6 +4013,7 @@ rules:
   - DOMAIN-SUFFIX,premproxy.com,PROXY
   - DOMAIN-SUFFIX,presentation.new,PROXY
   - DOMAIN-SUFFIX,presentationzen.com,PROXY
+  - DOMAIN-SUFFIX,president.ir,PROXY
   - DOMAIN-SUFFIX,presidentlee.tw,PROXY
   - DOMAIN-SUFFIX,prestige-av.com,PROXY
   - DOMAIN-SUFFIX,primevideo.com,PROXY
