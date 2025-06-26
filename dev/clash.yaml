@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-26 02:01:26
-#! GFWList: 2025-06-22 13:07:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-26 12:52:32
+#! GFWList: 2025-06-26 11:20:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -4124,6 +4124,7 @@ rules:
   - DOMAIN-SUFFIX,radioline.co,PROXY
   - DOMAIN-SUFFIX,radiovaticana.org,PROXY
   - DOMAIN-SUFFIX,radiovncr.com,PROXY
+  - DOMAIN-SUFFIX,radmin-vpn.com,PROXY
   - DOMAIN-SUFFIX,rael.org,PROXY
   - DOMAIN-SUFFIX,raggedbanner.com,PROXY
   - DOMAIN-SUFFIX,raidcall.com.tw,PROXY

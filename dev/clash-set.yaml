@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-26 02:01:27
-#! GFWList: 2025-06-22 13:07:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-26 12:52:32
+#! GFWList: 2025-06-26 11:20:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -4002,6 +4002,7 @@ payload:
   - DOMAIN-SUFFIX,radioline.co
   - DOMAIN-SUFFIX,radiovaticana.org
   - DOMAIN-SUFFIX,radiovncr.com
+  - DOMAIN-SUFFIX,radmin-vpn.com
   - DOMAIN-SUFFIX,rael.org
   - DOMAIN-SUFFIX,raggedbanner.com
   - DOMAIN-SUFFIX,raidcall.com.tw
