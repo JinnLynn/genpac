@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: Z+j7p1wg/lM54k5HnzxR0g
+! Checksum: 2hRRmtZsLUIe4wtn0pWSOg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 22 Jun 2025 13:07:42 +0000
+! Last Modified: Thu, 26 Jun 2025 11:20:55 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -5539,6 +5539,7 @@ nemesis2.qx.net/pages/MyEnTunnel
 qxbbs.org
 
 !--------------------RR-------------------------
+||radmin-vpn.com
 ||rule34video.com
 ||r10s.jp
 ||rakuten.co.jp

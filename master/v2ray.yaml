@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-26 02:00:53
-#! GFWList: 2025-06-22 13:07:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-26 12:51:59
+#! GFWList: 2025-06-26 11:20:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -4126,6 +4126,7 @@ routing:
         - domain:radioline.co
         - domain:radiovaticana.org
         - domain:radiovncr.com
+        - domain:radmin-vpn.com
         - domain:rael.org
         - domain:raggedbanner.com
         - domain:raidcall.com.tw
