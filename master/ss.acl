@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-26 12:51:59
-#! GFWList: 2025-06-26 11:20:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-27 02:02:05
+#! GFWList: 2025-06-26 13:24:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -870,7 +870,6 @@
 (^|\.)chenshan20042005\.wordpress\.com$
 (^|\.)cherrysave\.com$
 (^|\.)chhongbi\.org$
-(^|\.)chicagoncmtv\.com$
 (^|\.)china-mmm\.jp\.net$
 (^|\.)china-mmm\.net$
 (^|\.)china-review\.com\.ua$
@@ -1736,8 +1735,6 @@
 (^|\.)freedominfonetweb\.wordpress\.com$
 (^|\.)freedomsherald\.org$
 (^|\.)freeforums\.org$
-(^|\.)freefq\.com$
-(^|\.)freefuckvids\.com$
 (^|\.)freegao\.com$
 (^|\.)freehongkong\.org$
 (^|\.)freeilhamtohti\.org$

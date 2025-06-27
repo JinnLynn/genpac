@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-26 12:51:59
-#! GFWList: 2025-06-26 11:20:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-27 02:02:05
+#! GFWList: 2025-06-26 13:24:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -991,7 +991,6 @@ routing:
         - domain:chenshan20042005.wordpress.com
         - domain:cherrysave.com
         - domain:chhongbi.org
-        - domain:chicagoncmtv.com
         - domain:china-mmm.jp.net
         - domain:china-mmm.net
         - domain:china-review.com.ua
@@ -1857,8 +1856,6 @@ routing:
         - domain:freedominfonetweb.wordpress.com
         - domain:freedomsherald.org
         - domain:freeforums.org
-        - domain:freefq.com
-        - domain:freefuckvids.com
         - domain:freegao.com
         - domain:freehongkong.org
         - domain:freeilhamtohti.org

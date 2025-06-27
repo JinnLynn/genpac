@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-26 12:52:02
-#! GFWList: 2025-06-26 11:20:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-27 02:02:06
+#! GFWList: 2025-06-26 13:24:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -883,7 +883,6 @@ rule:
         - s,chenshan20042005.wordpress.com
         - s,cherrysave.com
         - s,chhongbi.org
-        - s,chicagoncmtv.com
         - s,china-mmm.jp.net
         - s,china-mmm.net
         - s,china-review.com.ua
@@ -1749,8 +1748,6 @@ rule:
         - s,freedominfonetweb.wordpress.com
         - s,freedomsherald.org
         - s,freeforums.org
-        - s,freefq.com
-        - s,freefuckvids.com
         - s,freegao.com
         - s,freehongkong.org
         - s,freeilhamtohti.org
