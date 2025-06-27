@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-26 12:52:32
-#! GFWList: 2025-06-26 11:20:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-27 02:02:39
+#! GFWList: 2025-06-26 13:24:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -989,7 +989,6 @@ rules:
   - DOMAIN-SUFFIX,chenshan20042005.wordpress.com,PROXY
   - DOMAIN-SUFFIX,cherrysave.com,PROXY
   - DOMAIN-SUFFIX,chhongbi.org,PROXY
-  - DOMAIN-SUFFIX,chicagoncmtv.com,PROXY
   - DOMAIN-SUFFIX,china-mmm.jp.net,PROXY
   - DOMAIN-SUFFIX,china-mmm.net,PROXY
   - DOMAIN-SUFFIX,china-review.com.ua,PROXY
@@ -1855,8 +1854,6 @@ rules:
   - DOMAIN-SUFFIX,freedominfonetweb.wordpress.com,PROXY
   - DOMAIN-SUFFIX,freedomsherald.org,PROXY
   - DOMAIN-SUFFIX,freeforums.org,PROXY
-  - DOMAIN-SUFFIX,freefq.com,PROXY
-  - DOMAIN-SUFFIX,freefuckvids.com,PROXY
   - DOMAIN-SUFFIX,freegao.com,PROXY
   - DOMAIN-SUFFIX,freehongkong.org,PROXY
   - DOMAIN-SUFFIX,freeilhamtohti.org,PROXY

@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-06-26 12:52:30
-! GFWList: 2025-06-26 11:20:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-06-27 02:02:35
+! GFWList: 2025-06-26 13:24:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -983,7 +983,6 @@
 ||chenshan20042005.wordpress.com
 ||cherrysave.com
 ||chhongbi.org
-||chicagoncmtv.com
 ||china-mmm.jp.net
 ||china-mmm.net
 ||china-review.com.ua
@@ -1849,8 +1848,6 @@
 ||freedominfonetweb.wordpress.com
 ||freedomsherald.org
 ||freeforums.org
-||freefq.com
-||freefuckvids.com
 ||freegao.com
 ||freehongkong.org
 ||freeilhamtohti.org
