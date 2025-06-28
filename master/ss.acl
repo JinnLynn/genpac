@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-28 01:57:28
-#! GFWList: 2025-06-28 01:01:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-28 12:46:18
+#! GFWList: 2025-06-28 11:01:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -2589,6 +2589,7 @@
 (^|\.)imdb\.com$
 (^|\.)img\.dlsite\.jp$
 (^|\.)img\.ly$
+(^|\.)img\.picgo\.net$
 (^|\.)imgasd\.com$
 (^|\.)imgchili\.net$
 (^|\.)imgmega\.com$

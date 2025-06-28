@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-28 01:57:28
-#! GFWList: 2025-06-28 01:01:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-28 12:46:18
+#! GFWList: 2025-06-28 11:01:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2711,6 +2711,7 @@ routing:
         - domain:imdb.com
         - domain:img.dlsite.jp
         - domain:img.ly
+        - domain:img.picgo.net
         - domain:imgasd.com
         - domain:imgchili.net
         - domain:imgmega.com

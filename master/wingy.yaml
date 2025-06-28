@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-28 01:57:30
-#! GFWList: 2025-06-28 01:01:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-06-28 12:46:21
+#! GFWList: 2025-06-28 11:01:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2602,6 +2602,7 @@ rule:
         - s,imdb.com
         - s,img.dlsite.jp
         - s,img.ly
+        - s,img.picgo.net
         - s,imgasd.com
         - s,imgchili.net
         - s,imgmega.com
