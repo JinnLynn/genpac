@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-06-27 12:50:33
-! GFWList: 2025-06-26 13:24:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-06-28 01:57:28
+! GFWList: 2025-06-28 01:01:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -38,6 +38,7 @@
 @@||hchcc.gov.tw
 @@||hsinchu-cc.gov.tw
 @@||http2.golang.org
+@@||i.pki.goog
 @@||ime.baidu.jp
 @@||iner.gov.tw
 @@||ip.cn
