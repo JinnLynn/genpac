@@ -1,5 +1,5 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-06-29 12:47:46
+#! Generated: 2025-06-30 02:07:27
 #! GFWList: 2025-06-28 11:01:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
