@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-07-03 12:50:06
-#! GFWList: 2025-06-28 11:01:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-07-04 02:01:18
+#! GFWList: 2025-07-03 13:23:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1296,6 +1296,7 @@
 (^|\.)dongtaiwang\.net$
 (^|\.)dongyangjing\.com$
 (^|\.)dontfilter\.us$
+(^|\.)doom9\.org$
 (^|\.)doosho\.com$
 (^|\.)doourbest\.org$
 (^|\.)dorjeshugden\.com$
