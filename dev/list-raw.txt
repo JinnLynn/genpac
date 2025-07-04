@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-07-03 12:50:32
-! GFWList: 2025-06-28 11:01:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-07-04 02:01:44
+! GFWList: 2025-07-03 13:23:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -1410,6 +1410,7 @@
 ||dongtaiwang.net
 ||dongyangjing.com
 ||dontfilter.us
+||doom9.org
 ||doosho.com
 ||doourbest.org
 ||dorjeshugden.com

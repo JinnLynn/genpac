@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-07-03 12:50:33
-#! GFWList: 2025-06-28 11:01:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-07-04 02:01:45
+#! GFWList: 2025-07-03 13:23:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -1293,6 +1293,7 @@ payload:
   - DOMAIN-SUFFIX,dongtaiwang.net
   - DOMAIN-SUFFIX,dongyangjing.com
   - DOMAIN-SUFFIX,dontfilter.us
+  - DOMAIN-SUFFIX,doom9.org
   - DOMAIN-SUFFIX,doosho.com
   - DOMAIN-SUFFIX,doourbest.org
   - DOMAIN-SUFFIX,dorjeshugden.com
