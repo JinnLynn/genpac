@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-07-09 02:04:33
-#! GFWList: 2025-07-03 13:23:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-07-09 12:52:39
+#! GFWList: 2025-07-09 03:20:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1378,6 +1378,7 @@
 (^|\.)e-info\.org\.tw$
 (^|\.)e-zone\.com\.hk$
 (^|\.)e123\.hk$
+(^|\.)e621\.net$
 (^|\.)earlytibet\.com$
 (^|\.)earthcam\.com$
 (^|\.)earthvpn\.com$
