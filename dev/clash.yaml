@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-07-14 02:11:30
-#! GFWList: 2025-07-09 03:20:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-07-14 12:54:05
+#! GFWList: 2025-07-14 09:55:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -5678,6 +5678,7 @@ rules:
   - DOMAIN-SUFFIX,www.thechinastory.org,PROXY
   - DOMAIN-SUFFIX,www.wan-press.org,PROXY
   - DOMAIN-SUFFIX,www.websnapr.com,PROXY
+  - DOMAIN-SUFFIX,www.xicons.org,PROXY
   - DOMAIN-SUFFIX,www.zensur.freerk.com,PROXY
   - DOMAIN-SUFFIX,www1.american.edu,PROXY
   - DOMAIN-SUFFIX,www1.biz,PROXY

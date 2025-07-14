@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-07-14 02:11:30
-#! GFWList: 2025-07-09 03:20:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-07-14 12:54:05
+#! GFWList: 2025-07-14 09:55:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -5555,6 +5555,7 @@ payload:
   - DOMAIN-SUFFIX,www.thechinastory.org
   - DOMAIN-SUFFIX,www.wan-press.org
   - DOMAIN-SUFFIX,www.websnapr.com
+  - DOMAIN-SUFFIX,www.xicons.org
   - DOMAIN-SUFFIX,www.zensur.freerk.com
   - DOMAIN-SUFFIX,www1.american.edu
   - DOMAIN-SUFFIX,www1.biz
