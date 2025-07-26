@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-07-25 12:54:24
-! GFWList: 2025-07-14 09:55:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-07-26 02:05:24
+! GFWList: 2025-07-25 14:01:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -5777,6 +5777,7 @@
 ||yam.org.tw
 ||yande.re
 ||yanghengjun.com
+||yangzhi.org
 ||yasni.co.uk
 ||yasukuni.or.jp
 ||yayabay.com
