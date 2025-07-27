@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-07-27 02:24:40
-#! GFWList: 2025-07-25 14:01:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-07-27 12:51:17
+#! GFWList: 2025-07-27 05:22:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3163,6 +3163,7 @@ routing:
         - domain:lsxszzg.com
         - domain:ltn.com.tw
         - domain:luckydesigner.space
+        - domain:ludepress.com
         - domain:luke54.com
         - domain:luke54.org
         - domain:lupm.org
