@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-07-27 02:25:18
-#! GFWList: 2025-07-25 14:01:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-07-27 12:51:47
+#! GFWList: 2025-07-27 05:22:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3054,6 +3054,7 @@ rule:
         - s,lsxszzg.com
         - s,ltn.com.tw
         - s,luckydesigner.space
+        - s,ludepress.com
         - s,luke54.com
         - s,luke54.org
         - s,lupm.org

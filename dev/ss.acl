@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-07-27 02:25:16
-#! GFWList: 2025-07-25 14:01:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-07-27 12:51:46
+#! GFWList: 2025-07-27 05:22:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3041,6 +3041,7 @@
 (^|\.)lsxszzg\.com$
 (^|\.)ltn\.com\.tw$
 (^|\.)luckydesigner\.space$
+(^|\.)ludepress\.com$
 (^|\.)luke54\.com$
 (^|\.)luke54\.org$
 (^|\.)lupm\.org$

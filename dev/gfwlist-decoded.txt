@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: RZaW77J3ow7Ywo/RVQ5jTw
+! Checksum: cRVShOeAbcc2HQPCkMgzbg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 25 Jul 2025 14:01:51 +0000
+! Last Modified: Sun, 27 Jul 2025 05:22:39 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -4435,6 +4435,7 @@ kyohk.net
 ||kzeng.info
 
 !--------------------LL-------------------------
+||ludepress.com
 ||lingualeo.com
 ||ldplayer.tw
 ||ldplayer.net

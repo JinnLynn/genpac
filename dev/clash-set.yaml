@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-07-27 02:25:18
-#! GFWList: 2025-07-25 14:01:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-07-27 12:51:46
+#! GFWList: 2025-07-27 05:22:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -3038,6 +3038,7 @@ payload:
   - DOMAIN-SUFFIX,lsxszzg.com
   - DOMAIN-SUFFIX,ltn.com.tw
   - DOMAIN-SUFFIX,luckydesigner.space
+  - DOMAIN-SUFFIX,ludepress.com
   - DOMAIN-SUFFIX,luke54.com
   - DOMAIN-SUFFIX,luke54.org
   - DOMAIN-SUFFIX,lupm.org
