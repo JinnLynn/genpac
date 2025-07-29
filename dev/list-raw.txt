@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-07-29 02:27:00
-! GFWList: 2025-07-27 05:22:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-07-29 12:57:22
+! GFWList: 2025-07-29 05:14:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -5447,6 +5447,7 @@
 ||wahas.com
 ||waikeung.org
 ||wainao.me
+||walletconnect.com
 ||wallmama.com
 ||wallpapercasa.com
 ||wallproxy.com

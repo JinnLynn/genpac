@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-07-29 02:27:03
-#! GFWList: 2025-07-27 05:22:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-07-29 12:57:25
+#! GFWList: 2025-07-29 05:14:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -5330,6 +5330,7 @@ payload:
   - DOMAIN-SUFFIX,wahas.com
   - DOMAIN-SUFFIX,waikeung.org
   - DOMAIN-SUFFIX,wainao.me
+  - DOMAIN-SUFFIX,walletconnect.com
   - DOMAIN-SUFFIX,wallmama.com
   - DOMAIN-SUFFIX,wallpapercasa.com
   - DOMAIN-SUFFIX,wallproxy.com
