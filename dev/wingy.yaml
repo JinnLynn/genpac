@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-03 12:53:58
-#! GFWList: 2025-07-29 05:14:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-04 02:26:51
+#! GFWList: 2025-08-03 13:23:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -5580,6 +5580,8 @@ rule:
         - s,www2.ohchr.org
         - s,www2.rocketbbs.com
         - s,wwwhost.biz
+        - s,wxw.cat
+        - s,wxw.moe
         - s,wzyboy.im
         - s,x-art.com
         - s,x-berry.com
