@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-08-03 12:53:29
-! GFWList: 2025-07-29 05:14:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-08-04 02:26:22
+! GFWList: 2025-08-03 13:23:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -5681,6 +5681,8 @@
 ||www2.ohchr.org
 ||www2.rocketbbs.com
 ||wwwhost.biz
+||wxw.cat
+||wxw.moe
 ||wzyboy.im
 ||x-art.com
 ||x-berry.com

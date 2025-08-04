@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-03 12:53:29
-#! GFWList: 2025-07-29 05:14:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-04 02:26:22
+#! GFWList: 2025-08-03 13:23:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -5689,6 +5689,8 @@ routing:
         - domain:www2.ohchr.org
         - domain:www2.rocketbbs.com
         - domain:wwwhost.biz
+        - domain:wxw.cat
+        - domain:wxw.moe
         - domain:wzyboy.im
         - domain:x-art.com
         - domain:x-berry.com
