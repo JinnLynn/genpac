@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-08 02:19:21
-#! GFWList: 2025-08-03 13:23:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-08 12:56:30
+#! GFWList: 2025-08-08 07:46:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -989,6 +989,7 @@ payload:
   - DOMAIN-SUFFIX,clipfish.de
   - DOMAIN-SUFFIX,cloud.dify.ai
   - DOMAIN-SUFFIX,cloud.mail.ru
+  - DOMAIN-SUFFIX,cloudflare-dns.com
   - DOMAIN-SUFFIX,cloudflare-ipfs.com
   - DOMAIN-SUFFIX,cloudfunctions.net
   - DOMAIN-SUFFIX,club1069.com
@@ -5544,7 +5545,6 @@ payload:
   - DOMAIN-SUFFIX,www.moztw.org
   - DOMAIN-SUFFIX,www.msn.com
   - DOMAIN-SUFFIX,www.nbc.com
-  - DOMAIN-SUFFIX,www.nodeloc.com
   - DOMAIN-SUFFIX,www.owind.com
   - DOMAIN-SUFFIX,www.oxid.it
   - DOMAIN-SUFFIX,www.powerpointninja.com
