@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-08 02:18:55
-#! GFWList: 2025-08-03 13:23:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-08 12:56:03
+#! GFWList: 2025-08-08 07:46:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1005,6 +1005,7 @@ rule:
         - s,clipfish.de
         - s,cloud.dify.ai
         - s,cloud.mail.ru
+        - s,cloudflare-dns.com
         - s,cloudflare-ipfs.com
         - s,cloudfunctions.net
         - s,club1069.com
@@ -5560,7 +5561,6 @@ rule:
         - s,www.moztw.org
         - s,www.msn.com
         - s,www.nbc.com
-        - s,www.nodeloc.com
         - s,www.owind.com
         - s,www.oxid.it
         - s,www.powerpointninja.com
