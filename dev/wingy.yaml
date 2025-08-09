@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-08 12:56:30
-#! GFWList: 2025-08-08 07:46:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-09 02:01:47
+#! GFWList: 2025-08-08 14:50:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -567,6 +567,7 @@ rule:
         - s,bitcointalk.org
         - s,bitcoinworld.com
         - s,bitfinex.com
+        - s,bitget.com
         - s,bithumb.com
         - s,bitmex.com
         - s,bitshare.com
@@ -5140,6 +5141,7 @@ rule:
         - s,unstable.icu
         - s,unwire.hk
         - s,uocn.org
+        - s,upbit.com
         - s,updates.tdesktop.com
         - s,upghsbc.com
         - s,upholdjustice.org

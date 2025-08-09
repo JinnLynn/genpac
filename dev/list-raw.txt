@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-08-08 12:56:29
-! GFWList: 2025-08-08 07:46:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-08-09 02:01:45
+! GFWList: 2025-08-08 14:50:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -668,6 +668,7 @@
 ||bitcointalk.org
 ||bitcoinworld.com
 ||bitfinex.com
+||bitget.com
 ||bithumb.com
 ||bitmex.com
 ||bitshare.com
@@ -5241,6 +5242,7 @@
 ||unstable.icu
 ||unwire.hk
 ||uocn.org
+||upbit.com
 ||updates.tdesktop.com
 ||upghsbc.com
 ||upholdjustice.org
