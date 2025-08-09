@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-09 02:01:46
-#! GFWList: 2025-08-08 14:50:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-09 12:50:21
+#! GFWList: 2025-08-09 08:32:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -3113,6 +3113,7 @@ payload:
   - DOMAIN-SUFFIX,matters.town
   - DOMAIN-SUFFIX,matthewdgreen.wordpress.com
   - DOMAIN-SUFFIX,mattwilcox.net
+  - DOMAIN-SUFFIX,maven.neoforged.net
   - DOMAIN-SUFFIX,maxing.jp
   - DOMAIN-SUFFIX,mayimayi.com
   - DOMAIN-SUFFIX,mcadforums.com

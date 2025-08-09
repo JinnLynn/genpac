@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-08-09 02:01:45
- * GFWList Last-Modified: 2025-08-08 14:50:02
+ * Generated: 2025-08-09 12:50:18
+ * GFWList Last-Modified: 2025-08-09 08:32:32
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -3243,6 +3243,7 @@ var rules = [
             "matters.town",
             "matthewdgreen.wordpress.com",
             "mattwilcox.net",
+            "maven.neoforged.net",
             "maxing.jp",
             "mayimayi.com",
             "mcadforums.com",

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-09 02:01:45
-#! GFWList: 2025-08-08 14:50:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-09 12:50:19
+#! GFWList: 2025-08-09 08:32:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3238,6 +3238,7 @@ routing:
         - domain:matters.town
         - domain:matthewdgreen.wordpress.com
         - domain:mattwilcox.net
+        - domain:maven.neoforged.net
         - domain:maxing.jp
         - domain:mayimayi.com
         - domain:mcadforums.com
