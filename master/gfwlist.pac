@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-08-08 12:56:00
- * GFWList Last-Modified: 2025-08-08 07:46:07
+ * Generated: 2025-08-09 02:01:14
+ * GFWList Last-Modified: 2025-08-08 14:50:02
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -681,6 +681,7 @@ var rules = [
             "bitcointalk.org",
             "bitcoinworld.com",
             "bitfinex.com",
+            "bitget.com",
             "bithumb.com",
             "bitmex.com",
             "bitshare.com",
@@ -5254,6 +5255,7 @@ var rules = [
             "unstable.icu",
             "unwire.hk",
             "uocn.org",
+            "upbit.com",
             "updates.tdesktop.com",
             "upghsbc.com",
             "upholdjustice.org",
