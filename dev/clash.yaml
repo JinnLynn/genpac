@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-12 02:00:47
-#! GFWList: 2025-08-09 08:32:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-12 12:53:08
+#! GFWList: 2025-08-12 03:15:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -663,6 +663,7 @@ rules:
   - DOMAIN-SUFFIX,biliworld.com,PROXY
   - DOMAIN-SUFFIX,billypan.com,PROXY
   - DOMAIN-SUFFIX,binance.com,PROXY
+  - DOMAIN-SUFFIX,binance.org,PROXY
   - DOMAIN-SUFFIX,binancezh.cc,PROXY
   - DOMAIN-SUFFIX,binux.me,PROXY
   - DOMAIN-SUFFIX,bird.so,PROXY
@@ -2739,6 +2740,7 @@ rules:
   - DOMAIN-SUFFIX,indiemerch.com,PROXY
   - DOMAIN-SUFFIX,inews-api.tvb.com,PROXY
   - DOMAIN-SUFFIX,info-graf.fr,PROXY
+  - DOMAIN-SUFFIX,infura.io,PROXY
   - DOMAIN-SUFFIX,inherit.live,PROXY
   - DOMAIN-SUFFIX,initiativesforchina.org,PROXY
   - DOMAIN-SUFFIX,inkbunny.net,PROXY
@@ -3163,6 +3165,7 @@ rules:
   - DOMAIN-SUFFIX,lsxszzg.com,PROXY
   - DOMAIN-SUFFIX,ltn.com.tw,PROXY
   - DOMAIN-SUFFIX,luckydesigner.space,PROXY
+  - DOMAIN-SUFFIX,luckymobile.ca,PROXY
   - DOMAIN-SUFFIX,ludepress.com,PROXY
   - DOMAIN-SUFFIX,luke54.com,PROXY
   - DOMAIN-SUFFIX,luke54.org,PROXY
@@ -3285,6 +3288,7 @@ rules:
   - DOMAIN-SUFFIX,messenger.com,PROXY
   - DOMAIN-SUFFIX,meta.com,PROXY
   - DOMAIN-SUFFIX,metafilter.com,PROXY
+  - DOMAIN-SUFFIX,metamask.io,PROXY
   - DOMAIN-SUFFIX,metart.com,PROXY
   - DOMAIN-SUFFIX,metarthunter.com,PROXY
   - DOMAIN-SUFFIX,meteorshowersonline.com,PROXY

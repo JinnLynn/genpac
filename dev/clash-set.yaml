@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-12 02:00:47
-#! GFWList: 2025-08-09 08:32:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-12 12:53:08
+#! GFWList: 2025-08-12 03:15:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -540,6 +540,7 @@ payload:
   - DOMAIN-SUFFIX,biliworld.com
   - DOMAIN-SUFFIX,billypan.com
   - DOMAIN-SUFFIX,binance.com
+  - DOMAIN-SUFFIX,binance.org
   - DOMAIN-SUFFIX,binancezh.cc
   - DOMAIN-SUFFIX,binux.me
   - DOMAIN-SUFFIX,bird.so
@@ -2616,6 +2617,7 @@ payload:
   - DOMAIN-SUFFIX,indiemerch.com
   - DOMAIN-SUFFIX,inews-api.tvb.com
   - DOMAIN-SUFFIX,info-graf.fr
+  - DOMAIN-SUFFIX,infura.io
   - DOMAIN-SUFFIX,inherit.live
   - DOMAIN-SUFFIX,initiativesforchina.org
   - DOMAIN-SUFFIX,inkbunny.net
@@ -3040,6 +3042,7 @@ payload:
   - DOMAIN-SUFFIX,lsxszzg.com
   - DOMAIN-SUFFIX,ltn.com.tw
   - DOMAIN-SUFFIX,luckydesigner.space
+  - DOMAIN-SUFFIX,luckymobile.ca
   - DOMAIN-SUFFIX,ludepress.com
   - DOMAIN-SUFFIX,luke54.com
   - DOMAIN-SUFFIX,luke54.org
@@ -3162,6 +3165,7 @@ payload:
   - DOMAIN-SUFFIX,messenger.com
   - DOMAIN-SUFFIX,meta.com
   - DOMAIN-SUFFIX,metafilter.com
+  - DOMAIN-SUFFIX,metamask.io
   - DOMAIN-SUFFIX,metart.com
   - DOMAIN-SUFFIX,metarthunter.com
   - DOMAIN-SUFFIX,meteorshowersonline.com

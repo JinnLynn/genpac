@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-08-12 02:00:45
-! GFWList: 2025-08-09 08:32:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-08-12 12:53:06
+! GFWList: 2025-08-12 03:15:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -657,6 +657,7 @@
 ||biliworld.com
 ||billypan.com
 ||binance.com
+||binance.org
 ||binancezh.cc
 ||binux.me
 ||bird.so
@@ -2733,6 +2734,7 @@
 ||indiemerch.com
 ||inews-api.tvb.com
 ||info-graf.fr
+||infura.io
 ||inherit.live
 ||initiativesforchina.org
 ||inkbunny.net
@@ -3157,6 +3159,7 @@
 ||lsxszzg.com
 ||ltn.com.tw
 ||luckydesigner.space
+||luckymobile.ca
 ||ludepress.com
 ||luke54.com
 ||luke54.org
@@ -3279,6 +3282,7 @@
 ||messenger.com
 ||meta.com
 ||metafilter.com
+||metamask.io
 ||metart.com
 ||metarthunter.com
 ||meteorshowersonline.com
