@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-12 02:00:16
-#! GFWList: 2025-08-09 08:32:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-12 12:52:32
+#! GFWList: 2025-08-12 03:15:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -665,6 +665,7 @@ routing:
         - domain:biliworld.com
         - domain:billypan.com
         - domain:binance.com
+        - domain:binance.org
         - domain:binancezh.cc
         - domain:binux.me
         - domain:bird.so
@@ -2741,6 +2742,7 @@ routing:
         - domain:indiemerch.com
         - domain:inews-api.tvb.com
         - domain:info-graf.fr
+        - domain:infura.io
         - domain:inherit.live
         - domain:initiativesforchina.org
         - domain:inkbunny.net
@@ -3165,6 +3167,7 @@ routing:
         - domain:lsxszzg.com
         - domain:ltn.com.tw
         - domain:luckydesigner.space
+        - domain:luckymobile.ca
         - domain:ludepress.com
         - domain:luke54.com
         - domain:luke54.org
@@ -3287,6 +3290,7 @@ routing:
         - domain:messenger.com
         - domain:meta.com
         - domain:metafilter.com
+        - domain:metamask.io
         - domain:metart.com
         - domain:metarthunter.com
         - domain:meteorshowersonline.com

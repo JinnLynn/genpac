@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: oyJYe3c9C6Q7+ZPEl80zww
+! Checksum: jN19g1RXwzpf0ViZyQ4PPA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 09 Aug 2025 08:32:32 +0000
+! Last Modified: Tue, 12 Aug 2025 03:15:07 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1857,6 +1857,7 @@ boxun*.azurewebsites.net
 ||boxun*.azurewebsites.net
 
 !--------------------BB-------------------------
+||binance.org
 ||bitget.com
 ||blackmagicdesign.com
 ||bearteach.com
@@ -4015,6 +4016,7 @@ ebook.hyread.com.tw
 ||ebook.hyread.com.tw
 
 !--------------------II-------------------------
+||infura.io
 ||president.ir
 ||gov.ir
 ||irna.ir
@@ -4437,6 +4439,7 @@ kyohk.net
 ||kzeng.info
 
 !--------------------LL-------------------------
+||luckymobile.ca
 ||ludepress.com
 ||lingualeo.com
 ||ldplayer.tw
@@ -4604,6 +4607,7 @@ lvhai.org
 ||lzmtnews.org
 
 !--------------------MM-------------------------
+||metamask.io
 ||missav.ws
 ||news.mt.co.kr
 ||musixmatch.com

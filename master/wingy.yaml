@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-12 02:00:18
-#! GFWList: 2025-08-09 08:32:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-12 12:52:35
+#! GFWList: 2025-08-12 03:15:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -556,6 +556,7 @@ rule:
         - s,biliworld.com
         - s,billypan.com
         - s,binance.com
+        - s,binance.org
         - s,binancezh.cc
         - s,binux.me
         - s,bird.so
@@ -2632,6 +2633,7 @@ rule:
         - s,indiemerch.com
         - s,inews-api.tvb.com
         - s,info-graf.fr
+        - s,infura.io
         - s,inherit.live
         - s,initiativesforchina.org
         - s,inkbunny.net
@@ -3056,6 +3058,7 @@ rule:
         - s,lsxszzg.com
         - s,ltn.com.tw
         - s,luckydesigner.space
+        - s,luckymobile.ca
         - s,ludepress.com
         - s,luke54.com
         - s,luke54.org
@@ -3178,6 +3181,7 @@ rule:
         - s,messenger.com
         - s,meta.com
         - s,metafilter.com
+        - s,metamask.io
         - s,metart.com
         - s,metarthunter.com
         - s,meteorshowersonline.com
