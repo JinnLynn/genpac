@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-13 02:03:09
-#! GFWList: 2025-08-12 03:15:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-13 12:54:15
+#! GFWList: 2025-08-13 10:33:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -637,6 +637,7 @@ rules:
   - DOMAIN-SUFFIX,bet365.com,PROXY
   - DOMAIN-SUFFIX,betaclouds.net,PROXY
   - DOMAIN-SUFFIX,betfair.com,PROXY
+  - DOMAIN-SUFFIX,betterhash.net,PROXY
   - DOMAIN-SUFFIX,betternet.co,PROXY
   - DOMAIN-SUFFIX,bettervpn.com,PROXY
   - DOMAIN-SUFFIX,bettween.com,PROXY
@@ -2445,6 +2446,7 @@ rules:
   - DOMAIN-SUFFIX,heqinglian.net,PROXY
   - DOMAIN-SUFFIX,heritage.org,PROXY
   - DOMAIN-SUFFIX,herokuapp.com,PROXY
+  - DOMAIN-SUFFIX,herominers.com,PROXY
   - DOMAIN-SUFFIX,hexieshe.com,PROXY
   - DOMAIN-SUFFIX,hexieshe.xyz,PROXY
   - DOMAIN-SUFFIX,hexxeh.net,PROXY
@@ -2814,6 +2816,7 @@ rules:
   - DOMAIN-SUFFIX,itaiwan.gov.tw,PROXY
   - DOMAIN-SUFFIX,italiatibet.org,PROXY
   - DOMAIN-SUFFIX,itasoftware.com,PROXY
+  - DOMAIN-SUFFIX,itch.io,PROXY
   - DOMAIN-SUFFIX,itemdb.com,PROXY
   - DOMAIN-SUFFIX,itemfix.com,PROXY
   - DOMAIN-SUFFIX,ithelp.ithome.com.tw,PROXY

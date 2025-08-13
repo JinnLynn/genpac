@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-13 02:03:10
-#! GFWList: 2025-08-12 03:15:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-13 12:54:15
+#! GFWList: 2025-08-13 10:33:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -530,6 +530,7 @@ rule:
         - s,bet365.com
         - s,betaclouds.net
         - s,betfair.com
+        - s,betterhash.net
         - s,betternet.co
         - s,bettervpn.com
         - s,bettween.com
@@ -2338,6 +2339,7 @@ rule:
         - s,heqinglian.net
         - s,heritage.org
         - s,herokuapp.com
+        - s,herominers.com
         - s,hexieshe.com
         - s,hexieshe.xyz
         - s,hexxeh.net
@@ -2707,6 +2709,7 @@ rule:
         - s,itaiwan.gov.tw
         - s,italiatibet.org
         - s,itasoftware.com
+        - s,itch.io
         - s,itemdb.com
         - s,itemfix.com
         - s,ithelp.ithome.com.tw

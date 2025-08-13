@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-13 02:03:07
-#! GFWList: 2025-08-12 03:15:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-13 12:54:13
+#! GFWList: 2025-08-13 10:33:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -517,6 +517,7 @@
 (^|\.)bet365\.com$
 (^|\.)betaclouds\.net$
 (^|\.)betfair\.com$
+(^|\.)betterhash\.net$
 (^|\.)betternet\.co$
 (^|\.)bettervpn\.com$
 (^|\.)bettween\.com$
@@ -2325,6 +2326,7 @@
 (^|\.)heqinglian\.net$
 (^|\.)heritage\.org$
 (^|\.)herokuapp\.com$
+(^|\.)herominers\.com$
 (^|\.)hexieshe\.com$
 (^|\.)hexieshe\.xyz$
 (^|\.)hexxeh\.net$
@@ -2694,6 +2696,7 @@
 (^|\.)itaiwan\.gov\.tw$
 (^|\.)italiatibet\.org$
 (^|\.)itasoftware\.com$
+(^|\.)itch\.io$
 (^|\.)itemdb\.com$
 (^|\.)itemfix\.com$
 (^|\.)ithelp\.ithome\.com\.tw$
