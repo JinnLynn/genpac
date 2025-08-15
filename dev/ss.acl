@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-15 02:03:57
-#! GFWList: 2025-08-13 10:33:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-15 12:50:58
+#! GFWList: 2025-08-15 06:59:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -4567,6 +4567,7 @@
 (^|\.)surrenderat20\.net$
 (^|\.)svsfx\.com$
 (^|\.)swagbucks\.com$
+(^|\.)swapspace\.co$
 (^|\.)swissinfo\.ch$
 (^|\.)swissvpn\.net$
 (^|\.)switch1\.jp$
