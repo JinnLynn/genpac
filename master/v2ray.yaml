@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-15 02:03:29
-#! GFWList: 2025-08-13 10:33:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-15 12:50:26
+#! GFWList: 2025-08-15 06:59:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -4689,6 +4689,7 @@ routing:
         - domain:surrenderat20.net
         - domain:svsfx.com
         - domain:swagbucks.com
+        - domain:swapspace.co
         - domain:swissinfo.ch
         - domain:swissvpn.net
         - domain:switch1.jp
