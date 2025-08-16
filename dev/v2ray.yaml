@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-16 01:58:05
-#! GFWList: 2025-08-15 06:59:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-16 12:48:35
+#! GFWList: 2025-08-16 07:55:26 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3840,6 +3840,7 @@ routing:
         - domain:paljorpublications.com
         - domain:paltalk.com
         - domain:panamapapers.sueddeutsche.de
+        - domain:pancakeswap.finance
         - domain:pandafan.pub
         - domain:pandapow.co
         - domain:pandapow.net
@@ -3906,6 +3907,7 @@ routing:
         - domain:perplexity.ai
         - domain:persecutionblog.com
         - domain:persiankitty.com
+        - domain:pewresearch.org
         - domain:phapluan.org
         - domain:phayul.com
         - domain:philborges.com
@@ -4035,6 +4037,7 @@ routing:
         - domain:prisoneralert.com
         - domain:pritunl.com
         - domain:privacybox.de
+        - domain:privacyguides.org
         - domain:private.com
         - domain:privateinternetaccess.com
         - domain:privatepaste.com

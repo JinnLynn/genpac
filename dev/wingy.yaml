@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-16 01:58:06
-#! GFWList: 2025-08-15 06:59:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-16 12:48:38
+#! GFWList: 2025-08-16 07:55:26 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3731,6 +3731,7 @@ rule:
         - s,paljorpublications.com
         - s,paltalk.com
         - s,panamapapers.sueddeutsche.de
+        - s,pancakeswap.finance
         - s,pandafan.pub
         - s,pandapow.co
         - s,pandapow.net
@@ -3797,6 +3798,7 @@ rule:
         - s,perplexity.ai
         - s,persecutionblog.com
         - s,persiankitty.com
+        - s,pewresearch.org
         - s,phapluan.org
         - s,phayul.com
         - s,philborges.com
@@ -3926,6 +3928,7 @@ rule:
         - s,prisoneralert.com
         - s,pritunl.com
         - s,privacybox.de
+        - s,privacyguides.org
         - s,private.com
         - s,privateinternetaccess.com
         - s,privatepaste.com

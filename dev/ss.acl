@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-16 01:58:05
-#! GFWList: 2025-08-15 06:59:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-16 12:48:35
+#! GFWList: 2025-08-16 07:55:26 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3718,6 +3718,7 @@
 (^|\.)paljorpublications\.com$
 (^|\.)paltalk\.com$
 (^|\.)panamapapers\.sueddeutsche\.de$
+(^|\.)pancakeswap\.finance$
 (^|\.)pandafan\.pub$
 (^|\.)pandapow\.co$
 (^|\.)pandapow\.net$
@@ -3784,6 +3785,7 @@
 (^|\.)perplexity\.ai$
 (^|\.)persecutionblog\.com$
 (^|\.)persiankitty\.com$
+(^|\.)pewresearch\.org$
 (^|\.)phapluan\.org$
 (^|\.)phayul\.com$
 (^|\.)philborges\.com$
@@ -3913,6 +3915,7 @@
 (^|\.)prisoneralert\.com$
 (^|\.)pritunl\.com$
 (^|\.)privacybox\.de$
+(^|\.)privacyguides\.org$
 (^|\.)private\.com$
 (^|\.)privateinternetaccess\.com$
 (^|\.)privatepaste\.com$

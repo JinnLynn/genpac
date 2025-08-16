@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-16 01:58:06
-#! GFWList: 2025-08-15 06:59:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-16 12:48:38
+#! GFWList: 2025-08-16 07:55:26 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -3715,6 +3715,7 @@ payload:
   - DOMAIN-SUFFIX,paljorpublications.com
   - DOMAIN-SUFFIX,paltalk.com
   - DOMAIN-SUFFIX,panamapapers.sueddeutsche.de
+  - DOMAIN-SUFFIX,pancakeswap.finance
   - DOMAIN-SUFFIX,pandafan.pub
   - DOMAIN-SUFFIX,pandapow.co
   - DOMAIN-SUFFIX,pandapow.net
@@ -3781,6 +3782,7 @@ payload:
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,persecutionblog.com
   - DOMAIN-SUFFIX,persiankitty.com
+  - DOMAIN-SUFFIX,pewresearch.org
   - DOMAIN-SUFFIX,phapluan.org
   - DOMAIN-SUFFIX,phayul.com
   - DOMAIN-SUFFIX,philborges.com
@@ -3910,6 +3912,7 @@ payload:
   - DOMAIN-SUFFIX,prisoneralert.com
   - DOMAIN-SUFFIX,pritunl.com
   - DOMAIN-SUFFIX,privacybox.de
+  - DOMAIN-SUFFIX,privacyguides.org
   - DOMAIN-SUFFIX,private.com
   - DOMAIN-SUFFIX,privateinternetaccess.com
   - DOMAIN-SUFFIX,privatepaste.com
