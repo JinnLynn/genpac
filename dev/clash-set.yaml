@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-18 02:10:21
-#! GFWList: 2025-08-16 07:55:26 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-18 12:55:08
+#! GFWList: 2025-08-18 10:22:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -3391,6 +3391,7 @@ payload:
   - DOMAIN-SUFFIX,nationsonline.org
   - DOMAIN-SUFFIX,nationwide.com
   - DOMAIN-SUFFIX,naughtyamerica.com
+  - DOMAIN-SUFFIX,naver.com
   - DOMAIN-SUFFIX,navyfamily.navy.mil
   - DOMAIN-SUFFIX,navyreserve.navy.mil
   - DOMAIN-SUFFIX,naweeklytimes.com
