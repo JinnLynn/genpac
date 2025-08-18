@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-18 02:09:49
-#! GFWList: 2025-08-16 07:55:26 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-18 12:54:40
+#! GFWList: 2025-08-18 10:22:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3394,6 +3394,7 @@
 (^|\.)nationsonline\.org$
 (^|\.)nationwide\.com$
 (^|\.)naughtyamerica\.com$
+(^|\.)naver\.com$
 (^|\.)navyfamily\.navy\.mil$
 (^|\.)navyreserve\.navy\.mil$
 (^|\.)naweeklytimes\.com$
