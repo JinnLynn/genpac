@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: 3krsgrK8frUP26J3i6INBw
+! Checksum: 4IW/z6D+lu3J10lZ72wG3w
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 18 Aug 2025 10:22:48 +0000
+! Last Modified: Mon, 18 Aug 2025 13:50:12 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2560,6 +2560,8 @@ cyberghostvpn.com
 ||nic.cz.cc
 
 !--------------------DD-------------------------
+||deno.dev
+||docs.deno.com
 ||doom9.org
 ||dweb.link
 ||docker.io
@@ -2957,6 +2959,7 @@ eyevio.jp
 .ezpeer.com
 
 !--------------------FF-------------------------
+||furrybar.com
 ||forbes.com
 ||financialexpress.com
 ||fast.com
