@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-18 12:55:06
-#! GFWList: 2025-08-18 10:22:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-19 01:57:06
+#! GFWList: 2025-08-18 13:50:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1341,6 +1341,7 @@ routing:
         - domain:demo.unlock-music.dev
         - domain:democrats.org
         - domain:demosisto.hk
+        - domain:deno.dev
         - domain:depositphotos.com
         - domain:desc.se
         - domain:desipro.de
@@ -1409,6 +1410,7 @@ routing:
         - domain:doc.new
         - domain:docker.com
         - domain:docker.io
+        - domain:docs.deno.com
         - domain:docs.new
         - domain:doctorvoice.org
         - domain:documentingreality.com
@@ -1931,6 +1933,7 @@ routing:
         - domain:furbo.org
         - domain:furhhdl.org
         - domain:furinkan.com
+        - domain:furrybar.com
         - domain:futurechinaforum.org
         - domain:futuremessage.org
         - domain:fux.com

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-18 12:55:08
-#! GFWList: 2025-08-18 10:22:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-19 01:57:10
+#! GFWList: 2025-08-18 13:50:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1232,6 +1232,7 @@ rule:
         - s,demo.unlock-music.dev
         - s,democrats.org
         - s,demosisto.hk
+        - s,deno.dev
         - s,depositphotos.com
         - s,desc.se
         - s,desipro.de
@@ -1300,6 +1301,7 @@ rule:
         - s,doc.new
         - s,docker.com
         - s,docker.io
+        - s,docs.deno.com
         - s,docs.new
         - s,doctorvoice.org
         - s,documentingreality.com
@@ -1822,6 +1824,7 @@ rule:
         - s,furbo.org
         - s,furhhdl.org
         - s,furinkan.com
+        - s,furrybar.com
         - s,futurechinaforum.org
         - s,futuremessage.org
         - s,fux.com

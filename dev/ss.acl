@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-18 12:55:06
-#! GFWList: 2025-08-18 10:22:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-19 01:57:06
+#! GFWList: 2025-08-18 13:50:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1219,6 +1219,7 @@
 (^|\.)demo\.unlock-music\.dev$
 (^|\.)democrats\.org$
 (^|\.)demosisto\.hk$
+(^|\.)deno\.dev$
 (^|\.)depositphotos\.com$
 (^|\.)desc\.se$
 (^|\.)desipro\.de$
@@ -1287,6 +1288,7 @@
 (^|\.)doc\.new$
 (^|\.)docker\.com$
 (^|\.)docker\.io$
+(^|\.)docs\.deno\.com$
 (^|\.)docs\.new$
 (^|\.)doctorvoice\.org$
 (^|\.)documentingreality\.com$
@@ -1809,6 +1811,7 @@
 (^|\.)furbo\.org$
 (^|\.)furhhdl\.org$
 (^|\.)furinkan\.com$
+(^|\.)furrybar\.com$
 (^|\.)futurechinaforum\.org$
 (^|\.)futuremessage\.org$
 (^|\.)fux\.com$

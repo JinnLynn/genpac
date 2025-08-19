@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-18 12:55:08
-#! GFWList: 2025-08-18 10:22:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-19 01:57:09
+#! GFWList: 2025-08-18 13:50:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -1216,6 +1216,7 @@ payload:
   - DOMAIN-SUFFIX,demo.unlock-music.dev
   - DOMAIN-SUFFIX,democrats.org
   - DOMAIN-SUFFIX,demosisto.hk
+  - DOMAIN-SUFFIX,deno.dev
   - DOMAIN-SUFFIX,depositphotos.com
   - DOMAIN-SUFFIX,desc.se
   - DOMAIN-SUFFIX,desipro.de
@@ -1284,6 +1285,7 @@ payload:
   - DOMAIN-SUFFIX,doc.new
   - DOMAIN-SUFFIX,docker.com
   - DOMAIN-SUFFIX,docker.io
+  - DOMAIN-SUFFIX,docs.deno.com
   - DOMAIN-SUFFIX,docs.new
   - DOMAIN-SUFFIX,doctorvoice.org
   - DOMAIN-SUFFIX,documentingreality.com
@@ -1806,6 +1808,7 @@ payload:
   - DOMAIN-SUFFIX,furbo.org
   - DOMAIN-SUFFIX,furhhdl.org
   - DOMAIN-SUFFIX,furinkan.com
+  - DOMAIN-SUFFIX,furrybar.com
   - DOMAIN-SUFFIX,futurechinaforum.org
   - DOMAIN-SUFFIX,futuremessage.org
   - DOMAIN-SUFFIX,fux.com
