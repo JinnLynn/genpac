@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-08-20 01:55:19
- * GFWList Last-Modified: 2025-08-18 13:50:12
+ * Generated: 2025-08-20 12:51:28
+ * GFWList Last-Modified: 2025-08-20 11:49:03
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -5231,6 +5231,7 @@ var rules = [
             "udn.com",
             "udn.com.tw",
             "udnbkk.com",
+            "udomain.hk",
             "uforadio.com.tw",
             "ufreevpn.com",
             "ugo.com",

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-20 01:55:23
-#! GFWList: 2025-08-18 13:50:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-20 12:51:30
+#! GFWList: 2025-08-20 11:49:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -5224,6 +5224,7 @@ rules:
   - DOMAIN-SUFFIX,udn.com,PROXY
   - DOMAIN-SUFFIX,udn.com.tw,PROXY
   - DOMAIN-SUFFIX,udnbkk.com,PROXY
+  - DOMAIN-SUFFIX,udomain.hk,PROXY
   - DOMAIN-SUFFIX,uforadio.com.tw,PROXY
   - DOMAIN-SUFFIX,ufreevpn.com,PROXY
   - DOMAIN-SUFFIX,ugo.com,PROXY
