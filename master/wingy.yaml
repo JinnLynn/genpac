@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-20 01:54:49
-#! GFWList: 2025-08-18 13:50:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-20 12:50:54
+#! GFWList: 2025-08-20 11:49:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -5117,6 +5117,7 @@ rule:
         - s,udn.com
         - s,udn.com.tw
         - s,udnbkk.com
+        - s,udomain.hk
         - s,uforadio.com.tw
         - s,ufreevpn.com
         - s,ugo.com

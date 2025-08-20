@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-20 01:54:48
-#! GFWList: 2025-08-18 13:50:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-20 12:50:51
+#! GFWList: 2025-08-20 11:49:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -5226,6 +5226,7 @@ routing:
         - domain:udn.com
         - domain:udn.com.tw
         - domain:udnbkk.com
+        - domain:udomain.hk
         - domain:uforadio.com.tw
         - domain:ufreevpn.com
         - domain:ugo.com
