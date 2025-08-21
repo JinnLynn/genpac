@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-08-20 12:50:50
- * GFWList Last-Modified: 2025-08-20 11:49:03
+ * Generated: 2025-08-21 01:53:29
+ * GFWList Last-Modified: 2025-08-20 15:24:34
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -98,7 +98,6 @@ var rules = [
             "static.soup.io",
             "static.typepad.com",
             "stdtime.gov.tw",
-            "storage.googleapis.com",
             "store.sprite.org",
             "sunmoonlake.gov.tw",
             "taitung-house.gov.tw",
