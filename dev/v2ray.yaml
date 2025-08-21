@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-20 12:51:28
-#! GFWList: 2025-08-20 11:49:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-21 01:54:06
+#! GFWList: 2025-08-20 15:24:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -92,7 +92,6 @@ routing:
         - domain:static.soup.io
         - domain:static.typepad.com
         - domain:stdtime.gov.tw
-        - domain:storage.googleapis.com
         - domain:store.sprite.org
         - domain:sunmoonlake.gov.tw
         - domain:taitung-house.gov.tw

@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: L/cGxxrGbSEIKfzqI6BH1g
+! Checksum: qW/YvjUtmluHdnZV+/AvwA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 20 Aug 2025 11:49:03 +0000
+! Last Modified: Wed, 20 Aug 2025 15:24:34 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -7508,7 +7508,6 @@ writer.zoho.com
 !--@@||khm2.googleapis.com
 !--@@||khm3.googleapis.com
 !--@@||khmdb.googleapis.com
-@@||storage.googleapis.com
 @@||update.googleapis.com
 @@||safebrowsing.googleapis.com
 @@||connectivitycheck.gstatic.com
