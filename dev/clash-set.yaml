@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-21 01:54:09
-#! GFWList: 2025-08-20 15:24:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-21 12:50:38
+#! GFWList: 2025-08-21 10:06:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -2700,6 +2700,7 @@ payload:
   - DOMAIN-SUFFIX,itemdb.com
   - DOMAIN-SUFFIX,itemfix.com
   - DOMAIN-SUFFIX,ithelp.ithome.com.tw
+  - DOMAIN-SUFFIX,itiger.com
   - DOMAIN-SUFFIX,itsaol.com
   - DOMAIN-SUFFIX,itshidden.com
   - DOMAIN-SUFFIX,itsky.it
