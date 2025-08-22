@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-22 01:54:13
-#! GFWList: 2025-08-21 10:06:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-22 12:48:37
+#! GFWList: 2025-08-22 02:53:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1080,6 +1080,7 @@
 (^|\.)cotweet\.com$
 (^|\.)counter\.social$
 (^|\.)coursehero\.com$
+(^|\.)covenantswatch\.org\.tw$
 (^|\.)coze\.com$
 (^|\.)cpj\.org$
 (^|\.)cpu-monkey\.com$
