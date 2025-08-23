@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-23 01:50:26
-#! GFWList: 2025-08-22 02:53:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-23 12:45:13
+#! GFWList: 2025-08-23 08:36:20 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1814,6 +1814,8 @@ rule:
         - s,ftx.com
         - s,fucd.com
         - s,fuchsia.dev
+        - s,fuckccp.com
+        - s,fuckccp.xyz
         - s,fuckgfw.org
         - s,fulione.com
         - s,fullerconsideration.com

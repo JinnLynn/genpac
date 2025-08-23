@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-23 01:50:26
-#! GFWList: 2025-08-22 02:53:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-23 12:45:12
+#! GFWList: 2025-08-23 08:36:20 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -1798,6 +1798,8 @@ payload:
   - DOMAIN-SUFFIX,ftx.com
   - DOMAIN-SUFFIX,fucd.com
   - DOMAIN-SUFFIX,fuchsia.dev
+  - DOMAIN-SUFFIX,fuckccp.com
+  - DOMAIN-SUFFIX,fuckccp.xyz
   - DOMAIN-SUFFIX,fuckgfw.org
   - DOMAIN-SUFFIX,fulione.com
   - DOMAIN-SUFFIX,fullerconsideration.com
