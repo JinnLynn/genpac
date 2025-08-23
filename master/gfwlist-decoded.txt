@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: j727ccnjy4NyXZjg8PR2SA
+! Checksum: AM53R3G+GothqwKbfFjWLQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 22 Aug 2025 02:53:57 +0000
+! Last Modified: Sat, 23 Aug 2025 08:36:20 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2960,6 +2960,8 @@ eyevio.jp
 .ezpeer.com
 
 !--------------------FF-------------------------
+||fuckccp.xyz
+||fuckccp.com
 ||furrybar.com
 ||forbes.com
 ||financialexpress.com

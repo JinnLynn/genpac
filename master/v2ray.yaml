@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-23 01:49:56
-#! GFWList: 2025-08-22 02:53:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-23 12:44:39
+#! GFWList: 2025-08-23 08:36:20 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1922,6 +1922,8 @@ routing:
         - domain:ftx.com
         - domain:fucd.com
         - domain:fuchsia.dev
+        - domain:fuckccp.com
+        - domain:fuckccp.xyz
         - domain:fuckgfw.org
         - domain:fulione.com
         - domain:fullerconsideration.com
