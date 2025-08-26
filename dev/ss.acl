@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-26 01:55:37
-#! GFWList: 2025-08-23 08:36:20 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-26 12:53:00
+#! GFWList: 2025-08-26 07:00:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1629,6 +1629,7 @@
 (^|\.)fdc89\.jp$
 (^|\.)feedburner\.com$
 (^|\.)feeder\.co$
+(^|\.)feedly\.com$
 (^|\.)feeds\.fileforum\.com$
 (^|\.)feedx\.net$
 (^|\.)feelssh\.com$

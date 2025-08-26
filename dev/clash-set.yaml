@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-26 01:55:38
-#! GFWList: 2025-08-23 08:36:20 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-26 12:53:02
+#! GFWList: 2025-08-26 07:00:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -1626,6 +1626,7 @@ payload:
   - DOMAIN-SUFFIX,fdc89.jp
   - DOMAIN-SUFFIX,feedburner.com
   - DOMAIN-SUFFIX,feeder.co
+  - DOMAIN-SUFFIX,feedly.com
   - DOMAIN-SUFFIX,feeds.fileforum.com
   - DOMAIN-SUFFIX,feedx.net
   - DOMAIN-SUFFIX,feelssh.com
