@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-26 01:55:08
-#! GFWList: 2025-08-23 08:36:20 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-26 12:52:25
+#! GFWList: 2025-08-26 07:00:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1750,6 +1750,7 @@ routing:
         - domain:fdc89.jp
         - domain:feedburner.com
         - domain:feeder.co
+        - domain:feedly.com
         - domain:feeds.fileforum.com
         - domain:feedx.net
         - domain:feelssh.com
