@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-26 12:53:02
-#! GFWList: 2025-08-26 07:00:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-27 01:52:25
+#! GFWList: 2025-08-26 13:32:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -3263,6 +3263,7 @@ payload:
   - DOMAIN-SUFFIX,mog.com
   - DOMAIN-SUFFIX,mohu.club
   - DOMAIN-SUFFIX,mohu.rocks
+  - DOMAIN-SUFFIX,moj.gov.tw
   - DOMAIN-SUFFIX,mojim.com
   - DOMAIN-SUFFIX,mol.gov.tw
   - DOMAIN-SUFFIX,molihua.org

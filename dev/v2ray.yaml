@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-26 12:53:00
-#! GFWList: 2025-08-26 07:00:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-27 01:52:22
+#! GFWList: 2025-08-26 13:32:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3387,6 +3387,7 @@ routing:
         - domain:mog.com
         - domain:mohu.club
         - domain:mohu.rocks
+        - domain:moj.gov.tw
         - domain:mojim.com
         - domain:mol.gov.tw
         - domain:molihua.org
