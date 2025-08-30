@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: cwgRCgiUb7D65VKWtYvD5g
+! Checksum: 77xYF5WP8WpgNfVjn64o6A
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 26 Aug 2025 13:32:31 +0000
+! Last Modified: Fri, 29 Aug 2025 14:56:42 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2562,6 +2562,7 @@ cyberghostvpn.com
 ||nic.cz.cc
 
 !--------------------DD-------------------------
+||dpdns.org
 ||deno.dev
 ||docs.deno.com
 ||doom9.org

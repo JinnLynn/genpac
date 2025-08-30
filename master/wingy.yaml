@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-29 12:48:08
-#! GFWList: 2025-08-26 13:32:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-30 01:45:13
+#! GFWList: 2025-08-29 14:56:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1332,6 +1332,7 @@ rule:
         - s,doujincafe.com
         - s,download.aircrack-ng.org
         - s,download.cnet.com
+        - s,dpdns.org
         - s,dphk.org
         - s,dpool.top
         - s,dpp.org.tw

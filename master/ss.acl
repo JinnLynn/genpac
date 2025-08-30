@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-29 12:48:08
-#! GFWList: 2025-08-26 13:32:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-30 01:45:11
+#! GFWList: 2025-08-29 14:56:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1319,6 +1319,7 @@
 (^|\.)doujincafe\.com$
 (^|\.)download\.aircrack-ng\.org$
 (^|\.)download\.cnet\.com$
+(^|\.)dpdns\.org$
 (^|\.)dphk\.org$
 (^|\.)dpool\.top$
 (^|\.)dpp\.org\.tw$
