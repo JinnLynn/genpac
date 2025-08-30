@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-08-30 01:45:10
- * GFWList Last-Modified: 2025-08-29 14:56:42
+ * Generated: 2025-08-30 12:41:58
+ * GFWList Last-Modified: 2025-08-30 08:38:06
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1445,7 +1445,6 @@ var rules = [
             "doujincafe.com",
             "download.aircrack-ng.org",
             "download.cnet.com",
-            "dpdns.org",
             "dphk.org",
             "dpool.top",
             "dpp.org.tw",

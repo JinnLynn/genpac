@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-08-30 01:45:10
-#! GFWList: 2025-08-29 14:56:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-08-30 12:41:58
+#! GFWList: 2025-08-30 08:38:06 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1440,7 +1440,6 @@ routing:
         - domain:doujincafe.com
         - domain:download.aircrack-ng.org
         - domain:download.cnet.com
-        - domain:dpdns.org
         - domain:dphk.org
         - domain:dpool.top
         - domain:dpp.org.tw
