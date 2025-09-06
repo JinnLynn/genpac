@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-05 12:46:57
-#! GFWList: 2025-08-30 08:38:06 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-06 01:45:20
+#! GFWList: 2025-09-06 01:15:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -681,6 +681,8 @@ payload:
   - DOMAIN-SUFFIX,bsky.app
   - DOMAIN-SUFFIX,bsky.network
   - DOMAIN-SUFFIX,bsky.social
+  - DOMAIN-SUFFIX,bt4g.org
+  - DOMAIN-SUFFIX,bt4gprx.com
   - DOMAIN-SUFFIX,bt95.com
   - DOMAIN-SUFFIX,btaia.com
   - DOMAIN-SUFFIX,btbit.net
@@ -2658,6 +2660,7 @@ payload:
   - DOMAIN-SUFFIX,iphonetaiwan.org
   - DOMAIN-SUFFIX,iphonix.fr
   - DOMAIN-SUFFIX,ipicture.ru
+  - DOMAIN-SUFFIX,ipify.org
   - DOMAIN-SUFFIX,ipjetable.net
   - DOMAIN-SUFFIX,ipobar.com
   - DOMAIN-SUFFIX,ipoock.com
@@ -4634,6 +4637,7 @@ payload:
   - DOMAIN-SUFFIX,talkonly.net
   - DOMAIN-SUFFIX,tanc.org
   - DOMAIN-SUFFIX,tangren.us
+  - DOMAIN-SUFFIX,tanks.gg
   - DOMAIN-SUFFIX,taoism.net
   - DOMAIN-SUFFIX,tapanwap.com
   - DOMAIN-SUFFIX,tapatalk.com

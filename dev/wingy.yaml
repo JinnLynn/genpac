@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-05 12:46:57
-#! GFWList: 2025-08-30 08:38:06 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-06 01:45:20
+#! GFWList: 2025-09-06 01:15:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -697,6 +697,8 @@ rule:
         - s,bsky.app
         - s,bsky.network
         - s,bsky.social
+        - s,bt4g.org
+        - s,bt4gprx.com
         - s,bt95.com
         - s,btaia.com
         - s,btbit.net
@@ -2674,6 +2676,7 @@ rule:
         - s,iphonetaiwan.org
         - s,iphonix.fr
         - s,ipicture.ru
+        - s,ipify.org
         - s,ipjetable.net
         - s,ipobar.com
         - s,ipoock.com
@@ -4650,6 +4653,7 @@ rule:
         - s,talkonly.net
         - s,tanc.org
         - s,tangren.us
+        - s,tanks.gg
         - s,taoism.net
         - s,tapanwap.com
         - s,tapatalk.com

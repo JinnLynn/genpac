@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-05 12:46:56
-#! GFWList: 2025-08-30 08:38:06 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-06 01:45:20
+#! GFWList: 2025-09-06 01:15:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -803,6 +803,8 @@ rules:
   - DOMAIN-SUFFIX,bsky.app,PROXY
   - DOMAIN-SUFFIX,bsky.network,PROXY
   - DOMAIN-SUFFIX,bsky.social,PROXY
+  - DOMAIN-SUFFIX,bt4g.org,PROXY
+  - DOMAIN-SUFFIX,bt4gprx.com,PROXY
   - DOMAIN-SUFFIX,bt95.com,PROXY
   - DOMAIN-SUFFIX,btaia.com,PROXY
   - DOMAIN-SUFFIX,btbit.net,PROXY
@@ -2780,6 +2782,7 @@ rules:
   - DOMAIN-SUFFIX,iphonetaiwan.org,PROXY
   - DOMAIN-SUFFIX,iphonix.fr,PROXY
   - DOMAIN-SUFFIX,ipicture.ru,PROXY
+  - DOMAIN-SUFFIX,ipify.org,PROXY
   - DOMAIN-SUFFIX,ipjetable.net,PROXY
   - DOMAIN-SUFFIX,ipobar.com,PROXY
   - DOMAIN-SUFFIX,ipoock.com,PROXY
@@ -4756,6 +4759,7 @@ rules:
   - DOMAIN-SUFFIX,talkonly.net,PROXY
   - DOMAIN-SUFFIX,tanc.org,PROXY
   - DOMAIN-SUFFIX,tangren.us,PROXY
+  - DOMAIN-SUFFIX,tanks.gg,PROXY
   - DOMAIN-SUFFIX,taoism.net,PROXY
   - DOMAIN-SUFFIX,tapanwap.com,PROXY
   - DOMAIN-SUFFIX,tapatalk.com,PROXY
