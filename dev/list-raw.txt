@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-09-13 01:40:43
-! GFWList: 2025-09-06 01:15:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-09-13 12:41:28
+! GFWList: 2025-09-13 04:13:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -3253,6 +3253,7 @@
 ||mcaf.ee
 ||mcfog.com
 ||mcreasite.com
+||mcusercontent.com
 ||md-t.org
 ||me.me
 ||me.ns.ci
@@ -4448,6 +4449,7 @@
 ||simpleproductivityblog.com
 ||simpleswap.io
 ||simplex.chat
+||sina.com.hk
 ||sinchew.com.my
 ||singaporepools.com.sg
 ||singfortibet.com
@@ -4748,6 +4750,7 @@
 ||taiwanus.net
 ||taiwanyes.ning.com
 ||talk853.com
+||talkatone.com
 ||talkboxapp.com
 ||talkcc.com
 ||talkonly.net
