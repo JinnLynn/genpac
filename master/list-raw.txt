@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-09-19 12:48:25
-! GFWList: 2025-09-13 04:13:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-09-20 01:43:59
+! GFWList: 2025-09-19 14:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -1966,6 +1966,7 @@
 ||gardennetworks.com
 ||gardennetworks.org
 ||gartlive.com
+||garudalinux.org
 ||gate.io
 ||gatecoin.com
 ||gather.com
@@ -2041,6 +2042,7 @@
 ||githubassets.com
 ||githubcopilot.com
 ||githubusercontent.com
+||gitlab.com
 ||gitlab.net
 ||gizlen.net
 ||gjczz.com
@@ -3628,6 +3630,7 @@
 ||ninjacloak.com
 ||ninjaproxy.ninja
 ||nintendium.com
+||nirsoft.net
 ||nitter.cc
 ||nitter.net
 ||niu.moe
@@ -5464,6 +5467,7 @@
 ||vpnworldwide.com
 ||vporn.com
 ||vpser.net
+||vpsxb.net
 ||vraiesagesse.net
 ||vrchat.com
 ||vrmtr.com

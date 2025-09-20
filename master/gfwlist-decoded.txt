@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: AX5stTgpvx842DA6LdtKAw
+! Checksum: RPQqcRRttyj90hBUDWa1yg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 13 Sep 2025 04:13:45 +0000
+! Last Modified: Fri, 19 Sep 2025 14:43:25 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -3273,6 +3273,8 @@ funp.com
 ||fxcm-chinese.com
 
 !--------------------GG-------------------------
+||garudalinux.org
+||gitlab.com
 ||gitlab.net
 |http://gmp4.com
 ||getsession.org
@@ -4910,6 +4912,7 @@ mysinablog.com
 .mytizi.com
 
 !--------------------NN-------------------------
+||nirsoft.net
 ||naver.com
 ||maven.neoforged.net
 ||nftstorage.link
@@ -6859,6 +6862,7 @@ uygur.org
 |http://uymaarip.com/
 
 !--------------------VV-------------------------
+||vpsxb.net
 ||vilanet.me
 ||vewas.net
 ||v2.help

@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-19 12:48:26
-#! GFWList: 2025-09-13 04:13:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-20 01:44:01
+#! GFWList: 2025-09-19 14:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1866,6 +1866,7 @@ rule:
         - s,gardennetworks.com
         - s,gardennetworks.org
         - s,gartlive.com
+        - s,garudalinux.org
         - s,gate.io
         - s,gatecoin.com
         - s,gather.com
@@ -1941,6 +1942,7 @@ rule:
         - s,githubassets.com
         - s,githubcopilot.com
         - s,githubusercontent.com
+        - s,gitlab.com
         - s,gitlab.net
         - s,gizlen.net
         - s,gjczz.com
@@ -3528,6 +3530,7 @@ rule:
         - s,ninjacloak.com
         - s,ninjaproxy.ninja
         - s,nintendium.com
+        - s,nirsoft.net
         - s,nitter.cc
         - s,nitter.net
         - s,niu.moe
@@ -5364,6 +5367,7 @@ rule:
         - s,vpnworldwide.com
         - s,vporn.com
         - s,vpser.net
+        - s,vpsxb.net
         - s,vraiesagesse.net
         - s,vrchat.com
         - s,vrmtr.com
