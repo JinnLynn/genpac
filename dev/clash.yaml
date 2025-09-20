@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-19 12:48:56
-#! GFWList: 2025-09-13 04:13:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-20 01:44:32
+#! GFWList: 2025-09-19 14:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -1972,6 +1972,7 @@ rules:
   - DOMAIN-SUFFIX,gardennetworks.com,PROXY
   - DOMAIN-SUFFIX,gardennetworks.org,PROXY
   - DOMAIN-SUFFIX,gartlive.com,PROXY
+  - DOMAIN-SUFFIX,garudalinux.org,PROXY
   - DOMAIN-SUFFIX,gate.io,PROXY
   - DOMAIN-SUFFIX,gatecoin.com,PROXY
   - DOMAIN-SUFFIX,gather.com,PROXY
@@ -2047,6 +2048,7 @@ rules:
   - DOMAIN-SUFFIX,githubassets.com,PROXY
   - DOMAIN-SUFFIX,githubcopilot.com,PROXY
   - DOMAIN-SUFFIX,githubusercontent.com,PROXY
+  - DOMAIN-SUFFIX,gitlab.com,PROXY
   - DOMAIN-SUFFIX,gitlab.net,PROXY
   - DOMAIN-SUFFIX,gizlen.net,PROXY
   - DOMAIN-SUFFIX,gjczz.com,PROXY
@@ -3634,6 +3636,7 @@ rules:
   - DOMAIN-SUFFIX,ninjacloak.com,PROXY
   - DOMAIN-SUFFIX,ninjaproxy.ninja,PROXY
   - DOMAIN-SUFFIX,nintendium.com,PROXY
+  - DOMAIN-SUFFIX,nirsoft.net,PROXY
   - DOMAIN-SUFFIX,nitter.cc,PROXY
   - DOMAIN-SUFFIX,nitter.net,PROXY
   - DOMAIN-SUFFIX,niu.moe,PROXY
@@ -5470,6 +5473,7 @@ rules:
   - DOMAIN-SUFFIX,vpnworldwide.com,PROXY
   - DOMAIN-SUFFIX,vporn.com,PROXY
   - DOMAIN-SUFFIX,vpser.net,PROXY
+  - DOMAIN-SUFFIX,vpsxb.net,PROXY
   - DOMAIN-SUFFIX,vraiesagesse.net,PROXY
   - DOMAIN-SUFFIX,vrchat.com,PROXY
   - DOMAIN-SUFFIX,vrmtr.com,PROXY

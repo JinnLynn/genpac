@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-19 12:48:55
-#! GFWList: 2025-09-13 04:13:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-20 01:44:29
+#! GFWList: 2025-09-19 14:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1853,6 +1853,7 @@
 (^|\.)gardennetworks\.com$
 (^|\.)gardennetworks\.org$
 (^|\.)gartlive\.com$
+(^|\.)garudalinux\.org$
 (^|\.)gate\.io$
 (^|\.)gatecoin\.com$
 (^|\.)gather\.com$
@@ -1928,6 +1929,7 @@
 (^|\.)githubassets\.com$
 (^|\.)githubcopilot\.com$
 (^|\.)githubusercontent\.com$
+(^|\.)gitlab\.com$
 (^|\.)gitlab\.net$
 (^|\.)gizlen\.net$
 (^|\.)gjczz\.com$
@@ -3515,6 +3517,7 @@
 (^|\.)ninjacloak\.com$
 (^|\.)ninjaproxy\.ninja$
 (^|\.)nintendium\.com$
+(^|\.)nirsoft\.net$
 (^|\.)nitter\.cc$
 (^|\.)nitter\.net$
 (^|\.)niu\.moe$
@@ -5351,6 +5354,7 @@
 (^|\.)vpnworldwide\.com$
 (^|\.)vporn\.com$
 (^|\.)vpser\.net$
+(^|\.)vpsxb\.net$
 (^|\.)vraiesagesse\.net$
 (^|\.)vrchat\.com$
 (^|\.)vrmtr\.com$

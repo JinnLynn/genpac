@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-19 12:48:56
-#! GFWList: 2025-09-13 04:13:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-20 01:44:32
+#! GFWList: 2025-09-19 14:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -1850,6 +1850,7 @@ payload:
   - DOMAIN-SUFFIX,gardennetworks.com
   - DOMAIN-SUFFIX,gardennetworks.org
   - DOMAIN-SUFFIX,gartlive.com
+  - DOMAIN-SUFFIX,garudalinux.org
   - DOMAIN-SUFFIX,gate.io
   - DOMAIN-SUFFIX,gatecoin.com
   - DOMAIN-SUFFIX,gather.com
@@ -1925,6 +1926,7 @@ payload:
   - DOMAIN-SUFFIX,githubassets.com
   - DOMAIN-SUFFIX,githubcopilot.com
   - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,gitlab.com
   - DOMAIN-SUFFIX,gitlab.net
   - DOMAIN-SUFFIX,gizlen.net
   - DOMAIN-SUFFIX,gjczz.com
@@ -3512,6 +3514,7 @@ payload:
   - DOMAIN-SUFFIX,ninjacloak.com
   - DOMAIN-SUFFIX,ninjaproxy.ninja
   - DOMAIN-SUFFIX,nintendium.com
+  - DOMAIN-SUFFIX,nirsoft.net
   - DOMAIN-SUFFIX,nitter.cc
   - DOMAIN-SUFFIX,nitter.net
   - DOMAIN-SUFFIX,niu.moe
@@ -5348,6 +5351,7 @@ payload:
   - DOMAIN-SUFFIX,vpnworldwide.com
   - DOMAIN-SUFFIX,vporn.com
   - DOMAIN-SUFFIX,vpser.net
+  - DOMAIN-SUFFIX,vpsxb.net
   - DOMAIN-SUFFIX,vraiesagesse.net
   - DOMAIN-SUFFIX,vrchat.com
   - DOMAIN-SUFFIX,vrmtr.com
