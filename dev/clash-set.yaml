@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-23 01:47:12
-#! GFWList: 2025-09-22 14:02:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-23 12:48:47
+#! GFWList: 2025-09-23 02:23:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -308,6 +308,7 @@ payload:
   - DOMAIN-SUFFIX,api-secure.recaptcha.net
   - DOMAIN-SUFFIX,api-verify.recaptcha.net
   - DOMAIN-SUFFIX,api.ai
+  - DOMAIN-SUFFIX,api.palworldgame.com
   - DOMAIN-SUFFIX,api.pureapk.com
   - DOMAIN-SUFFIX,api.recaptcha.net
   - DOMAIN-SUFFIX,api.steampowered.com
@@ -3614,6 +3615,7 @@ payload:
   - DOMAIN-SUFFIX,ocreampies.com
   - DOMAIN-SUFFIX,ocry.com
   - DOMAIN-SUFFIX,october-review.org
+  - DOMAIN-SUFFIX,octocaptcha.com
   - DOMAIN-SUFFIX,oculus.com
   - DOMAIN-SUFFIX,oculuscdn.com
   - DOMAIN-SUFFIX,odysee.com

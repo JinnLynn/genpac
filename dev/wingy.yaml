@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-23 01:47:13
-#! GFWList: 2025-09-22 14:02:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-23 12:48:47
+#! GFWList: 2025-09-23 02:23:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -324,6 +324,7 @@ rule:
         - s,api-secure.recaptcha.net
         - s,api-verify.recaptcha.net
         - s,api.ai
+        - s,api.palworldgame.com
         - s,api.pureapk.com
         - s,api.recaptcha.net
         - s,api.steampowered.com
@@ -3630,6 +3631,7 @@ rule:
         - s,ocreampies.com
         - s,ocry.com
         - s,october-review.org
+        - s,octocaptcha.com
         - s,oculus.com
         - s,oculuscdn.com
         - s,odysee.com

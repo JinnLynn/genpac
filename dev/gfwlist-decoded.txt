@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: IrezMDRCBlvksvey+p68aQ
+! Checksum: uhrh88bkOU+xVXRYjf5leQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 22 Sep 2025 14:02:58 +0000
+! Last Modified: Tue, 23 Sep 2025 02:23:14 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -5122,6 +5122,7 @@ nylonstockingsonline.com
 .nzchinese.com
 
 !--------------------OO-------------------------
+||octocaptcha.com
 ||oojj.de
 ||onevps.com
 ||onedrive.com
@@ -5229,6 +5230,7 @@ oyghan.com/wps
 .ozyoyo.com
 
 !--------------------PP-------------------------
+||api.palworldgame.com
 ||pewresearch.org
 ||privacyguides.org
 ||pancakeswap.finance
