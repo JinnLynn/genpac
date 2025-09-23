@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-09-22 12:49:55
- * GFWList Last-Modified: 2025-09-21 02:41:47
+ * Generated: 2025-09-23 01:46:39
+ * GFWList Last-Modified: 2025-09-22 14:02:58
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -5242,7 +5242,6 @@ var rules = [
             "uberproxy.net",
             "uc-japan.org",
             "uchicago.edu",
-            "uderzo.it",
             "udn.com",
             "udn.com.tw",
             "udnbkk.com",

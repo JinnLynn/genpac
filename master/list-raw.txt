@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-09-22 12:49:55
-! GFWList: 2025-09-21 02:41:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-09-23 01:46:39
+! GFWList: 2025-09-22 14:02:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -5229,7 +5229,6 @@
 ||uberproxy.net
 ||uc-japan.org
 ||uchicago.edu
-||uderzo.it
 ||udn.com
 ||udn.com.tw
 ||udnbkk.com

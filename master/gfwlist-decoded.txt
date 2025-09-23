@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: WtfESvaqi69dT7FVFzg13A
+! Checksum: IrezMDRCBlvksvey+p68aQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 21 Sep 2025 02:41:47 +0000
+! Last Modified: Mon, 22 Sep 2025 14:02:58 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -6761,7 +6761,6 @@ twurl.nl
 .srcf.ucam.org/salon/
 |http://china.ucanews.com/
 |http://hum*.uchicago.edu/faculty/ywang/history
-||uderzo.it
 .udn.com
 ||udn.com
 ||udn.com.tw
