@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-22 01:56:50
-#! GFWList: 2025-09-21 02:41:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-23 01:47:12
+#! GFWList: 2025-09-22 14:02:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -5113,7 +5113,6 @@ payload:
   - DOMAIN-SUFFIX,uberproxy.net
   - DOMAIN-SUFFIX,uc-japan.org
   - DOMAIN-SUFFIX,uchicago.edu
-  - DOMAIN-SUFFIX,uderzo.it
   - DOMAIN-SUFFIX,udn.com
   - DOMAIN-SUFFIX,udn.com.tw
   - DOMAIN-SUFFIX,udnbkk.com

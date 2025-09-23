@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-22 01:56:50
-#! GFWList: 2025-09-21 02:41:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-23 01:47:13
+#! GFWList: 2025-09-22 14:02:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -5129,7 +5129,6 @@ rule:
         - s,uberproxy.net
         - s,uc-japan.org
         - s,uchicago.edu
-        - s,uderzo.it
         - s,udn.com
         - s,udn.com.tw
         - s,udnbkk.com
