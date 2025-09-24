@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: uhrh88bkOU+xVXRYjf5leQ
+! Checksum: Bdq9+/9EUEGHGDRkg5QSAA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 23 Sep 2025 02:23:14 +0000
+! Last Modified: Wed, 24 Sep 2025 01:26:08 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2161,6 +2161,7 @@ busytrade.com
 ||bypasscensorship.org
 
 !--------------------CC-------------------------
+||ctinets.com
 ||covenantswatch.org.tw
 ||cpu-monkey.com
 ||coffeemanga.to
@@ -4030,6 +4031,7 @@ ebook.hyread.com.tw
 ||ebook.hyread.com.tw
 
 !--------------------II-------------------------
+||interseclab.org
 ||ipify.org
 @@||*.ipify.org
 ||itiger.com
