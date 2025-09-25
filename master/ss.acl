@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-25 01:48:47
-#! GFWList: 2025-09-24 01:26:08 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-25 12:50:21
+#! GFWList: 2025-09-25 03:27:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -5490,6 +5490,7 @@
 (^|\.)wikimapia\.org$
 (^|\.)wikimedia\.org$
 (^|\.)wikinews\.org$
+(^|\.)wikipedia\.com$
 (^|\.)wikipedia\.org$
 (^|\.)wikisource\.org$
 (^|\.)wikiversity\.org$

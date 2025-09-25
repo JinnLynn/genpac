@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-09-25 01:48:50
-#! GFWList: 2025-09-24 01:26:08 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-09-25 12:50:22
+#! GFWList: 2025-09-25 03:27:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -5503,6 +5503,7 @@ rule:
         - s,wikimapia.org
         - s,wikimedia.org
         - s,wikinews.org
+        - s,wikipedia.com
         - s,wikipedia.org
         - s,wikisource.org
         - s,wikiversity.org
