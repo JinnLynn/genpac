@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: Bdq9+/9EUEGHGDRkg5QSAA
+! Checksum: ClXVkiS9yCes4RxRHw/Dew
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 24 Sep 2025 01:26:08 +0000
+! Last Modified: Thu, 25 Sep 2025 03:27:54 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -7023,6 +7023,7 @@ vraiesagesse.net
 ||vuku.cc
 
 !--------------------WW-------------------------
+||wikipedia.com
 ||wxw.moe
 ||wxw.cat
 ||walletconnect.com

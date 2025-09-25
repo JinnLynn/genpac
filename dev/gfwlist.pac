@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-09-25 01:49:22
- * GFWList Last-Modified: 2025-09-24 01:26:08
+ * Generated: 2025-09-25 12:50:50
+ * GFWList Last-Modified: 2025-09-25 03:27:54
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -5616,6 +5616,7 @@ var rules = [
             "wikimapia.org",
             "wikimedia.org",
             "wikinews.org",
+            "wikipedia.com",
             "wikipedia.org",
             "wikisource.org",
             "wikiversity.org",
