@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-02 01:46:12
-#! GFWList: 2025-09-25 03:27:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-02 12:46:50
+#! GFWList: 2025-10-02 08:16:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -4773,8 +4773,10 @@ routing:
         - domain:tangren.us
         - domain:tanks.gg
         - domain:taoism.net
+        - domain:tap.io
         - domain:tapanwap.com
         - domain:tapatalk.com
+        - domain:taptap.io
         - domain:tardigrade.io
         - domain:tarr.uspto.gov
         - domain:taup.net

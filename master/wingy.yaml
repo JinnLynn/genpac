@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-02 01:46:16
-#! GFWList: 2025-09-25 03:27:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-02 12:46:51
+#! GFWList: 2025-10-02 08:16:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -4665,8 +4665,10 @@ rule:
         - s,tangren.us
         - s,tanks.gg
         - s,taoism.net
+        - s,tap.io
         - s,tapanwap.com
         - s,tapatalk.com
+        - s,taptap.io
         - s,tardigrade.io
         - s,tarr.uspto.gov
         - s,taup.net

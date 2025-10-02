@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-10-02 01:46:11
- * GFWList Last-Modified: 2025-09-25 03:27:54
+ * Generated: 2025-10-02 12:46:50
+ * GFWList Last-Modified: 2025-10-02 08:16:45
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -4778,8 +4778,10 @@ var rules = [
             "tangren.us",
             "tanks.gg",
             "taoism.net",
+            "tap.io",
             "tapanwap.com",
             "tapatalk.com",
+            "taptap.io",
             "tardigrade.io",
             "tarr.uspto.gov",
             "taup.net",
