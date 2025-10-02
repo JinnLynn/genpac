@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-02 01:46:52
-#! GFWList: 2025-09-25 03:27:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-02 12:47:22
+#! GFWList: 2025-10-02 08:16:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -4771,8 +4771,10 @@ rules:
   - DOMAIN-SUFFIX,tangren.us,PROXY
   - DOMAIN-SUFFIX,tanks.gg,PROXY
   - DOMAIN-SUFFIX,taoism.net,PROXY
+  - DOMAIN-SUFFIX,tap.io,PROXY
   - DOMAIN-SUFFIX,tapanwap.com,PROXY
   - DOMAIN-SUFFIX,tapatalk.com,PROXY
+  - DOMAIN-SUFFIX,taptap.io,PROXY
   - DOMAIN-SUFFIX,tardigrade.io,PROXY
   - DOMAIN-SUFFIX,tarr.uspto.gov,PROXY
   - DOMAIN-SUFFIX,taup.net,PROXY

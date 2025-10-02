@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-02 01:46:52
-#! GFWList: 2025-09-25 03:27:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-02 12:47:22
+#! GFWList: 2025-10-02 08:16:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -4649,8 +4649,10 @@ payload:
   - DOMAIN-SUFFIX,tangren.us
   - DOMAIN-SUFFIX,tanks.gg
   - DOMAIN-SUFFIX,taoism.net
+  - DOMAIN-SUFFIX,tap.io
   - DOMAIN-SUFFIX,tapanwap.com
   - DOMAIN-SUFFIX,tapatalk.com
+  - DOMAIN-SUFFIX,taptap.io
   - DOMAIN-SUFFIX,tardigrade.io
   - DOMAIN-SUFFIX,tarr.uspto.gov
   - DOMAIN-SUFFIX,taup.net
