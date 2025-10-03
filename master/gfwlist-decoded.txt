@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: N/Mwmmf/bnPIYFKja/xcaQ
+! Checksum: WkePYG0ReBsAb6igRK/bVQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Thu, 02 Oct 2025 08:16:45 +0000
+! Last Modified: Fri, 03 Oct 2025 08:02:40 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1435,6 +1435,7 @@ zh.uncyclopedia.wikia.com
 ||yahoo.com
 
 !------------------Numerics---------------------
+||996.icu
 ||ipfs.4everland.io
 ||91dasai.com
 ||i.111666.best

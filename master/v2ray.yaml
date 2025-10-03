@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-03 01:46:08
-#! GFWList: 2025-10-02 08:16:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-03 12:46:52
+#! GFWList: 2025-10-03 08:02:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -246,6 +246,7 @@ routing:
         - domain:91vps.club
         - domain:92ccav.com
         - domain:991.com
+        - domain:996.icu
         - domain:99btgc01.com
         - domain:99cn.info
         - domain:9bis.com
