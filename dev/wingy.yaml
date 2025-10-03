@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-03 01:46:44
-#! GFWList: 2025-10-02 08:16:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-03 12:47:24
+#! GFWList: 2025-10-03 08:02:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -138,6 +138,7 @@ rule:
         - s,91vps.club
         - s,92ccav.com
         - s,991.com
+        - s,996.icu
         - s,99btgc01.com
         - s,99cn.info
         - s,9bis.com

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-03 01:46:44
-#! GFWList: 2025-10-02 08:16:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-03 12:47:23
+#! GFWList: 2025-10-03 08:02:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -244,6 +244,7 @@ rules:
   - DOMAIN-SUFFIX,91vps.club,PROXY
   - DOMAIN-SUFFIX,92ccav.com,PROXY
   - DOMAIN-SUFFIX,991.com,PROXY
+  - DOMAIN-SUFFIX,996.icu,PROXY
   - DOMAIN-SUFFIX,99btgc01.com,PROXY
   - DOMAIN-SUFFIX,99cn.info,PROXY
   - DOMAIN-SUFFIX,9bis.com,PROXY
