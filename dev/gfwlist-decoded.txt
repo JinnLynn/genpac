@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: WkePYG0ReBsAb6igRK/bVQ
+! Checksum: hwMf90Dm1BBX2NS5ntexpA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 03 Oct 2025 08:02:40 +0000
+! Last Modified: Sat, 04 Oct 2025 13:07:36 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -4684,7 +4684,7 @@ maskedip.com
 maruta.be/forget
 .marxist.com
 ||marxist.net
-.marxists.org/chinese
+||marxists.org
 !--||mashable.com
 ||matainja.com
 ||matrix.org
