@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-06 12:50:47
-#! GFWList: 2025-10-04 13:07:36 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-07 01:47:28
+#! GFWList: 2025-10-06 15:36:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -5287,6 +5287,7 @@ rule:
         - s,vilanet.me
         - s,vilavpn.com
         - s,vimeo.com
+        - s,vimeocdn.com
         - s,vimperator.org
         - s,vincnd.com
         - s,vine.co

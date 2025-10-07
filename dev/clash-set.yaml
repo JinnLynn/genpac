@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-06 12:50:47
-#! GFWList: 2025-10-04 13:07:36 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-07 01:47:27
+#! GFWList: 2025-10-06 15:36:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -5271,6 +5271,7 @@ payload:
   - DOMAIN-SUFFIX,vilanet.me
   - DOMAIN-SUFFIX,vilavpn.com
   - DOMAIN-SUFFIX,vimeo.com
+  - DOMAIN-SUFFIX,vimeocdn.com
   - DOMAIN-SUFFIX,vimperator.org
   - DOMAIN-SUFFIX,vincnd.com
   - DOMAIN-SUFFIX,vine.co

@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: hwMf90Dm1BBX2NS5ntexpA
+! Checksum: VXgQOipF0jf7jTxYyUcrjA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 04 Oct 2025 13:07:36 +0000
+! Last Modified: Mon, 06 Oct 2025 15:36:12 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -6868,6 +6868,7 @@ uygur.org
 |http://uymaarip.com/
 
 !--------------------VV-------------------------
+||vimeocdn.com
 ||vpsxb.net
 ||vilanet.me
 ||vewas.net
