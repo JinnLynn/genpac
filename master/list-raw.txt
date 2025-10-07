@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-10-06 12:50:12
-! GFWList: 2025-10-04 13:07:36 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-10-07 01:46:54
+! GFWList: 2025-10-06 15:36:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -5387,6 +5387,7 @@
 ||vilanet.me
 ||vilavpn.com
 ||vimeo.com
+||vimeocdn.com
 ||vimperator.org
 ||vincnd.com
 ||vine.co

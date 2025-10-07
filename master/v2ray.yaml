@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-06 12:50:12
-#! GFWList: 2025-10-04 13:07:36 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-07 01:46:54
+#! GFWList: 2025-10-06 15:36:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -5395,6 +5395,7 @@ routing:
         - domain:vilanet.me
         - domain:vilavpn.com
         - domain:vimeo.com
+        - domain:vimeocdn.com
         - domain:vimperator.org
         - domain:vincnd.com
         - domain:vine.co
