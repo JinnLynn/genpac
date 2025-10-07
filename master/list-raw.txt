@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-10-07 01:46:54
-! GFWList: 2025-10-06 15:36:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-10-07 12:49:57
+! GFWList: 2025-10-07 08:08:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -4545,6 +4545,7 @@
 ||solarsystem.nasa.gov
 ||solidaritetibet.org
 ||solidfiles.com
+||solscan.io
 ||solv.finance
 ||somee.com
 ||songjianjun.com

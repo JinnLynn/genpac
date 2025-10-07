@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-07 01:46:54
-#! GFWList: 2025-10-06 15:36:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-07 12:49:57
+#! GFWList: 2025-10-07 08:08:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -4553,6 +4553,7 @@ routing:
         - domain:solarsystem.nasa.gov
         - domain:solidaritetibet.org
         - domain:solidfiles.com
+        - domain:solscan.io
         - domain:solv.finance
         - domain:somee.com
         - domain:songjianjun.com
