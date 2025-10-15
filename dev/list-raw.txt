@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-10-15 01:52:31
-! GFWList: 2025-10-11 13:12:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-10-15 12:52:26
+! GFWList: 2025-10-15 07:41:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -483,6 +483,7 @@
 ||asiaharvest.org
 ||asianage.com
 ||asianews.it
+||asianfanfics.com
 ||asiansexdiary.com
 ||asiaone.com
 ||asiatgp.com
@@ -5082,6 +5083,7 @@
 ||trtc.com.tw
 ||truebuddha-md.org
 ||trulyergonomic.com
+||trustwallet.com
 ||truthsocial.com
 ||truveo.com
 ||tryheart.jp
@@ -5911,6 +5913,7 @@
 ||z-lib.gl
 ||z-lib.io
 ||z-lib.org
+||z-library.ec
 ||z-library.sk
 ||zacebook.com
 ||zalmos.com

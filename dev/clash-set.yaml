@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-15 01:52:35
-#! GFWList: 2025-10-11 13:12:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-15 12:52:27
+#! GFWList: 2025-10-15 07:41:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -367,6 +367,7 @@ payload:
   - DOMAIN-SUFFIX,asiaharvest.org
   - DOMAIN-SUFFIX,asianage.com
   - DOMAIN-SUFFIX,asianews.it
+  - DOMAIN-SUFFIX,asianfanfics.com
   - DOMAIN-SUFFIX,asiansexdiary.com
   - DOMAIN-SUFFIX,asiaone.com
   - DOMAIN-SUFFIX,asiatgp.com
@@ -4966,6 +4967,7 @@ payload:
   - DOMAIN-SUFFIX,trtc.com.tw
   - DOMAIN-SUFFIX,truebuddha-md.org
   - DOMAIN-SUFFIX,trulyergonomic.com
+  - DOMAIN-SUFFIX,trustwallet.com
   - DOMAIN-SUFFIX,truthsocial.com
   - DOMAIN-SUFFIX,truveo.com
   - DOMAIN-SUFFIX,tryheart.jp
@@ -5795,6 +5797,7 @@ payload:
   - DOMAIN-SUFFIX,z-lib.gl
   - DOMAIN-SUFFIX,z-lib.io
   - DOMAIN-SUFFIX,z-lib.org
+  - DOMAIN-SUFFIX,z-library.ec
   - DOMAIN-SUFFIX,z-library.sk
   - DOMAIN-SUFFIX,zacebook.com
   - DOMAIN-SUFFIX,zalmos.com
