@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-15 01:52:00
-#! GFWList: 2025-10-11 13:12:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-15 12:51:52
+#! GFWList: 2025-10-15 07:41:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -370,6 +370,7 @@
 (^|\.)asiaharvest\.org$
 (^|\.)asianage\.com$
 (^|\.)asianews\.it$
+(^|\.)asianfanfics\.com$
 (^|\.)asiansexdiary\.com$
 (^|\.)asiaone\.com$
 (^|\.)asiatgp\.com$
@@ -4969,6 +4970,7 @@
 (^|\.)trtc\.com\.tw$
 (^|\.)truebuddha-md\.org$
 (^|\.)trulyergonomic\.com$
+(^|\.)trustwallet\.com$
 (^|\.)truthsocial\.com$
 (^|\.)truveo\.com$
 (^|\.)tryheart\.jp$
@@ -5798,6 +5800,7 @@
 (^|\.)z-lib\.gl$
 (^|\.)z-lib\.io$
 (^|\.)z-lib\.org$
+(^|\.)z-library\.ec$
 (^|\.)z-library\.sk$
 (^|\.)zacebook\.com$
 (^|\.)zalmos\.com$
