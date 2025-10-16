@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-16 01:51:19
-#! GFWList: 2025-10-15 07:41:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-16 12:52:24
+#! GFWList: 2025-10-16 10:15:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -698,7 +698,6 @@ payload:
   - DOMAIN-SUFFIX,btcbank.bank
   - DOMAIN-SUFFIX,btctrade.im
   - DOMAIN-SUFFIX,btdig.com
-  - DOMAIN-SUFFIX,btdigg.org
   - DOMAIN-SUFFIX,btguard.com
   - DOMAIN-SUFFIX,btku.me
   - DOMAIN-SUFFIX,btku.org
@@ -5425,6 +5424,7 @@ payload:
   - DOMAIN-SUFFIX,webrtc.org
   - DOMAIN-SUFFIX,webrush.net
   - DOMAIN-SUFFIX,webs-tv.net
+  - DOMAIN-SUFFIX,websdr.org
   - DOMAIN-SUFFIX,website.informer.com
   - DOMAIN-SUFFIX,website.new
   - DOMAIN-SUFFIX,websitepulse.com
@@ -5672,6 +5672,7 @@ payload:
   - DOMAIN-SUFFIX,xn--noss43i.com
   - DOMAIN-SUFFIX,xn--oiq.cc
   - DOMAIN-SUFFIX,xn--p8j9a0d9c9a.xn--q9jyb4c
+  - DOMAIN-SUFFIX,xn--u2u927b.com
   - DOMAIN-SUFFIX,xnpool.com
   - DOMAIN-SUFFIX,xnxx.com
   - DOMAIN-SUFFIX,xpdo.net

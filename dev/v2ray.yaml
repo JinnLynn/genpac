@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-16 01:51:16
-#! GFWList: 2025-10-15 07:41:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-16 12:52:23
+#! GFWList: 2025-10-16 10:15:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -822,7 +822,6 @@ routing:
         - domain:btcbank.bank
         - domain:btctrade.im
         - domain:btdig.com
-        - domain:btdigg.org
         - domain:btguard.com
         - domain:btku.me
         - domain:btku.org
@@ -5549,6 +5548,7 @@ routing:
         - domain:webrtc.org
         - domain:webrush.net
         - domain:webs-tv.net
+        - domain:websdr.org
         - domain:website.informer.com
         - domain:website.new
         - domain:websitepulse.com
@@ -5796,6 +5796,7 @@ routing:
         - domain:xn--noss43i.com
         - domain:xn--oiq.cc
         - domain:xn--p8j9a0d9c9a.xn--q9jyb4c
+        - domain:xn--u2u927b.com
         - domain:xnpool.com
         - domain:xnxx.com
         - domain:xpdo.net

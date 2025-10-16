@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-16 01:51:19
-#! GFWList: 2025-10-15 07:41:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-16 12:52:24
+#! GFWList: 2025-10-16 10:15:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -714,7 +714,6 @@ rule:
         - s,btcbank.bank
         - s,btctrade.im
         - s,btdig.com
-        - s,btdigg.org
         - s,btguard.com
         - s,btku.me
         - s,btku.org
@@ -5441,6 +5440,7 @@ rule:
         - s,webrtc.org
         - s,webrush.net
         - s,webs-tv.net
+        - s,websdr.org
         - s,website.informer.com
         - s,website.new
         - s,websitepulse.com
@@ -5688,6 +5688,7 @@ rule:
         - s,xn--noss43i.com
         - s,xn--oiq.cc
         - s,xn--p8j9a0d9c9a.xn--q9jyb4c
+        - s,xn--u2u927b.com
         - s,xnpool.com
         - s,xnxx.com
         - s,xpdo.net
