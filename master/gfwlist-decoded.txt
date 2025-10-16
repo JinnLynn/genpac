@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: f6X6sHcu/S+QrN47wK/UBA
+! Checksum: Wt5wF6cv4B3aSe7i7pnehQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 15 Oct 2025 07:41:51 +0000
+! Last Modified: Thu, 16 Oct 2025 10:15:54 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -324,6 +324,7 @@
 69.65.19.160
 
 !----------------------IDN----------------------
+||xn--u2u927b.com
 ||xn--11xs86f.icu
 ||xn--4gq171p.com
 ||xn--czq75pvv1aj5c.org
@@ -897,6 +898,7 @@ bloomberg.de
 ||ftchinese.com
 
 !!---Google---
+||goog
 ||gle
 ||google
 ||doc.new
@@ -2118,7 +2120,6 @@ brucewang.net
 .btaia.com
 .btbtav.com
 ||btdig.com
-||btdigg.org
 ||btguard.com
 .btku.me
 ||btku.me
@@ -7032,6 +7033,7 @@ vraiesagesse.net
 ||vuku.cc
 
 !--------------------WW-------------------------
+||websdr.org
 ||wikipedia.com
 ||wxw.moe
 ||wxw.cat

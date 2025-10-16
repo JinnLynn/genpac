@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-16 01:50:41
-#! GFWList: 2025-10-15 07:41:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-16 12:51:47
+#! GFWList: 2025-10-16 10:15:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -701,7 +701,6 @@
 (^|\.)btcbank\.bank$
 (^|\.)btctrade\.im$
 (^|\.)btdig\.com$
-(^|\.)btdigg\.org$
 (^|\.)btguard\.com$
 (^|\.)btku\.me$
 (^|\.)btku\.org$
@@ -5428,6 +5427,7 @@
 (^|\.)webrtc\.org$
 (^|\.)webrush\.net$
 (^|\.)webs-tv\.net$
+(^|\.)websdr\.org$
 (^|\.)website\.informer\.com$
 (^|\.)website\.new$
 (^|\.)websitepulse\.com$
@@ -5675,6 +5675,7 @@
 (^|\.)xn--noss43i\.com$
 (^|\.)xn--oiq\.cc$
 (^|\.)xn--p8j9a0d9c9a\.xn--q9jyb4c$
+(^|\.)xn--u2u927b\.com$
 (^|\.)xnpool\.com$
 (^|\.)xnxx\.com$
 (^|\.)xpdo\.net$
