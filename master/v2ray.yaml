@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-22 01:55:51
-#! GFWList: 2025-10-16 10:15:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-22 12:53:04
+#! GFWList: 2025-10-22 03:58:06 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1416,6 +1416,7 @@ routing:
         - domain:doc.new
         - domain:docker.com
         - domain:docker.io
+        - domain:dockerstatus.com
         - domain:docs.deno.com
         - domain:docs.new
         - domain:doctorvoice.org

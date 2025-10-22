@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-10-22 01:55:53
-#! GFWList: 2025-10-16 10:15:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-10-22 12:53:07
+#! GFWList: 2025-10-22 03:58:06 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1308,6 +1308,7 @@ rule:
         - s,doc.new
         - s,docker.com
         - s,docker.io
+        - s,dockerstatus.com
         - s,docs.deno.com
         - s,docs.new
         - s,doctorvoice.org

@@ -1418,6 +1418,7 @@
                     "domain:doc.new",
                     "domain:docker.com",
                     "domain:docker.io",
+                    "domain:dockerstatus.com",
                     "domain:docs.deno.com",
                     "domain:docs.new",
                     "domain:doctorvoice.org",
