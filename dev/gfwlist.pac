@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-10-22 01:56:28
- * GFWList Last-Modified: 2025-10-16 10:15:54
+ * Generated: 2025-10-22 12:53:44
+ * GFWList Last-Modified: 2025-10-22 03:58:06
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1421,6 +1421,7 @@ var rules = [
             "doc.new",
             "docker.com",
             "docker.io",
+            "dockerstatus.com",
             "docs.deno.com",
             "docs.new",
             "doctorvoice.org",
