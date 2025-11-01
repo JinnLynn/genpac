@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: +1QXA5maIBsDPx2ajUclIQ
+! Checksum: aD9GHLg+csFR5Xy602h+Ng
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 22 Oct 2025 03:58:06 +0000
+! Last Modified: Sat, 01 Nov 2025 03:13:17 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -6185,6 +6185,7 @@ blog.syx86.com/2009/09/puff
 .szetowah.org.hk
 
 !--------------------TT-------------------------
+||temu.com
 ||trustwallet.com
 ||tap.io
 ||taptap.io
