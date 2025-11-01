@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-11-01 01:58:38
- * GFWList Last-Modified: 2025-10-22 03:58:06
+ * Generated: 2025-11-01 12:44:43
+ * GFWList Last-Modified: 2025-11-01 03:13:17
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -4835,6 +4835,7 @@ var rules = [
             "telesco.pe",
             "tellapart.com",
             "tellme.pw",
+            "temu.com",
             "tenacy.com",
             "tenor.com",
             "tensorflow.org",

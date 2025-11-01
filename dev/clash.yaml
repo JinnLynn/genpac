@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-01 01:58:39
-#! GFWList: 2025-10-22 03:58:06 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-01 12:44:45
+#! GFWList: 2025-11-01 03:13:17 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -4828,6 +4828,7 @@ rules:
   - DOMAIN-SUFFIX,telesco.pe,PROXY
   - DOMAIN-SUFFIX,tellapart.com,PROXY
   - DOMAIN-SUFFIX,tellme.pw,PROXY
+  - DOMAIN-SUFFIX,temu.com,PROXY
   - DOMAIN-SUFFIX,tenacy.com,PROXY
   - DOMAIN-SUFFIX,tenor.com,PROXY
   - DOMAIN-SUFFIX,tensorflow.org,PROXY

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-01 01:58:39
-#! GFWList: 2025-10-22 03:58:06 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-01 12:44:46
+#! GFWList: 2025-11-01 03:13:17 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -4706,6 +4706,7 @@ payload:
   - DOMAIN-SUFFIX,telesco.pe
   - DOMAIN-SUFFIX,tellapart.com
   - DOMAIN-SUFFIX,tellme.pw
+  - DOMAIN-SUFFIX,temu.com
   - DOMAIN-SUFFIX,tenacy.com
   - DOMAIN-SUFFIX,tenor.com
   - DOMAIN-SUFFIX,tensorflow.org
