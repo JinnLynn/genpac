@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-11-07 01:56:11
-! GFWList: 2025-11-06 15:27:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-11-07 12:51:09
+! GFWList: 2025-11-07 08:22:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -2719,6 +2719,7 @@
 ||imageflea.com
 ||imageglass.org
 ||images-gaytube.com
+||images.prismic.io
 ||imageshack.us
 ||imagevenue.com
 ||imagezilla.net

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-07 01:56:11
-#! GFWList: 2025-11-06 15:27:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-07 12:51:09
+#! GFWList: 2025-11-07 08:22:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2727,6 +2727,7 @@ routing:
         - domain:imageflea.com
         - domain:imageglass.org
         - domain:images-gaytube.com
+        - domain:images.prismic.io
         - domain:imageshack.us
         - domain:imagevenue.com
         - domain:imagezilla.net
