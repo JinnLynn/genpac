@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-06 12:52:15
-#! GFWList: 2025-11-01 03:13:17 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-07 01:56:12
+#! GFWList: 2025-11-06 15:27:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -1679,6 +1679,7 @@ payload:
   - DOMAIN-SUFFIX,flecheinthepeche.fr
   - DOMAIN-SUFFIX,fleshbot.com
   - DOMAIN-SUFFIX,fleursdeslettres.com
+  - DOMAIN-SUFFIX,flexclip.com
   - DOMAIN-SUFFIX,flexpool.io
   - DOMAIN-SUFFIX,flgjustice.org
   - DOMAIN-SUFFIX,flickr.com
