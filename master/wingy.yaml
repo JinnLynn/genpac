@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-06 12:51:39
-#! GFWList: 2025-11-01 03:13:17 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-07 01:55:32
+#! GFWList: 2025-11-06 15:27:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1695,6 +1695,7 @@ rule:
         - s,flecheinthepeche.fr
         - s,fleshbot.com
         - s,fleursdeslettres.com
+        - s,flexclip.com
         - s,flexpool.io
         - s,flgjustice.org
         - s,flickr.com

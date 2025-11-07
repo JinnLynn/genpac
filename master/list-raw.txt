@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-11-06 12:51:38
-! GFWList: 2025-11-01 03:13:17 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-11-07 01:55:29
+! GFWList: 2025-11-06 15:27:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -1795,6 +1795,7 @@
 ||flecheinthepeche.fr
 ||fleshbot.com
 ||fleursdeslettres.com
+||flexclip.com
 ||flexpool.io
 ||flgjustice.org
 ||flickr.com
