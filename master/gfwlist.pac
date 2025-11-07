@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-11-07 01:55:28
- * GFWList Last-Modified: 2025-11-06 15:27:07
+ * Generated: 2025-11-07 12:50:39
+ * GFWList Last-Modified: 2025-11-07 08:22:11
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -2732,6 +2732,7 @@ var rules = [
             "imageflea.com",
             "imageglass.org",
             "images-gaytube.com",
+            "images.prismic.io",
             "imageshack.us",
             "imagevenue.com",
             "imagezilla.net",
