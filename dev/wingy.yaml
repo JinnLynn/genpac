@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-08 12:44:58
-#! GFWList: 2025-11-07 08:22:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-09 01:59:57
+#! GFWList: 2025-11-08 16:50:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1235,9 +1235,7 @@ rule:
         - s,definebabe.com
         - s,deja.com
         - s,delcamp.net
-        - s,delicious.com
         - s,demo.unlock-music.dev
-        - s,democrats.org
         - s,demosisto.hk
         - s,deno.dev
         - s,depositphotos.com

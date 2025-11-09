@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: ZLMUKeUGsFt3BVsSlxGjOA
+! Checksum: SuzGMtiYYpwfaivir8nEIg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 07 Nov 2025 08:22:11 +0000
+! Last Modified: Sat, 08 Nov 2025 16:50:38 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2661,10 +2661,6 @@ dcmilitary.com
 .definebabe.com
 
 ||delcamp.net
-delicious.com/GFWbookmark
-.democrats.org
-||democrats.org
-.demosisto.hk
 ||demosisto.hk
 ||desc.se
 ||dessci.com
