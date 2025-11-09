@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-08 12:44:31
-#! GFWList: 2025-11-07 08:22:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-09 01:59:31
+#! GFWList: 2025-11-08 16:50:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1343,9 +1343,7 @@ routing:
         - domain:definebabe.com
         - domain:deja.com
         - domain:delcamp.net
-        - domain:delicious.com
         - domain:demo.unlock-music.dev
-        - domain:democrats.org
         - domain:demosisto.hk
         - domain:deno.dev
         - domain:depositphotos.com
