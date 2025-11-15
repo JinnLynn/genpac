@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-14 12:51:53
-#! GFWList: 2025-11-08 16:50:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-15 01:53:39
+#! GFWList: 2025-11-14 13:31:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -318,6 +318,7 @@ rule:
         - s,aojiao.org
         - s,aomedia.org
         - s,aomiwang.com
+        - s,aoxvpn.com
         - s,apartmentratings.com
         - s,apartments.com
         - s,apat1989.org
@@ -534,6 +535,7 @@ rule:
         - s,bet365.com
         - s,betaclouds.net
         - s,betfair.com
+        - s,bettergpt.chat
         - s,betterhash.net
         - s,betternet.co
         - s,bettervpn.com
@@ -779,6 +781,7 @@ rule:
         - s,cams.org.sg
         - s,canadameet.com
         - s,canalporno.com
+        - s,canva.com
         - s,canyu.org
         - s,caobian.info
         - s,caochangqing.com
@@ -817,6 +820,7 @@ rule:
         - s,cccat.co
         - s,ccfd.org.tw
         - s,cchere.com
+        - s,cchostvps.xyz
         - s,ccim.org
         - s,cclife.ca
         - s,cclife.org
@@ -879,9 +883,11 @@ rule:
         - s,chaoex.com
         - s,chaos.social
         - s,character.ai
+        - s,chat.com
         - s,chat.lmsys.org
         - s,chatgpt.com
         - s,chatnook.com
+        - s,chatpdf.com
         - s,chaturbate.com
         - s,checkgfw.com
         - s,chengmingmag.com
@@ -1199,6 +1205,7 @@ rule:
         - s,daodu14.jigsy.com
         - s,daolan.net
         - s,darktech.org
+        - s,darmau.co
         - s,darpa.mil
         - s,darrenliuwei.com
         - s,dashlane.com
@@ -1669,6 +1676,7 @@ rule:
         - s,fiddle.jshell.net
         - s,figprayer.com
         - s,fileflyer.com
+        - s,files.oaiusercontent.com
         - s,fileserve.com
         - s,filesor.com
         - s,fillthesquare.org
@@ -1705,6 +1713,7 @@ rule:
         - s,flitto.com
         - s,flnet.org
         - s,flog.tw
+        - s,flowgpt.com
         - s,flowhongkong.net
         - s,flypool.org
         - s,flyvpn.com
@@ -1718,6 +1727,7 @@ rule:
         - s,fofg.org
         - s,fooooo.com
         - s,forbes.com
+        - s,forefront.ai
         - s,foreignaffairs.com
         - s,foreignpolicy.com
         - s,form.new
@@ -2365,6 +2375,7 @@ rule:
         - s,hhdcb3office.org
         - s,hhthesakyatrizin.org
         - s,hi-on.org.tw
+        - s,hicairo.com
         - s,hiccears.com
         - s,hidden-advent.org
         - s,hide.me
@@ -2554,6 +2565,7 @@ rule:
         - s,hxwk.org
         - s,hxwq.org
         - s,hybrid-analysis.com
+        - s,hyperbeam.com
         - s,hyperrate.com
         - s,hypothes.is
         - s,i-cable.com
@@ -2791,7 +2803,6 @@ rule:
         - s,jgoodies.com
         - s,jiangweiping.com
         - s,jiaoyou8.com
-        - s,jichangtj.com
         - s,jiehua.cz
         - s,jieshibaobao.com
         - s,jifangge.com
@@ -2987,6 +2998,7 @@ rule:
         - s,lesoir.be
         - s,letou.com
         - s,letscorp.net
+        - s,lexica.art
         - s,lflink.com
         - s,lflinkup.com
         - s,lflinkup.net
@@ -3026,6 +3038,7 @@ rule:
         - s,linkideo.com
         - s,linktr.ee
         - s,linkuswell.com
+        - s,linux.do
         - s,linux.org.hk
         - s,linuxtoy.org
         - s,lionsroar.com
@@ -3050,6 +3063,7 @@ rule:
         - s,livingstream.com
         - s,lizhizhuangbi.com
         - s,lkcn.net
+        - s,lmarena.ai
         - s,load.to
         - s,lobsangwangyal.com
         - s,localbitcoins.com
@@ -3079,6 +3093,7 @@ rule:
         - s,lsmradio.com
         - s,lsmwebcast.com
         - s,lsxszzg.com
+        - s,lt.sntp.uk
         - s,ltn.com.tw
         - s,luckydesigner.space
         - s,luckymobile.ca
@@ -4118,6 +4133,7 @@ rule:
         - s,releaseinternational.org
         - s,religionnews.com
         - s,renminbao.com
+        - s,rentry.co
         - s,renyurenquan.org
         - s,resilio.com
         - s,resistchina.org
@@ -4455,6 +4471,7 @@ rule:
         - s,sonidodelaesperanza.org
         - s,sopcast.com
         - s,sopcast.org
+        - s,sora.com
         - s,sorting-algorithms.com
         - s,sos.org
         - s,sosad.fun
@@ -4728,6 +4745,7 @@ rule:
         - s,tensorflow.org
         - s,tenzinpalmo.com
         - s,terabox.com
+        - s,terobox.com
         - s,tew.org
         - s,textnow.com
         - s,textnow.me

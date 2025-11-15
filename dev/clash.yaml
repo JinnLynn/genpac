@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-14 12:51:52
-#! GFWList: 2025-11-08 16:50:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-15 01:53:38
+#! GFWList: 2025-11-14 13:31:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -424,6 +424,7 @@ rules:
   - DOMAIN-SUFFIX,aojiao.org,PROXY
   - DOMAIN-SUFFIX,aomedia.org,PROXY
   - DOMAIN-SUFFIX,aomiwang.com,PROXY
+  - DOMAIN-SUFFIX,aoxvpn.com,PROXY
   - DOMAIN-SUFFIX,apartmentratings.com,PROXY
   - DOMAIN-SUFFIX,apartments.com,PROXY
   - DOMAIN-SUFFIX,apat1989.org,PROXY
@@ -640,6 +641,7 @@ rules:
   - DOMAIN-SUFFIX,bet365.com,PROXY
   - DOMAIN-SUFFIX,betaclouds.net,PROXY
   - DOMAIN-SUFFIX,betfair.com,PROXY
+  - DOMAIN-SUFFIX,bettergpt.chat,PROXY
   - DOMAIN-SUFFIX,betterhash.net,PROXY
   - DOMAIN-SUFFIX,betternet.co,PROXY
   - DOMAIN-SUFFIX,bettervpn.com,PROXY
@@ -885,6 +887,7 @@ rules:
   - DOMAIN-SUFFIX,cams.org.sg,PROXY
   - DOMAIN-SUFFIX,canadameet.com,PROXY
   - DOMAIN-SUFFIX,canalporno.com,PROXY
+  - DOMAIN-SUFFIX,canva.com,PROXY
   - DOMAIN-SUFFIX,canyu.org,PROXY
   - DOMAIN-SUFFIX,caobian.info,PROXY
   - DOMAIN-SUFFIX,caochangqing.com,PROXY
@@ -923,6 +926,7 @@ rules:
   - DOMAIN-SUFFIX,cccat.co,PROXY
   - DOMAIN-SUFFIX,ccfd.org.tw,PROXY
   - DOMAIN-SUFFIX,cchere.com,PROXY
+  - DOMAIN-SUFFIX,cchostvps.xyz,PROXY
   - DOMAIN-SUFFIX,ccim.org,PROXY
   - DOMAIN-SUFFIX,cclife.ca,PROXY
   - DOMAIN-SUFFIX,cclife.org,PROXY
@@ -985,9 +989,11 @@ rules:
   - DOMAIN-SUFFIX,chaoex.com,PROXY
   - DOMAIN-SUFFIX,chaos.social,PROXY
   - DOMAIN-SUFFIX,character.ai,PROXY
+  - DOMAIN-SUFFIX,chat.com,PROXY
   - DOMAIN-SUFFIX,chat.lmsys.org,PROXY
   - DOMAIN-SUFFIX,chatgpt.com,PROXY
   - DOMAIN-SUFFIX,chatnook.com,PROXY
+  - DOMAIN-SUFFIX,chatpdf.com,PROXY
   - DOMAIN-SUFFIX,chaturbate.com,PROXY
   - DOMAIN-SUFFIX,checkgfw.com,PROXY
   - DOMAIN-SUFFIX,chengmingmag.com,PROXY
@@ -1305,6 +1311,7 @@ rules:
   - DOMAIN-SUFFIX,daodu14.jigsy.com,PROXY
   - DOMAIN-SUFFIX,daolan.net,PROXY
   - DOMAIN-SUFFIX,darktech.org,PROXY
+  - DOMAIN-SUFFIX,darmau.co,PROXY
   - DOMAIN-SUFFIX,darpa.mil,PROXY
   - DOMAIN-SUFFIX,darrenliuwei.com,PROXY
   - DOMAIN-SUFFIX,dashlane.com,PROXY
@@ -1775,6 +1782,7 @@ rules:
   - DOMAIN-SUFFIX,fiddle.jshell.net,PROXY
   - DOMAIN-SUFFIX,figprayer.com,PROXY
   - DOMAIN-SUFFIX,fileflyer.com,PROXY
+  - DOMAIN-SUFFIX,files.oaiusercontent.com,PROXY
   - DOMAIN-SUFFIX,fileserve.com,PROXY
   - DOMAIN-SUFFIX,filesor.com,PROXY
   - DOMAIN-SUFFIX,fillthesquare.org,PROXY
@@ -1811,6 +1819,7 @@ rules:
   - DOMAIN-SUFFIX,flitto.com,PROXY
   - DOMAIN-SUFFIX,flnet.org,PROXY
   - DOMAIN-SUFFIX,flog.tw,PROXY
+  - DOMAIN-SUFFIX,flowgpt.com,PROXY
   - DOMAIN-SUFFIX,flowhongkong.net,PROXY
   - DOMAIN-SUFFIX,flypool.org,PROXY
   - DOMAIN-SUFFIX,flyvpn.com,PROXY
@@ -1824,6 +1833,7 @@ rules:
   - DOMAIN-SUFFIX,fofg.org,PROXY
   - DOMAIN-SUFFIX,fooooo.com,PROXY
   - DOMAIN-SUFFIX,forbes.com,PROXY
+  - DOMAIN-SUFFIX,forefront.ai,PROXY
   - DOMAIN-SUFFIX,foreignaffairs.com,PROXY
   - DOMAIN-SUFFIX,foreignpolicy.com,PROXY
   - DOMAIN-SUFFIX,form.new,PROXY
@@ -2471,6 +2481,7 @@ rules:
   - DOMAIN-SUFFIX,hhdcb3office.org,PROXY
   - DOMAIN-SUFFIX,hhthesakyatrizin.org,PROXY
   - DOMAIN-SUFFIX,hi-on.org.tw,PROXY
+  - DOMAIN-SUFFIX,hicairo.com,PROXY
   - DOMAIN-SUFFIX,hiccears.com,PROXY
   - DOMAIN-SUFFIX,hidden-advent.org,PROXY
   - DOMAIN-SUFFIX,hide.me,PROXY
@@ -2660,6 +2671,7 @@ rules:
   - DOMAIN-SUFFIX,hxwk.org,PROXY
   - DOMAIN-SUFFIX,hxwq.org,PROXY
   - DOMAIN-SUFFIX,hybrid-analysis.com,PROXY
+  - DOMAIN-SUFFIX,hyperbeam.com,PROXY
   - DOMAIN-SUFFIX,hyperrate.com,PROXY
   - DOMAIN-SUFFIX,hypothes.is,PROXY
   - DOMAIN-SUFFIX,i-cable.com,PROXY
@@ -2897,7 +2909,6 @@ rules:
   - DOMAIN-SUFFIX,jgoodies.com,PROXY
   - DOMAIN-SUFFIX,jiangweiping.com,PROXY
   - DOMAIN-SUFFIX,jiaoyou8.com,PROXY
-  - DOMAIN-SUFFIX,jichangtj.com,PROXY
   - DOMAIN-SUFFIX,jiehua.cz,PROXY
   - DOMAIN-SUFFIX,jieshibaobao.com,PROXY
   - DOMAIN-SUFFIX,jifangge.com,PROXY
@@ -3093,6 +3104,7 @@ rules:
   - DOMAIN-SUFFIX,lesoir.be,PROXY
   - DOMAIN-SUFFIX,letou.com,PROXY
   - DOMAIN-SUFFIX,letscorp.net,PROXY
+  - DOMAIN-SUFFIX,lexica.art,PROXY
   - DOMAIN-SUFFIX,lflink.com,PROXY
   - DOMAIN-SUFFIX,lflinkup.com,PROXY
   - DOMAIN-SUFFIX,lflinkup.net,PROXY
@@ -3132,6 +3144,7 @@ rules:
   - DOMAIN-SUFFIX,linkideo.com,PROXY
   - DOMAIN-SUFFIX,linktr.ee,PROXY
   - DOMAIN-SUFFIX,linkuswell.com,PROXY
+  - DOMAIN-SUFFIX,linux.do,PROXY
   - DOMAIN-SUFFIX,linux.org.hk,PROXY
   - DOMAIN-SUFFIX,linuxtoy.org,PROXY
   - DOMAIN-SUFFIX,lionsroar.com,PROXY
@@ -3156,6 +3169,7 @@ rules:
   - DOMAIN-SUFFIX,livingstream.com,PROXY
   - DOMAIN-SUFFIX,lizhizhuangbi.com,PROXY
   - DOMAIN-SUFFIX,lkcn.net,PROXY
+  - DOMAIN-SUFFIX,lmarena.ai,PROXY
   - DOMAIN-SUFFIX,load.to,PROXY
   - DOMAIN-SUFFIX,lobsangwangyal.com,PROXY
   - DOMAIN-SUFFIX,localbitcoins.com,PROXY
@@ -3185,6 +3199,7 @@ rules:
   - DOMAIN-SUFFIX,lsmradio.com,PROXY
   - DOMAIN-SUFFIX,lsmwebcast.com,PROXY
   - DOMAIN-SUFFIX,lsxszzg.com,PROXY
+  - DOMAIN-SUFFIX,lt.sntp.uk,PROXY
   - DOMAIN-SUFFIX,ltn.com.tw,PROXY
   - DOMAIN-SUFFIX,luckydesigner.space,PROXY
   - DOMAIN-SUFFIX,luckymobile.ca,PROXY
@@ -4224,6 +4239,7 @@ rules:
   - DOMAIN-SUFFIX,releaseinternational.org,PROXY
   - DOMAIN-SUFFIX,religionnews.com,PROXY
   - DOMAIN-SUFFIX,renminbao.com,PROXY
+  - DOMAIN-SUFFIX,rentry.co,PROXY
   - DOMAIN-SUFFIX,renyurenquan.org,PROXY
   - DOMAIN-SUFFIX,resilio.com,PROXY
   - DOMAIN-SUFFIX,resistchina.org,PROXY
@@ -4561,6 +4577,7 @@ rules:
   - DOMAIN-SUFFIX,sonidodelaesperanza.org,PROXY
   - DOMAIN-SUFFIX,sopcast.com,PROXY
   - DOMAIN-SUFFIX,sopcast.org,PROXY
+  - DOMAIN-SUFFIX,sora.com,PROXY
   - DOMAIN-SUFFIX,sorting-algorithms.com,PROXY
   - DOMAIN-SUFFIX,sos.org,PROXY
   - DOMAIN-SUFFIX,sosad.fun,PROXY
@@ -4834,6 +4851,7 @@ rules:
   - DOMAIN-SUFFIX,tensorflow.org,PROXY
   - DOMAIN-SUFFIX,tenzinpalmo.com,PROXY
   - DOMAIN-SUFFIX,terabox.com,PROXY
+  - DOMAIN-SUFFIX,terobox.com,PROXY
   - DOMAIN-SUFFIX,tew.org,PROXY
   - DOMAIN-SUFFIX,textnow.com,PROXY
   - DOMAIN-SUFFIX,textnow.me,PROXY
