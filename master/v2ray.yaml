@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-14 12:51:21
-#! GFWList: 2025-11-08 16:50:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-15 01:53:09
+#! GFWList: 2025-11-14 13:31:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -426,6 +426,7 @@ routing:
         - domain:aojiao.org
         - domain:aomedia.org
         - domain:aomiwang.com
+        - domain:aoxvpn.com
         - domain:apartmentratings.com
         - domain:apartments.com
         - domain:apat1989.org
@@ -642,6 +643,7 @@ routing:
         - domain:bet365.com
         - domain:betaclouds.net
         - domain:betfair.com
+        - domain:bettergpt.chat
         - domain:betterhash.net
         - domain:betternet.co
         - domain:bettervpn.com
@@ -887,6 +889,7 @@ routing:
         - domain:cams.org.sg
         - domain:canadameet.com
         - domain:canalporno.com
+        - domain:canva.com
         - domain:canyu.org
         - domain:caobian.info
         - domain:caochangqing.com
@@ -925,6 +928,7 @@ routing:
         - domain:cccat.co
         - domain:ccfd.org.tw
         - domain:cchere.com
+        - domain:cchostvps.xyz
         - domain:ccim.org
         - domain:cclife.ca
         - domain:cclife.org
@@ -987,9 +991,11 @@ routing:
         - domain:chaoex.com
         - domain:chaos.social
         - domain:character.ai
+        - domain:chat.com
         - domain:chat.lmsys.org
         - domain:chatgpt.com
         - domain:chatnook.com
+        - domain:chatpdf.com
         - domain:chaturbate.com
         - domain:checkgfw.com
         - domain:chengmingmag.com
@@ -1307,6 +1313,7 @@ routing:
         - domain:daodu14.jigsy.com
         - domain:daolan.net
         - domain:darktech.org
+        - domain:darmau.co
         - domain:darpa.mil
         - domain:darrenliuwei.com
         - domain:dashlane.com
@@ -1777,6 +1784,7 @@ routing:
         - domain:fiddle.jshell.net
         - domain:figprayer.com
         - domain:fileflyer.com
+        - domain:files.oaiusercontent.com
         - domain:fileserve.com
         - domain:filesor.com
         - domain:fillthesquare.org
@@ -1813,6 +1821,7 @@ routing:
         - domain:flitto.com
         - domain:flnet.org
         - domain:flog.tw
+        - domain:flowgpt.com
         - domain:flowhongkong.net
         - domain:flypool.org
         - domain:flyvpn.com
@@ -1826,6 +1835,7 @@ routing:
         - domain:fofg.org
         - domain:fooooo.com
         - domain:forbes.com
+        - domain:forefront.ai
         - domain:foreignaffairs.com
         - domain:foreignpolicy.com
         - domain:form.new
@@ -2473,6 +2483,7 @@ routing:
         - domain:hhdcb3office.org
         - domain:hhthesakyatrizin.org
         - domain:hi-on.org.tw
+        - domain:hicairo.com
         - domain:hiccears.com
         - domain:hidden-advent.org
         - domain:hide.me
@@ -2662,6 +2673,7 @@ routing:
         - domain:hxwk.org
         - domain:hxwq.org
         - domain:hybrid-analysis.com
+        - domain:hyperbeam.com
         - domain:hyperrate.com
         - domain:hypothes.is
         - domain:i-cable.com
@@ -2899,7 +2911,6 @@ routing:
         - domain:jgoodies.com
         - domain:jiangweiping.com
         - domain:jiaoyou8.com
-        - domain:jichangtj.com
         - domain:jiehua.cz
         - domain:jieshibaobao.com
         - domain:jifangge.com
@@ -3095,6 +3106,7 @@ routing:
         - domain:lesoir.be
         - domain:letou.com
         - domain:letscorp.net
+        - domain:lexica.art
         - domain:lflink.com
         - domain:lflinkup.com
         - domain:lflinkup.net
@@ -3134,6 +3146,7 @@ routing:
         - domain:linkideo.com
         - domain:linktr.ee
         - domain:linkuswell.com
+        - domain:linux.do
         - domain:linux.org.hk
         - domain:linuxtoy.org
         - domain:lionsroar.com
@@ -3158,6 +3171,7 @@ routing:
         - domain:livingstream.com
         - domain:lizhizhuangbi.com
         - domain:lkcn.net
+        - domain:lmarena.ai
         - domain:load.to
         - domain:lobsangwangyal.com
         - domain:localbitcoins.com
@@ -3187,6 +3201,7 @@ routing:
         - domain:lsmradio.com
         - domain:lsmwebcast.com
         - domain:lsxszzg.com
+        - domain:lt.sntp.uk
         - domain:ltn.com.tw
         - domain:luckydesigner.space
         - domain:luckymobile.ca
@@ -4226,6 +4241,7 @@ routing:
         - domain:releaseinternational.org
         - domain:religionnews.com
         - domain:renminbao.com
+        - domain:rentry.co
         - domain:renyurenquan.org
         - domain:resilio.com
         - domain:resistchina.org
@@ -4563,6 +4579,7 @@ routing:
         - domain:sonidodelaesperanza.org
         - domain:sopcast.com
         - domain:sopcast.org
+        - domain:sora.com
         - domain:sorting-algorithms.com
         - domain:sos.org
         - domain:sosad.fun
@@ -4836,6 +4853,7 @@ routing:
         - domain:tensorflow.org
         - domain:tenzinpalmo.com
         - domain:terabox.com
+        - domain:terobox.com
         - domain:tew.org
         - domain:textnow.com
         - domain:textnow.me
