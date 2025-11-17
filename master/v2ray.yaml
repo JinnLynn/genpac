@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-17 01:57:57
-#! GFWList: 2025-11-14 13:31:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-17 12:52:10
+#! GFWList: 2025-11-17 09:45:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -294,6 +294,7 @@ routing:
         - domain:addons.mozilla.org
         - domain:addyoutube.com
         - domain:adelaidebbs.com
+        - domain:adguard-vpn.com
         - domain:admin.recaptcha.net
         - domain:admob.com
         - domain:adpl.org.hk
@@ -2450,6 +2451,7 @@ routing:
         - domain:have8.com
         - domain:hbg.com
         - domain:hbo.com
+        - domain:hbomax.com
         - domain:hclips.com
         - domain:hd.stheadline.com
         - domain:hdtvb.net
@@ -3391,6 +3393,7 @@ routing:
         - domain:mixx.com
         - domain:mizzmona.com
         - domain:mjib.gov.tw
+        - domain:mjj.rip
         - domain:mjlsh.usc.cuhk.edu.hk
         - domain:mlc.ai
         - domain:mlcool.com
@@ -4303,6 +4306,7 @@ routing:
         - domain:rumble.com
         - domain:runbtx.com
         - domain:rushbee.com
+        - domain:rustdesk.com
         - domain:rusvpn.com
         - domain:ruten.com.tw
         - domain:rutracker.net

@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-11-17 01:57:57
-! GFWList: 2025-11-14 13:31:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-11-17 12:52:09
+! GFWList: 2025-11-17 09:45:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -286,6 +286,7 @@
 ||addons.mozilla.org
 ||addyoutube.com
 ||adelaidebbs.com
+||adguard-vpn.com
 ||admin.recaptcha.net
 ||admob.com
 ||adpl.org.hk
@@ -2442,6 +2443,7 @@
 ||have8.com
 ||hbg.com
 ||hbo.com
+||hbomax.com
 ||hclips.com
 ||hd.stheadline.com
 ||hdtvb.net
@@ -3383,6 +3385,7 @@
 ||mixx.com
 ||mizzmona.com
 ||mjib.gov.tw
+||mjj.rip
 ||mjlsh.usc.cuhk.edu.hk
 ||mlc.ai
 ||mlcool.com
@@ -4295,6 +4298,7 @@
 ||rumble.com
 ||runbtx.com
 ||rushbee.com
+||rustdesk.com
 ||rusvpn.com
 ||ruten.com.tw
 ||rutracker.net
