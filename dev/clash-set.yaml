@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-17 01:58:25
-#! GFWList: 2025-11-14 13:31:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-17 12:52:44
+#! GFWList: 2025-11-17 09:45:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -170,6 +170,7 @@ payload:
   - DOMAIN-SUFFIX,addons.mozilla.org
   - DOMAIN-SUFFIX,addyoutube.com
   - DOMAIN-SUFFIX,adelaidebbs.com
+  - DOMAIN-SUFFIX,adguard-vpn.com
   - DOMAIN-SUFFIX,admin.recaptcha.net
   - DOMAIN-SUFFIX,admob.com
   - DOMAIN-SUFFIX,adpl.org.hk
@@ -2326,6 +2327,7 @@ payload:
   - DOMAIN-SUFFIX,have8.com
   - DOMAIN-SUFFIX,hbg.com
   - DOMAIN-SUFFIX,hbo.com
+  - DOMAIN-SUFFIX,hbomax.com
   - DOMAIN-SUFFIX,hclips.com
   - DOMAIN-SUFFIX,hd.stheadline.com
   - DOMAIN-SUFFIX,hdtvb.net
@@ -3267,6 +3269,7 @@ payload:
   - DOMAIN-SUFFIX,mixx.com
   - DOMAIN-SUFFIX,mizzmona.com
   - DOMAIN-SUFFIX,mjib.gov.tw
+  - DOMAIN-SUFFIX,mjj.rip
   - DOMAIN-SUFFIX,mjlsh.usc.cuhk.edu.hk
   - DOMAIN-SUFFIX,mlc.ai
   - DOMAIN-SUFFIX,mlcool.com
@@ -4179,6 +4182,7 @@ payload:
   - DOMAIN-SUFFIX,rumble.com
   - DOMAIN-SUFFIX,runbtx.com
   - DOMAIN-SUFFIX,rushbee.com
+  - DOMAIN-SUFFIX,rustdesk.com
   - DOMAIN-SUFFIX,rusvpn.com
   - DOMAIN-SUFFIX,ruten.com.tw
   - DOMAIN-SUFFIX,rutracker.net

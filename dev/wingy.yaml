@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-17 01:58:25
-#! GFWList: 2025-11-14 13:31:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-17 12:52:44
+#! GFWList: 2025-11-17 09:45:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -186,6 +186,7 @@ rule:
         - s,addons.mozilla.org
         - s,addyoutube.com
         - s,adelaidebbs.com
+        - s,adguard-vpn.com
         - s,admin.recaptcha.net
         - s,admob.com
         - s,adpl.org.hk
@@ -2342,6 +2343,7 @@ rule:
         - s,have8.com
         - s,hbg.com
         - s,hbo.com
+        - s,hbomax.com
         - s,hclips.com
         - s,hd.stheadline.com
         - s,hdtvb.net
@@ -3283,6 +3285,7 @@ rule:
         - s,mixx.com
         - s,mizzmona.com
         - s,mjib.gov.tw
+        - s,mjj.rip
         - s,mjlsh.usc.cuhk.edu.hk
         - s,mlc.ai
         - s,mlcool.com
@@ -4195,6 +4198,7 @@ rule:
         - s,rumble.com
         - s,runbtx.com
         - s,rushbee.com
+        - s,rustdesk.com
         - s,rusvpn.com
         - s,ruten.com.tw
         - s,rutracker.net
