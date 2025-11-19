@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: bJYw9BxzdbRNG9z+wsK9/g
+! Checksum: t4ixKWGVOwE2QekBBvXY4w
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 17 Nov 2025 09:45:35 +0000
+! Last Modified: Tue, 18 Nov 2025 15:18:01 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1577,6 +1577,7 @@ taiwannation.50webs.com
 ||9news.com.au
 
 !--------------------AA-------------------------
+||ai.dev
 ||adguard-vpn.com
 ||aoxvpn.com
 ||asianfanfics.com
