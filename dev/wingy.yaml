@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-18 12:52:52
-#! GFWList: 2025-11-17 09:45:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-19 01:56:37
+#! GFWList: 2025-11-18 15:18:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -211,6 +211,7 @@ rule:
         - s,agoogleaday.com
         - s,agro.hk
         - s,ai.binwang.me
+        - s,ai.dev
         - s,aiosearch.com
         - s,aiph.net
         - s,airasia.com

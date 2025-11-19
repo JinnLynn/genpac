@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-18 12:52:50
-#! GFWList: 2025-11-17 09:45:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-19 01:56:33
+#! GFWList: 2025-11-18 15:18:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -319,6 +319,7 @@ routing:
         - domain:agoogleaday.com
         - domain:agro.hk
         - domain:ai.binwang.me
+        - domain:ai.dev
         - domain:aiosearch.com
         - domain:aiph.net
         - domain:airasia.com

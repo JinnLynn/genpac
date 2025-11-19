@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-18 12:52:52
-#! GFWList: 2025-11-17 09:45:35 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-19 01:56:36
+#! GFWList: 2025-11-18 15:18:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -317,6 +317,7 @@ rules:
   - DOMAIN-SUFFIX,agoogleaday.com,PROXY
   - DOMAIN-SUFFIX,agro.hk,PROXY
   - DOMAIN-SUFFIX,ai.binwang.me,PROXY
+  - DOMAIN-SUFFIX,ai.dev,PROXY
   - DOMAIN-SUFFIX,aiosearch.com,PROXY
   - DOMAIN-SUFFIX,aiph.net,PROXY
   - DOMAIN-SUFFIX,airasia.com,PROXY
