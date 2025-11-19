@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-19 01:56:36
-#! GFWList: 2025-11-18 15:18:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-19 12:53:19
+#! GFWList: 2025-11-19 08:56:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -1007,6 +1007,7 @@ payload:
   - DOMAIN-SUFFIX,cloud.mail.ru
   - DOMAIN-SUFFIX,cloudflare-dns.com
   - DOMAIN-SUFFIX,cloudflare-ipfs.com
+  - DOMAIN-SUFFIX,cloudflarestatus.com
   - DOMAIN-SUFFIX,cloudfunctions.net
   - DOMAIN-SUFFIX,club1069.com
   - DOMAIN-SUFFIX,clubhouseapi.com
@@ -3000,6 +3001,7 @@ payload:
   - DOMAIN-SUFFIX,liberal.org.hk
   - DOMAIN-SUFFIX,libertysculpturepark.com
   - DOMAIN-SUFFIX,libertytimes.com.tw
+  - DOMAIN-SUFFIX,library-access.sk
   - DOMAIN-SUFFIX,library.usc.cuhk.edu.hk
   - DOMAIN-SUFFIX,libredd.it
   - DOMAIN-SUFFIX,lifemiles.com
@@ -3225,6 +3227,7 @@ payload:
   - DOMAIN-SUFFIX,middle-way.net
   - DOMAIN-SUFFIX,mihr.com
   - DOMAIN-SUFFIX,mihua.org
+  - DOMAIN-SUFFIX,mij.rip
   - DOMAIN-SUFFIX,mikanani.me
   - DOMAIN-SUFFIX,mike.cz.cc
   - DOMAIN-SUFFIX,mikesoltys.com
@@ -3269,6 +3272,7 @@ payload:
   - DOMAIN-SUFFIX,mixpod.com
   - DOMAIN-SUFFIX,mixx.com
   - DOMAIN-SUFFIX,mizzmona.com
+  - DOMAIN-SUFFIX,mji.rip
   - DOMAIN-SUFFIX,mjib.gov.tw
   - DOMAIN-SUFFIX,mjj.rip
   - DOMAIN-SUFFIX,mjlsh.usc.cuhk.edu.hk

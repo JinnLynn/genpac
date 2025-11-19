@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-11-19 01:56:33
-! GFWList: 2025-11-18 15:18:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-11-19 12:53:16
+! GFWList: 2025-11-19 08:56:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -1123,6 +1123,7 @@
 ||cloud.mail.ru
 ||cloudflare-dns.com
 ||cloudflare-ipfs.com
+||cloudflarestatus.com
 ||cloudfunctions.net
 ||club1069.com
 ||clubhouseapi.com
@@ -3116,6 +3117,7 @@
 ||liberal.org.hk
 ||libertysculpturepark.com
 ||libertytimes.com.tw
+||library-access.sk
 ||library.usc.cuhk.edu.hk
 ||libredd.it
 ||lifemiles.com
@@ -3341,6 +3343,7 @@
 ||middle-way.net
 ||mihr.com
 ||mihua.org
+||mij.rip
 ||mikanani.me
 ||mike.cz.cc
 ||mikesoltys.com
@@ -3385,6 +3388,7 @@
 ||mixpod.com
 ||mixx.com
 ||mizzmona.com
+||mji.rip
 ||mjib.gov.tw
 ||mjj.rip
 ||mjlsh.usc.cuhk.edu.hk

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-19 01:56:33
-#! GFWList: 2025-11-18 15:18:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-19 12:53:16
+#! GFWList: 2025-11-19 08:56:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1131,6 +1131,7 @@ routing:
         - domain:cloud.mail.ru
         - domain:cloudflare-dns.com
         - domain:cloudflare-ipfs.com
+        - domain:cloudflarestatus.com
         - domain:cloudfunctions.net
         - domain:club1069.com
         - domain:clubhouseapi.com
@@ -3124,6 +3125,7 @@ routing:
         - domain:liberal.org.hk
         - domain:libertysculpturepark.com
         - domain:libertytimes.com.tw
+        - domain:library-access.sk
         - domain:library.usc.cuhk.edu.hk
         - domain:libredd.it
         - domain:lifemiles.com
@@ -3349,6 +3351,7 @@ routing:
         - domain:middle-way.net
         - domain:mihr.com
         - domain:mihua.org
+        - domain:mij.rip
         - domain:mikanani.me
         - domain:mike.cz.cc
         - domain:mikesoltys.com
@@ -3393,6 +3396,7 @@ routing:
         - domain:mixpod.com
         - domain:mixx.com
         - domain:mizzmona.com
+        - domain:mji.rip
         - domain:mjib.gov.tw
         - domain:mjj.rip
         - domain:mjlsh.usc.cuhk.edu.hk
