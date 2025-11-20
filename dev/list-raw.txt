@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-11-20 01:55:17
-! GFWList: 2025-11-19 14:42:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-11-20 12:51:55
+! GFWList: 2025-11-20 05:56:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -2377,6 +2377,7 @@
 ||greasyfork.org
 ||greatfire.org
 ||greatfire.us7.list-manage.com
+||greatfirevpn.com
 ||greatfirewall.biz
 ||greatfirewallofchina.org
 ||greatroc.org
@@ -5644,6 +5645,7 @@
 ||wikipedia.com
 ||wikipedia.org
 ||wikisource.org
+||wikiunblocked.org
 ||wikiversity.org
 ||wikivoyage.org
 ||wikiwand.com

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-20 01:55:19
-#! GFWList: 2025-11-19 14:42:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-20 12:51:58
+#! GFWList: 2025-11-20 05:56:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2277,6 +2277,7 @@ rule:
         - s,greasyfork.org
         - s,greatfire.org
         - s,greatfire.us7.list-manage.com
+        - s,greatfirevpn.com
         - s,greatfirewall.biz
         - s,greatfirewallofchina.org
         - s,greatroc.org
@@ -5544,6 +5545,7 @@ rule:
         - s,wikipedia.com
         - s,wikipedia.org
         - s,wikisource.org
+        - s,wikiunblocked.org
         - s,wikiversity.org
         - s,wikivoyage.org
         - s,wikiwand.com
