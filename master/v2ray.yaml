@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-20 01:54:47
-#! GFWList: 2025-11-19 14:42:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-20 12:51:26
+#! GFWList: 2025-11-20 05:56:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2385,6 +2385,7 @@ routing:
         - domain:greasyfork.org
         - domain:greatfire.org
         - domain:greatfire.us7.list-manage.com
+        - domain:greatfirevpn.com
         - domain:greatfirewall.biz
         - domain:greatfirewallofchina.org
         - domain:greatroc.org
@@ -5652,6 +5653,7 @@ routing:
         - domain:wikipedia.com
         - domain:wikipedia.org
         - domain:wikisource.org
+        - domain:wikiunblocked.org
         - domain:wikiversity.org
         - domain:wikivoyage.org
         - domain:wikiwand.com
