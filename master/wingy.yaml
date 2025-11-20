@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-19 12:52:47
-#! GFWList: 2025-11-19 08:56:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-20 01:54:50
+#! GFWList: 2025-11-19 14:42:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -5710,6 +5710,7 @@ rule:
         - s,xmovies.com
         - s,xn--11xs86f.icu
         - s,xn--4gq171p.com
+        - s,xn--9iqy04a7fi01l.com
         - s,xn--9pr62r24a.com
         - s,xn--czq75pvv1aj5c.org
         - s,xn--i2ru8q2qg.com

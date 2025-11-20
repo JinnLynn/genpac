@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2025-11-19 12:52:46
- * GFWList Last-Modified: 2025-11-19 08:56:54
+ * Generated: 2025-11-20 01:54:47
+ * GFWList Last-Modified: 2025-11-19 14:42:44
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -5823,6 +5823,7 @@ var rules = [
             "xmovies.com",
             "xn--11xs86f.icu",
             "xn--4gq171p.com",
+            "xn--9iqy04a7fi01l.com",
             "xn--9pr62r24a.com",
             "xn--czq75pvv1aj5c.org",
             "xn--i2ru8q2qg.com",
