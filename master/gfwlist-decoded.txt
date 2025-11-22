@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: 4s/e+jB6DtxB2lNFZo2Fyg
+! Checksum: qCtacSbVSzgNvLZzAiX3wQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Thu, 20 Nov 2025 05:56:59 +0000
+! Last Modified: Fri, 21 Nov 2025 13:26:14 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -4670,8 +4670,6 @@ lvhai.org
 ||madou.club
 ||mahjongsoul.com
 ||mangabz.com
-http://*.m-team.cc
-!--m-team.cc/forum
 .macrovpn.com
 ||mad-ar.ch
 ||madrau.com

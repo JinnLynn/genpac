@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-21 12:50:43
-#! GFWList: 2025-11-20 05:56:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-22 01:51:35
+#! GFWList: 2025-11-21 13:26:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3115,7 +3115,6 @@ rule:
         - s,lyfhk.net
         - s,lzjscript.com
         - s,lzmtnews.org
-        - s,m-team.cc
         - s,m.hkgalden.com
         - s,m.me
         - s,m.moegirl.org

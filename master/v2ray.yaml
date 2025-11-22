@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-21 12:50:42
-#! GFWList: 2025-11-20 05:56:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-22 01:51:32
+#! GFWList: 2025-11-21 13:26:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3223,7 +3223,6 @@ routing:
         - domain:lyfhk.net
         - domain:lzjscript.com
         - domain:lzmtnews.org
-        - domain:m-team.cc
         - domain:m.hkgalden.com
         - domain:m.me
         - domain:m.moegirl.org
