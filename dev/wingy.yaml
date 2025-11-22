@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-22 01:52:04
-#! GFWList: 2025-11-21 13:26:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-22 12:44:13
+#! GFWList: 2025-11-22 11:41:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3437,6 +3437,7 @@ rule:
         - s,nalandawest.org
         - s,namgyal.org
         - s,namgyalmonastery.org
+        - s,namu.wiki
         - s,nanopool.org
         - s,nanyang.com
         - s,nanyangpost.com
@@ -3861,6 +3862,7 @@ rule:
         - s,picacomiccn.com
         - s,picasaweb.com
         - s,picidae.net
+        - s,picsart.com
         - s,picturedip.com
         - s,picturesocial.com
         - s,picuki.com
