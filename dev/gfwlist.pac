@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-11-21 12:51:11
- * GFWList Last-Modified: 2025-11-20 05:56:59
+ * Generated: 2025-11-22 01:52:02
+ * GFWList Last-Modified: 2025-11-21 13:26:14
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -3228,7 +3228,6 @@ var rules = [
             "lyfhk.net",
             "lzjscript.com",
             "lzmtnews.org",
-            "m-team.cc",
             "m.hkgalden.com",
             "m.me",
             "m.moegirl.org",
