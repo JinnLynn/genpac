@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-22 01:51:32
-#! GFWList: 2025-11-21 13:26:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-22 12:43:38
+#! GFWList: 2025-11-22 11:41:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3545,6 +3545,7 @@ routing:
         - domain:nalandawest.org
         - domain:namgyal.org
         - domain:namgyalmonastery.org
+        - domain:namu.wiki
         - domain:nanopool.org
         - domain:nanyang.com
         - domain:nanyangpost.com
@@ -3969,6 +3970,7 @@ routing:
         - domain:picacomiccn.com
         - domain:picasaweb.com
         - domain:picidae.net
+        - domain:picsart.com
         - domain:picturedip.com
         - domain:picturesocial.com
         - domain:picuki.com
