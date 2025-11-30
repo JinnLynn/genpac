@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-30 02:09:40
-#! GFWList: 2025-11-22 11:41:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-30 12:48:09
+#! GFWList: 2025-11-30 03:25:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -5853,6 +5853,7 @@ rule:
         - s,zalmos.com
         - s,zamimg.com
         - s,zaobao.com.sg
+        - s,zaochenbao.com
         - s,zapto.org
         - s,zattoo.com
         - s,zb.com
