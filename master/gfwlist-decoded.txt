@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: fy/SoNy9ogwvM63dvZzd5w
+! Checksum: M9Y07+qU3wwoyqnZ09bxhw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 22 Nov 2025 11:41:21 +0000
+! Last Modified: Sun, 30 Nov 2025 03:25:57 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -7460,6 +7460,7 @@ yx51.net
 ||yzzk.com
 
 !--------------------ZZ-------------------------
+||zaochenbao.com
 ||z-library.ec
 ||z-library.sk
 ||z-lib.fm

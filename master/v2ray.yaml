@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-11-30 02:09:07
-#! GFWList: 2025-11-22 11:41:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-11-30 12:47:39
+#! GFWList: 2025-11-30 03:25:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -5961,6 +5961,7 @@ routing:
         - domain:zalmos.com
         - domain:zamimg.com
         - domain:zaobao.com.sg
+        - domain:zaochenbao.com
         - domain:zapto.org
         - domain:zattoo.com
         - domain:zb.com
