@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-13 01:57:18
-#! GFWList: 2025-11-30 03:25:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-13 12:49:23
+#! GFWList: 2025-12-13 05:57:16 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -420,6 +420,7 @@ routing:
         - domain:antichristendom.com
         - domain:antiwave.net
         - domain:antpool.com
+        - domain:anuneko.com
         - domain:anyporn.com
         - domain:anysex.com
         - domain:ao3.org
@@ -2914,6 +2915,7 @@ routing:
         - domain:jetos.com
         - domain:jex.com
         - domain:jgoodies.com
+        - domain:jhelab.org
         - domain:jiangweiping.com
         - domain:jiaoyou8.com
         - domain:jiehua.cz
@@ -4018,6 +4020,7 @@ routing:
         - domain:podbean.com
         - domain:podcast.co
         - domain:podictionary.com
+        - domain:podwise.ai
         - domain:poe.com
         - domain:points-media.com
         - domain:pokerstars.com
@@ -4184,9 +4187,11 @@ routing:
         - domain:radiko.jp
         - domain:radio-canada.ca
         - domain:radio-en-ligne.fr
+        - domain:radio.co
         - domain:radio.garden
         - domain:radioaustralia.net.au
         - domain:radiohilight.net
+        - domain:radiojar.com
         - domain:radioline.co
         - domain:radiovaticana.org
         - domain:radiovncr.com
