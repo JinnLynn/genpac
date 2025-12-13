@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-13 01:57:46
-#! GFWList: 2025-11-30 03:25:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-13 12:49:50
+#! GFWList: 2025-12-13 05:57:16 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -312,6 +312,7 @@ rule:
         - s,antichristendom.com
         - s,antiwave.net
         - s,antpool.com
+        - s,anuneko.com
         - s,anyporn.com
         - s,anysex.com
         - s,ao3.org
@@ -2806,6 +2807,7 @@ rule:
         - s,jetos.com
         - s,jex.com
         - s,jgoodies.com
+        - s,jhelab.org
         - s,jiangweiping.com
         - s,jiaoyou8.com
         - s,jiehua.cz
@@ -3910,6 +3912,7 @@ rule:
         - s,podbean.com
         - s,podcast.co
         - s,podictionary.com
+        - s,podwise.ai
         - s,poe.com
         - s,points-media.com
         - s,pokerstars.com
@@ -4076,9 +4079,11 @@ rule:
         - s,radiko.jp
         - s,radio-canada.ca
         - s,radio-en-ligne.fr
+        - s,radio.co
         - s,radio.garden
         - s,radioaustralia.net.au
         - s,radiohilight.net
+        - s,radiojar.com
         - s,radioline.co
         - s,radiovaticana.org
         - s,radiovncr.com
