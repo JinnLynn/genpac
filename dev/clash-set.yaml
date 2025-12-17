@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-17 02:00:16
-#! GFWList: 2025-12-13 05:57:16 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-17 12:57:01
+#! GFWList: 2025-12-17 08:56:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -557,6 +557,7 @@ payload:
   - DOMAIN-SUFFIX,bit-z.com
   - DOMAIN-SUFFIX,bit.do
   - DOMAIN-SUFFIX,bit.ly
+  - DOMAIN-SUFFIX,bitbaby.com
   - DOMAIN-SUFFIX,bitbay.net
   - DOMAIN-SUFFIX,bitchute.com
   - DOMAIN-SUFFIX,bitcointalk.org
@@ -2583,6 +2584,7 @@ payload:
   - DOMAIN-SUFFIX,icu-project.org
   - DOMAIN-SUFFIX,id.hao123.com
   - DOMAIN-SUFFIX,id.heroku.com
+  - DOMAIN-SUFFIX,idcflare.com
   - DOMAIN-SUFFIX,idemocracy.asia
   - DOMAIN-SUFFIX,identi.ca
   - DOMAIN-SUFFIX,idiomconnection.com
