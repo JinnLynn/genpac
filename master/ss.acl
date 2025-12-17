@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-17 01:59:46
-#! GFWList: 2025-12-13 05:57:16 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-17 12:56:28
+#! GFWList: 2025-12-17 08:56:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -560,6 +560,7 @@
 (^|\.)bit-z\.com$
 (^|\.)bit\.do$
 (^|\.)bit\.ly$
+(^|\.)bitbaby\.com$
 (^|\.)bitbay\.net$
 (^|\.)bitchute\.com$
 (^|\.)bitcointalk\.org$
@@ -2586,6 +2587,7 @@
 (^|\.)icu-project\.org$
 (^|\.)id\.hao123\.com$
 (^|\.)id\.heroku\.com$
+(^|\.)idcflare\.com$
 (^|\.)idemocracy\.asia$
 (^|\.)identi\.ca$
 (^|\.)idiomconnection\.com$
