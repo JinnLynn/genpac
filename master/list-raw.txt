@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2025-12-19 02:03:15
-! GFWList: 2025-12-17 08:56:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-12-19 12:53:08
+! GFWList: 2025-12-19 11:28:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -3902,6 +3902,7 @@
 ||parler.com
 ||parse.com
 ||parsevideo.com
+||partnerstack.xyz
 ||partycasino.com
 ||partypoker.com
 ||passion.com
