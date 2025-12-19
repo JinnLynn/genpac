@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-19 02:03:52
-#! GFWList: 2025-12-17 08:56:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-19 12:53:44
+#! GFWList: 2025-12-19 11:28:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -3786,6 +3786,7 @@ payload:
   - DOMAIN-SUFFIX,parler.com
   - DOMAIN-SUFFIX,parse.com
   - DOMAIN-SUFFIX,parsevideo.com
+  - DOMAIN-SUFFIX,partnerstack.xyz
   - DOMAIN-SUFFIX,partycasino.com
   - DOMAIN-SUFFIX,partypoker.com
   - DOMAIN-SUFFIX,passion.com
