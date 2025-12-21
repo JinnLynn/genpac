@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-20 12:49:33
-#! GFWList: 2025-12-19 11:28:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-21 02:10:46
+#! GFWList: 2025-12-21 02:05:16 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -4553,6 +4553,7 @@ payload:
   - DOMAIN-SUFFIX,startuplivingchina.com
   - DOMAIN-SUFFIX,stat.gov.tw
   - DOMAIN-SUFFIX,static-economist.com
+  - DOMAIN-SUFFIX,static.pocketcasts.com
   - DOMAIN-SUFFIX,static.shemalez.com
   - DOMAIN-SUFFIX,static01.nyt.com
   - DOMAIN-SUFFIX,staticflickr.com
