@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-20 12:49:05
-#! GFWList: 2025-12-19 11:28:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-21 02:10:15
+#! GFWList: 2025-12-21 02:05:16 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -4677,6 +4677,7 @@ routing:
         - domain:startuplivingchina.com
         - domain:stat.gov.tw
         - domain:static-economist.com
+        - domain:static.pocketcasts.com
         - domain:static.shemalez.com
         - domain:static01.nyt.com
         - domain:staticflickr.com

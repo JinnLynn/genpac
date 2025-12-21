@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-20 12:49:05
-#! GFWList: 2025-12-19 11:28:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-21 02:10:17
+#! GFWList: 2025-12-21 02:05:16 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -4569,6 +4569,7 @@ rule:
         - s,startuplivingchina.com
         - s,stat.gov.tw
         - s,static-economist.com
+        - s,static.pocketcasts.com
         - s,static.shemalez.com
         - s,static01.nyt.com
         - s,staticflickr.com
