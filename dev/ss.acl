@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-24 02:03:30
-#! GFWList: 2025-12-21 02:05:16 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-24 12:54:29
+#! GFWList: 2025-12-24 08:18:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3463,6 +3463,7 @@
 (^|\.)nemesis2\.qx\.net$
 (^|\.)neo-miracle\.com$
 (^|\.)neowin\.net$
+(^|\.)nephobox\.com$
 (^|\.)netalert\.me$
 (^|\.)netbirds\.com$
 (^|\.)netcolony\.com$
