@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-24 02:02:57
-#! GFWList: 2025-12-21 02:05:16 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-24 12:53:54
+#! GFWList: 2025-12-24 08:18:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3584,6 +3584,7 @@ routing:
         - domain:nemesis2.qx.net
         - domain:neo-miracle.com
         - domain:neowin.net
+        - domain:nephobox.com
         - domain:netalert.me
         - domain:netbirds.com
         - domain:netcolony.com
