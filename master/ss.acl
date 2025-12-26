@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-26 02:04:02
-#! GFWList: 2025-12-24 08:18:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-26 12:53:04
+#! GFWList: 2025-12-26 07:03:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -965,7 +965,6 @@
 (^|\.)chromecast\.com$
 (^|\.)chromeexperiments\.com$
 (^|\.)chromestatus\.com$
-(^|\.)chromium\.org$
 (^|\.)chuang-yen\.org$
 (^|\.)chubold\.com$
 (^|\.)chubun\.com$
@@ -3078,6 +3077,7 @@
 (^|\.)looktoronto\.com$
 (^|\.)lotsawahouse\.org$
 (^|\.)lotuslight\.org\.tw$
+(^|\.)lovart\.ai$
 (^|\.)lovetvshow\.com$
 (^|\.)lpsg\.com$
 (^|\.)lrfz\.com$

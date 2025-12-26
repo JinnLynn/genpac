@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-26 02:04:03
-#! GFWList: 2025-12-24 08:18:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-26 12:53:05
+#! GFWList: 2025-12-26 07:03:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -978,7 +978,6 @@ rule:
         - s,chromecast.com
         - s,chromeexperiments.com
         - s,chromestatus.com
-        - s,chromium.org
         - s,chuang-yen.org
         - s,chubold.com
         - s,chubun.com
@@ -3091,6 +3090,7 @@ rule:
         - s,looktoronto.com
         - s,lotsawahouse.org
         - s,lotuslight.org.tw
+        - s,lovart.ai
         - s,lovetvshow.com
         - s,lpsg.com
         - s,lrfz.com
