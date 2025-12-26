@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-26 02:04:29
-#! GFWList: 2025-12-24 08:18:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-26 12:53:30
+#! GFWList: 2025-12-26 07:03:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1086,7 +1086,6 @@ routing:
         - domain:chromecast.com
         - domain:chromeexperiments.com
         - domain:chromestatus.com
-        - domain:chromium.org
         - domain:chuang-yen.org
         - domain:chubold.com
         - domain:chubun.com
@@ -3199,6 +3198,7 @@ routing:
         - domain:looktoronto.com
         - domain:lotsawahouse.org
         - domain:lotuslight.org.tw
+        - domain:lovart.ai
         - domain:lovetvshow.com
         - domain:lpsg.com
         - domain:lrfz.com

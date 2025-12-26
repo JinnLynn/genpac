@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-12-26 02:04:29
-! GFWList: 2025-12-24 08:18:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-12-26 12:53:30
+! GFWList: 2025-12-26 07:03:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -1078,7 +1078,6 @@
 ||chromecast.com
 ||chromeexperiments.com
 ||chromestatus.com
-||chromium.org
 ||chuang-yen.org
 ||chubold.com
 ||chubun.com
@@ -3191,6 +3190,7 @@
 ||looktoronto.com
 ||lotsawahouse.org
 ||lotuslight.org.tw
+||lovart.ai
 ||lovetvshow.com
 ||lpsg.com
 ||lrfz.com
