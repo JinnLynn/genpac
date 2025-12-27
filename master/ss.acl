@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-27 02:01:51
-#! GFWList: 2025-12-26 07:03:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-27 12:50:43
+#! GFWList: 2025-12-27 12:22:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -227,6 +227,7 @@
 (^|\.)aliengu\.com$
 (^|\.)alive\.bar$
 (^|\.)aljazeera\.com$
+(^|\.)aljazeera\.net$
 (^|\.)alkasir\.com$
 (^|\.)all4mom\.org$
 (^|\.)allcoin\.com$
@@ -1235,7 +1236,6 @@
 (^|\.)delcamp\.net$
 (^|\.)demo\.unlock-music\.dev$
 (^|\.)demosisto\.hk$
-(^|\.)deno\.dev$
 (^|\.)depositphotos\.com$
 (^|\.)desc\.se$
 (^|\.)desipro\.de$
@@ -1305,7 +1305,6 @@
 (^|\.)docker\.com$
 (^|\.)docker\.io$
 (^|\.)dockerstatus\.com$
-(^|\.)docs\.deno\.com$
 (^|\.)docs\.new$
 (^|\.)doctorvoice\.org$
 (^|\.)documentingreality\.com$
@@ -4564,6 +4563,7 @@
 (^|\.)stboy\.net$
 (^|\.)stc\.com\.sa$
 (^|\.)steamcommunity\.com$
+(^|\.)steamladder\.com$
 (^|\.)steamstatic\.com$
 (^|\.)steel-storm\.com$
 (^|\.)steemit\.com$

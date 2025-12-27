@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-27 02:01:53
-#! GFWList: 2025-12-26 07:03:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-27 12:50:45
+#! GFWList: 2025-12-27 12:22:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -240,6 +240,7 @@ rule:
         - s,aliengu.com
         - s,alive.bar
         - s,aljazeera.com
+        - s,aljazeera.net
         - s,alkasir.com
         - s,all4mom.org
         - s,allcoin.com
@@ -1248,7 +1249,6 @@ rule:
         - s,delcamp.net
         - s,demo.unlock-music.dev
         - s,demosisto.hk
-        - s,deno.dev
         - s,depositphotos.com
         - s,desc.se
         - s,desipro.de
@@ -1318,7 +1318,6 @@ rule:
         - s,docker.com
         - s,docker.io
         - s,dockerstatus.com
-        - s,docs.deno.com
         - s,docs.new
         - s,doctorvoice.org
         - s,documentingreality.com
@@ -4577,6 +4576,7 @@ rule:
         - s,stboy.net
         - s,stc.com.sa
         - s,steamcommunity.com
+        - s,steamladder.com
         - s,steamstatic.com
         - s,steel-storm.com
         - s,steemit.com
