@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-27 02:02:22
-#! GFWList: 2025-12-26 07:03:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-27 12:51:18
+#! GFWList: 2025-12-27 12:22:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -224,6 +224,7 @@ payload:
   - DOMAIN-SUFFIX,aliengu.com
   - DOMAIN-SUFFIX,alive.bar
   - DOMAIN-SUFFIX,aljazeera.com
+  - DOMAIN-SUFFIX,aljazeera.net
   - DOMAIN-SUFFIX,alkasir.com
   - DOMAIN-SUFFIX,all4mom.org
   - DOMAIN-SUFFIX,allcoin.com
@@ -1232,7 +1233,6 @@ payload:
   - DOMAIN-SUFFIX,delcamp.net
   - DOMAIN-SUFFIX,demo.unlock-music.dev
   - DOMAIN-SUFFIX,demosisto.hk
-  - DOMAIN-SUFFIX,deno.dev
   - DOMAIN-SUFFIX,depositphotos.com
   - DOMAIN-SUFFIX,desc.se
   - DOMAIN-SUFFIX,desipro.de
@@ -1302,7 +1302,6 @@ payload:
   - DOMAIN-SUFFIX,docker.com
   - DOMAIN-SUFFIX,docker.io
   - DOMAIN-SUFFIX,dockerstatus.com
-  - DOMAIN-SUFFIX,docs.deno.com
   - DOMAIN-SUFFIX,docs.new
   - DOMAIN-SUFFIX,doctorvoice.org
   - DOMAIN-SUFFIX,documentingreality.com
@@ -4561,6 +4560,7 @@ payload:
   - DOMAIN-SUFFIX,stboy.net
   - DOMAIN-SUFFIX,stc.com.sa
   - DOMAIN-SUFFIX,steamcommunity.com
+  - DOMAIN-SUFFIX,steamladder.com
   - DOMAIN-SUFFIX,steamstatic.com
   - DOMAIN-SUFFIX,steel-storm.com
   - DOMAIN-SUFFIX,steemit.com

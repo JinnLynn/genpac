@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2025-12-27 02:02:19
-! GFWList: 2025-12-26 07:03:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2025-12-27 12:51:16
+! GFWList: 2025-12-27 12:22:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -340,6 +340,7 @@
 ||aliengu.com
 ||alive.bar
 ||aljazeera.com
+||aljazeera.net
 ||alkasir.com
 ||all4mom.org
 ||allcoin.com
@@ -1348,7 +1349,6 @@
 ||delcamp.net
 ||demo.unlock-music.dev
 ||demosisto.hk
-||deno.dev
 ||depositphotos.com
 ||desc.se
 ||desipro.de
@@ -1418,7 +1418,6 @@
 ||docker.com
 ||docker.io
 ||dockerstatus.com
-||docs.deno.com
 ||docs.new
 ||doctorvoice.org
 ||documentingreality.com
@@ -4677,6 +4676,7 @@
 ||stboy.net
 ||stc.com.sa
 ||steamcommunity.com
+||steamladder.com
 ||steamstatic.com
 ||steel-storm.com
 ||steemit.com

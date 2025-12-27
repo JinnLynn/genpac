@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: BcqFgcqsRN2TZLie5hx8Tw
+! Checksum: lfvlZaxY1jJUB9aCHfNcpA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 26 Dec 2025 07:03:42 +0000
+! Last Modified: Sat, 27 Dec 2025 12:22:51 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -900,6 +900,7 @@ bloomberg.de
 ||ftchinese.com
 
 !!---Google---
+||issues.chromium.org 
 ||goog
 ||gle
 ||google
@@ -1578,6 +1579,7 @@ taiwannation.50webs.com
 ||9news.com.au
 
 !--------------------AA-------------------------
+||aljazeera.net
 ||anuneko.com
 ||ai.dev
 ||adguard-vpn.com
@@ -2581,8 +2583,6 @@ cyberghostvpn.com
 !--------------------DD-------------------------
 ||darmau.co
 ||dockerstatus.com
-||deno.dev
-||docs.deno.com
 ||doom9.org
 ||dweb.link
 ||docker.io
@@ -5754,6 +5754,7 @@ rutube.ru
 |http://rxhj.net
 
 !--------------------SS-------------------------
+||steamladder.com
 ||sora.com
 ||lt.sntp.uk
 ||solscan.io
