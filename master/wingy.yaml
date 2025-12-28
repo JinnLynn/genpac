@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-27 12:50:45
-#! GFWList: 2025-12-27 12:22:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-28 02:22:25
+#! GFWList: 2025-12-27 13:31:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1943,6 +1943,7 @@ rule:
         - s,gfw.press
         - s,gfw.report
         - s,gfwatch.org
+        - s,gfwbao.com
         - s,ggpht.com
         - s,ggssl.com
         - s,ghidra-sre.org

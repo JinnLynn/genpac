@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-27 12:50:43
-#! GFWList: 2025-12-27 12:22:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-28 02:22:22
+#! GFWList: 2025-12-27 13:31:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2051,6 +2051,7 @@ routing:
         - domain:gfw.press
         - domain:gfw.report
         - domain:gfwatch.org
+        - domain:gfwbao.com
         - domain:ggpht.com
         - domain:ggssl.com
         - domain:ghidra-sre.org
