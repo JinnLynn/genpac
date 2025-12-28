@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2025-12-27 12:51:18
-#! GFWList: 2025-12-27 12:22:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2025-12-28 02:22:56
+#! GFWList: 2025-12-27 13:31:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -2049,6 +2049,7 @@ rules:
   - DOMAIN-SUFFIX,gfw.press,PROXY
   - DOMAIN-SUFFIX,gfw.report,PROXY
   - DOMAIN-SUFFIX,gfwatch.org,PROXY
+  - DOMAIN-SUFFIX,gfwbao.com,PROXY
   - DOMAIN-SUFFIX,ggpht.com,PROXY
   - DOMAIN-SUFFIX,ggssl.com,PROXY
   - DOMAIN-SUFFIX,ghidra-sre.org,PROXY

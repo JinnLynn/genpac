@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2025-12-27 12:51:15
- * GFWList Last-Modified: 2025-12-27 12:22:51
+ * Generated: 2025-12-28 02:22:53
+ * GFWList Last-Modified: 2025-12-27 13:31:55
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -2056,6 +2056,7 @@ var rules = [
             "gfw.press",
             "gfw.report",
             "gfwatch.org",
+            "gfwbao.com",
             "ggpht.com",
             "ggssl.com",
             "ghidra-sre.org",
