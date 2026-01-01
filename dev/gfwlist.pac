@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-01-01 02:23:23
- * GFWList Last-Modified: 2025-12-27 13:31:55
+ * Generated: 2026-01-01 12:54:20
+ * GFWList Last-Modified: 2026-01-01 02:42:02
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -3945,6 +3945,7 @@ var rules = [
             "pdetails.com",
             "pdproxy.com",
             "pds.nasa.gov",
+            "pdst.fm",
             "peace.ca",
             "peacefire.org",
             "peeasian.com",
@@ -5339,6 +5340,7 @@ var rules = [
             "unstable.icu",
             "unwire.hk",
             "uocn.org",
+            "up.audio",
             "upbit.com",
             "updates.tdesktop.com",
             "upghsbc.com",

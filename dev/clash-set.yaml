@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-01 02:23:25
-#! GFWList: 2025-12-27 13:31:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-01 12:54:23
+#! GFWList: 2026-01-01 02:42:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -3816,6 +3816,7 @@ payload:
   - DOMAIN-SUFFIX,pdetails.com
   - DOMAIN-SUFFIX,pdproxy.com
   - DOMAIN-SUFFIX,pds.nasa.gov
+  - DOMAIN-SUFFIX,pdst.fm
   - DOMAIN-SUFFIX,peace.ca
   - DOMAIN-SUFFIX,peacefire.org
   - DOMAIN-SUFFIX,peeasian.com
@@ -5210,6 +5211,7 @@ payload:
   - DOMAIN-SUFFIX,unstable.icu
   - DOMAIN-SUFFIX,unwire.hk
   - DOMAIN-SUFFIX,uocn.org
+  - DOMAIN-SUFFIX,up.audio
   - DOMAIN-SUFFIX,upbit.com
   - DOMAIN-SUFFIX,updates.tdesktop.com
   - DOMAIN-SUFFIX,upghsbc.com
