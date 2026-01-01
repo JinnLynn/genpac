@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-01 02:22:57
-#! GFWList: 2025-12-27 13:31:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-01 12:53:55
+#! GFWList: 2026-01-01 02:42:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3832,6 +3832,7 @@ rule:
         - s,pdetails.com
         - s,pdproxy.com
         - s,pds.nasa.gov
+        - s,pdst.fm
         - s,peace.ca
         - s,peacefire.org
         - s,peeasian.com
@@ -5226,6 +5227,7 @@ rule:
         - s,unstable.icu
         - s,unwire.hk
         - s,uocn.org
+        - s,up.audio
         - s,upbit.com
         - s,updates.tdesktop.com
         - s,upghsbc.com

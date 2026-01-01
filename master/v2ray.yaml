@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-01 02:22:54
-#! GFWList: 2025-12-27 13:31:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-01 12:53:54
+#! GFWList: 2026-01-01 02:42:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3940,6 +3940,7 @@ routing:
         - domain:pdetails.com
         - domain:pdproxy.com
         - domain:pds.nasa.gov
+        - domain:pdst.fm
         - domain:peace.ca
         - domain:peacefire.org
         - domain:peeasian.com
@@ -5334,6 +5335,7 @@ routing:
         - domain:unstable.icu
         - domain:unwire.hk
         - domain:uocn.org
+        - domain:up.audio
         - domain:upbit.com
         - domain:updates.tdesktop.com
         - domain:upghsbc.com
