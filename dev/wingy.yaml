@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-02 02:07:57
-#! GFWList: 2026-01-01 02:42:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-02 12:53:38
+#! GFWList: 2026-01-02 09:38:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3882,6 +3882,23 @@ rule:
         - s,pinimg.com
         - s,pinkrod.com
         - s,pinoy-n.com
+        - s,pinterest.at
+        - s,pinterest.ca
+        - s,pinterest.cl
+        - s,pinterest.co.uk
+        - s,pinterest.com
+        - s,pinterest.com.au
+        - s,pinterest.com.mx
+        - s,pinterest.de
+        - s,pinterest.es
+        - s,pinterest.fr
+        - s,pinterest.ie
+        - s,pinterest.it
+        - s,pinterest.jp
+        - s,pinterest.nz
+        - s,pinterest.ph
+        - s,pinterest.pt
+        - s,pinterest.se
         - s,pioneer-worker.forums-free.com
         - s,pipii.tv
         - s,piraattilahti.org
