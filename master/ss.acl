@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-02 02:07:25
-#! GFWList: 2026-01-01 02:42:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-02 12:53:08
+#! GFWList: 2026-01-02 09:38:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3869,6 +3869,23 @@
 (^|\.)pinimg\.com$
 (^|\.)pinkrod\.com$
 (^|\.)pinoy-n\.com$
+(^|\.)pinterest\.at$
+(^|\.)pinterest\.ca$
+(^|\.)pinterest\.cl$
+(^|\.)pinterest\.co\.uk$
+(^|\.)pinterest\.com$
+(^|\.)pinterest\.com\.au$
+(^|\.)pinterest\.com\.mx$
+(^|\.)pinterest\.de$
+(^|\.)pinterest\.es$
+(^|\.)pinterest\.fr$
+(^|\.)pinterest\.ie$
+(^|\.)pinterest\.it$
+(^|\.)pinterest\.jp$
+(^|\.)pinterest\.nz$
+(^|\.)pinterest\.ph$
+(^|\.)pinterest\.pt$
+(^|\.)pinterest\.se$
 (^|\.)pioneer-worker\.forums-free\.com$
 (^|\.)pipii\.tv$
 (^|\.)piraattilahti\.org$

@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-02 02:07:25
-#! GFWList: 2026-01-01 02:42:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-02 12:53:08
+#! GFWList: 2026-01-02 09:38:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -76,7 +76,6 @@ routing:
         - domain:nvri.gov.tw
         - domain:ocsp.pki.goog
         - domain:penghu-nsa.gov.tw
-        - domain:pinterest.cn
         - domain:post.gov.tw
         - domain:qq.com
         - domain:redirector.gvt1.com
@@ -3990,6 +3989,23 @@ routing:
         - domain:pinimg.com
         - domain:pinkrod.com
         - domain:pinoy-n.com
+        - domain:pinterest.at
+        - domain:pinterest.ca
+        - domain:pinterest.cl
+        - domain:pinterest.co.uk
+        - domain:pinterest.com
+        - domain:pinterest.com.au
+        - domain:pinterest.com.mx
+        - domain:pinterest.de
+        - domain:pinterest.es
+        - domain:pinterest.fr
+        - domain:pinterest.ie
+        - domain:pinterest.it
+        - domain:pinterest.jp
+        - domain:pinterest.nz
+        - domain:pinterest.ph
+        - domain:pinterest.pt
+        - domain:pinterest.se
         - domain:pioneer-worker.forums-free.com
         - domain:pipii.tv
         - domain:piraattilahti.org
