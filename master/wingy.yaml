@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-04 12:51:47
-#! GFWList: 2026-01-02 09:38:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-05 02:23:40
+#! GFWList: 2026-01-05 02:04:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1221,6 +1221,7 @@ rule:
         - s,dawangidc.com
         - s,daxa.cn
         - s,daylife.com
+        - s,dazn.com
         - s,db.tt
         - s,dbgjd.com
         - s,dcard.tw
@@ -3721,6 +3722,8 @@ rule:
         - s,onthehunt.com
         - s,ontrac.com
         - s,oojj.de
+        - s,ooni.io
+        - s,ooni.org
         - s,open.com.hk
         - s,open.firstory.me
         - s,openai.com
@@ -5708,6 +5711,7 @@ rule:
         - s,xbookcn.com
         - s,xbtce.com
         - s,xcafe.in
+        - s,xcancel.com
         - s,xcity.jp
         - s,xcritic.com
         - s,xerotica.com
