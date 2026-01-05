@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-04 12:52:19
-#! GFWList: 2026-01-02 09:38:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-05 02:24:12
+#! GFWList: 2026-01-05 02:04:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1208,6 +1208,7 @@
 (^|\.)dawangidc\.com$
 (^|\.)daxa\.cn$
 (^|\.)daylife\.com$
+(^|\.)dazn\.com$
 (^|\.)db\.tt$
 (^|\.)dbgjd\.com$
 (^|\.)dcard\.tw$
@@ -3708,6 +3709,8 @@
 (^|\.)onthehunt\.com$
 (^|\.)ontrac\.com$
 (^|\.)oojj\.de$
+(^|\.)ooni\.io$
+(^|\.)ooni\.org$
 (^|\.)open\.com\.hk$
 (^|\.)open\.firstory\.me$
 (^|\.)openai\.com$
@@ -5695,6 +5698,7 @@
 (^|\.)xbookcn\.com$
 (^|\.)xbtce\.com$
 (^|\.)xcafe\.in$
+(^|\.)xcancel\.com$
 (^|\.)xcity\.jp$
 (^|\.)xcritic\.com$
 (^|\.)xerotica\.com$

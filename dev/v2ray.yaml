@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-04 12:52:18
-#! GFWList: 2026-01-02 09:38:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-05 02:24:12
+#! GFWList: 2026-01-05 02:04:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1328,6 +1328,7 @@ routing:
         - domain:dawangidc.com
         - domain:daxa.cn
         - domain:daylife.com
+        - domain:dazn.com
         - domain:db.tt
         - domain:dbgjd.com
         - domain:dcard.tw
@@ -3828,6 +3829,8 @@ routing:
         - domain:onthehunt.com
         - domain:ontrac.com
         - domain:oojj.de
+        - domain:ooni.io
+        - domain:ooni.org
         - domain:open.com.hk
         - domain:open.firstory.me
         - domain:openai.com
@@ -5815,6 +5818,7 @@ routing:
         - domain:xbookcn.com
         - domain:xbtce.com
         - domain:xcafe.in
+        - domain:xcancel.com
         - domain:xcity.jp
         - domain:xcritic.com
         - domain:xerotica.com

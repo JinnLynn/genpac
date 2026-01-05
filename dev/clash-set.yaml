@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-04 12:52:20
-#! GFWList: 2026-01-02 09:38:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-05 02:24:15
+#! GFWList: 2026-01-05 02:04:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -1205,6 +1205,7 @@ payload:
   - DOMAIN-SUFFIX,dawangidc.com
   - DOMAIN-SUFFIX,daxa.cn
   - DOMAIN-SUFFIX,daylife.com
+  - DOMAIN-SUFFIX,dazn.com
   - DOMAIN-SUFFIX,db.tt
   - DOMAIN-SUFFIX,dbgjd.com
   - DOMAIN-SUFFIX,dcard.tw
@@ -3705,6 +3706,8 @@ payload:
   - DOMAIN-SUFFIX,onthehunt.com
   - DOMAIN-SUFFIX,ontrac.com
   - DOMAIN-SUFFIX,oojj.de
+  - DOMAIN-SUFFIX,ooni.io
+  - DOMAIN-SUFFIX,ooni.org
   - DOMAIN-SUFFIX,open.com.hk
   - DOMAIN-SUFFIX,open.firstory.me
   - DOMAIN-SUFFIX,openai.com
@@ -5692,6 +5695,7 @@ payload:
   - DOMAIN-SUFFIX,xbookcn.com
   - DOMAIN-SUFFIX,xbtce.com
   - DOMAIN-SUFFIX,xcafe.in
+  - DOMAIN-SUFFIX,xcancel.com
   - DOMAIN-SUFFIX,xcity.jp
   - DOMAIN-SUFFIX,xcritic.com
   - DOMAIN-SUFFIX,xerotica.com
