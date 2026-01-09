@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-01-09 02:09:00
- * GFWList Last-Modified: 2026-01-06 08:26:49
+ * Generated: 2026-01-09 12:57:13
+ * GFWList Last-Modified: 2026-01-09 09:21:08
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -272,7 +272,6 @@ var rules = [
             "abitno.linpie.com",
             "ablwang.com",
             "aboluowang.com",
-            "about.gitlab.com",
             "about.me",
             "abplive.com",
             "abs.edu",
@@ -1092,6 +1091,7 @@ var rules = [
             "chromecast.com",
             "chromeexperiments.com",
             "chromestatus.com",
+            "chromium.org",
             "chuang-yen.org",
             "chubold.com",
             "chubun.com",
@@ -2076,6 +2076,7 @@ var rules = [
             "githubassets.com",
             "githubcopilot.com",
             "githubusercontent.com",
+            "gitlab.com",
             "gitlab.net",
             "gizlen.net",
             "gjczz.com",

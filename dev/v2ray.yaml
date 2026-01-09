@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-09 02:09:01
-#! GFWList: 2026-01-06 08:26:49 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-09 12:57:14
+#! GFWList: 2026-01-09 09:21:08 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -267,7 +267,6 @@ routing:
         - domain:abitno.linpie.com
         - domain:ablwang.com
         - domain:aboluowang.com
-        - domain:about.gitlab.com
         - domain:about.me
         - domain:abplive.com
         - domain:abs.edu
@@ -1087,6 +1086,7 @@ routing:
         - domain:chromecast.com
         - domain:chromeexperiments.com
         - domain:chromestatus.com
+        - domain:chromium.org
         - domain:chuang-yen.org
         - domain:chubold.com
         - domain:chubun.com
@@ -2071,6 +2071,7 @@ routing:
         - domain:githubassets.com
         - domain:githubcopilot.com
         - domain:githubusercontent.com
+        - domain:gitlab.com
         - domain:gitlab.net
         - domain:gizlen.net
         - domain:gjczz.com

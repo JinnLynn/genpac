@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-09 02:09:03
-#! GFWList: 2026-01-06 08:26:49 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-09 12:57:16
+#! GFWList: 2026-01-09 09:21:08 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -144,7 +144,6 @@ payload:
   - DOMAIN-SUFFIX,abitno.linpie.com
   - DOMAIN-SUFFIX,ablwang.com
   - DOMAIN-SUFFIX,aboluowang.com
-  - DOMAIN-SUFFIX,about.gitlab.com
   - DOMAIN-SUFFIX,about.me
   - DOMAIN-SUFFIX,abplive.com
   - DOMAIN-SUFFIX,abs.edu
@@ -964,6 +963,7 @@ payload:
   - DOMAIN-SUFFIX,chromecast.com
   - DOMAIN-SUFFIX,chromeexperiments.com
   - DOMAIN-SUFFIX,chromestatus.com
+  - DOMAIN-SUFFIX,chromium.org
   - DOMAIN-SUFFIX,chuang-yen.org
   - DOMAIN-SUFFIX,chubold.com
   - DOMAIN-SUFFIX,chubun.com
@@ -1948,6 +1948,7 @@ payload:
   - DOMAIN-SUFFIX,githubassets.com
   - DOMAIN-SUFFIX,githubcopilot.com
   - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,gitlab.com
   - DOMAIN-SUFFIX,gitlab.net
   - DOMAIN-SUFFIX,gizlen.net
   - DOMAIN-SUFFIX,gjczz.com
