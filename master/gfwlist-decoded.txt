@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: bFA1CXiFkwYo4ZTqAgQtVg
+! Checksum: YMHW2G6g7CQNlQ4i9mlaPw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 06 Jan 2026 08:26:49 +0000
+! Last Modified: Fri, 09 Jan 2026 09:21:08 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -876,7 +876,7 @@ bloomberg.de
 ||ftchinese.com
 !!---Google---
 ||ai.studio
-||chromium.org 
+||chromium.org
 ||goog
 ||gle
 ||google
@@ -3223,7 +3223,7 @@ funp.com
 ||gfwbao.com
 ||greatfirevpn.com
 ||garudalinux.org
-||about.gitlab.com
+||gitlab.com
 ||gitlab.net
 |http://gmp4.com
 ||getsession.org
