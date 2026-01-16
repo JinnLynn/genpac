@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-15 12:58:29
-#! GFWList: 2026-01-09 09:21:08 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-16 02:09:35
+#! GFWList: 2026-01-09 09:18:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -147,6 +147,7 @@
 (^|\.)abitno\.linpie\.com$
 (^|\.)ablwang\.com$
 (^|\.)aboluowang\.com$
+(^|\.)about\.gitlab\.com$
 (^|\.)about\.me$
 (^|\.)abplive\.com$
 (^|\.)abs\.edu$
@@ -1951,7 +1952,6 @@
 (^|\.)githubassets\.com$
 (^|\.)githubcopilot\.com$
 (^|\.)githubusercontent\.com$
-(^|\.)gitlab\.com$
 (^|\.)gitlab\.net$
 (^|\.)gizlen\.net$
 (^|\.)gjczz\.com$
