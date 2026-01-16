@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-15 12:57:59
-#! GFWList: 2026-01-09 09:21:08 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-16 02:09:06
+#! GFWList: 2026-01-09 09:18:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -160,6 +160,7 @@ rule:
         - s,abitno.linpie.com
         - s,ablwang.com
         - s,aboluowang.com
+        - s,about.gitlab.com
         - s,about.me
         - s,abplive.com
         - s,abs.edu
@@ -1964,7 +1965,6 @@ rule:
         - s,githubassets.com
         - s,githubcopilot.com
         - s,githubusercontent.com
-        - s,gitlab.com
         - s,gitlab.net
         - s,gizlen.net
         - s,gjczz.com
