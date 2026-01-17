@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-17 02:03:20
-#! GFWList: 2026-01-09 09:18:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-17 12:51:50
+#! GFWList: 2026-01-17 09:28:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -209,6 +209,7 @@ payload:
   - DOMAIN-SUFFIX,aiweiwei.com
   - DOMAIN-SUFFIX,aiweiweiblog.com
   - DOMAIN-SUFFIX,akademiye.org
+  - DOMAIN-SUFFIX,akamai.tvb.com
   - DOMAIN-SUFFIX,akamaihd.net
   - DOMAIN-SUFFIX,akiba-online.com
   - DOMAIN-SUFFIX,akiba-web.com
@@ -282,7 +283,10 @@ payload:
   - DOMAIN-SUFFIX,angularjs.org
   - DOMAIN-SUFFIX,animecrazy.net
   - DOMAIN-SUFFIX,aniscartujo.com
+  - DOMAIN-SUFFIX,annas-archive.in
+  - DOMAIN-SUFFIX,annas-archive.li
   - DOMAIN-SUFFIX,annas-archive.org
+  - DOMAIN-SUFFIX,annas-archive.pm
   - DOMAIN-SUFFIX,annas-archive.se
   - DOMAIN-SUFFIX,annatam.com
   - DOMAIN-SUFFIX,anobii.com
@@ -1727,7 +1731,6 @@ payload:
   - DOMAIN-SUFFIX,forum.mymaji.com
   - DOMAIN-SUFFIX,forum.palmislife.com
   - DOMAIN-SUFFIX,forum.slime.com.tw
-  - DOMAIN-SUFFIX,forum.tvb.com
   - DOMAIN-SUFFIX,forum.xinbao.de
   - DOMAIN-SUFFIX,forum4hk.com
   - DOMAIN-SUFFIX,fountmedia.io
@@ -3416,6 +3419,7 @@ payload:
   - DOMAIN-SUFFIX,myspacecdn.com
   - DOMAIN-SUFFIX,mytalkbox.com
   - DOMAIN-SUFFIX,mytizi.com
+  - DOMAIN-SUFFIX,mytvsuper.com
   - DOMAIN-SUFFIX,mywife.cc
   - DOMAIN-SUFFIX,mywww.biz
   - DOMAIN-SUFFIX,myz.info
@@ -5081,6 +5085,7 @@ payload:
   - DOMAIN-SUFFIX,tv.com
   - DOMAIN-SUFFIX,tv.jtbc.joins.com
   - DOMAIN-SUFFIX,tvants.com
+  - DOMAIN-SUFFIX,tvbanywhere.com
   - DOMAIN-SUFFIX,tvboxnow.com
   - DOMAIN-SUFFIX,tvider.com
   - DOMAIN-SUFFIX,tvmost.com.hk

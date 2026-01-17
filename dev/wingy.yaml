@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-17 02:03:20
-#! GFWList: 2026-01-09 09:18:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-17 12:51:50
+#! GFWList: 2026-01-17 09:28:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -225,6 +225,7 @@ rule:
         - s,aiweiwei.com
         - s,aiweiweiblog.com
         - s,akademiye.org
+        - s,akamai.tvb.com
         - s,akamaihd.net
         - s,akiba-online.com
         - s,akiba-web.com
@@ -298,7 +299,10 @@ rule:
         - s,angularjs.org
         - s,animecrazy.net
         - s,aniscartujo.com
+        - s,annas-archive.in
+        - s,annas-archive.li
         - s,annas-archive.org
+        - s,annas-archive.pm
         - s,annas-archive.se
         - s,annatam.com
         - s,anobii.com
@@ -1743,7 +1747,6 @@ rule:
         - s,forum.mymaji.com
         - s,forum.palmislife.com
         - s,forum.slime.com.tw
-        - s,forum.tvb.com
         - s,forum.xinbao.de
         - s,forum4hk.com
         - s,fountmedia.io
@@ -3432,6 +3435,7 @@ rule:
         - s,myspacecdn.com
         - s,mytalkbox.com
         - s,mytizi.com
+        - s,mytvsuper.com
         - s,mywife.cc
         - s,mywww.biz
         - s,myz.info
@@ -5097,6 +5101,7 @@ rule:
         - s,tv.com
         - s,tv.jtbc.joins.com
         - s,tvants.com
+        - s,tvbanywhere.com
         - s,tvboxnow.com
         - s,tvider.com
         - s,tvmost.com.hk
