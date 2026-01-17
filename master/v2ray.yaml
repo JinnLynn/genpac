@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-17 02:02:48
-#! GFWList: 2026-01-09 09:18:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-17 12:51:19
+#! GFWList: 2026-01-17 09:28:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -332,6 +332,7 @@ routing:
         - domain:aiweiwei.com
         - domain:aiweiweiblog.com
         - domain:akademiye.org
+        - domain:akamai.tvb.com
         - domain:akamaihd.net
         - domain:akiba-online.com
         - domain:akiba-web.com
@@ -405,7 +406,10 @@ routing:
         - domain:angularjs.org
         - domain:animecrazy.net
         - domain:aniscartujo.com
+        - domain:annas-archive.in
+        - domain:annas-archive.li
         - domain:annas-archive.org
+        - domain:annas-archive.pm
         - domain:annas-archive.se
         - domain:annatam.com
         - domain:anobii.com
@@ -1850,7 +1854,6 @@ routing:
         - domain:forum.mymaji.com
         - domain:forum.palmislife.com
         - domain:forum.slime.com.tw
-        - domain:forum.tvb.com
         - domain:forum.xinbao.de
         - domain:forum4hk.com
         - domain:fountmedia.io
@@ -3539,6 +3542,7 @@ routing:
         - domain:myspacecdn.com
         - domain:mytalkbox.com
         - domain:mytizi.com
+        - domain:mytvsuper.com
         - domain:mywife.cc
         - domain:mywww.biz
         - domain:myz.info
@@ -5204,6 +5208,7 @@ routing:
         - domain:tv.com
         - domain:tv.jtbc.joins.com
         - domain:tvants.com
+        - domain:tvbanywhere.com
         - domain:tvboxnow.com
         - domain:tvider.com
         - domain:tvmost.com.hk
