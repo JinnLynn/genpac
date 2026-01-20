@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-20 02:09:18
-#! GFWList: 2026-01-17 09:28:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-20 13:03:08
+#! GFWList: 2026-01-20 12:11:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -5523,6 +5523,7 @@ rule:
         - s,wefong.com
         - s,wego.here.com
         - s,weiboleak.com
+        - s,weights.com
         - s,weihuo.org
         - s,weijingsheng.org
         - s,weiming.info
@@ -5844,6 +5845,7 @@ rule:
         - s,youdontcare.com
         - s,youjizz.com
         - s,youmaker.com
+        - s,youmind.com
         - s,youngpornvideos.com
         - s,youngspiration.hk
         - s,youpai.org

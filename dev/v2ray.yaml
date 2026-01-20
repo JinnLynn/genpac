@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-20 02:09:16
-#! GFWList: 2026-01-17 09:28:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-20 13:03:06
+#! GFWList: 2026-01-20 12:11:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -5630,6 +5630,7 @@ routing:
         - domain:wefong.com
         - domain:wego.here.com
         - domain:weiboleak.com
+        - domain:weights.com
         - domain:weihuo.org
         - domain:weijingsheng.org
         - domain:weiming.info
@@ -5951,6 +5952,7 @@ routing:
         - domain:youdontcare.com
         - domain:youjizz.com
         - domain:youmaker.com
+        - domain:youmind.com
         - domain:youngpornvideos.com
         - domain:youngspiration.hk
         - domain:youpai.org
