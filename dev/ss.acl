@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-28 02:12:01
-#! GFWList: 2026-01-20 12:11:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-28 13:03:41
+#! GFWList: 2026-01-28 03:16:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -434,6 +434,7 @@
 (^|\.)babylonbee\.com$
 (^|\.)babynet\.com\.hk$
 (^|\.)backchina\.com$
+(^|\.)backend-v2\.crixet\.com$
 (^|\.)backpackers\.com\.tw$
 (^|\.)backtotiananmen\.com$
 (^|\.)bad\.news$

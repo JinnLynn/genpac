@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-28 02:12:01
-#! GFWList: 2026-01-20 12:11:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-28 13:03:41
+#! GFWList: 2026-01-28 03:16:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -554,6 +554,7 @@ routing:
         - domain:babylonbee.com
         - domain:babynet.com.hk
         - domain:backchina.com
+        - domain:backend-v2.crixet.com
         - domain:backpackers.com.tw
         - domain:backtotiananmen.com
         - domain:bad.news
