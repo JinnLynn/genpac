@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-28 02:11:31
-#! GFWList: 2026-01-20 12:11:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-28 13:03:16
+#! GFWList: 2026-01-28 03:16:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -447,6 +447,7 @@ rule:
         - s,babylonbee.com
         - s,babynet.com.hk
         - s,backchina.com
+        - s,backend-v2.crixet.com
         - s,backpackers.com.tw
         - s,backtotiananmen.com
         - s,bad.news

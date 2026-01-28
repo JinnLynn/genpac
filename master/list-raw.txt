@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-01-28 02:11:28
-! GFWList: 2026-01-20 12:11:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-01-28 13:03:15
+! GFWList: 2026-01-28 03:16:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -546,6 +546,7 @@
 ||babylonbee.com
 ||babynet.com.hk
 ||backchina.com
+||backend-v2.crixet.com
 ||backpackers.com.tw
 ||backtotiananmen.com
 ||bad.news
