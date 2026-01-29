@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-01-29 02:33:52
- * GFWList Last-Modified: 2026-01-28 03:16:39
+ * Generated: 2026-01-29 13:10:32
+ * GFWList Last-Modified: 2026-01-29 07:54:31
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1915,6 +1915,7 @@ var rules = [
             "freess.org",
             "freessh.us",
             "freetcp.com",
+            "freeterabox.com",
             "freetibet.net",
             "freetibet.org",
             "freetibetanheroes.org",

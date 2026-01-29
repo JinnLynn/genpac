@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-29 02:33:56
-#! GFWList: 2026-01-28 03:16:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-29 13:10:33
+#! GFWList: 2026-01-29 07:54:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -1787,6 +1787,7 @@ payload:
   - DOMAIN-SUFFIX,freess.org
   - DOMAIN-SUFFIX,freessh.us
   - DOMAIN-SUFFIX,freetcp.com
+  - DOMAIN-SUFFIX,freeterabox.com
   - DOMAIN-SUFFIX,freetibet.net
   - DOMAIN-SUFFIX,freetibet.org
   - DOMAIN-SUFFIX,freetibetanheroes.org

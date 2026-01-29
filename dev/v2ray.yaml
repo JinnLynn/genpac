@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-29 02:33:53
-#! GFWList: 2026-01-28 03:16:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-29 13:10:32
+#! GFWList: 2026-01-29 07:54:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1910,6 +1910,7 @@ routing:
         - domain:freess.org
         - domain:freessh.us
         - domain:freetcp.com
+        - domain:freeterabox.com
         - domain:freetibet.net
         - domain:freetibet.org
         - domain:freetibetanheroes.org
