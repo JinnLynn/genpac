@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-29 02:33:23
-#! GFWList: 2026-01-28 03:16:39 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-29 13:10:08
+#! GFWList: 2026-01-29 07:54:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1803,6 +1803,7 @@ rule:
         - s,freess.org
         - s,freessh.us
         - s,freetcp.com
+        - s,freeterabox.com
         - s,freetibet.net
         - s,freetibet.org
         - s,freetibetanheroes.org
