@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-01-29 13:10:32
-! GFWList: 2026-01-29 07:54:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-01-30 02:34:18
+! GFWList: 2026-01-30 01:56:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -4519,6 +4519,7 @@
 ||silkbook.com
 ||silvergatebank.com
 ||simbolostwitter.com
+||simianx.ai
 ||simplecd.me
 ||simplecd.org
 ||simpleproductivityblog.com

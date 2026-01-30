@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-29 13:10:32
-#! GFWList: 2026-01-29 07:54:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-30 02:34:18
+#! GFWList: 2026-01-30 01:56:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -4527,6 +4527,7 @@ routing:
         - domain:silkbook.com
         - domain:silvergatebank.com
         - domain:simbolostwitter.com
+        - domain:simianx.ai
         - domain:simplecd.me
         - domain:simplecd.org
         - domain:simpleproductivityblog.com

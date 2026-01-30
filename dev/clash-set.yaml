@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-29 13:10:33
-#! GFWList: 2026-01-29 07:54:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-30 02:34:21
+#! GFWList: 2026-01-30 01:56:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -4404,6 +4404,7 @@ payload:
   - DOMAIN-SUFFIX,silkbook.com
   - DOMAIN-SUFFIX,silvergatebank.com
   - DOMAIN-SUFFIX,simbolostwitter.com
+  - DOMAIN-SUFFIX,simianx.ai
   - DOMAIN-SUFFIX,simplecd.me
   - DOMAIN-SUFFIX,simplecd.org
   - DOMAIN-SUFFIX,simpleproductivityblog.com
