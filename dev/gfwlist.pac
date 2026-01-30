@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-01-30 02:34:17
- * GFWList Last-Modified: 2026-01-30 01:56:11
+ * Generated: 2026-01-30 13:09:13
+ * GFWList Last-Modified: 2026-01-30 12:58:01
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -5937,6 +5937,7 @@ var rules = [
             "yesasia.com.hk",
             "yespornplease.com",
             "yeyeclub.com",
+            "yfsp.tv",
             "ygto.com",
             "yhcw.net",
             "yibada.com",

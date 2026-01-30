@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-30 02:34:18
-#! GFWList: 2026-01-30 01:56:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-30 13:09:14
+#! GFWList: 2026-01-30 12:58:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -5932,6 +5932,7 @@ routing:
         - domain:yesasia.com.hk
         - domain:yespornplease.com
         - domain:yeyeclub.com
+        - domain:yfsp.tv
         - domain:ygto.com
         - domain:yhcw.net
         - domain:yibada.com
