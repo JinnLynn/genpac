@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-01-30 02:33:44
-! GFWList: 2026-01-30 01:56:11 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-01-30 13:08:14
+! GFWList: 2026-01-30 12:58:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -5924,6 +5924,7 @@
 ||yesasia.com.hk
 ||yespornplease.com
 ||yeyeclub.com
+||yfsp.tv
 ||ygto.com
 ||yhcw.net
 ||yibada.com

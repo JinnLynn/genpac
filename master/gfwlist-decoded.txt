@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: Y78Bi/tfxqchgnpcMtaRyQ
+! Checksum: cFGC2yAC/gsWv6DZtuArqQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 30 Jan 2026 01:56:11 +0000
+! Last Modified: Fri, 30 Jan 2026 12:58:01 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -7271,6 +7271,7 @@ xvideo.cc
 xys.org
 xysblogs.org
 !--------------------YY-------------------------
+||yfsp.tv
 ||youmind.com
 ||yangzhi.org
 ||storage.yandex.net
