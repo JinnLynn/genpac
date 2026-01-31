@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-31 02:29:24
-#! GFWList: 2026-01-30 12:58:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-31 12:59:49
+#! GFWList: 2026-01-31 07:10:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -591,6 +591,7 @@ routing:
         - domain:bbc.co.uk
         - domain:bbc.com
         - domain:bbc.in
+        - domain:bbc.pdn.tritondigital.com
         - domain:bbcchinese.com
         - domain:bbchat.tv
         - domain:bbci.co.uk
@@ -1340,6 +1341,7 @@ routing:
         - domain:dbgjd.com
         - domain:dcard.tw
         - domain:dcmilitary.com
+        - domain:dcs-spotify.megaphone.fm
         - domain:ddc.com.tw
         - domain:ddex.io
         - domain:ddns.info
@@ -2477,6 +2479,7 @@ routing:
         - domain:helloandroid.com
         - domain:helloqueer.com
         - domain:hellouk.org
+        - domain:help.byspotify.com
         - domain:helpeachpeople.com
         - domain:helpster.de
         - domain:helpzhuling.org
