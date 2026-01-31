@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-31 02:29:56
-#! GFWList: 2026-01-30 12:58:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-31 13:00:18
+#! GFWList: 2026-01-31 07:10:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -589,6 +589,7 @@ rules:
   - DOMAIN-SUFFIX,bbc.co.uk,PROXY
   - DOMAIN-SUFFIX,bbc.com,PROXY
   - DOMAIN-SUFFIX,bbc.in,PROXY
+  - DOMAIN-SUFFIX,bbc.pdn.tritondigital.com,PROXY
   - DOMAIN-SUFFIX,bbcchinese.com,PROXY
   - DOMAIN-SUFFIX,bbchat.tv,PROXY
   - DOMAIN-SUFFIX,bbci.co.uk,PROXY
@@ -1338,6 +1339,7 @@ rules:
   - DOMAIN-SUFFIX,dbgjd.com,PROXY
   - DOMAIN-SUFFIX,dcard.tw,PROXY
   - DOMAIN-SUFFIX,dcmilitary.com,PROXY
+  - DOMAIN-SUFFIX,dcs-spotify.megaphone.fm,PROXY
   - DOMAIN-SUFFIX,ddc.com.tw,PROXY
   - DOMAIN-SUFFIX,ddex.io,PROXY
   - DOMAIN-SUFFIX,ddns.info,PROXY
@@ -2475,6 +2477,7 @@ rules:
   - DOMAIN-SUFFIX,helloandroid.com,PROXY
   - DOMAIN-SUFFIX,helloqueer.com,PROXY
   - DOMAIN-SUFFIX,hellouk.org,PROXY
+  - DOMAIN-SUFFIX,help.byspotify.com,PROXY
   - DOMAIN-SUFFIX,helpeachpeople.com,PROXY
   - DOMAIN-SUFFIX,helpster.de,PROXY
   - DOMAIN-SUFFIX,helpzhuling.org,PROXY

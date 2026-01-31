@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-31 02:29:56
-#! GFWList: 2026-01-30 12:58:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-01-31 13:00:19
+#! GFWList: 2026-01-31 07:10:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -484,6 +484,7 @@ rule:
         - s,bbc.co.uk
         - s,bbc.com
         - s,bbc.in
+        - s,bbc.pdn.tritondigital.com
         - s,bbcchinese.com
         - s,bbchat.tv
         - s,bbci.co.uk
@@ -1233,6 +1234,7 @@ rule:
         - s,dbgjd.com
         - s,dcard.tw
         - s,dcmilitary.com
+        - s,dcs-spotify.megaphone.fm
         - s,ddc.com.tw
         - s,ddex.io
         - s,ddns.info
@@ -2370,6 +2372,7 @@ rule:
         - s,helloandroid.com
         - s,helloqueer.com
         - s,hellouk.org
+        - s,help.byspotify.com
         - s,helpeachpeople.com
         - s,helpster.de
         - s,helpzhuling.org
