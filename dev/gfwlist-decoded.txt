@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: pSm2lfB4CsfTRnqtVPBUSQ
+! Checksum: jTnxT/R+ZhUZ3l7Wicv6PQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 31 Jan 2026 07:10:25 +0000
+! Last Modified: Sun, 01 Feb 2026 02:37:13 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -6138,6 +6138,7 @@ blog.syx86.com/2009/09/puff
 .szbbs.net
 .szetowah.org.hk
 !--------------------TT-------------------------
+||tails.net
 ||bbc.pdn.tritondigital.com
 ||terobox.com
 ||temu.com

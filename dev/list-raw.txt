@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-01-31 13:00:17
-! GFWList: 2026-01-31 07:10:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-02-01 02:54:52
+! GFWList: 2026-02-01 02:37:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||aftygh.gov.tw
 @@||aide.gov.tw
@@ -4811,6 +4811,7 @@
 ||tafm.org
 ||tagwalk.com
 ||tahr.org.tw
+||tails.net
 ||taipei.gov.tw
 ||taipeisociety.org
 ||taipeitimes.com

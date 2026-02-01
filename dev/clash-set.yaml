@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-31 13:00:19
-#! GFWList: 2026-01-31 07:10:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-01 02:54:53
+#! GFWList: 2026-02-01 02:37:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -4696,6 +4696,7 @@ payload:
   - DOMAIN-SUFFIX,tafm.org
   - DOMAIN-SUFFIX,tagwalk.com
   - DOMAIN-SUFFIX,tahr.org.tw
+  - DOMAIN-SUFFIX,tails.net
   - DOMAIN-SUFFIX,taipei.gov.tw
   - DOMAIN-SUFFIX,taipeisociety.org
   - DOMAIN-SUFFIX,taipeitimes.com
