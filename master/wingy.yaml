@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-31 12:59:52
-#! GFWList: 2026-01-31 07:10:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-01 02:54:29
+#! GFWList: 2026-02-01 02:37:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -4712,6 +4712,7 @@ rule:
         - s,tafm.org
         - s,tagwalk.com
         - s,tahr.org.tw
+        - s,tails.net
         - s,taipei.gov.tw
         - s,taipeisociety.org
         - s,taipeitimes.com

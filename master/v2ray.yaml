@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-01-31 12:59:49
-#! GFWList: 2026-01-31 07:10:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-01 02:54:27
+#! GFWList: 2026-02-01 02:37:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -4819,6 +4819,7 @@ routing:
         - domain:tafm.org
         - domain:tagwalk.com
         - domain:tahr.org.tw
+        - domain:tails.net
         - domain:taipei.gov.tw
         - domain:taipeisociety.org
         - domain:taipeitimes.com
