@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-04 02:34:58
-#! GFWList: 2026-02-01 02:37:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-04 13:13:31
+#! GFWList: 2026-02-04 09:09:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -3899,6 +3899,7 @@ rules:
   - DOMAIN-SUFFIX,padmanet.com,PROXY
   - DOMAIN-SUFFIX,page.link,PROXY
   - DOMAIN-SUFFIX,page2rss.com,PROXY
+  - DOMAIN-SUFFIX,pages.dev,PROXY
   - DOMAIN-SUFFIX,paimon.moe,PROXY
   - DOMAIN-SUFFIX,palacemoon.com,PROXY
   - DOMAIN-SUFFIX,paljorpublications.com,PROXY
@@ -4438,6 +4439,7 @@ rules:
   - DOMAIN-SUFFIX,seesmic.com,PROXY
   - DOMAIN-SUFFIX,seevpn.com,PROXY
   - DOMAIN-SUFFIX,seezone.net,PROXY
+  - DOMAIN-SUFFIX,sef.org.tw,PROXY
   - DOMAIN-SUFFIX,sehuatang.net,PROXY
   - DOMAIN-SUFFIX,sehuatang.org,PROXY
   - DOMAIN-SUFFIX,sejie.com,PROXY
@@ -5783,6 +5785,7 @@ rules:
   - DOMAIN-SUFFIX,www.eastturkistan.net,PROXY
   - DOMAIN-SUFFIX,www.gmiddle.com,PROXY
   - DOMAIN-SUFFIX,www.gmiddle.net,PROXY
+  - DOMAIN-SUFFIX,www.hoyolab.com,PROXY
   - DOMAIN-SUFFIX,www.hustlercash.com,PROXY
   - DOMAIN-SUFFIX,www.idlcoyote.com,PROXY
   - DOMAIN-SUFFIX,www.imdb.com,PROXY

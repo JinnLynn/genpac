@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-04 02:34:59
-#! GFWList: 2026-02-01 02:37:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-04 13:13:31
+#! GFWList: 2026-02-04 09:09:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,030buy.com
@@ -3778,6 +3778,7 @@ payload:
   - DOMAIN-SUFFIX,padmanet.com
   - DOMAIN-SUFFIX,page.link
   - DOMAIN-SUFFIX,page2rss.com
+  - DOMAIN-SUFFIX,pages.dev
   - DOMAIN-SUFFIX,paimon.moe
   - DOMAIN-SUFFIX,palacemoon.com
   - DOMAIN-SUFFIX,paljorpublications.com
@@ -4317,6 +4318,7 @@ payload:
   - DOMAIN-SUFFIX,seesmic.com
   - DOMAIN-SUFFIX,seevpn.com
   - DOMAIN-SUFFIX,seezone.net
+  - DOMAIN-SUFFIX,sef.org.tw
   - DOMAIN-SUFFIX,sehuatang.net
   - DOMAIN-SUFFIX,sehuatang.org
   - DOMAIN-SUFFIX,sejie.com
@@ -5662,6 +5664,7 @@ payload:
   - DOMAIN-SUFFIX,www.eastturkistan.net
   - DOMAIN-SUFFIX,www.gmiddle.com
   - DOMAIN-SUFFIX,www.gmiddle.net
+  - DOMAIN-SUFFIX,www.hoyolab.com
   - DOMAIN-SUFFIX,www.hustlercash.com
   - DOMAIN-SUFFIX,www.idlcoyote.com
   - DOMAIN-SUFFIX,www.imdb.com
