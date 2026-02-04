@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-04 02:34:32
-#! GFWList: 2026-02-01 02:37:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-04 13:12:58
+#! GFWList: 2026-02-04 09:09:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3901,6 +3901,7 @@ routing:
         - domain:padmanet.com
         - domain:page.link
         - domain:page2rss.com
+        - domain:pages.dev
         - domain:paimon.moe
         - domain:palacemoon.com
         - domain:paljorpublications.com
@@ -4440,6 +4441,7 @@ routing:
         - domain:seesmic.com
         - domain:seevpn.com
         - domain:seezone.net
+        - domain:sef.org.tw
         - domain:sehuatang.net
         - domain:sehuatang.org
         - domain:sejie.com
@@ -5785,6 +5787,7 @@ routing:
         - domain:www.eastturkistan.net
         - domain:www.gmiddle.com
         - domain:www.gmiddle.net
+        - domain:www.hoyolab.com
         - domain:www.hustlercash.com
         - domain:www.idlcoyote.com
         - domain:www.imdb.com

@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-04 02:34:34
-#! GFWList: 2026-02-01 02:37:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-04 13:13:01
+#! GFWList: 2026-02-04 09:09:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3794,6 +3794,7 @@ rule:
         - s,padmanet.com
         - s,page.link
         - s,page2rss.com
+        - s,pages.dev
         - s,paimon.moe
         - s,palacemoon.com
         - s,paljorpublications.com
@@ -4333,6 +4334,7 @@ rule:
         - s,seesmic.com
         - s,seevpn.com
         - s,seezone.net
+        - s,sef.org.tw
         - s,sehuatang.net
         - s,sehuatang.org
         - s,sejie.com
@@ -5678,6 +5680,7 @@ rule:
         - s,www.eastturkistan.net
         - s,www.gmiddle.com
         - s,www.gmiddle.net
+        - s,www.hoyolab.com
         - s,www.hustlercash.com
         - s,www.idlcoyote.com
         - s,www.imdb.com
