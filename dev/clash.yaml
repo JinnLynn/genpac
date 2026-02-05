@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-05 02:37:29
-#! GFWList: 2026-02-04 09:09:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-05 13:15:28
+#! GFWList: 2026-02-05 10:25:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -2406,6 +2406,7 @@ rules:
   - DOMAIN-SUFFIX,greenvpn.org,PROXY
   - DOMAIN-SUFFIX,grindr.com,PROXY
   - DOMAIN-SUFFIX,grok.com,PROXY
+  - DOMAIN-SUFFIX,grokipedia.com,PROXY
   - DOMAIN-SUFFIX,ground.news,PROXY
   - DOMAIN-SUFFIX,gs-discuss.com,PROXY
   - DOMAIN-SUFFIX,gsearch.media,PROXY
