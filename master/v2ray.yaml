@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-05 02:36:50
-#! GFWList: 2026-02-04 09:09:47 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-05 13:14:55
+#! GFWList: 2026-02-05 10:25:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2408,6 +2408,7 @@ routing:
         - domain:greenvpn.org
         - domain:grindr.com
         - domain:grok.com
+        - domain:grokipedia.com
         - domain:ground.news
         - domain:gs-discuss.com
         - domain:gsearch.media

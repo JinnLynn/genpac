@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: mN+eetIqYz5m5OjAfNQWGA
+! Checksum: z8qydkYJ6GHEV3Tjo7l4tw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 04 Feb 2026 09:09:47 +0000
+! Last Modified: Thu, 05 Feb 2026 10:25:56 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -3228,6 +3228,7 @@ funp.com
 .fxcm-chinese.com
 ||fxcm-chinese.com
 !--------------------GG-------------------------
+||grokipedia.com
 ||gfwbao.com
 ||greatfirevpn.com
 ||garudalinux.org
