@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-06 02:37:13
-#! GFWList: 2026-02-05 10:25:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-06 13:12:51
+#! GFWList: 2026-02-06 04:01:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2377,6 +2377,7 @@ rule:
         - s,helpeachpeople.com
         - s,helpster.de
         - s,helpzhuling.org
+        - s,hembed.com
         - s,hentai.to
         - s,hentaitube.tv
         - s,hentaivideoworld.com
