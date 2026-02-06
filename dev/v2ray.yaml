@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-06 02:37:40
-#! GFWList: 2026-02-05 10:25:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-06 13:13:20
+#! GFWList: 2026-02-06 04:01:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2484,6 +2484,7 @@ routing:
         - domain:helpeachpeople.com
         - domain:helpster.de
         - domain:helpzhuling.org
+        - domain:hembed.com
         - domain:hentai.to
         - domain:hentaitube.tv
         - domain:hentaivideoworld.com
