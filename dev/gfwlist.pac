@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-02-06 13:13:19
- * GFWList Last-Modified: 2026-02-06 04:01:03
+ * Generated: 2026-02-07 02:32:50
+ * GFWList Last-Modified: 2026-02-06 14:26:36
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -705,6 +705,7 @@ var rules = [
             "bitshare.com",
             "bitsnoop.com",
             "bitterwinter.org",
+            "bittorrent.com",
             "bitvise.com",
             "bitz.ai",
             "bizhat.com",
@@ -5434,6 +5435,7 @@ var rules = [
             "uygur.org",
             "uymaarip.com",
             "v2.help",
+            "v2.hysteria.network",
             "v2ex.com",
             "v2fly.org",
             "v2ray.com",

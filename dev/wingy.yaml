@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-06 13:13:22
-#! GFWList: 2026-02-06 04:01:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-07 02:32:55
+#! GFWList: 2026-02-06 14:26:36 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -593,6 +593,7 @@ rule:
         - s,bitshare.com
         - s,bitsnoop.com
         - s,bitterwinter.org
+        - s,bittorrent.com
         - s,bitvise.com
         - s,bitz.ai
         - s,bizhat.com
@@ -5322,6 +5323,7 @@ rule:
         - s,uygur.org
         - s,uymaarip.com
         - s,v2.help
+        - s,v2.hysteria.network
         - s,v2ex.com
         - s,v2fly.org
         - s,v2ray.com
