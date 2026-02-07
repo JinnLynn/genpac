@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-06 13:12:49
-#! GFWList: 2026-02-06 04:01:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-07 02:32:23
+#! GFWList: 2026-02-06 14:26:36 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -580,6 +580,7 @@
 (^|\.)bitshare\.com$
 (^|\.)bitsnoop\.com$
 (^|\.)bitterwinter\.org$
+(^|\.)bittorrent\.com$
 (^|\.)bitvise\.com$
 (^|\.)bitz\.ai$
 (^|\.)bizhat\.com$
@@ -5309,6 +5310,7 @@
 (^|\.)uygur\.org$
 (^|\.)uymaarip\.com$
 (^|\.)v2\.help$
+(^|\.)v2\.hysteria\.network$
 (^|\.)v2ex\.com$
 (^|\.)v2fly\.org$
 (^|\.)v2ray\.com$

@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-06 13:12:48
-#! GFWList: 2026-02-06 04:01:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-07 02:32:23
+#! GFWList: 2026-02-06 14:26:36 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -700,6 +700,7 @@ routing:
         - domain:bitshare.com
         - domain:bitsnoop.com
         - domain:bitterwinter.org
+        - domain:bittorrent.com
         - domain:bitvise.com
         - domain:bitz.ai
         - domain:bizhat.com
@@ -5429,6 +5430,7 @@ routing:
         - domain:uygur.org
         - domain:uymaarip.com
         - domain:v2.help
+        - domain:v2.hysteria.network
         - domain:v2ex.com
         - domain:v2fly.org
         - domain:v2ray.com
