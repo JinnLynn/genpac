@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: bjxXp1eRFy+HVNTQEpuxJg
+! Checksum: 2s80bAcX3f+07c4BxwQtdg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 10 Feb 2026 12:26:46 +0000
+! Last Modified: Fri, 13 Feb 2026 12:49:26 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -662,7 +662,6 @@ www.aolnews.com
 ||agoogleaday.com
 ||ampproject.org
 ||android.com
-@@||ci.android.com
 ||androidify.com
 ||androidtv.com
 ||api.ai
@@ -3844,8 +3843,6 @@ iipdigital.usembassy.gov
 ||tycool.com
 !--typepad
 ||typepad.com
-@@||www.typepad.com
-@@||static.typepad.com
 ||blog.expofutures.com
 ||contests.twilio.com
 ||typora.io
@@ -4274,26 +4271,24 @@ iipdigital.usembassy.gov
 !###########Supplemental List Start#############
 !#############Supplemental List End#############
 !################Whitelist Start################
+@@||www.typepad.com
+@@||static.typepad.com
+@@||ci.android.com
+@@||crl.pki.goog
+@@||g2.gstatic.com
+@@||g1.gstatic.com
+@@||g0.gstatic.com
+@@||checkin.gstatic.com
 @@||*.ipify.org
 @@||i.pki.goog
+@@||c.pki.goog
+@@||o.pki.goog
 @@||adservice.google.com
 @@||dl.google.com
-!--@@||kh.google.com
-!--@@||khm.google.com
-!--@@||khm0.google.com
-!--@@||khm1.google.com
-!--@@||khm2.google.com
-!--@@||khm3.google.com
-!--@@||khmdb.google.com
 @@||tools.google.com
 @@||clientservices.googleapis.com
+@@||imasdk.googleapis.com
 @@||fonts.googleapis.com
-!--@@||khm.googleapis.com
-!--@@||khm0.googleapis.com
-!--@@||khm1.googleapis.com
-!--@@||khm2.googleapis.com
-!--@@||khm3.googleapis.com
-!--@@||khmdb.googleapis.com
 @@||update.googleapis.com
 @@||safebrowsing.googleapis.com
 @@||connectivitycheck.gstatic.com
@@ -4304,6 +4299,7 @@ iipdigital.usembassy.gov
 @@||ocsp.pki.goog
 @@||www.ampproject.org
 @@||cdn.ampproject.org
+@@||cdn-china.ampproject.org
 @@||redirector.gvt1.com
 !################Whitelist End##################
 !---------------------EOF-----------------------

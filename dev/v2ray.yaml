@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-13 02:47:57
-#! GFWList: 2026-02-10 12:26:46 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-13 13:14:17
+#! GFWList: 2026-02-13 12:49:26 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -8,15 +8,24 @@ routing:
       type: field
       domains:
         - domain:adservice.google.com
+        - domain:c.pki.goog
+        - domain:cdn-china.ampproject.org
         - domain:cdn.ampproject.org
+        - domain:checkin.gstatic.com
         - domain:ci.android.com
         - domain:clientservices.googleapis.com
         - domain:connectivitycheck.gstatic.com
+        - domain:crl.pki.goog
         - domain:csi.gstatic.com
         - domain:dl.google.com
         - domain:fonts.googleapis.com
         - domain:fonts.gstatic.com
+        - domain:g0.gstatic.com
+        - domain:g1.gstatic.com
+        - domain:g2.gstatic.com
         - domain:i.pki.goog
+        - domain:imasdk.googleapis.com
+        - domain:o.pki.goog
         - domain:ocsp.pki.goog
         - domain:redirector.gvt1.com
         - domain:safebrowsing.googleapis.com
