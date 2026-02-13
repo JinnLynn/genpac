@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2026-02-13 02:47:26
- * GFWList Last-Modified: 2026-02-10 12:26:46
+ * Generated: 2026-02-13 13:13:46
+ * GFWList Last-Modified: 2026-02-13 12:49:26
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -14,15 +14,24 @@ var rules = [
     [
         [
             "adservice.google.com",
+            "c.pki.goog",
+            "cdn-china.ampproject.org",
             "cdn.ampproject.org",
+            "checkin.gstatic.com",
             "ci.android.com",
             "clientservices.googleapis.com",
             "connectivitycheck.gstatic.com",
+            "crl.pki.goog",
             "csi.gstatic.com",
             "dl.google.com",
             "fonts.googleapis.com",
             "fonts.gstatic.com",
+            "g0.gstatic.com",
+            "g1.gstatic.com",
+            "g2.gstatic.com",
             "i.pki.goog",
+            "imasdk.googleapis.com",
+            "o.pki.goog",
             "ocsp.pki.goog",
             "redirector.gvt1.com",
             "safebrowsing.googleapis.com",
