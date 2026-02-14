@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-02-14 02:34:40
- * GFWList Last-Modified: 2026-02-13 12:49:26
+ * Generated: 2026-02-14 13:02:23
+ * GFWList Last-Modified: 2026-02-14 08:17:53
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -3824,6 +3824,7 @@ var rules = [
             "wallmama.com",
             "wallpapercasa.com",
             "wallsttv.com",
+            "wallzhihu.com",
             "waltermartin.com",
             "waltermartin.org",
             "wanderinghorse.net",

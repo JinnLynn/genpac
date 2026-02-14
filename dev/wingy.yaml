@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-14 02:34:43
-#! GFWList: 2026-02-13 12:49:26 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-14 13:02:25
+#! GFWList: 2026-02-14 08:17:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3798,6 +3798,7 @@ rule:
         - s,wallmama.com
         - s,wallpapercasa.com
         - s,wallsttv.com
+        - s,wallzhihu.com
         - s,waltermartin.com
         - s,waltermartin.org
         - s,wanderinghorse.net
