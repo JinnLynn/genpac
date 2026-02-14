@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-14 02:34:12
-#! GFWList: 2026-02-13 12:49:26 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-14 13:01:52
+#! GFWList: 2026-02-14 08:17:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3819,6 +3819,7 @@ routing:
         - domain:wallmama.com
         - domain:wallpapercasa.com
         - domain:wallsttv.com
+        - domain:wallzhihu.com
         - domain:waltermartin.com
         - domain:waltermartin.org
         - domain:wanderinghorse.net
