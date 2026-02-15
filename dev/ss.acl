@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-15 02:48:31
-#! GFWList: 2026-02-15 02:29:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-15 13:04:06
+#! GFWList: 2026-02-15 10:21:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3148,6 +3148,7 @@
 (^|\.)sowers\.org\.hk$
 (^|\.)soylentnews\.org$
 (^|\.)spaces\.hightail\.com$
+(^|\.)spacex\.com$
 (^|\.)spankbang\.com$
 (^|\.)sparkpool\.com$
 (^|\.)spatial\.io$

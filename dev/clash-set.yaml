@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-15 02:48:33
-#! GFWList: 2026-02-15 02:29:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-15 13:04:08
+#! GFWList: 2026-02-15 10:21:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -3145,6 +3145,7 @@ payload:
   - DOMAIN-SUFFIX,sowers.org.hk
   - DOMAIN-SUFFIX,soylentnews.org
   - DOMAIN-SUFFIX,spaces.hightail.com
+  - DOMAIN-SUFFIX,spacex.com
   - DOMAIN-SUFFIX,spankbang.com
   - DOMAIN-SUFFIX,sparkpool.com
   - DOMAIN-SUFFIX,spatial.io

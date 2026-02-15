@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-15 02:48:33
-#! GFWList: 2026-02-15 02:29:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-15 13:04:08
+#! GFWList: 2026-02-15 10:21:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -3180,6 +3180,7 @@ rules:
   - DOMAIN-SUFFIX,sowers.org.hk,PROXY
   - DOMAIN-SUFFIX,soylentnews.org,PROXY
   - DOMAIN-SUFFIX,spaces.hightail.com,PROXY
+  - DOMAIN-SUFFIX,spacex.com,PROXY
   - DOMAIN-SUFFIX,spankbang.com,PROXY
   - DOMAIN-SUFFIX,sparkpool.com,PROXY
   - DOMAIN-SUFFIX,spatial.io,PROXY
