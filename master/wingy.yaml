@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-15 02:48:04
-#! GFWList: 2026-02-15 02:29:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-15 13:03:38
+#! GFWList: 2026-02-15 10:21:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3161,6 +3161,7 @@ rule:
         - s,sowers.org.hk
         - s,soylentnews.org
         - s,spaces.hightail.com
+        - s,spacex.com
         - s,spankbang.com
         - s,sparkpool.com
         - s,spatial.io

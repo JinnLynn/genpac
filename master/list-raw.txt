@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-02-15 02:48:01
-! GFWList: 2026-02-15 02:29:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-02-15 13:03:36
+! GFWList: 2026-02-15 10:21:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -3174,6 +3174,7 @@
 ||sowers.org.hk
 ||soylentnews.org
 ||spaces.hightail.com
+||spacex.com
 ||spankbang.com
 ||sparkpool.com
 ||spatial.io
