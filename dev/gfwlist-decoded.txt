@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: OFU4tgUlRoYdXD2gOxWIHw
+! Checksum: yCY5YSjMCyt76crROUT+nQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 14 Feb 2026 08:17:53 +0000
+! Last Modified: Sun, 15 Feb 2026 02:29:54 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2126,6 +2126,7 @@ iipdigital.usembassy.gov
 ||fw.cm
 ||fxcm-chinese.com
 !--------------------GG-------------------------
+||gmgn.ai
 ||grokipedia.com
 ||gfwbao.com
 ||greatfirevpn.com
@@ -2921,7 +2922,7 @@ iipdigital.usembassy.gov
 ||nexttv.com.tw
 ||co.ng.mil
 ||nga.mil
-|http://nhentai.net
+||nhentai.net
 ||nicovideo.jp
 ||ninjaproxy.ninja
 ||niusnews.com
@@ -3988,6 +3989,7 @@ iipdigital.usembassy.gov
 ||vtunnel.com
 ||vuku.cc
 !--------------------WW-------------------------
+||walletconnect.org
 ||wallzhihu.com
 ||wikis.tw
 ||weights.com
