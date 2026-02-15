@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-14 13:01:52
-#! GFWList: 2026-02-14 08:17:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-15 02:48:01
+#! GFWList: 2026-02-15 02:29:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1395,6 +1395,7 @@ routing:
         - domain:glype.com
         - domain:gmail.com
         - domain:gmgard.com
+        - domain:gmgn.ai
         - domain:gmodules.com
         - domain:gmp4.com
         - domain:gnci.org.hk
@@ -3816,6 +3817,7 @@ routing:
         - domain:waffle1999.com
         - domain:wainao.me
         - domain:walletconnect.com
+        - domain:walletconnect.org
         - domain:wallmama.com
         - domain:wallpapercasa.com
         - domain:wallsttv.com

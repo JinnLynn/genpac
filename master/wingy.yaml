@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-14 13:01:55
-#! GFWList: 2026-02-14 08:17:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-15 02:48:04
+#! GFWList: 2026-02-15 02:29:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1374,6 +1374,7 @@ rule:
         - s,glype.com
         - s,gmail.com
         - s,gmgard.com
+        - s,gmgn.ai
         - s,gmodules.com
         - s,gmp4.com
         - s,gnci.org.hk
@@ -3795,6 +3796,7 @@ rule:
         - s,waffle1999.com
         - s,wainao.me
         - s,walletconnect.com
+        - s,walletconnect.org
         - s,wallmama.com
         - s,wallpapercasa.com
         - s,wallsttv.com
