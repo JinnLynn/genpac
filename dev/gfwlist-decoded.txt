@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: 1ruGlX65TV1maPxQC5gVUg
+! Checksum: SZb9Z3+DMQuOYwT3Ng+NHQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 15 Feb 2026 10:21:38 +0000
+! Last Modified: Mon, 16 Feb 2026 11:10:32 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1053,45 +1053,13 @@ www.aolnews.com
 ||x.com
 
 !!---Taiwan---
-||sef.org.tw
-||moj.gov.tw
+||twgov.tw
+||gov.tw
+@@||www.gov.tw
 ||gov.taipei
-||aiss.anws.gov.tw
-||archives.gov.tw
-||tacc.cwb.gov.tw
-||data.gov.tw
-||exam.gov.tw
-||ey.gov.tw
-||fa.gov.tw
-||fda.gov.tw
-||hpa.gov.tw
-||immigration.gov.tw
-||itaiwan.gov.tw
-||judicial.gov.tw
 ||li.taipei
-||ly.gov.tw
-||mjib.gov.tw
-||moeaic.gov.tw
-||mofa.gov.tw
-||mol.gov.tw
-||mvdis.gov.tw
-||nat.gov.tw
-||nhi.gov.tw
-||npa.gov.tw
-||nsc.gov.tw
-||ntbk.gov.tw
-||ntbna.gov.tw
-||ntbt.gov.tw
-||pcc.gov.tw
-||stat.gov.tw
-||taipei.gov.tw
-||taiwanjobs.gov.tw
-||thb.gov.tw
-||tipo.gov.tw
-||wda.gov.tw
 ||teco-hk.org
 ||teco-mo.org
-||npm.gov.tw
 ||kinmen.org.tw
 !!---USA---
 ||americorps.gov

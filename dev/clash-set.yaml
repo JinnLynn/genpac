@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-16 02:43:42
-#! GFWList: 2026-02-15 10:21:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-16 13:17:16
+#! GFWList: 2026-02-16 11:10:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -130,7 +130,6 @@ payload:
   - DOMAIN-SUFFIX,airconsole.com
   - DOMAIN-SUFFIX,airitilibrary.com
   - DOMAIN-SUFFIX,airvpn.org
-  - DOMAIN-SUFFIX,aiss.anws.gov.tw
   - DOMAIN-SUFFIX,ait.org.tw
   - DOMAIN-SUFFIX,aiweiweiblog.com
   - DOMAIN-SUFFIX,akademiye.org
@@ -250,7 +249,6 @@ payload:
   - DOMAIN-SUFFIX,archiveofourown.com
   - DOMAIN-SUFFIX,archiveofourown.org
   - DOMAIN-SUFFIX,archives.gov
-  - DOMAIN-SUFFIX,archives.gov.tw
   - DOMAIN-SUFFIX,arctosia.com
   - DOMAIN-SUFFIX,areca-backup.org
   - DOMAIN-SUFFIX,arena.taipei
@@ -847,7 +845,6 @@ payload:
   - DOMAIN-SUFFIX,darrenliuwei.com
   - DOMAIN-SUFFIX,dashlane.com
   - DOMAIN-SUFFIX,data-vocabulary.org
-  - DOMAIN-SUFFIX,data.gov.tw
   - DOMAIN-SUFFIX,daum.net
   - DOMAIN-SUFFIX,david-kilgour.com
   - DOMAIN-SUFFIX,dawangidc.com
@@ -1057,7 +1054,6 @@ payload:
   - DOMAIN-SUFFIX,evchk.wikia.com
   - DOMAIN-SUFFIX,everipedia.org
   - DOMAIN-SUFFIX,evschool.net
-  - DOMAIN-SUFFIX,exam.gov.tw
   - DOMAIN-SUFFIX,exchristian.hk
   - DOMAIN-SUFFIX,exhentai.org
   - DOMAIN-SUFFIX,exmo.com
@@ -1069,13 +1065,11 @@ payload:
   - DOMAIN-SUFFIX,expressvpn.com
   - DOMAIN-SUFFIX,exrates.me
   - DOMAIN-SUFFIX,extmatrix.com
-  - DOMAIN-SUFFIX,ey.gov.tw
   - DOMAIN-SUFFIX,eyevio.jp
   - DOMAIN-SUFFIX,eyny.com
   - DOMAIN-SUFFIX,f-droid.org
   - DOMAIN-SUFFIX,f2pool.com
   - DOMAIN-SUFFIX,f8.com
-  - DOMAIN-SUFFIX,fa.gov.tw
   - DOMAIN-SUFFIX,facebook.com
   - DOMAIN-SUFFIX,facebook.de
   - DOMAIN-SUFFIX,facebook.design
@@ -1131,7 +1125,6 @@ payload:
   - DOMAIN-SUFFIX,fbsbx.com
   - DOMAIN-SUFFIX,fbworkmail.com
   - DOMAIN-SUFFIX,fc2cn.com
-  - DOMAIN-SUFFIX,fda.gov.tw
   - DOMAIN-SUFFIX,feedburner.com
   - DOMAIN-SUFFIX,feeder.co
   - DOMAIN-SUFFIX,feedly.com
@@ -1772,7 +1765,6 @@ payload:
   - DOMAIN-SUFFIX,howtoforge.com
   - DOMAIN-SUFFIX,hoxx.com
   - DOMAIN-SUFFIX,hoy.tv
-  - DOMAIN-SUFFIX,hpa.gov.tw
   - DOMAIN-SUFFIX,hpjav.com
   - DOMAIN-SUFFIX,hqcdp.org
   - DOMAIN-SUFFIX,hqjapanesesex.com
@@ -1882,7 +1874,6 @@ payload:
   - DOMAIN-SUFFIX,imgur.com
   - DOMAIN-SUFFIX,imkev.com
   - DOMAIN-SUFFIX,imlive.co
-  - DOMAIN-SUFFIX,immigration.gov.tw
   - DOMAIN-SUFFIX,improd.works
   - DOMAIN-SUFFIX,incloak.com
   - DOMAIN-SUFFIX,incredibox.fr
@@ -1947,7 +1938,6 @@ payload:
   - DOMAIN-SUFFIX,israbox.com
   - DOMAIN-SUFFIX,issuu.com
   - DOMAIN-SUFFIX,isupportuyghurs.org
-  - DOMAIN-SUFFIX,itaiwan.gov.tw
   - DOMAIN-SUFFIX,italiatibet.org
   - DOMAIN-SUFFIX,itasoftware.com
   - DOMAIN-SUFFIX,itch.io
@@ -2010,7 +2000,6 @@ payload:
   - DOMAIN-SUFFIX,jpl.nasa.gov
   - DOMAIN-SUFFIX,jsdelivr.net
   - DOMAIN-SUFFIX,jtvnw.net
-  - DOMAIN-SUFFIX,judicial.gov.tw
   - DOMAIN-SUFFIX,jukujo-club.com
   - DOMAIN-SUFFIX,juliepost.com
   - DOMAIN-SUFFIX,juliereyc.com
@@ -2183,7 +2172,6 @@ payload:
   - DOMAIN-SUFFIX,lushstories.com
   - DOMAIN-SUFFIX,lvhai.org
   - DOMAIN-SUFFIX,lvv2.com
-  - DOMAIN-SUFFIX,ly.gov.tw
   - DOMAIN-SUFFIX,lyfhk.net
   - DOMAIN-SUFFIX,lzjscript.com
   - DOMAIN-SUFFIX,lzmtnews.org
@@ -2316,7 +2304,6 @@ payload:
   - DOMAIN-SUFFIX,mixx.com
   - DOMAIN-SUFFIX,mizzmona.com
   - DOMAIN-SUFFIX,mji.rip
-  - DOMAIN-SUFFIX,mjib.gov.tw
   - DOMAIN-SUFFIX,mjj.rip
   - DOMAIN-SUFFIX,mjlsh.usc.cuhk.edu.hk
   - DOMAIN-SUFFIX,mlc.ai
@@ -2329,16 +2316,12 @@ payload:
   - DOMAIN-SUFFIX,moby.to
   - DOMAIN-SUFFIX,mod.io
   - DOMAIN-SUFFIX,modernchinastudies.org
-  - DOMAIN-SUFFIX,moeaic.gov.tw
   - DOMAIN-SUFFIX,moeerolibrary.com
   - DOMAIN-SUFFIX,moeshare.cc
-  - DOMAIN-SUFFIX,mofa.gov.tw
   - DOMAIN-SUFFIX,mog.com
   - DOMAIN-SUFFIX,mohu.club
   - DOMAIN-SUFFIX,mohu.rocks
-  - DOMAIN-SUFFIX,moj.gov.tw
   - DOMAIN-SUFFIX,mojim.com
-  - DOMAIN-SUFFIX,mol.gov.tw
   - DOMAIN-SUFFIX,momoshop.com.tw
   - DOMAIN-SUFFIX,mondex.org
   - DOMAIN-SUFFIX,money-link.com.tw
@@ -2374,7 +2357,6 @@ payload:
   - DOMAIN-SUFFIX,muzi.com
   - DOMAIN-SUFFIX,muzi.net
   - DOMAIN-SUFFIX,muzu.tv
-  - DOMAIN-SUFFIX,mvdis.gov.tw
   - DOMAIN-SUFFIX,mvg.jp
   - DOMAIN-SUFFIX,mx981.com
   - DOMAIN-SUFFIX,my-private-network.co.uk
@@ -2404,7 +2386,6 @@ payload:
   - DOMAIN-SUFFIX,nanopool.org
   - DOMAIN-SUFFIX,nanyang.com
   - DOMAIN-SUFFIX,nanyangpost.com
-  - DOMAIN-SUFFIX,nat.gov.tw
   - DOMAIN-SUFFIX,nat.moe
   - DOMAIN-SUFFIX,national-lottery.co.uk
   - DOMAIN-SUFFIX,nationalawakening.org
@@ -2467,7 +2448,6 @@ payload:
   - DOMAIN-SUFFIX,nftstorage.link
   - DOMAIN-SUFFIX,nga.mil
   - DOMAIN-SUFFIX,nhentai.net
-  - DOMAIN-SUFFIX,nhi.gov.tw
   - DOMAIN-SUFFIX,nic.cz.cc
   - DOMAIN-SUFFIX,nic.gov
   - DOMAIN-SUFFIX,nicovideo.jp
@@ -2502,16 +2482,10 @@ payload:
   - DOMAIN-SUFFIX,nownews.com
   - DOMAIN-SUFFIX,noxinfluencer.com
   - DOMAIN-SUFFIX,npa.go.jp
-  - DOMAIN-SUFFIX,npa.gov.tw
-  - DOMAIN-SUFFIX,npm.gov.tw
   - DOMAIN-SUFFIX,npnt.me
   - DOMAIN-SUFFIX,npsboost.com
   - DOMAIN-SUFFIX,nradio.me
   - DOMAIN-SUFFIX,nrk.no
-  - DOMAIN-SUFFIX,nsc.gov.tw
-  - DOMAIN-SUFFIX,ntbk.gov.tw
-  - DOMAIN-SUFFIX,ntbna.gov.tw
-  - DOMAIN-SUFFIX,ntbt.gov.tw
   - DOMAIN-SUFFIX,ntd.tv
   - DOMAIN-SUFFIX,ntdtv.com
   - DOMAIN-SUFFIX,ntdtv.com.tw
@@ -2650,7 +2624,6 @@ payload:
   - DOMAIN-SUFFIX,pbworks.com
   - DOMAIN-SUFFIX,pbxes.com
   - DOMAIN-SUFFIX,pbxes.org
-  - DOMAIN-SUFFIX,pcc.gov.tw
   - DOMAIN-SUFFIX,pcgamestorrents.com
   - DOMAIN-SUFFIX,pcij.org
   - DOMAIN-SUFFIX,pct.org.tw
@@ -3015,7 +2988,6 @@ payload:
   - DOMAIN-SUFFIX,seed4.me
   - DOMAIN-SUFFIX,seevpn.com
   - DOMAIN-SUFFIX,seezone.net
-  - DOMAIN-SUFFIX,sef.org.tw
   - DOMAIN-SUFFIX,sehuatang.net
   - DOMAIN-SUFFIX,sehuatang.org
   - DOMAIN-SUFFIX,sensortower.com
@@ -3187,7 +3159,6 @@ payload:
   - DOMAIN-SUFFIX,starp2p.com
   - DOMAIN-SUFFIX,startpage.com
   - DOMAIN-SUFFIX,startuplivingchina.com
-  - DOMAIN-SUFFIX,stat.gov.tw
   - DOMAIN-SUFFIX,static-economist.com
   - DOMAIN-SUFFIX,static.pocketcasts.com
   - DOMAIN-SUFFIX,static.shemalez.com
@@ -3260,16 +3231,13 @@ payload:
   - DOMAIN-SUFFIX,t66y.com
   - DOMAIN-SUFFIX,taa-usa.org
   - DOMAIN-SUFFIX,taaze.tw
-  - DOMAIN-SUFFIX,tacc.cwb.gov.tw
   - DOMAIN-SUFFIX,taedp.org.tw
   - DOMAIN-SUFFIX,tagwalk.com
   - DOMAIN-SUFFIX,tails.net
-  - DOMAIN-SUFFIX,taipei.gov.tw
   - DOMAIN-SUFFIX,taipeisociety.org
   - DOMAIN-SUFFIX,taipeitimes.com
   - DOMAIN-SUFFIX,taisounds.com
   - DOMAIN-SUFFIX,taiwanhot.net
-  - DOMAIN-SUFFIX,taiwanjobs.gov.tw
   - DOMAIN-SUFFIX,taiwanjustice.net
   - DOMAIN-SUFFIX,taiwanncf.org.tw
   - DOMAIN-SUFFIX,taiwannews.com.tw
@@ -3326,7 +3294,6 @@ payload:
   - DOMAIN-SUFFIX,tfiflve.com
   - DOMAIN-SUFFIX,tg-me.com
   - DOMAIN-SUFFIX,tg.dev
-  - DOMAIN-SUFFIX,thb.gov.tw
   - DOMAIN-SUFFIX,theatlantic.com
   - DOMAIN-SUFFIX,theatrum-belli.com
   - DOMAIN-SUFFIX,thebcomplex.com
@@ -3446,7 +3413,6 @@ payload:
   - DOMAIN-SUFFIX,tinypaste.com
   - DOMAIN-SUFFIX,tinyurl.com
   - DOMAIN-SUFFIX,tipas.net
-  - DOMAIN-SUFFIX,tipo.gov.tw
   - DOMAIN-SUFFIX,tkcs-collins.com
   - DOMAIN-SUFFIX,tl.gd
   - DOMAIN-SUFFIX,tma.co.jp
@@ -3553,6 +3519,7 @@ payload:
   - DOMAIN-SUFFIX,twelve.today
   - DOMAIN-SUFFIX,twerkingbutt.com
   - DOMAIN-SUFFIX,twftp.org
+  - DOMAIN-SUFFIX,twgov.tw
   - DOMAIN-SUFFIX,twgreatdaily.com
   - DOMAIN-SUFFIX,twibble.de
   - DOMAIN-SUFFIX,twibs.com
@@ -3806,7 +3773,6 @@ payload:
   - DOMAIN-SUFFIX,waybig.com
   - DOMAIN-SUFFIX,waymo.com
   - DOMAIN-SUFFIX,wd.bible
-  - DOMAIN-SUFFIX,wda.gov.tw
   - DOMAIN-SUFFIX,wealth.com.tw
   - DOMAIN-SUFFIX,wearn.com
   - DOMAIN-SUFFIX,web.dev

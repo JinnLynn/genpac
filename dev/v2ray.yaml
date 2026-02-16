@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-16 02:43:39
-#! GFWList: 2026-02-15 10:21:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-16 13:17:13
+#! GFWList: 2026-02-16 11:10:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -34,6 +34,7 @@ routing:
         - domain:tools.google.com
         - domain:update.googleapis.com
         - domain:www.ampproject.org
+        - domain:www.gov.tw
         - domain:www.gstatic.com
         - domain:www.typepad.com
     - outboundTag: gfw
@@ -167,7 +168,6 @@ routing:
         - domain:airconsole.com
         - domain:airitilibrary.com
         - domain:airvpn.org
-        - domain:aiss.anws.gov.tw
         - domain:ait.org.tw
         - domain:aiweiweiblog.com
         - domain:akademiye.org
@@ -287,7 +287,6 @@ routing:
         - domain:archiveofourown.com
         - domain:archiveofourown.org
         - domain:archives.gov
-        - domain:archives.gov.tw
         - domain:arctosia.com
         - domain:areca-backup.org
         - domain:arena.taipei
@@ -884,7 +883,6 @@ routing:
         - domain:darrenliuwei.com
         - domain:dashlane.com
         - domain:data-vocabulary.org
-        - domain:data.gov.tw
         - domain:daum.net
         - domain:david-kilgour.com
         - domain:dawangidc.com
@@ -1094,7 +1092,6 @@ routing:
         - domain:evchk.wikia.com
         - domain:everipedia.org
         - domain:evschool.net
-        - domain:exam.gov.tw
         - domain:exchristian.hk
         - domain:exhentai.org
         - domain:exmo.com
@@ -1106,13 +1103,11 @@ routing:
         - domain:expressvpn.com
         - domain:exrates.me
         - domain:extmatrix.com
-        - domain:ey.gov.tw
         - domain:eyevio.jp
         - domain:eyny.com
         - domain:f-droid.org
         - domain:f2pool.com
         - domain:f8.com
-        - domain:fa.gov.tw
         - domain:facebook.com
         - domain:facebook.de
         - domain:facebook.design
@@ -1168,7 +1163,6 @@ routing:
         - domain:fbsbx.com
         - domain:fbworkmail.com
         - domain:fc2cn.com
-        - domain:fda.gov.tw
         - domain:feedburner.com
         - domain:feeder.co
         - domain:feedly.com
@@ -1809,7 +1803,6 @@ routing:
         - domain:howtoforge.com
         - domain:hoxx.com
         - domain:hoy.tv
-        - domain:hpa.gov.tw
         - domain:hpjav.com
         - domain:hqcdp.org
         - domain:hqjapanesesex.com
@@ -1919,7 +1912,6 @@ routing:
         - domain:imgur.com
         - domain:imkev.com
         - domain:imlive.co
-        - domain:immigration.gov.tw
         - domain:improd.works
         - domain:incloak.com
         - domain:incredibox.fr
@@ -1984,7 +1976,6 @@ routing:
         - domain:israbox.com
         - domain:issuu.com
         - domain:isupportuyghurs.org
-        - domain:itaiwan.gov.tw
         - domain:italiatibet.org
         - domain:itasoftware.com
         - domain:itch.io
@@ -2047,7 +2038,6 @@ routing:
         - domain:jpl.nasa.gov
         - domain:jsdelivr.net
         - domain:jtvnw.net
-        - domain:judicial.gov.tw
         - domain:jukujo-club.com
         - domain:juliepost.com
         - domain:juliereyc.com
@@ -2220,7 +2210,6 @@ routing:
         - domain:lushstories.com
         - domain:lvhai.org
         - domain:lvv2.com
-        - domain:ly.gov.tw
         - domain:lyfhk.net
         - domain:lzjscript.com
         - domain:lzmtnews.org
@@ -2353,7 +2342,6 @@ routing:
         - domain:mixx.com
         - domain:mizzmona.com
         - domain:mji.rip
-        - domain:mjib.gov.tw
         - domain:mjj.rip
         - domain:mjlsh.usc.cuhk.edu.hk
         - domain:mlc.ai
@@ -2366,16 +2354,12 @@ routing:
         - domain:moby.to
         - domain:mod.io
         - domain:modernchinastudies.org
-        - domain:moeaic.gov.tw
         - domain:moeerolibrary.com
         - domain:moeshare.cc
-        - domain:mofa.gov.tw
         - domain:mog.com
         - domain:mohu.club
         - domain:mohu.rocks
-        - domain:moj.gov.tw
         - domain:mojim.com
-        - domain:mol.gov.tw
         - domain:momoshop.com.tw
         - domain:mondex.org
         - domain:money-link.com.tw
@@ -2411,7 +2395,6 @@ routing:
         - domain:muzi.com
         - domain:muzi.net
         - domain:muzu.tv
-        - domain:mvdis.gov.tw
         - domain:mvg.jp
         - domain:mx981.com
         - domain:my-private-network.co.uk
@@ -2441,7 +2424,6 @@ routing:
         - domain:nanopool.org
         - domain:nanyang.com
         - domain:nanyangpost.com
-        - domain:nat.gov.tw
         - domain:nat.moe
         - domain:national-lottery.co.uk
         - domain:nationalawakening.org
@@ -2504,7 +2486,6 @@ routing:
         - domain:nftstorage.link
         - domain:nga.mil
         - domain:nhentai.net
-        - domain:nhi.gov.tw
         - domain:nic.cz.cc
         - domain:nic.gov
         - domain:nicovideo.jp
@@ -2539,16 +2520,10 @@ routing:
         - domain:nownews.com
         - domain:noxinfluencer.com
         - domain:npa.go.jp
-        - domain:npa.gov.tw
-        - domain:npm.gov.tw
         - domain:npnt.me
         - domain:npsboost.com
         - domain:nradio.me
         - domain:nrk.no
-        - domain:nsc.gov.tw
-        - domain:ntbk.gov.tw
-        - domain:ntbna.gov.tw
-        - domain:ntbt.gov.tw
         - domain:ntd.tv
         - domain:ntdtv.com
         - domain:ntdtv.com.tw
@@ -2687,7 +2662,6 @@ routing:
         - domain:pbworks.com
         - domain:pbxes.com
         - domain:pbxes.org
-        - domain:pcc.gov.tw
         - domain:pcgamestorrents.com
         - domain:pcij.org
         - domain:pct.org.tw
@@ -3052,7 +3026,6 @@ routing:
         - domain:seed4.me
         - domain:seevpn.com
         - domain:seezone.net
-        - domain:sef.org.tw
         - domain:sehuatang.net
         - domain:sehuatang.org
         - domain:sensortower.com
@@ -3224,7 +3197,6 @@ routing:
         - domain:starp2p.com
         - domain:startpage.com
         - domain:startuplivingchina.com
-        - domain:stat.gov.tw
         - domain:static-economist.com
         - domain:static.pocketcasts.com
         - domain:static.shemalez.com
@@ -3297,16 +3269,13 @@ routing:
         - domain:t66y.com
         - domain:taa-usa.org
         - domain:taaze.tw
-        - domain:tacc.cwb.gov.tw
         - domain:taedp.org.tw
         - domain:tagwalk.com
         - domain:tails.net
-        - domain:taipei.gov.tw
         - domain:taipeisociety.org
         - domain:taipeitimes.com
         - domain:taisounds.com
         - domain:taiwanhot.net
-        - domain:taiwanjobs.gov.tw
         - domain:taiwanjustice.net
         - domain:taiwanncf.org.tw
         - domain:taiwannews.com.tw
@@ -3363,7 +3332,6 @@ routing:
         - domain:tfiflve.com
         - domain:tg-me.com
         - domain:tg.dev
-        - domain:thb.gov.tw
         - domain:theatlantic.com
         - domain:theatrum-belli.com
         - domain:thebcomplex.com
@@ -3483,7 +3451,6 @@ routing:
         - domain:tinypaste.com
         - domain:tinyurl.com
         - domain:tipas.net
-        - domain:tipo.gov.tw
         - domain:tkcs-collins.com
         - domain:tl.gd
         - domain:tma.co.jp
@@ -3590,6 +3557,7 @@ routing:
         - domain:twelve.today
         - domain:twerkingbutt.com
         - domain:twftp.org
+        - domain:twgov.tw
         - domain:twgreatdaily.com
         - domain:twibble.de
         - domain:twibs.com
@@ -3843,7 +3811,6 @@ routing:
         - domain:waybig.com
         - domain:waymo.com
         - domain:wd.bible
-        - domain:wda.gov.tw
         - domain:wealth.com.tw
         - domain:wearn.com
         - domain:web.dev
