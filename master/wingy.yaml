@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-16 02:43:13
-#! GFWList: 2026-02-15 10:21:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-16 13:16:44
+#! GFWList: 2026-02-16 11:10:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -146,7 +146,6 @@ rule:
         - s,airconsole.com
         - s,airitilibrary.com
         - s,airvpn.org
-        - s,aiss.anws.gov.tw
         - s,ait.org.tw
         - s,aiweiweiblog.com
         - s,akademiye.org
@@ -266,7 +265,6 @@ rule:
         - s,archiveofourown.com
         - s,archiveofourown.org
         - s,archives.gov
-        - s,archives.gov.tw
         - s,arctosia.com
         - s,areca-backup.org
         - s,arena.taipei
@@ -863,7 +861,6 @@ rule:
         - s,darrenliuwei.com
         - s,dashlane.com
         - s,data-vocabulary.org
-        - s,data.gov.tw
         - s,daum.net
         - s,david-kilgour.com
         - s,dawangidc.com
@@ -1073,7 +1070,6 @@ rule:
         - s,evchk.wikia.com
         - s,everipedia.org
         - s,evschool.net
-        - s,exam.gov.tw
         - s,exchristian.hk
         - s,exhentai.org
         - s,exmo.com
@@ -1085,13 +1081,11 @@ rule:
         - s,expressvpn.com
         - s,exrates.me
         - s,extmatrix.com
-        - s,ey.gov.tw
         - s,eyevio.jp
         - s,eyny.com
         - s,f-droid.org
         - s,f2pool.com
         - s,f8.com
-        - s,fa.gov.tw
         - s,facebook.com
         - s,facebook.de
         - s,facebook.design
@@ -1147,7 +1141,6 @@ rule:
         - s,fbsbx.com
         - s,fbworkmail.com
         - s,fc2cn.com
-        - s,fda.gov.tw
         - s,feedburner.com
         - s,feeder.co
         - s,feedly.com
@@ -1788,7 +1781,6 @@ rule:
         - s,howtoforge.com
         - s,hoxx.com
         - s,hoy.tv
-        - s,hpa.gov.tw
         - s,hpjav.com
         - s,hqcdp.org
         - s,hqjapanesesex.com
@@ -1898,7 +1890,6 @@ rule:
         - s,imgur.com
         - s,imkev.com
         - s,imlive.co
-        - s,immigration.gov.tw
         - s,improd.works
         - s,incloak.com
         - s,incredibox.fr
@@ -1963,7 +1954,6 @@ rule:
         - s,israbox.com
         - s,issuu.com
         - s,isupportuyghurs.org
-        - s,itaiwan.gov.tw
         - s,italiatibet.org
         - s,itasoftware.com
         - s,itch.io
@@ -2026,7 +2016,6 @@ rule:
         - s,jpl.nasa.gov
         - s,jsdelivr.net
         - s,jtvnw.net
-        - s,judicial.gov.tw
         - s,jukujo-club.com
         - s,juliepost.com
         - s,juliereyc.com
@@ -2199,7 +2188,6 @@ rule:
         - s,lushstories.com
         - s,lvhai.org
         - s,lvv2.com
-        - s,ly.gov.tw
         - s,lyfhk.net
         - s,lzjscript.com
         - s,lzmtnews.org
@@ -2332,7 +2320,6 @@ rule:
         - s,mixx.com
         - s,mizzmona.com
         - s,mji.rip
-        - s,mjib.gov.tw
         - s,mjj.rip
         - s,mjlsh.usc.cuhk.edu.hk
         - s,mlc.ai
@@ -2345,16 +2332,12 @@ rule:
         - s,moby.to
         - s,mod.io
         - s,modernchinastudies.org
-        - s,moeaic.gov.tw
         - s,moeerolibrary.com
         - s,moeshare.cc
-        - s,mofa.gov.tw
         - s,mog.com
         - s,mohu.club
         - s,mohu.rocks
-        - s,moj.gov.tw
         - s,mojim.com
-        - s,mol.gov.tw
         - s,momoshop.com.tw
         - s,mondex.org
         - s,money-link.com.tw
@@ -2390,7 +2373,6 @@ rule:
         - s,muzi.com
         - s,muzi.net
         - s,muzu.tv
-        - s,mvdis.gov.tw
         - s,mvg.jp
         - s,mx981.com
         - s,my-private-network.co.uk
@@ -2420,7 +2402,6 @@ rule:
         - s,nanopool.org
         - s,nanyang.com
         - s,nanyangpost.com
-        - s,nat.gov.tw
         - s,nat.moe
         - s,national-lottery.co.uk
         - s,nationalawakening.org
@@ -2483,7 +2464,6 @@ rule:
         - s,nftstorage.link
         - s,nga.mil
         - s,nhentai.net
-        - s,nhi.gov.tw
         - s,nic.cz.cc
         - s,nic.gov
         - s,nicovideo.jp
@@ -2518,16 +2498,10 @@ rule:
         - s,nownews.com
         - s,noxinfluencer.com
         - s,npa.go.jp
-        - s,npa.gov.tw
-        - s,npm.gov.tw
         - s,npnt.me
         - s,npsboost.com
         - s,nradio.me
         - s,nrk.no
-        - s,nsc.gov.tw
-        - s,ntbk.gov.tw
-        - s,ntbna.gov.tw
-        - s,ntbt.gov.tw
         - s,ntd.tv
         - s,ntdtv.com
         - s,ntdtv.com.tw
@@ -2666,7 +2640,6 @@ rule:
         - s,pbworks.com
         - s,pbxes.com
         - s,pbxes.org
-        - s,pcc.gov.tw
         - s,pcgamestorrents.com
         - s,pcij.org
         - s,pct.org.tw
@@ -3031,7 +3004,6 @@ rule:
         - s,seed4.me
         - s,seevpn.com
         - s,seezone.net
-        - s,sef.org.tw
         - s,sehuatang.net
         - s,sehuatang.org
         - s,sensortower.com
@@ -3203,7 +3175,6 @@ rule:
         - s,starp2p.com
         - s,startpage.com
         - s,startuplivingchina.com
-        - s,stat.gov.tw
         - s,static-economist.com
         - s,static.pocketcasts.com
         - s,static.shemalez.com
@@ -3276,16 +3247,13 @@ rule:
         - s,t66y.com
         - s,taa-usa.org
         - s,taaze.tw
-        - s,tacc.cwb.gov.tw
         - s,taedp.org.tw
         - s,tagwalk.com
         - s,tails.net
-        - s,taipei.gov.tw
         - s,taipeisociety.org
         - s,taipeitimes.com
         - s,taisounds.com
         - s,taiwanhot.net
-        - s,taiwanjobs.gov.tw
         - s,taiwanjustice.net
         - s,taiwanncf.org.tw
         - s,taiwannews.com.tw
@@ -3342,7 +3310,6 @@ rule:
         - s,tfiflve.com
         - s,tg-me.com
         - s,tg.dev
-        - s,thb.gov.tw
         - s,theatlantic.com
         - s,theatrum-belli.com
         - s,thebcomplex.com
@@ -3462,7 +3429,6 @@ rule:
         - s,tinypaste.com
         - s,tinyurl.com
         - s,tipas.net
-        - s,tipo.gov.tw
         - s,tkcs-collins.com
         - s,tl.gd
         - s,tma.co.jp
@@ -3569,6 +3535,7 @@ rule:
         - s,twelve.today
         - s,twerkingbutt.com
         - s,twftp.org
+        - s,twgov.tw
         - s,twgreatdaily.com
         - s,twibble.de
         - s,twibs.com
@@ -3822,7 +3789,6 @@ rule:
         - s,waybig.com
         - s,waymo.com
         - s,wd.bible
-        - s,wda.gov.tw
         - s,wealth.com.tw
         - s,wearn.com
         - s,web.dev
