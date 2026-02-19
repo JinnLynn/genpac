@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-18 13:18:24
-#! GFWList: 2026-02-16 11:10:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-19 02:42:30
+#! GFWList: 2026-02-18 13:32:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1687,6 +1687,7 @@ routing:
         - domain:gutteruncensored.com
         - domain:gvlib.com
         - domain:gvm.com.tw
+        - domain:gvt1.com
         - domain:gvt3.com
         - domain:gwins.org
         - domain:gwtproject.org
@@ -2376,6 +2377,7 @@ routing:
         - domain:moresci.sale
         - domain:morningsun.org
         - domain:mos.ru
+        - domain:mosavi.io
         - domain:motherless.com
         - domain:movements.org
         - domain:moviefap.com
