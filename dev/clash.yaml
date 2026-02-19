@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-18 13:18:55
-#! GFWList: 2026-02-16 11:10:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-19 02:42:59
+#! GFWList: 2026-02-18 13:32:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -1685,6 +1685,7 @@ rules:
   - DOMAIN-SUFFIX,gutteruncensored.com,PROXY
   - DOMAIN-SUFFIX,gvlib.com,PROXY
   - DOMAIN-SUFFIX,gvm.com.tw,PROXY
+  - DOMAIN-SUFFIX,gvt1.com,PROXY
   - DOMAIN-SUFFIX,gvt3.com,PROXY
   - DOMAIN-SUFFIX,gwins.org,PROXY
   - DOMAIN-SUFFIX,gwtproject.org,PROXY
@@ -2374,6 +2375,7 @@ rules:
   - DOMAIN-SUFFIX,moresci.sale,PROXY
   - DOMAIN-SUFFIX,morningsun.org,PROXY
   - DOMAIN-SUFFIX,mos.ru,PROXY
+  - DOMAIN-SUFFIX,mosavi.io,PROXY
   - DOMAIN-SUFFIX,motherless.com,PROXY
   - DOMAIN-SUFFIX,movements.org,PROXY
   - DOMAIN-SUFFIX,moviefap.com,PROXY

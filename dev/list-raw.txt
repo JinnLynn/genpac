@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-02-18 13:18:53
-! GFWList: 2026-02-16 11:10:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-02-19 02:42:58
+! GFWList: 2026-02-18 13:32:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -1679,6 +1679,7 @@
 ||gutteruncensored.com
 ||gvlib.com
 ||gvm.com.tw
+||gvt1.com
 ||gvt3.com
 ||gwins.org
 ||gwtproject.org
@@ -2368,6 +2369,7 @@
 ||moresci.sale
 ||morningsun.org
 ||mos.ru
+||mosavi.io
 ||motherless.com
 ||movements.org
 ||moviefap.com

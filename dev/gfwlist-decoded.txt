@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: SZb9Z3+DMQuOYwT3Ng+NHQ
+! Checksum: AlZpYFJytVWxP02U5wohEw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 16 Feb 2026 11:10:32 +0000
+! Last Modified: Wed, 18 Feb 2026 13:32:07 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -933,7 +933,7 @@ www.aolnews.com
 ||googleweblight.com
 ||googlezip.net
 ||gstatic.com
-||gvt1.com]
+||gvt1.com
 ||gvt3.com
 ||gwtproject.org
 ||html5rocks.com
@@ -2668,6 +2668,7 @@ iipdigital.usembassy.gov
 ||lzjscript.com
 ||lzmtnews.org
 !--------------------MM-------------------------
+||mosavi.io
 ||dcs-spotify.megaphone.fm
 ||mij.rip
 ||mji.rip
