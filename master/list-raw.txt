@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-02-21 02:30:25
-! GFWList: 2026-02-18 13:32:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-02-21 13:00:26
+! GFWList: 2026-02-21 07:04:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -167,6 +167,7 @@
 ||akamaihd.net
 ||akiba-online.com
 ||akiba-web.com
+||akile.io
 ||akinator.com
 ||akow.org
 ||alabout.com
@@ -301,6 +302,7 @@
 ||aspistrategist.org.au
 ||assembla.com
 ||assets.bwbx.io
+||assets.nxtrace.org
 ||assimp.org
 ||astrill.com
 ||atc.org.au
@@ -2260,6 +2262,7 @@
 ||mediafreakcity.com
 ||mediawiki.org
 ||medium.com
+||meee.com.tw
 ||meetup.com
 ||mega.co.nz
 ||mega.io
@@ -2594,6 +2597,7 @@
 ||ooni.org
 ||open.firstory.me
 ||openai.com
+||opencritic.com
 ||opendemocracy.net
 ||openid.net
 ||openleaks.org
@@ -3929,6 +3933,7 @@
 ||www.antd.org
 ||www.aolnews.com
 ||www.bing.com
+||www.clashverge.dev
 ||www.cmoinc.org
 ||www.dmm.com
 ||www.eastturkistan.net

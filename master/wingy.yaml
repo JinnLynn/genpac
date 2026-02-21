@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-21 02:30:28
-#! GFWList: 2026-02-18 13:32:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-21 13:00:28
+#! GFWList: 2026-02-21 07:04:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -153,6 +153,7 @@ rule:
         - s,akamaihd.net
         - s,akiba-online.com
         - s,akiba-web.com
+        - s,akile.io
         - s,akinator.com
         - s,akow.org
         - s,alabout.com
@@ -287,6 +288,7 @@ rule:
         - s,aspistrategist.org.au
         - s,assembla.com
         - s,assets.bwbx.io
+        - s,assets.nxtrace.org
         - s,assimp.org
         - s,astrill.com
         - s,atc.org.au
@@ -2246,6 +2248,7 @@ rule:
         - s,mediafreakcity.com
         - s,mediawiki.org
         - s,medium.com
+        - s,meee.com.tw
         - s,meetup.com
         - s,mega.co.nz
         - s,mega.io
@@ -2580,6 +2583,7 @@ rule:
         - s,ooni.org
         - s,open.firstory.me
         - s,openai.com
+        - s,opencritic.com
         - s,opendemocracy.net
         - s,openid.net
         - s,openleaks.org
@@ -3915,6 +3919,7 @@ rule:
         - s,www.antd.org
         - s,www.aolnews.com
         - s,www.bing.com
+        - s,www.clashverge.dev
         - s,www.cmoinc.org
         - s,www.dmm.com
         - s,www.eastturkistan.net

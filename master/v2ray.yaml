@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-21 02:30:25
-#! GFWList: 2026-02-18 13:32:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-21 13:00:26
+#! GFWList: 2026-02-21 07:04:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -175,6 +175,7 @@ routing:
         - domain:akamaihd.net
         - domain:akiba-online.com
         - domain:akiba-web.com
+        - domain:akile.io
         - domain:akinator.com
         - domain:akow.org
         - domain:alabout.com
@@ -309,6 +310,7 @@ routing:
         - domain:aspistrategist.org.au
         - domain:assembla.com
         - domain:assets.bwbx.io
+        - domain:assets.nxtrace.org
         - domain:assimp.org
         - domain:astrill.com
         - domain:atc.org.au
@@ -2268,6 +2270,7 @@ routing:
         - domain:mediafreakcity.com
         - domain:mediawiki.org
         - domain:medium.com
+        - domain:meee.com.tw
         - domain:meetup.com
         - domain:mega.co.nz
         - domain:mega.io
@@ -2602,6 +2605,7 @@ routing:
         - domain:ooni.org
         - domain:open.firstory.me
         - domain:openai.com
+        - domain:opencritic.com
         - domain:opendemocracy.net
         - domain:openid.net
         - domain:openleaks.org
@@ -3937,6 +3941,7 @@ routing:
         - domain:www.antd.org
         - domain:www.aolnews.com
         - domain:www.bing.com
+        - domain:www.clashverge.dev
         - domain:www.cmoinc.org
         - domain:www.dmm.com
         - domain:www.eastturkistan.net

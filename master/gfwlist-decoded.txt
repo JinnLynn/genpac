@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: AlZpYFJytVWxP02U5wohEw
+! Checksum: TSQFk0fO5K5AxfDz3bSTpg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 18 Feb 2026 13:32:07 +0000
+! Last Modified: Sat, 21 Feb 2026 07:04:51 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1191,6 +1191,7 @@ iipdigital.usembassy.gov
 ||9bis.net
 ||9news.com.au
 !--------------------AA-------------------------
+||akile.io
 ||aljazeera.net
 ||anuneko.com
 ||ai.dev
@@ -1518,6 +1519,7 @@ iipdigital.usembassy.gov
 ||bwh1.net
 ||bypasscensorship.org
 !--------------------CC-------------------------
+||www.clashverge.dev
 ||clementine-player.org
 ||backend-v2.crixet.com
 ||cchostvps.xyz
@@ -2668,6 +2670,7 @@ iipdigital.usembassy.gov
 ||lzjscript.com
 ||lzmtnews.org
 !--------------------MM-------------------------
+||meee.com.tw
 ||mosavi.io
 ||dcs-spotify.megaphone.fm
 ||mij.rip
@@ -2826,6 +2829,7 @@ iipdigital.usembassy.gov
 ||mypopescu.com
 ||myspacecdn.com
 !--------------------NN-------------------------
+||assets.nxtrace.org
 ||nephobox.com
 ||namu.wiki
 ||nirsoft.net
@@ -2929,6 +2933,7 @@ iipdigital.usembassy.gov
 ||nybooks.com
 ||nypost.com
 !--------------------OO-------------------------
+||opencritic.com
 ||ooni.io
 ||ooni.org
 ||files.oaiusercontent.com
