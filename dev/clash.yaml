@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-21 02:30:57
-#! GFWList: 2026-02-18 13:32:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-21 13:00:58
+#! GFWList: 2026-02-21 07:04:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -173,6 +173,7 @@ rules:
   - DOMAIN-SUFFIX,akamaihd.net,PROXY
   - DOMAIN-SUFFIX,akiba-online.com,PROXY
   - DOMAIN-SUFFIX,akiba-web.com,PROXY
+  - DOMAIN-SUFFIX,akile.io,PROXY
   - DOMAIN-SUFFIX,akinator.com,PROXY
   - DOMAIN-SUFFIX,akow.org,PROXY
   - DOMAIN-SUFFIX,alabout.com,PROXY
@@ -307,6 +308,7 @@ rules:
   - DOMAIN-SUFFIX,aspistrategist.org.au,PROXY
   - DOMAIN-SUFFIX,assembla.com,PROXY
   - DOMAIN-SUFFIX,assets.bwbx.io,PROXY
+  - DOMAIN-SUFFIX,assets.nxtrace.org,PROXY
   - DOMAIN-SUFFIX,assimp.org,PROXY
   - DOMAIN-SUFFIX,astrill.com,PROXY
   - DOMAIN-SUFFIX,atc.org.au,PROXY
@@ -2266,6 +2268,7 @@ rules:
   - DOMAIN-SUFFIX,mediafreakcity.com,PROXY
   - DOMAIN-SUFFIX,mediawiki.org,PROXY
   - DOMAIN-SUFFIX,medium.com,PROXY
+  - DOMAIN-SUFFIX,meee.com.tw,PROXY
   - DOMAIN-SUFFIX,meetup.com,PROXY
   - DOMAIN-SUFFIX,mega.co.nz,PROXY
   - DOMAIN-SUFFIX,mega.io,PROXY
@@ -2600,6 +2603,7 @@ rules:
   - DOMAIN-SUFFIX,ooni.org,PROXY
   - DOMAIN-SUFFIX,open.firstory.me,PROXY
   - DOMAIN-SUFFIX,openai.com,PROXY
+  - DOMAIN-SUFFIX,opencritic.com,PROXY
   - DOMAIN-SUFFIX,opendemocracy.net,PROXY
   - DOMAIN-SUFFIX,openid.net,PROXY
   - DOMAIN-SUFFIX,openleaks.org,PROXY
@@ -3935,6 +3939,7 @@ rules:
   - DOMAIN-SUFFIX,www.antd.org,PROXY
   - DOMAIN-SUFFIX,www.aolnews.com,PROXY
   - DOMAIN-SUFFIX,www.bing.com,PROXY
+  - DOMAIN-SUFFIX,www.clashverge.dev,PROXY
   - DOMAIN-SUFFIX,www.cmoinc.org,PROXY
   - DOMAIN-SUFFIX,www.dmm.com,PROXY
   - DOMAIN-SUFFIX,www.eastturkistan.net,PROXY

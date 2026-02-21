@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-21 02:30:57
-#! GFWList: 2026-02-18 13:32:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-21 13:00:58
+#! GFWList: 2026-02-21 07:04:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -137,6 +137,7 @@ payload:
   - DOMAIN-SUFFIX,akamaihd.net
   - DOMAIN-SUFFIX,akiba-online.com
   - DOMAIN-SUFFIX,akiba-web.com
+  - DOMAIN-SUFFIX,akile.io
   - DOMAIN-SUFFIX,akinator.com
   - DOMAIN-SUFFIX,akow.org
   - DOMAIN-SUFFIX,alabout.com
@@ -271,6 +272,7 @@ payload:
   - DOMAIN-SUFFIX,aspistrategist.org.au
   - DOMAIN-SUFFIX,assembla.com
   - DOMAIN-SUFFIX,assets.bwbx.io
+  - DOMAIN-SUFFIX,assets.nxtrace.org
   - DOMAIN-SUFFIX,assimp.org
   - DOMAIN-SUFFIX,astrill.com
   - DOMAIN-SUFFIX,atc.org.au
@@ -2230,6 +2232,7 @@ payload:
   - DOMAIN-SUFFIX,mediafreakcity.com
   - DOMAIN-SUFFIX,mediawiki.org
   - DOMAIN-SUFFIX,medium.com
+  - DOMAIN-SUFFIX,meee.com.tw
   - DOMAIN-SUFFIX,meetup.com
   - DOMAIN-SUFFIX,mega.co.nz
   - DOMAIN-SUFFIX,mega.io
@@ -2564,6 +2567,7 @@ payload:
   - DOMAIN-SUFFIX,ooni.org
   - DOMAIN-SUFFIX,open.firstory.me
   - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,opencritic.com
   - DOMAIN-SUFFIX,opendemocracy.net
   - DOMAIN-SUFFIX,openid.net
   - DOMAIN-SUFFIX,openleaks.org
@@ -3899,6 +3903,7 @@ payload:
   - DOMAIN-SUFFIX,www.antd.org
   - DOMAIN-SUFFIX,www.aolnews.com
   - DOMAIN-SUFFIX,www.bing.com
+  - DOMAIN-SUFFIX,www.clashverge.dev
   - DOMAIN-SUFFIX,www.cmoinc.org
   - DOMAIN-SUFFIX,www.dmm.com
   - DOMAIN-SUFFIX,www.eastturkistan.net
