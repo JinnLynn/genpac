@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-22 02:43:15
-#! GFWList: 2026-02-21 07:04:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-22 13:02:33
+#! GFWList: 2026-02-22 11:11:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3482,6 +3482,7 @@ routing:
         - domain:topsy.com
         - domain:toptip.ca
         - domain:toptoon.net
+        - domain:tor.eff.org
         - domain:torguard.net
         - domain:torlock.com
         - domain:torproject.org
@@ -3635,6 +3636,7 @@ routing:
         - domain:underwoodammo.com
         - domain:unholyknight.com
         - domain:unirule.cloud
+        - domain:uniswap.org
         - domain:unknownspace.org
         - domain:unmineable.com
         - domain:unseen.is
