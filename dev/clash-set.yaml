@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-22 02:43:50
-#! GFWList: 2026-02-21 07:04:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-22 13:03:05
+#! GFWList: 2026-02-22 11:11:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -3444,6 +3444,7 @@ payload:
   - DOMAIN-SUFFIX,topsy.com
   - DOMAIN-SUFFIX,toptip.ca
   - DOMAIN-SUFFIX,toptoon.net
+  - DOMAIN-SUFFIX,tor.eff.org
   - DOMAIN-SUFFIX,torguard.net
   - DOMAIN-SUFFIX,torlock.com
   - DOMAIN-SUFFIX,torproject.org
@@ -3597,6 +3598,7 @@ payload:
   - DOMAIN-SUFFIX,underwoodammo.com
   - DOMAIN-SUFFIX,unholyknight.com
   - DOMAIN-SUFFIX,unirule.cloud
+  - DOMAIN-SUFFIX,uniswap.org
   - DOMAIN-SUFFIX,unknownspace.org
   - DOMAIN-SUFFIX,unmineable.com
   - DOMAIN-SUFFIX,unseen.is
