@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2026-02-24 13:19:40
- * GFWList Last-Modified: 2026-02-22 11:11:24
+ * Generated: 2026-02-25 02:41:17
+ * GFWList Last-Modified: 2026-02-24 13:37:10
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1246,6 +1246,7 @@ var rules = [
             "freebeacon.com",
             "freebrowser.org",
             "freechinaweibo.com",
+            "freedom.gov",
             "freedomhouse.org",
             "freedominfonetweb.wordpress.com",
             "freedomsherald.org",
