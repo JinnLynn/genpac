@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-02-24 13:20:15
-#! GFWList: 2026-02-22 11:11:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-02-25 02:41:49
+#! GFWList: 2026-02-24 13:37:10 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -1203,6 +1203,7 @@ payload:
   - DOMAIN-SUFFIX,freebeacon.com
   - DOMAIN-SUFFIX,freebrowser.org
   - DOMAIN-SUFFIX,freechinaweibo.com
+  - DOMAIN-SUFFIX,freedom.gov
   - DOMAIN-SUFFIX,freedomhouse.org
   - DOMAIN-SUFFIX,freedominfonetweb.wordpress.com
   - DOMAIN-SUFFIX,freedomsherald.org

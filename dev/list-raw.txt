@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-02-24 13:20:12
-! GFWList: 2026-02-22 11:11:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-02-25 02:41:47
+! GFWList: 2026-02-24 13:37:10 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -1233,6 +1233,7 @@
 ||freebeacon.com
 ||freebrowser.org
 ||freechinaweibo.com
+||freedom.gov
 ||freedomhouse.org
 ||freedominfonetweb.wordpress.com
 ||freedomsherald.org
