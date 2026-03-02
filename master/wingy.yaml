@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-01 13:00:53
-#! GFWList: 2026-02-24 13:37:10 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-02 02:38:41
+#! GFWList: 2026-03-02 01:34:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -715,6 +715,7 @@ rule:
         - s,ck101.com
         - s,classicalguitarblog.net
         - s,claude.ai
+        - s,claude.com
         - s,cldr.unicode.org
         - s,clearsurance.com
         - s,clementine-player.org
@@ -3931,7 +3932,6 @@ rule:
         - s,www.hoyolab.com
         - s,www.hustlercash.com
         - s,www.idlcoyote.com
-        - s,www.imdb.com
         - s,www.kindleren.com
         - s,www.lorenzetti.com.br
         - s,www.m-sport.co.uk

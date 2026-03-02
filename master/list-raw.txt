@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-03-01 13:00:50
-! GFWList: 2026-02-24 13:37:10 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-03-02 02:38:38
+! GFWList: 2026-03-02 01:34:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -729,6 +729,7 @@
 ||ck101.com
 ||classicalguitarblog.net
 ||claude.ai
+||claude.com
 ||cldr.unicode.org
 ||clearsurance.com
 ||clementine-player.org
@@ -3945,7 +3946,6 @@
 ||www.hoyolab.com
 ||www.hustlercash.com
 ||www.idlcoyote.com
-||www.imdb.com
 ||www.kindleren.com
 ||www.lorenzetti.com.br
 ||www.m-sport.co.uk
