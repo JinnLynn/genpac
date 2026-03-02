@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-02 02:39:10
-#! GFWList: 2026-03-02 01:34:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-02 13:12:44
+#! GFWList: 2026-03-02 11:25:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -2200,6 +2200,7 @@ payload:
   - DOMAIN-SUFFIX,mangafox.me
   - DOMAIN-SUFFIX,mangmang.run
   - DOMAIN-SUFFIX,manta.com
+  - DOMAIN-SUFFIX,manus.im
   - DOMAIN-SUFFIX,manyvoices.news
   - DOMAIN-SUFFIX,marc.info
   - DOMAIN-SUFFIX,martau.com
