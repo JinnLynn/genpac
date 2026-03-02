@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-02 02:38:38
-#! GFWList: 2026-03-02 01:34:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-02 13:12:09
+#! GFWList: 2026-03-02 11:25:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2238,6 +2238,7 @@ routing:
         - domain:mangafox.me
         - domain:mangmang.run
         - domain:manta.com
+        - domain:manus.im
         - domain:manyvoices.news
         - domain:marc.info
         - domain:martau.com

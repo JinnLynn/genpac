@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-02 02:38:41
-#! GFWList: 2026-03-02 01:34:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-02 13:12:12
+#! GFWList: 2026-03-02 11:25:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2216,6 +2216,7 @@ rule:
         - s,mangafox.me
         - s,mangmang.run
         - s,manta.com
+        - s,manus.im
         - s,manyvoices.news
         - s,marc.info
         - s,martau.com
