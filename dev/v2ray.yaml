@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-01 13:01:21
-#! GFWList: 2026-02-24 13:37:10 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-02 02:39:09
+#! GFWList: 2026-03-02 01:34:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -737,6 +737,7 @@ routing:
         - domain:ck101.com
         - domain:classicalguitarblog.net
         - domain:claude.ai
+        - domain:claude.com
         - domain:cldr.unicode.org
         - domain:clearsurance.com
         - domain:clementine-player.org
@@ -3953,7 +3954,6 @@ routing:
         - domain:www.hoyolab.com
         - domain:www.hustlercash.com
         - domain:www.idlcoyote.com
-        - domain:www.imdb.com
         - domain:www.kindleren.com
         - domain:www.lorenzetti.com.br
         - domain:www.m-sport.co.uk
