@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-03 13:11:07
-#! GFWList: 2026-03-02 11:25:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-04 02:33:57
+#! GFWList: 2026-03-03 14:54:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -252,12 +252,14 @@ payload:
   - DOMAIN-SUFFIX,archives.gov
   - DOMAIN-SUFFIX,arctosia.com
   - DOMAIN-SUFFIX,areca-backup.org
+  - DOMAIN-SUFFIX,arena.ai
   - DOMAIN-SUFFIX,arena.taipei
   - DOMAIN-SUFFIX,arethusa.su
   - DOMAIN-SUFFIX,arlingtoncemetery.mil
   - DOMAIN-SUFFIX,arte.tv
   - DOMAIN-SUFFIX,artstation.com
   - DOMAIN-SUFFIX,arvanstorage.ir
+  - DOMAIN-SUFFIX,arweave.org
   - DOMAIN-SUFFIX,asacp.org
   - DOMAIN-SUFFIX,asiaharvest.org
   - DOMAIN-SUFFIX,asianage.com
@@ -3864,6 +3866,7 @@ payload:
   - DOMAIN-SUFFIX,wiredpen.com
   - DOMAIN-SUFFIX,wireguard.com
   - DOMAIN-SUFFIX,wisevid.com
+  - DOMAIN-SUFFIX,wispbyte.com
   - DOMAIN-SUFFIX,withgoogle.com
   - DOMAIN-SUFFIX,withyoutube.com
   - DOMAIN-SUFFIX,witopia.net

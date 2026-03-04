@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-03-03 13:11:06
-! GFWList: 2026-03-02 11:25:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-03-04 02:33:54
+! GFWList: 2026-03-03 14:54:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -282,12 +282,14 @@
 ||archives.gov
 ||arctosia.com
 ||areca-backup.org
+||arena.ai
 ||arena.taipei
 ||arethusa.su
 ||arlingtoncemetery.mil
 ||arte.tv
 ||artstation.com
 ||arvanstorage.ir
+||arweave.org
 ||asacp.org
 ||asiaharvest.org
 ||asianage.com
@@ -3894,6 +3896,7 @@
 ||wiredpen.com
 ||wireguard.com
 ||wisevid.com
+||wispbyte.com
 ||withgoogle.com
 ||withyoutube.com
 ||witopia.net

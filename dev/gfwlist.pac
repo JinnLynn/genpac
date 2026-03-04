@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-03-03 13:11:06
- * GFWList Last-Modified: 2026-03-02 11:25:14
+ * Generated: 2026-03-04 02:33:54
+ * GFWList Last-Modified: 2026-03-03 14:54:07
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -295,12 +295,14 @@ var rules = [
             "archives.gov",
             "arctosia.com",
             "areca-backup.org",
+            "arena.ai",
             "arena.taipei",
             "arethusa.su",
             "arlingtoncemetery.mil",
             "arte.tv",
             "artstation.com",
             "arvanstorage.ir",
+            "arweave.org",
             "asacp.org",
             "asiaharvest.org",
             "asianage.com",
@@ -3907,6 +3909,7 @@ var rules = [
             "wiredpen.com",
             "wireguard.com",
             "wisevid.com",
+            "wispbyte.com",
             "withgoogle.com",
             "withyoutube.com",
             "witopia.net",

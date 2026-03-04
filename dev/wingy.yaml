@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-03 13:11:07
-#! GFWList: 2026-03-02 11:25:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-04 02:33:57
+#! GFWList: 2026-03-03 14:54:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -268,12 +268,14 @@ rule:
         - s,archives.gov
         - s,arctosia.com
         - s,areca-backup.org
+        - s,arena.ai
         - s,arena.taipei
         - s,arethusa.su
         - s,arlingtoncemetery.mil
         - s,arte.tv
         - s,artstation.com
         - s,arvanstorage.ir
+        - s,arweave.org
         - s,asacp.org
         - s,asiaharvest.org
         - s,asianage.com
@@ -3880,6 +3882,7 @@ rule:
         - s,wiredpen.com
         - s,wireguard.com
         - s,wisevid.com
+        - s,wispbyte.com
         - s,withgoogle.com
         - s,withyoutube.com
         - s,witopia.net

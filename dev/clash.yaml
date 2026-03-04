@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-03 13:11:07
-#! GFWList: 2026-03-02 11:25:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-04 02:33:57
+#! GFWList: 2026-03-03 14:54:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -288,12 +288,14 @@ rules:
   - DOMAIN-SUFFIX,archives.gov,PROXY
   - DOMAIN-SUFFIX,arctosia.com,PROXY
   - DOMAIN-SUFFIX,areca-backup.org,PROXY
+  - DOMAIN-SUFFIX,arena.ai,PROXY
   - DOMAIN-SUFFIX,arena.taipei,PROXY
   - DOMAIN-SUFFIX,arethusa.su,PROXY
   - DOMAIN-SUFFIX,arlingtoncemetery.mil,PROXY
   - DOMAIN-SUFFIX,arte.tv,PROXY
   - DOMAIN-SUFFIX,artstation.com,PROXY
   - DOMAIN-SUFFIX,arvanstorage.ir,PROXY
+  - DOMAIN-SUFFIX,arweave.org,PROXY
   - DOMAIN-SUFFIX,asacp.org,PROXY
   - DOMAIN-SUFFIX,asiaharvest.org,PROXY
   - DOMAIN-SUFFIX,asianage.com,PROXY
@@ -3900,6 +3902,7 @@ rules:
   - DOMAIN-SUFFIX,wiredpen.com,PROXY
   - DOMAIN-SUFFIX,wireguard.com,PROXY
   - DOMAIN-SUFFIX,wisevid.com,PROXY
+  - DOMAIN-SUFFIX,wispbyte.com,PROXY
   - DOMAIN-SUFFIX,withgoogle.com,PROXY
   - DOMAIN-SUFFIX,withyoutube.com,PROXY
   - DOMAIN-SUFFIX,witopia.net,PROXY
