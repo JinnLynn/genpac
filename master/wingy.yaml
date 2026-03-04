@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-04 02:33:25
-#! GFWList: 2026-03-03 14:54:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-04 13:09:37
+#! GFWList: 2026-03-04 08:04:06 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1012,6 +1012,7 @@ rule:
         - s,ebtcbank.com
         - s,ecfa.org.tw
         - s,ecimg.tw
+        - s,economist.com
         - s,edgecastcdn.net
         - s,edubridge.com
         - s,edx-cdn.org
@@ -4094,7 +4095,6 @@ rule:
         - s,z-library.sk
         - s,zalmos.com
         - s,zamimg.com
-        - s,zaobao.com.sg
         - s,zaochenbao.com
         - s,zattoo.com
         - s,zb.com
