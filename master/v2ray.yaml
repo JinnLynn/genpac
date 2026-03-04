@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-03 13:10:33
-#! GFWList: 2026-03-02 11:25:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-04 02:33:22
+#! GFWList: 2026-03-03 14:54:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -290,12 +290,14 @@ routing:
         - domain:archives.gov
         - domain:arctosia.com
         - domain:areca-backup.org
+        - domain:arena.ai
         - domain:arena.taipei
         - domain:arethusa.su
         - domain:arlingtoncemetery.mil
         - domain:arte.tv
         - domain:artstation.com
         - domain:arvanstorage.ir
+        - domain:arweave.org
         - domain:asacp.org
         - domain:asiaharvest.org
         - domain:asianage.com
@@ -3902,6 +3904,7 @@ routing:
         - domain:wiredpen.com
         - domain:wireguard.com
         - domain:wisevid.com
+        - domain:wispbyte.com
         - domain:withgoogle.com
         - domain:withyoutube.com
         - domain:witopia.net
