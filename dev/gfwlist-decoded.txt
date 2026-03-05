@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: YIFj0l9Cz3i8mEtV4MfAsQ
+! Checksum: I8kMdry1y86CH4Klp4jzEA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 04 Mar 2026 08:04:06 +0000
+! Last Modified: Thu, 05 Mar 2026 12:41:38 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -25,7 +25,6 @@
 ||500px.org
 !--ehentai
 |http://85.17.73.31/
-!--||adorama.com
 ||afreecatv.com
 ||agnesb.fr
 ||airitilibrary.com
@@ -1753,6 +1752,7 @@ iipdigital.usembassy.gov
 ||mike.cz.cc
 ||nic.cz.cc
 !--------------------DD-------------------------
+||download.dappcdn.com
 ||dazn.com
 ||darmau.co
 ||dockerstatus.com
