@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2026-03-05 13:13:27
- * GFWList Last-Modified: 2026-03-05 12:41:38
+ * Generated: 2026-03-06 02:34:07
+ * GFWList Last-Modified: 2026-03-06 01:59:13
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -20,6 +20,7 @@ var rules = [
             "checkin.gstatic.com",
             "ci.android.com",
             "clientservices.googleapis.com",
+            "cn.investing.com",
             "connectivitycheck.gstatic.com",
             "crl.pki.goog",
             "csi.gstatic.com",
@@ -960,6 +961,7 @@ var rules = [
             "dmcdn.net",
             "dmhy.org",
             "dmm.co.jp",
+            "dns.cloudflare.com",
             "dns2go.com",
             "dnscrypt.org",
             "dnssec.net",
@@ -1546,6 +1548,7 @@ var rules = [
             "google.cv",
             "google.cz",
             "google.de",
+            "google.dev",
             "google.dk",
             "google.dm",
             "google.dz",
@@ -1958,6 +1961,7 @@ var rules = [
             "interseclab.org",
             "inthenameofconfuciusmovie.com",
             "investigating.wordpress.com",
+            "investing.com",
             "invidio.us",
             "inxian.com",
             "ipdefenseforum.com",

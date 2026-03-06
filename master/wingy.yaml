@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-05 13:13:29
-#! GFWList: 2026-03-05 12:41:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-06 02:34:10
+#! GFWList: 2026-03-06 01:59:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -933,6 +933,7 @@ rule:
         - s,dmcdn.net
         - s,dmhy.org
         - s,dmm.co.jp
+        - s,dns.cloudflare.com
         - s,dns2go.com
         - s,dnscrypt.org
         - s,dnssec.net
@@ -1519,6 +1520,7 @@ rule:
         - s,google.cv
         - s,google.cz
         - s,google.de
+        - s,google.dev
         - s,google.dk
         - s,google.dm
         - s,google.dz
@@ -1931,6 +1933,7 @@ rule:
         - s,interseclab.org
         - s,inthenameofconfuciusmovie.com
         - s,investigating.wordpress.com
+        - s,investing.com
         - s,invidio.us
         - s,inxian.com
         - s,ipdefenseforum.com

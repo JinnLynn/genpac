@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-03-05 13:13:27
-! GFWList: 2026-03-05 12:41:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-03-06 02:34:08
+! GFWList: 2026-03-06 01:59:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -9,6 +9,7 @@
 @@||checkin.gstatic.com
 @@||ci.android.com
 @@||clientservices.googleapis.com
+@@||cn.investing.com
 @@||connectivitycheck.gstatic.com
 @@||crl.pki.goog
 @@||csi.gstatic.com
@@ -947,6 +948,7 @@
 ||dmcdn.net
 ||dmhy.org
 ||dmm.co.jp
+||dns.cloudflare.com
 ||dns2go.com
 ||dnscrypt.org
 ||dnssec.net
@@ -1533,6 +1535,7 @@
 ||google.cv
 ||google.cz
 ||google.de
+||google.dev
 ||google.dk
 ||google.dm
 ||google.dz
@@ -1945,6 +1948,7 @@
 ||interseclab.org
 ||inthenameofconfuciusmovie.com
 ||investigating.wordpress.com
+||investing.com
 ||invidio.us
 ||inxian.com
 ||ipdefenseforum.com
