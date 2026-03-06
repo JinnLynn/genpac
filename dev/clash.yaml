@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-05 13:14:01
-#! GFWList: 2026-03-05 12:41:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-06 02:34:41
+#! GFWList: 2026-03-06 01:59:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -15,6 +15,7 @@ rules:
   - DOMAIN-SUFFIX,checkin.gstatic.com,DIRECT
   - DOMAIN-SUFFIX,ci.android.com,DIRECT
   - DOMAIN-SUFFIX,clientservices.googleapis.com,DIRECT
+  - DOMAIN-SUFFIX,cn.investing.com,DIRECT
   - DOMAIN-SUFFIX,connectivitycheck.gstatic.com,DIRECT
   - DOMAIN-SUFFIX,crl.pki.goog,DIRECT
   - DOMAIN-SUFFIX,csi.gstatic.com,DIRECT
@@ -953,6 +954,7 @@ rules:
   - DOMAIN-SUFFIX,dmcdn.net,PROXY
   - DOMAIN-SUFFIX,dmhy.org,PROXY
   - DOMAIN-SUFFIX,dmm.co.jp,PROXY
+  - DOMAIN-SUFFIX,dns.cloudflare.com,PROXY
   - DOMAIN-SUFFIX,dns2go.com,PROXY
   - DOMAIN-SUFFIX,dnscrypt.org,PROXY
   - DOMAIN-SUFFIX,dnssec.net,PROXY
@@ -1539,6 +1541,7 @@ rules:
   - DOMAIN-SUFFIX,google.cv,PROXY
   - DOMAIN-SUFFIX,google.cz,PROXY
   - DOMAIN-SUFFIX,google.de,PROXY
+  - DOMAIN-SUFFIX,google.dev,PROXY
   - DOMAIN-SUFFIX,google.dk,PROXY
   - DOMAIN-SUFFIX,google.dm,PROXY
   - DOMAIN-SUFFIX,google.dz,PROXY
@@ -1951,6 +1954,7 @@ rules:
   - DOMAIN-SUFFIX,interseclab.org,PROXY
   - DOMAIN-SUFFIX,inthenameofconfuciusmovie.com,PROXY
   - DOMAIN-SUFFIX,investigating.wordpress.com,PROXY
+  - DOMAIN-SUFFIX,investing.com,PROXY
   - DOMAIN-SUFFIX,invidio.us,PROXY
   - DOMAIN-SUFFIX,inxian.com,PROXY
   - DOMAIN-SUFFIX,ipdefenseforum.com,PROXY

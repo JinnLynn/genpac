@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-05 13:13:58
-#! GFWList: 2026-03-05 12:41:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-06 02:34:38
+#! GFWList: 2026-03-06 01:59:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -14,6 +14,7 @@ routing:
         - domain:checkin.gstatic.com
         - domain:ci.android.com
         - domain:clientservices.googleapis.com
+        - domain:cn.investing.com
         - domain:connectivitycheck.gstatic.com
         - domain:crl.pki.goog
         - domain:csi.gstatic.com
@@ -955,6 +956,7 @@ routing:
         - domain:dmcdn.net
         - domain:dmhy.org
         - domain:dmm.co.jp
+        - domain:dns.cloudflare.com
         - domain:dns2go.com
         - domain:dnscrypt.org
         - domain:dnssec.net
@@ -1541,6 +1543,7 @@ routing:
         - domain:google.cv
         - domain:google.cz
         - domain:google.de
+        - domain:google.dev
         - domain:google.dk
         - domain:google.dm
         - domain:google.dz
@@ -1953,6 +1956,7 @@ routing:
         - domain:interseclab.org
         - domain:inthenameofconfuciusmovie.com
         - domain:investigating.wordpress.com
+        - domain:investing.com
         - domain:invidio.us
         - domain:inxian.com
         - domain:ipdefenseforum.com

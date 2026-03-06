@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: I8kMdry1y86CH4Klp4jzEA
+! Checksum: AVPwRZo73rDGUekrAjfQ0w
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Thu, 05 Mar 2026 12:41:38 +0000
+! Last Modified: Fri, 06 Mar 2026 01:59:13 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -594,6 +594,7 @@ www.aolnews.com
 ||workers.dev
 ||one.one.one.one
 ||cloudflare-dns.com
+||dns.cloudflare.com
 !!---Dynu---
 ||dynu.com
 !!---Facebook---
@@ -634,6 +635,7 @@ www.aolnews.com
 !!---FTChinese---
 ||ftchinese.com
 !!---Google---
+||google.dev
 ||ai.studio
 ||chromium.org
 ||goog
@@ -2367,6 +2369,7 @@ iipdigital.usembassy.gov
 ||hypothes.is
 ||ebook.hyread.com.tw
 !--------------------II-------------------------
+||investing.com
 ||idcflare.com
 ||interseclab.org
 ||ipify.org
@@ -4256,6 +4259,7 @@ iipdigital.usembassy.gov
 !###########Supplemental List Start#############
 !#############Supplemental List End#############
 !################Whitelist Start################
+@@||cn.investing.com
 @@||www.typepad.com
 @@||static.typepad.com
 @@||ci.android.com

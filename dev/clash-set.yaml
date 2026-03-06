@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-05 13:14:02
-#! GFWList: 2026-03-05 12:41:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-06 02:34:41
+#! GFWList: 2026-03-06 01:59:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -917,6 +917,7 @@ payload:
   - DOMAIN-SUFFIX,dmcdn.net
   - DOMAIN-SUFFIX,dmhy.org
   - DOMAIN-SUFFIX,dmm.co.jp
+  - DOMAIN-SUFFIX,dns.cloudflare.com
   - DOMAIN-SUFFIX,dns2go.com
   - DOMAIN-SUFFIX,dnscrypt.org
   - DOMAIN-SUFFIX,dnssec.net
@@ -1503,6 +1504,7 @@ payload:
   - DOMAIN-SUFFIX,google.cv
   - DOMAIN-SUFFIX,google.cz
   - DOMAIN-SUFFIX,google.de
+  - DOMAIN-SUFFIX,google.dev
   - DOMAIN-SUFFIX,google.dk
   - DOMAIN-SUFFIX,google.dm
   - DOMAIN-SUFFIX,google.dz
@@ -1915,6 +1917,7 @@ payload:
   - DOMAIN-SUFFIX,interseclab.org
   - DOMAIN-SUFFIX,inthenameofconfuciusmovie.com
   - DOMAIN-SUFFIX,investigating.wordpress.com
+  - DOMAIN-SUFFIX,investing.com
   - DOMAIN-SUFFIX,invidio.us
   - DOMAIN-SUFFIX,inxian.com
   - DOMAIN-SUFFIX,ipdefenseforum.com
