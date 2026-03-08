@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-08 02:41:09
-#! GFWList: 2026-03-06 01:59:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-08 13:01:22
+#! GFWList: 2026-03-08 10:15:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3038,6 +3038,7 @@
 (^|\.)shenzhoufilm\.com$
 (^|\.)shenzhouzhengdao\.org$
 (^|\.)shiksha\.com$
+(^|\.)shitjournal\.org$
 (^|\.)shixiao\.org$
 (^|\.)shizhao\.org$
 (^|\.)shodanhq\.com$
