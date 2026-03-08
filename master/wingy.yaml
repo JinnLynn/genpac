@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-08 02:40:39
-#! GFWList: 2026-03-06 01:59:13 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-08 13:00:55
+#! GFWList: 2026-03-08 10:15:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3051,6 +3051,7 @@ rule:
         - s,shenzhoufilm.com
         - s,shenzhouzhengdao.org
         - s,shiksha.com
+        - s,shitjournal.org
         - s,shixiao.org
         - s,shizhao.org
         - s,shodanhq.com
