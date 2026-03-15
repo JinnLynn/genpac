@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-03-14 13:05:36
-! GFWList: 2026-03-08 10:15:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-03-15 02:55:33
+! GFWList: 2026-03-14 13:06:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -3990,6 +3990,7 @@
 ||xcafe.in
 ||xcancel.com
 ||xcity.jp
+||xdaforums.com
 ||xerotica.com
 ||xfinity.com
 ||xfxssr.me
