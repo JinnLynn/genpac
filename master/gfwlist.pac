@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2026-03-14 13:05:04
- * GFWList Last-Modified: 2026-03-08 10:15:05
+ * Generated: 2026-03-15 02:55:03
+ * GFWList Last-Modified: 2026-03-14 13:06:19
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -4003,6 +4003,7 @@ var rules = [
             "xcafe.in",
             "xcancel.com",
             "xcity.jp",
+            "xdaforums.com",
             "xerotica.com",
             "xfinity.com",
             "xfxssr.me",

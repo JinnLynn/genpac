@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-14 13:05:04
-#! GFWList: 2026-03-08 10:15:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-15 02:55:03
+#! GFWList: 2026-03-14 13:06:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3998,6 +3998,7 @@ routing:
         - domain:xcafe.in
         - domain:xcancel.com
         - domain:xcity.jp
+        - domain:xdaforums.com
         - domain:xerotica.com
         - domain:xfinity.com
         - domain:xfxssr.me

@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-14 13:05:07
-#! GFWList: 2026-03-08 10:15:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-15 02:55:05
+#! GFWList: 2026-03-14 13:06:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3975,6 +3975,7 @@ rule:
         - s,xcafe.in
         - s,xcancel.com
         - s,xcity.jp
+        - s,xdaforums.com
         - s,xerotica.com
         - s,xfinity.com
         - s,xfxssr.me
