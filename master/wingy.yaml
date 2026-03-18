@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-18 02:44:33
-#! GFWList: 2026-03-14 13:06:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-18 13:25:44
+#! GFWList: 2026-03-18 08:25:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -95,6 +95,7 @@ rule:
         - s,a-normal-day.com
         - s,a248.e.akamai.net
         - s,aamacau.com
+        - s,aave.com
         - s,abc.net.au
         - s,abc.xyz
         - s,abebooks.co.uk

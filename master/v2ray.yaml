@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-18 02:44:31
-#! GFWList: 2026-03-14 13:06:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-18 13:25:43
+#! GFWList: 2026-03-18 08:25:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -118,6 +118,7 @@ routing:
         - domain:a-normal-day.com
         - domain:a248.e.akamai.net
         - domain:aamacau.com
+        - domain:aave.com
         - domain:abc.net.au
         - domain:abc.xyz
         - domain:abebooks.co.uk
