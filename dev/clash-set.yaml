@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-18 02:45:01
-#! GFWList: 2026-03-14 13:06:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-18 13:26:14
+#! GFWList: 2026-03-18 08:25:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -79,6 +79,7 @@ payload:
   - DOMAIN-SUFFIX,a-normal-day.com
   - DOMAIN-SUFFIX,a248.e.akamai.net
   - DOMAIN-SUFFIX,aamacau.com
+  - DOMAIN-SUFFIX,aave.com
   - DOMAIN-SUFFIX,abc.net.au
   - DOMAIN-SUFFIX,abc.xyz
   - DOMAIN-SUFFIX,abebooks.co.uk

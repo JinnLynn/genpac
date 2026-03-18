@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: Cd+V2uQwyCuL8fPCEX9Qgg
+! Checksum: k1NkRpLLDEmtYYW5xCBgMg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 14 Mar 2026 13:06:19 +0000
+! Last Modified: Wed, 18 Mar 2026 08:25:59 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1192,6 +1192,7 @@ iipdigital.usembassy.gov
 ||9bis.net
 ||9news.com.au
 !--------------------AA-------------------------
+||aave.com
 ||arweave.org
 ||arena.ai
 ||akile.io
