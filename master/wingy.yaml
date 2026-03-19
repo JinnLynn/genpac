@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-19 02:46:21
-#! GFWList: 2026-03-18 08:25:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-19 13:19:13
+#! GFWList: 2026-03-19 05:49:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2559,8 +2559,10 @@ rule:
         - s,ohmyrss.com
         - s,ok.ru
         - s,okayfreedom.com
+        - s,okcoin.com
         - s,okex.com
         - s,okk.tw
+        - s,oklink.com
         - s,okpool.me
         - s,okx.com
         - s,old.honeynet.org
