@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-03-19 02:46:52
- * GFWList Last-Modified: 2026-03-18 08:25:59
+ * Generated: 2026-03-19 13:19:42
+ * GFWList Last-Modified: 2026-03-19 05:49:29
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -2587,8 +2587,10 @@ var rules = [
             "ohmyrss.com",
             "ok.ru",
             "okayfreedom.com",
+            "okcoin.com",
             "okex.com",
             "okk.tw",
+            "oklink.com",
             "okpool.me",
             "okx.com",
             "old.honeynet.org",
