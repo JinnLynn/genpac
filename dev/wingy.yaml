@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-20 02:37:22
-#! GFWList: 2026-03-19 05:49:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-20 13:12:53
+#! GFWList: 2026-03-20 09:23:10 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -702,6 +702,7 @@ rule:
         - s,chromestatus.com
         - s,chromium.org
         - s,ci-en.jp
+        - s,cia.gov
         - s,cici.com
         - s,ciciai.com
         - s,cirosantilli.com
