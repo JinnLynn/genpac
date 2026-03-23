@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-23 02:47:35
-#! GFWList: 2026-03-21 10:48:14 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-23 13:21:36
+#! GFWList: 2026-03-23 04:40:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -2949,6 +2949,7 @@ payload:
   - DOMAIN-SUFFIX,rutracker.org
   - DOMAIN-SUFFIX,rxhj.net
   - DOMAIN-SUFFIX,s-cute.com
+  - DOMAIN-SUFFIX,s.rmimg.com
   - DOMAIN-SUFFIX,s.yimg.com
   - DOMAIN-SUFFIX,s3-ap-*.amazonaws.com
   - DOMAIN-SUFFIX,s3-ap-northeast-1.amazonaws.com
