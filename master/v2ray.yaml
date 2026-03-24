@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-24 02:38:31
-#! GFWList: 2026-03-23 04:40:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-24 13:24:49
+#! GFWList: 2026-03-24 04:45:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -4024,6 +4024,7 @@ routing:
         - domain:xm.com
         - domain:xml-training-guide.com
         - domain:xn--11xs86f.icu
+        - domain:xn--1jqvh729avzfcy2d8ummib.com
         - domain:xn--4gq171p.com
         - domain:xn--9iqy04a7fi01l.com
         - domain:xn--9pr62r24a.com
