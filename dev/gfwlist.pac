@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-03-24 02:38:57
- * GFWList Last-Modified: 2026-03-23 04:40:29
+ * Generated: 2026-03-24 13:25:16
+ * GFWList Last-Modified: 2026-03-24 04:45:53
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -4029,6 +4029,7 @@ var rules = [
             "xm.com",
             "xml-training-guide.com",
             "xn--11xs86f.icu",
+            "xn--1jqvh729avzfcy2d8ummib.com",
             "xn--4gq171p.com",
             "xn--9iqy04a7fi01l.com",
             "xn--9pr62r24a.com",
