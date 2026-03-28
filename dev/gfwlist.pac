@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-03-27 13:19:41
- * GFWList Last-Modified: 2026-03-26 04:54:28
+ * Generated: 2026-03-28 02:43:07
+ * GFWList Last-Modified: 2026-03-27 14:17:40
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -2993,7 +2993,6 @@ var rules = [
             "rutracker.org",
             "rxhj.net",
             "s-cute.com",
-            "s.rmimg.com",
             "s.yimg.com",
             "s3-ap-*.amazonaws.com",
             "s3-ap-northeast-1.amazonaws.com",

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-27 13:19:46
-#! GFWList: 2026-03-26 04:54:28 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-28 02:43:10
+#! GFWList: 2026-03-27 14:17:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2965,7 +2965,6 @@ rule:
         - s,rutracker.org
         - s,rxhj.net
         - s,s-cute.com
-        - s,s.rmimg.com
         - s,s.yimg.com
         - s,s3-ap-*.amazonaws.com
         - s,s3-ap-northeast-1.amazonaws.com
