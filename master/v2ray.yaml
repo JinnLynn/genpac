@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-03-27 13:19:08
-#! GFWList: 2026-03-26 04:54:28 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-03-28 02:42:41
+#! GFWList: 2026-03-27 14:17:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2988,7 +2988,6 @@ routing:
         - domain:rutracker.org
         - domain:rxhj.net
         - domain:s-cute.com
-        - domain:s.rmimg.com
         - domain:s.yimg.com
         - domain:s3-ap-*.amazonaws.com
         - domain:s3-ap-northeast-1.amazonaws.com
