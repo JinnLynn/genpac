@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-03 13:16:16
-#! GFWList: 2026-03-27 14:17:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-04 02:41:30
+#! GFWList: 2026-04-03 14:25:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2637,6 +2637,7 @@ routing:
         - domain:orientaldaily.com.my
         - domain:orn.jp
         - domain:osfoora.com
+        - domain:osmand.net
         - domain:otcbtc.com
         - domain:otto.de
         - domain:ourdearamy.com

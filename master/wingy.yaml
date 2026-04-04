@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-03 13:16:17
-#! GFWList: 2026-03-27 14:17:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-04 02:41:33
+#! GFWList: 2026-04-03 14:25:42 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2614,6 +2614,7 @@ rule:
         - s,orientaldaily.com.my
         - s,orn.jp
         - s,osfoora.com
+        - s,osmand.net
         - s,otcbtc.com
         - s,otto.de
         - s,ourdearamy.com
