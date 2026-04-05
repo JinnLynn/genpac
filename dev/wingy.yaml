@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-05 03:17:57
-#! GFWList: 2026-04-04 02:42:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-05 13:10:56
+#! GFWList: 2026-04-05 10:54:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -256,6 +256,7 @@ rule:
         - s,appspot.com
         - s,appsto.re
         - s,aptoide.com
+        - s,archive-it.org
         - s,archive.fo
         - s,archive.is
         - s,archive.li
@@ -936,6 +937,7 @@ rule:
         - s,dmhy.org
         - s,dmm.co.jp
         - s,dns.cloudflare.com
+        - s,dns.sb
         - s,dns2go.com
         - s,dnscrypt.org
         - s,dnssec.net
@@ -946,6 +948,7 @@ rule:
         - s,dockerstatus.com
         - s,docs.new
         - s,documentingreality.com
+        - s,doh.sb
         - s,dolc.de
         - s,dolf.org.hk
         - s,dongtaiwang.com
@@ -953,6 +956,7 @@ rule:
         - s,doom9.org
         - s,doosho.com
         - s,doourbest.org
+        - s,dot.sb
         - s,dotplane.com
         - s,dotsub.com
         - s,dotvpn.com
