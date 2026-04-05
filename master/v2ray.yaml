@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-05 03:17:17
-#! GFWList: 2026-04-04 02:42:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-05 13:10:24
+#! GFWList: 2026-04-05 10:54:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -279,6 +279,7 @@ routing:
         - domain:appspot.com
         - domain:appsto.re
         - domain:aptoide.com
+        - domain:archive-it.org
         - domain:archive.fo
         - domain:archive.is
         - domain:archive.li
@@ -959,6 +960,7 @@ routing:
         - domain:dmhy.org
         - domain:dmm.co.jp
         - domain:dns.cloudflare.com
+        - domain:dns.sb
         - domain:dns2go.com
         - domain:dnscrypt.org
         - domain:dnssec.net
@@ -969,6 +971,7 @@ routing:
         - domain:dockerstatus.com
         - domain:docs.new
         - domain:documentingreality.com
+        - domain:doh.sb
         - domain:dolc.de
         - domain:dolf.org.hk
         - domain:dongtaiwang.com
@@ -976,6 +979,7 @@ routing:
         - domain:doom9.org
         - domain:doosho.com
         - domain:doourbest.org
+        - domain:dot.sb
         - domain:dotplane.com
         - domain:dotsub.com
         - domain:dotvpn.com

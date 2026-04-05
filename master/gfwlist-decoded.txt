@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: YsbfQTRntvDP/EcikEcuRg
+! Checksum: gFqyfhWUk0aB0VUz6waHwA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 04 Apr 2026 02:42:53 +0000
+! Last Modified: Sun, 05 Apr 2026 10:54:41 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1194,6 +1194,7 @@ iipdigital.usembassy.gov
 ||9bis.net
 ||9news.com.au
 !--------------------AA-------------------------
+||archive-it.org
 ||aave.com
 ||arweave.org
 ||arena.ai
@@ -1758,6 +1759,9 @@ iipdigital.usembassy.gov
 ||mike.cz.cc
 ||nic.cz.cc
 !--------------------DD-------------------------
+||dns.sb
+||doh.sb
+||dot.sb
 ||download.dappcdn.com
 ||dazn.com
 ||darmau.co
