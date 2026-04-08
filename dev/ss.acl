@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-08 02:55:25
-#! GFWList: 2026-04-07 13:58:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-08 13:45:54
+#! GFWList: 2026-04-08 04:08:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -2253,7 +2253,6 @@
 (^|\.)mediawiki\.org$
 (^|\.)medium\.com$
 (^|\.)meee\.com\.tw$
-(^|\.)meetup\.com$
 (^|\.)mega\.co\.nz$
 (^|\.)mega\.io$
 (^|\.)mega\.nz$
@@ -2321,6 +2320,7 @@
 (^|\.)mirrormedia\.mg$
 (^|\.)missav\.com$
 (^|\.)missav\.ws$
+(^|\.)mistral\.ai$
 (^|\.)mitbbs\.com$
 (^|\.)miuipolska\.pl$
 (^|\.)mixero\.com$
@@ -2827,7 +2827,6 @@
 (^|\.)putty\.org$
 (^|\.)pximg\.net$
 (^|\.)python\.com\.tw$
-(^|\.)pytorch\.org$
 (^|\.)qbittorrent\.org$
 (^|\.)qgirl\.com\.tw$
 (^|\.)qi-gong\.me$

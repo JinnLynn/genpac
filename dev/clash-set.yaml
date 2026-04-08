@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-08 02:55:27
-#! GFWList: 2026-04-07 13:58:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-08 13:45:56
+#! GFWList: 2026-04-08 04:08:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -2250,7 +2250,6 @@ payload:
   - DOMAIN-SUFFIX,mediawiki.org
   - DOMAIN-SUFFIX,medium.com
   - DOMAIN-SUFFIX,meee.com.tw
-  - DOMAIN-SUFFIX,meetup.com
   - DOMAIN-SUFFIX,mega.co.nz
   - DOMAIN-SUFFIX,mega.io
   - DOMAIN-SUFFIX,mega.nz
@@ -2318,6 +2317,7 @@ payload:
   - DOMAIN-SUFFIX,mirrormedia.mg
   - DOMAIN-SUFFIX,missav.com
   - DOMAIN-SUFFIX,missav.ws
+  - DOMAIN-SUFFIX,mistral.ai
   - DOMAIN-SUFFIX,mitbbs.com
   - DOMAIN-SUFFIX,miuipolska.pl
   - DOMAIN-SUFFIX,mixero.com
@@ -2824,7 +2824,6 @@ payload:
   - DOMAIN-SUFFIX,putty.org
   - DOMAIN-SUFFIX,pximg.net
   - DOMAIN-SUFFIX,python.com.tw
-  - DOMAIN-SUFFIX,pytorch.org
   - DOMAIN-SUFFIX,qbittorrent.org
   - DOMAIN-SUFFIX,qgirl.com.tw
   - DOMAIN-SUFFIX,qi-gong.me

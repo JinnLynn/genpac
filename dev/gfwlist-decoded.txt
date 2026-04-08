@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: zUdkh83KQoyOM6I30TyB+w
+! Checksum: a+fAwcW2UKOyO48Mu9rI0A
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 07 Apr 2026 13:58:23 +0000
+! Last Modified: Wed, 08 Apr 2026 04:08:01 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -211,7 +211,6 @@
 ||primevideo.com
 ||proyectoclubes.com
 ||pure18.com
-||pytorch.org
 ||qq.co.za
 ||r18.com
 |http://radiko.jp
@@ -2686,6 +2685,7 @@ iipdigital.usembassy.gov
 ||lzjscript.com
 ||lzmtnews.org
 !--------------------MM-------------------------
+||mistral.ai
 ||manus.im
 ||meee.com.tw
 ||mosavi.io
@@ -2733,7 +2733,6 @@ iipdigital.usembassy.gov
 ||mediachinese.com
 ||mediafreakcity.com
 ||medium.com
-||meetup.com
 ||mega.co.nz
 ||mega.io
 ||mega.nz
