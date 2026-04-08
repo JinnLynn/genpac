@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-08 02:55:00
-#! GFWList: 2026-04-07 13:58:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-08 13:45:24
+#! GFWList: 2026-04-08 04:08:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2290,7 +2290,6 @@ routing:
         - domain:mediawiki.org
         - domain:medium.com
         - domain:meee.com.tw
-        - domain:meetup.com
         - domain:mega.co.nz
         - domain:mega.io
         - domain:mega.nz
@@ -2358,6 +2357,7 @@ routing:
         - domain:mirrormedia.mg
         - domain:missav.com
         - domain:missav.ws
+        - domain:mistral.ai
         - domain:mitbbs.com
         - domain:miuipolska.pl
         - domain:mixero.com
@@ -2864,7 +2864,6 @@ routing:
         - domain:putty.org
         - domain:pximg.net
         - domain:python.com.tw
-        - domain:pytorch.org
         - domain:qbittorrent.org
         - domain:qgirl.com.tw
         - domain:qi-gong.me
