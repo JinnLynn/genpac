@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: gFqyfhWUk0aB0VUz6waHwA
+! Checksum: zUdkh83KQoyOM6I30TyB+w
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 05 Apr 2026 10:54:41 +0000
+! Last Modified: Tue, 07 Apr 2026 13:58:23 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -693,6 +693,7 @@ www.aolnews.com
 ||duck.com
 ||feedburner.com
 ||firebaseio.com
+||crashlytics.com
 ||g.co
 ||gcr.io
 ||get.app
@@ -4272,6 +4273,7 @@ iipdigital.usembassy.gov
 !###########Supplemental List Start#############
 !#############Supplemental List End#############
 !################Whitelist Start################
+@@||firebase-settings.crashlytics.com
 @@||cn.investing.com
 @@||www.typepad.com
 @@||static.typepad.com
