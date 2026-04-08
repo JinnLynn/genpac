@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-07 13:42:57
-#! GFWList: 2026-04-05 10:54:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-08 02:55:00
+#! GFWList: 2026-04-07 13:58:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -19,6 +19,7 @@ routing:
         - domain:crl.pki.goog
         - domain:csi.gstatic.com
         - domain:dl.google.com
+        - domain:firebase-settings.crashlytics.com
         - domain:fonts.googleapis.com
         - domain:fonts.gstatic.com
         - domain:g0.gstatic.com
@@ -825,6 +826,7 @@ routing:
         - domain:cpu-monkey.com
         - domain:cq99.us
         - domain:crackle.com
+        - domain:crashlytics.com
         - domain:crazypool.org
         - domain:crazyshit.com
         - domain:crbug.com

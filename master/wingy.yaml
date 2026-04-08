@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-07 13:42:59
-#! GFWList: 2026-04-05 10:54:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-08 02:55:02
+#! GFWList: 2026-04-07 13:58:23 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -802,6 +802,7 @@ rule:
         - s,cpu-monkey.com
         - s,cq99.us
         - s,crackle.com
+        - s,crashlytics.com
         - s,crazypool.org
         - s,crazyshit.com
         - s,crbug.com
