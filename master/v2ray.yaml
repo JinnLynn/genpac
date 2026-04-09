@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-09 02:49:34
-#! GFWList: 2026-04-08 04:08:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-09 13:56:25
+#! GFWList: 2026-04-09 11:10:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -228,11 +228,9 @@ routing:
         - domain:angola.org
         - domain:angularjs.org
         - domain:aniscartujo.com
-        - domain:annas-archive.in
-        - domain:annas-archive.li
-        - domain:annas-archive.org
-        - domain:annas-archive.pm
-        - domain:annas-archive.se
+        - domain:annas-archive.gd
+        - domain:annas-archive.gl
+        - domain:annas-archive.pk
         - domain:anobii.com
         - domain:anonfiles.com
         - domain:anonymouse.org
@@ -3329,7 +3327,6 @@ routing:
         - domain:tbssqh.org
         - domain:teachparentstech.org
         - domain:technews.tw
-        - domain:techspot.com
         - domain:techviz.net
         - domain:teck.in
         - domain:teco-hk.org
@@ -3343,7 +3340,6 @@ routing:
         - domain:telegram.org
         - domain:telegram.space
         - domain:telegramdownload.com
-        - domain:telegraph.co.uk
         - domain:telesco.pe
         - domain:tellapart.com
         - domain:temu.com

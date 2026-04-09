@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-09 02:49:34
-#! GFWList: 2026-04-08 04:08:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-09 13:56:25
+#! GFWList: 2026-04-09 11:10:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -191,11 +191,9 @@
 (^|\.)angola\.org$
 (^|\.)angularjs\.org$
 (^|\.)aniscartujo\.com$
-(^|\.)annas-archive\.in$
-(^|\.)annas-archive\.li$
-(^|\.)annas-archive\.org$
-(^|\.)annas-archive\.pm$
-(^|\.)annas-archive\.se$
+(^|\.)annas-archive\.gd$
+(^|\.)annas-archive\.gl$
+(^|\.)annas-archive\.pk$
 (^|\.)anobii\.com$
 (^|\.)anonfiles\.com$
 (^|\.)anonymouse\.org$
@@ -3292,7 +3290,6 @@
 (^|\.)tbssqh\.org$
 (^|\.)teachparentstech\.org$
 (^|\.)technews\.tw$
-(^|\.)techspot\.com$
 (^|\.)techviz\.net$
 (^|\.)teck\.in$
 (^|\.)teco-hk\.org$
@@ -3306,7 +3303,6 @@
 (^|\.)telegram\.org$
 (^|\.)telegram\.space$
 (^|\.)telegramdownload\.com$
-(^|\.)telegraph\.co\.uk$
 (^|\.)telesco\.pe$
 (^|\.)tellapart\.com$
 (^|\.)temu\.com$

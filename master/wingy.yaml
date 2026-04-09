@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-09 02:49:36
-#! GFWList: 2026-04-08 04:08:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-09 13:56:27
+#! GFWList: 2026-04-09 11:10:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -204,11 +204,9 @@ rule:
         - s,angola.org
         - s,angularjs.org
         - s,aniscartujo.com
-        - s,annas-archive.in
-        - s,annas-archive.li
-        - s,annas-archive.org
-        - s,annas-archive.pm
-        - s,annas-archive.se
+        - s,annas-archive.gd
+        - s,annas-archive.gl
+        - s,annas-archive.pk
         - s,anobii.com
         - s,anonfiles.com
         - s,anonymouse.org
@@ -3305,7 +3303,6 @@ rule:
         - s,tbssqh.org
         - s,teachparentstech.org
         - s,technews.tw
-        - s,techspot.com
         - s,techviz.net
         - s,teck.in
         - s,teco-hk.org
@@ -3319,7 +3316,6 @@ rule:
         - s,telegram.org
         - s,telegram.space
         - s,telegramdownload.com
-        - s,telegraph.co.uk
         - s,telesco.pe
         - s,tellapart.com
         - s,temu.com
