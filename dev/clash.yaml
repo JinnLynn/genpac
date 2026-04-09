@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-09 02:50:05
-#! GFWList: 2026-04-08 04:08:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-09 13:56:53
+#! GFWList: 2026-04-09 11:10:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -226,11 +226,9 @@ rules:
   - DOMAIN-SUFFIX,angola.org,PROXY
   - DOMAIN-SUFFIX,angularjs.org,PROXY
   - DOMAIN-SUFFIX,aniscartujo.com,PROXY
-  - DOMAIN-SUFFIX,annas-archive.in,PROXY
-  - DOMAIN-SUFFIX,annas-archive.li,PROXY
-  - DOMAIN-SUFFIX,annas-archive.org,PROXY
-  - DOMAIN-SUFFIX,annas-archive.pm,PROXY
-  - DOMAIN-SUFFIX,annas-archive.se,PROXY
+  - DOMAIN-SUFFIX,annas-archive.gd,PROXY
+  - DOMAIN-SUFFIX,annas-archive.gl,PROXY
+  - DOMAIN-SUFFIX,annas-archive.pk,PROXY
   - DOMAIN-SUFFIX,anobii.com,PROXY
   - DOMAIN-SUFFIX,anonfiles.com,PROXY
   - DOMAIN-SUFFIX,anonymouse.org,PROXY
@@ -3327,7 +3325,6 @@ rules:
   - DOMAIN-SUFFIX,tbssqh.org,PROXY
   - DOMAIN-SUFFIX,teachparentstech.org,PROXY
   - DOMAIN-SUFFIX,technews.tw,PROXY
-  - DOMAIN-SUFFIX,techspot.com,PROXY
   - DOMAIN-SUFFIX,techviz.net,PROXY
   - DOMAIN-SUFFIX,teck.in,PROXY
   - DOMAIN-SUFFIX,teco-hk.org,PROXY
@@ -3341,7 +3338,6 @@ rules:
   - DOMAIN-SUFFIX,telegram.org,PROXY
   - DOMAIN-SUFFIX,telegram.space,PROXY
   - DOMAIN-SUFFIX,telegramdownload.com,PROXY
-  - DOMAIN-SUFFIX,telegraph.co.uk,PROXY
   - DOMAIN-SUFFIX,telesco.pe,PROXY
   - DOMAIN-SUFFIX,tellapart.com,PROXY
   - DOMAIN-SUFFIX,temu.com,PROXY

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-09 02:50:05
-#! GFWList: 2026-04-08 04:08:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-09 13:56:53
+#! GFWList: 2026-04-09 11:10:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -188,11 +188,9 @@ payload:
   - DOMAIN-SUFFIX,angola.org
   - DOMAIN-SUFFIX,angularjs.org
   - DOMAIN-SUFFIX,aniscartujo.com
-  - DOMAIN-SUFFIX,annas-archive.in
-  - DOMAIN-SUFFIX,annas-archive.li
-  - DOMAIN-SUFFIX,annas-archive.org
-  - DOMAIN-SUFFIX,annas-archive.pm
-  - DOMAIN-SUFFIX,annas-archive.se
+  - DOMAIN-SUFFIX,annas-archive.gd
+  - DOMAIN-SUFFIX,annas-archive.gl
+  - DOMAIN-SUFFIX,annas-archive.pk
   - DOMAIN-SUFFIX,anobii.com
   - DOMAIN-SUFFIX,anonfiles.com
   - DOMAIN-SUFFIX,anonymouse.org
@@ -3289,7 +3287,6 @@ payload:
   - DOMAIN-SUFFIX,tbssqh.org
   - DOMAIN-SUFFIX,teachparentstech.org
   - DOMAIN-SUFFIX,technews.tw
-  - DOMAIN-SUFFIX,techspot.com
   - DOMAIN-SUFFIX,techviz.net
   - DOMAIN-SUFFIX,teck.in
   - DOMAIN-SUFFIX,teco-hk.org
@@ -3303,7 +3300,6 @@ payload:
   - DOMAIN-SUFFIX,telegram.org
   - DOMAIN-SUFFIX,telegram.space
   - DOMAIN-SUFFIX,telegramdownload.com
-  - DOMAIN-SUFFIX,telegraph.co.uk
   - DOMAIN-SUFFIX,telesco.pe
   - DOMAIN-SUFFIX,tellapart.com
   - DOMAIN-SUFFIX,temu.com

@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-04-09 02:50:04
- * GFWList Last-Modified: 2026-04-08 04:08:01
+ * Generated: 2026-04-09 13:56:51
+ * GFWList Last-Modified: 2026-04-09 11:10:05
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -233,11 +233,9 @@ var rules = [
             "angola.org",
             "angularjs.org",
             "aniscartujo.com",
-            "annas-archive.in",
-            "annas-archive.li",
-            "annas-archive.org",
-            "annas-archive.pm",
-            "annas-archive.se",
+            "annas-archive.gd",
+            "annas-archive.gl",
+            "annas-archive.pk",
             "anobii.com",
             "anonfiles.com",
             "anonymouse.org",
@@ -3334,7 +3332,6 @@ var rules = [
             "tbssqh.org",
             "teachparentstech.org",
             "technews.tw",
-            "techspot.com",
             "techviz.net",
             "teck.in",
             "teco-hk.org",
@@ -3348,7 +3345,6 @@ var rules = [
             "telegram.org",
             "telegram.space",
             "telegramdownload.com",
-            "telegraph.co.uk",
             "telesco.pe",
             "tellapart.com",
             "temu.com",
