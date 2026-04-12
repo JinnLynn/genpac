@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-11 13:11:48
-#! GFWList: 2026-04-09 11:10:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-12 03:25:27
+#! GFWList: 2026-04-11 13:49:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2999,6 +2999,7 @@ rule:
         - s,savetibetstore.org
         - s,saveuighur.org
         - s,sbme.me
+        - s,sbti.unun.dev
         - s,scache.vzw.com
         - s,scache1.vzw.com
         - s,scache2.vzw.com

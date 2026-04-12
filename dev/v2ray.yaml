@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-11 13:11:47
-#! GFWList: 2026-04-09 11:10:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-12 03:25:26
+#! GFWList: 2026-04-11 13:49:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3023,6 +3023,7 @@ routing:
         - domain:savetibetstore.org
         - domain:saveuighur.org
         - domain:sbme.me
+        - domain:sbti.unun.dev
         - domain:scache.vzw.com
         - domain:scache1.vzw.com
         - domain:scache2.vzw.com
