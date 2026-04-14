@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-14 03:21:54
-#! GFWList: 2026-04-11 13:49:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-14 13:59:04
+#! GFWList: 2026-04-14 10:07:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -950,7 +950,6 @@ payload:
   - DOMAIN-SUFFIX,douchi.space
   - DOMAIN-SUFFIX,dougscripts.com
   - DOMAIN-SUFFIX,doujincafe.com
-  - DOMAIN-SUFFIX,download.aircrack-ng.org
   - DOMAIN-SUFFIX,download.dappcdn.com
   - DOMAIN-SUFFIX,dpool.top
   - DOMAIN-SUFFIX,dpp.org.tw
@@ -1732,8 +1731,6 @@ payload:
   - DOMAIN-SUFFIX,hk.jiepang.com
   - DOMAIN-SUFFIX,hk01.com
   - DOMAIN-SUFFIX,hka8964.wordpress.com
-  - DOMAIN-SUFFIX,hkacg.com
-  - DOMAIN-SUFFIX,hkacg.net
   - DOMAIN-SUFFIX,hkanews.wordpress.com
   - DOMAIN-SUFFIX,hkbookcity.com
   - DOMAIN-SUFFIX,hkchronicles.com
@@ -2378,7 +2375,6 @@ payload:
   - DOMAIN-SUFFIX,muzi.net
   - DOMAIN-SUFFIX,muzu.tv
   - DOMAIN-SUFFIX,mvg.jp
-  - DOMAIN-SUFFIX,mx981.com
   - DOMAIN-SUFFIX,my-private-network.co.uk
   - DOMAIN-SUFFIX,my.pcloud.com
   - DOMAIN-SUFFIX,myaudiocast.com
@@ -2584,6 +2580,7 @@ payload:
   - DOMAIN-SUFFIX,ooni.org
   - DOMAIN-SUFFIX,open.firstory.me
   - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,openart.ai
   - DOMAIN-SUFFIX,opencritic.com
   - DOMAIN-SUFFIX,opendemocracy.net
   - DOMAIN-SUFFIX,openid.net
@@ -2953,15 +2950,7 @@ payload:
   - DOMAIN-SUFFIX,rxhj.net
   - DOMAIN-SUFFIX,s-cute.com
   - DOMAIN-SUFFIX,s.yimg.com
-  - DOMAIN-SUFFIX,s3-ap-*.amazonaws.com
   - DOMAIN-SUFFIX,s3-ap-northeast-1.amazonaws.com
-  - DOMAIN-SUFFIX,s3-ap-northeast-2.amazonaws.com
-  - DOMAIN-SUFFIX,s3-ap-southeast-1.amazonaws.com
-  - DOMAIN-SUFFIX,s3-ap-southeast-2.amazonaws.com
-  - DOMAIN-SUFFIX,s3-eu-central-1.amazonaws.com
-  - DOMAIN-SUFFIX,s3.ap-northeast-2.amazonaws.com
-  - DOMAIN-SUFFIX,s3.eu-central-1.amazonaws.com
-  - DOMAIN-SUFFIX,s3.us-east-1.amazonaws.com
   - DOMAIN-SUFFIX,sacks.com
   - DOMAIN-SUFFIX,sacom.hk
   - DOMAIN-SUFFIX,sadistic-v.com
@@ -3766,7 +3755,6 @@ payload:
   - DOMAIN-SUFFIX,vrporn.com
   - DOMAIN-SUFFIX,vrsmash.com
   - DOMAIN-SUFFIX,vtunnel.com
-  - DOMAIN-SUFFIX,vuku.cc
   - DOMAIN-SUFFIX,vultryhw.com
   - DOMAIN-SUFFIX,w-pool.com
   - DOMAIN-SUFFIX,w3s.link
@@ -3981,7 +3969,6 @@ payload:
   - DOMAIN-SUFFIX,xing.com
   - DOMAIN-SUFFIX,xinjiangpolicefiles.org
   - DOMAIN-SUFFIX,xinmiao.com.hk
-  - DOMAIN-SUFFIX,xjp.cc
   - DOMAIN-SUFFIX,xjtravelguide.com
   - DOMAIN-SUFFIX,xm.com
   - DOMAIN-SUFFIX,xml-training-guide.com

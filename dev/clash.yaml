@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-14 03:21:54
-#! GFWList: 2026-04-11 13:49:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-14 13:59:04
+#! GFWList: 2026-04-14 10:07:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -988,7 +988,6 @@ rules:
   - DOMAIN-SUFFIX,douchi.space,PROXY
   - DOMAIN-SUFFIX,dougscripts.com,PROXY
   - DOMAIN-SUFFIX,doujincafe.com,PROXY
-  - DOMAIN-SUFFIX,download.aircrack-ng.org,PROXY
   - DOMAIN-SUFFIX,download.dappcdn.com,PROXY
   - DOMAIN-SUFFIX,dpool.top,PROXY
   - DOMAIN-SUFFIX,dpp.org.tw,PROXY
@@ -1770,8 +1769,6 @@ rules:
   - DOMAIN-SUFFIX,hk.jiepang.com,PROXY
   - DOMAIN-SUFFIX,hk01.com,PROXY
   - DOMAIN-SUFFIX,hka8964.wordpress.com,PROXY
-  - DOMAIN-SUFFIX,hkacg.com,PROXY
-  - DOMAIN-SUFFIX,hkacg.net,PROXY
   - DOMAIN-SUFFIX,hkanews.wordpress.com,PROXY
   - DOMAIN-SUFFIX,hkbookcity.com,PROXY
   - DOMAIN-SUFFIX,hkchronicles.com,PROXY
@@ -2416,7 +2413,6 @@ rules:
   - DOMAIN-SUFFIX,muzi.net,PROXY
   - DOMAIN-SUFFIX,muzu.tv,PROXY
   - DOMAIN-SUFFIX,mvg.jp,PROXY
-  - DOMAIN-SUFFIX,mx981.com,PROXY
   - DOMAIN-SUFFIX,my-private-network.co.uk,PROXY
   - DOMAIN-SUFFIX,my.pcloud.com,PROXY
   - DOMAIN-SUFFIX,myaudiocast.com,PROXY
@@ -2622,6 +2618,7 @@ rules:
   - DOMAIN-SUFFIX,ooni.org,PROXY
   - DOMAIN-SUFFIX,open.firstory.me,PROXY
   - DOMAIN-SUFFIX,openai.com,PROXY
+  - DOMAIN-SUFFIX,openart.ai,PROXY
   - DOMAIN-SUFFIX,opencritic.com,PROXY
   - DOMAIN-SUFFIX,opendemocracy.net,PROXY
   - DOMAIN-SUFFIX,openid.net,PROXY
@@ -2991,15 +2988,7 @@ rules:
   - DOMAIN-SUFFIX,rxhj.net,PROXY
   - DOMAIN-SUFFIX,s-cute.com,PROXY
   - DOMAIN-SUFFIX,s.yimg.com,PROXY
-  - DOMAIN-SUFFIX,s3-ap-*.amazonaws.com,PROXY
   - DOMAIN-SUFFIX,s3-ap-northeast-1.amazonaws.com,PROXY
-  - DOMAIN-SUFFIX,s3-ap-northeast-2.amazonaws.com,PROXY
-  - DOMAIN-SUFFIX,s3-ap-southeast-1.amazonaws.com,PROXY
-  - DOMAIN-SUFFIX,s3-ap-southeast-2.amazonaws.com,PROXY
-  - DOMAIN-SUFFIX,s3-eu-central-1.amazonaws.com,PROXY
-  - DOMAIN-SUFFIX,s3.ap-northeast-2.amazonaws.com,PROXY
-  - DOMAIN-SUFFIX,s3.eu-central-1.amazonaws.com,PROXY
-  - DOMAIN-SUFFIX,s3.us-east-1.amazonaws.com,PROXY
   - DOMAIN-SUFFIX,sacks.com,PROXY
   - DOMAIN-SUFFIX,sacom.hk,PROXY
   - DOMAIN-SUFFIX,sadistic-v.com,PROXY
@@ -3804,7 +3793,6 @@ rules:
   - DOMAIN-SUFFIX,vrporn.com,PROXY
   - DOMAIN-SUFFIX,vrsmash.com,PROXY
   - DOMAIN-SUFFIX,vtunnel.com,PROXY
-  - DOMAIN-SUFFIX,vuku.cc,PROXY
   - DOMAIN-SUFFIX,vultryhw.com,PROXY
   - DOMAIN-SUFFIX,w-pool.com,PROXY
   - DOMAIN-SUFFIX,w3s.link,PROXY
@@ -4019,7 +4007,6 @@ rules:
   - DOMAIN-SUFFIX,xing.com,PROXY
   - DOMAIN-SUFFIX,xinjiangpolicefiles.org,PROXY
   - DOMAIN-SUFFIX,xinmiao.com.hk,PROXY
-  - DOMAIN-SUFFIX,xjp.cc,PROXY
   - DOMAIN-SUFFIX,xjtravelguide.com,PROXY
   - DOMAIN-SUFFIX,xm.com,PROXY
   - DOMAIN-SUFFIX,xml-training-guide.com,PROXY
