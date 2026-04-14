@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-14 03:21:11
-#! GFWList: 2026-04-11 13:49:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-14 13:58:28
+#! GFWList: 2026-04-14 10:07:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -990,7 +990,6 @@ routing:
         - domain:douchi.space
         - domain:dougscripts.com
         - domain:doujincafe.com
-        - domain:download.aircrack-ng.org
         - domain:download.dappcdn.com
         - domain:dpool.top
         - domain:dpp.org.tw
@@ -1772,8 +1771,6 @@ routing:
         - domain:hk.jiepang.com
         - domain:hk01.com
         - domain:hka8964.wordpress.com
-        - domain:hkacg.com
-        - domain:hkacg.net
         - domain:hkanews.wordpress.com
         - domain:hkbookcity.com
         - domain:hkchronicles.com
@@ -2418,7 +2415,6 @@ routing:
         - domain:muzi.net
         - domain:muzu.tv
         - domain:mvg.jp
-        - domain:mx981.com
         - domain:my-private-network.co.uk
         - domain:my.pcloud.com
         - domain:myaudiocast.com
@@ -2624,6 +2620,7 @@ routing:
         - domain:ooni.org
         - domain:open.firstory.me
         - domain:openai.com
+        - domain:openart.ai
         - domain:opencritic.com
         - domain:opendemocracy.net
         - domain:openid.net
@@ -2993,15 +2990,7 @@ routing:
         - domain:rxhj.net
         - domain:s-cute.com
         - domain:s.yimg.com
-        - domain:s3-ap-*.amazonaws.com
         - domain:s3-ap-northeast-1.amazonaws.com
-        - domain:s3-ap-northeast-2.amazonaws.com
-        - domain:s3-ap-southeast-1.amazonaws.com
-        - domain:s3-ap-southeast-2.amazonaws.com
-        - domain:s3-eu-central-1.amazonaws.com
-        - domain:s3.ap-northeast-2.amazonaws.com
-        - domain:s3.eu-central-1.amazonaws.com
-        - domain:s3.us-east-1.amazonaws.com
         - domain:sacks.com
         - domain:sacom.hk
         - domain:sadistic-v.com
@@ -3806,7 +3795,6 @@ routing:
         - domain:vrporn.com
         - domain:vrsmash.com
         - domain:vtunnel.com
-        - domain:vuku.cc
         - domain:vultryhw.com
         - domain:w-pool.com
         - domain:w3s.link
@@ -4021,7 +4009,6 @@ routing:
         - domain:xing.com
         - domain:xinjiangpolicefiles.org
         - domain:xinmiao.com.hk
-        - domain:xjp.cc
         - domain:xjtravelguide.com
         - domain:xm.com
         - domain:xml-training-guide.com

@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-14 03:21:13
-#! GFWList: 2026-04-11 13:49:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-14 13:58:30
+#! GFWList: 2026-04-14 10:07:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -966,7 +966,6 @@ rule:
         - s,douchi.space
         - s,dougscripts.com
         - s,doujincafe.com
-        - s,download.aircrack-ng.org
         - s,download.dappcdn.com
         - s,dpool.top
         - s,dpp.org.tw
@@ -1748,8 +1747,6 @@ rule:
         - s,hk.jiepang.com
         - s,hk01.com
         - s,hka8964.wordpress.com
-        - s,hkacg.com
-        - s,hkacg.net
         - s,hkanews.wordpress.com
         - s,hkbookcity.com
         - s,hkchronicles.com
@@ -2394,7 +2391,6 @@ rule:
         - s,muzi.net
         - s,muzu.tv
         - s,mvg.jp
-        - s,mx981.com
         - s,my-private-network.co.uk
         - s,my.pcloud.com
         - s,myaudiocast.com
@@ -2600,6 +2596,7 @@ rule:
         - s,ooni.org
         - s,open.firstory.me
         - s,openai.com
+        - s,openart.ai
         - s,opencritic.com
         - s,opendemocracy.net
         - s,openid.net
@@ -2969,15 +2966,7 @@ rule:
         - s,rxhj.net
         - s,s-cute.com
         - s,s.yimg.com
-        - s,s3-ap-*.amazonaws.com
         - s,s3-ap-northeast-1.amazonaws.com
-        - s,s3-ap-northeast-2.amazonaws.com
-        - s,s3-ap-southeast-1.amazonaws.com
-        - s,s3-ap-southeast-2.amazonaws.com
-        - s,s3-eu-central-1.amazonaws.com
-        - s,s3.ap-northeast-2.amazonaws.com
-        - s,s3.eu-central-1.amazonaws.com
-        - s,s3.us-east-1.amazonaws.com
         - s,sacks.com
         - s,sacom.hk
         - s,sadistic-v.com
@@ -3782,7 +3771,6 @@ rule:
         - s,vrporn.com
         - s,vrsmash.com
         - s,vtunnel.com
-        - s,vuku.cc
         - s,vultryhw.com
         - s,w-pool.com
         - s,w3s.link
@@ -3997,7 +3985,6 @@ rule:
         - s,xing.com
         - s,xinjiangpolicefiles.org
         - s,xinmiao.com.hk
-        - s,xjp.cc
         - s,xjtravelguide.com
         - s,xm.com
         - s,xml-training-guide.com
