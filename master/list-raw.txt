@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-04-16 03:27:39
-! GFWList: 2026-04-14 10:07:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-04-16 14:00:15
+! GFWList: 2026-04-16 10:19:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -326,6 +326,7 @@
 ||avg.com
 ||avgle.com
 ||avidemux.org
+||avistaz.to
 ||avmo.pw
 ||avmoo.pw
 ||avoision.com
