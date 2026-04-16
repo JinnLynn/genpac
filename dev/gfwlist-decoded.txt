@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: UtGVHSs5MpBEgVwNQl339Q
+! Checksum: iSGCi8IhYylNiecNwVfSdg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 14 Apr 2026 10:07:21 +0000
+! Last Modified: Thu, 16 Apr 2026 10:19:54 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1186,6 +1186,7 @@ iipdigital.usembassy.gov
 ||9bis.net
 ||9news.com.au
 !--------------------AA-------------------------
+||avistaz.to
 ||annas-archive.gd
 ||annas-archive.gl
 ||annas-archive.pk

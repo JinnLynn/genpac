@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-16 03:28:12
-#! GFWList: 2026-04-14 10:07:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-16 14:00:43
+#! GFWList: 2026-04-16 10:19:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -294,6 +294,7 @@ payload:
   - DOMAIN-SUFFIX,avg.com
   - DOMAIN-SUFFIX,avgle.com
   - DOMAIN-SUFFIX,avidemux.org
+  - DOMAIN-SUFFIX,avistaz.to
   - DOMAIN-SUFFIX,avmo.pw
   - DOMAIN-SUFFIX,avmoo.pw
   - DOMAIN-SUFFIX,avoision.com

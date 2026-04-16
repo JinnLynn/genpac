@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-16 03:28:12
-#! GFWList: 2026-04-14 10:07:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-16 14:00:42
+#! GFWList: 2026-04-16 10:19:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -334,6 +334,7 @@ routing:
         - domain:avg.com
         - domain:avgle.com
         - domain:avidemux.org
+        - domain:avistaz.to
         - domain:avmo.pw
         - domain:avmoo.pw
         - domain:avoision.com
