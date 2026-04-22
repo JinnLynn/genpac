@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-22 03:22:15
-#! GFWList: 2026-04-16 10:19:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-22 13:57:14
+#! GFWList: 2026-04-22 12:34:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -267,6 +267,7 @@ routing:
         - domain:apkpure.net
         - domain:app.box.com
         - domain:app.cloudcone.com
+        - domain:app.element.io
         - domain:app.smartmailcloud.com
         - domain:appadvice.com
         - domain:appbrain.com
@@ -307,6 +308,7 @@ routing:
         - domain:asianfanfics.com
         - domain:asiansexdiary.com
         - domain:asiaone.com
+        - domain:asiasociety.org
         - domain:ask.com
         - domain:askstudent.com
         - domain:askynz.net
@@ -398,6 +400,7 @@ routing:
         - domain:beijing2022.art
         - domain:beijingspring.com
         - domain:bell.wiki
+        - domain:bellingcat.com
         - domain:berlinerbericht.de
         - domain:berlintwitterwall.com
         - domain:bestvpn.com
@@ -724,7 +727,6 @@ routing:
         - domain:chromecast.com
         - domain:chromeexperiments.com
         - domain:chromestatus.com
-        - domain:chromium.org
         - domain:ci-en.jp
         - domain:cia.gov
         - domain:cici.com
@@ -1991,6 +1993,7 @@ routing:
         - domain:ismaelan.com
         - domain:ismprofessional.net
         - domain:israbox.com
+        - domain:issues.chromium.org
         - domain:issuu.com
         - domain:isupportuyghurs.org
         - domain:italiatibet.org
@@ -2132,6 +2135,7 @@ routing:
         - domain:lamayeshe.com
         - domain:lamnia.co.uk
         - domain:landofhope.tv
+        - domain:lantern.io
         - domain:laogai.org
         - domain:laogairesearch.org
         - domain:laqingdan.net
@@ -2913,6 +2917,7 @@ routing:
         - domain:raw.githack.com
         - domain:rawgit.com
         - domain:rawgithub.com
+        - domain:rawstory.com
         - domain:rcam.target.com
         - domain:rcinet.ca
         - domain:rd.com
@@ -2924,6 +2929,7 @@ routing:
         - domain:realcourage.org
         - domain:realitykings.com
         - domain:reason.com
+        - domain:recordedfuture.com
         - domain:recoveryversion.com.tw
         - domain:red-lang.org
         - domain:redbubble.com
@@ -2959,6 +2965,7 @@ routing:
         - domain:rixcloud.us
         - domain:rlwlw.com
         - domain:rmbl.ws
+        - domain:roblox.com
         - domain:robustnessiskey.com
         - domain:rocket-inc.net
         - domain:rocket.chat
@@ -3170,7 +3177,6 @@ routing:
         - domain:southnews.com.tw
         - domain:southpark.cc.com
         - domain:sowers.org.hk
-        - domain:soylentnews.org
         - domain:spaces.hightail.com
         - domain:spacex.com
         - domain:spankbang.com
@@ -3382,6 +3388,7 @@ routing:
         - domain:thewgo.org
         - domain:thewirechina.com
         - domain:theync.com
+        - domain:thinkchina.sg
         - domain:thinkgeek.com
         - domain:thinkingtaiwan.com
         - domain:thinkwithgoogle.com

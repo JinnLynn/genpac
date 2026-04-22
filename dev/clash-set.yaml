@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-22 03:22:17
-#! GFWList: 2026-04-16 10:19:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-22 13:57:17
+#! GFWList: 2026-04-22 12:34:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -227,6 +227,7 @@ payload:
   - DOMAIN-SUFFIX,apkpure.net
   - DOMAIN-SUFFIX,app.box.com
   - DOMAIN-SUFFIX,app.cloudcone.com
+  - DOMAIN-SUFFIX,app.element.io
   - DOMAIN-SUFFIX,app.smartmailcloud.com
   - DOMAIN-SUFFIX,appadvice.com
   - DOMAIN-SUFFIX,appbrain.com
@@ -267,6 +268,7 @@ payload:
   - DOMAIN-SUFFIX,asianfanfics.com
   - DOMAIN-SUFFIX,asiansexdiary.com
   - DOMAIN-SUFFIX,asiaone.com
+  - DOMAIN-SUFFIX,asiasociety.org
   - DOMAIN-SUFFIX,ask.com
   - DOMAIN-SUFFIX,askstudent.com
   - DOMAIN-SUFFIX,askynz.net
@@ -358,6 +360,7 @@ payload:
   - DOMAIN-SUFFIX,beijing2022.art
   - DOMAIN-SUFFIX,beijingspring.com
   - DOMAIN-SUFFIX,bell.wiki
+  - DOMAIN-SUFFIX,bellingcat.com
   - DOMAIN-SUFFIX,berlinerbericht.de
   - DOMAIN-SUFFIX,berlintwitterwall.com
   - DOMAIN-SUFFIX,bestvpn.com
@@ -684,7 +687,6 @@ payload:
   - DOMAIN-SUFFIX,chromecast.com
   - DOMAIN-SUFFIX,chromeexperiments.com
   - DOMAIN-SUFFIX,chromestatus.com
-  - DOMAIN-SUFFIX,chromium.org
   - DOMAIN-SUFFIX,ci-en.jp
   - DOMAIN-SUFFIX,cia.gov
   - DOMAIN-SUFFIX,cici.com
@@ -1951,6 +1953,7 @@ payload:
   - DOMAIN-SUFFIX,ismaelan.com
   - DOMAIN-SUFFIX,ismprofessional.net
   - DOMAIN-SUFFIX,israbox.com
+  - DOMAIN-SUFFIX,issues.chromium.org
   - DOMAIN-SUFFIX,issuu.com
   - DOMAIN-SUFFIX,isupportuyghurs.org
   - DOMAIN-SUFFIX,italiatibet.org
@@ -2092,6 +2095,7 @@ payload:
   - DOMAIN-SUFFIX,lamayeshe.com
   - DOMAIN-SUFFIX,lamnia.co.uk
   - DOMAIN-SUFFIX,landofhope.tv
+  - DOMAIN-SUFFIX,lantern.io
   - DOMAIN-SUFFIX,laogai.org
   - DOMAIN-SUFFIX,laogairesearch.org
   - DOMAIN-SUFFIX,laqingdan.net
@@ -2873,6 +2877,7 @@ payload:
   - DOMAIN-SUFFIX,raw.githack.com
   - DOMAIN-SUFFIX,rawgit.com
   - DOMAIN-SUFFIX,rawgithub.com
+  - DOMAIN-SUFFIX,rawstory.com
   - DOMAIN-SUFFIX,rcam.target.com
   - DOMAIN-SUFFIX,rcinet.ca
   - DOMAIN-SUFFIX,rd.com
@@ -2884,6 +2889,7 @@ payload:
   - DOMAIN-SUFFIX,realcourage.org
   - DOMAIN-SUFFIX,realitykings.com
   - DOMAIN-SUFFIX,reason.com
+  - DOMAIN-SUFFIX,recordedfuture.com
   - DOMAIN-SUFFIX,recoveryversion.com.tw
   - DOMAIN-SUFFIX,red-lang.org
   - DOMAIN-SUFFIX,redbubble.com
@@ -2919,6 +2925,7 @@ payload:
   - DOMAIN-SUFFIX,rixcloud.us
   - DOMAIN-SUFFIX,rlwlw.com
   - DOMAIN-SUFFIX,rmbl.ws
+  - DOMAIN-SUFFIX,roblox.com
   - DOMAIN-SUFFIX,robustnessiskey.com
   - DOMAIN-SUFFIX,rocket-inc.net
   - DOMAIN-SUFFIX,rocket.chat
@@ -3130,7 +3137,6 @@ payload:
   - DOMAIN-SUFFIX,southnews.com.tw
   - DOMAIN-SUFFIX,southpark.cc.com
   - DOMAIN-SUFFIX,sowers.org.hk
-  - DOMAIN-SUFFIX,soylentnews.org
   - DOMAIN-SUFFIX,spaces.hightail.com
   - DOMAIN-SUFFIX,spacex.com
   - DOMAIN-SUFFIX,spankbang.com
@@ -3342,6 +3348,7 @@ payload:
   - DOMAIN-SUFFIX,thewgo.org
   - DOMAIN-SUFFIX,thewirechina.com
   - DOMAIN-SUFFIX,theync.com
+  - DOMAIN-SUFFIX,thinkchina.sg
   - DOMAIN-SUFFIX,thinkgeek.com
   - DOMAIN-SUFFIX,thinkingtaiwan.com
   - DOMAIN-SUFFIX,thinkwithgoogle.com

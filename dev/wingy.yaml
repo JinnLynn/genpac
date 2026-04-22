@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-22 03:22:17
-#! GFWList: 2026-04-16 10:19:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-22 13:57:17
+#! GFWList: 2026-04-22 12:34:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -243,6 +243,7 @@ rule:
         - s,apkpure.net
         - s,app.box.com
         - s,app.cloudcone.com
+        - s,app.element.io
         - s,app.smartmailcloud.com
         - s,appadvice.com
         - s,appbrain.com
@@ -283,6 +284,7 @@ rule:
         - s,asianfanfics.com
         - s,asiansexdiary.com
         - s,asiaone.com
+        - s,asiasociety.org
         - s,ask.com
         - s,askstudent.com
         - s,askynz.net
@@ -374,6 +376,7 @@ rule:
         - s,beijing2022.art
         - s,beijingspring.com
         - s,bell.wiki
+        - s,bellingcat.com
         - s,berlinerbericht.de
         - s,berlintwitterwall.com
         - s,bestvpn.com
@@ -700,7 +703,6 @@ rule:
         - s,chromecast.com
         - s,chromeexperiments.com
         - s,chromestatus.com
-        - s,chromium.org
         - s,ci-en.jp
         - s,cia.gov
         - s,cici.com
@@ -1967,6 +1969,7 @@ rule:
         - s,ismaelan.com
         - s,ismprofessional.net
         - s,israbox.com
+        - s,issues.chromium.org
         - s,issuu.com
         - s,isupportuyghurs.org
         - s,italiatibet.org
@@ -2108,6 +2111,7 @@ rule:
         - s,lamayeshe.com
         - s,lamnia.co.uk
         - s,landofhope.tv
+        - s,lantern.io
         - s,laogai.org
         - s,laogairesearch.org
         - s,laqingdan.net
@@ -2889,6 +2893,7 @@ rule:
         - s,raw.githack.com
         - s,rawgit.com
         - s,rawgithub.com
+        - s,rawstory.com
         - s,rcam.target.com
         - s,rcinet.ca
         - s,rd.com
@@ -2900,6 +2905,7 @@ rule:
         - s,realcourage.org
         - s,realitykings.com
         - s,reason.com
+        - s,recordedfuture.com
         - s,recoveryversion.com.tw
         - s,red-lang.org
         - s,redbubble.com
@@ -2935,6 +2941,7 @@ rule:
         - s,rixcloud.us
         - s,rlwlw.com
         - s,rmbl.ws
+        - s,roblox.com
         - s,robustnessiskey.com
         - s,rocket-inc.net
         - s,rocket.chat
@@ -3146,7 +3153,6 @@ rule:
         - s,southnews.com.tw
         - s,southpark.cc.com
         - s,sowers.org.hk
-        - s,soylentnews.org
         - s,spaces.hightail.com
         - s,spacex.com
         - s,spankbang.com
@@ -3358,6 +3364,7 @@ rule:
         - s,thewgo.org
         - s,thewirechina.com
         - s,theync.com
+        - s,thinkchina.sg
         - s,thinkgeek.com
         - s,thinkingtaiwan.com
         - s,thinkwithgoogle.com
