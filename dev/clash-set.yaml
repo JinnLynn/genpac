@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-24 03:28:42
-#! GFWList: 2026-04-22 12:34:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-24 13:50:57
+#! GFWList: 2026-04-24 07:27:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -3283,6 +3283,7 @@ payload:
   - DOMAIN-SUFFIX,tbsn.org
   - DOMAIN-SUFFIX,tbssqh.org
   - DOMAIN-SUFFIX,teachparentstech.org
+  - DOMAIN-SUFFIX,techbang.com
   - DOMAIN-SUFFIX,technews.tw
   - DOMAIN-SUFFIX,techviz.net
   - DOMAIN-SUFFIX,teck.in

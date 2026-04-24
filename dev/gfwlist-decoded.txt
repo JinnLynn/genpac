@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: EwhDC2wk138D2F4hTCM2EA
+! Checksum: CatGuc1/3lgA69MoyH/WEA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 22 Apr 2026 12:34:44 +0000
+! Last Modified: Fri, 24 Apr 2026 07:27:37 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -3542,6 +3542,7 @@ iipdigital.usembassy.gov
 ||sylfoundation.org
 ||syncback.com
 !--------------------TT-------------------------
+||techbang.com
 ||thinkchina.sg
 ||tor.eff.org
 ||tails.net
