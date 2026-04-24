@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-24 03:28:10
-#! GFWList: 2026-04-22 12:34:44 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-24 13:50:27
+#! GFWList: 2026-04-24 07:27:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3299,6 +3299,7 @@ rule:
         - s,tbsn.org
         - s,tbssqh.org
         - s,teachparentstech.org
+        - s,techbang.com
         - s,technews.tw
         - s,techviz.net
         - s,teck.in
