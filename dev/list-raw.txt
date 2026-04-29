@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-04-28 14:27:59
-! GFWList: 2026-04-24 07:27:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-04-29 03:43:04
+! GFWList: 2026-04-28 14:37:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -3659,6 +3659,7 @@
 ||upmedia.mg
 ||upornia.com
 ||uproxy.org
+||upsangel.com
 ||uptodown.com
 ||uraban.me
 ||urbandictionary.com

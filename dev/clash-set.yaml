@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-28 14:28:00
-#! GFWList: 2026-04-24 07:27:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-29 03:43:05
+#! GFWList: 2026-04-28 14:37:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -3627,6 +3627,7 @@ payload:
   - DOMAIN-SUFFIX,upmedia.mg
   - DOMAIN-SUFFIX,upornia.com
   - DOMAIN-SUFFIX,uproxy.org
+  - DOMAIN-SUFFIX,upsangel.com
   - DOMAIN-SUFFIX,uptodown.com
   - DOMAIN-SUFFIX,uraban.me
   - DOMAIN-SUFFIX,urbandictionary.com

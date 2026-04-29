@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-04-28 14:27:59
-#! GFWList: 2026-04-24 07:27:37 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-04-29 03:43:04
+#! GFWList: 2026-04-28 14:37:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3667,6 +3667,7 @@ routing:
         - domain:upmedia.mg
         - domain:upornia.com
         - domain:uproxy.org
+        - domain:upsangel.com
         - domain:uptodown.com
         - domain:uraban.me
         - domain:urbandictionary.com
