@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-05-02 03:28:16
-! GFWList: 2026-04-28 14:37:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-05-02 13:24:04
+! GFWList: 2026-05-02 11:49:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -3137,6 +3137,7 @@
 ||sockslist.net
 ||socrec.org
 ||softether-download.com
+||softether.co.jp
 ||softether.org
 ||softfamous.com
 ||softwarebychuck.com

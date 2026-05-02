@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-02 03:28:16
-#! GFWList: 2026-04-28 14:37:01 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-02 13:24:04
+#! GFWList: 2026-05-02 11:49:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3145,6 +3145,7 @@ routing:
         - domain:sockslist.net
         - domain:socrec.org
         - domain:softether-download.com
+        - domain:softether.co.jp
         - domain:softether.org
         - domain:softfamous.com
         - domain:softwarebychuck.com
