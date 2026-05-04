@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-03 13:23:27
-#! GFWList: 2026-05-02 11:49:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-04 03:46:36
+#! GFWList: 2026-05-03 14:24:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2997,9 +2997,6 @@ rule:
         - s,saveuighur.org
         - s,sbme.me
         - s,sbti.unun.dev
-        - s,scache.vzw.com
-        - s,scache1.vzw.com
-        - s,scache2.vzw.com
         - s,schema.org
         - s,scmp.com
         - s,scramble.io
@@ -3180,7 +3177,6 @@ rule:
         - s,sproutcore.com
         - s,squirrelvpn.com
         - s,ss-link.com
-        - s,ss7.vzw.com
         - s,ssglobal.co
         - s,ssl.webpack.de
         - s,sspanel.net

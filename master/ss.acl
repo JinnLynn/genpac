@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-03 13:23:25
-#! GFWList: 2026-05-02 11:49:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-04 03:46:33
+#! GFWList: 2026-05-03 14:24:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -2984,9 +2984,6 @@
 (^|\.)saveuighur\.org$
 (^|\.)sbme\.me$
 (^|\.)sbti\.unun\.dev$
-(^|\.)scache\.vzw\.com$
-(^|\.)scache1\.vzw\.com$
-(^|\.)scache2\.vzw\.com$
 (^|\.)schema\.org$
 (^|\.)scmp\.com$
 (^|\.)scramble\.io$
@@ -3167,7 +3164,6 @@
 (^|\.)sproutcore\.com$
 (^|\.)squirrelvpn\.com$
 (^|\.)ss-link\.com$
-(^|\.)ss7\.vzw\.com$
 (^|\.)ssglobal\.co$
 (^|\.)ssl\.webpack\.de$
 (^|\.)sspanel\.net$
