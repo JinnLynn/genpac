@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-03 13:23:50
-#! GFWList: 2026-05-02 11:49:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-04 03:47:09
+#! GFWList: 2026-05-03 14:24:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -2981,9 +2981,6 @@ payload:
   - DOMAIN-SUFFIX,saveuighur.org
   - DOMAIN-SUFFIX,sbme.me
   - DOMAIN-SUFFIX,sbti.unun.dev
-  - DOMAIN-SUFFIX,scache.vzw.com
-  - DOMAIN-SUFFIX,scache1.vzw.com
-  - DOMAIN-SUFFIX,scache2.vzw.com
   - DOMAIN-SUFFIX,schema.org
   - DOMAIN-SUFFIX,scmp.com
   - DOMAIN-SUFFIX,scramble.io
@@ -3164,7 +3161,6 @@ payload:
   - DOMAIN-SUFFIX,sproutcore.com
   - DOMAIN-SUFFIX,squirrelvpn.com
   - DOMAIN-SUFFIX,ss-link.com
-  - DOMAIN-SUFFIX,ss7.vzw.com
   - DOMAIN-SUFFIX,ssglobal.co
   - DOMAIN-SUFFIX,ssl.webpack.de
   - DOMAIN-SUFFIX,sspanel.net

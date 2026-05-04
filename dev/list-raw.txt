@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-05-03 13:23:49
-! GFWList: 2026-05-02 11:49:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-05-04 03:47:06
+! GFWList: 2026-05-03 14:24:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -3013,9 +3013,6 @@
 ||saveuighur.org
 ||sbme.me
 ||sbti.unun.dev
-||scache.vzw.com
-||scache1.vzw.com
-||scache2.vzw.com
 ||schema.org
 ||scmp.com
 ||scramble.io
@@ -3196,7 +3193,6 @@
 ||sproutcore.com
 ||squirrelvpn.com
 ||ss-link.com
-||ss7.vzw.com
 ||ssglobal.co
 ||ssl.webpack.de
 ||sspanel.net

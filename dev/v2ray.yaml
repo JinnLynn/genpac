@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-03 13:23:50
-#! GFWList: 2026-05-02 11:49:50 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-04 03:47:06
+#! GFWList: 2026-05-03 14:24:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3021,9 +3021,6 @@ routing:
         - domain:saveuighur.org
         - domain:sbme.me
         - domain:sbti.unun.dev
-        - domain:scache.vzw.com
-        - domain:scache1.vzw.com
-        - domain:scache2.vzw.com
         - domain:schema.org
         - domain:scmp.com
         - domain:scramble.io
@@ -3204,7 +3201,6 @@ routing:
         - domain:sproutcore.com
         - domain:squirrelvpn.com
         - domain:ss-link.com
-        - domain:ss7.vzw.com
         - domain:ssglobal.co
         - domain:ssl.webpack.de
         - domain:sspanel.net
