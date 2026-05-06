@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-06 03:41:53
-#! GFWList: 2026-05-03 14:24:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-06 14:28:08
+#! GFWList: 2026-05-06 04:13:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -108,6 +108,7 @@ rule:
         - s,acast.com
         - s,accountkit.com
         - s,acevpn.com
+        - s,acg.mn
         - s,acg.rip
         - s,acg18.me
         - s,acgbox.org
@@ -432,6 +433,7 @@ rule:
         - s,blacked.com
         - s,blackmagicdesign.com
         - s,blackvpn.com
+        - s,bleepingcomputer.com
         - s,blinkx.com
         - s,blip.tv
         - s,blockcast.it
@@ -483,6 +485,7 @@ rule:
         - s,books.com.tw
         - s,booktopia.com.au
         - s,bookwalker.com.tw
+        - s,boomplay.com
         - s,bootstrapcdn.com
         - s,borgenmagazine.com
         - s,botanwang.com
@@ -750,6 +753,7 @@ rule:
         - s,cn.uptodown.com
         - s,cna.com.tw
         - s,cnbbnews.wordpress.com
+        - s,cnbc.com
         - s,cnbeta.com.tw
         - s,cnd.org
         - s,cnnews.chosun.com
@@ -829,6 +833,7 @@ rule:
         - s,ct.org.tw
         - s,ctinets.com
         - s,ctinews.com
+        - s,ctinsider.com
         - s,ctitv.com.tw
         - s,ctowc.org
         - s,cts.com.tw
@@ -1023,6 +1028,7 @@ rule:
         - s,ecimg.tw
         - s,economist.com
         - s,edgecastcdn.net
+        - s,edigest.hk
         - s,edubridge.com
         - s,edx-cdn.org
         - s,eesti.ee
@@ -1744,6 +1750,7 @@ rule:
         - s,hinet.net
         - s,hitbtc.com
         - s,hitomi.la
+        - s,hive.blog
         - s,hiveon.net
         - s,hk-pub.com
         - s,hk.gradconnection.com
@@ -1918,6 +1925,7 @@ rule:
         - s,indiemerch.com
         - s,inews-api.tvb.com
         - s,info-graf.fr
+        - s,infosec.exchange
         - s,infura.io
         - s,inherit.live
         - s,initiativesforchina.org
@@ -2056,6 +2064,7 @@ rule:
         - s,kantie.org
         - s,kaotic.com
         - s,karayou.com
+        - s,kathmandupost.com
         - s,kawaiikawaii.jp
         - s,kawase.com
         - s,kb.monitorware.com
@@ -2130,6 +2139,7 @@ rule:
         - s,legra.ph
         - s,leisurepro.com
         - s,lematin.ch
+        - s,lemonde.fr
         - s,lenwhite.com
         - s,lesoir.be
         - s,letscorp.net
@@ -2142,6 +2152,7 @@ rule:
         - s,liberal.org.hk
         - s,libertysculpturepark.com
         - s,libertytimes.com.tw
+        - s,libgen.is
         - s,library-access.sk
         - s,library.usc.cuhk.edu.hk
         - s,libredd.it
@@ -2263,6 +2274,7 @@ rule:
         - s,media.nu.nl
         - s,mediachinese.com
         - s,mediafreakcity.com
+        - s,mediamatters.org
         - s,mediawiki.org
         - s,medium.com
         - s,meee.com.tw
@@ -2342,6 +2354,7 @@ rule:
         - s,mizzmona.com
         - s,mji.rip
         - s,mjj.rip
+        - s,mjj.today
         - s,mjlsh.usc.cuhk.edu.hk
         - s,mlc.ai
         - s,mlzs.work
@@ -2391,6 +2404,7 @@ rule:
         - s,mubi.com
         - s,mullvad.net
         - s,multiply.com
+        - s,music.amazon.com
         - s,musixmatch.com
         - s,muzi.com
         - s,muzi.net
@@ -2464,10 +2478,12 @@ rule:
         - s,news18.com
         - s,newsancai.com
         - s,newsblur.com
+        - s,newshub.co.nz
         - s,newsmax.com
         - s,newstamago.com
         - s,newstapa.org
         - s,newstatesman.com
+        - s,newstimes.com
         - s,newsweek.com
         - s,newtalk.tw
         - s,newthuhole.com
@@ -2482,6 +2498,8 @@ rule:
         - s,nflximg.net
         - s,nflxso.net
         - s,nflxvideo.net
+        - s,nfsc.press
+        - s,nfscofficial.com
         - s,nftstorage.link
         - s,nga.mil
         - s,nhentai.net
@@ -2627,6 +2645,7 @@ rule:
         - s,ourtv.hk
         - s,overcast.fm
         - s,overdaily.org
+        - s,overdrive.com
         - s,overplay.net
         - s,oversea.istarshine.com
         - s,ovpn.com
@@ -2678,6 +2697,7 @@ rule:
         - s,pemulihan.or.id
         - s,pen.io
         - s,pendrivelinux.com
+        - s,penguin.com.au
         - s,pentoy.hk
         - s,peoplenews.tw
         - s,peopo.org
@@ -2963,6 +2983,7 @@ rule:
         - s,rti.org.tw
         - s,rti.tw
         - s,rtm.tnt-ea.com
+        - s,rts.ch
         - s,rule34.xxx
         - s,rule34video.com
         - s,rumble.com
@@ -3074,6 +3095,7 @@ rule:
         - s,simpleswap.io
         - s,simplex.chat
         - s,sina.com.hk
+        - s,sinchew.com.my
         - s,singaporepools.com.sg
         - s,singlelogin.se
         - s,singtao.com
@@ -3327,6 +3349,8 @@ rule:
         - s,tfiflve.com
         - s,tg-me.com
         - s,tg.dev
+        - s,tgstat.com
+        - s,the-sun.com
         - s,theatlantic.com
         - s,theatrum-belli.com
         - s,thebcomplex.com
@@ -3359,6 +3383,7 @@ rule:
         - s,thetatoken.org
         - s,thetibetpost.com
         - s,thetvdb.com
+        - s,theweek.com
         - s,thewgo.org
         - s,thewirechina.com
         - s,theync.com
@@ -3532,6 +3557,7 @@ rule:
         - s,tv.jtbc.joins.com
         - s,tvbanywhere.com
         - s,tvboxnow.com
+        - s,tvdy1.com
         - s,tvunetworks.com
         - s,tw-blog.com
         - s,tw.jiepang.com
@@ -3739,6 +3765,7 @@ rule:
         - s,voicettank.org
         - s,vot.org
         - s,vovo2000.com
+        - s,vox.com
         - s,voxer.com
         - s,vpl.bibliocommons.com
         - s,vpn.ac
@@ -3914,6 +3941,7 @@ rule:
         - s,workatruna.com
         - s,workerempowerment.org
         - s,workers.dev
+        - s,worldjournal.com
         - s,worldvpn.net
         - s,wowgirls.com
         - s,wowhead.com
