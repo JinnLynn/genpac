@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-06 03:42:31
-#! GFWList: 2026-05-03 14:24:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-06 14:28:36
+#! GFWList: 2026-05-06 04:13:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -132,6 +132,7 @@ routing:
         - domain:acast.com
         - domain:accountkit.com
         - domain:acevpn.com
+        - domain:acg.mn
         - domain:acg.rip
         - domain:acg18.me
         - domain:acgbox.org
@@ -456,6 +457,7 @@ routing:
         - domain:blacked.com
         - domain:blackmagicdesign.com
         - domain:blackvpn.com
+        - domain:bleepingcomputer.com
         - domain:blinkx.com
         - domain:blip.tv
         - domain:blockcast.it
@@ -507,6 +509,7 @@ routing:
         - domain:books.com.tw
         - domain:booktopia.com.au
         - domain:bookwalker.com.tw
+        - domain:boomplay.com
         - domain:bootstrapcdn.com
         - domain:borgenmagazine.com
         - domain:botanwang.com
@@ -774,6 +777,7 @@ routing:
         - domain:cn.uptodown.com
         - domain:cna.com.tw
         - domain:cnbbnews.wordpress.com
+        - domain:cnbc.com
         - domain:cnbeta.com.tw
         - domain:cnd.org
         - domain:cnnews.chosun.com
@@ -853,6 +857,7 @@ routing:
         - domain:ct.org.tw
         - domain:ctinets.com
         - domain:ctinews.com
+        - domain:ctinsider.com
         - domain:ctitv.com.tw
         - domain:ctowc.org
         - domain:cts.com.tw
@@ -1047,6 +1052,7 @@ routing:
         - domain:ecimg.tw
         - domain:economist.com
         - domain:edgecastcdn.net
+        - domain:edigest.hk
         - domain:edubridge.com
         - domain:edx-cdn.org
         - domain:eesti.ee
@@ -1768,6 +1774,7 @@ routing:
         - domain:hinet.net
         - domain:hitbtc.com
         - domain:hitomi.la
+        - domain:hive.blog
         - domain:hiveon.net
         - domain:hk-pub.com
         - domain:hk.gradconnection.com
@@ -1942,6 +1949,7 @@ routing:
         - domain:indiemerch.com
         - domain:inews-api.tvb.com
         - domain:info-graf.fr
+        - domain:infosec.exchange
         - domain:infura.io
         - domain:inherit.live
         - domain:initiativesforchina.org
@@ -2080,6 +2088,7 @@ routing:
         - domain:kantie.org
         - domain:kaotic.com
         - domain:karayou.com
+        - domain:kathmandupost.com
         - domain:kawaiikawaii.jp
         - domain:kawase.com
         - domain:kb.monitorware.com
@@ -2154,6 +2163,7 @@ routing:
         - domain:legra.ph
         - domain:leisurepro.com
         - domain:lematin.ch
+        - domain:lemonde.fr
         - domain:lenwhite.com
         - domain:lesoir.be
         - domain:letscorp.net
@@ -2166,6 +2176,7 @@ routing:
         - domain:liberal.org.hk
         - domain:libertysculpturepark.com
         - domain:libertytimes.com.tw
+        - domain:libgen.is
         - domain:library-access.sk
         - domain:library.usc.cuhk.edu.hk
         - domain:libredd.it
@@ -2287,6 +2298,7 @@ routing:
         - domain:media.nu.nl
         - domain:mediachinese.com
         - domain:mediafreakcity.com
+        - domain:mediamatters.org
         - domain:mediawiki.org
         - domain:medium.com
         - domain:meee.com.tw
@@ -2366,6 +2378,7 @@ routing:
         - domain:mizzmona.com
         - domain:mji.rip
         - domain:mjj.rip
+        - domain:mjj.today
         - domain:mjlsh.usc.cuhk.edu.hk
         - domain:mlc.ai
         - domain:mlzs.work
@@ -2415,6 +2428,7 @@ routing:
         - domain:mubi.com
         - domain:mullvad.net
         - domain:multiply.com
+        - domain:music.amazon.com
         - domain:musixmatch.com
         - domain:muzi.com
         - domain:muzi.net
@@ -2488,10 +2502,12 @@ routing:
         - domain:news18.com
         - domain:newsancai.com
         - domain:newsblur.com
+        - domain:newshub.co.nz
         - domain:newsmax.com
         - domain:newstamago.com
         - domain:newstapa.org
         - domain:newstatesman.com
+        - domain:newstimes.com
         - domain:newsweek.com
         - domain:newtalk.tw
         - domain:newthuhole.com
@@ -2506,6 +2522,8 @@ routing:
         - domain:nflximg.net
         - domain:nflxso.net
         - domain:nflxvideo.net
+        - domain:nfsc.press
+        - domain:nfscofficial.com
         - domain:nftstorage.link
         - domain:nga.mil
         - domain:nhentai.net
@@ -2651,6 +2669,7 @@ routing:
         - domain:ourtv.hk
         - domain:overcast.fm
         - domain:overdaily.org
+        - domain:overdrive.com
         - domain:overplay.net
         - domain:oversea.istarshine.com
         - domain:ovpn.com
@@ -2702,6 +2721,7 @@ routing:
         - domain:pemulihan.or.id
         - domain:pen.io
         - domain:pendrivelinux.com
+        - domain:penguin.com.au
         - domain:pentoy.hk
         - domain:peoplenews.tw
         - domain:peopo.org
@@ -2987,6 +3007,7 @@ routing:
         - domain:rti.org.tw
         - domain:rti.tw
         - domain:rtm.tnt-ea.com
+        - domain:rts.ch
         - domain:rule34.xxx
         - domain:rule34video.com
         - domain:rumble.com
@@ -3098,6 +3119,7 @@ routing:
         - domain:simpleswap.io
         - domain:simplex.chat
         - domain:sina.com.hk
+        - domain:sinchew.com.my
         - domain:singaporepools.com.sg
         - domain:singlelogin.se
         - domain:singtao.com
@@ -3351,6 +3373,8 @@ routing:
         - domain:tfiflve.com
         - domain:tg-me.com
         - domain:tg.dev
+        - domain:tgstat.com
+        - domain:the-sun.com
         - domain:theatlantic.com
         - domain:theatrum-belli.com
         - domain:thebcomplex.com
@@ -3383,6 +3407,7 @@ routing:
         - domain:thetatoken.org
         - domain:thetibetpost.com
         - domain:thetvdb.com
+        - domain:theweek.com
         - domain:thewgo.org
         - domain:thewirechina.com
         - domain:theync.com
@@ -3556,6 +3581,7 @@ routing:
         - domain:tv.jtbc.joins.com
         - domain:tvbanywhere.com
         - domain:tvboxnow.com
+        - domain:tvdy1.com
         - domain:tvunetworks.com
         - domain:tw-blog.com
         - domain:tw.jiepang.com
@@ -3763,6 +3789,7 @@ routing:
         - domain:voicettank.org
         - domain:vot.org
         - domain:vovo2000.com
+        - domain:vox.com
         - domain:voxer.com
         - domain:vpl.bibliocommons.com
         - domain:vpn.ac
@@ -3938,6 +3965,7 @@ routing:
         - domain:workatruna.com
         - domain:workerempowerment.org
         - domain:workers.dev
+        - domain:worldjournal.com
         - domain:worldvpn.net
         - domain:wowgirls.com
         - domain:wowhead.com
