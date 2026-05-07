@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-07 03:41:53
-#! GFWList: 2026-05-06 04:13:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-07 14:29:39
+#! GFWList: 2026-05-07 10:57:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3630,6 +3630,7 @@
 (^|\.)ultrasurf\.us$
 (^|\.)ultravpn\.com$
 (^|\.)ultravpn\.fr$
+(^|\.)umap\.openstreetmap\.fr$
 (^|\.)unblock-us\.com$
 (^|\.)unblock\.cn\.com$
 (^|\.)unblockdmm\.com$

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-07 03:41:55
-#! GFWList: 2026-05-06 04:13:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-07 14:29:42
+#! GFWList: 2026-05-07 10:57:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -3665,6 +3665,7 @@ rules:
   - DOMAIN-SUFFIX,ultrasurf.us,PROXY
   - DOMAIN-SUFFIX,ultravpn.com,PROXY
   - DOMAIN-SUFFIX,ultravpn.fr,PROXY
+  - DOMAIN-SUFFIX,umap.openstreetmap.fr,PROXY
   - DOMAIN-SUFFIX,unblock-us.com,PROXY
   - DOMAIN-SUFFIX,unblock.cn.com,PROXY
   - DOMAIN-SUFFIX,unblockdmm.com,PROXY
