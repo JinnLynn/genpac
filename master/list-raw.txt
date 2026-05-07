@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-05-07 03:41:22
-! GFWList: 2026-05-06 04:13:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-05-07 14:28:58
+! GFWList: 2026-05-07 10:57:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -3659,6 +3659,7 @@
 ||ultrasurf.us
 ||ultravpn.com
 ||ultravpn.fr
+||umap.openstreetmap.fr
 ||unblock-us.com
 ||unblock.cn.com
 ||unblockdmm.com

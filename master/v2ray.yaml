@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-07 03:41:22
-#! GFWList: 2026-05-06 04:13:48 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-07 14:28:59
+#! GFWList: 2026-05-07 10:57:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3667,6 +3667,7 @@ routing:
         - domain:ultrasurf.us
         - domain:ultravpn.com
         - domain:ultravpn.fr
+        - domain:umap.openstreetmap.fr
         - domain:unblock-us.com
         - domain:unblock.cn.com
         - domain:unblockdmm.com
