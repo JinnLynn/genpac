@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2026-05-10 03:51:34
- * GFWList Last-Modified: 2026-05-07 10:57:30
+ * Generated: 2026-05-10 13:40:44
+ * GFWList Last-Modified: 2026-05-10 12:33:54
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -905,6 +905,7 @@ var rules = [
             "darrenliuwei.com",
             "dashlane.com",
             "data-vocabulary.org",
+            "data18.com",
             "daum.net",
             "david-kilgour.com",
             "dawangidc.com",
@@ -1016,6 +1017,7 @@ var rules = [
             "dropboxusercontent.com",
             "dscn.info",
             "dstk.dk",
+            "dt18.com",
             "dtiblog.com",
             "dtic.mil",
             "dubox.com",
