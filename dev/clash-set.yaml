@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-10 03:52:10
-#! GFWList: 2026-05-07 10:57:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-10 13:41:12
+#! GFWList: 2026-05-10 12:33:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -860,6 +860,7 @@ payload:
   - DOMAIN-SUFFIX,darrenliuwei.com
   - DOMAIN-SUFFIX,dashlane.com
   - DOMAIN-SUFFIX,data-vocabulary.org
+  - DOMAIN-SUFFIX,data18.com
   - DOMAIN-SUFFIX,daum.net
   - DOMAIN-SUFFIX,david-kilgour.com
   - DOMAIN-SUFFIX,dawangidc.com
@@ -971,6 +972,7 @@ payload:
   - DOMAIN-SUFFIX,dropboxusercontent.com
   - DOMAIN-SUFFIX,dscn.info
   - DOMAIN-SUFFIX,dstk.dk
+  - DOMAIN-SUFFIX,dt18.com
   - DOMAIN-SUFFIX,dtiblog.com
   - DOMAIN-SUFFIX,dtic.mil
   - DOMAIN-SUFFIX,dubox.com

@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-05-10 03:52:08
-! GFWList: 2026-05-07 10:57:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-05-10 13:41:10
+! GFWList: 2026-05-10 12:33:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -892,6 +892,7 @@
 ||darrenliuwei.com
 ||dashlane.com
 ||data-vocabulary.org
+||data18.com
 ||daum.net
 ||david-kilgour.com
 ||dawangidc.com
@@ -1003,6 +1004,7 @@
 ||dropboxusercontent.com
 ||dscn.info
 ||dstk.dk
+||dt18.com
 ||dtiblog.com
 ||dtic.mil
 ||dubox.com

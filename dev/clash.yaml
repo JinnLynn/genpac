@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-10 03:52:10
-#! GFWList: 2026-05-07 10:57:30 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-10 13:41:12
+#! GFWList: 2026-05-10 12:33:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -898,6 +898,7 @@ rules:
   - DOMAIN-SUFFIX,darrenliuwei.com,PROXY
   - DOMAIN-SUFFIX,dashlane.com,PROXY
   - DOMAIN-SUFFIX,data-vocabulary.org,PROXY
+  - DOMAIN-SUFFIX,data18.com,PROXY
   - DOMAIN-SUFFIX,daum.net,PROXY
   - DOMAIN-SUFFIX,david-kilgour.com,PROXY
   - DOMAIN-SUFFIX,dawangidc.com,PROXY
@@ -1009,6 +1010,7 @@ rules:
   - DOMAIN-SUFFIX,dropboxusercontent.com,PROXY
   - DOMAIN-SUFFIX,dscn.info,PROXY
   - DOMAIN-SUFFIX,dstk.dk,PROXY
+  - DOMAIN-SUFFIX,dt18.com,PROXY
   - DOMAIN-SUFFIX,dtiblog.com,PROXY
   - DOMAIN-SUFFIX,dtic.mil,PROXY
   - DOMAIN-SUFFIX,dubox.com,PROXY
