@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-13 03:55:09
-#! GFWList: 2026-05-10 12:33:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-13 14:47:37
+#! GFWList: 2026-05-13 10:51:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -697,6 +697,7 @@ rule:
         - s,chingcheong.com
         - s,chinman.net
         - s,chobit.cc
+        - s,chonglangtv.org
         - s,chrdnet.com
         - s,christianfreedom.org
         - s,christianstudy.com
