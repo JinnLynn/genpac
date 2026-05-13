@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-13 03:54:36
-#! GFWList: 2026-05-10 12:33:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-13 14:47:09
+#! GFWList: 2026-05-13 10:51:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -721,6 +721,7 @@ routing:
         - domain:chingcheong.com
         - domain:chinman.net
         - domain:chobit.cc
+        - domain:chonglangtv.org
         - domain:chrdnet.com
         - domain:christianfreedom.org
         - domain:christianstudy.com
