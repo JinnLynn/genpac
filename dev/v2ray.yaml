@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-17 03:59:06
-#! GFWList: 2026-05-13 10:51:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-17 13:43:41
+#! GFWList: 2026-05-17 09:41:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3113,6 +3113,7 @@ routing:
         - domain:shwchurch.org
         - domain:shwchurch3.com
         - domain:sidelinesnews.com
+        - domain:sider.ai
         - domain:signal.org
         - domain:silvergatebank.com
         - domain:simbolostwitter.com
@@ -4173,6 +4174,7 @@ routing:
         - domain:zh.pokerstrategy.com
         - domain:zh.wikiquote.org
         - domain:zhangtianliang.com
+        - domain:zhangzhehan.net
         - domain:zhanlve.org
         - domain:zhao.1984.city
         - domain:zhengjian.org

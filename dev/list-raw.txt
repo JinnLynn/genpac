@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-05-17 03:59:06
-! GFWList: 2026-05-13 10:51:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-05-17 13:43:41
+! GFWList: 2026-05-17 09:41:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -3105,6 +3105,7 @@
 ||shwchurch.org
 ||shwchurch3.com
 ||sidelinesnews.com
+||sider.ai
 ||signal.org
 ||silvergatebank.com
 ||simbolostwitter.com
@@ -4165,6 +4166,7 @@
 ||zh.pokerstrategy.com
 ||zh.wikiquote.org
 ||zhangtianliang.com
+||zhangzhehan.net
 ||zhanlve.org
 ||zhao.1984.city
 ||zhengjian.org

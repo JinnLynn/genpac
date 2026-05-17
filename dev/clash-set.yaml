@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-17 03:59:07
-#! GFWList: 2026-05-13 10:51:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-17 13:43:43
+#! GFWList: 2026-05-17 09:41:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -3073,6 +3073,7 @@ payload:
   - DOMAIN-SUFFIX,shwchurch.org
   - DOMAIN-SUFFIX,shwchurch3.com
   - DOMAIN-SUFFIX,sidelinesnews.com
+  - DOMAIN-SUFFIX,sider.ai
   - DOMAIN-SUFFIX,signal.org
   - DOMAIN-SUFFIX,silvergatebank.com
   - DOMAIN-SUFFIX,simbolostwitter.com
@@ -4133,6 +4134,7 @@ payload:
   - DOMAIN-SUFFIX,zh.pokerstrategy.com
   - DOMAIN-SUFFIX,zh.wikiquote.org
   - DOMAIN-SUFFIX,zhangtianliang.com
+  - DOMAIN-SUFFIX,zhangzhehan.net
   - DOMAIN-SUFFIX,zhanlve.org
   - DOMAIN-SUFFIX,zhao.1984.city
   - DOMAIN-SUFFIX,zhengjian.org
