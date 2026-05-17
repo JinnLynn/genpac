@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-17 03:58:37
-#! GFWList: 2026-05-13 10:51:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-17 13:43:18
+#! GFWList: 2026-05-17 09:41:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3089,6 +3089,7 @@ rule:
         - s,shwchurch.org
         - s,shwchurch3.com
         - s,sidelinesnews.com
+        - s,sider.ai
         - s,signal.org
         - s,silvergatebank.com
         - s,simbolostwitter.com
@@ -4149,6 +4150,7 @@ rule:
         - s,zh.pokerstrategy.com
         - s,zh.wikiquote.org
         - s,zhangtianliang.com
+        - s,zhangzhehan.net
         - s,zhanlve.org
         - s,zhao.1984.city
         - s,zhengjian.org
