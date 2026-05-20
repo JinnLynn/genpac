@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-20 04:06:27
-#! GFWList: 2026-05-17 09:41:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-20 15:37:13
+#! GFWList: 2026-05-20 11:47:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1110,6 +1110,7 @@ rule:
         - s,f-droid.org
         - s,f2pool.com
         - s,f8.com
+        - s,f95zone.to
         - s,facebook.com
         - s,facebook.de
         - s,facebook.design
@@ -1297,6 +1298,7 @@ rule:
         - s,fxnetworks.com
         - s,g-area.org
         - s,g-queen.com
+        - s,g.ai
         - s,g.co
         - s,g0v.social
         - s,g6hentai.com
@@ -2144,6 +2146,7 @@ rule:
         - s,lematin.ch
         - s,lemonde.fr
         - s,lenwhite.com
+        - s,leonardo.ai
         - s,lesoir.be
         - s,letscorp.net
         - s,lexica.art
@@ -2908,6 +2911,7 @@ rule:
         - s,raizoji.or.jp
         - s,rakuten.co.jp
         - s,ramcity.com.au
+        - s,raphael.app
         - s,rapidmoviez.com
         - s,rapidvpn.com
         - s,rarbgprx.org
@@ -2987,6 +2991,7 @@ rule:
         - s,rti.tw
         - s,rtm.tnt-ea.com
         - s,rts.ch
+        - s,rule34.us
         - s,rule34.xxx
         - s,rule34video.com
         - s,rumble.com
@@ -3165,6 +3170,7 @@ rule:
         - s,sos.org
         - s,sosad.fun
         - s,sosreader.com
+        - s,sotwe.com
         - s,soubory.com
         - s,soulcaliburhentai.net
         - s,soundcloud.com

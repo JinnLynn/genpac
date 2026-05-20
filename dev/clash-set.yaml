@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-20 04:06:27
-#! GFWList: 2026-05-17 09:41:29 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-20 15:37:13
+#! GFWList: 2026-05-20 11:47:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -1094,6 +1094,7 @@ payload:
   - DOMAIN-SUFFIX,f-droid.org
   - DOMAIN-SUFFIX,f2pool.com
   - DOMAIN-SUFFIX,f8.com
+  - DOMAIN-SUFFIX,f95zone.to
   - DOMAIN-SUFFIX,facebook.com
   - DOMAIN-SUFFIX,facebook.de
   - DOMAIN-SUFFIX,facebook.design
@@ -1281,6 +1282,7 @@ payload:
   - DOMAIN-SUFFIX,fxnetworks.com
   - DOMAIN-SUFFIX,g-area.org
   - DOMAIN-SUFFIX,g-queen.com
+  - DOMAIN-SUFFIX,g.ai
   - DOMAIN-SUFFIX,g.co
   - DOMAIN-SUFFIX,g0v.social
   - DOMAIN-SUFFIX,g6hentai.com
@@ -2128,6 +2130,7 @@ payload:
   - DOMAIN-SUFFIX,lematin.ch
   - DOMAIN-SUFFIX,lemonde.fr
   - DOMAIN-SUFFIX,lenwhite.com
+  - DOMAIN-SUFFIX,leonardo.ai
   - DOMAIN-SUFFIX,lesoir.be
   - DOMAIN-SUFFIX,letscorp.net
   - DOMAIN-SUFFIX,lexica.art
@@ -2892,6 +2895,7 @@ payload:
   - DOMAIN-SUFFIX,raizoji.or.jp
   - DOMAIN-SUFFIX,rakuten.co.jp
   - DOMAIN-SUFFIX,ramcity.com.au
+  - DOMAIN-SUFFIX,raphael.app
   - DOMAIN-SUFFIX,rapidmoviez.com
   - DOMAIN-SUFFIX,rapidvpn.com
   - DOMAIN-SUFFIX,rarbgprx.org
@@ -2971,6 +2975,7 @@ payload:
   - DOMAIN-SUFFIX,rti.tw
   - DOMAIN-SUFFIX,rtm.tnt-ea.com
   - DOMAIN-SUFFIX,rts.ch
+  - DOMAIN-SUFFIX,rule34.us
   - DOMAIN-SUFFIX,rule34.xxx
   - DOMAIN-SUFFIX,rule34video.com
   - DOMAIN-SUFFIX,rumble.com
@@ -3149,6 +3154,7 @@ payload:
   - DOMAIN-SUFFIX,sos.org
   - DOMAIN-SUFFIX,sosad.fun
   - DOMAIN-SUFFIX,sosreader.com
+  - DOMAIN-SUFFIX,sotwe.com
   - DOMAIN-SUFFIX,soubory.com
   - DOMAIN-SUFFIX,soulcaliburhentai.net
   - DOMAIN-SUFFIX,soundcloud.com
