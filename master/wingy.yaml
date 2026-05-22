@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-22 04:10:06
-#! GFWList: 2026-05-20 11:47:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-22 14:49:44
+#! GFWList: 2026-05-22 12:17:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -45,6 +45,7 @@ rule:
         - s,2047.one
         - s,2049bbs.xyz
         - s,233abc.com
+        - s,24hbook.com
         - s,24hrs.ca
         - s,32red.com
         - s,36rain.com
@@ -2254,6 +2255,7 @@ rule:
         - s,martsangkagyuofficial.org
         - s,marxist.net
         - s,marxists.org
+        - s,mas.to
         - s,mash.to
         - s,mastodon.cloud
         - s,mastodon.host
