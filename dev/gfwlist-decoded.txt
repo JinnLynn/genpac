@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: d6SFSgeSfqm8ltJix10jOQ
+! Checksum: ibJvLxhEB/4Pha/FAUVgXw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 20 May 2026 11:47:07 +0000
+! Last Modified: Fri, 22 May 2026 12:17:45 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1112,6 +1112,7 @@ iipdigital.usembassy.gov
 ||yahoo.com.hk
 ||yahoo.com
 !------------------Numerics---------------------
+||24hbook.com
 ||996.icu
 ||ipfs.4everland.io
 ||91dasai.com
@@ -2690,6 +2691,7 @@ iipdigital.usembassy.gov
 ||lzmtnews.org
 ||leonardo.ai
 !--------------------MM-------------------------
+||mas.to
 ||mjj.today
 ||mediamatters.org
 ||mistral.ai
@@ -2851,6 +2853,7 @@ iipdigital.usembassy.gov
 ||mypopescu.com
 ||myspacecdn.com
 !--------------------NN-------------------------
+||neodb.social 
 ||nfscofficial.com
 ||nfsc.press
 ||newstimes.com

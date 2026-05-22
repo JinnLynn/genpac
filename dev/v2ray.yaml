@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-22 04:10:33
-#! GFWList: 2026-05-20 11:47:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-22 14:50:13
+#! GFWList: 2026-05-22 12:17:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -69,6 +69,7 @@ routing:
         - domain:2047.one
         - domain:2049bbs.xyz
         - domain:233abc.com
+        - domain:24hbook.com
         - domain:24hrs.ca
         - domain:32red.com
         - domain:36rain.com
@@ -2278,6 +2279,7 @@ routing:
         - domain:martsangkagyuofficial.org
         - domain:marxist.net
         - domain:marxists.org
+        - domain:mas.to
         - domain:mash.to
         - domain:mastodon.cloud
         - domain:mastodon.host
