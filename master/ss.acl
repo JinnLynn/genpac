@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-25 04:20:21
-#! GFWList: 2026-05-22 12:17:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-25 15:18:54
+#! GFWList: 2026-05-25 04:46:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -2387,6 +2387,7 @@
 (^|\.)motherless\.com$
 (^|\.)movements\.org$
 (^|\.)moviefap\.com$
+(^|\.)mozilla\.ai$
 (^|\.)mpettis\.com$
 (^|\.)mpfinance\.com$
 (^|\.)mpinews\.com$

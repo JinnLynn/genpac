@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-25 04:20:21
-#! GFWList: 2026-05-22 12:17:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-25 15:18:54
+#! GFWList: 2026-05-25 04:46:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2424,6 +2424,7 @@ routing:
         - domain:motherless.com
         - domain:movements.org
         - domain:moviefap.com
+        - domain:mozilla.ai
         - domain:mpettis.com
         - domain:mpfinance.com
         - domain:mpinews.com
