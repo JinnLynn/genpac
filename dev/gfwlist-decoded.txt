@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: ibJvLxhEB/4Pha/FAUVgXw
+! Checksum: bj4VglYj5gCEN4h/DKrAMw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 22 May 2026 12:17:45 +0000
+! Last Modified: Mon, 25 May 2026 04:46:31 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2828,6 +2828,7 @@ iipdigital.usembassy.gov
 |http://motherless.com
 ||movements.org
 ||moviefap.com
+||mozilla.ai
 ||www.moztw.org
 ||mpettis.com
 ||mpfinance.com
