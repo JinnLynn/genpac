@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-27 04:19:42
-#! GFWList: 2026-05-25 04:46:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-27 15:58:19
+#! GFWList: 2026-05-27 09:39:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -977,6 +977,7 @@ rule:
         - s,douchi.space
         - s,dougscripts.com
         - s,doujincafe.com
+        - s,dowjones.io
         - s,download.dappcdn.com
         - s,dpool.top
         - s,dpp.org.tw

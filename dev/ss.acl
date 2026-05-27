@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-27 04:19:42
-#! GFWList: 2026-05-25 04:46:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-27 15:58:17
+#! GFWList: 2026-05-27 09:39:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -964,6 +964,7 @@
 (^|\.)douchi\.space$
 (^|\.)dougscripts\.com$
 (^|\.)doujincafe\.com$
+(^|\.)dowjones\.io$
 (^|\.)download\.dappcdn\.com$
 (^|\.)dpool\.top$
 (^|\.)dpp\.org\.tw$
