@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: bj4VglYj5gCEN4h/DKrAMw
+! Checksum: AlwpBGk+LMhp6xW+0wwT3Q
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 25 May 2026 04:46:31 +0000
+! Last Modified: Wed, 27 May 2026 09:39:21 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1846,6 +1846,7 @@ iipdigital.usembassy.gov
 ||dougscripts.com
 ||doujincafe.com
 |https://bartender.dowjones.com
+||dowjones.io
 ||dpp.org.tw
 ||dpr.info
 ||dragonsprings.org

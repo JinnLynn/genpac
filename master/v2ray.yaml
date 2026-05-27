@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-27 04:19:16
-#! GFWList: 2026-05-25 04:46:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-27 15:57:50
+#! GFWList: 2026-05-27 09:39:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1001,6 +1001,7 @@ routing:
         - domain:douchi.space
         - domain:dougscripts.com
         - domain:doujincafe.com
+        - domain:dowjones.io
         - domain:download.dappcdn.com
         - domain:dpool.top
         - domain:dpp.org.tw
