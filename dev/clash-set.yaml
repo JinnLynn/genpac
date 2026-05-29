@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-28 16:12:52
-#! GFWList: 2026-05-27 09:39:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-29 04:11:13
+#! GFWList: 2026-05-29 03:59:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -263,6 +263,7 @@ payload:
   - DOMAIN-SUFFIX,artstation.com
   - DOMAIN-SUFFIX,arvanstorage.ir
   - DOMAIN-SUFFIX,arweave.org
+  - DOMAIN-SUFFIX,as.mr
   - DOMAIN-SUFFIX,asacp.org
   - DOMAIN-SUFFIX,asiaharvest.org
   - DOMAIN-SUFFIX,asianage.com
@@ -739,7 +740,6 @@ payload:
   - DOMAIN-SUFFIX,cn.uptodown.com
   - DOMAIN-SUFFIX,cna.com.tw
   - DOMAIN-SUFFIX,cnbbnews.wordpress.com
-  - DOMAIN-SUFFIX,cnbc.com
   - DOMAIN-SUFFIX,cnbeta.com.tw
   - DOMAIN-SUFFIX,cnd.org
   - DOMAIN-SUFFIX,cnnews.chosun.com
@@ -1316,6 +1316,7 @@ payload:
   - DOMAIN-SUFFIX,geek-art.net
   - DOMAIN-SUFFIX,gekikame.com
   - DOMAIN-SUFFIX,gelbooru.com
+  - DOMAIN-SUFFIX,gencraft.com
   - DOMAIN-SUFFIX,generated.photos
   - DOMAIN-SUFFIX,genius.com
   - DOMAIN-SUFFIX,geph.io
@@ -1726,6 +1727,7 @@ payload:
   - DOMAIN-SUFFIX,hicairo.com
   - DOMAIN-SUFFIX,hiccears.com
   - DOMAIN-SUFFIX,hidden-advent.org
+  - DOMAIN-SUFFIX,hiddify.com
   - DOMAIN-SUFFIX,hide.me
   - DOMAIN-SUFFIX,hideipvpn.com
   - DOMAIN-SUFFIX,hideman.net
@@ -3136,7 +3138,6 @@ payload:
   - DOMAIN-SUFFIX,socks-proxy.net
   - DOMAIN-SUFFIX,sockslist.net
   - DOMAIN-SUFFIX,socrec.org
-  - DOMAIN-SUFFIX,softether-download.com
   - DOMAIN-SUFFIX,softether.co.jp
   - DOMAIN-SUFFIX,softether.org
   - DOMAIN-SUFFIX,softfamous.com
@@ -3713,6 +3714,7 @@ payload:
   - DOMAIN-SUFFIX,vatn.org
   - DOMAIN-SUFFIX,vcf-online.org
   - DOMAIN-SUFFIX,vcfbuilder.org
+  - DOMAIN-SUFFIX,veed.io
   - DOMAIN-SUFFIX,vegas.williamhill.com
   - DOMAIN-SUFFIX,vegasred.com
   - DOMAIN-SUFFIX,venetianmacao.com
@@ -4081,7 +4083,6 @@ payload:
   - DOMAIN-SUFFIX,yfsp.tv
   - DOMAIN-SUFFIX,yhcw.net
   - DOMAIN-SUFFIX,yibaochina.com
-  - DOMAIN-SUFFIX,yidio.com
   - DOMAIN-SUFFIX,yigeni.com
   - DOMAIN-SUFFIX,yipub.com
   - DOMAIN-SUFFIX,yizhihongxing.com

@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: AlwpBGk+LMhp6xW+0wwT3Q
+! Checksum: BvG3NuUqlhXTiPpsnHz2cA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 27 May 2026 09:39:21 +0000
+! Last Modified: Fri, 29 May 2026 03:59:07 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -372,7 +372,6 @@
 ||line-scdn.net
 ||i.lithium.com
 ||cloud.mail.ru
-||cdn-images.mailchimp.com
 ||mastodon.cloud
 ||mastodon.host
 ||mastodon.social
@@ -1520,7 +1519,6 @@ iipdigital.usembassy.gov
 !--------------------CC-------------------------
 ||chonglangtv.org
 ||ctinsider.com
-||cnbc.com
 ||cia.gov
 ||claude.com
 ||www.clashverge.dev
@@ -3482,7 +3480,6 @@ iipdigital.usembassy.gov
 ||sockslist.net
 |http://socrec.org
 ||softether.org
-||softether-download.com
 ||cdn.softlayer.net
 ||sogclub.com
 ||sohcradio.com
@@ -4230,7 +4227,6 @@ iipdigital.usembassy.gov
 |http://yeyeclub.com
 ||yhcw.net
 ||yibaochina.com
-||yidio.com
 ||s.yimg.com
 ||yipub.com
 ||yizhihongxing.com
@@ -4304,6 +4300,10 @@ iipdigital.usembassy.gov
 ||zuola.com
 ||zvereff.com
 ||zyxel.com
+||veed.io
+||gencraft.com
+||hiddify.com
+||as.mr
 !##############General List End#################
 !###########Supplemental List Start#############
 !#############Supplemental List End#############

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-28 16:12:52
-#! GFWList: 2026-05-27 09:39:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-29 04:11:13
+#! GFWList: 2026-05-29 03:59:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -301,6 +301,7 @@ rules:
   - DOMAIN-SUFFIX,artstation.com,PROXY
   - DOMAIN-SUFFIX,arvanstorage.ir,PROXY
   - DOMAIN-SUFFIX,arweave.org,PROXY
+  - DOMAIN-SUFFIX,as.mr,PROXY
   - DOMAIN-SUFFIX,asacp.org,PROXY
   - DOMAIN-SUFFIX,asiaharvest.org,PROXY
   - DOMAIN-SUFFIX,asianage.com,PROXY
@@ -777,7 +778,6 @@ rules:
   - DOMAIN-SUFFIX,cn.uptodown.com,PROXY
   - DOMAIN-SUFFIX,cna.com.tw,PROXY
   - DOMAIN-SUFFIX,cnbbnews.wordpress.com,PROXY
-  - DOMAIN-SUFFIX,cnbc.com,PROXY
   - DOMAIN-SUFFIX,cnbeta.com.tw,PROXY
   - DOMAIN-SUFFIX,cnd.org,PROXY
   - DOMAIN-SUFFIX,cnnews.chosun.com,PROXY
@@ -1354,6 +1354,7 @@ rules:
   - DOMAIN-SUFFIX,geek-art.net,PROXY
   - DOMAIN-SUFFIX,gekikame.com,PROXY
   - DOMAIN-SUFFIX,gelbooru.com,PROXY
+  - DOMAIN-SUFFIX,gencraft.com,PROXY
   - DOMAIN-SUFFIX,generated.photos,PROXY
   - DOMAIN-SUFFIX,genius.com,PROXY
   - DOMAIN-SUFFIX,geph.io,PROXY
@@ -1764,6 +1765,7 @@ rules:
   - DOMAIN-SUFFIX,hicairo.com,PROXY
   - DOMAIN-SUFFIX,hiccears.com,PROXY
   - DOMAIN-SUFFIX,hidden-advent.org,PROXY
+  - DOMAIN-SUFFIX,hiddify.com,PROXY
   - DOMAIN-SUFFIX,hide.me,PROXY
   - DOMAIN-SUFFIX,hideipvpn.com,PROXY
   - DOMAIN-SUFFIX,hideman.net,PROXY
@@ -3174,7 +3176,6 @@ rules:
   - DOMAIN-SUFFIX,socks-proxy.net,PROXY
   - DOMAIN-SUFFIX,sockslist.net,PROXY
   - DOMAIN-SUFFIX,socrec.org,PROXY
-  - DOMAIN-SUFFIX,softether-download.com,PROXY
   - DOMAIN-SUFFIX,softether.co.jp,PROXY
   - DOMAIN-SUFFIX,softether.org,PROXY
   - DOMAIN-SUFFIX,softfamous.com,PROXY
@@ -3751,6 +3752,7 @@ rules:
   - DOMAIN-SUFFIX,vatn.org,PROXY
   - DOMAIN-SUFFIX,vcf-online.org,PROXY
   - DOMAIN-SUFFIX,vcfbuilder.org,PROXY
+  - DOMAIN-SUFFIX,veed.io,PROXY
   - DOMAIN-SUFFIX,vegas.williamhill.com,PROXY
   - DOMAIN-SUFFIX,vegasred.com,PROXY
   - DOMAIN-SUFFIX,venetianmacao.com,PROXY
@@ -4119,7 +4121,6 @@ rules:
   - DOMAIN-SUFFIX,yfsp.tv,PROXY
   - DOMAIN-SUFFIX,yhcw.net,PROXY
   - DOMAIN-SUFFIX,yibaochina.com,PROXY
-  - DOMAIN-SUFFIX,yidio.com,PROXY
   - DOMAIN-SUFFIX,yigeni.com,PROXY
   - DOMAIN-SUFFIX,yipub.com,PROXY
   - DOMAIN-SUFFIX,yizhihongxing.com,PROXY

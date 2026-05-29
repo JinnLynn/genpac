@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-28 16:12:52
-#! GFWList: 2026-05-27 09:39:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-29 04:11:13
+#! GFWList: 2026-05-29 03:59:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -279,6 +279,7 @@ rule:
         - s,artstation.com
         - s,arvanstorage.ir
         - s,arweave.org
+        - s,as.mr
         - s,asacp.org
         - s,asiaharvest.org
         - s,asianage.com
@@ -755,7 +756,6 @@ rule:
         - s,cn.uptodown.com
         - s,cna.com.tw
         - s,cnbbnews.wordpress.com
-        - s,cnbc.com
         - s,cnbeta.com.tw
         - s,cnd.org
         - s,cnnews.chosun.com
@@ -1332,6 +1332,7 @@ rule:
         - s,geek-art.net
         - s,gekikame.com
         - s,gelbooru.com
+        - s,gencraft.com
         - s,generated.photos
         - s,genius.com
         - s,geph.io
@@ -1742,6 +1743,7 @@ rule:
         - s,hicairo.com
         - s,hiccears.com
         - s,hidden-advent.org
+        - s,hiddify.com
         - s,hide.me
         - s,hideipvpn.com
         - s,hideman.net
@@ -3152,7 +3154,6 @@ rule:
         - s,socks-proxy.net
         - s,sockslist.net
         - s,socrec.org
-        - s,softether-download.com
         - s,softether.co.jp
         - s,softether.org
         - s,softfamous.com
@@ -3729,6 +3730,7 @@ rule:
         - s,vatn.org
         - s,vcf-online.org
         - s,vcfbuilder.org
+        - s,veed.io
         - s,vegas.williamhill.com
         - s,vegasred.com
         - s,venetianmacao.com
@@ -4097,7 +4099,6 @@ rule:
         - s,yfsp.tv
         - s,yhcw.net
         - s,yibaochina.com
-        - s,yidio.com
         - s,yigeni.com
         - s,yipub.com
         - s,yizhihongxing.com
