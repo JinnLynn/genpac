@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-29 04:11:13
-#! GFWList: 2026-05-29 03:59:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-29 15:54:54
+#! GFWList: 2026-05-29 13:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -327,6 +327,7 @@ payload:
   - DOMAIN-SUFFIX,bangdream.space
   - DOMAIN-SUFFIX,bangkokpost.com
   - DOMAIN-SUFFIX,bangumi.moe
+  - DOMAIN-SUFFIX,bangumi.tv
   - DOMAIN-SUFFIX,bangyoulater.com
   - DOMAIN-SUFFIX,bankmobilevibe.com
   - DOMAIN-SUFFIX,bannedbook.org
@@ -382,6 +383,7 @@ payload:
   - DOMAIN-SUFFIX,betvictor.com
   - DOMAIN-SUFFIX,bfnn.org
   - DOMAIN-SUFFIX,bfsh.hk
+  - DOMAIN-SUFFIX,bgm.tv
   - DOMAIN-SUFFIX,bgme.me
   - DOMAIN-SUFFIX,bgvpn.com
   - DOMAIN-SUFFIX,biblesforamerica.org
@@ -639,6 +641,7 @@ payload:
   - DOMAIN-SUFFIX,chenshan20042005.wordpress.com
   - DOMAIN-SUFFIX,cherrysave.com
   - DOMAIN-SUFFIX,chhongbi.org
+  - DOMAIN-SUFFIX,chii.in
   - DOMAIN-SUFFIX,china-mmm.net
   - DOMAIN-SUFFIX,china-review.com.ua
   - DOMAIN-SUFFIX,china-week.com

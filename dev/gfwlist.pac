@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-05-29 04:11:10
- * GFWList Last-Modified: 2026-05-29 03:59:07
+ * Generated: 2026-05-29 15:54:52
+ * GFWList Last-Modified: 2026-05-29 13:43:25
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -372,6 +372,7 @@ var rules = [
             "bangdream.space",
             "bangkokpost.com",
             "bangumi.moe",
+            "bangumi.tv",
             "bangyoulater.com",
             "bankmobilevibe.com",
             "bannedbook.org",
@@ -427,6 +428,7 @@ var rules = [
             "betvictor.com",
             "bfnn.org",
             "bfsh.hk",
+            "bgm.tv",
             "bgme.me",
             "bgvpn.com",
             "biblesforamerica.org",
@@ -684,6 +686,7 @@ var rules = [
             "chenshan20042005.wordpress.com",
             "cherrysave.com",
             "chhongbi.org",
+            "chii.in",
             "china-mmm.net",
             "china-review.com.ua",
             "china-week.com",

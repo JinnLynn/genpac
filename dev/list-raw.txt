@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-05-29 04:11:10
-! GFWList: 2026-05-29 03:59:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-05-29 15:54:52
+! GFWList: 2026-05-29 13:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -359,6 +359,7 @@
 ||bangdream.space
 ||bangkokpost.com
 ||bangumi.moe
+||bangumi.tv
 ||bangyoulater.com
 ||bankmobilevibe.com
 ||bannedbook.org
@@ -414,6 +415,7 @@
 ||betvictor.com
 ||bfnn.org
 ||bfsh.hk
+||bgm.tv
 ||bgme.me
 ||bgvpn.com
 ||biblesforamerica.org
@@ -671,6 +673,7 @@
 ||chenshan20042005.wordpress.com
 ||cherrysave.com
 ||chhongbi.org
+||chii.in
 ||china-mmm.net
 ||china-review.com.ua
 ||china-week.com
