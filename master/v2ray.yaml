@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-28 16:12:19
-#! GFWList: 2026-05-27 09:39:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-29 04:10:45
+#! GFWList: 2026-05-29 03:59:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -303,6 +303,7 @@ routing:
         - domain:artstation.com
         - domain:arvanstorage.ir
         - domain:arweave.org
+        - domain:as.mr
         - domain:asacp.org
         - domain:asiaharvest.org
         - domain:asianage.com
@@ -779,7 +780,6 @@ routing:
         - domain:cn.uptodown.com
         - domain:cna.com.tw
         - domain:cnbbnews.wordpress.com
-        - domain:cnbc.com
         - domain:cnbeta.com.tw
         - domain:cnd.org
         - domain:cnnews.chosun.com
@@ -1356,6 +1356,7 @@ routing:
         - domain:geek-art.net
         - domain:gekikame.com
         - domain:gelbooru.com
+        - domain:gencraft.com
         - domain:generated.photos
         - domain:genius.com
         - domain:geph.io
@@ -1766,6 +1767,7 @@ routing:
         - domain:hicairo.com
         - domain:hiccears.com
         - domain:hidden-advent.org
+        - domain:hiddify.com
         - domain:hide.me
         - domain:hideipvpn.com
         - domain:hideman.net
@@ -3176,7 +3178,6 @@ routing:
         - domain:socks-proxy.net
         - domain:sockslist.net
         - domain:socrec.org
-        - domain:softether-download.com
         - domain:softether.co.jp
         - domain:softether.org
         - domain:softfamous.com
@@ -3753,6 +3754,7 @@ routing:
         - domain:vatn.org
         - domain:vcf-online.org
         - domain:vcfbuilder.org
+        - domain:veed.io
         - domain:vegas.williamhill.com
         - domain:vegasred.com
         - domain:venetianmacao.com
@@ -4121,7 +4123,6 @@ routing:
         - domain:yfsp.tv
         - domain:yhcw.net
         - domain:yibaochina.com
-        - domain:yidio.com
         - domain:yigeni.com
         - domain:yipub.com
         - domain:yizhihongxing.com

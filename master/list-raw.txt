@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-05-28 16:12:19
-! GFWList: 2026-05-27 09:39:21 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-05-29 04:10:44
+! GFWList: 2026-05-29 03:59:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -295,6 +295,7 @@
 ||artstation.com
 ||arvanstorage.ir
 ||arweave.org
+||as.mr
 ||asacp.org
 ||asiaharvest.org
 ||asianage.com
@@ -771,7 +772,6 @@
 ||cn.uptodown.com
 ||cna.com.tw
 ||cnbbnews.wordpress.com
-||cnbc.com
 ||cnbeta.com.tw
 ||cnd.org
 ||cnnews.chosun.com
@@ -1348,6 +1348,7 @@
 ||geek-art.net
 ||gekikame.com
 ||gelbooru.com
+||gencraft.com
 ||generated.photos
 ||genius.com
 ||geph.io
@@ -1758,6 +1759,7 @@
 ||hicairo.com
 ||hiccears.com
 ||hidden-advent.org
+||hiddify.com
 ||hide.me
 ||hideipvpn.com
 ||hideman.net
@@ -3168,7 +3170,6 @@
 ||socks-proxy.net
 ||sockslist.net
 ||socrec.org
-||softether-download.com
 ||softether.co.jp
 ||softether.org
 ||softfamous.com
@@ -3745,6 +3746,7 @@
 ||vatn.org
 ||vcf-online.org
 ||vcfbuilder.org
+||veed.io
 ||vegas.williamhill.com
 ||vegasred.com
 ||venetianmacao.com
@@ -4113,7 +4115,6 @@
 ||yfsp.tv
 ||yhcw.net
 ||yibaochina.com
-||yidio.com
 ||yigeni.com
 ||yipub.com
 ||yizhihongxing.com
