@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-05-29 04:10:46
-#! GFWList: 2026-05-29 03:59:07 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-05-29 15:54:25
+#! GFWList: 2026-05-29 13:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -343,6 +343,7 @@ rule:
         - s,bangdream.space
         - s,bangkokpost.com
         - s,bangumi.moe
+        - s,bangumi.tv
         - s,bangyoulater.com
         - s,bankmobilevibe.com
         - s,bannedbook.org
@@ -398,6 +399,7 @@ rule:
         - s,betvictor.com
         - s,bfnn.org
         - s,bfsh.hk
+        - s,bgm.tv
         - s,bgme.me
         - s,bgvpn.com
         - s,biblesforamerica.org
@@ -655,6 +657,7 @@ rule:
         - s,chenshan20042005.wordpress.com
         - s,cherrysave.com
         - s,chhongbi.org
+        - s,chii.in
         - s,china-mmm.net
         - s,china-review.com.ua
         - s,china-week.com
