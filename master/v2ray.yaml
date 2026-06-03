@@ -1,5 +1,5 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-03 04:48:30
+#! Generated: 2026-06-03 16:59:31
 #! GFWList: 2026-05-29 13:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
