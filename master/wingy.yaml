@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-05 04:17:26
-#! GFWList: 2026-05-29 13:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-05 15:15:54
+#! GFWList: 2026-06-05 04:45:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2673,7 +2673,6 @@ rule:
         - s,pacom.mil
         - s,pacopacomama.com
         - s,page.link
-        - s,pages.dev
         - s,paimon.moe
         - s,pancakeswap.finance
         - s,pandafan.pub
@@ -3286,6 +3285,7 @@ rule:
         - s,surfeasy.com.au
         - s,surfshark.com
         - s,surrenderat20.net
+        - s,suyingtv.com
         - s,swagbucks.com
         - s,swapspace.co
         - s,swissinfo.ch
@@ -3968,6 +3968,7 @@ rule:
         - s,wowporn.com
         - s,woyaolian.org
         - s,wp.com
+        - s,wplace.live
         - s,wpoforum.com
         - s,writesonic.com
         - s,wsj.com

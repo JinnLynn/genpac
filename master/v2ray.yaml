@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-05 04:17:24
-#! GFWList: 2026-05-29 13:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-05 15:15:51
+#! GFWList: 2026-06-05 04:45:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2697,7 +2697,6 @@ routing:
         - domain:pacom.mil
         - domain:pacopacomama.com
         - domain:page.link
-        - domain:pages.dev
         - domain:paimon.moe
         - domain:pancakeswap.finance
         - domain:pandafan.pub
@@ -3310,6 +3309,7 @@ routing:
         - domain:surfeasy.com.au
         - domain:surfshark.com
         - domain:surrenderat20.net
+        - domain:suyingtv.com
         - domain:swagbucks.com
         - domain:swapspace.co
         - domain:swissinfo.ch
@@ -3992,6 +3992,7 @@ routing:
         - domain:wowporn.com
         - domain:woyaolian.org
         - domain:wp.com
+        - domain:wplace.live
         - domain:wpoforum.com
         - domain:writesonic.com
         - domain:wsj.com

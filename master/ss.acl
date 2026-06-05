@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-05 04:17:24
-#! GFWList: 2026-05-29 13:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-05 15:15:51
+#! GFWList: 2026-06-05 04:45:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -2660,7 +2660,6 @@
 (^|\.)pacom\.mil$
 (^|\.)pacopacomama\.com$
 (^|\.)page\.link$
-(^|\.)pages\.dev$
 (^|\.)paimon\.moe$
 (^|\.)pancakeswap\.finance$
 (^|\.)pandafan\.pub$
@@ -3273,6 +3272,7 @@
 (^|\.)surfeasy\.com\.au$
 (^|\.)surfshark\.com$
 (^|\.)surrenderat20\.net$
+(^|\.)suyingtv\.com$
 (^|\.)swagbucks\.com$
 (^|\.)swapspace\.co$
 (^|\.)swissinfo\.ch$
@@ -3955,6 +3955,7 @@
 (^|\.)wowporn\.com$
 (^|\.)woyaolian\.org$
 (^|\.)wp\.com$
+(^|\.)wplace\.live$
 (^|\.)wpoforum\.com$
 (^|\.)writesonic\.com$
 (^|\.)wsj\.com$
