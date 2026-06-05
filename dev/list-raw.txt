@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-06-05 04:17:50
-! GFWList: 2026-05-29 13:43:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-06-05 15:16:23
+! GFWList: 2026-06-05 04:45:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -2689,7 +2689,6 @@
 ||pacom.mil
 ||pacopacomama.com
 ||page.link
-||pages.dev
 ||paimon.moe
 ||pancakeswap.finance
 ||pandafan.pub
@@ -3302,6 +3301,7 @@
 ||surfeasy.com.au
 ||surfshark.com
 ||surrenderat20.net
+||suyingtv.com
 ||swagbucks.com
 ||swapspace.co
 ||swissinfo.ch
@@ -3984,6 +3984,7 @@
 ||wowporn.com
 ||woyaolian.org
 ||wp.com
+||wplace.live
 ||wpoforum.com
 ||writesonic.com
 ||wsj.com
