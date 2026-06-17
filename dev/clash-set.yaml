@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-17 04:46:40
-#! GFWList: 2026-06-05 04:45:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-17 15:50:12
+#! GFWList: 2026-06-17 14:04:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -3105,6 +3105,7 @@ payload:
   - DOMAIN-SUFFIX,sinoca.com
   - DOMAIN-SUFFIX,sinocast.com
   - DOMAIN-SUFFIX,sinoinsider.com
+  - DOMAIN-SUFFIX,sinyalee.com
   - DOMAIN-SUFFIX,sipml5.org
   - DOMAIN-SUFFIX,sis001.com
   - DOMAIN-SUFFIX,site.new

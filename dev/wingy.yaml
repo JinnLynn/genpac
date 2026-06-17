@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-17 04:46:40
-#! GFWList: 2026-06-05 04:45:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-17 15:50:12
+#! GFWList: 2026-06-17 14:04:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3121,6 +3121,7 @@ rule:
         - s,sinoca.com
         - s,sinocast.com
         - s,sinoinsider.com
+        - s,sinyalee.com
         - s,sipml5.org
         - s,sis001.com
         - s,site.new
