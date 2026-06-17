@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: 35bcFZymIWCNMSBKnkPBow
+! Checksum: F+HiE/yYIwCfAdaX0+masg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 05 Jun 2026 04:45:19 +0000
+! Last Modified: Wed, 17 Jun 2026 14:04:05 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -3459,6 +3459,7 @@ iipdigital.usembassy.gov
 ||sinocast.com
 ||sinoants.com
 ||sinoinsider.com
+||sinyalee.com
 ||sis001.com
 ||sitekreator.com
 ||sitemaps.org

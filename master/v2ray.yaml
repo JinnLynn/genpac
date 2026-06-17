@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-17 04:46:08
-#! GFWList: 2026-06-05 04:45:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-17 15:49:33
+#! GFWList: 2026-06-17 14:04:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3145,6 +3145,7 @@ routing:
         - domain:sinoca.com
         - domain:sinocast.com
         - domain:sinoinsider.com
+        - domain:sinyalee.com
         - domain:sipml5.org
         - domain:sis001.com
         - domain:site.new
