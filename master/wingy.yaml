@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-18 04:39:50
-#! GFWList: 2026-06-17 14:04:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-21 04:54:16
+#! GFWList: 2026-06-19 14:36:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -33,6 +33,7 @@ rule:
         - s,173ng.com
         - s,18board.com
         - s,18comic.org
+        - s,18mh.net
         - s,1984bbs.com
         - s,1991way.com
         - s,1e100.net
@@ -93,6 +94,7 @@ rule:
         - s,9cache.com
         - s,9gag.com
         - s,9news.com.au
+        - s,9oju31.launches.appsflyersdk.com
         - s,a-normal-day.com
         - s,a248.e.akamai.net
         - s,aamacau.com
@@ -107,6 +109,7 @@ rule:
         - s,about.me
         - s,abplive.com
         - s,acast.com
+        - s,accountboy.com
         - s,accountkit.com
         - s,acevpn.com
         - s,acg.mn
@@ -227,13 +230,18 @@ rule:
         - s,apartmentratings.com
         - s,apartments.com
         - s,apat1989.org
+        - s,api-gl.lbkrs.com
         - s,api-secure.recaptcha.net
         - s,api-verify.recaptcha.net
         - s,api.ai
+        - s,api.futunn.com
+        - s,api.lbkrs.com
+        - s,api.moomoobull.com
         - s,api.palworldgame.com
         - s,api.pureapk.com
         - s,api.recaptcha.net
         - s,api.steampowered.com
+        - s,api5.futunn.com
         - s,apiary.io
         - s,apigee.com
         - s,apk.support
@@ -410,6 +418,7 @@ rule:
         - s,bignews.org
         - s,bigone.com
         - s,bild.de
+        - s,bilinovel.com
         - s,biliworld.com
         - s,binance.com
         - s,binance.org
@@ -613,6 +622,7 @@ rule:
         - s,cdn-images.mailchimp.com
         - s,cdn-telegram.org
         - s,cdn.arstechnica.net
+        - s,cdn.futustatic.com
         - s,cdn.jwplayer.com
         - s,cdn.printfriendly.com
         - s,cdn.seatguru.com
@@ -636,6 +646,7 @@ rule:
         - s,certificate-transparency.org
         - s,certificate.revocationcheck.com
         - s,cfr.org
+        - s,cg.play-analytics.com
         - s,cgdepot.org
         - s,change.org
         - s,changp.com
@@ -982,6 +993,7 @@ rule:
         - s,doujincafe.com
         - s,dowjones.io
         - s,download.dappcdn.com
+        - s,download.futunn.com
         - s,dpool.top
         - s,dpp.org.tw
         - s,dpr.info
@@ -1297,7 +1309,36 @@ rule:
         - s,furbo.org
         - s,furinkan.com
         - s,furrybar.com
+        - s,futu.cn
+        - s,futu.com
+        - s,futu.link
+        - s,futu0.com
+        - s,futu1.com
+        - s,futu2.com
+        - s,futu3.com
+        - s,futu4.com
+        - s,futu5.com
+        - s,futu6.com
+        - s,futu7.com
+        - s,futu8.com
+        - s,futu9.com
+        - s,futuau.com
+        - s,futubull.cn
+        - s,futuchain.com
+        - s,futuesop.com
+        - s,futufin.com
+        - s,futuhk.com
+        - s,futuhk2.com
+        - s,futuhkapp.com
+        - s,futuhn.com
+        - s,futuholdings.com
+        - s,futuinc.com
+        - s,futuniuniu.com
+        - s,futunn.com
         - s,futuremessage.org
+        - s,futustatic.com
+        - s,fututrade.com
+        - s,fututrustee.com
         - s,fw.cm
         - s,fxcm-chinese.com
         - s,fxnetworks.com
@@ -1997,6 +2038,7 @@ rule:
         - s,itch.io
         - s,itemfix.com
         - s,itiger.com
+        - s,itigerup.com
         - s,itshidden.com
         - s,itweet.net
         - s,iuhrdf.org
@@ -2135,12 +2177,15 @@ rule:
         - s,lantern.io
         - s,laogai.org
         - s,laogairesearch.org
+        - s,laohu8.com
         - s,laqingdan.net
         - s,larsgeorge.com
         - s,lastcombat.com
         - s,lastfm.es
         - s,lausan.hk
         - s,lbank.info
+        - s,lbctrl.com
+        - s,lbkrs.com
         - s,ldplayer.net
         - s,ldplayer.tw
         - s,le-vpn.com
@@ -2209,6 +2254,15 @@ rule:
         - s,lockestek.com
         - s,login.target.com
         - s,logos.com.hk
+        - s,longbridge.cloud
+        - s,longbridge.com
+        - s,longbridge.global
+        - s,longbridge.hk
+        - s,longbridge.sg
+        - s,longbridgeapp.com
+        - s,longbridgehk.com
+        - s,longportapp.cn
+        - s,longportapp.com
         - s,longtermly.net
         - s,longtoes.com
         - s,lookpic.com
@@ -2395,6 +2449,9 @@ rule:
         - s,monocloud.me
         - s,monster.com
         - s,moodyz.com
+        - s,moomoo.com
+        - s,moomooequity.com
+        - s,moomootrustee.com
         - s,moon.fm
         - s,moonbbs.com
         - s,moonbingo.com
@@ -2634,6 +2691,13 @@ rule:
         - s,ooni.org
         - s,open.firstory.me
         - s,openai.com
+        - s,openapi-quote.longbridge.cn
+        - s,openapi-quote.longbridge.com
+        - s,openapi-trade.longbridge.cn
+        - s,openapi-trade.longbridge.com
+        - s,openapi.futunn.com
+        - s,openapi.longbridge.cn
+        - s,openapi.longbridge.com
         - s,openart.ai
         - s,opencritic.com
         - s,opendemocracy.net
@@ -2888,12 +2952,15 @@ rule:
         - s,qoos.com
         - s,qq.co.za
         - s,qstatus.com
+        - s,qtcard.futunn.com
+        - s,qtcardfthk.futufin.com
         - s,qtrac.eu
         - s,questvisual.com
         - s,quitccp.org
         - s,quiz.directory
         - s,quora.com
         - s,quoracdn.net
+        - s,quote.longbridge.global
         - s,quran.com
         - s,qz.com
         - s,r-pool.net
@@ -3035,6 +3102,10 @@ rule:
         - s,sbme.me
         - s,sbti.unun.dev
         - s,schema.org
+        - s,schwab.co.uk
+        - s,schwab.com
+        - s,schwab.com.cn
+        - s,schwab.com.hk
         - s,scmp.com
         - s,scramble.io
         - s,scratch.mit.edu
@@ -3073,6 +3144,7 @@ rule:
         - s,sf.net
         - s,sfshibao.com
         - s,sftuk.org
+        - s,sgqt0j.launches.appsflyersdk.com
         - s,shadeyouvpn.com
         - s,shadowsocks.be
         - s,shadowsocks.com.hk
@@ -3097,6 +3169,7 @@ rule:
         - s,shooshtime.com
         - s,shopee.tw
         - s,shopping.yahoo.co.jp
+        - s,shortconn.im.qcloud.com
         - s,showwe.tw
         - s,shutterstock.com
         - s,shwchurch.org
@@ -3281,6 +3354,7 @@ rule:
         - s,superpages.com
         - s,supervpn.net
         - s,superzooi.com
+        - s,support.futunn.com
         - s,suprememastertv.com
         - s,surfeasy.com
         - s,surfeasy.com.au
@@ -3470,6 +3544,12 @@ rule:
         - s,tibettimes.net
         - s,tibettruth.com
         - s,tibetwrites.org
+        - s,tigerbbs.cn
+        - s,tigerbbs.com
+        - s,tigerbrokers.com
+        - s,tigerbrokers.net
+        - s,tigerbrokers.nz
+        - s,tigerfintech.com
         - s,tigervpn.com
         - s,tiktok.com
         - s,tiktokcdn-eu.com
@@ -3532,6 +3612,9 @@ rule:
         - s,tou.tv
         - s,tpi.org.tw
         - s,tracfone.com
+        - s,trade.futunn.com
+        - s,trade.longportapp.com
+        - s,tradeup.com
         - s,tradingview.com
         - s,translate.goog
         - s,transparency.org
@@ -3856,6 +3939,7 @@ rule:
         - s,waveprotocol.org
         - s,waybig.com
         - s,waymo.com
+        - s,wbrks.com
         - s,wd.bible
         - s,wealth.com.tw
         - s,wearn.com
@@ -4034,6 +4118,7 @@ rule:
         - s,xhamster.com
         - s,xianjian.tw
         - s,xiaohexie.com
+        - s,xiaohu8.com
         - s,xiaolan.me
         - s,xiaoma.org
         - s,xiaomi.eu
@@ -4058,6 +4143,7 @@ rule:
         - s,xn--oiq.cc
         - s,xn--p8j9a0d9c9a.xn--q9jyb4c
         - s,xn--u2u927b.com
+        - s,xn--vuqv2cf7wzyig79c.com
         - s,xnpool.com
         - s,xnxx.com
         - s,xpud.org
@@ -4172,6 +4258,8 @@ rule:
         - s,zhengjian.org
         - s,zhengwunet.org
         - s,zhenxiang.biz
+        - s,zhijianfengyi.cn
+        - s,zhijianfengyi.com
         - s,zhizhu.top
         - s,zhongguo.ca
         - s,zhongguotese.net
