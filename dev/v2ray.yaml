@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-18 04:40:29
-#! GFWList: 2026-06-17 14:04:05 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-21 04:54:40
+#! GFWList: 2026-06-19 14:36:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -57,6 +57,7 @@ routing:
         - domain:173ng.com
         - domain:18board.com
         - domain:18comic.org
+        - domain:18mh.net
         - domain:1984bbs.com
         - domain:1991way.com
         - domain:1e100.net
@@ -117,6 +118,7 @@ routing:
         - domain:9cache.com
         - domain:9gag.com
         - domain:9news.com.au
+        - domain:9oju31.launches.appsflyersdk.com
         - domain:a-normal-day.com
         - domain:a248.e.akamai.net
         - domain:aamacau.com
@@ -131,6 +133,7 @@ routing:
         - domain:about.me
         - domain:abplive.com
         - domain:acast.com
+        - domain:accountboy.com
         - domain:accountkit.com
         - domain:acevpn.com
         - domain:acg.mn
@@ -251,13 +254,18 @@ routing:
         - domain:apartmentratings.com
         - domain:apartments.com
         - domain:apat1989.org
+        - domain:api-gl.lbkrs.com
         - domain:api-secure.recaptcha.net
         - domain:api-verify.recaptcha.net
         - domain:api.ai
+        - domain:api.futunn.com
+        - domain:api.lbkrs.com
+        - domain:api.moomoobull.com
         - domain:api.palworldgame.com
         - domain:api.pureapk.com
         - domain:api.recaptcha.net
         - domain:api.steampowered.com
+        - domain:api5.futunn.com
         - domain:apiary.io
         - domain:apigee.com
         - domain:apk.support
@@ -434,6 +442,7 @@ routing:
         - domain:bignews.org
         - domain:bigone.com
         - domain:bild.de
+        - domain:bilinovel.com
         - domain:biliworld.com
         - domain:binance.com
         - domain:binance.org
@@ -637,6 +646,7 @@ routing:
         - domain:cdn-images.mailchimp.com
         - domain:cdn-telegram.org
         - domain:cdn.arstechnica.net
+        - domain:cdn.futustatic.com
         - domain:cdn.jwplayer.com
         - domain:cdn.printfriendly.com
         - domain:cdn.seatguru.com
@@ -660,6 +670,7 @@ routing:
         - domain:certificate-transparency.org
         - domain:certificate.revocationcheck.com
         - domain:cfr.org
+        - domain:cg.play-analytics.com
         - domain:cgdepot.org
         - domain:change.org
         - domain:changp.com
@@ -1006,6 +1017,7 @@ routing:
         - domain:doujincafe.com
         - domain:dowjones.io
         - domain:download.dappcdn.com
+        - domain:download.futunn.com
         - domain:dpool.top
         - domain:dpp.org.tw
         - domain:dpr.info
@@ -1321,7 +1333,36 @@ routing:
         - domain:furbo.org
         - domain:furinkan.com
         - domain:furrybar.com
+        - domain:futu.cn
+        - domain:futu.com
+        - domain:futu.link
+        - domain:futu0.com
+        - domain:futu1.com
+        - domain:futu2.com
+        - domain:futu3.com
+        - domain:futu4.com
+        - domain:futu5.com
+        - domain:futu6.com
+        - domain:futu7.com
+        - domain:futu8.com
+        - domain:futu9.com
+        - domain:futuau.com
+        - domain:futubull.cn
+        - domain:futuchain.com
+        - domain:futuesop.com
+        - domain:futufin.com
+        - domain:futuhk.com
+        - domain:futuhk2.com
+        - domain:futuhkapp.com
+        - domain:futuhn.com
+        - domain:futuholdings.com
+        - domain:futuinc.com
+        - domain:futuniuniu.com
+        - domain:futunn.com
         - domain:futuremessage.org
+        - domain:futustatic.com
+        - domain:fututrade.com
+        - domain:fututrustee.com
         - domain:fw.cm
         - domain:fxcm-chinese.com
         - domain:fxnetworks.com
@@ -2021,6 +2062,7 @@ routing:
         - domain:itch.io
         - domain:itemfix.com
         - domain:itiger.com
+        - domain:itigerup.com
         - domain:itshidden.com
         - domain:itweet.net
         - domain:iuhrdf.org
@@ -2159,12 +2201,15 @@ routing:
         - domain:lantern.io
         - domain:laogai.org
         - domain:laogairesearch.org
+        - domain:laohu8.com
         - domain:laqingdan.net
         - domain:larsgeorge.com
         - domain:lastcombat.com
         - domain:lastfm.es
         - domain:lausan.hk
         - domain:lbank.info
+        - domain:lbctrl.com
+        - domain:lbkrs.com
         - domain:ldplayer.net
         - domain:ldplayer.tw
         - domain:le-vpn.com
@@ -2233,6 +2278,15 @@ routing:
         - domain:lockestek.com
         - domain:login.target.com
         - domain:logos.com.hk
+        - domain:longbridge.cloud
+        - domain:longbridge.com
+        - domain:longbridge.global
+        - domain:longbridge.hk
+        - domain:longbridge.sg
+        - domain:longbridgeapp.com
+        - domain:longbridgehk.com
+        - domain:longportapp.cn
+        - domain:longportapp.com
         - domain:longtermly.net
         - domain:longtoes.com
         - domain:lookpic.com
@@ -2419,6 +2473,9 @@ routing:
         - domain:monocloud.me
         - domain:monster.com
         - domain:moodyz.com
+        - domain:moomoo.com
+        - domain:moomooequity.com
+        - domain:moomootrustee.com
         - domain:moon.fm
         - domain:moonbbs.com
         - domain:moonbingo.com
@@ -2658,6 +2715,13 @@ routing:
         - domain:ooni.org
         - domain:open.firstory.me
         - domain:openai.com
+        - domain:openapi-quote.longbridge.cn
+        - domain:openapi-quote.longbridge.com
+        - domain:openapi-trade.longbridge.cn
+        - domain:openapi-trade.longbridge.com
+        - domain:openapi.futunn.com
+        - domain:openapi.longbridge.cn
+        - domain:openapi.longbridge.com
         - domain:openart.ai
         - domain:opencritic.com
         - domain:opendemocracy.net
@@ -2912,12 +2976,15 @@ routing:
         - domain:qoos.com
         - domain:qq.co.za
         - domain:qstatus.com
+        - domain:qtcard.futunn.com
+        - domain:qtcardfthk.futufin.com
         - domain:qtrac.eu
         - domain:questvisual.com
         - domain:quitccp.org
         - domain:quiz.directory
         - domain:quora.com
         - domain:quoracdn.net
+        - domain:quote.longbridge.global
         - domain:quran.com
         - domain:qz.com
         - domain:r-pool.net
@@ -3059,6 +3126,10 @@ routing:
         - domain:sbme.me
         - domain:sbti.unun.dev
         - domain:schema.org
+        - domain:schwab.co.uk
+        - domain:schwab.com
+        - domain:schwab.com.cn
+        - domain:schwab.com.hk
         - domain:scmp.com
         - domain:scramble.io
         - domain:scratch.mit.edu
@@ -3097,6 +3168,7 @@ routing:
         - domain:sf.net
         - domain:sfshibao.com
         - domain:sftuk.org
+        - domain:sgqt0j.launches.appsflyersdk.com
         - domain:shadeyouvpn.com
         - domain:shadowsocks.be
         - domain:shadowsocks.com.hk
@@ -3121,6 +3193,7 @@ routing:
         - domain:shooshtime.com
         - domain:shopee.tw
         - domain:shopping.yahoo.co.jp
+        - domain:shortconn.im.qcloud.com
         - domain:showwe.tw
         - domain:shutterstock.com
         - domain:shwchurch.org
@@ -3305,6 +3378,7 @@ routing:
         - domain:superpages.com
         - domain:supervpn.net
         - domain:superzooi.com
+        - domain:support.futunn.com
         - domain:suprememastertv.com
         - domain:surfeasy.com
         - domain:surfeasy.com.au
@@ -3494,6 +3568,12 @@ routing:
         - domain:tibettimes.net
         - domain:tibettruth.com
         - domain:tibetwrites.org
+        - domain:tigerbbs.cn
+        - domain:tigerbbs.com
+        - domain:tigerbrokers.com
+        - domain:tigerbrokers.net
+        - domain:tigerbrokers.nz
+        - domain:tigerfintech.com
         - domain:tigervpn.com
         - domain:tiktok.com
         - domain:tiktokcdn-eu.com
@@ -3556,6 +3636,9 @@ routing:
         - domain:tou.tv
         - domain:tpi.org.tw
         - domain:tracfone.com
+        - domain:trade.futunn.com
+        - domain:trade.longportapp.com
+        - domain:tradeup.com
         - domain:tradingview.com
         - domain:translate.goog
         - domain:transparency.org
@@ -3880,6 +3963,7 @@ routing:
         - domain:waveprotocol.org
         - domain:waybig.com
         - domain:waymo.com
+        - domain:wbrks.com
         - domain:wd.bible
         - domain:wealth.com.tw
         - domain:wearn.com
@@ -4058,6 +4142,7 @@ routing:
         - domain:xhamster.com
         - domain:xianjian.tw
         - domain:xiaohexie.com
+        - domain:xiaohu8.com
         - domain:xiaolan.me
         - domain:xiaoma.org
         - domain:xiaomi.eu
@@ -4082,6 +4167,7 @@ routing:
         - domain:xn--oiq.cc
         - domain:xn--p8j9a0d9c9a.xn--q9jyb4c
         - domain:xn--u2u927b.com
+        - domain:xn--vuqv2cf7wzyig79c.com
         - domain:xnpool.com
         - domain:xnxx.com
         - domain:xpud.org
@@ -4196,6 +4282,8 @@ routing:
         - domain:zhengjian.org
         - domain:zhengwunet.org
         - domain:zhenxiang.biz
+        - domain:zhijianfengyi.cn
+        - domain:zhijianfengyi.com
         - domain:zhizhu.top
         - domain:zhongguo.ca
         - domain:zhongguotese.net

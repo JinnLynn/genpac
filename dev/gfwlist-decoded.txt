@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: F+HiE/yYIwCfAdaX0+masg
+! Checksum: BJRA81jkTWpISrDQm8XlLA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 17 Jun 2026 14:04:05 +0000
+! Last Modified: Fri, 19 Jun 2026 14:36:45 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -311,6 +311,7 @@
 ||xn--9pr62r24a.com
 @@/^https?:\/\/(?=.*?(2x3|ni5|j5o))[a-z0-9.-]+\.xn--ngstr-lra8j\.com$
 ||xn--ngstr-lra8j.com
+||xn--vuqv2cf7wzyig79c.com
 !-----------------DNS Poisoning-----------------
 !---Amazon---
 ||music.amazon.com
@@ -537,6 +538,92 @@
 ||xbtce.com
 ||yobit.net
 ||zb.com
+!---Finance---
+||futuhk.com
+||futu.link
+||futunn.com
+||futuhn.com
+||futu.com
+||futu0.com
+||futu1.com
+||futu2.com
+||futu3.com
+||futu4.com
+||futu5.com
+||futu6.com
+||futu7.com
+||futu8.com
+||futu9.com
+||futuinc.com
+||futuniuniu.com
+||futu.cn
+||futufin.com
+||futuhk2.com
+||futuholdings.com
+||futuesop.com
+||futubull.cn
+||futuchain.com
+||moomoo.com
+||lbctrl.com
+||lbkrs.com
+||wbrks.com
+||longportapp.cn
+||longportapp.com
+||longbridgeapp.com
+||longbridge.hk
+||longbridgehk.com
+||longbridge.com
+||longbridge.global
+||itiger.com
+||itigerup.com
+||laohu8.com
+||tigerbbs.cn
+||tigerbbs.com
+||tigerfintech.com
+||tradeup.com
+||xiaohu8.com
+||zhijianfengyi.cn
+||zhijianfengyi.com
+||schwab.com
+||schwab.com.cn
+||schwab.com.hk
+||schwab.co.uk
+||futustatic.com
+||futuau.com
+||futuhkapp.com
+||fututrade.com
+||fututrustee.com
+||cdn.futustatic.com
+||api.moomoobull.com
+||moomooequity.com
+||moomootrustee.com
+||9oju31.launches.appsflyersdk.com
+||sgqt0j.launches.appsflyersdk.com
+||shortconn.im.qcloud.com
+||api.lbkrs.com
+||api-gl.lbkrs.com
+||longbridge.cloud
+||longbridge.sg
+||tigerbrokers.com
+||tigerbrokers.net
+||tigerbrokers.nz
+||quote.longbridge.global
+||trade.longportapp.com
+||openapi.longbridge.com
+||openapi-quote.longbridge.com
+||openapi-trade.longbridge.com
+||openapi.longbridge.cn
+||openapi-quote.longbridge.cn
+||openapi-trade.longbridge.cn
+||cg.play-analytics.com
+||qtcard.futunn.com
+||qtcardfthk.futufin.com
+||openapi.futunn.com
+||api.futunn.com
+||api5.futunn.com
+||trade.futunn.com
+||support.futunn.com
+||download.futunn.com
 !----------------Frauds & Scams-----------------
 !!---Content Farm(fake 500 error)---
 ||read01.com
@@ -1110,6 +1197,7 @@ iipdigital.usembassy.gov
 ||yahoo.com.hk
 ||yahoo.com
 !------------------Numerics---------------------
+||18mh.net
 ||24hbook.com
 ||996.icu
 ||ipfs.4everland.io
@@ -1181,6 +1269,7 @@ iipdigital.usembassy.gov
 ||9bis.net
 ||9news.com.au
 !--------------------AA-------------------------
+||accountboy.com
 ||acg.mn
 ||asiasociety.org
 ||avistaz.to
@@ -1354,6 +1443,7 @@ iipdigital.usembassy.gov
 !--boxun.azurewebsites.net doesn't exist.
 ||boxun*.azurewebsites.net
 !--------------------BB-------------------------
+||bilinovel.com
 ||boomplay.com
 ||bleepingcomputer.com
 ||bellingcat.com
@@ -2386,7 +2476,6 @@ iipdigital.usembassy.gov
 ||idcflare.com
 ||interseclab.org
 ||ipify.org
-||itiger.com
 ||itch.io
 ||infura.io
 ||president.ir
