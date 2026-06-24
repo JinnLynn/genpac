@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-24 04:04:06
-#! GFWList: 2026-06-19 14:36:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-24 14:42:46
+#! GFWList: 2026-06-24 13:45:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1405,6 +1405,7 @@ routing:
         - domain:genius.com
         - domain:geph.io
         - domain:get.app
+        - domain:get.dappcdn.com
         - domain:get.dev
         - domain:get.how
         - domain:get.page
