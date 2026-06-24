@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-24 04:04:33
-#! GFWList: 2026-06-19 14:36:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-24 14:43:22
+#! GFWList: 2026-06-24 13:45:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -1365,6 +1365,7 @@ payload:
   - DOMAIN-SUFFIX,genius.com
   - DOMAIN-SUFFIX,geph.io
   - DOMAIN-SUFFIX,get.app
+  - DOMAIN-SUFFIX,get.dappcdn.com
   - DOMAIN-SUFFIX,get.dev
   - DOMAIN-SUFFIX,get.how
   - DOMAIN-SUFFIX,get.page
