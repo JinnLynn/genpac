@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-25 04:05:19
-#! GFWList: 2026-06-24 13:45:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-25 14:42:38
+#! GFWList: 2026-06-25 13:39:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -828,6 +828,7 @@ rule:
         - s,crazyshit.com
         - s,crbug.com
         - s,crchina.org
+        - s,creader.com
         - s,creaders.net
         - s,creativelab5.com
         - s,cristyli.com

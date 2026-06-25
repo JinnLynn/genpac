@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: tN9IiVuL9NX8oDMKkvrhyw
+! Checksum: AAwM8z2yW06Fu0dU+Ps3Ig
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Wed, 24 Jun 2026 13:45:12 +0000
+! Last Modified: Thu, 25 Jun 2026 13:39:19 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1813,6 +1813,7 @@ iipdigital.usembassy.gov
 ||crackle.com
 ||crazyshit.com
 ||crchina.org
+||creader.com
 ||creaders.net
 ||cristyli.com
 ||croxyproxy.com

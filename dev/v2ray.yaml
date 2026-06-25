@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-25 04:05:16
-#! GFWList: 2026-06-24 13:45:12 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-25 14:42:35
+#! GFWList: 2026-06-25 13:39:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -852,6 +852,7 @@ routing:
         - domain:crazyshit.com
         - domain:crbug.com
         - domain:crchina.org
+        - domain:creader.com
         - domain:creaders.net
         - domain:creativelab5.com
         - domain:cristyli.com
