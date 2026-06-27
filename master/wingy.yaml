@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-26 14:35:29
-#! GFWList: 2026-06-25 13:39:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-27 03:57:43
+#! GFWList: 2026-06-27 03:47:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -151,6 +151,7 @@ rule:
         - s,aiph.net
         - s,airconsole.com
         - s,airitilibrary.com
+        - s,airuniversity.af.edu
         - s,airvpn.org
         - s,ait.org.tw
         - s,aiweiweiblog.com
@@ -1362,6 +1363,7 @@ rule:
         - s,gaopi.net
         - s,gartlive.com
         - s,garudalinux.org
+        - s,gate.com
         - s,gate.io
         - s,gatecoin.com
         - s,gather.com
@@ -1736,6 +1738,7 @@ rule:
         - s,gtv1.org
         - s,gu-chu-sum.org
         - s,guaguass.com
+        - s,guangming.com.my
         - s,guishan.org
         - s,gumroad.com
         - s,gunsamerica.com
@@ -1826,6 +1829,7 @@ rule:
         - s,hkgpao.com
         - s,hklts.org.hk
         - s,hkmap.live
+        - s,hkong.hk
         - s,hkopentv.com
         - s,hkpeanut.com
         - s,hkreporter.com
@@ -2130,6 +2134,7 @@ rule:
         - s,kepard.com
         - s,kex.com
         - s,keycdn.com
+        - s,kfor.com
         - s,khatrimaza.org
         - s,kichiku-doujinko.com
         - s,kik.com
@@ -2765,6 +2770,7 @@ rule:
         - s,pbworks.com
         - s,pbxes.com
         - s,pbxes.org
+        - s,pcgamesn.com
         - s,pcgamestorrents.com
         - s,pcij.org
         - s,pct.org.tw
@@ -2783,6 +2789,7 @@ rule:
         - s,peopo.org
         - s,perfect-privacy.com
         - s,periscope.tv
+        - s,perma.cc
         - s,perplexity.ai
         - s,pewresearch.org
         - s,phayul.com
@@ -3031,6 +3038,7 @@ rule:
         - s,renyurenquan.org
         - s,resilio.com
         - s,resistchina.org
+        - s,restofworld.org
         - s,retweetrank.com
         - s,reuters.com
         - s,reutersmedia.net
@@ -3266,6 +3274,7 @@ rule:
         - s,southnews.com.tw
         - s,southpark.cc.com
         - s,sowers.org.hk
+        - s,spaceforce.mil
         - s,spaces.hightail.com
         - s,spacex.com
         - s,spankbang.com
@@ -3357,6 +3366,7 @@ rule:
         - s,supervpn.net
         - s,superzooi.com
         - s,support.futunn.com
+        - s,supremecourt.gov
         - s,suprememastertv.com
         - s,surfeasy.com
         - s,surfeasy.com.au
@@ -3468,6 +3478,7 @@ rule:
         - s,thehindu.com
         - s,thehun.net
         - s,theinitium.com
+        - s,theintercept.com
         - s,thenewslens.com
         - s,thepiratebay.org
         - s,theporndude.com
@@ -3625,6 +3636,7 @@ rule:
         - s,tronscan.org
         - s,trouw.nl
         - s,trt.net.tr
+        - s,trtworld.com
         - s,truebuddha-md.org
         - s,trustwallet.com
         - s,truthsocial.com
@@ -3719,6 +3731,7 @@ rule:
         - s,twitturly.com
         - s,twkan.com
         - s,twreporter.org
+        - s,twstalker.com
         - s,twt.tl
         - s,twtkr.com
         - s,twttr.com
@@ -3933,6 +3946,7 @@ rule:
         - s,warroom.org
         - s,waselpro.com
         - s,washingtonpost.com
+        - s,washingtontimes.com
         - s,watchinese.com
         - s,watchmygf.net
         - s,watchout.tw
@@ -4154,6 +4168,7 @@ rule:
         - s,xt.com
         - s,xt.pub
         - s,xtube.com
+        - s,xuan.com.my
         - s,xuchao.net
         - s,xuchao.org
         - s,xuehua.us

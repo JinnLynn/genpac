@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-26 14:35:26
-#! GFWList: 2026-06-25 13:39:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-27 03:57:40
+#! GFWList: 2026-06-27 03:47:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -175,6 +175,7 @@ routing:
         - domain:aiph.net
         - domain:airconsole.com
         - domain:airitilibrary.com
+        - domain:airuniversity.af.edu
         - domain:airvpn.org
         - domain:ait.org.tw
         - domain:aiweiweiblog.com
@@ -1386,6 +1387,7 @@ routing:
         - domain:gaopi.net
         - domain:gartlive.com
         - domain:garudalinux.org
+        - domain:gate.com
         - domain:gate.io
         - domain:gatecoin.com
         - domain:gather.com
@@ -1760,6 +1762,7 @@ routing:
         - domain:gtv1.org
         - domain:gu-chu-sum.org
         - domain:guaguass.com
+        - domain:guangming.com.my
         - domain:guishan.org
         - domain:gumroad.com
         - domain:gunsamerica.com
@@ -1850,6 +1853,7 @@ routing:
         - domain:hkgpao.com
         - domain:hklts.org.hk
         - domain:hkmap.live
+        - domain:hkong.hk
         - domain:hkopentv.com
         - domain:hkpeanut.com
         - domain:hkreporter.com
@@ -2154,6 +2158,7 @@ routing:
         - domain:kepard.com
         - domain:kex.com
         - domain:keycdn.com
+        - domain:kfor.com
         - domain:khatrimaza.org
         - domain:kichiku-doujinko.com
         - domain:kik.com
@@ -2789,6 +2794,7 @@ routing:
         - domain:pbworks.com
         - domain:pbxes.com
         - domain:pbxes.org
+        - domain:pcgamesn.com
         - domain:pcgamestorrents.com
         - domain:pcij.org
         - domain:pct.org.tw
@@ -2807,6 +2813,7 @@ routing:
         - domain:peopo.org
         - domain:perfect-privacy.com
         - domain:periscope.tv
+        - domain:perma.cc
         - domain:perplexity.ai
         - domain:pewresearch.org
         - domain:phayul.com
@@ -3055,6 +3062,7 @@ routing:
         - domain:renyurenquan.org
         - domain:resilio.com
         - domain:resistchina.org
+        - domain:restofworld.org
         - domain:retweetrank.com
         - domain:reuters.com
         - domain:reutersmedia.net
@@ -3290,6 +3298,7 @@ routing:
         - domain:southnews.com.tw
         - domain:southpark.cc.com
         - domain:sowers.org.hk
+        - domain:spaceforce.mil
         - domain:spaces.hightail.com
         - domain:spacex.com
         - domain:spankbang.com
@@ -3381,6 +3390,7 @@ routing:
         - domain:supervpn.net
         - domain:superzooi.com
         - domain:support.futunn.com
+        - domain:supremecourt.gov
         - domain:suprememastertv.com
         - domain:surfeasy.com
         - domain:surfeasy.com.au
@@ -3492,6 +3502,7 @@ routing:
         - domain:thehindu.com
         - domain:thehun.net
         - domain:theinitium.com
+        - domain:theintercept.com
         - domain:thenewslens.com
         - domain:thepiratebay.org
         - domain:theporndude.com
@@ -3649,6 +3660,7 @@ routing:
         - domain:tronscan.org
         - domain:trouw.nl
         - domain:trt.net.tr
+        - domain:trtworld.com
         - domain:truebuddha-md.org
         - domain:trustwallet.com
         - domain:truthsocial.com
@@ -3743,6 +3755,7 @@ routing:
         - domain:twitturly.com
         - domain:twkan.com
         - domain:twreporter.org
+        - domain:twstalker.com
         - domain:twt.tl
         - domain:twtkr.com
         - domain:twttr.com
@@ -3957,6 +3970,7 @@ routing:
         - domain:warroom.org
         - domain:waselpro.com
         - domain:washingtonpost.com
+        - domain:washingtontimes.com
         - domain:watchinese.com
         - domain:watchmygf.net
         - domain:watchout.tw
@@ -4178,6 +4192,7 @@ routing:
         - domain:xt.com
         - domain:xt.pub
         - domain:xtube.com
+        - domain:xuan.com.my
         - domain:xuchao.net
         - domain:xuchao.org
         - domain:xuehua.us
