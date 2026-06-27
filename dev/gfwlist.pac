@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-06-27 03:58:06
- * GFWList Last-Modified: 2026-06-27 03:47:56
+ * Generated: 2026-06-27 13:54:45
+ * GFWList Last-Modified: 2026-06-27 13:02:45
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -2416,6 +2416,7 @@ var rules = [
             "mgoon.com",
             "mgstage.com",
             "mh4u.org",
+            "mhwindow.org",
             "microvpn.com",
             "mihua.org",
             "mij.rip",

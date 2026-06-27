@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-27 03:58:09
-#! GFWList: 2026-06-27 03:47:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-27 13:54:47
+#! GFWList: 2026-06-27 13:02:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2387,6 +2387,7 @@ rule:
         - s,mgoon.com
         - s,mgstage.com
         - s,mh4u.org
+        - s,mhwindow.org
         - s,microvpn.com
         - s,mihua.org
         - s,mij.rip

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-27 03:58:08
-#! GFWList: 2026-06-27 03:47:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-27 13:54:46
+#! GFWList: 2026-06-27 13:02:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -2409,6 +2409,7 @@ rules:
   - DOMAIN-SUFFIX,mgoon.com,PROXY
   - DOMAIN-SUFFIX,mgstage.com,PROXY
   - DOMAIN-SUFFIX,mh4u.org,PROXY
+  - DOMAIN-SUFFIX,mhwindow.org,PROXY
   - DOMAIN-SUFFIX,microvpn.com,PROXY
   - DOMAIN-SUFFIX,mihua.org,PROXY
   - DOMAIN-SUFFIX,mij.rip,PROXY
