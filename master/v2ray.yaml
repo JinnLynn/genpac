@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-27 03:57:40
-#! GFWList: 2026-06-27 03:47:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-27 13:54:12
+#! GFWList: 2026-06-27 13:02:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2411,6 +2411,7 @@ routing:
         - domain:mgoon.com
         - domain:mgstage.com
         - domain:mh4u.org
+        - domain:mhwindow.org
         - domain:microvpn.com
         - domain:mihua.org
         - domain:mij.rip
