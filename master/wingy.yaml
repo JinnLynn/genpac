@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-28 14:00:30
-#! GFWList: 2026-06-27 13:02:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-29 04:39:28
+#! GFWList: 2026-06-29 04:16:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1121,6 +1121,7 @@ rule:
         - s,expecthim.com
         - s,expekt.com
         - s,exploader.net
+        - s,expressnews.com
         - s,expressvpn.com
         - s,exrates.me
         - s,extmatrix.com
