@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-28 14:00:54
-#! GFWList: 2026-06-27 13:02:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-29 04:39:57
+#! GFWList: 2026-06-29 04:16:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -1143,6 +1143,7 @@ rules:
   - DOMAIN-SUFFIX,expecthim.com,PROXY
   - DOMAIN-SUFFIX,expekt.com,PROXY
   - DOMAIN-SUFFIX,exploader.net,PROXY
+  - DOMAIN-SUFFIX,expressnews.com,PROXY
   - DOMAIN-SUFFIX,expressvpn.com,PROXY
   - DOMAIN-SUFFIX,exrates.me,PROXY
   - DOMAIN-SUFFIX,extmatrix.com,PROXY

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-28 14:00:54
-#! GFWList: 2026-06-27 13:02:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-29 04:39:57
+#! GFWList: 2026-06-29 04:16:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -1105,6 +1105,7 @@ payload:
   - DOMAIN-SUFFIX,expecthim.com
   - DOMAIN-SUFFIX,expekt.com
   - DOMAIN-SUFFIX,exploader.net
+  - DOMAIN-SUFFIX,expressnews.com
   - DOMAIN-SUFFIX,expressvpn.com
   - DOMAIN-SUFFIX,exrates.me
   - DOMAIN-SUFFIX,extmatrix.com

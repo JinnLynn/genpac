@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-06-28 14:00:52
-#! GFWList: 2026-06-27 13:02:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-06-29 04:39:55
+#! GFWList: 2026-06-29 04:16:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -1108,6 +1108,7 @@
 (^|\.)expecthim\.com$
 (^|\.)expekt\.com$
 (^|\.)exploader\.net$
+(^|\.)expressnews\.com$
 (^|\.)expressvpn\.com$
 (^|\.)exrates\.me$
 (^|\.)extmatrix\.com$
