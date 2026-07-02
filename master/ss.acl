@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-02 04:01:56
-#! GFWList: 2026-06-29 04:16:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-02 14:14:34
+#! GFWList: 2026-07-02 11:24:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3954,6 +3954,7 @@
 (^|\.)webpkgcache\.com$
 (^|\.)webrtc\.org$
 (^|\.)websdr\.org$
+(^|\.)webshare\.io$
 (^|\.)website\.new$
 (^|\.)webwarper\.net$
 (^|\.)wechatlawsuit\.com$

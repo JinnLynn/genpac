@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-02 04:01:56
-#! GFWList: 2026-06-29 04:16:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-02 14:14:34
+#! GFWList: 2026-07-02 11:24:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3991,6 +3991,7 @@ routing:
         - domain:webpkgcache.com
         - domain:webrtc.org
         - domain:websdr.org
+        - domain:webshare.io
         - domain:website.new
         - domain:webwarper.net
         - domain:wechatlawsuit.com
