@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-17 13:49:44
-#! GFWList: 2026-07-15 09:23:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-18 02:53:55
+#! GFWList: 2026-07-18 01:04:10 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -33,6 +33,7 @@ rule:
         - s,173ng.com
         - s,18board.com
         - s,18comic.org
+        - s,18comic.vip
         - s,18mh.net
         - s,1984bbs.com
         - s,1991way.com

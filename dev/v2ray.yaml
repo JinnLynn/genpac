@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-17 13:49:43
-#! GFWList: 2026-07-15 09:23:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-18 02:53:52
+#! GFWList: 2026-07-18 01:04:10 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -57,6 +57,7 @@ routing:
         - domain:173ng.com
         - domain:18board.com
         - domain:18comic.org
+        - domain:18comic.vip
         - domain:18mh.net
         - domain:1984bbs.com
         - domain:1991way.com

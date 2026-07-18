@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-17 13:49:43
-#! GFWList: 2026-07-15 09:23:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-18 02:53:53
+#! GFWList: 2026-07-18 01:04:10 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -20,6 +20,7 @@
 (^|\.)173ng\.com$
 (^|\.)18board\.com$
 (^|\.)18comic\.org$
+(^|\.)18comic\.vip$
 (^|\.)18mh\.net$
 (^|\.)1984bbs\.com$
 (^|\.)1991way\.com$

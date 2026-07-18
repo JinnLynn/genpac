@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-17 13:49:44
-#! GFWList: 2026-07-15 09:23:58 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-18 02:53:55
+#! GFWList: 2026-07-18 01:04:10 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -17,6 +17,7 @@ payload:
   - DOMAIN-SUFFIX,173ng.com
   - DOMAIN-SUFFIX,18board.com
   - DOMAIN-SUFFIX,18comic.org
+  - DOMAIN-SUFFIX,18comic.vip
   - DOMAIN-SUFFIX,18mh.net
   - DOMAIN-SUFFIX,1984bbs.com
   - DOMAIN-SUFFIX,1991way.com

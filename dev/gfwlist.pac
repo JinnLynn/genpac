@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-07-17 13:49:43
- * GFWList Last-Modified: 2026-07-15 09:23:58
+ * Generated: 2026-07-18 02:53:52
+ * GFWList Last-Modified: 2026-07-18 01:04:10
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -62,6 +62,7 @@ var rules = [
             "173ng.com",
             "18board.com",
             "18comic.org",
+            "18comic.vip",
             "18mh.net",
             "1984bbs.com",
             "1991way.com",
