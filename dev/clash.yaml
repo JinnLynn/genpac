@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-20 03:39:11
-#! GFWList: 2026-07-18 01:04:10 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-20 14:19:24
+#! GFWList: 2026-07-20 11:42:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -763,6 +763,7 @@ rules:
   - DOMAIN-SUFFIX,civitai.com,PROXY
   - DOMAIN-SUFFIX,cixiaoya.club,PROXY
   - DOMAIN-SUFFIX,ck101.com,PROXY
+  - DOMAIN-SUFFIX,clashyun.com,PROXY
   - DOMAIN-SUFFIX,classicalguitarblog.net,PROXY
   - DOMAIN-SUFFIX,claude.ai,PROXY
   - DOMAIN-SUFFIX,claude.com,PROXY
@@ -3411,6 +3412,7 @@ rules:
   - DOMAIN-SUFFIX,syncback.com,PROXY
   - DOMAIN-SUFFIX,synergyse.com,PROXY
   - DOMAIN-SUFFIX,syosetu.com,PROXY
+  - DOMAIN-SUFFIX,sysub.com,PROXY
   - DOMAIN-SUFFIX,t-g.com,PROXY
   - DOMAIN-SUFFIX,t.co,PROXY
   - DOMAIN-SUFFIX,t.me,PROXY
