@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-20 03:38:46
-#! GFWList: 2026-07-18 01:04:10 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-20 14:18:50
+#! GFWList: 2026-07-20 11:42:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -765,6 +765,7 @@ routing:
         - domain:civitai.com
         - domain:cixiaoya.club
         - domain:ck101.com
+        - domain:clashyun.com
         - domain:classicalguitarblog.net
         - domain:claude.ai
         - domain:claude.com
@@ -3413,6 +3414,7 @@ routing:
         - domain:syncback.com
         - domain:synergyse.com
         - domain:syosetu.com
+        - domain:sysub.com
         - domain:t-g.com
         - domain:t.co
         - domain:t.me
