@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-21 14:05:05
-#! GFWList: 2026-07-20 11:42:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-22 03:17:20
+#! GFWList: 2026-07-21 15:10:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -4268,6 +4268,7 @@ rule:
         - s,zello.com
         - s,zenmate.com
         - s,zenmate.com.ru
+        - s,zenmux.ai
         - s,zerohedge.com
         - s,zeronet.io
         - s,zh-hans.cfsh99.com
