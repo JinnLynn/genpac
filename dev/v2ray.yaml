@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-21 14:05:29
-#! GFWList: 2026-07-20 11:42:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-22 03:17:42
+#! GFWList: 2026-07-21 15:10:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -4292,6 +4292,7 @@ routing:
         - domain:zello.com
         - domain:zenmate.com
         - domain:zenmate.com.ru
+        - domain:zenmux.ai
         - domain:zerohedge.com
         - domain:zeronet.io
         - domain:zh-hans.cfsh99.com

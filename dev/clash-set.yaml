@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-21 14:05:32
-#! GFWList: 2026-07-20 11:42:32 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-22 03:17:42
+#! GFWList: 2026-07-21 15:10:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -4252,6 +4252,7 @@ payload:
   - DOMAIN-SUFFIX,zello.com
   - DOMAIN-SUFFIX,zenmate.com
   - DOMAIN-SUFFIX,zenmate.com.ru
+  - DOMAIN-SUFFIX,zenmux.ai
   - DOMAIN-SUFFIX,zerohedge.com
   - DOMAIN-SUFFIX,zeronet.io
   - DOMAIN-SUFFIX,zh-hans.cfsh99.com
