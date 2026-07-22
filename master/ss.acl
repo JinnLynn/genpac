@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-22 03:17:19
-#! GFWList: 2026-07-21 15:10:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-22 14:07:44
+#! GFWList: 2026-07-22 09:25:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3591,6 +3591,7 @@
 (^|\.)togetter\.com$
 (^|\.)token\.im$
 (^|\.)tokenlon\.im$
+(^|\.)tokenplus\.app$
 (^|\.)tokyo-porn-tube\.com$
 (^|\.)tokyocn\.com$
 (^|\.)tomp3\.cc$
