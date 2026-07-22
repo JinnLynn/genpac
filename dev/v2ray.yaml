@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-22 03:17:42
-#! GFWList: 2026-07-21 15:10:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-22 14:08:10
+#! GFWList: 2026-07-22 09:25:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3628,6 +3628,7 @@ routing:
         - domain:togetter.com
         - domain:token.im
         - domain:tokenlon.im
+        - domain:tokenplus.app
         - domain:tokyo-porn-tube.com
         - domain:tokyocn.com
         - domain:tomp3.cc

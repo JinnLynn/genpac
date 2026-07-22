@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-22 03:17:42
-#! GFWList: 2026-07-21 15:10:45 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-22 14:08:12
+#! GFWList: 2026-07-22 09:25:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3604,6 +3604,7 @@ rule:
         - s,togetter.com
         - s,token.im
         - s,tokenlon.im
+        - s,tokenplus.app
         - s,tokyo-porn-tube.com
         - s,tokyocn.com
         - s,tomp3.cc
