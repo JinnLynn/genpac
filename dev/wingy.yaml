@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-24 03:18:36
-#! GFWList: 2026-07-22 09:25:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-24 13:55:46
+#! GFWList: 2026-07-24 04:52:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -729,6 +729,7 @@ rule:
         - s,cia.gov
         - s,cici.com
         - s,ciciai.com
+        - s,circle19.org
         - s,cirosantilli.com
         - s,citizencn.com
         - s,citizenlab.ca
@@ -2127,6 +2128,7 @@ rule:
         - s,kantie.org
         - s,kaotic.com
         - s,karayou.com
+        - s,kards.com
         - s,kathmandupost.com
         - s,kawaiikawaii.jp
         - s,kawase.com

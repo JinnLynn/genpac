@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-24 03:18:32
-#! GFWList: 2026-07-22 09:25:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-24 13:55:43
+#! GFWList: 2026-07-24 04:52:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -753,6 +753,7 @@ routing:
         - domain:cia.gov
         - domain:cici.com
         - domain:ciciai.com
+        - domain:circle19.org
         - domain:cirosantilli.com
         - domain:citizencn.com
         - domain:citizenlab.ca
@@ -2151,6 +2152,7 @@ routing:
         - domain:kantie.org
         - domain:kaotic.com
         - domain:karayou.com
+        - domain:kards.com
         - domain:kathmandupost.com
         - domain:kawaiikawaii.jp
         - domain:kawase.com
