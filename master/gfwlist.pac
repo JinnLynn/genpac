@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2026-07-24 03:18:03
- * GFWList Last-Modified: 2026-07-22 09:25:55
+ * Generated: 2026-07-24 13:55:14
+ * GFWList Last-Modified: 2026-07-24 04:52:38
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -758,6 +758,7 @@ var rules = [
             "cia.gov",
             "cici.com",
             "ciciai.com",
+            "circle19.org",
             "cirosantilli.com",
             "citizencn.com",
             "citizenlab.ca",
@@ -2156,6 +2157,7 @@ var rules = [
             "kantie.org",
             "kaotic.com",
             "karayou.com",
+            "kards.com",
             "kathmandupost.com",
             "kawaiikawaii.jp",
             "kawase.com",

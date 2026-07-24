@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-07-24 03:18:03
-! GFWList: 2026-07-22 09:25:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-07-24 13:55:14
+! GFWList: 2026-07-24 04:52:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -745,6 +745,7 @@
 ||cia.gov
 ||cici.com
 ||ciciai.com
+||circle19.org
 ||cirosantilli.com
 ||citizencn.com
 ||citizenlab.ca
@@ -2143,6 +2144,7 @@
 ||kantie.org
 ||kaotic.com
 ||karayou.com
+||kards.com
 ||kathmandupost.com
 ||kawaiikawaii.jp
 ||kawase.com
