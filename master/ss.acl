@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-27 03:38:30
-#! GFWList: 2026-07-24 04:52:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-27 14:47:32
+#! GFWList: 2026-07-27 03:36:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3635,6 +3635,7 @@
 (^|\.)truebuddha-md\.org$
 (^|\.)trustwallet\.com$
 (^|\.)truthsocial\.com$
+(^|\.)tryai\.dev$
 (^|\.)tryheart\.jp$
 (^|\.)tsdr\.uspto\.gov$
 (^|\.)tt1069\.com$
