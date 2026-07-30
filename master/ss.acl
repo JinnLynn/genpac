@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-30 02:46:39
-#! GFWList: 2026-07-27 03:36:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-30 14:15:11
+#! GFWList: 2026-07-30 07:56:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -2200,6 +2200,7 @@
 (^|\.)leonardo\.ai$
 (^|\.)lesoir\.be$
 (^|\.)letscorp\.net$
+(^|\.)level-plus\.net$
 (^|\.)lexica\.art$
 (^|\.)lhakar\.org$
 (^|\.)li\.taipei$
@@ -3816,6 +3817,7 @@
 (^|\.)uyghurtribunal\.com$
 (^|\.)uygur\.fc2web\.com$
 (^|\.)uymaarip\.com$
+(^|\.)v\.recipes$
 (^|\.)v2\.help$
 (^|\.)v2\.hysteria\.network$
 (^|\.)v2ex\.com$

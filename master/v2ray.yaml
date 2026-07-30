@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-30 02:46:39
-#! GFWList: 2026-07-27 03:36:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-30 14:15:11
+#! GFWList: 2026-07-30 07:56:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2237,6 +2237,7 @@ routing:
         - domain:leonardo.ai
         - domain:lesoir.be
         - domain:letscorp.net
+        - domain:level-plus.net
         - domain:lexica.art
         - domain:lhakar.org
         - domain:li.taipei
@@ -3853,6 +3854,7 @@ routing:
         - domain:uyghurtribunal.com
         - domain:uygur.fc2web.com
         - domain:uymaarip.com
+        - domain:v.recipes
         - domain:v2.help
         - domain:v2.hysteria.network
         - domain:v2ex.com
