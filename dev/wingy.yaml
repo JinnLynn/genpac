@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-30 02:47:12
-#! GFWList: 2026-07-27 03:36:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-30 14:15:43
+#! GFWList: 2026-07-30 07:56:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2213,6 +2213,7 @@ rule:
         - s,leonardo.ai
         - s,lesoir.be
         - s,letscorp.net
+        - s,level-plus.net
         - s,lexica.art
         - s,lhakar.org
         - s,li.taipei
@@ -3829,6 +3830,7 @@ rule:
         - s,uyghurtribunal.com
         - s,uygur.fc2web.com
         - s,uymaarip.com
+        - s,v.recipes
         - s,v2.help
         - s,v2.hysteria.network
         - s,v2ex.com

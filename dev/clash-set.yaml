@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-07-30 02:47:12
-#! GFWList: 2026-07-27 03:36:40 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-07-30 14:15:42
+#! GFWList: 2026-07-30 07:56:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -2197,6 +2197,7 @@ payload:
   - DOMAIN-SUFFIX,leonardo.ai
   - DOMAIN-SUFFIX,lesoir.be
   - DOMAIN-SUFFIX,letscorp.net
+  - DOMAIN-SUFFIX,level-plus.net
   - DOMAIN-SUFFIX,lexica.art
   - DOMAIN-SUFFIX,lhakar.org
   - DOMAIN-SUFFIX,li.taipei
@@ -3813,6 +3814,7 @@ payload:
   - DOMAIN-SUFFIX,uyghurtribunal.com
   - DOMAIN-SUFFIX,uygur.fc2web.com
   - DOMAIN-SUFFIX,uymaarip.com
+  - DOMAIN-SUFFIX,v.recipes
   - DOMAIN-SUFFIX,v2.help
   - DOMAIN-SUFFIX,v2.hysteria.network
   - DOMAIN-SUFFIX,v2ex.com

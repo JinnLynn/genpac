@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: FljP8vF59MRFy+74IKi5aQ
+! Checksum: JOWQwhDfPSKvkCHAE3XHOg
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 27 Jul 2026 03:36:40 +0000
+! Last Modified: Thu, 30 Jul 2026 07:56:33 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2709,6 +2709,7 @@ iipdigital.usembassy.gov
 ||kzaobao.com
 ||kzeng.info
 !--------------------LL-------------------------
+||level-plus.net
 ||libgen.is
 ||lemonde.fr
 ||lantern.io
@@ -4062,6 +4063,7 @@ iipdigital.usembassy.gov
 ||uyghurtribunal.com
 |http://uymaarip.com/
 !--------------------VV-------------------------
+||v.recipes
 ||vox.com
 ||vimeocdn.com
 ||vpsxb.net
