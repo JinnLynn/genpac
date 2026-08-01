@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-01 03:29:19
-#! GFWList: 2026-07-30 07:56:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-01 13:39:43
+#! GFWList: 2026-08-01 03:31:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2631,6 +2631,7 @@ rule:
         - s,ntdtv.com
         - s,ntdtv.com.tw
         - s,ntdtv.cz
+        - s,nthlink.com
         - s,nuexpo.com
         - s,nurgo-software.com
         - s,nusatrip.com
