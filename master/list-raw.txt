@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-08-01 03:28:48
-! GFWList: 2026-07-30 07:56:33 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-08-01 13:39:14
+! GFWList: 2026-08-01 03:31:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -2647,6 +2647,7 @@
 ||ntdtv.com
 ||ntdtv.com.tw
 ||ntdtv.cz
+||nthlink.com
 ||nuexpo.com
 ||nurgo-software.com
 ||nusatrip.com

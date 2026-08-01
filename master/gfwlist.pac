@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2026-08-01 03:28:48
- * GFWList Last-Modified: 2026-07-30 07:56:33
+ * Generated: 2026-08-01 13:39:14
+ * GFWList Last-Modified: 2026-08-01 03:31:51
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -2660,6 +2660,7 @@ var rules = [
             "ntdtv.com",
             "ntdtv.com.tw",
             "ntdtv.cz",
+            "nthlink.com",
             "nuexpo.com",
             "nurgo-software.com",
             "nusatrip.com",
