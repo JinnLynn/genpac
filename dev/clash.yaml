@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-02 03:29:15
-#! GFWList: 2026-08-01 03:31:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-02 13:39:50
+#! GFWList: 2026-08-02 05:08:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -667,6 +667,7 @@ rules:
   - DOMAIN-SUFFIX,centerforhumanreprod.com,PROXY
   - DOMAIN-SUFFIX,centralnation.com,PROXY
   - DOMAIN-SUFFIX,centurys.net,PROXY
+  - DOMAIN-SUFFIX,cerebras.ai,PROXY
   - DOMAIN-SUFFIX,certificate-transparency.org,PROXY
   - DOMAIN-SUFFIX,certificate.revocationcheck.com,PROXY
   - DOMAIN-SUFFIX,cfr.org,PROXY

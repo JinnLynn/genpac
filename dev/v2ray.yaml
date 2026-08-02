@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-02 03:29:13
-#! GFWList: 2026-08-01 03:31:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-02 13:39:48
+#! GFWList: 2026-08-02 05:08:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -669,6 +669,7 @@ routing:
         - domain:centerforhumanreprod.com
         - domain:centralnation.com
         - domain:centurys.net
+        - domain:cerebras.ai
         - domain:certificate-transparency.org
         - domain:certificate.revocationcheck.com
         - domain:cfr.org

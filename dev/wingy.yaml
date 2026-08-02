@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-02 03:29:15
-#! GFWList: 2026-08-01 03:31:51 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-02 13:39:51
+#! GFWList: 2026-08-02 05:08:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -645,6 +645,7 @@ rule:
         - s,centerforhumanreprod.com
         - s,centralnation.com
         - s,centurys.net
+        - s,cerebras.ai
         - s,certificate-transparency.org
         - s,certificate.revocationcheck.com
         - s,cfr.org
