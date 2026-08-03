@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-02 13:39:51
-#! GFWList: 2026-08-02 05:08:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-03 03:31:13
+#! GFWList: 2026-08-02 13:51:52 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -710,6 +710,7 @@ payload:
   - DOMAIN-SUFFIX,chromecast.com
   - DOMAIN-SUFFIX,chromeexperiments.com
   - DOMAIN-SUFFIX,chromestatus.com
+  - DOMAIN-SUFFIX,cht.com.tw
   - DOMAIN-SUFFIX,ci-en.jp
   - DOMAIN-SUFFIX,cia.gov
   - DOMAIN-SUFFIX,cici.com
@@ -2462,7 +2463,6 @@ payload:
   - DOMAIN-SUFFIX,motherless.com
   - DOMAIN-SUFFIX,movements.org
   - DOMAIN-SUFFIX,moviefap.com
-  - DOMAIN-SUFFIX,mozilla.ai
   - DOMAIN-SUFFIX,mpettis.com
   - DOMAIN-SUFFIX,mpfinance.com
   - DOMAIN-SUFFIX,mpinews.com
@@ -2931,7 +2931,6 @@ payload:
   - DOMAIN-SUFFIX,pullfolio.co
   - DOMAIN-SUFFIX,pure18.com
   - DOMAIN-SUFFIX,pureconcepts.net
-  - DOMAIN-SUFFIX,puredns.org
   - DOMAIN-SUFFIX,pureinsight.org
   - DOMAIN-SUFFIX,purepdf.com
   - DOMAIN-SUFFIX,purevpn.com
@@ -2976,7 +2975,6 @@ payload:
   - DOMAIN-SUFFIX,radio.garden
   - DOMAIN-SUFFIX,radioaustralia.net.au
   - DOMAIN-SUFFIX,radiohilight.net
-  - DOMAIN-SUFFIX,radiojar.com
   - DOMAIN-SUFFIX,radioline.co
   - DOMAIN-SUFFIX,radiovaticana.org
   - DOMAIN-SUFFIX,radiovncr.com
@@ -3089,7 +3087,6 @@ payload:
   - DOMAIN-SUFFIX,safechat.com
   - DOMAIN-SUFFIX,safeguarddefenders.com
   - DOMAIN-SUFFIX,safervpn.com
-  - DOMAIN-SUFFIX,sagernet.org
   - DOMAIN-SUFFIX,saintyculture.com
   - DOMAIN-SUFFIX,sakuralive.com
   - DOMAIN-SUFFIX,salvation.org.hk
@@ -4082,7 +4079,6 @@ payload:
   - DOMAIN-SUFFIX,www.antd.org
   - DOMAIN-SUFFIX,www.aolnews.com
   - DOMAIN-SUFFIX,www.bing.com
-  - DOMAIN-SUFFIX,www.clashverge.dev
   - DOMAIN-SUFFIX,www.cmoinc.org
   - DOMAIN-SUFFIX,www.dmm.com
   - DOMAIN-SUFFIX,www.eastturkistan.net

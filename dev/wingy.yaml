@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-02 13:39:51
-#! GFWList: 2026-08-02 05:08:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-03 03:31:13
+#! GFWList: 2026-08-02 13:51:52 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -726,6 +726,7 @@ rule:
         - s,chromecast.com
         - s,chromeexperiments.com
         - s,chromestatus.com
+        - s,cht.com.tw
         - s,ci-en.jp
         - s,cia.gov
         - s,cici.com
@@ -2478,7 +2479,6 @@ rule:
         - s,motherless.com
         - s,movements.org
         - s,moviefap.com
-        - s,mozilla.ai
         - s,mpettis.com
         - s,mpfinance.com
         - s,mpinews.com
@@ -2947,7 +2947,6 @@ rule:
         - s,pullfolio.co
         - s,pure18.com
         - s,pureconcepts.net
-        - s,puredns.org
         - s,pureinsight.org
         - s,purepdf.com
         - s,purevpn.com
@@ -2992,7 +2991,6 @@ rule:
         - s,radio.garden
         - s,radioaustralia.net.au
         - s,radiohilight.net
-        - s,radiojar.com
         - s,radioline.co
         - s,radiovaticana.org
         - s,radiovncr.com
@@ -3105,7 +3103,6 @@ rule:
         - s,safechat.com
         - s,safeguarddefenders.com
         - s,safervpn.com
-        - s,sagernet.org
         - s,saintyculture.com
         - s,sakuralive.com
         - s,salvation.org.hk
@@ -4098,7 +4095,6 @@ rule:
         - s,www.antd.org
         - s,www.aolnews.com
         - s,www.bing.com
-        - s,www.clashverge.dev
         - s,www.cmoinc.org
         - s,www.dmm.com
         - s,www.eastturkistan.net
