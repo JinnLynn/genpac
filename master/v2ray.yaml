@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-02 13:39:19
-#! GFWList: 2026-08-02 05:08:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-03 03:30:37
+#! GFWList: 2026-08-02 13:51:52 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -750,6 +750,7 @@ routing:
         - domain:chromecast.com
         - domain:chromeexperiments.com
         - domain:chromestatus.com
+        - domain:cht.com.tw
         - domain:ci-en.jp
         - domain:cia.gov
         - domain:cici.com
@@ -2502,7 +2503,6 @@ routing:
         - domain:motherless.com
         - domain:movements.org
         - domain:moviefap.com
-        - domain:mozilla.ai
         - domain:mpettis.com
         - domain:mpfinance.com
         - domain:mpinews.com
@@ -2971,7 +2971,6 @@ routing:
         - domain:pullfolio.co
         - domain:pure18.com
         - domain:pureconcepts.net
-        - domain:puredns.org
         - domain:pureinsight.org
         - domain:purepdf.com
         - domain:purevpn.com
@@ -3016,7 +3015,6 @@ routing:
         - domain:radio.garden
         - domain:radioaustralia.net.au
         - domain:radiohilight.net
-        - domain:radiojar.com
         - domain:radioline.co
         - domain:radiovaticana.org
         - domain:radiovncr.com
@@ -3129,7 +3127,6 @@ routing:
         - domain:safechat.com
         - domain:safeguarddefenders.com
         - domain:safervpn.com
-        - domain:sagernet.org
         - domain:saintyculture.com
         - domain:sakuralive.com
         - domain:salvation.org.hk
@@ -4122,7 +4119,6 @@ routing:
         - domain:www.antd.org
         - domain:www.aolnews.com
         - domain:www.bing.com
-        - domain:www.clashverge.dev
         - domain:www.cmoinc.org
         - domain:www.dmm.com
         - domain:www.eastturkistan.net
