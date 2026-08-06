@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-06 03:12:04
-#! GFWList: 2026-08-02 13:51:52 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-06 14:24:12
+#! GFWList: 2026-08-06 08:35:22 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -315,7 +315,6 @@ rule:
         - s,atnext.com
         - s,auctions.yahoo.co.jp
         - s,audacy.com
-        - s,auntology.fandom.com
         - s,autodraw.com
         - s,av.movie
         - s,av01.tv
@@ -1164,6 +1163,7 @@ rule:
         - s,falunhr.org
         - s,famunion.com
         - s,fanbox.cc
+        - s,fandom.com
         - s,fangeqiang.com
         - s,fanglizhi.info
         - s,fangong.org
@@ -1851,7 +1851,6 @@ rule:
         - s,home.saxo
         - s,homedepot.com
         - s,homeservershow.com
-        - s,hongkong.fandom.com
         - s,hongkongfp.com
         - s,hongzhi.li
         - s,honven.xyz

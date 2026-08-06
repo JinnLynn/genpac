@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-06 03:12:01
-#! GFWList: 2026-08-02 13:51:52 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-06 14:24:10
+#! GFWList: 2026-08-06 08:35:22 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -339,7 +339,6 @@ routing:
         - domain:atnext.com
         - domain:auctions.yahoo.co.jp
         - domain:audacy.com
-        - domain:auntology.fandom.com
         - domain:autodraw.com
         - domain:av.movie
         - domain:av01.tv
@@ -1188,6 +1187,7 @@ routing:
         - domain:falunhr.org
         - domain:famunion.com
         - domain:fanbox.cc
+        - domain:fandom.com
         - domain:fangeqiang.com
         - domain:fanglizhi.info
         - domain:fangong.org
@@ -1875,7 +1875,6 @@ routing:
         - domain:home.saxo
         - domain:homedepot.com
         - domain:homeservershow.com
-        - domain:hongkong.fandom.com
         - domain:hongkongfp.com
         - domain:hongzhi.li
         - domain:honven.xyz

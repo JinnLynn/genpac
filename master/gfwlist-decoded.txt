@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: 7T5tBfLgyZeIpzRdHohQjQ
+! Checksum: JiRvuF67kbXruPtfkXumVw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sun, 02 Aug 2026 13:51:52 +0000
+! Last Modified: Thu, 06 Aug 2026 08:35:22 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -706,8 +706,7 @@ www.aolnews.com
 ||whatsapp.com
 ||whatsapp.net
 !!---Fandom---
-||auntology.fandom.com
-||hongkong.fandom.com
+||fandom.com
 !!---FTChinese---
 ||ftchinese.com
 !!---Google---
