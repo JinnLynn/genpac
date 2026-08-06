@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-06 03:12:29
-#! GFWList: 2026-08-02 13:51:52 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-06 14:24:45
+#! GFWList: 2026-08-06 08:35:22 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -302,7 +302,6 @@
 (^|\.)atnext\.com$
 (^|\.)auctions\.yahoo\.co\.jp$
 (^|\.)audacy\.com$
-(^|\.)auntology\.fandom\.com$
 (^|\.)autodraw\.com$
 (^|\.)av\.movie$
 (^|\.)av01\.tv$
@@ -1151,6 +1150,7 @@
 (^|\.)falunhr\.org$
 (^|\.)famunion\.com$
 (^|\.)fanbox\.cc$
+(^|\.)fandom\.com$
 (^|\.)fangeqiang\.com$
 (^|\.)fanglizhi\.info$
 (^|\.)fangong\.org$
@@ -1838,7 +1838,6 @@
 (^|\.)home\.saxo$
 (^|\.)homedepot\.com$
 (^|\.)homeservershow\.com$
-(^|\.)hongkong\.fandom\.com$
 (^|\.)hongkongfp\.com$
 (^|\.)hongzhi\.li$
 (^|\.)honven\.xyz$
