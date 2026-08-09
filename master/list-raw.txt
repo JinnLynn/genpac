@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-08-09 02:05:57
-! GFWList: 2026-08-06 08:35:22 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-08-09 13:01:05
+! GFWList: 2026-08-09 08:46:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -164,6 +164,7 @@
 ||agro.hk
 ||ai.dev
 ||ai.studio
+||aihub.top
 ||aiosearch.com
 ||aiph.net
 ||airconsole.com
@@ -377,6 +378,7 @@
 ||barnabu.co.uk
 ||bartender.dowjones.com
 ||barton.de
+||basemaps.arcgis.com
 ||bastillepost.com
 ||bayvoice.net
 ||bb-chat.tv
@@ -1140,6 +1142,7 @@
 ||expatshield.com
 ||expecthim.com
 ||expekt.com
+||experience.arcgis.com
 ||exploader.net
 ||expressnews.com
 ||expressvpn.com
