@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-09 02:06:30
-#! GFWList: 2026-08-06 08:35:22 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-09 13:01:34
+#! GFWList: 2026-08-09 08:46:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -148,6 +148,7 @@ rule:
         - s,agro.hk
         - s,ai.dev
         - s,ai.studio
+        - s,aihub.top
         - s,aiosearch.com
         - s,aiph.net
         - s,airconsole.com
@@ -361,6 +362,7 @@ rule:
         - s,barnabu.co.uk
         - s,bartender.dowjones.com
         - s,barton.de
+        - s,basemaps.arcgis.com
         - s,bastillepost.com
         - s,bayvoice.net
         - s,bb-chat.tv
@@ -1124,6 +1126,7 @@ rule:
         - s,expatshield.com
         - s,expecthim.com
         - s,expekt.com
+        - s,experience.arcgis.com
         - s,exploader.net
         - s,expressnews.com
         - s,expressvpn.com

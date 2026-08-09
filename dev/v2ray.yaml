@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-09 02:06:28
-#! GFWList: 2026-08-06 08:35:22 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-09 13:01:33
+#! GFWList: 2026-08-09 08:46:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -172,6 +172,7 @@ routing:
         - domain:agro.hk
         - domain:ai.dev
         - domain:ai.studio
+        - domain:aihub.top
         - domain:aiosearch.com
         - domain:aiph.net
         - domain:airconsole.com
@@ -385,6 +386,7 @@ routing:
         - domain:barnabu.co.uk
         - domain:bartender.dowjones.com
         - domain:barton.de
+        - domain:basemaps.arcgis.com
         - domain:bastillepost.com
         - domain:bayvoice.net
         - domain:bb-chat.tv
@@ -1148,6 +1150,7 @@ routing:
         - domain:expatshield.com
         - domain:expecthim.com
         - domain:expekt.com
+        - domain:experience.arcgis.com
         - domain:exploader.net
         - domain:expressnews.com
         - domain:expressvpn.com
