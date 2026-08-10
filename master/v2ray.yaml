@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-09 13:01:05
-#! GFWList: 2026-08-09 08:46:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-10 02:10:40
+#! GFWList: 2026-08-09 12:59:49 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1128,6 +1128,7 @@ routing:
         - domain:eromangadouzin.com
         - domain:eromon.net
         - domain:esg.t91y.com
+        - domain:esim.redteago.com
         - domain:eslite.com
         - domain:esurance.com
         - domain:etherdelta.com
