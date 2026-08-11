@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-08-10 13:20:00
- * GFWList Last-Modified: 2026-08-09 12:59:49
+ * Generated: 2026-08-11 02:05:39
+ * GFWList Last-Modified: 2026-08-10 15:55:25
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -984,6 +984,7 @@ var rules = [
             "disp.cc",
             "disqus.com",
             "dit-inc.us",
+            "divdyn.com",
             "diyin.org",
             "dizhuzhishang.com",
             "dl-laby.jp",
