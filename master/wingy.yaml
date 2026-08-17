@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-17 01:39:22
-#! GFWList: 2026-08-10 15:55:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-17 12:53:19
+#! GFWList: 2026-08-17 08:21:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2266,6 +2266,7 @@ rule:
         - s,livemint.com
         - s,livestream.com
         - s,livevideo.com
+        - s,livingatlas.arcgis.com
         - s,livingstream.com
         - s,lmarena.ai
         - s,localbitcoins.com

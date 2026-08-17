@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: aKZCp2ipsFbpFDFa4RcwHg
+! Checksum: vOpHDLDlifwC6WLMQBRQLw
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Mon, 10 Aug 2026 15:55:25 +0000
+! Last Modified: Mon, 17 Aug 2026 08:21:55 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1274,6 +1274,7 @@ iipdigital.usembassy.gov
 ||9bis.net
 ||9news.com.au
 !--------------------AA-------------------------
+||livingatlas.arcgis.com
 ||basemaps.arcgis.com
 ||experience.arcgis.com
 ||aihub.top

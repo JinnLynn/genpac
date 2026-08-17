@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-17 01:39:17
-#! GFWList: 2026-08-10 15:55:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-17 12:53:17
+#! GFWList: 2026-08-17 08:21:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -2253,6 +2253,7 @@
 (^|\.)livemint\.com$
 (^|\.)livestream\.com$
 (^|\.)livevideo\.com$
+(^|\.)livingatlas\.arcgis\.com$
 (^|\.)livingstream\.com$
 (^|\.)lmarena\.ai$
 (^|\.)localbitcoins\.com$
