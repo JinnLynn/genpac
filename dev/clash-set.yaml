@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-17 01:39:50
-#! GFWList: 2026-08-10 15:55:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-17 12:53:45
+#! GFWList: 2026-08-17 08:21:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -2250,6 +2250,7 @@ payload:
   - DOMAIN-SUFFIX,livemint.com
   - DOMAIN-SUFFIX,livestream.com
   - DOMAIN-SUFFIX,livevideo.com
+  - DOMAIN-SUFFIX,livingatlas.arcgis.com
   - DOMAIN-SUFFIX,livingstream.com
   - DOMAIN-SUFFIX,lmarena.ai
   - DOMAIN-SUFFIX,localbitcoins.com
