@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-18 01:34:25
-#! GFWList: 2026-08-17 08:21:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-18 12:55:03
+#! GFWList: 2026-08-18 11:57:04 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3125,6 +3125,7 @@ routing:
         - domain:s-cute.com
         - domain:s.yimg.com
         - domain:s3-ap-northeast-1.amazonaws.com
+        - domain:s3.dualstack.us-west-2.amazonaws.com
         - domain:sacks.com
         - domain:sacom.hk
         - domain:sadistic-v.com
@@ -4069,6 +4070,7 @@ routing:
         - domain:willw.net
         - domain:wilsoncenter.org
         - domain:windscribe.com
+        - domain:windy.com
         - domain:wingamestore.com
         - domain:wingy.site
         - domain:wionews.com
