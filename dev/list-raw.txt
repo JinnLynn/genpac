@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-08-18 01:34:49
-! GFWList: 2026-08-17 08:21:55 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-08-18 12:55:27
+! GFWList: 2026-08-18 11:57:04 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -3117,6 +3117,7 @@
 ||s-cute.com
 ||s.yimg.com
 ||s3-ap-northeast-1.amazonaws.com
+||s3.dualstack.us-west-2.amazonaws.com
 ||sacks.com
 ||sacom.hk
 ||sadistic-v.com
@@ -4061,6 +4062,7 @@
 ||willw.net
 ||wilsoncenter.org
 ||windscribe.com
+||windy.com
 ||wingamestore.com
 ||wingy.site
 ||wionews.com
