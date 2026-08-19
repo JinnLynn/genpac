@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: bnngWWqQlVJ4MxGmXljmZA
+! Checksum: mk4meKctgt27Y7pb+1s4BQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 18 Aug 2026 11:57:04 +0000
+! Last Modified: Wed, 19 Aug 2026 02:15:34 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -3078,6 +3078,7 @@ iipdigital.usembassy.gov
 ||nybooks.com
 ||nypost.com
 !--------------------OO-------------------------
+||oldmapsonline.org
 ||umap.openstreetmap.fr
 ||overdrive.com
 ||openart.ai

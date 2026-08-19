@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-19 01:37:03
-#! GFWList: 2026-08-18 11:57:04 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-19 12:56:18
+#! GFWList: 2026-08-19 02:15:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -2666,6 +2666,7 @@ payload:
   - DOMAIN-SUFFIX,okpool.me
   - DOMAIN-SUFFIX,okx.com
   - DOMAIN-SUFFIX,old.honeynet.org
+  - DOMAIN-SUFFIX,oldmapsonline.org
   - DOMAIN-SUFFIX,olehdtv.com
   - DOMAIN-SUFFIX,olelive.com
   - DOMAIN-SUFFIX,olevod.com
