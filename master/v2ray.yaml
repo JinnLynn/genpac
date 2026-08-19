@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-19 01:36:30
-#! GFWList: 2026-08-18 11:57:04 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-19 12:55:46
+#! GFWList: 2026-08-19 02:15:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -2706,6 +2706,7 @@ routing:
         - domain:okpool.me
         - domain:okx.com
         - domain:old.honeynet.org
+        - domain:oldmapsonline.org
         - domain:olehdtv.com
         - domain:olelive.com
         - domain:olevod.com
