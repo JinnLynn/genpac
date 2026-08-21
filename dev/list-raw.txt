@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-08-21 01:40:32
-! GFWList: 2026-08-19 02:15:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-08-21 12:57:15
+! GFWList: 2026-08-21 02:55:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -536,6 +536,7 @@
 ||breakgfw.com
 ||breakingtweets.com
 ||breakwall.net
+||briarproject.org
 ||brill.com
 ||brizzly.com
 ||broadpressinc.com
@@ -678,6 +679,7 @@
 ||chat.com
 ||chat.lmsys.org
 ||chatgpt.com
+||chatgpt.site
 ||chatpdf.com
 ||chaturbate.com
 ||checkgfw.com

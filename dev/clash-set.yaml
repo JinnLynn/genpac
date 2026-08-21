@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-21 01:40:35
-#! GFWList: 2026-08-19 02:15:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-21 12:57:17
+#! GFWList: 2026-08-21 02:55:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -504,6 +504,7 @@ payload:
   - DOMAIN-SUFFIX,breakgfw.com
   - DOMAIN-SUFFIX,breakingtweets.com
   - DOMAIN-SUFFIX,breakwall.net
+  - DOMAIN-SUFFIX,briarproject.org
   - DOMAIN-SUFFIX,brill.com
   - DOMAIN-SUFFIX,brizzly.com
   - DOMAIN-SUFFIX,broadpressinc.com
@@ -646,6 +647,7 @@ payload:
   - DOMAIN-SUFFIX,chat.com
   - DOMAIN-SUFFIX,chat.lmsys.org
   - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,chatgpt.site
   - DOMAIN-SUFFIX,chatpdf.com
   - DOMAIN-SUFFIX,chaturbate.com
   - DOMAIN-SUFFIX,checkgfw.com
