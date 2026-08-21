@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-21 01:40:04
-#! GFWList: 2026-08-19 02:15:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-21 12:56:50
+#! GFWList: 2026-08-21 02:55:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -544,6 +544,7 @@ routing:
         - domain:breakgfw.com
         - domain:breakingtweets.com
         - domain:breakwall.net
+        - domain:briarproject.org
         - domain:brill.com
         - domain:brizzly.com
         - domain:broadpressinc.com
@@ -686,6 +687,7 @@ routing:
         - domain:chat.com
         - domain:chat.lmsys.org
         - domain:chatgpt.com
+        - domain:chatgpt.site
         - domain:chatpdf.com
         - domain:chaturbate.com
         - domain:checkgfw.com

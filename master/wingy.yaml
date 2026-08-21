@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-21 01:40:07
-#! GFWList: 2026-08-19 02:15:34 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-21 12:56:52
+#! GFWList: 2026-08-21 02:55:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -520,6 +520,7 @@ rule:
         - s,breakgfw.com
         - s,breakingtweets.com
         - s,breakwall.net
+        - s,briarproject.org
         - s,brill.com
         - s,brizzly.com
         - s,broadpressinc.com
@@ -662,6 +663,7 @@ rule:
         - s,chat.com
         - s,chat.lmsys.org
         - s,chatgpt.com
+        - s,chatgpt.site
         - s,chatpdf.com
         - s,chaturbate.com
         - s,checkgfw.com
