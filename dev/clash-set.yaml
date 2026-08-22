@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-22 01:40:56
-#! GFWList: 2026-08-21 02:55:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-22 12:49:19
+#! GFWList: 2026-08-22 06:17:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -1803,6 +1803,7 @@ payload:
   - DOMAIN-SUFFIX,himemix.com
   - DOMAIN-SUFFIX,hindustantimes.com
   - DOMAIN-SUFFIX,hinet.net
+  - DOMAIN-SUFFIX,historylines.net
   - DOMAIN-SUFFIX,hitbtc.com
   - DOMAIN-SUFFIX,hitomi.la
   - DOMAIN-SUFFIX,hive.blog
@@ -2145,6 +2146,7 @@ payload:
   - DOMAIN-SUFFIX,kinmen.travel
   - DOMAIN-SUFFIX,kinokuniya.com
   - DOMAIN-SUFFIX,kiwi.kz
+  - DOMAIN-SUFFIX,kiwix.org
   - DOMAIN-SUFFIX,kk-whys.co.jp
   - DOMAIN-SUFFIX,kkbox.com
   - DOMAIN-SUFFIX,kknews.cc
@@ -2340,6 +2342,7 @@ payload:
   - DOMAIN-SUFFIX,maven.neoforged.net
   - DOMAIN-SUFFIX,mcadforums.com
   - DOMAIN-SUFFIX,mcaf.ee
+  - DOMAIN-SUFFIX,mceindex.com
   - DOMAIN-SUFFIX,mcusercontent.com
   - DOMAIN-SUFFIX,md-t.org
   - DOMAIN-SUFFIX,me.me
@@ -3108,6 +3111,7 @@ payload:
   - DOMAIN-SUFFIX,savetibet.org
   - DOMAIN-SUFFIX,savetibetstore.org
   - DOMAIN-SUFFIX,saveuighur.org
+  - DOMAIN-SUFFIX,sb.sb
   - DOMAIN-SUFFIX,sbme.me
   - DOMAIN-SUFFIX,sbti.unun.dev
   - DOMAIN-SUFFIX,schema.org

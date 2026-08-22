@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-22 01:40:56
-#! GFWList: 2026-08-21 02:55:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-22 12:49:19
+#! GFWList: 2026-08-22 06:17:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1819,6 +1819,7 @@ rule:
         - s,himemix.com
         - s,hindustantimes.com
         - s,hinet.net
+        - s,historylines.net
         - s,hitbtc.com
         - s,hitomi.la
         - s,hive.blog
@@ -2161,6 +2162,7 @@ rule:
         - s,kinmen.travel
         - s,kinokuniya.com
         - s,kiwi.kz
+        - s,kiwix.org
         - s,kk-whys.co.jp
         - s,kkbox.com
         - s,kknews.cc
@@ -2356,6 +2358,7 @@ rule:
         - s,maven.neoforged.net
         - s,mcadforums.com
         - s,mcaf.ee
+        - s,mceindex.com
         - s,mcusercontent.com
         - s,md-t.org
         - s,me.me
@@ -3124,6 +3127,7 @@ rule:
         - s,savetibet.org
         - s,savetibetstore.org
         - s,saveuighur.org
+        - s,sb.sb
         - s,sbme.me
         - s,sbti.unun.dev
         - s,schema.org

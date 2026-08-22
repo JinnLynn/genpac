@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-08-22 01:34:32
-! GFWList: 2026-08-21 02:55:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-08-22 12:49:15
+! GFWList: 2026-08-22 06:17:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -1835,6 +1835,7 @@
 ||himemix.com
 ||hindustantimes.com
 ||hinet.net
+||historylines.net
 ||hitbtc.com
 ||hitomi.la
 ||hive.blog
@@ -2177,6 +2178,7 @@
 ||kinmen.travel
 ||kinokuniya.com
 ||kiwi.kz
+||kiwix.org
 ||kk-whys.co.jp
 ||kkbox.com
 ||kknews.cc
@@ -2372,6 +2374,7 @@
 ||maven.neoforged.net
 ||mcadforums.com
 ||mcaf.ee
+||mceindex.com
 ||mcusercontent.com
 ||md-t.org
 ||me.me
@@ -3140,6 +3143,7 @@
 ||savetibet.org
 ||savetibetstore.org
 ||saveuighur.org
+||sb.sb
 ||sbme.me
 ||sbti.unun.dev
 ||schema.org
