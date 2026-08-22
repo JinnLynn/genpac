@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-22 01:34:01
-#! GFWList: 2026-08-21 02:55:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-22 12:48:48
+#! GFWList: 2026-08-22 06:17:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1843,6 +1843,7 @@ routing:
         - domain:himemix.com
         - domain:hindustantimes.com
         - domain:hinet.net
+        - domain:historylines.net
         - domain:hitbtc.com
         - domain:hitomi.la
         - domain:hive.blog
@@ -2185,6 +2186,7 @@ routing:
         - domain:kinmen.travel
         - domain:kinokuniya.com
         - domain:kiwi.kz
+        - domain:kiwix.org
         - domain:kk-whys.co.jp
         - domain:kkbox.com
         - domain:kknews.cc
@@ -2380,6 +2382,7 @@ routing:
         - domain:maven.neoforged.net
         - domain:mcadforums.com
         - domain:mcaf.ee
+        - domain:mceindex.com
         - domain:mcusercontent.com
         - domain:md-t.org
         - domain:me.me
@@ -3148,6 +3151,7 @@ routing:
         - domain:savetibet.org
         - domain:savetibetstore.org
         - domain:saveuighur.org
+        - domain:sb.sb
         - domain:sbme.me
         - domain:sbti.unun.dev
         - domain:schema.org
