@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-23 01:43:05
-#! GFWList: 2026-08-22 06:17:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-23 12:50:05
+#! GFWList: 2026-08-23 06:47:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -243,6 +243,7 @@ rule:
         - s,api.palworldgame.com
         - s,api.pureapk.com
         - s,api.recaptcha.net
+        - s,api.shuaiapi.com
         - s,api.steampowered.com
         - s,api5.futunn.com
         - s,apiary.io
@@ -4144,6 +4145,7 @@ rule:
         - s,x.com
         - s,x.company
         - s,x3guide.com
+        - s,x86.fr
         - s,xbabe.com
         - s,xbookcn.com
         - s,xbtce.com

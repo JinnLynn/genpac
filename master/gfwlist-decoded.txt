@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: BP/ZRzwzjRnpqQQp3w56jQ
+! Checksum: Abh4hljOZDTpQRaeFWWQ6g
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 22 Aug 2026 06:17:41 +0000
+! Last Modified: Sun, 23 Aug 2026 06:47:59 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -3460,6 +3460,7 @@ iipdigital.usembassy.gov
 ||raphael.app
 ||rule34.us
 !--------------------SS-------------------------
+||api.shuaiapi.com
 ||sb.sb
 ||sysub.com
 ||sider.ai
@@ -4293,6 +4294,7 @@ iipdigital.usembassy.gov
 ||wuw.red
 ||wwitv.com
 !--------------------XX-------------------------
+||x86.fr
 ||xuan.com.my
 ||xdaforums.com
 ||xcancel.com
