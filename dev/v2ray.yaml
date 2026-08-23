@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-23 01:43:27
-#! GFWList: 2026-08-22 06:17:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-23 12:50:25
+#! GFWList: 2026-08-23 06:47:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -267,6 +267,7 @@ routing:
         - domain:api.palworldgame.com
         - domain:api.pureapk.com
         - domain:api.recaptcha.net
+        - domain:api.shuaiapi.com
         - domain:api.steampowered.com
         - domain:api5.futunn.com
         - domain:apiary.io
@@ -4168,6 +4169,7 @@ routing:
         - domain:x.com
         - domain:x.company
         - domain:x3guide.com
+        - domain:x86.fr
         - domain:xbabe.com
         - domain:xbookcn.com
         - domain:xbtce.com
