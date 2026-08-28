@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-27 22:05:28
-#! GFWList: 2026-08-23 06:47:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-28 10:49:47
+#! GFWList: 2026-08-28 03:00:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -4121,6 +4121,7 @@ routing:
         - domain:wp.com
         - domain:wplace.live
         - domain:wpoforum.com
+        - domain:write.as
         - domain:writesonic.com
         - domain:wsj.com
         - domain:wsj.net
