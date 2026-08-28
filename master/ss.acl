@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-27 22:04:52
-#! GFWList: 2026-08-23 06:47:59 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-28 10:49:23
+#! GFWList: 2026-08-28 03:00:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -4084,6 +4084,7 @@
 (^|\.)wp\.com$
 (^|\.)wplace\.live$
 (^|\.)wpoforum\.com$
+(^|\.)write\.as$
 (^|\.)writesonic\.com$
 (^|\.)wsj\.com$
 (^|\.)wsj\.net$
