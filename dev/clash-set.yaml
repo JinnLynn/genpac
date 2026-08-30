@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-30 04:49:56
-#! GFWList: 2026-08-28 03:00:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-30 16:26:37
+#! GFWList: 2026-08-30 14:57:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -1394,6 +1394,7 @@ payload:
   - DOMAIN-SUFFIX,getlantern.org
   - DOMAIN-SUFFIX,getmalus.com
   - DOMAIN-SUFFIX,getmdl.io
+  - DOMAIN-SUFFIX,getmonero.org
   - DOMAIN-SUFFIX,getoutline.org
   - DOMAIN-SUFFIX,getsession.org
   - DOMAIN-SUFFIX,getsync.com
@@ -2587,6 +2588,7 @@ payload:
   - DOMAIN-SUFFIX,nhentai.net
   - DOMAIN-SUFFIX,nic.cz.cc
   - DOMAIN-SUFFIX,nic.gov
+  - DOMAIN-SUFFIX,nicoseiga.jp
   - DOMAIN-SUFFIX,nicovideo.jp
   - DOMAIN-SUFFIX,nightswatch.top
   - DOMAIN-SUFFIX,nikke-en.com

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-30 04:49:56
-#! GFWList: 2026-08-28 03:00:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-30 16:26:37
+#! GFWList: 2026-08-30 14:57:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1410,6 +1410,7 @@ rule:
         - s,getlantern.org
         - s,getmalus.com
         - s,getmdl.io
+        - s,getmonero.org
         - s,getoutline.org
         - s,getsession.org
         - s,getsync.com
@@ -2603,6 +2604,7 @@ rule:
         - s,nhentai.net
         - s,nic.cz.cc
         - s,nic.gov
+        - s,nicoseiga.jp
         - s,nicovideo.jp
         - s,nightswatch.top
         - s,nikke-en.com
