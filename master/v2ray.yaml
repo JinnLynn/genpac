@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-08-30 04:49:28
-#! GFWList: 2026-08-28 03:00:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-08-30 16:26:10
+#! GFWList: 2026-08-30 14:57:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1434,6 +1434,7 @@ routing:
         - domain:getlantern.org
         - domain:getmalus.com
         - domain:getmdl.io
+        - domain:getmonero.org
         - domain:getoutline.org
         - domain:getsession.org
         - domain:getsync.com
@@ -2627,6 +2628,7 @@ routing:
         - domain:nhentai.net
         - domain:nic.cz.cc
         - domain:nic.gov
+        - domain:nicoseiga.jp
         - domain:nicovideo.jp
         - domain:nightswatch.top
         - domain:nikke-en.com

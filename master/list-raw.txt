@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-08-30 04:49:28
-! GFWList: 2026-08-28 03:00:43 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-08-30 16:26:10
+! GFWList: 2026-08-30 14:57:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -1426,6 +1426,7 @@
 ||getlantern.org
 ||getmalus.com
 ||getmdl.io
+||getmonero.org
 ||getoutline.org
 ||getsession.org
 ||getsync.com
@@ -2619,6 +2620,7 @@
 ||nhentai.net
 ||nic.cz.cc
 ||nic.gov
+||nicoseiga.jp
 ||nicovideo.jp
 ||nightswatch.top
 ||nikke-en.com
