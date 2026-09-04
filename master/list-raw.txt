@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-09-04 03:56:09
-! GFWList: 2026-08-30 14:57:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-09-04 16:05:28
+! GFWList: 2026-09-04 10:44:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -874,6 +874,7 @@
 ||csuchen.de
 ||csw.org.uk
 ||ct.org.tw
+||ctee.com.tw
 ||ctinets.com
 ||ctinews.com
 ||ctinsider.com
@@ -1854,6 +1855,7 @@
 ||hkcoc.com
 ||hkcoc.weather.com.hk
 ||hkdc.us
+||hkej.com
 ||hket.com
 ||hkfaa.com
 ||hkgalden.com
@@ -2276,6 +2278,7 @@
 ||linktr.ee
 ||linux.do
 ||linux.org.hk
+||linux.sb
 ||liquiditytp.com
 ||liquidvpn.com
 ||listennotes.com
