@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-04 03:56:42
-#! GFWList: 2026-08-30 14:57:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-04 16:05:53
+#! GFWList: 2026-09-04 10:44:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -858,6 +858,7 @@ rule:
         - s,csuchen.de
         - s,csw.org.uk
         - s,ct.org.tw
+        - s,ctee.com.tw
         - s,ctinets.com
         - s,ctinews.com
         - s,ctinsider.com
@@ -1838,6 +1839,7 @@ rule:
         - s,hkcoc.com
         - s,hkcoc.weather.com.hk
         - s,hkdc.us
+        - s,hkej.com
         - s,hket.com
         - s,hkfaa.com
         - s,hkgalden.com
@@ -2260,6 +2262,7 @@ rule:
         - s,linktr.ee
         - s,linux.do
         - s,linux.org.hk
+        - s,linux.sb
         - s,liquiditytp.com
         - s,liquidvpn.com
         - s,listennotes.com

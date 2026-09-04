@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-04 03:56:38
-#! GFWList: 2026-08-30 14:57:02 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-04 16:05:52
+#! GFWList: 2026-09-04 10:44:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -882,6 +882,7 @@ routing:
         - domain:csuchen.de
         - domain:csw.org.uk
         - domain:ct.org.tw
+        - domain:ctee.com.tw
         - domain:ctinets.com
         - domain:ctinews.com
         - domain:ctinsider.com
@@ -1862,6 +1863,7 @@ routing:
         - domain:hkcoc.com
         - domain:hkcoc.weather.com.hk
         - domain:hkdc.us
+        - domain:hkej.com
         - domain:hket.com
         - domain:hkfaa.com
         - domain:hkgalden.com
@@ -2284,6 +2286,7 @@ routing:
         - domain:linktr.ee
         - domain:linux.do
         - domain:linux.org.hk
+        - domain:linux.sb
         - domain:liquiditytp.com
         - domain:liquidvpn.com
         - domain:listennotes.com
