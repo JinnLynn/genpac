@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-05 03:53:34
-#! GFWList: 2026-09-04 10:44:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-05 14:55:22
+#! GFWList: 2026-09-05 05:29:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -24,6 +24,8 @@ rule:
         - s,1000giri.net
         - s,10beasts.net
         - s,10musume.com
+        - s,123av.com
+        - s,123av.me
         - s,12bet.com
         - s,12vpn.com
         - s,12vpn.net
@@ -1797,6 +1799,7 @@ rule:
         - s,helpeachpeople.com
         - s,helpster.de
         - s,hembed.com
+        - s,hentai.tv
         - s,heqinglian.net
         - s,heritage.org
         - s,herokuapp.com
@@ -3079,6 +3082,7 @@ rule:
         - s,rmbl.ws
         - s,roblox.com
         - s,robustnessiskey.com
+        - s,roc-taiwan.org
         - s,rocket-inc.net
         - s,rocket.chat
         - s,rocksdb.org
@@ -3088,6 +3092,7 @@ rule:
         - s,rolsociety.org
         - s,ronjoneswriter.com
         - s,rou.video
+        - s,roushuwo.com
         - s,rsdlmonitor.com
         - s,rsf-chinese.org
         - s,rsf.org
@@ -3390,6 +3395,7 @@ rule:
         - s,superpages.com
         - s,supervpn.net
         - s,superzooi.com
+        - s,supjav.com
         - s,support.futunn.com
         - s,supremecourt.gov
         - s,suprememastertv.com
@@ -3420,10 +3426,12 @@ rule:
         - s,taaze.tw
         - s,taedp.org.tw
         - s,tagwalk.com
+        - s,taiav.com
         - s,tails.net
         - s,taipeisociety.org
         - s,taipeitimes.com
         - s,taisounds.com
+        - s,taiwanembassy.org
         - s,taiwanhot.net
         - s,taiwanjustice.net
         - s,taiwanncf.org.tw
@@ -4106,6 +4114,7 @@ rule:
         - s,writesonic.com
         - s,wsj.com
         - s,wsj.net
+        - s,wtfpass.com
         - s,wufafangwen.com
         - s,wufi.org.tw
         - s,wujieliulan.com
