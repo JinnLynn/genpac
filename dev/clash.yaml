@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-05 03:54:00
-#! GFWList: 2026-09-04 10:44:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-05 14:55:52
+#! GFWList: 2026-09-05 05:29:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -46,6 +46,8 @@ rules:
   - DOMAIN-SUFFIX,1000giri.net,PROXY
   - DOMAIN-SUFFIX,10beasts.net,PROXY
   - DOMAIN-SUFFIX,10musume.com,PROXY
+  - DOMAIN-SUFFIX,123av.com,PROXY
+  - DOMAIN-SUFFIX,123av.me,PROXY
   - DOMAIN-SUFFIX,12bet.com,PROXY
   - DOMAIN-SUFFIX,12vpn.com,PROXY
   - DOMAIN-SUFFIX,12vpn.net,PROXY
@@ -1819,6 +1821,7 @@ rules:
   - DOMAIN-SUFFIX,helpeachpeople.com,PROXY
   - DOMAIN-SUFFIX,helpster.de,PROXY
   - DOMAIN-SUFFIX,hembed.com,PROXY
+  - DOMAIN-SUFFIX,hentai.tv,PROXY
   - DOMAIN-SUFFIX,heqinglian.net,PROXY
   - DOMAIN-SUFFIX,heritage.org,PROXY
   - DOMAIN-SUFFIX,herokuapp.com,PROXY
@@ -3101,6 +3104,7 @@ rules:
   - DOMAIN-SUFFIX,rmbl.ws,PROXY
   - DOMAIN-SUFFIX,roblox.com,PROXY
   - DOMAIN-SUFFIX,robustnessiskey.com,PROXY
+  - DOMAIN-SUFFIX,roc-taiwan.org,PROXY
   - DOMAIN-SUFFIX,rocket-inc.net,PROXY
   - DOMAIN-SUFFIX,rocket.chat,PROXY
   - DOMAIN-SUFFIX,rocksdb.org,PROXY
@@ -3110,6 +3114,7 @@ rules:
   - DOMAIN-SUFFIX,rolsociety.org,PROXY
   - DOMAIN-SUFFIX,ronjoneswriter.com,PROXY
   - DOMAIN-SUFFIX,rou.video,PROXY
+  - DOMAIN-SUFFIX,roushuwo.com,PROXY
   - DOMAIN-SUFFIX,rsdlmonitor.com,PROXY
   - DOMAIN-SUFFIX,rsf-chinese.org,PROXY
   - DOMAIN-SUFFIX,rsf.org,PROXY
@@ -3412,6 +3417,7 @@ rules:
   - DOMAIN-SUFFIX,superpages.com,PROXY
   - DOMAIN-SUFFIX,supervpn.net,PROXY
   - DOMAIN-SUFFIX,superzooi.com,PROXY
+  - DOMAIN-SUFFIX,supjav.com,PROXY
   - DOMAIN-SUFFIX,support.futunn.com,PROXY
   - DOMAIN-SUFFIX,supremecourt.gov,PROXY
   - DOMAIN-SUFFIX,suprememastertv.com,PROXY
@@ -3442,10 +3448,12 @@ rules:
   - DOMAIN-SUFFIX,taaze.tw,PROXY
   - DOMAIN-SUFFIX,taedp.org.tw,PROXY
   - DOMAIN-SUFFIX,tagwalk.com,PROXY
+  - DOMAIN-SUFFIX,taiav.com,PROXY
   - DOMAIN-SUFFIX,tails.net,PROXY
   - DOMAIN-SUFFIX,taipeisociety.org,PROXY
   - DOMAIN-SUFFIX,taipeitimes.com,PROXY
   - DOMAIN-SUFFIX,taisounds.com,PROXY
+  - DOMAIN-SUFFIX,taiwanembassy.org,PROXY
   - DOMAIN-SUFFIX,taiwanhot.net,PROXY
   - DOMAIN-SUFFIX,taiwanjustice.net,PROXY
   - DOMAIN-SUFFIX,taiwanncf.org.tw,PROXY
@@ -4128,6 +4136,7 @@ rules:
   - DOMAIN-SUFFIX,writesonic.com,PROXY
   - DOMAIN-SUFFIX,wsj.com,PROXY
   - DOMAIN-SUFFIX,wsj.net,PROXY
+  - DOMAIN-SUFFIX,wtfpass.com,PROXY
   - DOMAIN-SUFFIX,wufafangwen.com,PROXY
   - DOMAIN-SUFFIX,wufi.org.tw,PROXY
   - DOMAIN-SUFFIX,wujieliulan.com,PROXY

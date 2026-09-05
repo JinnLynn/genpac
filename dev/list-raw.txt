@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-09-05 03:53:59
-! GFWList: 2026-09-04 10:44:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-09-05 14:55:49
+! GFWList: 2026-09-05 05:29:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -40,6 +40,8 @@
 ||1000giri.net
 ||10beasts.net
 ||10musume.com
+||123av.com
+||123av.me
 ||12bet.com
 ||12vpn.com
 ||12vpn.net
@@ -1813,6 +1815,7 @@
 ||helpeachpeople.com
 ||helpster.de
 ||hembed.com
+||hentai.tv
 ||heqinglian.net
 ||heritage.org
 ||herokuapp.com
@@ -3095,6 +3098,7 @@
 ||rmbl.ws
 ||roblox.com
 ||robustnessiskey.com
+||roc-taiwan.org
 ||rocket-inc.net
 ||rocket.chat
 ||rocksdb.org
@@ -3104,6 +3108,7 @@
 ||rolsociety.org
 ||ronjoneswriter.com
 ||rou.video
+||roushuwo.com
 ||rsdlmonitor.com
 ||rsf-chinese.org
 ||rsf.org
@@ -3406,6 +3411,7 @@
 ||superpages.com
 ||supervpn.net
 ||superzooi.com
+||supjav.com
 ||support.futunn.com
 ||supremecourt.gov
 ||suprememastertv.com
@@ -3436,10 +3442,12 @@
 ||taaze.tw
 ||taedp.org.tw
 ||tagwalk.com
+||taiav.com
 ||tails.net
 ||taipeisociety.org
 ||taipeitimes.com
 ||taisounds.com
+||taiwanembassy.org
 ||taiwanhot.net
 ||taiwanjustice.net
 ||taiwanncf.org.tw
@@ -4122,6 +4130,7 @@
 ||writesonic.com
 ||wsj.com
 ||wsj.net
+||wtfpass.com
 ||wufafangwen.com
 ||wufi.org.tw
 ||wujieliulan.com

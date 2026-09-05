@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-05 03:54:00
-#! GFWList: 2026-09-04 10:44:38 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-05 14:55:52
+#! GFWList: 2026-09-05 05:29:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -8,6 +8,8 @@ payload:
   - DOMAIN-SUFFIX,1000giri.net
   - DOMAIN-SUFFIX,10beasts.net
   - DOMAIN-SUFFIX,10musume.com
+  - DOMAIN-SUFFIX,123av.com
+  - DOMAIN-SUFFIX,123av.me
   - DOMAIN-SUFFIX,12bet.com
   - DOMAIN-SUFFIX,12vpn.com
   - DOMAIN-SUFFIX,12vpn.net
@@ -1781,6 +1783,7 @@ payload:
   - DOMAIN-SUFFIX,helpeachpeople.com
   - DOMAIN-SUFFIX,helpster.de
   - DOMAIN-SUFFIX,hembed.com
+  - DOMAIN-SUFFIX,hentai.tv
   - DOMAIN-SUFFIX,heqinglian.net
   - DOMAIN-SUFFIX,heritage.org
   - DOMAIN-SUFFIX,herokuapp.com
@@ -3063,6 +3066,7 @@ payload:
   - DOMAIN-SUFFIX,rmbl.ws
   - DOMAIN-SUFFIX,roblox.com
   - DOMAIN-SUFFIX,robustnessiskey.com
+  - DOMAIN-SUFFIX,roc-taiwan.org
   - DOMAIN-SUFFIX,rocket-inc.net
   - DOMAIN-SUFFIX,rocket.chat
   - DOMAIN-SUFFIX,rocksdb.org
@@ -3072,6 +3076,7 @@ payload:
   - DOMAIN-SUFFIX,rolsociety.org
   - DOMAIN-SUFFIX,ronjoneswriter.com
   - DOMAIN-SUFFIX,rou.video
+  - DOMAIN-SUFFIX,roushuwo.com
   - DOMAIN-SUFFIX,rsdlmonitor.com
   - DOMAIN-SUFFIX,rsf-chinese.org
   - DOMAIN-SUFFIX,rsf.org
@@ -3374,6 +3379,7 @@ payload:
   - DOMAIN-SUFFIX,superpages.com
   - DOMAIN-SUFFIX,supervpn.net
   - DOMAIN-SUFFIX,superzooi.com
+  - DOMAIN-SUFFIX,supjav.com
   - DOMAIN-SUFFIX,support.futunn.com
   - DOMAIN-SUFFIX,supremecourt.gov
   - DOMAIN-SUFFIX,suprememastertv.com
@@ -3404,10 +3410,12 @@ payload:
   - DOMAIN-SUFFIX,taaze.tw
   - DOMAIN-SUFFIX,taedp.org.tw
   - DOMAIN-SUFFIX,tagwalk.com
+  - DOMAIN-SUFFIX,taiav.com
   - DOMAIN-SUFFIX,tails.net
   - DOMAIN-SUFFIX,taipeisociety.org
   - DOMAIN-SUFFIX,taipeitimes.com
   - DOMAIN-SUFFIX,taisounds.com
+  - DOMAIN-SUFFIX,taiwanembassy.org
   - DOMAIN-SUFFIX,taiwanhot.net
   - DOMAIN-SUFFIX,taiwanjustice.net
   - DOMAIN-SUFFIX,taiwanncf.org.tw
@@ -4090,6 +4098,7 @@ payload:
   - DOMAIN-SUFFIX,writesonic.com
   - DOMAIN-SUFFIX,wsj.com
   - DOMAIN-SUFFIX,wsj.net
+  - DOMAIN-SUFFIX,wtfpass.com
   - DOMAIN-SUFFIX,wufafangwen.com
   - DOMAIN-SUFFIX,wufi.org.tw
   - DOMAIN-SUFFIX,wujieliulan.com
