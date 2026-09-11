@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-11 04:02:10
-#! GFWList: 2026-09-05 05:29:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-11 16:13:55
+#! GFWList: 2026-09-11 14:54:15 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -219,19 +219,15 @@ payload:
   - DOMAIN-SUFFIX,apartmentratings.com
   - DOMAIN-SUFFIX,apartments.com
   - DOMAIN-SUFFIX,apat1989.org
-  - DOMAIN-SUFFIX,api-gl.lbkrs.com
   - DOMAIN-SUFFIX,api-secure.recaptcha.net
   - DOMAIN-SUFFIX,api-verify.recaptcha.net
   - DOMAIN-SUFFIX,api.ai
-  - DOMAIN-SUFFIX,api.futunn.com
-  - DOMAIN-SUFFIX,api.lbkrs.com
   - DOMAIN-SUFFIX,api.moomoobull.com
   - DOMAIN-SUFFIX,api.palworldgame.com
   - DOMAIN-SUFFIX,api.pureapk.com
   - DOMAIN-SUFFIX,api.recaptcha.net
   - DOMAIN-SUFFIX,api.shuaiapi.com
   - DOMAIN-SUFFIX,api.steampowered.com
-  - DOMAIN-SUFFIX,api5.futunn.com
   - DOMAIN-SUFFIX,apiary.io
   - DOMAIN-SUFFIX,apigee.com
   - DOMAIN-SUFFIX,apk.support
@@ -613,7 +609,6 @@ payload:
   - DOMAIN-SUFFIX,cdn-images.mailchimp.com
   - DOMAIN-SUFFIX,cdn-telegram.org
   - DOMAIN-SUFFIX,cdn.arstechnica.net
-  - DOMAIN-SUFFIX,cdn.futustatic.com
   - DOMAIN-SUFFIX,cdn.jwplayer.com
   - DOMAIN-SUFFIX,cdn.printfriendly.com
   - DOMAIN-SUFFIX,cdn.seatguru.com
@@ -763,7 +758,6 @@ payload:
   - DOMAIN-SUFFIX,cn.sandscotaicentral.com
   - DOMAIN-SUFFIX,cn.shafaqna.com
   - DOMAIN-SUFFIX,cn.theaustralian.com.au
-  - DOMAIN-SUFFIX,cn.uptodown.com
   - DOMAIN-SUFFIX,cna.com.tw
   - DOMAIN-SUFFIX,cnbbnews.wordpress.com
   - DOMAIN-SUFFIX,cnbeta.com.tw
@@ -992,7 +986,6 @@ payload:
   - DOMAIN-SUFFIX,doujincafe.com
   - DOMAIN-SUFFIX,dowjones.io
   - DOMAIN-SUFFIX,download.dappcdn.com
-  - DOMAIN-SUFFIX,download.futunn.com
   - DOMAIN-SUFFIX,dpool.top
   - DOMAIN-SUFFIX,dpp.org.tw
   - DOMAIN-SUFFIX,dpr.info
@@ -2304,7 +2297,6 @@ payload:
   - DOMAIN-SUFFIX,lyfhk.net
   - DOMAIN-SUFFIX,lzjscript.com
   - DOMAIN-SUFFIX,lzmtnews.org
-  - DOMAIN-SUFFIX,m.hkgalden.com
   - DOMAIN-SUFFIX,m.me
   - DOMAIN-SUFFIX,m.moegirl.org
   - DOMAIN-SUFFIX,macgamestore.com
@@ -2712,12 +2704,8 @@ payload:
   - DOMAIN-SUFFIX,open.firstory.me
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,openapi-quote.longbridge.cn
-  - DOMAIN-SUFFIX,openapi-quote.longbridge.com
   - DOMAIN-SUFFIX,openapi-trade.longbridge.cn
-  - DOMAIN-SUFFIX,openapi-trade.longbridge.com
-  - DOMAIN-SUFFIX,openapi.futunn.com
   - DOMAIN-SUFFIX,openapi.longbridge.cn
-  - DOMAIN-SUFFIX,openapi.longbridge.com
   - DOMAIN-SUFFIX,openart.ai
   - DOMAIN-SUFFIX,opencritic.com
   - DOMAIN-SUFFIX,opendemocracy.net
@@ -2973,9 +2961,8 @@ payload:
   - DOMAIN-SUFFIX,qoos.com
   - DOMAIN-SUFFIX,qq.co.za
   - DOMAIN-SUFFIX,qstatus.com
-  - DOMAIN-SUFFIX,qtcard.futunn.com
-  - DOMAIN-SUFFIX,qtcardfthk.futufin.com
   - DOMAIN-SUFFIX,qtrac.eu
+  - DOMAIN-SUFFIX,quakemachinex.com
   - DOMAIN-SUFFIX,questvisual.com
   - DOMAIN-SUFFIX,quitccp.org
   - DOMAIN-SUFFIX,quiz.directory
@@ -3380,7 +3367,6 @@ payload:
   - DOMAIN-SUFFIX,supervpn.net
   - DOMAIN-SUFFIX,superzooi.com
   - DOMAIN-SUFFIX,supjav.com
-  - DOMAIN-SUFFIX,support.futunn.com
   - DOMAIN-SUFFIX,supremecourt.gov
   - DOMAIN-SUFFIX,suprememastertv.com
   - DOMAIN-SUFFIX,surfeasy.com
@@ -3644,8 +3630,6 @@ payload:
   - DOMAIN-SUFFIX,tou.tv
   - DOMAIN-SUFFIX,tpi.org.tw
   - DOMAIN-SUFFIX,tracfone.com
-  - DOMAIN-SUFFIX,trade.futunn.com
-  - DOMAIN-SUFFIX,trade.longportapp.com
   - DOMAIN-SUFFIX,tradeup.com
   - DOMAIN-SUFFIX,tradingview.com
   - DOMAIN-SUFFIX,translate.goog

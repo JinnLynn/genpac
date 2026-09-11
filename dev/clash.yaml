@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-11 04:02:10
-#! GFWList: 2026-09-05 05:29:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-11 16:13:55
+#! GFWList: 2026-09-11 14:54:15 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -15,7 +15,6 @@ rules:
   - DOMAIN-SUFFIX,checkin.gstatic.com,DIRECT
   - DOMAIN-SUFFIX,ci.android.com,DIRECT
   - DOMAIN-SUFFIX,clientservices.googleapis.com,DIRECT
-  - DOMAIN-SUFFIX,cn.investing.com,DIRECT
   - DOMAIN-SUFFIX,connectivitycheck.gstatic.com,DIRECT
   - DOMAIN-SUFFIX,crl.pki.goog,DIRECT
   - DOMAIN-SUFFIX,csi.gstatic.com,DIRECT
@@ -257,19 +256,15 @@ rules:
   - DOMAIN-SUFFIX,apartmentratings.com,PROXY
   - DOMAIN-SUFFIX,apartments.com,PROXY
   - DOMAIN-SUFFIX,apat1989.org,PROXY
-  - DOMAIN-SUFFIX,api-gl.lbkrs.com,PROXY
   - DOMAIN-SUFFIX,api-secure.recaptcha.net,PROXY
   - DOMAIN-SUFFIX,api-verify.recaptcha.net,PROXY
   - DOMAIN-SUFFIX,api.ai,PROXY
-  - DOMAIN-SUFFIX,api.futunn.com,PROXY
-  - DOMAIN-SUFFIX,api.lbkrs.com,PROXY
   - DOMAIN-SUFFIX,api.moomoobull.com,PROXY
   - DOMAIN-SUFFIX,api.palworldgame.com,PROXY
   - DOMAIN-SUFFIX,api.pureapk.com,PROXY
   - DOMAIN-SUFFIX,api.recaptcha.net,PROXY
   - DOMAIN-SUFFIX,api.shuaiapi.com,PROXY
   - DOMAIN-SUFFIX,api.steampowered.com,PROXY
-  - DOMAIN-SUFFIX,api5.futunn.com,PROXY
   - DOMAIN-SUFFIX,apiary.io,PROXY
   - DOMAIN-SUFFIX,apigee.com,PROXY
   - DOMAIN-SUFFIX,apk.support,PROXY
@@ -651,7 +646,6 @@ rules:
   - DOMAIN-SUFFIX,cdn-images.mailchimp.com,PROXY
   - DOMAIN-SUFFIX,cdn-telegram.org,PROXY
   - DOMAIN-SUFFIX,cdn.arstechnica.net,PROXY
-  - DOMAIN-SUFFIX,cdn.futustatic.com,PROXY
   - DOMAIN-SUFFIX,cdn.jwplayer.com,PROXY
   - DOMAIN-SUFFIX,cdn.printfriendly.com,PROXY
   - DOMAIN-SUFFIX,cdn.seatguru.com,PROXY
@@ -801,7 +795,6 @@ rules:
   - DOMAIN-SUFFIX,cn.sandscotaicentral.com,PROXY
   - DOMAIN-SUFFIX,cn.shafaqna.com,PROXY
   - DOMAIN-SUFFIX,cn.theaustralian.com.au,PROXY
-  - DOMAIN-SUFFIX,cn.uptodown.com,PROXY
   - DOMAIN-SUFFIX,cna.com.tw,PROXY
   - DOMAIN-SUFFIX,cnbbnews.wordpress.com,PROXY
   - DOMAIN-SUFFIX,cnbeta.com.tw,PROXY
@@ -1030,7 +1023,6 @@ rules:
   - DOMAIN-SUFFIX,doujincafe.com,PROXY
   - DOMAIN-SUFFIX,dowjones.io,PROXY
   - DOMAIN-SUFFIX,download.dappcdn.com,PROXY
-  - DOMAIN-SUFFIX,download.futunn.com,PROXY
   - DOMAIN-SUFFIX,dpool.top,PROXY
   - DOMAIN-SUFFIX,dpp.org.tw,PROXY
   - DOMAIN-SUFFIX,dpr.info,PROXY
@@ -2342,7 +2334,6 @@ rules:
   - DOMAIN-SUFFIX,lyfhk.net,PROXY
   - DOMAIN-SUFFIX,lzjscript.com,PROXY
   - DOMAIN-SUFFIX,lzmtnews.org,PROXY
-  - DOMAIN-SUFFIX,m.hkgalden.com,PROXY
   - DOMAIN-SUFFIX,m.me,PROXY
   - DOMAIN-SUFFIX,m.moegirl.org,PROXY
   - DOMAIN-SUFFIX,macgamestore.com,PROXY
@@ -2750,12 +2741,8 @@ rules:
   - DOMAIN-SUFFIX,open.firstory.me,PROXY
   - DOMAIN-SUFFIX,openai.com,PROXY
   - DOMAIN-SUFFIX,openapi-quote.longbridge.cn,PROXY
-  - DOMAIN-SUFFIX,openapi-quote.longbridge.com,PROXY
   - DOMAIN-SUFFIX,openapi-trade.longbridge.cn,PROXY
-  - DOMAIN-SUFFIX,openapi-trade.longbridge.com,PROXY
-  - DOMAIN-SUFFIX,openapi.futunn.com,PROXY
   - DOMAIN-SUFFIX,openapi.longbridge.cn,PROXY
-  - DOMAIN-SUFFIX,openapi.longbridge.com,PROXY
   - DOMAIN-SUFFIX,openart.ai,PROXY
   - DOMAIN-SUFFIX,opencritic.com,PROXY
   - DOMAIN-SUFFIX,opendemocracy.net,PROXY
@@ -3011,9 +2998,8 @@ rules:
   - DOMAIN-SUFFIX,qoos.com,PROXY
   - DOMAIN-SUFFIX,qq.co.za,PROXY
   - DOMAIN-SUFFIX,qstatus.com,PROXY
-  - DOMAIN-SUFFIX,qtcard.futunn.com,PROXY
-  - DOMAIN-SUFFIX,qtcardfthk.futufin.com,PROXY
   - DOMAIN-SUFFIX,qtrac.eu,PROXY
+  - DOMAIN-SUFFIX,quakemachinex.com,PROXY
   - DOMAIN-SUFFIX,questvisual.com,PROXY
   - DOMAIN-SUFFIX,quitccp.org,PROXY
   - DOMAIN-SUFFIX,quiz.directory,PROXY
@@ -3418,7 +3404,6 @@ rules:
   - DOMAIN-SUFFIX,supervpn.net,PROXY
   - DOMAIN-SUFFIX,superzooi.com,PROXY
   - DOMAIN-SUFFIX,supjav.com,PROXY
-  - DOMAIN-SUFFIX,support.futunn.com,PROXY
   - DOMAIN-SUFFIX,supremecourt.gov,PROXY
   - DOMAIN-SUFFIX,suprememastertv.com,PROXY
   - DOMAIN-SUFFIX,surfeasy.com,PROXY
@@ -3682,8 +3667,6 @@ rules:
   - DOMAIN-SUFFIX,tou.tv,PROXY
   - DOMAIN-SUFFIX,tpi.org.tw,PROXY
   - DOMAIN-SUFFIX,tracfone.com,PROXY
-  - DOMAIN-SUFFIX,trade.futunn.com,PROXY
-  - DOMAIN-SUFFIX,trade.longportapp.com,PROXY
   - DOMAIN-SUFFIX,tradeup.com,PROXY
   - DOMAIN-SUFFIX,tradingview.com,PROXY
   - DOMAIN-SUFFIX,translate.goog,PROXY

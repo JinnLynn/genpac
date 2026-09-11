@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-11 04:02:10
-#! GFWList: 2026-09-05 05:29:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-11 16:13:55
+#! GFWList: 2026-09-11 14:54:15 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -235,19 +235,15 @@ rule:
         - s,apartmentratings.com
         - s,apartments.com
         - s,apat1989.org
-        - s,api-gl.lbkrs.com
         - s,api-secure.recaptcha.net
         - s,api-verify.recaptcha.net
         - s,api.ai
-        - s,api.futunn.com
-        - s,api.lbkrs.com
         - s,api.moomoobull.com
         - s,api.palworldgame.com
         - s,api.pureapk.com
         - s,api.recaptcha.net
         - s,api.shuaiapi.com
         - s,api.steampowered.com
-        - s,api5.futunn.com
         - s,apiary.io
         - s,apigee.com
         - s,apk.support
@@ -629,7 +625,6 @@ rule:
         - s,cdn-images.mailchimp.com
         - s,cdn-telegram.org
         - s,cdn.arstechnica.net
-        - s,cdn.futustatic.com
         - s,cdn.jwplayer.com
         - s,cdn.printfriendly.com
         - s,cdn.seatguru.com
@@ -779,7 +774,6 @@ rule:
         - s,cn.sandscotaicentral.com
         - s,cn.shafaqna.com
         - s,cn.theaustralian.com.au
-        - s,cn.uptodown.com
         - s,cna.com.tw
         - s,cnbbnews.wordpress.com
         - s,cnbeta.com.tw
@@ -1008,7 +1002,6 @@ rule:
         - s,doujincafe.com
         - s,dowjones.io
         - s,download.dappcdn.com
-        - s,download.futunn.com
         - s,dpool.top
         - s,dpp.org.tw
         - s,dpr.info
@@ -2320,7 +2313,6 @@ rule:
         - s,lyfhk.net
         - s,lzjscript.com
         - s,lzmtnews.org
-        - s,m.hkgalden.com
         - s,m.me
         - s,m.moegirl.org
         - s,macgamestore.com
@@ -2728,12 +2720,8 @@ rule:
         - s,open.firstory.me
         - s,openai.com
         - s,openapi-quote.longbridge.cn
-        - s,openapi-quote.longbridge.com
         - s,openapi-trade.longbridge.cn
-        - s,openapi-trade.longbridge.com
-        - s,openapi.futunn.com
         - s,openapi.longbridge.cn
-        - s,openapi.longbridge.com
         - s,openart.ai
         - s,opencritic.com
         - s,opendemocracy.net
@@ -2989,9 +2977,8 @@ rule:
         - s,qoos.com
         - s,qq.co.za
         - s,qstatus.com
-        - s,qtcard.futunn.com
-        - s,qtcardfthk.futufin.com
         - s,qtrac.eu
+        - s,quakemachinex.com
         - s,questvisual.com
         - s,quitccp.org
         - s,quiz.directory
@@ -3396,7 +3383,6 @@ rule:
         - s,supervpn.net
         - s,superzooi.com
         - s,supjav.com
-        - s,support.futunn.com
         - s,supremecourt.gov
         - s,suprememastertv.com
         - s,surfeasy.com
@@ -3660,8 +3646,6 @@ rule:
         - s,tou.tv
         - s,tpi.org.tw
         - s,tracfone.com
-        - s,trade.futunn.com
-        - s,trade.longportapp.com
         - s,tradeup.com
         - s,tradingview.com
         - s,translate.goog
