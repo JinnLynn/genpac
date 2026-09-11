@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: IPrn2pEThwjqG8zr+AziXg
+! Checksum: hhiTzDLvcsGbFJKUB5aC0Q
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 05 Sep 2026 05:29:19 +0000
+! Last Modified: Fri, 11 Sep 2026 14:54:15 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -437,7 +437,6 @@
 ||tubepornclassic.com
 ||uku.im
 ||unseen.is
-||cn.uptodown.com
 ||uraban.me
 ||vrsmash.com
 ||vultryhw.com
@@ -596,37 +595,22 @@
 ||futuhkapp.com
 ||fututrade.com
 ||fututrustee.com
-||cdn.futustatic.com
 ||api.moomoobull.com
 ||moomooequity.com
 ||moomootrustee.com
 ||9oju31.launches.appsflyersdk.com
 ||sgqt0j.launches.appsflyersdk.com
 ||shortconn.im.qcloud.com
-||api.lbkrs.com
-||api-gl.lbkrs.com
 ||longbridge.cloud
 ||longbridge.sg
 ||tigerbrokers.com
 ||tigerbrokers.net
 ||tigerbrokers.nz
 ||quote.longbridge.global
-||trade.longportapp.com
-||openapi.longbridge.com
-||openapi-quote.longbridge.com
-||openapi-trade.longbridge.com
 ||openapi.longbridge.cn
 ||openapi-quote.longbridge.cn
 ||openapi-trade.longbridge.cn
 ||cg.play-analytics.com
-||qtcard.futunn.com
-||qtcardfthk.futufin.com
-||openapi.futunn.com
-||api.futunn.com
-||api5.futunn.com
-||trade.futunn.com
-||support.futunn.com
-||download.futunn.com
 !----------------Frauds & Scams-----------------
 !!---Content Farm(fake 500 error)---
 ||read01.com
@@ -2437,7 +2421,6 @@ iipdigital.usembassy.gov
 ||hkdc.us
 ||hket.com
 ||hkfaa.com
-|https://m.hkgalden.com
 ||hkgpao.com
 ||hklts.org.hk
 ||hkmap.live
@@ -3355,6 +3338,7 @@ iipdigital.usembassy.gov
 ||pximg.net
 ||python.com.tw
 !--------------------QQ-------------------------
+||quakemachinex.com
 |http://qmp4.com
 ||qianmo.tw
 ||qbittorrent.org
@@ -4463,7 +4447,6 @@ iipdigital.usembassy.gov
 !#############Supplemental List End#############
 !################Whitelist Start################
 @@||firebase-settings.crashlytics.com
-@@||cn.investing.com
 @@||www.typepad.com
 @@||static.typepad.com
 @@||ci.android.com
