@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-09-21 04:21:12
-! GFWList: 2026-09-21 01:30:46 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-09-21 18:05:35
+! GFWList: 2026-09-21 12:27:46 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -727,6 +727,7 @@
 ||chinesegay.org
 ||chinesen.de
 ||chinesenews.net.au
+||chineseposters.net
 ||chineseradioseattle.com
 ||chineseupress.com
 ||chingcheong.com
