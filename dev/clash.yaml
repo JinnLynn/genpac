@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-21 04:21:45
-#! GFWList: 2026-09-21 01:30:46 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-21 18:06:05
+#! GFWList: 2026-09-21 12:27:46 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -733,6 +733,7 @@ rules:
   - DOMAIN-SUFFIX,chinesegay.org,PROXY
   - DOMAIN-SUFFIX,chinesen.de,PROXY
   - DOMAIN-SUFFIX,chinesenews.net.au,PROXY
+  - DOMAIN-SUFFIX,chineseposters.net,PROXY
   - DOMAIN-SUFFIX,chineseradioseattle.com,PROXY
   - DOMAIN-SUFFIX,chineseupress.com,PROXY
   - DOMAIN-SUFFIX,chingcheong.com,PROXY
