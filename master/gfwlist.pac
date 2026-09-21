@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2026-09-20 15:48:09
- * GFWList Last-Modified: 2026-09-11 14:54:15
+ * Generated: 2026-09-21 04:21:12
+ * GFWList Last-Modified: 2026-09-21 01:30:46
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -2657,6 +2657,7 @@ var rules = [
             "nordstromrack.com",
             "nordvpn.com",
             "nos.nl",
+            "note.com",
             "notepad-plus-plus.org",
             "nottinghampost.com",
             "now.com",

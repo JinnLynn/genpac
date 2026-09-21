@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-20 15:48:10
-#! GFWList: 2026-09-11 14:54:15 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-21 04:21:12
+#! GFWList: 2026-09-21 01:30:46 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -2616,6 +2616,7 @@
 (^|\.)nordstromrack\.com$
 (^|\.)nordvpn\.com$
 (^|\.)nos\.nl$
+(^|\.)note\.com$
 (^|\.)notepad-plus-plus\.org$
 (^|\.)nottinghampost\.com$
 (^|\.)now\.com$
