@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-25 16:57:04
-#! GFWList: 2026-09-21 12:27:46 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-26 04:27:26
+#! GFWList: 2026-09-26 02:11:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -591,6 +591,7 @@ routing:
         - domain:c-est-simple.com
         - domain:c-span.org
         - domain:c-spanvideo.org
+        - domain:c.go-mpulse.net
         - domain:c.mi.com
         - domain:c2cx.com
         - domain:c3pool.com
@@ -2999,6 +3000,7 @@ routing:
         - domain:qianmo.tw
         - domain:qiwen.lu
         - domain:qmp4.com
+        - domain:qobuz.com
         - domain:qoos.com
         - domain:qq.co.za
         - domain:qstatus.com

@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-25 16:57:06
-#! GFWList: 2026-09-21 12:27:46 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-26 04:27:27
+#! GFWList: 2026-09-26 02:11:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -568,6 +568,7 @@ rule:
         - s,c-est-simple.com
         - s,c-span.org
         - s,c-spanvideo.org
+        - s,c.go-mpulse.net
         - s,c.mi.com
         - s,c2cx.com
         - s,c3pool.com
@@ -2976,6 +2977,7 @@ rule:
         - s,qianmo.tw
         - s,qiwen.lu
         - s,qmp4.com
+        - s,qobuz.com
         - s,qoos.com
         - s,qq.co.za
         - s,qstatus.com
