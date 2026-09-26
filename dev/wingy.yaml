@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-26 04:27:27
-#! GFWList: 2026-09-26 02:11:25 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-26 16:08:38
+#! GFWList: 2026-09-26 12:29:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -3855,6 +3855,7 @@ rule:
         - s,vansky.com
         - s,vaticannews.va
         - s,vatn.org
+        - s,vava8.com
         - s,vcf-online.org
         - s,vcfbuilder.org
         - s,veed.io
