@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2026-09-25 16:56:43
- * GFWList Last-Modified: 2026-09-21 12:27:46
+ * Generated: 2026-09-26 04:27:06
+ * GFWList Last-Modified: 2026-09-26 02:11:25
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -596,6 +596,7 @@ var rules = [
             "c-est-simple.com",
             "c-span.org",
             "c-spanvideo.org",
+            "c.go-mpulse.net",
             "c.mi.com",
             "c2cx.com",
             "c3pool.com",
@@ -3004,6 +3005,7 @@ var rules = [
             "qianmo.tw",
             "qiwen.lu",
             "qmp4.com",
+            "qobuz.com",
             "qoos.com",
             "qq.co.za",
             "qstatus.com",
