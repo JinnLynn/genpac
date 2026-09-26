@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2026-09-26 04:27:06
- * GFWList Last-Modified: 2026-09-26 02:11:25
+ * Generated: 2026-09-26 16:08:08
+ * GFWList Last-Modified: 2026-09-26 12:29:53
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -3883,6 +3883,7 @@ var rules = [
             "vansky.com",
             "vaticannews.va",
             "vatn.org",
+            "vava8.com",
             "vcf-online.org",
             "vcfbuilder.org",
             "veed.io",
