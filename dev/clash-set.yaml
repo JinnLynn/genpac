@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-30 05:00:53
-#! GFWList: 2026-09-26 12:29:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-30 17:52:04
+#! GFWList: 2026-09-30 11:59:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -1337,6 +1337,7 @@ payload:
   - DOMAIN-SUFFIX,futustatic.com
   - DOMAIN-SUFFIX,fututrade.com
   - DOMAIN-SUFFIX,fututrustee.com
+  - DOMAIN-SUFFIX,fuyin116.com
   - DOMAIN-SUFFIX,fw.cm
   - DOMAIN-SUFFIX,fxcm-chinese.com
   - DOMAIN-SUFFIX,fxnetworks.com
@@ -2487,6 +2488,7 @@ payload:
   - DOMAIN-SUFFIX,mubi.com
   - DOMAIN-SUFFIX,mullvad.net
   - DOMAIN-SUFFIX,multiply.com
+  - DOMAIN-SUFFIX,muse.ai
   - DOMAIN-SUFFIX,music.amazon.com
   - DOMAIN-SUFFIX,musixmatch.com
   - DOMAIN-SUFFIX,muzi.com

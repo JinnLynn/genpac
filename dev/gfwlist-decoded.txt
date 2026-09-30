@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: 5B6a4Mo0FZooq7MTmz+lvw
+! Checksum: zkRAxYnnt0xHM1QDttHa+A
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 26 Sep 2026 12:29:53 +0000
+! Last Modified: Wed, 30 Sep 2026 11:59:41 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -2057,6 +2057,7 @@ iipdigital.usembassy.gov
 ||eyevio.jp
 ||eyny.com
 !--------------------FF-------------------------
+||fuyin116.com
 ||freedom.gov
 ||hyperbeam.com
 ||flowgpt.com
@@ -2801,6 +2802,7 @@ iipdigital.usembassy.gov
 ||lzmtnews.org
 ||leonardo.ai
 !--------------------MM-------------------------
+||muse.ai
 ||historylines.net
 ||kiwix.org
 ||mceindex.com
