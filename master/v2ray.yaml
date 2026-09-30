@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-30 05:00:26
-#! GFWList: 2026-09-26 12:29:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-30 17:51:36
+#! GFWList: 2026-09-30 11:59:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1376,6 +1376,7 @@ routing:
         - domain:futustatic.com
         - domain:fututrade.com
         - domain:fututrustee.com
+        - domain:fuyin116.com
         - domain:fw.cm
         - domain:fxcm-chinese.com
         - domain:fxnetworks.com
@@ -2526,6 +2527,7 @@ routing:
         - domain:mubi.com
         - domain:mullvad.net
         - domain:multiply.com
+        - domain:muse.ai
         - domain:music.amazon.com
         - domain:musixmatch.com
         - domain:muzi.com

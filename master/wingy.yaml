@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-09-30 05:00:30
-#! GFWList: 2026-09-26 12:29:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-09-30 17:51:39
+#! GFWList: 2026-09-30 11:59:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1353,6 +1353,7 @@ rule:
         - s,futustatic.com
         - s,fututrade.com
         - s,fututrustee.com
+        - s,fuyin116.com
         - s,fw.cm
         - s,fxcm-chinese.com
         - s,fxnetworks.com
@@ -2503,6 +2504,7 @@ rule:
         - s,mubi.com
         - s,mullvad.net
         - s,multiply.com
+        - s,muse.ai
         - s,music.amazon.com
         - s,musixmatch.com
         - s,muzi.com
