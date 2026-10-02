@@ -1,7 +1,7 @@
 
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-02 05:02:10
-#! GFWList: 2026-10-01 02:10:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-02 17:42:29
+#! GFWList: 2026-10-02 13:31:18 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -3206,6 +3206,7 @@
 (^|\.)simplex\.chat$
 (^|\.)sina\.com\.hk$
 (^|\.)sinchew\.com\.my$
+(^|\.)sing-box\.sagernet\.org$
 (^|\.)singaporepools\.com\.sg$
 (^|\.)singlelogin\.se$
 (^|\.)singtao\.com$
