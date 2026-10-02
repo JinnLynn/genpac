@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-10-02 05:02:35
- * GFWList Last-Modified: 2026-10-01 02:10:03
+ * Generated: 2026-10-02 17:42:54
+ * GFWList Last-Modified: 2026-10-02 13:31:18
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -3247,6 +3247,7 @@ var rules = [
             "simplex.chat",
             "sina.com.hk",
             "sinchew.com.my",
+            "sing-box.sagernet.org",
             "singaporepools.com.sg",
             "singlelogin.se",
             "singtao.com",

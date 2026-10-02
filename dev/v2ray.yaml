@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-02 05:02:35
-#! GFWList: 2026-10-01 02:10:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-02 17:42:54
+#! GFWList: 2026-10-02 13:31:18 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -3242,6 +3242,7 @@ routing:
         - domain:simplex.chat
         - domain:sina.com.hk
         - domain:sinchew.com.my
+        - domain:sing-box.sagernet.org
         - domain:singaporepools.com.sg
         - domain:singlelogin.se
         - domain:singtao.com
