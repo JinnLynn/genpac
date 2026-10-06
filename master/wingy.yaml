@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-06 05:48:52
-#! GFWList: 2026-10-02 13:31:18 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-06 18:09:53
+#! GFWList: 2026-10-06 06:17:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -150,6 +150,7 @@ rule:
         - s,agro.hk
         - s,ai.dev
         - s,ai.studio
+        - s,aidc.com.tw
         - s,aihub.top
         - s,aiosearch.com
         - s,aiph.net
@@ -486,6 +487,7 @@ rule:
         - s,bloombergview.com
         - s,bloomfortune.com
         - s,blubrry.com
+        - s,blue-plus.net
         - s,bmdru.com
         - s,bnbstatic.com
         - s,bnext.com.tw
@@ -508,6 +510,7 @@ rule:
         - s,boxpn.com
         - s,boxun.com
         - s,boxun.tv
+        - s,boylove.cc
         - s,boysmaster.com
         - s,br.st
         - s,braumeister.org
@@ -584,6 +587,7 @@ rule:
         - s,campaign-archive.com
         - s,campaignforuyghurs.org
         - s,cams.com
+        - s,cangku.moe
         - s,canva.com
         - s,canyu.org
         - s,caobian.info
@@ -827,6 +831,7 @@ rule:
         - s,coursehero.com
         - s,covenantswatch.org.tw
         - s,coze.com
+        - s,cpc.com.tw
         - s,cpj.org
         - s,cpu-monkey.com
         - s,cq99.us
@@ -849,6 +854,7 @@ rule:
         - s,crucial.com
         - s,crunchyroll.com
         - s,cruxpool.com
+        - s,csc.com.tw
         - s,csdparty.com
         - s,csis.org
         - s,csmonitor.com
@@ -938,6 +944,7 @@ rule:
         - s,devio.us
         - s,devpn.com
         - s,devv.ai
+        - s,dh.net
         - s,diaoyuislands.org
         - s,digiland.tw
         - s,digisfera.com
@@ -1124,6 +1131,7 @@ rule:
         - s,evschool.net
         - s,exchristian.hk
         - s,exhentai.org
+        - s,eximbank.com.tw
         - s,exmo.com
         - s,exmormon.org
         - s,expatshield.com
@@ -1773,7 +1781,9 @@ rule:
         - s,hakkatv.org.tw
         - s,halktv.com.tr
         - s,hanime.tv
+        - s,hanime1.com
         - s,hanime1.me
+        - s,hanimeone.me
         - s,hardsextube.com
         - s,hautelook.com
         - s,hautelookcdn.com
@@ -1796,6 +1806,7 @@ rule:
         - s,helpster.de
         - s,hembed.com
         - s,hentai.tv
+        - s,hentaiclub.net
         - s,heqinglian.net
         - s,heritage.org
         - s,herokuapp.com
@@ -1941,6 +1952,7 @@ rule:
         - s,iask.ca
         - s,iavian.net
         - s,ibvpn.com
+        - s,icdf.org.tw
         - s,icedrive.net
         - s,icij.org
         - s,icl-fi.org
@@ -1998,6 +2010,7 @@ rule:
         - s,indiandefensenews.in
         - s,indiatoday.in
         - s,indiemerch.com
+        - s,indsr.org.tw
         - s,inews-api.tvb.com
         - s,info-graf.fr
         - s,infosec.exchange
@@ -2024,6 +2037,7 @@ rule:
         - s,investing.com
         - s,invidio.us
         - s,inxian.com
+        - s,ipac.global
         - s,ipdefenseforum.com
         - s,ipfire.org
         - s,ipfs.4everland.io
@@ -2082,9 +2096,11 @@ rule:
         - s,jav321.com
         - s,javakiba.org
         - s,javbus.com
+        - s,javchu.com
         - s,javdb.com
         - s,javfinder.ai
         - s,javfor.me
+        - s,javfree.me
         - s,javhub.net
         - s,javhuge.com
         - s,javlibrary.com
@@ -2106,6 +2122,7 @@ rule:
         - s,jinx.com
         - s,jitouch.com
         - s,jkb.cc
+        - s,jkforum.net
         - s,jma.go.jp
         - s,jmsc.hku.hk
         - s,jmscult.com
@@ -2153,6 +2170,7 @@ rule:
         - s,keycdn.com
         - s,kfor.com
         - s,khatrimaza.org
+        - s,khc.edu.tw
         - s,kichiku-doujinko.com
         - s,kik.com
         - s,killwall.com
@@ -2198,6 +2216,7 @@ rule:
         - s,lama.com.tw
         - s,lamayeshe.com
         - s,lamnia.co.uk
+        - s,landbank.com.tw
         - s,landofhope.tv
         - s,lantern.io
         - s,laogai.org
@@ -2351,6 +2370,7 @@ rule:
         - s,mastodon.xyz
         - s,matainja.com
         - s,material.io
+        - s,matichon.co.th
         - s,matome-plus.com
         - s,matome-plus.net
         - s,matrix.org
@@ -2436,11 +2456,14 @@ rule:
         - s,ministrybooks.org
         - s,minzhuzhongguo.org
         - s,miraheze.org
+        - s,mirdc.org.tw
         - s,miroguide.com
         - s,mirror.xyz
         - s,mirrorbooks.com
         - s,mirrormedia.mg
+        - s,missav.ai
         - s,missav.com
+        - s,missav.live
         - s,missav.ws
         - s,mistral.ai
         - s,mitbbs.com
@@ -2464,6 +2487,7 @@ rule:
         - s,mod.io
         - s,modernchinastudies.org
         - s,moeerolibrary.com
+        - s,moeli-desu.com
         - s,moeshare.cc
         - s,mog.com
         - s,mohu.club
@@ -2543,6 +2567,7 @@ rule:
         - s,nationalawakening.org
         - s,nationalinterest.org
         - s,nationalreview.com
+        - s,nationthailand.com
         - s,nationwide.com
         - s,naughtyamerica.com
         - s,naver.com
@@ -2554,8 +2579,10 @@ rule:
         - s,nchrd.org
         - s,ncn.org
         - s,ndi.org
+        - s,ned.org
         - s,nekoslovakia.net
         - s,neo-miracle.com
+        - s,neodb.social
         - s,neowin.net
         - s,nephobox.com
         - s,netalert.me
@@ -2644,6 +2671,7 @@ rule:
         - s,npsboost.com
         - s,nradio.me
         - s,nrk.no
+        - s,nstc.org.tw
         - s,ntd.tv
         - s,ntdtv.com
         - s,ntdtv.com.tw
@@ -2882,6 +2910,7 @@ rule:
         - s,points-media.com
         - s,pokerstars.com
         - s,pokerstars.net
+        - s,poland.tw
         - s,politicalchina.org
         - s,poloniex.com
         - s,polymarket.com
@@ -2977,6 +3006,7 @@ rule:
         - s,qiangwaikan.com
         - s,qiangyou.org
         - s,qianmo.tw
+        - s,qingse.one
         - s,qiwen.lu
         - s,qmp4.com
         - s,qobuz.com
@@ -3079,6 +3109,7 @@ rule:
         - s,rocket-inc.net
         - s,rocket.chat
         - s,rocksdb.org
+        - s,rocmgov.org
         - s,rojo.com
         - s,rolfoundation.org
         - s,rolia.net
@@ -3477,6 +3508,7 @@ rule:
         - s,textnow.com
         - s,textnow.me
         - s,tfc-taiwan.org.tw
+        - s,tfd.org.tw
         - s,tfhub.dev
         - s,tfiflve.com
         - s,tg-me.com
@@ -3670,6 +3702,7 @@ rule:
         - s,tryheart.jp
         - s,tsdr.uspto.gov
         - s,tt1069.com
+        - s,ttl.com.tw
         - s,tttan.com
         - s,ttv.com.tw
         - s,ttvnw.net
@@ -3722,6 +3755,7 @@ rule:
         - s,tweez.net
         - s,twelve.today
         - s,twerkingbutt.com
+        - s,twfhcsec.com.tw
         - s,twftp.org
         - s,twgov.tw
         - s,twgreatdaily.com
@@ -3763,6 +3797,7 @@ rule:
         - s,twtkr.com
         - s,twttr.com
         - s,tx.me
+        - s,tybio.com.tw
         - s,tycool.com
         - s,typepad.com
         - s,typeset.io
@@ -3952,6 +3987,7 @@ rule:
         - s,vrchat.com
         - s,vrporn.com
         - s,vrsmash.com
+        - s,vscc.org.tw
         - s,vtunnel.com
         - s,vultryhw.com
         - s,w-pool.com
@@ -4211,6 +4247,7 @@ rule:
         - s,xvideos.com
         - s,xvideos.es
         - s,xvinlink.com
+        - s,xx.net
         - s,xxx.com
         - s,xxx.xxx
         - s,xxxx.com.au
