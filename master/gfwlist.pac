@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2026-10-16 04:00:36
- * GFWList Last-Modified: 2026-10-06 06:17:00
+ * Generated: 2026-10-16 16:24:05
+ * GFWList Last-Modified: 2026-10-16 10:12:31
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -106,6 +106,7 @@ var rules = [
             "6parker.com",
             "6parknews.com",
             "7capture.com",
+            "7x24hrs.com",
             "8-d.com",
             "85cc.us",
             "881903.com",
@@ -2442,7 +2443,9 @@ var rules = [
             "meripet.com",
             "merit-times.com.tw",
             "messenger.com",
+            "meta.ai",
             "meta.com",
+            "metaaivm.com",
             "metafilter.com",
             "metamask.io",
             "metart.com",

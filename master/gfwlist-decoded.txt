@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: /H8mNyyfTaB1R7oigU/aOA
+! Checksum: A0U3DIfmPkhrgyOwpfBLoA
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Tue, 06 Oct 2026 06:17:00 +0000
+! Last Modified: Fri, 16 Oct 2026 10:12:31 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -659,6 +659,8 @@ www.aolnews.com
 !!---Dynu---
 ||dynu.com
 !!---Facebook---
+||meta.ai
+||metaaivm.com
 ||accountkit.com
 ||cdninstagram.com
 ||f8.com
@@ -1205,6 +1207,7 @@ iipdigital.usembassy.gov
 ||yahoo.com.hk
 ||yahoo.com
 !------------------Numerics---------------------
+||7x24hrs.com
 ||123av.me
 ||123av.com
 ||18comic.vip

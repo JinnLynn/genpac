@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-16 04:00:36
-#! GFWList: 2026-10-06 06:17:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-16 16:24:05
+#! GFWList: 2026-10-16 10:12:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -101,6 +101,7 @@ routing:
         - domain:6parker.com
         - domain:6parknews.com
         - domain:7capture.com
+        - domain:7x24hrs.com
         - domain:8-d.com
         - domain:85cc.us
         - domain:881903.com
@@ -2437,7 +2438,9 @@ routing:
         - domain:meripet.com
         - domain:merit-times.com.tw
         - domain:messenger.com
+        - domain:meta.ai
         - domain:meta.com
+        - domain:metaaivm.com
         - domain:metafilter.com
         - domain:metamask.io
         - domain:metart.com
