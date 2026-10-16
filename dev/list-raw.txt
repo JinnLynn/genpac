@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-10-16 04:01:06
-! GFWList: 2026-10-06 06:17:00 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-10-16 16:24:33
+! GFWList: 2026-10-16 10:12:31 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -93,6 +93,7 @@
 ||6parker.com
 ||6parknews.com
 ||7capture.com
+||7x24hrs.com
 ||8-d.com
 ||85cc.us
 ||881903.com
@@ -2429,7 +2430,9 @@
 ||meripet.com
 ||merit-times.com.tw
 ||messenger.com
+||meta.ai
 ||meta.com
+||metaaivm.com
 ||metafilter.com
 ||metamask.io
 ||metart.com
