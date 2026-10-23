@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-23 04:12:45
-#! GFWList: 2026-10-17 14:35:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-23 16:48:31
+#! GFWList: 2026-10-23 10:29:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -817,6 +817,7 @@ rule:
         - s,compileheart.com
         - s,connect.facebook.net
         - s,conoha.jp
+        - s,console.typesafe.ai
         - s,contests.twilio.com
         - s,cool18.com
         - s,coolaler.com
@@ -1372,6 +1373,7 @@ rule:
         - s,g.co
         - s,g0v.social
         - s,g6hentai.com
+        - s,ga.jspm.io
         - s,gab.com
         - s,gabocorp.com
         - s,gagaoolala.com
