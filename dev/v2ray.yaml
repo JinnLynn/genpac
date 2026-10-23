@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-23 04:13:03
-#! GFWList: 2026-10-17 14:35:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-23 16:48:56
+#! GFWList: 2026-10-23 10:29:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -840,6 +840,7 @@ routing:
         - domain:compileheart.com
         - domain:connect.facebook.net
         - domain:conoha.jp
+        - domain:console.typesafe.ai
         - domain:contests.twilio.com
         - domain:cool18.com
         - domain:coolaler.com
@@ -1395,6 +1396,7 @@ routing:
         - domain:g.co
         - domain:g0v.social
         - domain:g6hentai.com
+        - domain:ga.jspm.io
         - domain:gab.com
         - domain:gabocorp.com
         - domain:gagaoolala.com

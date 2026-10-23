@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-23 04:13:05
-#! GFWList: 2026-10-17 14:35:56 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-23 16:48:57
+#! GFWList: 2026-10-23 10:29:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -801,6 +801,7 @@ payload:
   - DOMAIN-SUFFIX,compileheart.com
   - DOMAIN-SUFFIX,connect.facebook.net
   - DOMAIN-SUFFIX,conoha.jp
+  - DOMAIN-SUFFIX,console.typesafe.ai
   - DOMAIN-SUFFIX,contests.twilio.com
   - DOMAIN-SUFFIX,cool18.com
   - DOMAIN-SUFFIX,coolaler.com
@@ -1356,6 +1357,7 @@ payload:
   - DOMAIN-SUFFIX,g.co
   - DOMAIN-SUFFIX,g0v.social
   - DOMAIN-SUFFIX,g6hentai.com
+  - DOMAIN-SUFFIX,ga.jspm.io
   - DOMAIN-SUFFIX,gab.com
   - DOMAIN-SUFFIX,gabocorp.com
   - DOMAIN-SUFFIX,gagaoolala.com
