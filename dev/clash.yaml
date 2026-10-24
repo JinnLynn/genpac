@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-24 04:04:46
-#! GFWList: 2026-10-23 10:29:54 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-24 15:41:38
+#! GFWList: 2026-10-24 15:33:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -47,6 +47,7 @@ rules:
   - DOMAIN-SUFFIX,10musume.com,PROXY
   - DOMAIN-SUFFIX,123av.com,PROXY
   - DOMAIN-SUFFIX,123av.me,PROXY
+  - DOMAIN-SUFFIX,123av.org,PROXY
   - DOMAIN-SUFFIX,12bet.com,PROXY
   - DOMAIN-SUFFIX,12vpn.com,PROXY
   - DOMAIN-SUFFIX,12vpn.net,PROXY
@@ -2198,6 +2199,7 @@ rules:
   - DOMAIN-SUFFIX,kichiku-doujinko.com,PROXY
   - DOMAIN-SUFFIX,kik.com,PROXY
   - DOMAIN-SUFFIX,killwall.com,PROXY
+  - DOMAIN-SUFFIX,kimootoko.net,PROXY
   - DOMAIN-SUFFIX,kindle4rss.com,PROXY
   - DOMAIN-SUFFIX,kindleren.com,PROXY
   - DOMAIN-SUFFIX,kingdomsalvation.org,PROXY
@@ -2480,6 +2482,7 @@ rules:
   - DOMAIN-SUFFIX,minhhue.net,PROXY
   - DOMAIN-SUFFIX,miningpoolhub.com,PROXY
   - DOMAIN-SUFFIX,ministrybooks.org,PROXY
+  - DOMAIN-SUFFIX,minkch.com,PROXY
   - DOMAIN-SUFFIX,minzhuzhongguo.org,PROXY
   - DOMAIN-SUFFIX,miraheze.org,PROXY
   - DOMAIN-SUFFIX,mirdc.org.tw,PROXY
@@ -2541,6 +2544,7 @@ rules:
   - DOMAIN-SUFFIX,mosavi.io,PROXY
   - DOMAIN-SUFFIX,motherless.com,PROXY
   - DOMAIN-SUFFIX,movements.org,PROXY
+  - DOMAIN-SUFFIX,movie.eroterest.net,PROXY
   - DOMAIN-SUFFIX,moviefap.com,PROXY
   - DOMAIN-SUFFIX,mpettis.com,PROXY
   - DOMAIN-SUFFIX,mpfinance.com,PROXY
@@ -2674,6 +2678,9 @@ rules:
   - DOMAIN-SUFFIX,niu.moe,PROXY
   - DOMAIN-SUFFIX,niusnews.com,PROXY
   - DOMAIN-SUFFIX,njactb.org,PROXY
+  - DOMAIN-SUFFIX,njav.com,PROXY
+  - DOMAIN-SUFFIX,njav.tv,PROXY
+  - DOMAIN-SUFFIX,njavtv.com,PROXY
   - DOMAIN-SUFFIX,nlfreevpn.com,PROXY
   - DOMAIN-SUFFIX,nmsl.website,PROXY
   - DOMAIN-SUFFIX,nnews.eu,PROXY
@@ -2927,6 +2934,7 @@ rules:
   - DOMAIN-SUFFIX,plurk.com,PROXY
   - DOMAIN-SUFFIX,plus.codes,PROXY
   - DOMAIN-SUFFIX,pmatehunter.com,PROXY
+  - DOMAIN-SUFFIX,po-kaki-to.com,PROXY
   - DOMAIN-SUFFIX,po2b.com,PROXY
   - DOMAIN-SUFFIX,podbean.com,PROXY
   - DOMAIN-SUFFIX,podcast.co,PROXY
@@ -4397,6 +4405,7 @@ rules:
   - DOMAIN-SUFFIX,zophar.net,PROXY
   - DOMAIN-SUFFIX,zorrovpn.com,PROXY
   - DOMAIN-SUFFIX,zozotown.com,PROXY
+  - DOMAIN-SUFFIX,zozovideo.com,PROXY
   - DOMAIN-SUFFIX,zpn.im,PROXY
   - DOMAIN-SUFFIX,zspeeder.me,PROXY
   - DOMAIN-SUFFIX,zuo.la,PROXY
