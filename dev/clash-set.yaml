@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-30 05:13:20
-#! GFWList: 2026-10-24 15:33:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-30 17:53:42
+#! GFWList: 2026-10-30 05:24:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -208,6 +208,7 @@ payload:
   - DOMAIN-SUFFIX,anonfiles.com
   - DOMAIN-SUFFIX,anonymouse.org
   - DOMAIN-SUFFIX,anthonycalzadilla.com
+  - DOMAIN-SUFFIX,anthropic.auth0.com
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,antiwave.net
   - DOMAIN-SUFFIX,antpool.com
@@ -515,6 +516,7 @@ payload:
   - DOMAIN-SUFFIX,brookings.edu
   - DOMAIN-SUFFIX,brutaltgp.com
   - DOMAIN-SUFFIX,bsky.app
+  - DOMAIN-SUFFIX,bsky.chat
   - DOMAIN-SUFFIX,bsky.network
   - DOMAIN-SUFFIX,bsky.social
   - DOMAIN-SUFFIX,bt4g.org
@@ -740,7 +742,10 @@ payload:
   - DOMAIN-SUFFIX,clashyun.com
   - DOMAIN-SUFFIX,classicalguitarblog.net
   - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.app
   - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,claudemcpcontent.com
+  - DOMAIN-SUFFIX,claudeusercontent.com
   - DOMAIN-SUFFIX,cldr.unicode.org
   - DOMAIN-SUFFIX,clearsurance.com
   - DOMAIN-SUFFIX,clementine-player.org

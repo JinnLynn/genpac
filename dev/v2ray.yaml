@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-30 05:13:18
-#! GFWList: 2026-10-24 15:33:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-30 17:53:39
+#! GFWList: 2026-10-30 05:24:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -247,6 +247,7 @@ routing:
         - domain:anonfiles.com
         - domain:anonymouse.org
         - domain:anthonycalzadilla.com
+        - domain:anthropic.auth0.com
         - domain:anthropic.com
         - domain:antiwave.net
         - domain:antpool.com
@@ -554,6 +555,7 @@ routing:
         - domain:brookings.edu
         - domain:brutaltgp.com
         - domain:bsky.app
+        - domain:bsky.chat
         - domain:bsky.network
         - domain:bsky.social
         - domain:bt4g.org
@@ -779,7 +781,10 @@ routing:
         - domain:clashyun.com
         - domain:classicalguitarblog.net
         - domain:claude.ai
+        - domain:claude.app
         - domain:claude.com
+        - domain:claudemcpcontent.com
+        - domain:claudeusercontent.com
         - domain:cldr.unicode.org
         - domain:clearsurance.com
         - domain:clementine-player.org

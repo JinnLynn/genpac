@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: S5d7LoUOkmK8Xg7fyDIAYw
+! Checksum: KDRIBBDWyLkGy0Jwu160fQ
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Sat, 24 Oct 2026 15:33:57 +0000
+! Last Modified: Fri, 30 Oct 2026 05:24:27 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -37,6 +37,7 @@
 ||angela-merkel.de
 ||angola.org
 ||anthropic.com
+||anthropic.auth0.com
 ||apartmentratings.com
 ||apartments.com
 ||arena.taipei
@@ -58,6 +59,9 @@
 ||ciciai.com
 ||cici.com
 ||claude.ai
+||claude.app
+||claudeusercontent.com
+||claudemcpcontent.com
 ||clearsurance.com
 ||cnbeta.com.tw
 ||counter.social
@@ -1607,6 +1611,7 @@ iipdigital.usembassy.gov
 ||brookings.edu
 ||brutaltgp.com
 ||bsky.app
+||bsky.chat
 ||bsky.network
 ||bsky.social
 ||bt95.com
