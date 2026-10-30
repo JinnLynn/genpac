@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-30 05:12:57
-#! GFWList: 2026-10-24 15:33:57 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-30 17:53:09
+#! GFWList: 2026-10-30 05:24:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -224,6 +224,7 @@ rule:
         - s,anonfiles.com
         - s,anonymouse.org
         - s,anthonycalzadilla.com
+        - s,anthropic.auth0.com
         - s,anthropic.com
         - s,antiwave.net
         - s,antpool.com
@@ -531,6 +532,7 @@ rule:
         - s,brookings.edu
         - s,brutaltgp.com
         - s,bsky.app
+        - s,bsky.chat
         - s,bsky.network
         - s,bsky.social
         - s,bt4g.org
@@ -756,7 +758,10 @@ rule:
         - s,clashyun.com
         - s,classicalguitarblog.net
         - s,claude.ai
+        - s,claude.app
         - s,claude.com
+        - s,claudemcpcontent.com
+        - s,claudeusercontent.com
         - s,cldr.unicode.org
         - s,clearsurance.com
         - s,clementine-player.org
