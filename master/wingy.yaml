@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-31 04:57:12
-#! GFWList: 2026-10-30 05:24:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-31 17:04:36
+#! GFWList: 2026-10-31 05:12:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -248,6 +248,7 @@ rule:
         - s,api.recaptcha.net
         - s,api.shuaiapi.com
         - s,api.steampowered.com
+        - s,api.themoviedb.org
         - s,apiary.io
         - s,apigee.com
         - s,apk.support
@@ -3693,6 +3694,7 @@ rule:
         - s,torproject.org
         - s,torrentgalaxy.to
         - s,torrentkitty.tv
+        - s,torrentleech.org
         - s,torrentprivacy.com
         - s,torrentproject.se
         - s,torrenty.org
@@ -4321,6 +4323,7 @@ rule:
         - s,youtubegaming.com
         - s,youtubekids.com
         - s,youversion.com
+        - s,youversionapi.com
         - s,youwin.com
         - s,youxu.info
         - s,yt.be
