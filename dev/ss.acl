@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-10-31 04:57:36
-#! GFWList: 2026-10-30 05:24:27 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-10-31 17:05:04
+#! GFWList: 2026-10-31 05:12:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -235,6 +235,7 @@
 (^|\.)api\.recaptcha\.net$
 (^|\.)api\.shuaiapi\.com$
 (^|\.)api\.steampowered\.com$
+(^|\.)api\.themoviedb\.org$
 (^|\.)apiary\.io$
 (^|\.)apigee\.com$
 (^|\.)apk\.support$
@@ -3680,6 +3681,7 @@
 (^|\.)torproject\.org$
 (^|\.)torrentgalaxy\.to$
 (^|\.)torrentkitty\.tv$
+(^|\.)torrentleech\.org$
 (^|\.)torrentprivacy\.com$
 (^|\.)torrentproject\.se$
 (^|\.)torrenty\.org$
@@ -4308,6 +4310,7 @@
 (^|\.)youtubegaming\.com$
 (^|\.)youtubekids\.com$
 (^|\.)youversion\.com$
+(^|\.)youversionapi\.com$
 (^|\.)youwin\.com$
 (^|\.)youxu\.info$
 (^|\.)yt\.be$

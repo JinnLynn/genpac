@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-10-31 04:57:35
- * GFWList Last-Modified: 2026-10-30 05:24:27
+ * Generated: 2026-10-31 17:05:03
+ * GFWList Last-Modified: 2026-10-31 05:12:41
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -276,6 +276,7 @@ var rules = [
             "api.recaptcha.net",
             "api.shuaiapi.com",
             "api.steampowered.com",
+            "api.themoviedb.org",
             "apiary.io",
             "apigee.com",
             "apk.support",
@@ -3721,6 +3722,7 @@ var rules = [
             "torproject.org",
             "torrentgalaxy.to",
             "torrentkitty.tv",
+            "torrentleech.org",
             "torrentprivacy.com",
             "torrentproject.se",
             "torrenty.org",
@@ -4349,6 +4351,7 @@ var rules = [
             "youtubegaming.com",
             "youtubekids.com",
             "youversion.com",
+            "youversionapi.com",
             "youwin.com",
             "youxu.info",
             "yt.be",
