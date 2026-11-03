@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-03 06:03:29
-#! GFWList: 2026-10-31 05:12:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-03 19:19:09
+#! GFWList: 2026-11-03 11:32:08 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -448,6 +448,7 @@ routing:
         - domain:bignews.org
         - domain:bigone.com
         - domain:bild.de
+        - domain:bilibili.tv
         - domain:bilinovel.com
         - domain:biliworld.com
         - domain:binance.com

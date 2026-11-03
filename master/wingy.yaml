@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-03 06:03:31
-#! GFWList: 2026-10-31 05:12:41 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-03 19:19:12
+#! GFWList: 2026-11-03 11:32:08 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -425,6 +425,7 @@ rule:
         - s,bignews.org
         - s,bigone.com
         - s,bild.de
+        - s,bilibili.tv
         - s,bilinovel.com
         - s,biliworld.com
         - s,binance.com
