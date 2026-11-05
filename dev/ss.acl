@@ -1,7 +1,7 @@
 
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-05 06:00:51
-#! GFWList: 2026-11-03 11:32:08 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-05 19:45:14
+#! GFWList: 2026-11-05 06:09:18 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 [bypass_all]
 
 [proxy_list]
@@ -2377,7 +2377,6 @@
 (^|\.)matters\.town$
 (^|\.)matthewdgreen\.wordpress\.com$
 (^|\.)mattwilcox\.net$
-(^|\.)maven\.neoforged\.net$
 (^|\.)mcadforums\.com$
 (^|\.)mcaf\.ee$
 (^|\.)mceindex\.com$
@@ -2586,6 +2585,7 @@
 (^|\.)nekoslovakia\.net$
 (^|\.)neo-miracle\.com$
 (^|\.)neodb\.social$
+(^|\.)neoforged\.net$
 (^|\.)neowin\.net$
 (^|\.)nephobox\.com$
 (^|\.)netalert\.me$

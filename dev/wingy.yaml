@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-05 06:00:54
-#! GFWList: 2026-11-03 11:32:08 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-05 19:45:17
+#! GFWList: 2026-11-05 06:09:18 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -2390,7 +2390,6 @@ rule:
         - s,matters.town
         - s,matthewdgreen.wordpress.com
         - s,mattwilcox.net
-        - s,maven.neoforged.net
         - s,mcadforums.com
         - s,mcaf.ee
         - s,mceindex.com
@@ -2599,6 +2598,7 @@ rule:
         - s,nekoslovakia.net
         - s,neo-miracle.com
         - s,neodb.social
+        - s,neoforged.net
         - s,neowin.net
         - s,nephobox.com
         - s,netalert.me
