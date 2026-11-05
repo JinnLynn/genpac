@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.0.1 https://github.com/JinnLynn/genpac
-! Generated: 2026-11-05 06:00:20
-! GFWList: 2026-11-03 11:32:08 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-11-05 19:44:49
+! GFWList: 2026-11-05 06:09:18 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -2405,7 +2405,6 @@
 ||matters.town
 ||matthewdgreen.wordpress.com
 ||mattwilcox.net
-||maven.neoforged.net
 ||mcadforums.com
 ||mcaf.ee
 ||mceindex.com
@@ -2614,6 +2613,7 @@
 ||nekoslovakia.net
 ||neo-miracle.com
 ||neodb.social
+||neoforged.net
 ||neowin.net
 ||nephobox.com
 ||netalert.me
