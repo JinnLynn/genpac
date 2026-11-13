@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-13 05:59:25
-#! GFWList: 2026-11-06 02:29:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-13 19:26:27
+#! GFWList: 2026-11-13 10:35:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -50,6 +50,7 @@ payload:
   - DOMAIN-SUFFIX,51.ca
   - DOMAIN-SUFFIX,51jav.org
   - DOMAIN-SUFFIX,51luoben.com
+  - DOMAIN-SUFFIX,51papaya.com
   - DOMAIN-SUFFIX,5278.cc
   - DOMAIN-SUFFIX,611study.com
   - DOMAIN-SUFFIX,611study.icu

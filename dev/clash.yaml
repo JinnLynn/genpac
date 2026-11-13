@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-13 05:59:25
-#! GFWList: 2026-11-06 02:29:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-13 19:26:27
+#! GFWList: 2026-11-13 10:35:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -87,6 +87,7 @@ rules:
   - DOMAIN-SUFFIX,51.ca,PROXY
   - DOMAIN-SUFFIX,51jav.org,PROXY
   - DOMAIN-SUFFIX,51luoben.com,PROXY
+  - DOMAIN-SUFFIX,51papaya.com,PROXY
   - DOMAIN-SUFFIX,5278.cc,PROXY
   - DOMAIN-SUFFIX,611study.com,PROXY
   - DOMAIN-SUFFIX,611study.icu,PROXY
