@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-13 05:58:56
-#! GFWList: 2026-11-06 02:29:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-13 19:26:01
+#! GFWList: 2026-11-13 10:35:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -66,6 +66,7 @@ rule:
         - s,51.ca
         - s,51jav.org
         - s,51luoben.com
+        - s,51papaya.com
         - s,5278.cc
         - s,611study.com
         - s,611study.icu

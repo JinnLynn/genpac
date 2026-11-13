@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-13 05:58:54
-#! GFWList: 2026-11-06 02:29:19 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-13 19:25:58
+#! GFWList: 2026-11-13 10:35:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -89,6 +89,7 @@ routing:
         - domain:51.ca
         - domain:51jav.org
         - domain:51luoben.com
+        - domain:51papaya.com
         - domain:5278.cc
         - domain:611study.com
         - domain:611study.icu

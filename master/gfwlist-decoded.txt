@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: ZdAd0wb0iG2fyYWCNL/t7Q
+! Checksum: u+R6/K90sfuWIbv6zMMT7Q
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 06 Nov 2026 02:29:19 +0000
+! Last Modified: Fri, 13 Nov 2026 10:35:53 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1211,6 +1211,7 @@ iipdigital.usembassy.gov
 ||yahoo.com.hk
 ||yahoo.com
 !------------------Numerics---------------------
+||51papaya.com
 ||123av.org
 ||7x24hrs.com
 ||123av.me
