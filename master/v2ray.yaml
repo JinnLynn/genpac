@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-20 06:40:38
-#! GFWList: 2026-11-20 03:36:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-20 19:50:28
+#! GFWList: 2026-11-20 16:10:15 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -805,6 +805,8 @@ routing:
         - domain:cmcn.org
         - domain:cmegroup.com
         - domain:cmi.org.tw
+        - domain:cmmedia.com.tw
+        - domain:cmoney.tw
         - domain:cms.gov
         - domain:cmule.com
         - domain:cmx.im
@@ -819,6 +821,7 @@ routing:
         - domain:cnd.org
         - domain:cnnews.chosun.com
         - domain:cnpolitics.org
+        - domain:cnyes.com
         - domain:co.ng.mil
         - domain:coat.co.jp
         - domain:cobinhood.com
@@ -1087,6 +1090,7 @@ routing:
         - domain:e-gold.com
         - domain:e-hentai.org
         - domain:e-hentaidb.com
+        - domain:e-info.org.tw
         - domain:e-zone.com.hk
         - domain:e123.hk
         - domain:e621.net
@@ -1782,6 +1786,7 @@ routing:
         - domain:greatfire.us7.list-manage.com
         - domain:greatfirevpn.com
         - domain:greatfirewallofchina.org
+        - domain:greenbean.media
         - domain:greenpeace.org
         - domain:greenvpn.net
         - domain:grindr.com
@@ -1881,13 +1886,16 @@ routing:
         - domain:hkanews.wordpress.com
         - domain:hkbookcity.com
         - domain:hkchronicles.com
+        - domain:hkcitycreation.com
         - domain:hkcnews.com
         - domain:hkcoc.com
         - domain:hkcoc.weather.com.hk
+        - domain:hkcourtnews.com
         - domain:hkdc.us
         - domain:hkej.com
         - domain:hket.com
         - domain:hkfaa.com
+        - domain:hkfeature.com
         - domain:hkgalden.com
         - domain:hkgolden.com
         - domain:hkgpao.com
@@ -2297,6 +2305,7 @@ routing:
         - domain:library.usc.cuhk.edu.hk
         - domain:libredd.it
         - domain:lifemiles.com
+        - domain:lifesitenews.com
         - domain:lighten.org.tw
         - domain:lighti.me
         - domain:lightnovel.cn
@@ -2305,6 +2314,7 @@ routing:
         - domain:lihkg.com
         - domain:like.com
         - domain:lilaoshibushinilaoshi.com
+        - domain:limedia.tw
         - domain:line-apps.com
         - domain:line-scdn.net
         - domain:line.me
@@ -2400,6 +2410,7 @@ routing:
         - domain:marxists.org
         - domain:mas.to
         - domain:mash.to
+        - domain:master-insight.com
         - domain:mastodon.cloud
         - domain:mastodon.host
         - domain:mastodon.online
@@ -2415,6 +2426,7 @@ routing:
         - domain:matters.town
         - domain:matthewdgreen.wordpress.com
         - domain:mattwilcox.net
+        - domain:mc.yandex.ru
         - domain:mcadforums.com
         - domain:mcaf.ee
         - domain:mceindex.com
@@ -2536,6 +2548,7 @@ routing:
         - domain:mondex.org
         - domain:money-link.com.tw
         - domain:moneydj.com
+        - domain:moneynet.com.tw
         - domain:monica.im
         - domain:monitorchina.org
         - domain:monocloud.me
@@ -2575,6 +2588,7 @@ routing:
         - domain:muzi.net
         - domain:muzu.tv
         - domain:mvg.jp
+        - domain:my-formosa.com.tw
         - domain:my-private-network.co.uk
         - domain:my.pcloud.com
         - domain:myaudiocast.com
@@ -2658,6 +2672,7 @@ routing:
         - domain:newthuhole.com
         - domain:newyorker.com
         - domain:nexon.com
+        - domain:nextapple.com
         - domain:nextdigital.com.hk
         - domain:nexton-net.jp
         - domain:nexttv.com.tw
@@ -2853,6 +2868,7 @@ routing:
         - domain:parsevideo.com
         - domain:partnerstack.xyz
         - domain:passion.com
+        - domain:passiontimes.hk
         - domain:paste.ee
         - domain:pastie.org
         - domain:patreon.com
@@ -3032,6 +3048,7 @@ routing:
         - domain:pubu.com.tw
         - domain:puffinbrowser.com
         - domain:pullfolio.co
+        - domain:pulsehknews.com
         - domain:pure18.com
         - domain:pureconcepts.net
         - domain:pureinsight.org
@@ -3259,6 +3276,7 @@ routing:
         - domain:shadowsocks.com.hk
         - domain:shadowsocks.org
         - domain:shahit.biz
+        - domain:shanghainationalparty.com
         - domain:share-videos.se
         - domain:share.america.gov
         - domain:sharecool.org
@@ -3298,6 +3316,7 @@ routing:
         - domain:sing-box.sagernet.org
         - domain:singaporepools.com.sg
         - domain:singlelogin.se
+        - domain:singpao.com.hk
         - domain:singtao.com
         - domain:singtaousa.com
         - domain:sinoants.com
@@ -3506,6 +3525,7 @@ routing:
         - domain:taiwanjustice.net
         - domain:taiwanncf.org.tw
         - domain:taiwannews.com.tw
+        - domain:taiwantoday.tw
         - domain:taiwantt.org.tw
         - domain:talkatone.com
         - domain:talkboxapp.com
@@ -3570,6 +3590,7 @@ routing:
         - domain:thecenter.mit.edu
         - domain:thechasernews.co.uk
         - domain:thechinacollection.org
+        - domain:thecollectivehk.com
         - domain:theconversation.com
         - domain:thedalailamamovie.com
         - domain:thediplomat.com
@@ -3585,18 +3606,22 @@ routing:
         - domain:theinitium.com
         - domain:theintercept.com
         - domain:thenewslens.com
+        - domain:theonlinecitizen.com
         - domain:thepiratebay.org
         - domain:theporndude.com
         - domain:theportalwiki.com
         - domain:theprint.in
         - domain:thesaturdaypaper.com.au
+        - domain:thestandard.com.hk
         - domain:thestandnews.com
+        - domain:thestar.com
         - domain:thetatoken.org
         - domain:thetibetpost.com
         - domain:thetvdb.com
         - domain:theweek.com
         - domain:thewgo.org
         - domain:thewirechina.com
+        - domain:thewitnesshk.com
         - domain:theync.com
         - domain:thinkchina.sg
         - domain:thinkgeek.com
@@ -4168,6 +4193,7 @@ routing:
         - domain:woeser.com
         - domain:wokar.org
         - domain:wolfax.com
+        - domain:womany.net
         - domain:wombo.ai
         - domain:woolyss.com
         - domain:woopie.jp
