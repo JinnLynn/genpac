@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-20 06:41:07
-#! GFWList: 2026-11-20 03:36:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-20 19:50:53
+#! GFWList: 2026-11-20 16:10:15 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -782,6 +782,8 @@ rule:
         - s,cmcn.org
         - s,cmegroup.com
         - s,cmi.org.tw
+        - s,cmmedia.com.tw
+        - s,cmoney.tw
         - s,cms.gov
         - s,cmule.com
         - s,cmx.im
@@ -796,6 +798,7 @@ rule:
         - s,cnd.org
         - s,cnnews.chosun.com
         - s,cnpolitics.org
+        - s,cnyes.com
         - s,co.ng.mil
         - s,coat.co.jp
         - s,cobinhood.com
@@ -1064,6 +1067,7 @@ rule:
         - s,e-gold.com
         - s,e-hentai.org
         - s,e-hentaidb.com
+        - s,e-info.org.tw
         - s,e-zone.com.hk
         - s,e123.hk
         - s,e621.net
@@ -1759,6 +1763,7 @@ rule:
         - s,greatfire.us7.list-manage.com
         - s,greatfirevpn.com
         - s,greatfirewallofchina.org
+        - s,greenbean.media
         - s,greenpeace.org
         - s,greenvpn.net
         - s,grindr.com
@@ -1858,13 +1863,16 @@ rule:
         - s,hkanews.wordpress.com
         - s,hkbookcity.com
         - s,hkchronicles.com
+        - s,hkcitycreation.com
         - s,hkcnews.com
         - s,hkcoc.com
         - s,hkcoc.weather.com.hk
+        - s,hkcourtnews.com
         - s,hkdc.us
         - s,hkej.com
         - s,hket.com
         - s,hkfaa.com
+        - s,hkfeature.com
         - s,hkgalden.com
         - s,hkgolden.com
         - s,hkgpao.com
@@ -2274,6 +2282,7 @@ rule:
         - s,library.usc.cuhk.edu.hk
         - s,libredd.it
         - s,lifemiles.com
+        - s,lifesitenews.com
         - s,lighten.org.tw
         - s,lighti.me
         - s,lightnovel.cn
@@ -2282,6 +2291,7 @@ rule:
         - s,lihkg.com
         - s,like.com
         - s,lilaoshibushinilaoshi.com
+        - s,limedia.tw
         - s,line-apps.com
         - s,line-scdn.net
         - s,line.me
@@ -2377,6 +2387,7 @@ rule:
         - s,marxists.org
         - s,mas.to
         - s,mash.to
+        - s,master-insight.com
         - s,mastodon.cloud
         - s,mastodon.host
         - s,mastodon.online
@@ -2392,6 +2403,7 @@ rule:
         - s,matters.town
         - s,matthewdgreen.wordpress.com
         - s,mattwilcox.net
+        - s,mc.yandex.ru
         - s,mcadforums.com
         - s,mcaf.ee
         - s,mceindex.com
@@ -2513,6 +2525,7 @@ rule:
         - s,mondex.org
         - s,money-link.com.tw
         - s,moneydj.com
+        - s,moneynet.com.tw
         - s,monica.im
         - s,monitorchina.org
         - s,monocloud.me
@@ -2552,6 +2565,7 @@ rule:
         - s,muzi.net
         - s,muzu.tv
         - s,mvg.jp
+        - s,my-formosa.com.tw
         - s,my-private-network.co.uk
         - s,my.pcloud.com
         - s,myaudiocast.com
@@ -2635,6 +2649,7 @@ rule:
         - s,newthuhole.com
         - s,newyorker.com
         - s,nexon.com
+        - s,nextapple.com
         - s,nextdigital.com.hk
         - s,nexton-net.jp
         - s,nexttv.com.tw
@@ -2830,6 +2845,7 @@ rule:
         - s,parsevideo.com
         - s,partnerstack.xyz
         - s,passion.com
+        - s,passiontimes.hk
         - s,paste.ee
         - s,pastie.org
         - s,patreon.com
@@ -3009,6 +3025,7 @@ rule:
         - s,pubu.com.tw
         - s,puffinbrowser.com
         - s,pullfolio.co
+        - s,pulsehknews.com
         - s,pure18.com
         - s,pureconcepts.net
         - s,pureinsight.org
@@ -3236,6 +3253,7 @@ rule:
         - s,shadowsocks.com.hk
         - s,shadowsocks.org
         - s,shahit.biz
+        - s,shanghainationalparty.com
         - s,share-videos.se
         - s,share.america.gov
         - s,sharecool.org
@@ -3275,6 +3293,7 @@ rule:
         - s,sing-box.sagernet.org
         - s,singaporepools.com.sg
         - s,singlelogin.se
+        - s,singpao.com.hk
         - s,singtao.com
         - s,singtaousa.com
         - s,sinoants.com
@@ -3483,6 +3502,7 @@ rule:
         - s,taiwanjustice.net
         - s,taiwanncf.org.tw
         - s,taiwannews.com.tw
+        - s,taiwantoday.tw
         - s,taiwantt.org.tw
         - s,talkatone.com
         - s,talkboxapp.com
@@ -3547,6 +3567,7 @@ rule:
         - s,thecenter.mit.edu
         - s,thechasernews.co.uk
         - s,thechinacollection.org
+        - s,thecollectivehk.com
         - s,theconversation.com
         - s,thedalailamamovie.com
         - s,thediplomat.com
@@ -3562,18 +3583,22 @@ rule:
         - s,theinitium.com
         - s,theintercept.com
         - s,thenewslens.com
+        - s,theonlinecitizen.com
         - s,thepiratebay.org
         - s,theporndude.com
         - s,theportalwiki.com
         - s,theprint.in
         - s,thesaturdaypaper.com.au
+        - s,thestandard.com.hk
         - s,thestandnews.com
+        - s,thestar.com
         - s,thetatoken.org
         - s,thetibetpost.com
         - s,thetvdb.com
         - s,theweek.com
         - s,thewgo.org
         - s,thewirechina.com
+        - s,thewitnesshk.com
         - s,theync.com
         - s,thinkchina.sg
         - s,thinkgeek.com
@@ -4145,6 +4170,7 @@ rule:
         - s,woeser.com
         - s,wokar.org
         - s,wolfax.com
+        - s,womany.net
         - s,wombo.ai
         - s,woolyss.com
         - s,woopie.jp
