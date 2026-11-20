@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-19 20:19:03
-#! GFWList: 2026-11-13 10:35:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-20 06:40:39
+#! GFWList: 2026-11-20 03:36:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -1038,6 +1038,7 @@ rule:
         - s,dtiblog.com
         - s,dtic.mil
         - s,dubox.com
+        - s,duck.ai
         - s,duck.com
         - s,duckduckgo.com
         - s,duckmylife.com
@@ -1387,9 +1388,9 @@ rule:
         - s,gabocorp.com
         - s,gagaoolala.com
         - s,galenwu.com
-        - s,game735.com
         - s,gamer.com.tw
         - s,gamez.com.tw
+        - s,gamma.app
         - s,ganjing.com
         - s,ganjingworld.com
         - s,gaoming.net
@@ -3340,6 +3341,7 @@ rule:
         - s,sotwe.com
         - s,soubory.com
         - s,soulcaliburhentai.net
+        - s,soulogic.com
         - s,soundcloud.com
         - s,soundofhope.org
         - s,soundon.fm
