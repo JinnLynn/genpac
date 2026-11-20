@@ -1,7 +1,7 @@
 /**
  * genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
- * Generated: 2026-11-19 20:19:25
- * GFWList Last-Modified: 2026-11-13 10:35:53
+ * Generated: 2026-11-20 06:41:07
+ * GFWList Last-Modified: 2026-11-20 03:36:24
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -1066,6 +1066,7 @@ var rules = [
             "dtiblog.com",
             "dtic.mil",
             "dubox.com",
+            "duck.ai",
             "duck.com",
             "duckduckgo.com",
             "duckmylife.com",
@@ -1415,9 +1416,9 @@ var rules = [
             "gabocorp.com",
             "gagaoolala.com",
             "galenwu.com",
-            "game735.com",
             "gamer.com.tw",
             "gamez.com.tw",
+            "gamma.app",
             "ganjing.com",
             "ganjingworld.com",
             "gaoming.net",
@@ -3368,6 +3369,7 @@ var rules = [
             "sotwe.com",
             "soubory.com",
             "soulcaliburhentai.net",
+            "soulogic.com",
             "soundcloud.com",
             "soundofhope.org",
             "soundon.fm",

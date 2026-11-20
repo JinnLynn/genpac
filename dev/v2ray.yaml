@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-19 20:19:25
-#! GFWList: 2026-11-13 10:35:53 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-20 06:41:07
+#! GFWList: 2026-11-20 03:36:24 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -1061,6 +1061,7 @@ routing:
         - domain:dtiblog.com
         - domain:dtic.mil
         - domain:dubox.com
+        - domain:duck.ai
         - domain:duck.com
         - domain:duckduckgo.com
         - domain:duckmylife.com
@@ -1410,9 +1411,9 @@ routing:
         - domain:gabocorp.com
         - domain:gagaoolala.com
         - domain:galenwu.com
-        - domain:game735.com
         - domain:gamer.com.tw
         - domain:gamez.com.tw
+        - domain:gamma.app
         - domain:ganjing.com
         - domain:ganjingworld.com
         - domain:gaoming.net
@@ -3363,6 +3364,7 @@ routing:
         - domain:sotwe.com
         - domain:soubory.com
         - domain:soulcaliburhentai.net
+        - domain:soulogic.com
         - domain:soundcloud.com
         - domain:soundofhope.org
         - domain:soundon.fm
