@@ -1,6 +1,6 @@
 #! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-27 07:44:41
-#! GFWList: 2026-11-20 16:10:15 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-27 20:57:06
+#! GFWList: 2026-11-27 10:49:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 payload:
   - DOMAIN-SUFFIX,000webhost.com
   - DOMAIN-SUFFIX,0rz.tw
@@ -137,6 +137,7 @@ payload:
   - DOMAIN-SUFFIX,agro.hk
   - DOMAIN-SUFFIX,ai.dev
   - DOMAIN-SUFFIX,ai.studio
+  - DOMAIN-SUFFIX,aicu.cc
   - DOMAIN-SUFFIX,aidc.com.tw
   - DOMAIN-SUFFIX,aihub.top
   - DOMAIN-SUFFIX,aiosearch.com
@@ -901,6 +902,7 @@ payload:
   - DOMAIN-SUFFIX,daliulian.org
   - DOMAIN-SUFFIX,danbooru.donmai.us
   - DOMAIN-SUFFIX,danke4china.net
+  - DOMAIN-SUFFIX,danmakus.com
   - DOMAIN-SUFFIX,darmau.co
   - DOMAIN-SUFFIX,darpa.mil
   - DOMAIN-SUFFIX,darrenliuwei.com
@@ -3355,6 +3357,7 @@ payload:
   - DOMAIN-SUFFIX,southnews.com.tw
   - DOMAIN-SUFFIX,southpark.cc.com
   - DOMAIN-SUFFIX,sowers.org.hk
+  - DOMAIN-SUFFIX,spacedesk.net
   - DOMAIN-SUFFIX,spaceforce.mil
   - DOMAIN-SUFFIX,spaces.hightail.com
   - DOMAIN-SUFFIX,spacex.com

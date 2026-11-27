@@ -1,7 +1,7 @@
 [AutoProxy 0.2.9]
 ! genpac 3.1.0.dev1 https://github.com/JinnLynn/genpac
-! Generated: 2026-11-27 07:44:39
-! GFWList: 2026-11-20 16:10:15 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+! Generated: 2026-11-27 20:57:05
+! GFWList: 2026-11-27 10:49:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 @@||adservice.google.com
 @@||c.pki.goog
 @@||cdn-china.ampproject.org
@@ -168,6 +168,7 @@
 ||agro.hk
 ||ai.dev
 ||ai.studio
+||aicu.cc
 ||aidc.com.tw
 ||aihub.top
 ||aiosearch.com
@@ -932,6 +933,7 @@
 ||daliulian.org
 ||danbooru.donmai.us
 ||danke4china.net
+||danmakus.com
 ||darmau.co
 ||darpa.mil
 ||darrenliuwei.com
@@ -3386,6 +3388,7 @@
 ||southnews.com.tw
 ||southpark.cc.com
 ||sowers.org.hk
+||spacedesk.net
 ||spaceforce.mil
 ||spaces.hightail.com
 ||spacex.com
