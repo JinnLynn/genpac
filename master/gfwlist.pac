@@ -1,7 +1,7 @@
 /**
  * genpac 3.0.1 https://github.com/JinnLynn/genpac
- * Generated: 2026-11-27 07:44:10
- * GFWList Last-Modified: 2026-11-20 16:10:15
+ * Generated: 2026-11-27 20:56:44
+ * GFWList Last-Modified: 2026-11-27 10:49:03
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
 
@@ -181,6 +181,7 @@ var rules = [
             "agro.hk",
             "ai.dev",
             "ai.studio",
+            "aicu.cc",
             "aidc.com.tw",
             "aihub.top",
             "aiosearch.com",
@@ -945,6 +946,7 @@ var rules = [
             "daliulian.org",
             "danbooru.donmai.us",
             "danke4china.net",
+            "danmakus.com",
             "darmau.co",
             "darpa.mil",
             "darrenliuwei.com",
@@ -3399,6 +3401,7 @@ var rules = [
             "southnews.com.tw",
             "southpark.cc.com",
             "sowers.org.hk",
+            "spacedesk.net",
             "spaceforce.mil",
             "spaces.hightail.com",
             "spacex.com",

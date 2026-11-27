@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-27 07:44:13
-#! GFWList: 2026-11-20 16:10:15 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-27 20:56:47
+#! GFWList: 2026-11-27 10:49:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 version: 2
 adapter:
 None
@@ -153,6 +153,7 @@ rule:
         - s,agro.hk
         - s,ai.dev
         - s,ai.studio
+        - s,aicu.cc
         - s,aidc.com.tw
         - s,aihub.top
         - s,aiosearch.com
@@ -917,6 +918,7 @@ rule:
         - s,daliulian.org
         - s,danbooru.donmai.us
         - s,danke4china.net
+        - s,danmakus.com
         - s,darmau.co
         - s,darpa.mil
         - s,darrenliuwei.com
@@ -3371,6 +3373,7 @@ rule:
         - s,southnews.com.tw
         - s,southpark.cc.com
         - s,sowers.org.hk
+        - s,spacedesk.net
         - s,spaceforce.mil
         - s,spaces.hightail.com
         - s,spacex.com

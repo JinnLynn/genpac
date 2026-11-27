@@ -1,9 +1,9 @@
 [AutoProxy 0.2.9]
-! Checksum: oKxH6f3iLsNEjF/XGzB8ug
+! Checksum: B+pukUJsG8cHACpSKTZn9Q
 ! Expires: 6h
 ! Title: GFWList4LL
 ! GFWList with EVERYTHING included
-! Last Modified: Fri, 20 Nov 2026 16:10:15 +0000
+! Last Modified: Fri, 27 Nov 2026 10:49:03 +0000
 !
 ! HomePage: https://github.com/gfwlist/gfwlist
 ! License: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
@@ -1289,6 +1289,7 @@ iipdigital.usembassy.gov
 ||9bis.net
 ||9news.com.au
 !--------------------AA-------------------------
+||aicu.cc
 ||livingatlas.arcgis.com
 ||basemaps.arcgis.com
 ||experience.arcgis.com
@@ -1886,6 +1887,7 @@ iipdigital.usembassy.gov
 ||mike.cz.cc
 ||nic.cz.cc
 !--------------------DD-------------------------
+||danmakus.com
 ||duck.ai
 ||dh.net
 ||divdyn.com
@@ -3533,6 +3535,7 @@ iipdigital.usembassy.gov
 ||raphael.app
 ||rule34.us
 !--------------------SS-------------------------
+||spacedesk.net
 ||singpao.com.hk
 ||shanghainationalparty.com
 ||soulogic.com

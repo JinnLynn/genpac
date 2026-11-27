@@ -1,6 +1,6 @@
 #! genpac 3.0.1 https://github.com/JinnLynn/genpac
-#! Generated: 2026-11-27 07:44:10
-#! GFWList: 2026-11-20 16:10:15 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
+#! Generated: 2026-11-27 20:56:45
+#! GFWList: 2026-11-27 10:49:03 online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
 routing:
   domainStrategy: AsIs
   rules:
@@ -176,6 +176,7 @@ routing:
         - domain:agro.hk
         - domain:ai.dev
         - domain:ai.studio
+        - domain:aicu.cc
         - domain:aidc.com.tw
         - domain:aihub.top
         - domain:aiosearch.com
@@ -940,6 +941,7 @@ routing:
         - domain:daliulian.org
         - domain:danbooru.donmai.us
         - domain:danke4china.net
+        - domain:danmakus.com
         - domain:darmau.co
         - domain:darpa.mil
         - domain:darrenliuwei.com
@@ -3394,6 +3396,7 @@ routing:
         - domain:southnews.com.tw
         - domain:southpark.cc.com
         - domain:sowers.org.hk
+        - domain:spacedesk.net
         - domain:spaceforce.mil
         - domain:spaces.hightail.com
         - domain:spacex.com
